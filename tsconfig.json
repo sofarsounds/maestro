@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "declaration": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "lib": ["es2015"],
+    "rootDirs": ["src", "stories"],
+    "baseUrl": "src",
+    "typeRoots": [
+      "index.d.ts",
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
