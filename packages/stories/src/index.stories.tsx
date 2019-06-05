@@ -3,13 +3,13 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
-import { Button } from '../src/index';
+import { Button } from '../../uikit/src';
 
-const stories = storiesOf('Storybook Knobs', module);
+const stories = storiesOf('Buttons', module);
 
 stories.addDecorator(withKnobs);
 
-stories.add('with a button', () => (
+stories.add('Primary', () => (
   <Button
     onClick={action('Primary Button clicked')}
     disabled={boolean('Disabled', false)}
