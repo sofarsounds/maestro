@@ -9,6 +9,6 @@
 
 ## To Do
 
-- [] Clean up dependencies & sort out peer dependencies
-- [] build component library (es6 + es5 version)
-- [] build storybook
+- [ ] Clean up dependencies & sort out peer dependencies
+- [ ] build component library (es6 + es5 version)
+- [ ] build storybook
