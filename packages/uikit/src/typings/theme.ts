@@ -10,7 +10,7 @@
  * subtitle? We should maybe have a look at making this a bit easier.
  */
 
-interface ITheme {
+export default interface Theme {
   colours: {
     primary: string;
 
@@ -61,5 +61,3 @@ interface ITheme {
 
   media: any;
 }
-
-export default ITheme;

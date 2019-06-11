@@ -13,7 +13,6 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": "^4",
     "typescript": "^3"
   },
   "dependencies": {
@@ -23,7 +22,8 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "color": "^3.1.2"
+    "color": "^3.1.2",
+    "styled-components": "^4"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
