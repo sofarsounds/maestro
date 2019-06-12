@@ -15,6 +15,7 @@ interface ITheme {
     primary: string;
 
     // blacks & greys
+    black: string;
     backToBlack: string;
     blackBetty: string;
     paintItBlack: string;
@@ -60,6 +61,14 @@ interface ITheme {
   };
 
   media: any;
+
+  borderRadius: {
+    button: string;
+  };
+
+  utils: {
+    transition: (a?: string) => string;
+  };
 }
 
 export default ITheme;

@@ -1,8 +1,9 @@
 import React from 'react';
-import { configure, addDecorator } from '@storybook/react';
+import { configure, setAddon, addDecorator } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 import { addParameters } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { withA11y } from '@storybook/addon-a11y';
 
 import theme from '../../uikit/src/theme';
 import GlobalStyle from '../../uikit/src/global';
@@ -12,12 +13,15 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
-addParameters({ viewport: { viewports: INITIAL_VIEWPORTS } });
+addParameters({
+  viewport: { viewports: INITIAL_VIEWPORTS }
+});
+addDecorator(withA11y);
 addDecorator(story => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <GlobalStyle />
-      {story()}
+      <div style={{ padding: '10px 50px' }}>{story()}</div>
     </React.Fragment>
   </ThemeProvider>
 ));

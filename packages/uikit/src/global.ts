@@ -5,7 +5,7 @@ export default createGlobalStyle`
     body,
     html,
     * {
-      font-family: "${theme.fonts.fontFamily}" sans-serif;
+      font-family: "${theme.fonts.fontFamily}", sans-serif;
       color: ${theme.colours.backToBlack};
     }
 
