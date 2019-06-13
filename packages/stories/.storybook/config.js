@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { addParameters } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
+import storybookTheme from "./sofarTheme";
 import theme from '../../uikit/src/theme';
 import GlobalStyle from '../../uikit/src/global';
 
@@ -11,6 +12,12 @@ const req = require.context('../src', true, /\.(stories|story)\.tsx$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
+
+addParameters({
+  options: {
+    theme: storybookTheme
+  }
+});
 
 addParameters({ viewport: { viewports: INITIAL_VIEWPORTS } });
 addDecorator(story => (

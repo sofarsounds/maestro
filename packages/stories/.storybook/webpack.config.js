@@ -1,5 +1,5 @@
 module.exports = ({ config }) => {
-  config.devtool: 'inline-source-map';
+  config.devtool = 'inline-source-map';
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     use: [
