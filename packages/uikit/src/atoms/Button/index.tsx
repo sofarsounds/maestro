@@ -10,15 +10,13 @@ const rotate360 = keyframes`
 `;
 
 interface ButtonProps {
-  loading: boolean;
+  loading?: boolean;
 }
 
-export const PrimaryButton = styled.button<ButtonProps>`
+export const BaseButton = styled.button<ButtonProps>`
   ${({ theme, loading }) => css`
-    background: ${theme.colours.primary};
     border-radius: ${theme.borderRadius.button};
-    border: 1px solid ${theme.colours.primary};
-    color: ${theme.colours.whiteDenim};
+
     cursor: pointer;
     font-size: ${theme.fontSizes.button};
     font-weight: 600;
@@ -29,6 +27,25 @@ export const PrimaryButton = styled.button<ButtonProps>`
     text-decoration: none;
     text-transform: uppercase;
     transition: ${theme.utils.transition()};
+
+    &:disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    ${loading &&
+      css`
+        pointer-events: none;
+        cursor: disabled;
+      `}
+  `}
+`;
+
+export const PrimaryButton = styled(BaseButton)`
+  ${({ theme, loading }) => css`
+    background: ${theme.colours.primary};
+    border: 1px solid ${theme.colours.primary};
+    color: ${theme.colours.whiteDenim};
 
     &:hover {
       background-color: ${theme.colours.green900};
@@ -41,8 +58,6 @@ export const PrimaryButton = styled.button<ButtonProps>`
     &:disabled {
       background-color: ${theme.colours.blueSmoke};
       border-color: ${theme.colours.blueSmoke};
-      cursor: not-allowed;
-      pointer-events: none;
     }
 
     ${loading &&
@@ -50,8 +65,6 @@ export const PrimaryButton = styled.button<ButtonProps>`
         color: transparent !important;
         background-color: ${theme.colours.blueSmoke};
         border-color: ${theme.colours.blueSmoke};
-        pointer-events: none;
-        cursor: disabled;
         position: relative;
 
         :after {
@@ -136,7 +149,7 @@ export const TertiaryButton = styled(SecondaryButton)`
 `;
 
 export const LinkButton = styled(SecondaryButton)`
-  ${({ theme, loading }) => css`
+  ${({ theme }) => css`
     background: ${theme.colours.whiteDenim};
     border-color: ${theme.colours.whiteDenim};
     color: ${theme.colours.primary};

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-interface IProps {
+interface Props {
   circle?: boolean;
   cable?: boolean;
   invert?: boolean;
@@ -26,7 +26,7 @@ const generateFileName = (circle: boolean, cable: boolean, invert: boolean) => {
   return `sofar-${kind}-${colour}.svg`;
 };
 
-const Logo: React.SFC<IProps> = ({
+const Logo: React.SFC<Props> = ({
   circle = false,
   cable = false,
   invert = false
