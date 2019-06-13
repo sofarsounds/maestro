@@ -1,6 +1,7 @@
 node_modules
 
 build/
+yarn-error.log
 
 packages/stories/storybook-static
 packages/stories/storybook

@@ -15,6 +15,7 @@ export default interface Theme {
     primary: string;
 
     // blacks & greys
+    black: string;
     backToBlack: string;
     blackBetty: string;
     paintItBlack: string;
@@ -60,4 +61,12 @@ export default interface Theme {
   };
 
   media: any;
+
+  borderRadius: {
+    button: string;
+  };
+
+  utils: {
+    transition: (a?: string) => string;
+  };
 }

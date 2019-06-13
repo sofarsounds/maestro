@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-const stories = storiesOf('Layout', module);
-
-stories.add('Grid', () => <div>Add Grid Component</div>);
-stories.add('Container', () => <div>Add Container Component</div>);
+storiesOf('02 / Layout|Grid', module).add('Grid', () => <div>Grid Component</div>);
+storiesOf('02 / Layout|Container', module).add('Container', () => (
+  <div>Container Component</div>
+));

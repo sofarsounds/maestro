@@ -10,7 +10,8 @@
     "start": "lerna run start --stream",
     "postinstall": "yarn run bootstrap",
     "lint": "eslint './packages/uikit/**/*.{ts,tsx, js, jsx}'",
-    "test": "jest --ci --clearCache --colors"
+    "test": "lerna run test",
+    "test:update": "lerna run test:update"
   },
   "keywords": [],
   "author": "",
@@ -43,18 +44,6 @@
     "prettier": "^1.18.2",
     "styled-components": "^4.3.0",
     "typescript": "^3.5.1"
-  },
-  "jest": {
-    "testRegex": "/packages/uikit/.*(.spec.tsx|spec.ts)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
   },
   "workspaces": {
     "packages": [

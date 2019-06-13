@@ -13,6 +13,7 @@ const theme: Theme = {
     primary: '#008736',
 
     // blacks & greys
+    black: '#000000',
     backToBlack: '#111111',
     blackBetty: '#1E1E1E',
     paintItBlack: '#333333',
@@ -42,11 +43,11 @@ const theme: Theme = {
   fontSizes: {
     base: '16px',
     h1: '96px',
-    h2: '82px',
-    h3: '65px',
-    h4: '46px',
-    h5: '33px',
-    h6: '27px',
+    h2: '60px',
+    h3: '48px',
+    h4: '34px',
+    h5: '24px',
+    h6: '20px',
     title: '74px',
     subtitle1: '16px',
     subtitle2: '14px',
@@ -64,7 +65,15 @@ const theme: Theme = {
       }
     `;
     return acc;
-  }, {})
+  }, {}),
+
+  borderRadius: {
+    button: '4px'
+  },
+
+  utils: {
+    transition: (attr?: string) => `${attr || 'all'} .2s ease`
+  }
 };
 
 export default theme;
