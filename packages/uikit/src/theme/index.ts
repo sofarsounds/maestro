@@ -1,6 +1,6 @@
 import { css } from '../lib/styledComponents';
 
-import ITheme from '../typings/theme';
+import Theme from '../typings/theme';
 
 const breakPoints = {
   phone: 0,
@@ -8,7 +8,7 @@ const breakPoints = {
   desktop: 992
 };
 
-const theme: ITheme = {
+const theme: Theme = {
   colours: {
     primary: '#008736',
 

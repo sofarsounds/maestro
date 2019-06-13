@@ -2,4 +2,6 @@ node_modules
 
 build/
 
+packages/stories/storybook-static
+packages/stories/storybook
 

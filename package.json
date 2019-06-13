@@ -5,27 +5,63 @@
   "main": "index.js",
   "scripts": {
     "lerna": "lerna",
+    "build": "lerna run build",
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start --stream",
-    "postinstall": "yarn run bootstrap"
+    "postinstall": "yarn run bootstrap",
+    "lint": "eslint './packages/uikit/**/*.{ts,tsx, js, jsx}'",
+    "test": "jest --ci --clearCache --colors"
   },
   "keywords": [],
   "author": "",
+  "private": true,
   "license": "ISC",
   "peerDependencies": {
     "react": "^16",
-    "react-dom": "^16",
-    "styled-components": "^4"
+    "react-dom": "^16"
   },
   "devDependencies": {
     "@types/react": "^16",
     "@types/react-dom": "^16",
     "@types/styled-components": "^4",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.0"
+    "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "lerna": "^3.14.1"
+    "enzyme": "^3.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "gh-pages": "^2.0.1",
+    "jest": "^24.8.0",
+    "lerna": "^3.14.1",
+    "prettier": "^1.18.2",
+    "styled-components": "^4.3.0",
+    "typescript": "^3.5.1"
+  },
+  "jest": {
+    "testRegex": "/packages/uikit/.*(.spec.tsx|spec.ts)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**@storybook/**"
+    ]
   }
 }

@@ -10,7 +10,7 @@
  * subtitle? We should maybe have a look at making this a bit easier.
  */
 
-interface ITheme {
+export default interface Theme {
   colours: {
     primary: string;
 
@@ -70,5 +70,3 @@ interface ITheme {
     transition: (a?: string) => string;
   };
 }
-
-export default ITheme;

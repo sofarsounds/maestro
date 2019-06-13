@@ -1,0 +1,63 @@
+version: 2.1
+
+executors:
+  shared-setup-exec:
+    shell: /bin/bash --login
+    docker:
+      - image: circleci/node:11.12.0
+    working_directory: ~/repo
+    environment:
+      TARGET_BRANCH: gh-pages
+      SOURCE_BRANCH: master
+      CIRCLE_ARTIFACTS: /tmp/circleci-artifacts
+      CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
+      GH_EMAIL: adam.bull@sofarsounds.com
+      GH_NAME: Adam Bull
+jobs:
+  build:
+    executor: shared-setup-exec
+    steps:
+    - checkout
+    - restore_cache:
+        keys:
+          - npm-packages-{{ checksum "package.json" }}
+          - npm-packages
+    - run: yarn install
+    - save_cache:
+        paths:
+          - node_modules
+        key: npm-packages-{{ checksum "package.json" }}
+    - run: yarn lint
+    - run: yarn test
+  deploy:
+    executor: shared-setup-exec
+    steps:
+    - checkout
+    - run:
+        name: Install lerna globally
+        command: yarn global add lerna
+    - run:
+        name: Install deps
+        command: yarn run bootstrap
+    - run:
+        name: Install TypeScript globally
+        command: yarn global add typescript
+    - run:
+        name: Run storybook deploy script
+        command: ~/repo/bin/deploy-gh-pages.sh
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: gh-pages
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
+
