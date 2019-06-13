@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo Cable Logo renders correctly 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+/>
+`;
+
+exports[`Logo Cable Logo renders correctly when inverted 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+/>
+`;
+
+exports[`Logo Cable Logo renders correctly with a given width 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+  width="500px"
+/>
+`;
+
+exports[`Logo Circle Logo renders correctly 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+/>
+`;
+
+exports[`Logo Circle Logo renders correctly when inverted 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+/>
+`;
+
+exports[`Logo Circle Logo renders correctly with a given width 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+  width="500px"
+/>
+`;
+
+exports[`Logo Text Logo renders correctly 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+/>
+`;
+
+exports[`Logo Text Logo renders correctly when inverted 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+/>
+`;
+
+exports[`Logo Text Logo renders correctly with a given width 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src={[Function]}
+  width="500px"
+/>
+`;

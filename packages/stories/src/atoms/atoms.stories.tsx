@@ -8,7 +8,7 @@ import {
   SecondaryButton,
   TertiaryButton,
   LinkButton
-} from '../../../uikit/src';
+} from 'uikit';
 
 storiesOf('03 / Atoms|Form Elements', module)
   .addDecorator(withKnobs)

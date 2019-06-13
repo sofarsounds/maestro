@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = ({ config }) => {
   config.devtool = 'inline-source-map';
   config.module.rules.push({
@@ -6,7 +8,6 @@ module.exports = ({ config }) => {
       {
         loader: require.resolve('awesome-typescript-loader')
       },
-      // Optional
       {
         loader: require.resolve('react-docgen-typescript-loader')
       }
@@ -19,5 +20,9 @@ module.exports = ({ config }) => {
   });
 
   config.resolve.extensions.push('.ts', '.tsx');
+
+  config.resolve.alias = {
+    uikit: path.resolve(__dirname, '../../uikit/src')
+  };
   return config;
 };

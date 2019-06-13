@@ -6,8 +6,8 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withA11y } from '@storybook/addon-a11y';
 
 import storybookTheme from './sofarTheme';
-import theme from '../../uikit/src/theme';
-import GlobalStyle from '../../uikit/src/global';
+import { theme, GlobalStyle } from 'uikit';
+// import GlobalStyle from '../../uikit/src/global';
 
 const req = require.context('../src', true, /\.(stories|story)\.tsx$/);
 function loadStories() {

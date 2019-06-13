@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import { ThemeProvider } from '../src/lib/styledComponents';
-import theme from '../src/theme';
+import { ThemeProvider } from '../lib/styledComponents';
+import theme from '../theme';
 
 export const shallowWithTheme = (tree: any) =>
   shallow(<ThemeProvider theme={theme}>{tree}</ThemeProvider>);

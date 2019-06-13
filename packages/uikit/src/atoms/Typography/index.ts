@@ -1,4 +1,4 @@
-import styled, { css } from '../lib/styledComponents';
+import styled, { css } from '../../lib/styledComponents';
 
 export const Title = styled.h1`
   ${({ theme }) => css`

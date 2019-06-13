@@ -3,7 +3,7 @@ module.exports = {
   transform: {
     '^.+\\.(tsx|ts)?$': 'ts-jest'
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'svg'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  setupFilesAfterEnv: ['./test/setupTests.ts']
+  setupFilesAfterEnv: ['./src/test/setupTests.ts']
 };
