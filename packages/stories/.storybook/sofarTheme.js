@@ -7,7 +7,9 @@ import { create } from '@storybook/theming';
 export default create({
   base: 'dark',
   appContentBg: 'white',
+  // textColor: '#111',
   brandTitle: 'Sofar Maestro',
   brandUrl: 'https://www.sofarsounds.com',
-  brandImage: '//dax2lgcd0wbaz.cloudfront.net/assets/shared/sofar-logo-d003abadcf905420ed4c26502e73ac546020a0bc87b3815705f45825c3625596.png',
+  brandImage:
+    'http://dax2lgcd0wbaz.cloudfront.net/assets/shared/sofar-logo-d003abadcf905420ed4c26502e73ac546020a0bc87b3815705f45825c3625596.png'
 });
