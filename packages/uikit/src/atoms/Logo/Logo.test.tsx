@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 
 import Logo from './index';
 
+// NOTE this only tests file name, not actual image comparison
 describe('Logo', () => {
   describe('Text Logo', () => {
     it('renders correctly', () => {
