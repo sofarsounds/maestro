@@ -20,7 +20,7 @@ export const BaseButton = styled.button<ButtonProps>`
     cursor: pointer;
     font-size: ${theme.fontSizes.button};
     font-weight: 600;
-    height: 44px;
+    height: ${theme.dimensions.buttonHeight};
     letter-spacing: 0.8px;
     outline: none;
     padding: 0 25px;

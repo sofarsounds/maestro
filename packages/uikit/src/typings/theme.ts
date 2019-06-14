@@ -62,8 +62,20 @@ export default interface Theme {
 
   media: any;
 
+  dimensions: {
+    inputHeight: string;
+    buttonHeight: string;
+    containerWidth: {
+      small: string;
+      default: string;
+      large: string;
+      fullscreen: string;
+    };
+  };
+
   borderRadius: {
     button: string;
+    input: string;
   };
 
   utils: {

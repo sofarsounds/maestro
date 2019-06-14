@@ -1,13 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
 import {
   PrimaryButton,
   SecondaryButton,
   TertiaryButton,
-  LinkButton
+  LinkButton,
+  TextField,
+  TextArea,
+  Select
 } from 'uikit';
 
 storiesOf('03 / Atoms|Form Elements', module)
@@ -56,5 +59,35 @@ storiesOf('03 / Atoms|Form Elements', module)
       </LinkButton>
     </div>
   ))
-  .add('Textfield', () => <div>Atoms...</div>)
-  .add('Textarea', () => <div>Atoms...</div>);
+  .add('Textfield', () => (
+    <div>
+      <TextField
+        disabled={boolean('Disabled', false)}
+        hasError={boolean('Has Error', false)}
+        placeholder={text('Placeholder', 'Type me hard...')}
+      />
+    </div>
+  ))
+  .add('Textarea', () => (
+    <div>
+      <TextArea
+        rows={number('Rows', 5)}
+        disabled={boolean('Disabled', false)}
+        hasError={boolean('Has Error', false)}
+        placeholder={text('Placeholder', 'Type me hard...')}
+      />
+    </div>
+  ))
+  .add('Select', () => (
+    <div>
+      <Select
+        disabled={boolean('Disabled', false)}
+        hasError={boolean('Has Error', false)}
+      >
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </Select>
+    </div>
+  ));
