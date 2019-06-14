@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import theme from '../../../uikit/src/theme';
+import { theme } from 'uikit';
 
 export const Row = styled.div`
   display: grid;

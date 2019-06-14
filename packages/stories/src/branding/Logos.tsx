@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Logo } from '../../../uikit/src';
+import { Logo } from 'uikit';
 
-import { Boundary } from '../components';
+import { Boundary } from '../helpers/components';
 
 const Row = styled.div`
   display: flex;

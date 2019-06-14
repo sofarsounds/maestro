@@ -15,12 +15,12 @@ import {
   Body2,
   Overline,
   Caption
-} from '../../../uikit/src';
+} from 'uikit';
 
-const Boundary = styled.div`
-  margin: 0 0 25px 0;
-  padding: 0;
-  border: 1px dashed #ccc;
+import { Boundary as Bound } from '../helpers/components';
+
+const Boundary = styled(Bound)`
+  margin-bottom: 25px;
 `;
 
 const Spacer = styled.div`

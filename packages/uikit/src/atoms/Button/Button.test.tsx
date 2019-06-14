@@ -1,5 +1,5 @@
 import React from 'react';
-import { mountWithTheme, shallowWithTheme } from '../../../test';
+import { mountWithTheme } from '../../test';
 
 import {
   BaseButton,
@@ -14,10 +14,9 @@ const onClickMock = jest.fn();
 const setup = (
   Component: any,
   disabled: boolean = false,
-  loading: boolean = false,
-  fn: (x: any) => any = shallowWithTheme
+  loading: boolean = false
 ) =>
-  fn(
+  mountWithTheme(
     <Component
       disabled={disabled}
       loading={loading}
@@ -34,19 +33,19 @@ describe('Buttons', () => {
 
   describe('Base Button', () => {
     it('is clickable', () => {
-      const wrapper = setup(BaseButton, false, false, mountWithTheme);
+      const wrapper = setup(BaseButton, false, false);
       wrapper.simulate('click');
       expect(onClickMock).toHaveBeenCalled();
     });
 
     it('is not clickable in disabled state', () => {
-      const wrapper = setup(BaseButton, true, false, mountWithTheme);
+      const wrapper = setup(BaseButton, true, false);
       wrapper.simulate('click');
       expect(onClickMock).not.toHaveBeenCalled();
     });
 
     it('is not clickable in loading state', () => {
-      const wrapper = setup(BaseButton, true, true, mountWithTheme);
+      const wrapper = setup(BaseButton, true, true);
       wrapper.simulate('click');
       expect(onClickMock).not.toHaveBeenCalled();
     });

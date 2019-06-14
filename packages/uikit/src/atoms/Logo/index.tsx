@@ -1,15 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface Props {
   circle?: boolean;
   cable?: boolean;
   invert?: boolean;
+  width?: string;
 }
 
 const LogoImg = styled.img`
-  width: 100%;
-  margin: 0;
+  ${({ width }) => css`
+    width: ${width || '100%'};
+    margin: 0;
+  `}
 `;
 
 const generateFileName = (circle: boolean, cable: boolean, invert: boolean) => {
@@ -29,11 +32,13 @@ const generateFileName = (circle: boolean, cable: boolean, invert: boolean) => {
 const Logo: React.SFC<Props> = ({
   circle = false,
   cable = false,
-  invert = false
+  invert = false,
+  width
 }) => (
   <LogoImg
     alt="Sofar Logo"
-    src={require(`../assets/${generateFileName(circle, cable, invert)}`)}
+    src={require(`../../assets/${generateFileName(circle, cable, invert)}`)}
+    width={width}
   />
 );
 

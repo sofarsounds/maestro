@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo Cable Logo renders correctly 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-cable-black.svg"
+/>
+`;
+
+exports[`Logo Cable Logo renders correctly when inverted 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-cable-white.svg"
+/>
+`;
+
+exports[`Logo Cable Logo renders correctly with a given width 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-cable-black.svg"
+  width="500px"
+/>
+`;
+
+exports[`Logo Circle Logo renders correctly 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-circle-black.svg"
+/>
+`;
+
+exports[`Logo Circle Logo renders correctly when inverted 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-circle-white.svg"
+/>
+`;
+
+exports[`Logo Circle Logo renders correctly with a given width 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-circle-black.svg"
+  width="500px"
+/>
+`;
+
+exports[`Logo Text Logo renders correctly 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-logo-black.svg"
+/>
+`;
+
+exports[`Logo Text Logo renders correctly when inverted 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-logo-white.svg"
+/>
+`;
+
+exports[`Logo Text Logo renders correctly with a given width 1`] = `
+<styled.img
+  alt="Sofar Logo"
+  src="sofar-logo-black.svg"
+  width="500px"
+/>
+`;
