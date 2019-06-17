@@ -1,0 +1,1234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders a Grid with a custom column gap 1`] = `
+.c1 {
+  grid-column-end: span 12;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 20px;
+  grid-column-gap: 1px;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#008736",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "fontFamily": "Open Sans",
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+      },
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <styled.div
+    colGap="1px"
+  >
+    <StyledComponent
+      colGap="1px"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              Col 1
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              Col 2
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              Col 3
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ThemeProvider>
+`;
+
+exports[`Grid renders a Grid with a custom gap 1`] = `
+.c1 {
+  grid-column-end: span 12;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 100px;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#008736",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "fontFamily": "Open Sans",
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+      },
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <styled.div
+    gap="100px"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      gap="100px"
+    >
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              Col 1
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              Col 2
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ThemeProvider>
+`;
+
+exports[`Grid renders a Grid with a custom row and column gap 1`] = `
+.c1 {
+  grid-column-end: span 6;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 20px;
+  grid-column-gap: 1px;
+  grid-row-gap: 10px;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#008736",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "fontFamily": "Open Sans",
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+      },
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <styled.div
+    colGap="1px"
+    rowGap="10px"
+  >
+    <StyledComponent
+      colGap="1px"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      rowGap="10px"
+    >
+      <div
+        className="c0"
+      >
+        <styled.div
+          xs={6}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={6}
+          >
+            <div
+              className="c1"
+            >
+              Row 3
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          xs={6}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={6}
+          >
+            <div
+              className="c1"
+            >
+              Row 1
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          xs={6}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={6}
+          >
+            <div
+              className="c1"
+            >
+              Row 1
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          xs={6}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={6}
+          >
+            <div
+              className="c1"
+            >
+              Row 2
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          xs={6}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={6}
+          >
+            <div
+              className="c1"
+            >
+              Row 2
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ThemeProvider>
+`;
+
+exports[`Grid renders a Grid with a custom row gap 1`] = `
+.c1 {
+  grid-column-end: span 12;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 20px;
+  grid-column-gap: 1px;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#008736",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "fontFamily": "Open Sans",
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+      },
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <styled.div
+    colGap="1px"
+  >
+    <StyledComponent
+      colGap="1px"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div
+          xs={12}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={12}
+          >
+            <div
+              className="c1"
+            >
+              Row 1
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          xs={12}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={12}
+          >
+            <div
+              className="c1"
+            >
+              Row 2
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          xs={12}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            xs={12}
+          >
+            <div
+              className="c1"
+            >
+              Row 3
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ThemeProvider>
+`;
+
+exports[`Grid renders the Grid correctly 1`] = `
+.c1 {
+  grid-column-end: span 12;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 20px;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    grid-column-end: span 4;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    grid-column-end: span 4;
+  }
+}
+
+@media (min-width:1200px) {
+  .c1 {
+    grid-column-end: span 4;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#008736",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "fontFamily": "Open Sans",
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+      },
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div
+          lg={4}
+          md={4}
+          sm={4}
+          xs={12}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            lg={4}
+            md={4}
+            sm={4}
+            xs={12}
+          >
+            <div
+              className="c1"
+            >
+              Col 1
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          lg={4}
+          md={4}
+          sm={4}
+          xs={12}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            lg={4}
+            md={4}
+            sm={4}
+            xs={12}
+          >
+            <div
+              className="c1"
+            >
+              Col 2
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ThemeProvider>
+`;

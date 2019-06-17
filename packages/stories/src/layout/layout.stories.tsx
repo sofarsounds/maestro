@@ -12,21 +12,83 @@ const ColContent = styled.div`
   padding: 10px;
 `;
 
+const Spacer = styled.div`
+  height: 25px;
+`;
+
 storiesOf('02 / Layout|Grid', module).add('Grid', () => (
   <div>
-    <h1>A standard 12 column grid</h1>
+    <h1>Grid</h1>
+
+    <h2>A standard 12 column grid</h2>
     <Grid>
-      <Col xs={12} sm={6} md={3}>
-        <ColContent>Col 1</ColContent>
+      {[...Array(12).keys()].map(x => (
+        <Col key={x} sm={1}>
+          <ColContent>{x + 1}</ColContent>
+        </Col>
+      ))}
+    </Grid>
+
+    <Spacer />
+
+    <Grid>
+      <Col sm={4}>
+        <ColContent>One of three columns</ColContent>
       </Col>
-      <Col xs={12} sm={6} md={3}>
-        <ColContent>Col 2</ColContent>
+      <Col sm={4}>
+        <ColContent>One of three columns</ColContent>
       </Col>
-      <Col xs={12} sm={6} md={3}>
-        <ColContent>Col 3</ColContent>
+      <Col sm={4}>
+        <ColContent>One of three columns</ColContent>
       </Col>
-      <Col xs={12} sm={6} md={3}>
-        <ColContent>Col 4</ColContent>
+    </Grid>
+
+    <Spacer />
+
+    <Grid>
+      <Col>
+        <ColContent>Auto Stretch</ColContent>
+      </Col>
+      <Col>
+        <ColContent>Stretch me</ColContent>
+      </Col>
+    </Grid>
+
+    <Spacer />
+
+    <h2>Customise Grid Spacing</h2>
+    <Grid gap="5px">
+      <Col sm={6}>
+        <ColContent>Row 1 / Column 1</ColContent>
+      </Col>
+      <Col sm={6}>
+        <ColContent>Row 1 / Column 2</ColContent>
+      </Col>
+      <Col sm={6}>
+        <ColContent>Row 2 / Column 1</ColContent>
+      </Col>
+      <Col sm={6}>
+        <ColContent>Row 2 / Column 2</ColContent>
+      </Col>
+    </Grid>
+
+    <h2>Custom Column Spacing</h2>
+    <Grid colGap="80px">
+      <Col sm={6}>
+        <ColContent>Column 1</ColContent>
+      </Col>
+      <Col sm={6}>
+        <ColContent>Column 2</ColContent>
+      </Col>
+    </Grid>
+
+    <h2>Custom Row Spacing</h2>
+    <Grid rowGap="80px">
+      <Col>
+        <ColContent>Row 1</ColContent>
+      </Col>
+      <Col>
+        <ColContent>Row 2</ColContent>
       </Col>
     </Grid>
   </div>

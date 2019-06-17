@@ -13,7 +13,7 @@ interface ColProps {
 }
 export const Col = styled.div<ColProps>`
   ${({ theme, xs, sm, md, lg }) => css`
-    grid-column-end: span ${xs || 1};
+    grid-column-end: span ${xs || 12};
 
     ${sm &&
       theme.media.tablet`
@@ -35,12 +35,25 @@ export const Col = styled.div<ColProps>`
 // Grid
 interface GridProps {
   cols?: number;
-  gap?: number;
+  gap?: string;
+  colGap?: string;
+  rowGap?: string;
 }
 export default styled.div<GridProps>`
-  ${({ cols, gap }) => css`
+  ${({ cols, gap, colGap, rowGap }) => css`
     display: grid;
     grid-template-columns: repeat(${cols || 12}, 1fr);
+
     grid-gap: ${gap || '20px'};
+
+    ${colGap &&
+      css`
+        grid-column-gap: ${colGap};
+      `};
+
+    ${rowGap &&
+      css`
+        grid-row-gap: ${rowGap};
+      `};
   `}
 `;
