@@ -45,17 +45,6 @@ storiesOf('02 / Layout|Grid', module).add('Grid', () => (
 
     <Spacer />
 
-    <Grid>
-      <Col>
-        <ColContent>Auto Stretch</ColContent>
-      </Col>
-      <Col>
-        <ColContent>Stretch me</ColContent>
-      </Col>
-    </Grid>
-
-    <Spacer />
-
     <h2>Customise Grid Spacing</h2>
     <Grid gap="5px">
       <Col sm={6}>
