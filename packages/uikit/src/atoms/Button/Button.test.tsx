@@ -40,12 +40,14 @@ describe('Buttons', () => {
 
     it('is not clickable in disabled state', () => {
       const wrapper = setup(BaseButton, true, false);
+      expect(wrapper.find(BaseButton).prop('disabled')).toBeTruthy();
       wrapper.simulate('click');
       expect(onClickMock).not.toHaveBeenCalled();
     });
 
     it('is not clickable in loading state', () => {
       const wrapper = setup(BaseButton, true, true);
+      expect(wrapper.find(BaseButton).prop('loading')).toBeTruthy();
       wrapper.simulate('click');
       expect(onClickMock).not.toHaveBeenCalled();
     });

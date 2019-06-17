@@ -7,7 +7,7 @@
     "build": "tsc",
     "prepublishOnly": "yarn run build",
     "test": "jest --colors",
-    "test:update": "yarn test -u --clearCache"
+    "test:update": "yarn jest -u"
   },
   "keywords": [],
   "author": "",

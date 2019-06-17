@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components';
 
 /**
- * TODO
+ * TODO (but not relevant for now)
  * - Auto-stretch columns to fit when no width is given
- *
  */
 
 interface ColProps {
