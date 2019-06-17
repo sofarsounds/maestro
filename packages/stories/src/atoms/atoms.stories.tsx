@@ -8,8 +8,8 @@ import {
   SecondaryButton,
   TertiaryButton,
   LinkButton,
-  TextField,
-  TextArea,
+  Textfield,
+  Textarea,
   Select
 } from 'uikit';
 
@@ -61,7 +61,7 @@ storiesOf('03 / Atoms|Form Elements', module)
   ))
   .add('Textfield', () => (
     <div>
-      <TextField
+      <Textfield
         disabled={boolean('Disabled', false)}
         hasError={boolean('Has Error', false)}
         placeholder={text('Placeholder', 'Type me hard...')}
@@ -70,7 +70,7 @@ storiesOf('03 / Atoms|Form Elements', module)
   ))
   .add('Textarea', () => (
     <div>
-      <TextArea
+      <Textarea
         rows={number('Rows', 5)}
         disabled={boolean('Disabled', false)}
         hasError={boolean('Has Error', false)}
