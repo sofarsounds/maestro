@@ -12,26 +12,9 @@ const ColContent = styled.div`
   padding: 10px;
 `;
 
-const Spacer = styled.div`
-  height: 50px;
-`;
-
 storiesOf('02 / Layout|Grid', module).add('Grid', () => (
   <div>
-    <Grid>
-      <Col>
-        <ColContent>Col 1</ColContent>
-      </Col>
-      <Col>
-        <ColContent>Col 2</ColContent>
-      </Col>
-      <Col>
-        <ColContent>Col 3</ColContent>
-      </Col>
-    </Grid>
-
-    <Spacer />
-
+    <h1>A standard 12 column grid</h1>
     <Grid>
       <Col xs={12} sm={6} md={3}>
         <ColContent>Col 1</ColContent>
