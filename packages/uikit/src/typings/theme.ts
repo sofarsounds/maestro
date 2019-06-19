@@ -40,7 +40,7 @@ export default interface Theme {
   };
 
   fonts: {
-    fontFamily: string;
+    regular: string;
   };
   fontSizes: {
     base: string;

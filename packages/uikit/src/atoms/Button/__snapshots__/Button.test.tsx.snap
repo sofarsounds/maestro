@@ -132,7 +132,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -346,7 +346,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -591,7 +591,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -770,7 +770,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -937,7 +937,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -1129,7 +1129,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -1313,7 +1313,7 @@ exports[`Buttons Secondary Button renders correctly 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -1503,7 +1503,7 @@ exports[`Buttons Secondary Button renders correctly in disabled state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -1724,7 +1724,7 @@ exports[`Buttons Secondary Button renders correctly in loading state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -1927,7 +1927,7 @@ exports[`Buttons Tertiary Button renders correctly 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -2136,7 +2136,7 @@ exports[`Buttons Tertiary Button renders correctly in disabled state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -2383,7 +2383,7 @@ exports[`Buttons Tertiary Button renders correctly in loading state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],

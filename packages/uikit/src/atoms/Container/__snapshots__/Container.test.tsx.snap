@@ -63,7 +63,7 @@ exports[`Container renders the Container correctly with default width 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -178,7 +178,7 @@ exports[`Container renders the Container correctly with fullscreen width 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -297,7 +297,7 @@ exports[`Container renders the Container correctly with large width 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -416,7 +416,7 @@ exports[`Container renders the Container correctly with small width 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],

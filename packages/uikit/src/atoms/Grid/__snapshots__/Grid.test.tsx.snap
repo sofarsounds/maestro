@@ -68,7 +68,7 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -302,7 +302,7 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -501,7 +501,7 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -827,7 +827,7 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -1088,7 +1088,7 @@ exports[`Grid renders the Grid correctly 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
