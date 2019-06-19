@@ -22,7 +22,7 @@ enum Registry {
   // calendars & time
   calendar = 'e901',
   time = 'e929',
-  timeHand = '928',
+  timeHand = 'e928',
 
   // others
   byob = 'e900',
