@@ -3,7 +3,7 @@ import styled, { css } from '../../lib/styledComponents';
 import { inputBaseStyle, InputProps } from './Base';
 
 export default styled.textarea<InputProps>`
-  ${({ theme, ...props }) => inputBaseStyle(theme, props)};
+  ${inputBaseStyle};
 
   ${({ theme }) => css`
     height: auto;

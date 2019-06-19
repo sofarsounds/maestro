@@ -2,39 +2,40 @@ import Theme from '../../typings/theme';
 import { css } from '../../lib/styledComponents';
 
 export interface InputProps {
+  theme: Theme;
   hasError?: boolean;
 }
 
-export const inputBaseStyle = (theme: Theme, props: InputProps) => css`
+export const inputBaseStyle = (props: InputProps) => css`
   width: 100%;
   height: 44px;
-  background-color: ${theme.colours.whiteDenim};
-  border-radius: ${theme.borderRadius.input};
-  border: 1px solid ${theme.colours.macyGrey};
+  background-color: ${props.theme.colours.whiteDenim};
+  border-radius: ${props.theme.borderRadius.input};
+  border: 1px solid ${props.theme.colours.macyGrey};
   padding: 0 16px;
   outline: none;
   box-shadow: none;
-  transition: ${theme.utils.transition()};
+  transition: ${props.theme.utils.transition()};
 
-  font-size: ${theme.fontSizes.body2};
+  font-size: ${props.theme.fontSizes.body2};
   letter-spacing: 0.1px;
-  color: ${theme.colours.backToBlack};
+  color: ${props.theme.colours.backToBlack};
 
   &:hover {
-    border-color: ${theme.colours.blueSmoke};
+    border-color: ${props.theme.colours.blueSmoke};
   }
 
   &:focus {
-    border-color: ${theme.colours.backToBlack};
+    border-color: ${props.theme.colours.backToBlack};
   }
 
   &:disabled {
-    color: ${theme.colours.macyGrey};
-    border-color: ${theme.colours.macyGrey};
+    color: ${props.theme.colours.macyGrey};
+    border-color: ${props.theme.colours.macyGrey};
   }
 
   ${props.hasError &&
     css`
-      border-color: ${theme.colours.redRedWine};
+      border-color: ${props.theme.colours.redRedWine};
     `}
 `;
