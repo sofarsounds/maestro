@@ -149,30 +149,33 @@ storiesOf('02 / Layout|Spacer', module)
         You can then add t, r, l, b, x, y after m and p for top, right, left,
         bottom, horizontal, vertical
       </p>
-      <ColContent style={{ textAlign: 'left', padding: 0 }}>
-        <Spacer
-          style={{
-            border: '1px solid red',
-            width: '150px',
-            background: '#fff'
-          }}
-          m={text('Margin', null)}
-          mt={text('Margin Top', null)}
-          mr={text('Margin Right', null)}
-          mb={text('Margin Bottom', null)}
-          ml={text('Margin Left', null)}
-          mx={text('Margin X', null)}
-          my={text('Margin Y', null)}
-          p={text('Padding', null)}
-          pt={text('Padding Top', null)}
-          pr={text('Padding Right', null)}
-          pb={text('Padding Bottom', null)}
-          pl={text('Padding Left', null)}
-          px={text('Padding X', null)}
-          py={text('Padding Y', null)}
-        >
-          Position Me
-        </Spacer>
-      </ColContent>
+      <div style={{ background: '#ccc' }}>
+        <div>
+          <Spacer
+            style={{
+              display: 'inline-block',
+              border: '1px solid red',
+              width: '150px',
+              background: '#fff'
+            }}
+            m={text('Margin', null)}
+            mt={text('Margin Top', null)}
+            mr={text('Margin Right', null)}
+            mb={text('Margin Bottom', null)}
+            ml={text('Margin Left', null)}
+            mx={text('Margin X', null)}
+            my={text('Margin Y', null)}
+            p={text('Padding', null)}
+            pt={text('Padding Top', null)}
+            pr={text('Padding Right', null)}
+            pb={text('Padding Bottom', null)}
+            pl={text('Padding Left', null)}
+            px={text('Padding X', null)}
+            py={text('Padding Y', null)}
+          >
+            Position Me
+          </Spacer>
+        </div>
+      </div>
     </div>
   ));

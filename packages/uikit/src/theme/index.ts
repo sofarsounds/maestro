@@ -4,10 +4,11 @@ import Theme from '../typings/theme';
 
 // breakpoints define the minimum width of a device (>=)
 const breakPoints = {
-  phone: 0,
-  tablet: 768,
-  laptop: 992,
-  desktop: 1200
+  xs: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200
 };
 
 const theme: Theme = {
