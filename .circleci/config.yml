@@ -46,6 +46,9 @@ jobs:
         name: Run storybook deploy script
         command: ~/repo/bin/deploy-gh-pages.sh
     - run:
+        name: Chmod
+        command: chmod +x ~/repo/bin/publish-on-npm.sh
+    - run:
         name: Publish on NPM
         command: ~/repo/bin/publish-on-npm.sh
 workflows:
