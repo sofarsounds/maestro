@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "downlevelIteration": true,
     "baseUrl": "./",
     "paths": {
       "uikit": ["../uikit/src"]

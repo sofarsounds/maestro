@@ -81,6 +81,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -102,6 +103,16 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -125,6 +136,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -283,6 +295,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -304,6 +317,16 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -327,6 +350,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -516,6 +540,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -537,6 +562,16 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -560,6 +595,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -683,6 +719,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -704,6 +741,16 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -727,6 +774,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -838,6 +886,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -859,6 +908,16 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -882,6 +941,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -1018,6 +1078,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1039,6 +1100,16 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1062,6 +1133,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -1190,6 +1262,7 @@ exports[`Buttons Secondary Button renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1211,6 +1284,16 @@ exports[`Buttons Secondary Button renders correctly 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1234,6 +1317,7 @@ exports[`Buttons Secondary Button renders correctly 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -1368,6 +1452,7 @@ exports[`Buttons Secondary Button renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1389,6 +1474,16 @@ exports[`Buttons Secondary Button renders correctly in disabled state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1412,6 +1507,7 @@ exports[`Buttons Secondary Button renders correctly in disabled state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -1577,6 +1673,7 @@ exports[`Buttons Secondary Button renders correctly in loading state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1598,6 +1695,16 @@ exports[`Buttons Secondary Button renders correctly in loading state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1621,6 +1728,7 @@ exports[`Buttons Secondary Button renders correctly in loading state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -1768,6 +1876,7 @@ exports[`Buttons Tertiary Button renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1789,6 +1898,16 @@ exports[`Buttons Tertiary Button renders correctly 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1812,6 +1931,7 @@ exports[`Buttons Tertiary Button renders correctly 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -1965,6 +2085,7 @@ exports[`Buttons Tertiary Button renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1986,6 +2107,16 @@ exports[`Buttons Tertiary Button renders correctly in disabled state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2009,6 +2140,7 @@ exports[`Buttons Tertiary Button renders correctly in disabled state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },
@@ -2200,6 +2332,7 @@ exports[`Buttons Tertiary Button renders correctly in loading state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "input": "2px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -2221,6 +2354,16 @@ exports[`Buttons Tertiary Button renders correctly in loading state 1`] = `
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2244,6 +2387,7 @@ exports[`Buttons Tertiary Button renders correctly in loading state 1`] = `
       },
       "media": Object {
         "desktop": [Function],
+        "laptop": [Function],
         "phone": [Function],
         "tablet": [Function],
       },

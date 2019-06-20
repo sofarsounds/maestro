@@ -1,28 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Typography renders a Body 2 correctly 1`] = `
+exports[`FormElements Textarea renders correctly 1`] = `
 .c0 {
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   font-size: 14px;
-  font-weight: normal;
-  -webkit-letter-spacing: 0.3px;
-  -moz-letter-spacing: 0.3px;
-  -ms-letter-spacing: 0.3px;
-  letter-spacing: 0.3px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
   color: #111111;
-  margin: 0;
-  padding: 0;
+  height: auto;
+  min-height: 44px;
+  resize: none;
+  padding: 16px;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
+.c0:hover {
+  border-color: #949494;
 }
 
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 14px;
-  }
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
 }
 
 <ThemeProvider
@@ -95,277 +107,7 @@ exports[`Typography renders a Body 2 correctly 1`] = `
     }
   }
 >
-  <styled.p>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-iwsKbI",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.p",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-iwsKbI",
-          "target": "p",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <p
-        className="c0"
-      >
-        Body 2
-      </p>
-    </StyledComponent>
-  </styled.p>
-</ThemeProvider>
-`;
-
-exports[`Typography renders a Body correctly 1`] = `
-.c0 {
-  font-size: 16px;
-  font-weight: normal;
-  -webkit-letter-spacing: 0.4px;
-  -moz-letter-spacing: 0.4px;
-  -ms-letter-spacing: 0.4px;
-  letter-spacing: 0.4px;
-  color: #111111;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 16px;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 16px;
-  }
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "borderRadius": Object {
-        "button": "4px",
-        "input": "2px",
-      },
-      "colours": Object {
-        "backToBlack": "#111111",
-        "black": "#000000",
-        "blackBetty": "#1E1E1E",
-        "blueSmoke": "#949494",
-        "green100": "#CFEACC",
-        "green200": "#9DDCAC",
-        "green300": "#72D08A",
-        "green400": "#4FC571",
-        "green50": "#E6F7EA",
-        "green500": "#23BA57",
-        "green600": "#10AD52",
-        "green700": "#039842",
-        "green900": "#006721",
-        "macyGrey": "#DBDBDB",
-        "paintItBlack": "#333333",
-        "primary": "#008736",
-        "redRedWine": "#EF4423",
-        "silverSprings": "#F5F5F5",
-        "whiteDenim": "#FFFFFF",
-      },
-      "dimensions": Object {
-        "buttonHeight": "44px",
-        "containerWidth": Object {
-          "default": "800px",
-          "fullscreen": "100%",
-          "large": "1000px",
-          "small": "600px",
-        },
-        "inputHeight": "44px",
-      },
-      "fontSizes": Object {
-        "base": "16px",
-        "body1": "16px",
-        "body2": "14px",
-        "button": "14px",
-        "caption": "10px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
-        "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
-        "title": "74px",
-      },
-      "fonts": Object {
-        "fontFamily": "Open Sans",
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
-      },
-      "utils": Object {
-        "transition": [Function],
-      },
-    }
-  }
->
-  <styled.p>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-dnqmqq",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.p",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-dnqmqq",
-          "target": "p",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <p
-        className="c0"
-      >
-        Body
-      </p>
-    </StyledComponent>
-  </styled.p>
-</ThemeProvider>
-`;
-
-exports[`Typography renders a H1 correctly 1`] = `
-.c0 {
-  font-size: 96px;
-  font-weight: normal;
-  -webkit-letter-spacing: -1.5px;
-  -moz-letter-spacing: -1.5px;
-  -ms-letter-spacing: -1.5px;
-  letter-spacing: -1.5px;
-  color: #111111;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 96px;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 96px;
-  }
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "borderRadius": Object {
-        "button": "4px",
-        "input": "2px",
-      },
-      "colours": Object {
-        "backToBlack": "#111111",
-        "black": "#000000",
-        "blackBetty": "#1E1E1E",
-        "blueSmoke": "#949494",
-        "green100": "#CFEACC",
-        "green200": "#9DDCAC",
-        "green300": "#72D08A",
-        "green400": "#4FC571",
-        "green50": "#E6F7EA",
-        "green500": "#23BA57",
-        "green600": "#10AD52",
-        "green700": "#039842",
-        "green900": "#006721",
-        "macyGrey": "#DBDBDB",
-        "paintItBlack": "#333333",
-        "primary": "#008736",
-        "redRedWine": "#EF4423",
-        "silverSprings": "#F5F5F5",
-        "whiteDenim": "#FFFFFF",
-      },
-      "dimensions": Object {
-        "buttonHeight": "44px",
-        "containerWidth": Object {
-          "default": "800px",
-          "fullscreen": "100%",
-          "large": "1000px",
-          "small": "600px",
-        },
-        "inputHeight": "44px",
-      },
-      "fontSizes": Object {
-        "base": "16px",
-        "body1": "16px",
-        "body2": "14px",
-        "button": "14px",
-        "caption": "10px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
-        "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
-        "title": "74px",
-      },
-      "fonts": Object {
-        "fontFamily": "Open Sans",
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
-      },
-      "utils": Object {
-        "transition": [Function],
-      },
-    }
-  }
->
-  <styled.h1>
+  <styled.textarea>
     <StyledComponent
       forwardedComponent={
         Object {
@@ -380,14 +122,18 @@ exports[`Typography renders a H1 correctly 1`] = `
   ",
               [Function],
               ";
+
+  ",
+              [Function],
+              "
 ",
             ],
           },
-          "displayName": "styled.h1",
+          "displayName": "styled.textarea",
           "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-bwzfXH",
-          "target": "h1",
+          "target": "textarea",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -395,714 +141,49 @@ exports[`Typography renders a H1 correctly 1`] = `
       }
       forwardedRef={null}
     >
-      <h1
+      <textarea
         className="c0"
-      >
-        Heading 1
-      </h1>
+      />
     </StyledComponent>
-  </styled.h1>
+  </styled.textarea>
 </ThemeProvider>
 `;
 
-exports[`Typography renders a H2 correctly 1`] = `
+exports[`FormElements Textarea renders correctly in disabled state 1`] = `
 .c0 {
-  font-size: 60px;
-  font-weight: normal;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
-  color: #111111;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 60px;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 60px;
-  }
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "borderRadius": Object {
-        "button": "4px",
-        "input": "2px",
-      },
-      "colours": Object {
-        "backToBlack": "#111111",
-        "black": "#000000",
-        "blackBetty": "#1E1E1E",
-        "blueSmoke": "#949494",
-        "green100": "#CFEACC",
-        "green200": "#9DDCAC",
-        "green300": "#72D08A",
-        "green400": "#4FC571",
-        "green50": "#E6F7EA",
-        "green500": "#23BA57",
-        "green600": "#10AD52",
-        "green700": "#039842",
-        "green900": "#006721",
-        "macyGrey": "#DBDBDB",
-        "paintItBlack": "#333333",
-        "primary": "#008736",
-        "redRedWine": "#EF4423",
-        "silverSprings": "#F5F5F5",
-        "whiteDenim": "#FFFFFF",
-      },
-      "dimensions": Object {
-        "buttonHeight": "44px",
-        "containerWidth": Object {
-          "default": "800px",
-          "fullscreen": "100%",
-          "large": "1000px",
-          "small": "600px",
-        },
-        "inputHeight": "44px",
-      },
-      "fontSizes": Object {
-        "base": "16px",
-        "body1": "16px",
-        "body2": "14px",
-        "button": "14px",
-        "caption": "10px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
-        "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
-        "title": "74px",
-      },
-      "fonts": Object {
-        "fontFamily": "Open Sans",
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
-      },
-      "utils": Object {
-        "transition": [Function],
-      },
-    }
-  }
->
-  <styled.h2>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.h2",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "h2",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <h2
-        className="c0"
-      >
-        Heading 2
-      </h2>
-    </StyledComponent>
-  </styled.h2>
-</ThemeProvider>
-`;
-
-exports[`Typography renders a H3 correctly 1`] = `
-.c0 {
-  font-size: 48px;
-  font-weight: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  color: #111111;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 48px;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 48px;
-  }
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "borderRadius": Object {
-        "button": "4px",
-        "input": "2px",
-      },
-      "colours": Object {
-        "backToBlack": "#111111",
-        "black": "#000000",
-        "blackBetty": "#1E1E1E",
-        "blueSmoke": "#949494",
-        "green100": "#CFEACC",
-        "green200": "#9DDCAC",
-        "green300": "#72D08A",
-        "green400": "#4FC571",
-        "green50": "#E6F7EA",
-        "green500": "#23BA57",
-        "green600": "#10AD52",
-        "green700": "#039842",
-        "green900": "#006721",
-        "macyGrey": "#DBDBDB",
-        "paintItBlack": "#333333",
-        "primary": "#008736",
-        "redRedWine": "#EF4423",
-        "silverSprings": "#F5F5F5",
-        "whiteDenim": "#FFFFFF",
-      },
-      "dimensions": Object {
-        "buttonHeight": "44px",
-        "containerWidth": Object {
-          "default": "800px",
-          "fullscreen": "100%",
-          "large": "1000px",
-          "small": "600px",
-        },
-        "inputHeight": "44px",
-      },
-      "fontSizes": Object {
-        "base": "16px",
-        "body1": "16px",
-        "body2": "14px",
-        "button": "14px",
-        "caption": "10px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
-        "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
-        "title": "74px",
-      },
-      "fonts": Object {
-        "fontFamily": "Open Sans",
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
-      },
-      "utils": Object {
-        "transition": [Function],
-      },
-    }
-  }
->
-  <styled.h3>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.h3",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "h3",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <h3
-        className="c0"
-      >
-        Heading 3
-      </h3>
-    </StyledComponent>
-  </styled.h3>
-</ThemeProvider>
-`;
-
-exports[`Typography renders a H4 correctly 1`] = `
-.c0 {
-  font-size: 34px;
-  font-weight: normal;
-  -webkit-letter-spacing: 0.3px;
-  -moz-letter-spacing: 0.3px;
-  -ms-letter-spacing: 0.3px;
-  letter-spacing: 0.3px;
-  color: #111111;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 34px;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 34px;
-  }
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "borderRadius": Object {
-        "button": "4px",
-        "input": "2px",
-      },
-      "colours": Object {
-        "backToBlack": "#111111",
-        "black": "#000000",
-        "blackBetty": "#1E1E1E",
-        "blueSmoke": "#949494",
-        "green100": "#CFEACC",
-        "green200": "#9DDCAC",
-        "green300": "#72D08A",
-        "green400": "#4FC571",
-        "green50": "#E6F7EA",
-        "green500": "#23BA57",
-        "green600": "#10AD52",
-        "green700": "#039842",
-        "green900": "#006721",
-        "macyGrey": "#DBDBDB",
-        "paintItBlack": "#333333",
-        "primary": "#008736",
-        "redRedWine": "#EF4423",
-        "silverSprings": "#F5F5F5",
-        "whiteDenim": "#FFFFFF",
-      },
-      "dimensions": Object {
-        "buttonHeight": "44px",
-        "containerWidth": Object {
-          "default": "800px",
-          "fullscreen": "100%",
-          "large": "1000px",
-          "small": "600px",
-        },
-        "inputHeight": "44px",
-      },
-      "fontSizes": Object {
-        "base": "16px",
-        "body1": "16px",
-        "body2": "14px",
-        "button": "14px",
-        "caption": "10px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
-        "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
-        "title": "74px",
-      },
-      "fonts": Object {
-        "fontFamily": "Open Sans",
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
-      },
-      "utils": Object {
-        "transition": [Function],
-      },
-    }
-  }
->
-  <styled.h4>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-ifAKCX",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.h4",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-ifAKCX",
-          "target": "h4",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <h4
-        className="c0"
-      >
-        Heading 4
-      </h4>
-    </StyledComponent>
-  </styled.h4>
-</ThemeProvider>
-`;
-
-exports[`Typography renders a H5 correctly 1`] = `
-.c0 {
-  font-size: 24px;
-  font-weight: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  color: #111111;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 24px;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 24px;
-  }
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "borderRadius": Object {
-        "button": "4px",
-        "input": "2px",
-      },
-      "colours": Object {
-        "backToBlack": "#111111",
-        "black": "#000000",
-        "blackBetty": "#1E1E1E",
-        "blueSmoke": "#949494",
-        "green100": "#CFEACC",
-        "green200": "#9DDCAC",
-        "green300": "#72D08A",
-        "green400": "#4FC571",
-        "green50": "#E6F7EA",
-        "green500": "#23BA57",
-        "green600": "#10AD52",
-        "green700": "#039842",
-        "green900": "#006721",
-        "macyGrey": "#DBDBDB",
-        "paintItBlack": "#333333",
-        "primary": "#008736",
-        "redRedWine": "#EF4423",
-        "silverSprings": "#F5F5F5",
-        "whiteDenim": "#FFFFFF",
-      },
-      "dimensions": Object {
-        "buttonHeight": "44px",
-        "containerWidth": Object {
-          "default": "800px",
-          "fullscreen": "100%",
-          "large": "1000px",
-          "small": "600px",
-        },
-        "inputHeight": "44px",
-      },
-      "fontSizes": Object {
-        "base": "16px",
-        "body1": "16px",
-        "body2": "14px",
-        "button": "14px",
-        "caption": "10px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
-        "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
-        "title": "74px",
-      },
-      "fonts": Object {
-        "fontFamily": "Open Sans",
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
-      },
-      "utils": Object {
-        "transition": [Function],
-      },
-    }
-  }
->
-  <styled.h5>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-EHOje",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.h5",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-EHOje",
-          "target": "h5",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <h5
-        className="c0"
-      >
-        Heading 5
-      </h5>
-    </StyledComponent>
-  </styled.h5>
-</ThemeProvider>
-`;
-
-exports[`Typography renders a H6 correctly 1`] = `
-.c0 {
-  font-size: 20px;
-  font-weight: normal;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  color: #111111;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 20px;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 20px;
-  }
-}
-
-<ThemeProvider
-  theme={
-    Object {
-      "borderRadius": Object {
-        "button": "4px",
-        "input": "2px",
-      },
-      "colours": Object {
-        "backToBlack": "#111111",
-        "black": "#000000",
-        "blackBetty": "#1E1E1E",
-        "blueSmoke": "#949494",
-        "green100": "#CFEACC",
-        "green200": "#9DDCAC",
-        "green300": "#72D08A",
-        "green400": "#4FC571",
-        "green50": "#E6F7EA",
-        "green500": "#23BA57",
-        "green600": "#10AD52",
-        "green700": "#039842",
-        "green900": "#006721",
-        "macyGrey": "#DBDBDB",
-        "paintItBlack": "#333333",
-        "primary": "#008736",
-        "redRedWine": "#EF4423",
-        "silverSprings": "#F5F5F5",
-        "whiteDenim": "#FFFFFF",
-      },
-      "dimensions": Object {
-        "buttonHeight": "44px",
-        "containerWidth": Object {
-          "default": "800px",
-          "fullscreen": "100%",
-          "large": "1000px",
-          "small": "600px",
-        },
-        "inputHeight": "44px",
-      },
-      "fontSizes": Object {
-        "base": "16px",
-        "body1": "16px",
-        "body2": "14px",
-        "button": "14px",
-        "caption": "10px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
-        "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
-        "title": "74px",
-      },
-      "fonts": Object {
-        "fontFamily": "Open Sans",
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
-      },
-      "utils": Object {
-        "transition": [Function],
-      },
-    }
-  }
->
-  <styled.h6>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.h6",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bZQynM",
-          "target": "h6",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <h6
-        className="c0"
-      >
-        Heading 6
-      </h6>
-    </StyledComponent>
-  </styled.h6>
-</ThemeProvider>
-`;
-
-exports[`Typography renders a Subtitle 2 correctly 1`] = `
-.c0 {
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   font-size: 14px;
-  font-weight: normal;
   -webkit-letter-spacing: 0.1px;
   -moz-letter-spacing: 0.1px;
   -ms-letter-spacing: 0.1px;
   letter-spacing: 0.1px;
   color: #111111;
-  margin: 0;
-  padding: 0;
+  height: auto;
+  min-height: 44px;
+  resize: none;
+  padding: 16px;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
+.c0:hover {
+  border-color: #949494;
 }
 
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 14px;
-  }
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
 }
 
 <ThemeProvider
@@ -1175,14 +256,18 @@ exports[`Typography renders a Subtitle 2 correctly 1`] = `
     }
   }
 >
-  <styled.span>
+  <styled.textarea
+    disabled={true}
+    value="Disabled"
+  >
     <StyledComponent
+      disabled={true}
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htoDjs",
+            "componentId": "sc-bwzfXH",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -1190,54 +275,72 @@ exports[`Typography renders a Subtitle 2 correctly 1`] = `
   ",
               [Function],
               ";
+
+  ",
+              [Function],
+              "
 ",
             ],
           },
-          "displayName": "styled.span",
+          "displayName": "styled.textarea",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htoDjs",
-          "target": "span",
+          "styledComponentId": "sc-bwzfXH",
+          "target": "textarea",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
+      value="Disabled"
     >
-      <span
+      <textarea
         className="c0"
-      >
-        Subtitle 2
-      </span>
+        disabled={true}
+        value="Disabled"
+      />
     </StyledComponent>
-  </styled.span>
+  </styled.textarea>
 </ThemeProvider>
 `;
 
-exports[`Typography renders a Subtitle correctly 1`] = `
+exports[`FormElements Textarea renders correctly in error state 1`] = `
 .c0 {
-  font-size: 16px;
-  font-weight: normal;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
   color: #111111;
-  margin: 0;
-  padding: 0;
+  border-color: #EF4423;
+  height: auto;
+  min-height: 44px;
+  resize: none;
+  padding: 16px;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    font-size: 16px;
-  }
+.c0:hover {
+  border-color: #949494;
 }
 
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 16px;
-  }
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
 }
 
 <ThemeProvider
@@ -1310,14 +413,16 @@ exports[`Typography renders a Subtitle correctly 1`] = `
     }
   }
 >
-  <styled.span>
+  <styled.textarea
+    hasError={true}
+  >
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gzVnrw",
+            "componentId": "sc-bwzfXH",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -1325,54 +430,69 @@ exports[`Typography renders a Subtitle correctly 1`] = `
   ",
               [Function],
               ";
+
+  ",
+              [Function],
+              "
 ",
             ],
           },
-          "displayName": "styled.span",
+          "displayName": "styled.textarea",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gzVnrw",
-          "target": "span",
+          "styledComponentId": "sc-bwzfXH",
+          "target": "textarea",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
+      hasError={true}
     >
-      <span
+      <textarea
         className="c0"
-      >
-        Subtitle
-      </span>
+      />
     </StyledComponent>
-  </styled.span>
+  </styled.textarea>
 </ThemeProvider>
 `;
 
-exports[`Typography renders a Title correctly 1`] = `
+exports[`FormElements Textarea renders correctly with a value 1`] = `
 .c0 {
-  font-size: 74px;
-  font-weight: 800;
-  -webkit-letter-spacing: -2px;
-  -moz-letter-spacing: -2px;
-  -ms-letter-spacing: -2px;
-  letter-spacing: -2px;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
   color: #111111;
-  margin: 0;
-  padding: 0;
+  height: auto;
+  min-height: 44px;
+  resize: none;
+  padding: 16px;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    font-size: 74px;
-  }
+.c0:hover {
+  border-color: #949494;
 }
 
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 74px;
-  }
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
 }
 
 <ThemeProvider
@@ -1445,7 +565,159 @@ exports[`Typography renders a Title correctly 1`] = `
     }
   }
 >
-  <styled.h1>
+  <styled.textarea
+    disabled={true}
+    value="I am a textarea"
+  >
+    <StyledComponent
+      disabled={true}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.textarea",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "textarea",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      value="I am a textarea"
+    >
+      <textarea
+        className="c0"
+        disabled={true}
+        value="I am a textarea"
+      />
+    </StyledComponent>
+  </styled.textarea>
+</ThemeProvider>
+`;
+
+exports[`FormElements Textfield renders correctly 1`] = `
+.c0 {
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  color: #111111;
+}
+
+.c0:hover {
+  border-color: #949494;
+}
+
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#008736",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "fontFamily": "Open Sans",
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+      },
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <styled.input>
     <StyledComponent
       forwardedComponent={
         Object {
@@ -1463,11 +735,11 @@ exports[`Typography renders a Title correctly 1`] = `
 ",
             ],
           },
-          "displayName": "styled.h1",
+          "displayName": "styled.input",
           "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
-          "target": "h1",
+          "target": "input",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -1475,39 +747,45 @@ exports[`Typography renders a Title correctly 1`] = `
       }
       forwardedRef={null}
     >
-      <h1
+      <input
         className="c0"
-      >
-        Title
-      </h1>
+      />
     </StyledComponent>
-  </styled.h1>
+  </styled.input>
 </ThemeProvider>
 `;
 
-exports[`Typography renders an Caption correctly 1`] = `
+exports[`FormElements Textfield renders correctly in disabled state 1`] = `
 .c0 {
-  font-size: 10px;
-  font-weight: normal;
-  -webkit-letter-spacing: 0.3px;
-  -moz-letter-spacing: 0.3px;
-  -ms-letter-spacing: 0.3px;
-  letter-spacing: 0.3px;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
   color: #111111;
-  margin: 0;
-  padding: 0;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    font-size: 10px;
-  }
+.c0:hover {
+  border-color: #949494;
 }
 
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 10px;
-  }
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
 }
 
 <ThemeProvider
@@ -1580,14 +858,18 @@ exports[`Typography renders an Caption correctly 1`] = `
     }
   }
 >
-  <styled.span>
+  <styled.input
+    disabled={true}
+    value="Disabled"
+  >
     <StyledComponent
+      disabled={true}
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gqjmRU",
+            "componentId": "sc-bdVaJa",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -1598,52 +880,61 @@ exports[`Typography renders an Caption correctly 1`] = `
 ",
             ],
           },
-          "displayName": "styled.span",
+          "displayName": "styled.input",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gqjmRU",
-          "target": "span",
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
+      value="Disabled"
     >
-      <span
+      <input
         className="c0"
-      >
-        Caption
-      </span>
+        disabled={true}
+        value="Disabled"
+      />
     </StyledComponent>
-  </styled.span>
+  </styled.input>
 </ThemeProvider>
 `;
 
-exports[`Typography renders an Overline correctly 1`] = `
+exports[`FormElements Textfield renders correctly in error state 1`] = `
 .c0 {
-  font-size: 10px;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 1.5px;
-  -moz-letter-spacing: 1.5px;
-  -ms-letter-spacing: 1.5px;
-  letter-spacing: 1.5px;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
   color: #111111;
-  margin: 0;
-  padding: 0;
+  border-color: #EF4423;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    font-size: 10px;
-  }
+.c0:hover {
+  border-color: #949494;
 }
 
-@media (min-width:1200px) {
-  .c0 {
-    font-size: 10px;
-  }
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
 }
 
 <ThemeProvider
@@ -1716,14 +1007,16 @@ exports[`Typography renders an Overline correctly 1`] = `
     }
   }
 >
-  <styled.span>
+  <styled.input
+    hasError={true}
+  >
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-gZMcBi",
+            "componentId": "sc-bdVaJa",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -1734,24 +1027,171 @@ exports[`Typography renders an Overline correctly 1`] = `
 ",
             ],
           },
-          "displayName": "styled.span",
+          "displayName": "styled.input",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-gZMcBi",
-          "target": "span",
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
+      hasError={true}
     >
-      <span
+      <input
         className="c0"
-      >
-        Overline
-      </span>
+      />
     </StyledComponent>
-  </styled.span>
+  </styled.input>
+</ThemeProvider>
+`;
+
+exports[`FormElements Textfield renders correctly with a value 1`] = `
+.c0 {
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  color: #111111;
+}
+
+.c0:hover {
+  border-color: #949494;
+}
+
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#008736",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "fontFamily": "Open Sans",
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "tablet": [Function],
+      },
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <styled.input
+    disabled={true}
+    value="I am a textfield"
+  >
+    <StyledComponent
+      disabled={true}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.input",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      value="I am a textfield"
+    >
+      <input
+        className="c0"
+        disabled={true}
+        value="I am a textfield"
+      />
+    </StyledComponent>
+  </styled.input>
 </ThemeProvider>
 `;
