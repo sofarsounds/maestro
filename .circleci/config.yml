@@ -45,6 +45,9 @@ jobs:
     - run:
         name: Run storybook deploy script
         command: ~/repo/bin/deploy-gh-pages.sh
+    - run:
+        name: Publish on NPM
+        command: ~/repo/bin/publish-on-npm.sh
 workflows:
   version: 2
   build-deploy:
