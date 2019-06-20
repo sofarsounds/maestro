@@ -5,4 +5,4 @@ cd packages/uikit
 
 echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/packages/uikit/.npmrc
 
-npm publish
+npm publish --access public
