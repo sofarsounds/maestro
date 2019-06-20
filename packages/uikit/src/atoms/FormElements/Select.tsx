@@ -3,7 +3,7 @@ import styled from '../../lib/styledComponents';
 import { inputBaseStyle, InputProps } from './Base';
 
 export default styled.select<InputProps>`
-  ${({ theme, ...props }) => inputBaseStyle(theme, props)};
+  ${inputBaseStyle};
 
   -webkit-appearance: none;
   background-position: calc(100% - 16px) 50%;

@@ -40,7 +40,7 @@ const theme: Theme = {
   },
 
   fonts: {
-    fontFamily: 'Open Sans'
+    regular: 'Open Sans'
   },
   fontSizes: {
     base: '16px',

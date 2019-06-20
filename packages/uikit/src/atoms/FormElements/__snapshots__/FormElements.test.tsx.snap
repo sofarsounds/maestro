@@ -93,7 +93,7 @@ exports[`FormElements Textarea renders correctly 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -242,7 +242,7 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -399,7 +399,7 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -551,7 +551,7 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -703,7 +703,7 @@ exports[`FormElements Textfield renders correctly 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -844,7 +844,7 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -993,7 +993,7 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
@@ -1137,7 +1137,7 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
         "title": "74px",
       },
       "fonts": Object {
-        "fontFamily": "Open Sans",
+        "regular": "Open Sans",
       },
       "media": Object {
         "desktop": [Function],
