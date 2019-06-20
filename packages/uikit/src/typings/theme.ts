@@ -62,6 +62,7 @@ export default interface Theme {
 
   media: any;
 
+  ruler: number[];
   dimensions: {
     inputHeight: string;
     buttonHeight: string;

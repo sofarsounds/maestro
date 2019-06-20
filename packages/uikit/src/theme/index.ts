@@ -69,6 +69,7 @@ const theme: Theme = {
     return acc;
   }, {}),
 
+  ruler: Array.from({ length: 21 }, (e, i) => i * 4),
   dimensions: {
     inputHeight: '44px',
     buttonHeight: '44px',
