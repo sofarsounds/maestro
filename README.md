@@ -24,6 +24,11 @@ So if you are creating a new package (whether or not it will end up on the NPM r
 
 You can find the `@sofarsounds` org on the NPM repository at [https://www.npmjs.com/~sofarsounds](https://www.npmjs.com/~sofarsounds)
 
+
+# Best practices
+
+- When developing new UI components, you should use `storybook` to develop the components. This will allow you to develop UI components in an isolated environment without worrying about global CSS impacting the look and feel of the components. You can run the storybook from the root of this repo by running `yarn run storybook`.
+
 # First time setup
 
 To setup this project, run:
