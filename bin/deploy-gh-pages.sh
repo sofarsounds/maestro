@@ -96,7 +96,7 @@ echo "Beginning github pages deployment"
   --dist deploy \
   --add \
   --message 'Storybook deployment [skip ci]' \
-  --user 'GH Deploy <lorchard@mozilla.com>' \
+  --user 'Adam Bull <adamjamesbull@googlemail.com>' \
   --repo https://$GH_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git
 
 echo "Deployed Storybook to $DEPLOY_URL"
