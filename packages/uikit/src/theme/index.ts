@@ -3,7 +3,7 @@ import { css } from '../lib/styledComponents';
 import Theme from '../typings/theme';
 
 // breakpoints define the minimum width of a device (>=)
-const breakPoints = {
+export const breakPoints = {
   xs: 0,
   sm: 576,
   md: 768,

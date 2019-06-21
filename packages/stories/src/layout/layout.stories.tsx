@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withKnobs, select } from '@storybook/addon-knobs';
 
 import { Container, Grid, Col, Spacer } from 'uikit';
 
@@ -158,20 +158,8 @@ storiesOf('02 / Layout|Spacer', module)
               width: '150px',
               background: '#fff'
             }}
-            m={text('Margin', null)}
-            mt={text('Margin Top', null)}
-            mr={text('Margin Right', null)}
-            mb={text('Margin Bottom', null)}
-            ml={text('Margin Left', null)}
-            mx={text('Margin X', null)}
-            my={text('Margin Y', null)}
-            p={text('Padding', null)}
-            pt={text('Padding Top', null)}
-            pr={text('Padding Right', null)}
-            pb={text('Padding Bottom', null)}
-            pl={text('Padding Left', null)}
-            px={text('Padding X', null)}
-            py={text('Padding Y', null)}
+            m={[2, 4, 6, 8]}
+            p={1}
           >
             Position Me
           </Spacer>
