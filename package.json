@@ -11,7 +11,8 @@
     "postinstall": "yarn run bootstrap",
     "lint": "eslint './packages/uikit/**/*.{ts,tsx, js, jsx}'",
     "test": "lerna run test",
-    "test:update": "lerna run test:update"
+    "test:update": "lerna run test:update",
+    "storybook": "lerna run start --stream --scope '@sofarsounds/maestro-storybook'"
   },
   "keywords": [],
   "author": "",
