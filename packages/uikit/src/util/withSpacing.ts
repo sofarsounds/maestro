@@ -35,23 +35,15 @@ export const generateCssProperty = (prop: string, value: string): string => {
 };
 
 const breakPointKeys = Object.keys(breakPoints);
-export const generateSpace = (size: string, where: string, units: any) => {
-  // if it's an array that means it's responsive
-  // [xs, sm, md, lg, xl]
-  // if only 2 are given
-  // [xs, sm] means md, lg, xl will be the same as sm
-
-  if (Array.isArray(units)) {
+export const generateSpace = (screenSize: string, prop: string, size: any) => {
+  if (Array.isArray(size)) {
     let styles: any = [];
-    const sizeIndex = breakPointKeys.indexOf(size);
+    const sizeIndex = breakPointKeys.indexOf(screenSize);
 
     if (sizeIndex > -1) {
-      if (units[sizeIndex]) {
+      if (size[sizeIndex]) {
         styles.push(
-          generateCssProperty(
-            where,
-            `${theme.ruler[Number(units[sizeIndex])]}px`
-          )
+          generateCssProperty(prop, `${theme.ruler[Number(size[sizeIndex])]}px`)
         );
       }
     }
@@ -59,17 +51,15 @@ export const generateSpace = (size: string, where: string, units: any) => {
     return styles;
   }
 
-  return generateCssProperty(where, `${theme.ruler[Number(units)]}px`);
+  return generateCssProperty(prop, `${theme.ruler[Number(size)]}px`);
 };
 
-const loop = (size: string, props: any) => {
+const loop = (screenSize: string, props: any) => {
   let s = '';
 
-  Object.keys(props).forEach(x => {
-    if (/^(m|p)(t|b|r|l)?$/.test(x)) {
-      s += `
-        ${generateSpace(size, x, props[x])}
-      `;
+  Object.keys(props).forEach((key: string) => {
+    if (/^(m|p)(t|b|r|l)?$/.test(key)) {
+      s += generateSpace(screenSize, key, props[key]);
     }
   });
 
