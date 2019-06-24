@@ -1,6 +1,6 @@
 {
-  "name": "sofar-uikit",
-  "version": "1.0.0",
+  "name": "@sofarsounds/maestro",
+  "version": "0.1.4",
   "description": "",
   "main": "index.js",
   "scripts": {
