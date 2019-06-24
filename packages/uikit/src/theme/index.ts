@@ -3,11 +3,12 @@ import { css } from '../lib/styledComponents';
 import Theme from '../typings/theme';
 
 // breakpoints define the minimum width of a device (>=)
-const breakPoints = {
-  phone: 0,
-  tablet: 768,
-  laptop: 992,
-  desktop: 1200
+export const breakPoints = {
+  xs: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200
 };
 
 const theme: Theme = {
@@ -69,6 +70,7 @@ const theme: Theme = {
     return acc;
   }, {}),
 
+  ruler: Array.from({ length: 21 }, (e, i) => i * 4),
   dimensions: {
     inputHeight: '44px',
     buttonHeight: '44px',

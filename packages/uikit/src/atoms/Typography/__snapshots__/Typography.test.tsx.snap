@@ -19,7 +19,7 @@ exports[`Typography renders a Body 2 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 14px;
   }
@@ -84,11 +84,35 @@ exports[`Typography renders a Body 2 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -154,7 +178,7 @@ exports[`Typography renders a Body correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 16px;
   }
@@ -219,11 +243,35 @@ exports[`Typography renders a Body correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -289,7 +337,7 @@ exports[`Typography renders a H1 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 96px;
   }
@@ -354,11 +402,35 @@ exports[`Typography renders a H1 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -424,7 +496,7 @@ exports[`Typography renders a H2 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 60px;
   }
@@ -489,11 +561,35 @@ exports[`Typography renders a H2 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -559,7 +655,7 @@ exports[`Typography renders a H3 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 48px;
   }
@@ -624,11 +720,35 @@ exports[`Typography renders a H3 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -694,7 +814,7 @@ exports[`Typography renders a H4 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 34px;
   }
@@ -759,11 +879,35 @@ exports[`Typography renders a H4 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -829,7 +973,7 @@ exports[`Typography renders a H5 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 24px;
   }
@@ -894,11 +1038,35 @@ exports[`Typography renders a H5 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -964,7 +1132,7 @@ exports[`Typography renders a H6 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 20px;
   }
@@ -1029,11 +1197,35 @@ exports[`Typography renders a H6 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1099,7 +1291,7 @@ exports[`Typography renders a Subtitle 2 correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 14px;
   }
@@ -1164,11 +1356,35 @@ exports[`Typography renders a Subtitle 2 correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1234,7 +1450,7 @@ exports[`Typography renders a Subtitle correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 16px;
   }
@@ -1299,11 +1515,35 @@ exports[`Typography renders a Subtitle correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1369,7 +1609,7 @@ exports[`Typography renders a Title correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 74px;
   }
@@ -1434,11 +1674,35 @@ exports[`Typography renders a Title correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1504,7 +1768,7 @@ exports[`Typography renders an Caption correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 10px;
   }
@@ -1569,11 +1833,35 @@ exports[`Typography renders an Caption correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1640,7 +1928,7 @@ exports[`Typography renders an Overline correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c0 {
     font-size: 10px;
   }
@@ -1705,11 +1993,35 @@ exports[`Typography renders an Overline correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },

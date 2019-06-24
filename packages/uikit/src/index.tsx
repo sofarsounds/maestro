@@ -7,6 +7,7 @@ export { default as Container } from './atoms/Container';
 export { default as Grid } from './atoms/Grid';
 export { default as Icon } from './atoms/Icon';
 export { default as Icons } from './atoms/Icon/registry';
+export { default as Spacer } from './atoms/Spacer';
 
 export { default as theme } from './theme';
 export { default as GlobalStyle } from './theme/global';
