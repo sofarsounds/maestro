@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-// import { action } from '@storybook/addon-actions';
-// import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
 import { Grid, Col, withShadow } from 'uikit';
 
