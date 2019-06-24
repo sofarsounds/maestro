@@ -90,7 +90,7 @@ storiesOf('03 / Atoms|Form Elements', module)
   .add('Textarea', () => (
     <div>
       <Textarea
-        rows={number('Containers', 5)}
+        rows={number('Rows', 5)}
         disabled={boolean('Disabled', false)}
         hasError={boolean('Has Error', false)}
         placeholder={text('Placeholder', 'Type me hard...')}
