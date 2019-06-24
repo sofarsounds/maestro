@@ -148,6 +148,25 @@ export const TertiaryButton = styled(SecondaryButton)`
   `}
 `;
 
+export const QuaternaryButton = styled(TertiaryButton)`
+  ${({ theme, loading }) => css`
+    background: transparent;
+    border-color: ${theme.colours.whiteDenim};
+    color: ${theme.colours.whiteDenim};
+
+    &:hover {
+      border-color: ${theme.colours.whiteDenim};
+      color: ${theme.colours.whiteDenim};
+      background-color: transparent;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      border-color: ${theme.colours.blueSmoke};
+    }
+  `}
+`;
+
 export const LinkButton = styled(SecondaryButton)`
   ${({ theme }) => css`
     background: ${theme.colours.whiteDenim};

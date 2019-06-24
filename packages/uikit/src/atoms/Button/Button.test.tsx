@@ -81,7 +81,21 @@ describe('Buttons', () => {
     });
   });
 
+  
   describe('Tertiary Button', () => {
+    it('renders correctly', () => {
+      expect(setup(TertiaryButton)).toMatchSnapshot();
+    });
+
+    it('renders correctly in disabled state', () => {
+      expect(setup(TertiaryButton, true)).toMatchSnapshot();
+    });
+
+    it('renders correctly in loading state', () => {
+      expect(setup(TertiaryButton, false, true)).toMatchSnapshot();
+    });
+
+  describe('QuaternaryButton', () => {
     it('renders correctly', () => {
       expect(setup(TertiaryButton)).toMatchSnapshot();
     });
