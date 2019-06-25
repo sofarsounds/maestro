@@ -10,7 +10,8 @@
   "exclude": [
     "**/*.test.tsx",
     "**/*.test.ts",
-    "src/test"
+    "src/test",
+    "node_modules"
   ]
 }
 
