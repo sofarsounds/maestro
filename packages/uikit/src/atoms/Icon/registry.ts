@@ -46,6 +46,7 @@ enum Registry {
   tree = 'e92b',
   heartPulse = 'e90c',
   homeWorld = 'e910',
+  travelWorld = 'e915',
   musicTicket = 'e913',
   musicLove = 'e90a'
 }
