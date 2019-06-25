@@ -2,7 +2,8 @@
   "name": "@sofarsounds/maestro",
   "version": "0.1.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index",
+  "module": "dist-es/index.js",
   "scripts": {
     "build:es": "tsc -p ./tsconfig.prod.json --outDir ./dist-es --module es2015",
     "build:commonjs": "tsc -p ./tsconfig.prod.json --outDir ./dist --module commonjs",
