@@ -1,12 +1,10 @@
 import React from 'react';
 import { mount } from 'enzyme';
-// import cases from 'jest-in-case';
 
 import { breakPoints } from '../../theme';
 
 import Responsive from './index';
 
-// const breakpoints = Object.keys(breakPoints);
 const testText = 'i am amazing';
 
 const resize = (newWidth: number) => {
@@ -38,12 +36,6 @@ const generateTestCase = (componentProps: any, hiddenOnBreakPoints: any) => {
     });
   });
 };
-
-// TODO wait until react-dom is updated to not throw an error
-// when using hooks. at the moment it wants you to wrap everything
-// into act(() => ... ). this will be updated soon
-// eslint-disable-next-line
-console.error = jest.fn();
 
 describe('Responsive', () => {
   describe('hide on exact screen sizes', () => {
