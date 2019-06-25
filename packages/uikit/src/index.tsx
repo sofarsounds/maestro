@@ -8,6 +8,7 @@ export { default as Grid } from './atoms/Grid';
 export { default as Icon } from './atoms/Icon';
 export { default as Icons } from './atoms/Icon/registry';
 export { default as Spacer } from './atoms/Spacer';
+export { default as Responsive } from './atoms/Responsive';
 
 export * from './util';
 

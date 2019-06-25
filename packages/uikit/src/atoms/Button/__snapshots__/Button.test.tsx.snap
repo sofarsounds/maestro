@@ -229,6 +229,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -467,6 +468,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
       <button
         className="c0"
         disabled={true}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -736,6 +738,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={true}
         onClick={[Function]}
       >
         Button
@@ -927,6 +930,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -1118,6 +1122,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
       <button
         className="c0"
         disabled={true}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -1334,6 +1339,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={true}
         onClick={[Function]}
       >
         Button
@@ -1548,6 +1554,7 @@ exports[`Buttons Secondary Button renders correctly 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -1762,6 +1769,7 @@ exports[`Buttons Secondary Button renders correctly in disabled state 1`] = `
       <button
         className="c0"
         disabled={true}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -2007,6 +2015,7 @@ exports[`Buttons Secondary Button renders correctly in loading state 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={true}
         onClick={[Function]}
       >
         Button
@@ -2240,6 +2249,7 @@ exports[`Buttons Tertiary Button renders correctly 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -2473,6 +2483,7 @@ exports[`Buttons Tertiary Button renders correctly in disabled state 1`] = `
       <button
         className="c0"
         disabled={true}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -2744,6 +2755,7 @@ exports[`Buttons Tertiary Button renders correctly in loading state 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={true}
         onClick={[Function]}
       >
         Button
