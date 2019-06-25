@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build:es": "tsc -p ./tsconfig.prod.json --outDir ./dist-es --module es2015",
+    "build:commonjs": "tsc -p ./tsconfig.prod.json --outDir ./dist --module commonjs",
+    "build": "yarn run build:commonjs && yarn run build:es && yarn run moveFiles",
     "prepublishOnly": "yarn run build",
+    "moveFiles": "node moveFiles.js",
     "test": "jest --colors",
     "test:update": "yarn jest -u"
   },

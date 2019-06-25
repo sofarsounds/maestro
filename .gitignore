@@ -1,6 +1,8 @@
 node_modules
 
 build/
+dist/
+dist-es/
 yarn-error.log
 
 packages/stories/storybook-static
