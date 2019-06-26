@@ -16,17 +16,17 @@ export const Col = styled.div<ColProps>`
     grid-column-end: span ${xs || 12};
 
     ${sm &&
-      theme.media.tablet`
+      theme.media.md`
       grid-column-end: span ${sm};
     `}
 
     ${md &&
-      theme.media.laptop`
+      theme.media.lg`
       grid-column-end: span ${md};
     `}
 
     ${lg &&
-      theme.media.desktop`
+      theme.media.lg`
       grid-column-end: span ${lg};
     `}
   `}

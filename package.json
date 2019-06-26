@@ -2,7 +2,7 @@
   "name": "sofar-uikit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lerna": "lerna",
     "build": "lerna run build",
@@ -31,8 +31,11 @@
     "eslint-config-prettier": "^4.3.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "fs-extra": "^8.0.1",
+    "glob": "^7.1.4",
+    "react": "^16",
+    "react-dom": "^16"
   },
   "dependencies": {
     "enzyme": "^3.10.0",
