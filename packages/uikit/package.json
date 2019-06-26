@@ -1,13 +1,10 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
-  "main": "dist/index",
-  "module": "dist-es/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build:es": "tsc -p ./tsconfig.prod.json --outDir ./dist-es --module es2015",
-    "build:commonjs": "tsc -p ./tsconfig.prod.json --outDir ./dist --module commonjs",
-    "build": "yarn run build:commonjs && yarn run build:es && yarn run moveFiles",
+    "build": "webpack",
     "prepublishOnly": "yarn run build",
     "moveFiles": "node moveFiles.js",
     "test": "jest --colors",
@@ -17,26 +14,17 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16",
     "react-dom": "^16",
     "typescript": "^3"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
     "color": "^3.1.2",
     "enzyme": "^3.10.0",
     "styled-components": "^4"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
     "@svgr/webpack": "^4.3.0",
     "@types/color": "^3.0.0",
     "@types/enzyme": "^3.9.3",
@@ -45,13 +33,17 @@
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
     "@types/styled-components": "^4.1.16",
-    "awesome-typescript-loader": "^5.2.1",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-react": "^6.24.1",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-styled-components": "^6.3.1",
-    "react-docgen-typescript-loader": "^3.1.0",
+    "terser": "^4.0.0",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.5.1"
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.1",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.35.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.5"
   }
 }
