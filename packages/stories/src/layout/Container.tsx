@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import {  select } from '@storybook/addon-knobs';
+import { select } from '@storybook/addon-knobs';
 
-import { Container, } from 'uikit';
+import { Container } from 'uikit';
 
 const ColContent = styled.div`
   background: #ccc;
@@ -12,16 +12,15 @@ const ColContent = styled.div`
 `;
 
 export default () => (
-    <div>
-      <Container
-        size={select(
-          'Size',
-          ['default', 'small', 'large', 'fullscreen'],
-          'default'
-        )}
-      >
-        <ColContent>Container</ColContent>
-      </Container>
-    </div>
-
-)
+  <div>
+    <Container
+      size={select(
+        'Size',
+        ['default', 'small', 'large', 'fullscreen'],
+        'default'
+      )}
+    >
+      <ColContent>Container</ColContent>
+    </Container>
+  </div>
+);

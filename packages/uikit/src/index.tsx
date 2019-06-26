@@ -13,4 +13,11 @@ export { default as Responsive } from './atoms/Responsive';
 export * from './util';
 
 export { default as theme } from './theme';
+export { default as Theme } from './typings/theme';
 export { default as GlobalStyle } from './theme/global';
+export {
+  ThemeProvider,
+  default as styled,
+  css,
+  keyframes
+} from './lib/styledComponents';
