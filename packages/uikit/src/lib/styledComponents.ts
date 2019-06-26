@@ -10,7 +10,7 @@ const {
   ThemeProvider,
   withTheme
 } = (styledComponents as styledComponents.ThemedStyledComponentsModule<
-  any
+  Theme
 >) as styledComponents.ThemedStyledComponentsModule<Theme>;
 
 export { css, createGlobalStyle, keyframes, ThemeProvider, withTheme };
