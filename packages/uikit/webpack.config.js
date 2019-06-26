@@ -1,14 +1,36 @@
 const path = require('path');
+const webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.tsx',
-  devtool: 'inline-source-map',
+  entry: {
+    '@sofarsounds/maestro': './src/index.tsx',
+    '@sofarsounds/maestro.min': './src/index.tsx'
+  },
+  output: {
+    filename: '[name].js',
+    libraryTarget: 'umd',
+    library: '@sofarsounds/maestro',
+    umdNamedDefine: true,
+    path: path.resolve(__dirname, 'dist')
+  },
+  devtool: 'source-map',
+  optimization: {
+    minimizer: [new TerserPlugin()]
+  },
   module: {
     rules: [
       {
         test: /\.(tsx|ts)?$/,
-        use: 'ts-loader',
+        use: [
+          {
+            loader: 'awesome-typescript-loader',
+            query: {
+              declaration: false
+            }
+          }
+        ],
         exclude: /node_modules/
       },
       {
@@ -26,9 +48,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
-  },
-  output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
   }
 };
