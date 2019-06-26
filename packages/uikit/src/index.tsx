@@ -15,3 +15,4 @@ export * from './util';
 export { default as theme } from './theme';
 export { default as Theme } from './typings/theme';
 export { default as GlobalStyle } from './theme/global';
+export { ThemeProvider } from './lib/styledComponents';
