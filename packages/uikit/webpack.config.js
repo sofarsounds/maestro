@@ -6,7 +6,7 @@ module.exports = {
   mode: 'production',
   entry: './src/index.tsx',
   output: {
-    filename: '[name].js',
+    filename: 'index.js',
     libraryTarget: 'commonjs',
     path: path.resolve(__dirname, 'dist')
   },
@@ -21,12 +21,17 @@ module.exports = {
         use: [
           {
             loader: 'awesome-typescript-loader',
-            query: {
-              declaration: false
+            options: {
+              configFileName: 'tsconfig.prod.json',
+              useBabel: true,
+              babelCore: '@babel/core',
+              babelOptions: {
+                babelrc: false
+              }
             }
           }
-        ],
-        exclude: /node_modules/
+        ]
+        // exclude: /node_modules/
       },
       {
         test: /\.(gif|jpe?g|png|ico)$/,
