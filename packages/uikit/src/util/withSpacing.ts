@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 import theme, { breakPoints } from '../theme';
 
-interface SpacerProps {
+export interface SpacerProps {
   // global margin & padding
   m?: number | number[];
   p?: number | number[]; // margins
