@@ -4,15 +4,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: {
-    '@sofarsounds/maestro': './src/index.tsx',
-    '@sofarsounds/maestro.min': './src/index.tsx'
-  },
+  entry: './src/index.tsx',
   output: {
     filename: '[name].js',
-    libraryTarget: 'umd',
-    library: '@sofarsounds/maestro',
-    umdNamedDefine: true,
+    libraryTarget: 'commonjs',
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'source-map',
