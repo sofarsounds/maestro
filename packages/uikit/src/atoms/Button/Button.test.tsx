@@ -1,13 +1,7 @@
 import React from 'react';
 import { mountWithTheme } from '../../test';
 
-import {
-  BaseButton,
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
-  LinkButton
-} from './index';
+import { BaseButton, PrimaryButton, OutlineButton, LinkButton } from './index';
 
 const onClickMock = jest.fn();
 
@@ -67,45 +61,17 @@ describe('Buttons', () => {
     });
   });
 
-  describe('Secondary Button', () => {
+  describe('Outline Button', () => {
     it('renders correctly', () => {
-      expect(setup(SecondaryButton)).toMatchSnapshot();
+      expect(setup(OutlineButton)).toMatchSnapshot();
     });
 
     it('renders correctly in disabled state', () => {
-      expect(setup(SecondaryButton, true)).toMatchSnapshot();
+      expect(setup(OutlineButton, true)).toMatchSnapshot();
     });
 
     it('renders correctly in loading state', () => {
-      expect(setup(SecondaryButton, false, true)).toMatchSnapshot();
-    });
-  });
-
-  describe('Tertiary Button', () => {
-    it('renders correctly', () => {
-      expect(setup(TertiaryButton)).toMatchSnapshot();
-    });
-
-    it('renders correctly in disabled state', () => {
-      expect(setup(TertiaryButton, true)).toMatchSnapshot();
-    });
-
-    it('renders correctly in loading state', () => {
-      expect(setup(TertiaryButton, false, true)).toMatchSnapshot();
-    });
-  });
-
-  describe('QuaternaryButton', () => {
-    it('renders correctly', () => {
-      expect(setup(TertiaryButton)).toMatchSnapshot();
-    });
-
-    it('renders correctly in disabled state', () => {
-      expect(setup(TertiaryButton, true)).toMatchSnapshot();
-    });
-
-    it('renders correctly in loading state', () => {
-      expect(setup(TertiaryButton, false, true)).toMatchSnapshot();
+      expect(setup(OutlineButton, false, true)).toMatchSnapshot();
     });
   });
 

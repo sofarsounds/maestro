@@ -88,8 +88,12 @@ export const PrimaryButton = styled(BaseButton)`
   `}
 `;
 
-export const SecondaryButton = styled(PrimaryButton)`
-  ${({ theme, loading }) => css`
+interface OutlineButtonProps {
+  colour?: 'primary' | 'black' | 'white';
+}
+
+export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
+  ${({ theme, loading, colour }) => css`
     background: ${theme.colours.whiteDenim};
     color: ${theme.colours.primary};
 
@@ -108,6 +112,38 @@ export const SecondaryButton = styled(PrimaryButton)`
       color: ${theme.colours.blueSmoke};
     }
 
+    ${colour === 'black' &&
+      css`
+        border-color: ${theme.colours.blackBetty};
+        color: ${theme.colours.backToBlack};
+
+        &:hover {
+          border-color: ${theme.colours.backToBlack};
+          color: ${theme.colours.backToBlack};
+        }
+
+        &:focus {
+          background-color: ${theme.colours.macyGrey};
+        }
+      `}
+
+    ${colour === 'white' &&
+      css`
+        border-color: ${theme.colours.whiteDenim};
+        color: ${theme.colours.whiteDenim};
+        background-color: transparent;
+
+        &:hover {
+          border-color: ${theme.colours.whiteDenim};
+          color: ${theme.colours.whiteDenim};
+          background-color: transparent;
+        }
+
+        &:focus {
+          background-color: ${theme.colours.macyGrey};
+        }
+      `}
+      
     ${loading &&
       css`
         :after {
@@ -119,55 +155,7 @@ export const SecondaryButton = styled(PrimaryButton)`
   `}
 `;
 
-export const TertiaryButton = styled(SecondaryButton)`
-  ${({ theme, loading }) => css`
-    background: ${theme.colours.whiteDenim};
-    border-color: ${theme.colours.backToBlack};
-    color: ${theme.colours.backToBlack};
-
-    &:hover {
-      border-color: ${theme.colours.black};
-      color: ${theme.colours.black};
-      background-color: ${theme.colours.whiteDenim};
-    }
-
-    &:focus {
-      background-color: ${theme.colours.macyGrey};
-    }
-
-    ${loading &&
-      css`
-        border-color: ${theme.colours.blueSmoke};
-
-        :after {
-          border-color: ${theme.colours.blueSmoke};
-          border-right-color: transparent;
-          border-top-color: transparent;
-        }
-      `}
-  `}
-`;
-
-export const QuaternaryButton = styled(TertiaryButton)`
-  ${({ theme, loading }) => css`
-    background: transparent;
-    border-color: ${theme.colours.whiteDenim};
-    color: ${theme.colours.whiteDenim};
-
-    &:hover {
-      border-color: ${theme.colours.whiteDenim};
-      color: ${theme.colours.whiteDenim};
-      background-color: transparent;
-    }
-
-    &:disabled {
-      background-color: transparent;
-      border-color: ${theme.colours.blueSmoke};
-    }
-  `}
-`;
-
-export const LinkButton = styled(SecondaryButton)`
+export const LinkButton = styled(OutlineButton)`
   ${({ theme }) => css`
     background: ${theme.colours.whiteDenim};
     border-color: ${theme.colours.whiteDenim};

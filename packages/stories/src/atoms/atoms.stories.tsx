@@ -6,9 +6,7 @@ import styled from 'styled-components';
 
 import {
   PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
-  QuaternaryButton,
+  OutlineButton,
   LinkButton,
   Textfield,
   Textarea,
@@ -38,38 +36,40 @@ storiesOf('03 / Atoms|Form Elements', module)
       </Container>
 
       <Container>
-        <SecondaryButton
+        <OutlineButton
           onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
         >
           {text('Label', 'Button')}
-        </SecondaryButton>
+        </OutlineButton>
       </Container>
 
       <Container>
-        <TertiaryButton
-          onClick={action('Tertiary Button clicked')}
+        <OutlineButton
+          colour="black"
+          onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
         >
           {text('Label', 'Button')}
-        </TertiaryButton>
+        </OutlineButton>
       </Container>
 
       <Inversion>
-        <QuaternaryButton
-          onClick={action('Tertiary Button clicked')}
+        <OutlineButton
+          colour="white"
+          onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
         >
           {text('Label', 'Button')}
-        </QuaternaryButton>
+        </OutlineButton>
       </Inversion>
 
       <Container>
         <LinkButton
-          onClick={action('Link Button clicked')}
+          onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
         >
