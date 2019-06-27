@@ -147,11 +147,13 @@ exports[`Buttons Link Button renders correctly 1`] = `
   }
 >
   <Styled(Styled(Styled(styled.button)))
+    colour="primary"
     disabled={false}
     loading={false}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -361,11 +363,13 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   }
 >
   <Styled(Styled(Styled(styled.button)))
+    colour="primary"
     disabled={true}
     loading={false}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={true}
       forwardedComponent={
         Object {
@@ -606,11 +610,13 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   }
 >
   <Styled(Styled(Styled(styled.button)))
+    colour="primary"
     disabled={false}
     loading={true}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -802,11 +808,13 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   }
 >
   <Styled(Styled(styled.button))
+    colour="primary"
     disabled={false}
     loading={false}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -992,11 +1000,13 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   }
 >
   <Styled(Styled(styled.button))
+    colour="primary"
     disabled={true}
     loading={false}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={true}
       forwardedComponent={
         Object {
@@ -1213,11 +1223,13 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   }
 >
   <Styled(Styled(styled.button))
+    colour="primary"
     disabled={false}
     loading={true}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -1386,11 +1398,13 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   }
 >
   <Styled(styled.button)
+    colour="primary"
     disabled={false}
     loading={false}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -1553,11 +1567,13 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   }
 >
   <Styled(styled.button)
+    colour="primary"
     disabled={true}
     loading={false}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={true}
       forwardedComponent={
         Object {
@@ -1745,11 +1761,13 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   }
 >
   <Styled(styled.button)
+    colour="primary"
     disabled={false}
     loading={true}
     onClick={[Function]}
   >
     <StyledComponent
+      colour="primary"
       disabled={false}
       forwardedComponent={
         Object {
