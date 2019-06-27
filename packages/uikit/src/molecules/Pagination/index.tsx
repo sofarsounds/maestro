@@ -10,7 +10,7 @@ const PaginationWrapper = styled.div`
 `;
 
 export interface PaginationProps {
-  currentPage: number;
+  currentPage?: number;
   onPageChange: (p: number) => void;
   totalRecords: number;
   perPage?: number;
