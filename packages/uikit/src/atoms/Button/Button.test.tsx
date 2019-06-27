@@ -90,7 +90,7 @@ describe('Buttons', () => {
     it('renders correctly in loading state', () => {
       expect(setup(OutlineButton, false, true, 'black')).toMatchSnapshot();
       const wrapper = setup(OutlineButton, false, true, 'black');
-      expect(wrapper.find(OutlineButton).prop('loading')).toBe('loading');
+      expect(wrapper.find(OutlineButton).prop('loading')).toBeTruthy();
     });
   });
 

@@ -10,11 +10,11 @@ export const Title = styled.h1`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.title};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.title};
     `};
   `};
@@ -29,11 +29,11 @@ export const H1 = styled.h1`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.h1};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.h1};
     `};
   `};
@@ -49,11 +49,11 @@ export const H2 = styled.h2`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.h2};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.h2};
     `};
   `};
@@ -69,11 +69,11 @@ export const H3 = styled.h3`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.h3};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.h3};
     `};
   `};
@@ -89,11 +89,11 @@ export const H4 = styled.h4`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.h4};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.h4};
     `};
   `};
@@ -109,11 +109,11 @@ export const H5 = styled.h5`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.h5};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.h5};
     `};
   `};
@@ -129,11 +129,11 @@ export const H6 = styled.h6`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.h6};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.h6};
     `};
   `};
@@ -149,11 +149,11 @@ export const Subtitle = styled.span`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.subtitle1};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.subtitle1};
     `};
   `};
@@ -169,11 +169,11 @@ export const Subtitle2 = styled.span`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.subtitle2};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.subtitle2};
     `};
   `};
@@ -189,11 +189,11 @@ export const Body = styled.p`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.body1};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.body1};
     `};
   `};
@@ -209,11 +209,11 @@ export const Body2 = styled.p`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.body2};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.body2};
     `};
   `};
@@ -230,11 +230,11 @@ export const Overline = styled.span`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.overline};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.overline};
     `};
   `};
@@ -250,11 +250,11 @@ export const Caption = styled.span`
     padding: 0;
 
     // TODO scale up fontSizes
-    ${theme.media.tablet`
+    ${theme.media.md`
       font-size: ${theme.fontSizes.caption};
     `};
 
-    ${theme.media.desktop`
+    ${theme.media.lg`
       font-size: ${theme.fontSizes.caption};
     `};
   `};

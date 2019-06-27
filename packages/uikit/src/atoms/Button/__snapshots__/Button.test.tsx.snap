@@ -135,11 +135,35 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -207,6 +231,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -351,11 +376,35 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -423,6 +472,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
       <button
         className="c0"
         disabled={true}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -598,11 +648,35 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -670,6 +744,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={true}
         onClick={[Function]}
       >
         Button
@@ -796,11 +871,35 @@ exports[`Buttons Outline Button renders correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -862,6 +961,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -988,11 +1088,35 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1054,6 +1178,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
       <button
         className="c0"
         disabled={true}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -1092,6 +1217,8 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   position: relative;
   background: #FFFFFF;
   color: #008736;
+  border-color: #1E1E1E;
+  color: #111111;
 }
 
 .c0:disabled {
@@ -1144,6 +1271,15 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
 .c0:disabled {
   background-color: #FFFFFF;
   color: #949494;
+}
+
+.c0:hover {
+  border-color: #111111;
+  color: #111111;
+}
+
+.c0:focus {
+  background-color: #DBDBDB;
 }
 
 .c0:after {
@@ -1211,11 +1347,35 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1223,13 +1383,13 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   }
 >
   <Styled(Styled(styled.button))
-    colour="primary"
+    colour="black"
     disabled={false}
     loading={true}
     onClick={[Function]}
   >
     <StyledComponent
-      colour="primary"
+      colour="black"
       disabled={false}
       forwardedComponent={
         Object {
@@ -1277,6 +1437,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={true}
         onClick={[Function]}
       >
         Button
@@ -1386,11 +1547,35 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1446,6 +1631,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -1555,11 +1741,35 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1615,6 +1825,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
       <button
         className="c0"
         disabled={true}
+        loading={false}
         onClick={[Function]}
       >
         Button
@@ -1749,11 +1960,35 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "regular": "Open Sans",
       },
       "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "tablet": [Function],
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
       },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
       "utils": Object {
         "transition": [Function],
       },
@@ -1809,6 +2044,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
       <button
         className="c0"
         disabled={false}
+        loading={true}
         onClick={[Function]}
       >
         Button
