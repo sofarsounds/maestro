@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge Default Badge renders the badge correctly 1`] = `
+exports[`Pagination <PageBubble /> renders correctly 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
@@ -26,6 +26,11 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(17,17,17,0.1);
 }
 
 <ThemeProvider
@@ -123,47 +128,61 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
     }
   }
 >
-  <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+  <PageBubble
+    isActive={false}
+    onClick={[MockFunction]}
+    page={2}
+  >
+    <styled.div
+      as="button"
+      clickable={true}
+      onClick={[MockFunction]}
     >
-      <div
-        className="c0"
+      <StyledComponent
+        as="button"
+        clickable={true}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[MockFunction]}
       >
-        1
-      </div>
-    </StyledComponent>
-  </styled.div>
+        <button
+          className="c0"
+          onClick={[MockFunction]}
+        >
+          2
+        </button>
+      </StyledComponent>
+    </styled.div>
+  </PageBubble>
 </ThemeProvider>
 `;
 
-exports[`Badge Primary Badge renders the badge correctly 1`] = `
+exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
@@ -289,45 +308,51 @@ exports[`Badge Primary Badge renders the badge correctly 1`] = `
     }
   }
 >
-  <styled.div
-    colour="primary"
+  <PageBubble
+    isActive={true}
+    onClick={[MockFunction]}
+    page={5}
   >
-    <StyledComponent
+    <styled.div
       colour="primary"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
     >
-      <div
-        className="c0"
+      <StyledComponent
+        colour="primary"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
       >
-        1
-      </div>
-    </StyledComponent>
-  </styled.div>
+        <div
+          className="c0"
+        >
+          5
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </PageBubble>
 </ThemeProvider>
 `;

@@ -4,6 +4,7 @@ interface BadgeProps {
   children: any;
   colour?: 'primary';
   clickable?: boolean;
+  disabled?: boolean;
 }
 
 const Badge = styled.div<BadgeProps>`
@@ -12,10 +13,13 @@ const Badge = styled.div<BadgeProps>`
     height: 36px;
     font-size: ${theme.fontSizes.body2};
     transition: ${theme.utils.transition()};
+    border: none;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
+    user-select: none;
 
     ${clickable &&
       css`
