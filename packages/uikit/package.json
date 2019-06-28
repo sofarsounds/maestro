@@ -7,7 +7,7 @@
     "build": "webpack",
     "prepublishOnly": "yarn run build",
     "moveFiles": "node moveFiles.js",
-    "test": "jest --colors",
+    "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u"
   },
   "keywords": [],
