@@ -3,12 +3,14 @@ export * from './atoms/Button';
 export * from './atoms/Typography';
 export * from './atoms/FormElements';
 export * from './atoms/Grid';
+export { default as Badge } from './atoms/Badge';
 export { default as Container } from './atoms/Container';
 export { default as Grid } from './atoms/Grid';
 export { default as Icon } from './atoms/Icon';
 export { default as Icons } from './atoms/Icon/registry';
 export { default as Spacer } from './atoms/Spacer';
 export { default as Responsive } from './atoms/Responsive';
+export { default as Pagination } from './molecules/Pagination';
 
 export * from './util';
 

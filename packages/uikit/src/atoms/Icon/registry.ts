@@ -5,11 +5,16 @@ enum Registry {
   spotify = 'e926',
   twitter = 'e92f',
   youtube = 'e935',
+  facebookOutline = 'e90b',
+  instagramOutline = 'e911',
+  spotifyOutline = 'e914',
+  twitterOutline = 'e91a',
+  youtubeOutline = 'e91b',
 
   // directional
   caretDown = 'e906',
   caretCircleDown = 'e908',
-  chevronLeft = 'e918',
+  chevronLeft = 'e917',
   chevronRight = 'e920',
   moveVertical = 'e919',
 
@@ -38,7 +43,12 @@ enum Registry {
   pet = 'e91d',
   readGlasses = 'e91e',
   residential = 'e91f',
-  tree = 'e92b'
+  tree = 'e92b',
+  heartPulse = 'e90c',
+  homeWorld = 'e910',
+  travelWorld = 'e915',
+  musicTicket = 'e913',
+  musicLove = 'e90a'
 }
 
 export default Registry;

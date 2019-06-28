@@ -18,14 +18,14 @@ exports[`Buttons Link Button renders correctly 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
   background: #FFFFFF;
   border-color: #FFFFFF;
-  color: #008736;
+  color: #039842;
 }
 
 .c0:disabled {
@@ -96,10 +96,11 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -257,14 +258,14 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
   background: #FFFFFF;
   border-color: #FFFFFF;
-  color: #008736;
+  color: #039842;
 }
 
 .c0:disabled {
@@ -335,10 +336,11 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -498,18 +500,18 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   transition: all .2s ease;
   pointer-events: none;
   cursor: disabled;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   color: transparent !important;
   background-color: #949494;
   border-color: #949494;
   position: relative;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
   background: #FFFFFF;
   border-color: #FFFFFF;
-  color: #008736;
+  color: #039842;
 }
 
 .c0:disabled {
@@ -605,10 +607,11 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -766,8 +769,8 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
 }
 
@@ -809,10 +812,11 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -958,8 +962,8 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
 }
 
@@ -1001,10 +1005,11 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1152,8 +1157,8 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   transition: all .2s ease;
   pointer-events: none;
   cursor: disabled;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   color: transparent !important;
   background-color: #949494;
@@ -1218,10 +1223,11 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1367,11 +1373,11 @@ exports[`Buttons Secondary Button renders correctly 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
 }
 
 .c0:disabled {
@@ -1427,10 +1433,11 @@ exports[`Buttons Secondary Button renders correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1582,11 +1589,11 @@ exports[`Buttons Secondary Button renders correctly in disabled state 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
 }
 
 .c0:disabled {
@@ -1642,10 +1649,11 @@ exports[`Buttons Secondary Button renders correctly in disabled state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1799,15 +1807,15 @@ exports[`Buttons Secondary Button renders correctly in loading state 1`] = `
   transition: all .2s ease;
   pointer-events: none;
   cursor: disabled;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   color: transparent !important;
   background-color: #949494;
   border-color: #949494;
   position: relative;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
 }
 
 .c0:disabled {
@@ -1888,10 +1896,11 @@ exports[`Buttons Secondary Button renders correctly in loading state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -2043,11 +2052,11 @@ exports[`Buttons Tertiary Button renders correctly 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
   background: #FFFFFF;
   border-color: #111111;
   color: #111111;
@@ -2116,10 +2125,11 @@ exports[`Buttons Tertiary Button renders correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -2277,11 +2287,11 @@ exports[`Buttons Tertiary Button renders correctly in disabled state 1`] = `
   text-transform: uppercase;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
   background: #FFFFFF;
   border-color: #111111;
   color: #111111;
@@ -2350,10 +2360,11 @@ exports[`Buttons Tertiary Button renders correctly in disabled state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -2513,15 +2524,15 @@ exports[`Buttons Tertiary Button renders correctly in loading state 1`] = `
   transition: all .2s ease;
   pointer-events: none;
   cursor: disabled;
-  background: #008736;
-  border: 1px solid #008736;
+  background: #039842;
+  border: 1px solid #039842;
   color: #FFFFFF;
   color: transparent !important;
   background-color: #949494;
   border-color: #949494;
   position: relative;
   background: #FFFFFF;
-  color: #008736;
+  color: #039842;
   background: #FFFFFF;
   border-color: #111111;
   color: #111111;
@@ -2622,10 +2633,11 @@ exports[`Buttons Tertiary Button renders correctly in loading state 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
