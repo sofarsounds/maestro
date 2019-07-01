@@ -10,6 +10,7 @@ import {
   Textfield,
   Textarea,
   Select,
+  Input,
   Badge
 } from 'uikit';
 
@@ -89,6 +90,11 @@ storiesOf('03 / Atoms|Form Elements', module)
         <option value="3">Option 3</option>
         <option value="4">Option 4</option>
       </Select>
+    </div>
+  ))
+  .add('Input', () => (
+    <div>
+      <Input isOpen={boolean('isOpen', false)} placeholder={'Select a city'} />
     </div>
   ));
 
