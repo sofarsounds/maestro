@@ -9,7 +9,7 @@ import {
   LinkButton,
   Textfield,
   Textarea,
-  Select
+  Select,
   Badge
 } from 'uikit';
 
