@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { withKnobs, boolean } from '@storybook/addon-knobs';
-import { Pagination, SelectInput } from 'uikit';
+import { withKnobs } from '@storybook/addon-knobs';
+import { Pagination, SelectComponent } from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module)
   .addDecorator(withKnobs)
@@ -54,30 +54,18 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
     <h1>Select</h1>
 
     <div>
-      <SelectInput
-        onClick={action('drop down clicked')}
-        isOpen={boolean('isOpen', false)}
-        placeholder={'Select a city'}
-      />
+      <SelectComponent />
     </div>
   </div>
 ));
 
 storiesOf('05 / Molecules|Select', module).add('Select Input', () => {
-  const openMenu = () => {
-    console.log('opened the menu');
-    action('Opened the menu');
-  };
   return (
     <div>
       <h1>Select</h1>
 
       <div>
-        <SelectInput
-          onClick={() => openMenu()}
-          isOpen={boolean('isOpen', false)}
-          placeholder={'Select a city'}
-        />
+        <SelectComponent />
       </div>
     </div>
   );
