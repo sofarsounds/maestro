@@ -1,13 +1,13 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
     "prepublishOnly": "yarn run build",
     "moveFiles": "node moveFiles.js",
-    "test": "jest --colors",
+    "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u"
   },
   "keywords": [],

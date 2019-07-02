@@ -10,7 +10,8 @@ import {
   LinkButton,
   Textfield,
   Textarea,
-  Select
+  Select,
+  Badge
 } from 'uikit';
 
 const Container = styled.div`
@@ -108,5 +109,22 @@ storiesOf('03 / Atoms|Form Elements', module)
         <option value="3">Option 3</option>
         <option value="4">Option 4</option>
       </Select>
+    </div>
+  ));
+
+storiesOf('03 / Atoms|Others', module)
+  .addDecorator(withKnobs)
+  .add('Badge', () => (
+    <div>
+      <h1>Badge</h1>
+
+      <div style={{ display: 'flex' }}>
+        <Badge clickable={boolean('Clickable', false)}>
+          {text('Content', '1')}
+        </Badge>
+        <Badge colour="primary" clickable={boolean('Clickable', false)}>
+          {text('Content', '1')}
+        </Badge>
+      </div>
     </div>
   ));

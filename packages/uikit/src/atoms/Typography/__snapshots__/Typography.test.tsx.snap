@@ -45,10 +45,11 @@ exports[`Typography renders a Body 2 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -133,6 +134,9 @@ exports[`Typography renders a Body 2 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -204,10 +208,11 @@ exports[`Typography renders a Body correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -292,6 +297,9 @@ exports[`Typography renders a Body correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -363,10 +371,11 @@ exports[`Typography renders a H1 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -451,6 +460,9 @@ exports[`Typography renders a H1 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -522,10 +534,11 @@ exports[`Typography renders a H2 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -610,6 +623,9 @@ exports[`Typography renders a H2 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -681,10 +697,11 @@ exports[`Typography renders a H3 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -769,6 +786,9 @@ exports[`Typography renders a H3 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -840,10 +860,11 @@ exports[`Typography renders a H4 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -928,6 +949,9 @@ exports[`Typography renders a H4 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -999,10 +1023,11 @@ exports[`Typography renders a H5 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1087,6 +1112,9 @@ exports[`Typography renders a H5 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1158,10 +1186,11 @@ exports[`Typography renders a H6 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1246,6 +1275,9 @@ exports[`Typography renders a H6 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1317,10 +1349,11 @@ exports[`Typography renders a Subtitle 2 correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1405,6 +1438,9 @@ exports[`Typography renders a Subtitle 2 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1476,10 +1512,11 @@ exports[`Typography renders a Subtitle correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1564,6 +1601,9 @@ exports[`Typography renders a Subtitle correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1635,10 +1675,11 @@ exports[`Typography renders a Title correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1723,6 +1764,9 @@ exports[`Typography renders a Title correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1794,10 +1838,11 @@ exports[`Typography renders an Caption correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -1882,6 +1927,9 @@ exports[`Typography renders an Caption correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1954,10 +2002,11 @@ exports[`Typography renders an Overline correctly 1`] = `
         "green500": "#23BA57",
         "green600": "#10AD52",
         "green700": "#039842",
+        "green800": "#008736",
         "green900": "#006721",
         "macyGrey": "#DBDBDB",
         "paintItBlack": "#333333",
-        "primary": "#008736",
+        "primary": "#039842",
         "redRedWine": "#EF4423",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
@@ -2039,6 +2088,9 @@ exports[`Typography renders an Overline correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],

@@ -1,0 +1,3088 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination <Compact /> it renders correctly when a middle page is active 1`] = `
+.c3 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #039842;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.c0 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(17,17,17,0.1);
+}
+
+.c1 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c2:before {
+  color: #000;
+}
+
+.c2.icon-facebook:before {
+  content: '\\e90d';
+}
+
+.c2.icon-instagram:before {
+  content: '\\e916';
+}
+
+.c2.icon-spotify:before {
+  content: '\\e926';
+}
+
+.c2.icon-twitter:before {
+  content: '\\e92f';
+}
+
+.c2.icon-youtube:before {
+  content: '\\e935';
+}
+
+.c2.icon-facebookOutline:before {
+  content: '\\e90b';
+}
+
+.c2.icon-instagramOutline:before {
+  content: '\\e911';
+}
+
+.c2.icon-spotifyOutline:before {
+  content: '\\e914';
+}
+
+.c2.icon-twitterOutline:before {
+  content: '\\e91a';
+}
+
+.c2.icon-youtubeOutline:before {
+  content: '\\e91b';
+}
+
+.c2.icon-caretDown:before {
+  content: '\\e906';
+}
+
+.c2.icon-caretCircleDown:before {
+  content: '\\e908';
+}
+
+.c2.icon-chevronLeft:before {
+  content: '\\e917';
+}
+
+.c2.icon-chevronRight:before {
+  content: '\\e920';
+}
+
+.c2.icon-moveVertical:before {
+  content: '\\e919';
+}
+
+.c2.icon-check:before {
+  content: '\\e927';
+}
+
+.c2.icon-checkCircle:before {
+  content: '\\e902';
+}
+
+.c2.icon-alertCircle:before {
+  content: '\\e907';
+}
+
+.c2.icon-alertTriangle:before {
+  content: '\\e930';
+}
+
+.c2.icon-calendar:before {
+  content: '\\e901';
+}
+
+.c2.icon-time:before {
+  content: '\\e929';
+}
+
+.c2.icon-timeHand:before {
+  content: '\\e928';
+}
+
+.c2.icon-byob:before {
+  content: '\\e900';
+}
+
+.c2.icon-close:before {
+  content: '\\e903';
+}
+
+.c2.icon-commercial:before {
+  content: '\\e904';
+}
+
+.c2.icon-disabled:before {
+  content: '\\e905';
+}
+
+.c2.icon-eye:before {
+  content: '\\e909';
+}
+
+.c2.icon-video:before {
+  content: '\\e90e';
+}
+
+.c2.icon-happyMask:before {
+  content: '\\e90f';
+}
+
+.c2.icon-helpCircleOutline:before {
+  content: '\\e912';
+}
+
+.c2.icon-ellipsisHorizontal:before {
+  content: '\\e918';
+}
+
+.c2.icon-no:before {
+  content: '\\e91c';
+}
+
+.c2.icon-pet:before {
+  content: '\\e91d';
+}
+
+.c2.icon-readGlasses:before {
+  content: '\\e91e';
+}
+
+.c2.icon-residential:before {
+  content: '\\e91f';
+}
+
+.c2.icon-tree:before {
+  content: '\\e92b';
+}
+
+.c2.icon-heartPulse:before {
+  content: '\\e90c';
+}
+
+.c2.icon-homeWorld:before {
+  content: '\\e910';
+}
+
+.c2.icon-travelWorld:before {
+  content: '\\e915';
+}
+
+.c2.icon-musicTicket:before {
+  content: '\\e913';
+}
+
+.c2.icon-musicLove:before {
+  content: '\\e90a';
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <Compact
+    currentPage={6}
+    onClickPage={[MockFunction]}
+    totalPages={15}
+  >
+    <PageBubble
+      isActive={false}
+      onClick={[Function]}
+      page={1}
+    >
+      <styled.div
+        as="button"
+        clickable={true}
+        onClick={[Function]}
+      >
+        <StyledComponent
+          as="button"
+          clickable={true}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[Function]}
+        >
+          <button
+            className="c0"
+            onClick={[Function]}
+          >
+            1
+          </button>
+        </StyledComponent>
+      </styled.div>
+    </PageBubble>
+    <Ellipsis>
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c1"
+          >
+            <Icon
+              name="ellipsisHorizontal"
+            >
+              <styled.i
+                className="icon-ellipsisHorizontal"
+              >
+                <StyledComponent
+                  className="icon-ellipsisHorizontal"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    color: ",
+                          [Function],
+                          ";
+  }
+
+  ",
+                          [Function],
+                          "
+
+  ",
+                          "
+    ",
+                          "
+      &.icon-facebook:before {
+        content: '\\\\e90d';
+      }
+    
+      &.icon-instagram:before {
+        content: '\\\\e916';
+      }
+    
+      &.icon-spotify:before {
+        content: '\\\\e926';
+      }
+    
+      &.icon-twitter:before {
+        content: '\\\\e92f';
+      }
+    
+      &.icon-youtube:before {
+        content: '\\\\e935';
+      }
+    
+      &.icon-facebookOutline:before {
+        content: '\\\\e90b';
+      }
+    
+      &.icon-instagramOutline:before {
+        content: '\\\\e911';
+      }
+    
+      &.icon-spotifyOutline:before {
+        content: '\\\\e914';
+      }
+    
+      &.icon-twitterOutline:before {
+        content: '\\\\e91a';
+      }
+    
+      &.icon-youtubeOutline:before {
+        content: '\\\\e91b';
+      }
+    
+      &.icon-caretDown:before {
+        content: '\\\\e906';
+      }
+    
+      &.icon-caretCircleDown:before {
+        content: '\\\\e908';
+      }
+    
+      &.icon-chevronLeft:before {
+        content: '\\\\e917';
+      }
+    
+      &.icon-chevronRight:before {
+        content: '\\\\e920';
+      }
+    
+      &.icon-moveVertical:before {
+        content: '\\\\e919';
+      }
+    
+      &.icon-check:before {
+        content: '\\\\e927';
+      }
+    
+      &.icon-checkCircle:before {
+        content: '\\\\e902';
+      }
+    
+      &.icon-alertCircle:before {
+        content: '\\\\e907';
+      }
+    
+      &.icon-alertTriangle:before {
+        content: '\\\\e930';
+      }
+    
+      &.icon-calendar:before {
+        content: '\\\\e901';
+      }
+    
+      &.icon-time:before {
+        content: '\\\\e929';
+      }
+    
+      &.icon-timeHand:before {
+        content: '\\\\e928';
+      }
+    
+      &.icon-byob:before {
+        content: '\\\\e900';
+      }
+    
+      &.icon-close:before {
+        content: '\\\\e903';
+      }
+    
+      &.icon-commercial:before {
+        content: '\\\\e904';
+      }
+    
+      &.icon-disabled:before {
+        content: '\\\\e905';
+      }
+    
+      &.icon-eye:before {
+        content: '\\\\e909';
+      }
+    
+      &.icon-video:before {
+        content: '\\\\e90e';
+      }
+    
+      &.icon-happyMask:before {
+        content: '\\\\e90f';
+      }
+    
+      &.icon-helpCircleOutline:before {
+        content: '\\\\e912';
+      }
+    
+      &.icon-ellipsisHorizontal:before {
+        content: '\\\\e918';
+      }
+    
+      &.icon-no:before {
+        content: '\\\\e91c';
+      }
+    
+      &.icon-pet:before {
+        content: '\\\\e91d';
+      }
+    
+      &.icon-readGlasses:before {
+        content: '\\\\e91e';
+      }
+    
+      &.icon-residential:before {
+        content: '\\\\e91f';
+      }
+    
+      &.icon-tree:before {
+        content: '\\\\e92b';
+      }
+    
+      &.icon-heartPulse:before {
+        content: '\\\\e90c';
+      }
+    
+      &.icon-homeWorld:before {
+        content: '\\\\e910';
+      }
+    
+      &.icon-travelWorld:before {
+        content: '\\\\e915';
+      }
+    
+      &.icon-musicTicket:before {
+        content: '\\\\e913';
+      }
+    
+      &.icon-musicLove:before {
+        content: '\\\\e90a';
+      }
+    ",
+                          "
+  ",
+                          ";
+",
+                        ],
+                      },
+                      "displayName": "styled.i",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "i",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <i
+                    className="icon-ellipsisHorizontal c2"
+                  />
+                </StyledComponent>
+              </styled.i>
+            </Icon>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Ellipsis>
+    <Pages
+      currentPage={6}
+      displayPages={3}
+      enlargement={5}
+      onClick={[MockFunction]}
+    >
+      <PageBubble
+        isActive={false}
+        key="5"
+        onClick={[Function]}
+        page={5}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c0"
+              onClick={[Function]}
+            >
+              5
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={true}
+        key="6"
+        onClick={[Function]}
+        page={6}
+      >
+        <styled.div
+          colour="primary"
+        >
+          <StyledComponent
+            colour="primary"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c3"
+            >
+              6
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="7"
+        onClick={[Function]}
+        page={7}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c0"
+              onClick={[Function]}
+            >
+              7
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+    </Pages>
+    <Ellipsis>
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c1"
+          >
+            <Icon
+              name="ellipsisHorizontal"
+            >
+              <styled.i
+                className="icon-ellipsisHorizontal"
+              >
+                <StyledComponent
+                  className="icon-ellipsisHorizontal"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    color: ",
+                          [Function],
+                          ";
+  }
+
+  ",
+                          [Function],
+                          "
+
+  ",
+                          "
+    ",
+                          "
+      &.icon-facebook:before {
+        content: '\\\\e90d';
+      }
+    
+      &.icon-instagram:before {
+        content: '\\\\e916';
+      }
+    
+      &.icon-spotify:before {
+        content: '\\\\e926';
+      }
+    
+      &.icon-twitter:before {
+        content: '\\\\e92f';
+      }
+    
+      &.icon-youtube:before {
+        content: '\\\\e935';
+      }
+    
+      &.icon-facebookOutline:before {
+        content: '\\\\e90b';
+      }
+    
+      &.icon-instagramOutline:before {
+        content: '\\\\e911';
+      }
+    
+      &.icon-spotifyOutline:before {
+        content: '\\\\e914';
+      }
+    
+      &.icon-twitterOutline:before {
+        content: '\\\\e91a';
+      }
+    
+      &.icon-youtubeOutline:before {
+        content: '\\\\e91b';
+      }
+    
+      &.icon-caretDown:before {
+        content: '\\\\e906';
+      }
+    
+      &.icon-caretCircleDown:before {
+        content: '\\\\e908';
+      }
+    
+      &.icon-chevronLeft:before {
+        content: '\\\\e917';
+      }
+    
+      &.icon-chevronRight:before {
+        content: '\\\\e920';
+      }
+    
+      &.icon-moveVertical:before {
+        content: '\\\\e919';
+      }
+    
+      &.icon-check:before {
+        content: '\\\\e927';
+      }
+    
+      &.icon-checkCircle:before {
+        content: '\\\\e902';
+      }
+    
+      &.icon-alertCircle:before {
+        content: '\\\\e907';
+      }
+    
+      &.icon-alertTriangle:before {
+        content: '\\\\e930';
+      }
+    
+      &.icon-calendar:before {
+        content: '\\\\e901';
+      }
+    
+      &.icon-time:before {
+        content: '\\\\e929';
+      }
+    
+      &.icon-timeHand:before {
+        content: '\\\\e928';
+      }
+    
+      &.icon-byob:before {
+        content: '\\\\e900';
+      }
+    
+      &.icon-close:before {
+        content: '\\\\e903';
+      }
+    
+      &.icon-commercial:before {
+        content: '\\\\e904';
+      }
+    
+      &.icon-disabled:before {
+        content: '\\\\e905';
+      }
+    
+      &.icon-eye:before {
+        content: '\\\\e909';
+      }
+    
+      &.icon-video:before {
+        content: '\\\\e90e';
+      }
+    
+      &.icon-happyMask:before {
+        content: '\\\\e90f';
+      }
+    
+      &.icon-helpCircleOutline:before {
+        content: '\\\\e912';
+      }
+    
+      &.icon-ellipsisHorizontal:before {
+        content: '\\\\e918';
+      }
+    
+      &.icon-no:before {
+        content: '\\\\e91c';
+      }
+    
+      &.icon-pet:before {
+        content: '\\\\e91d';
+      }
+    
+      &.icon-readGlasses:before {
+        content: '\\\\e91e';
+      }
+    
+      &.icon-residential:before {
+        content: '\\\\e91f';
+      }
+    
+      &.icon-tree:before {
+        content: '\\\\e92b';
+      }
+    
+      &.icon-heartPulse:before {
+        content: '\\\\e90c';
+      }
+    
+      &.icon-homeWorld:before {
+        content: '\\\\e910';
+      }
+    
+      &.icon-travelWorld:before {
+        content: '\\\\e915';
+      }
+    
+      &.icon-musicTicket:before {
+        content: '\\\\e913';
+      }
+    
+      &.icon-musicLove:before {
+        content: '\\\\e90a';
+      }
+    ",
+                          "
+  ",
+                          ";
+",
+                        ],
+                      },
+                      "displayName": "styled.i",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "i",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <i
+                    className="icon-ellipsisHorizontal c2"
+                  />
+                </StyledComponent>
+              </styled.i>
+            </Icon>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Ellipsis>
+    <PageBubble
+      isActive={false}
+      onClick={[Function]}
+      page={15}
+    >
+      <styled.div
+        as="button"
+        clickable={true}
+        onClick={[Function]}
+      >
+        <StyledComponent
+          as="button"
+          clickable={true}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[Function]}
+        >
+          <button
+            className="c0"
+            onClick={[Function]}
+          >
+            15
+          </button>
+        </StyledComponent>
+      </styled.div>
+    </PageBubble>
+  </Compact>
+</ThemeProvider>
+`;
+
+exports[`Pagination <Compact /> it renders correctly when the first page is active 1`] = `
+.c0 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #039842;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.c1 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: rgba(17,17,17,0.1);
+}
+
+.c2 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3 {
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c3:before {
+  color: #000;
+}
+
+.c3.icon-facebook:before {
+  content: '\\e90d';
+}
+
+.c3.icon-instagram:before {
+  content: '\\e916';
+}
+
+.c3.icon-spotify:before {
+  content: '\\e926';
+}
+
+.c3.icon-twitter:before {
+  content: '\\e92f';
+}
+
+.c3.icon-youtube:before {
+  content: '\\e935';
+}
+
+.c3.icon-facebookOutline:before {
+  content: '\\e90b';
+}
+
+.c3.icon-instagramOutline:before {
+  content: '\\e911';
+}
+
+.c3.icon-spotifyOutline:before {
+  content: '\\e914';
+}
+
+.c3.icon-twitterOutline:before {
+  content: '\\e91a';
+}
+
+.c3.icon-youtubeOutline:before {
+  content: '\\e91b';
+}
+
+.c3.icon-caretDown:before {
+  content: '\\e906';
+}
+
+.c3.icon-caretCircleDown:before {
+  content: '\\e908';
+}
+
+.c3.icon-chevronLeft:before {
+  content: '\\e917';
+}
+
+.c3.icon-chevronRight:before {
+  content: '\\e920';
+}
+
+.c3.icon-moveVertical:before {
+  content: '\\e919';
+}
+
+.c3.icon-check:before {
+  content: '\\e927';
+}
+
+.c3.icon-checkCircle:before {
+  content: '\\e902';
+}
+
+.c3.icon-alertCircle:before {
+  content: '\\e907';
+}
+
+.c3.icon-alertTriangle:before {
+  content: '\\e930';
+}
+
+.c3.icon-calendar:before {
+  content: '\\e901';
+}
+
+.c3.icon-time:before {
+  content: '\\e929';
+}
+
+.c3.icon-timeHand:before {
+  content: '\\e928';
+}
+
+.c3.icon-byob:before {
+  content: '\\e900';
+}
+
+.c3.icon-close:before {
+  content: '\\e903';
+}
+
+.c3.icon-commercial:before {
+  content: '\\e904';
+}
+
+.c3.icon-disabled:before {
+  content: '\\e905';
+}
+
+.c3.icon-eye:before {
+  content: '\\e909';
+}
+
+.c3.icon-video:before {
+  content: '\\e90e';
+}
+
+.c3.icon-happyMask:before {
+  content: '\\e90f';
+}
+
+.c3.icon-helpCircleOutline:before {
+  content: '\\e912';
+}
+
+.c3.icon-ellipsisHorizontal:before {
+  content: '\\e918';
+}
+
+.c3.icon-no:before {
+  content: '\\e91c';
+}
+
+.c3.icon-pet:before {
+  content: '\\e91d';
+}
+
+.c3.icon-readGlasses:before {
+  content: '\\e91e';
+}
+
+.c3.icon-residential:before {
+  content: '\\e91f';
+}
+
+.c3.icon-tree:before {
+  content: '\\e92b';
+}
+
+.c3.icon-heartPulse:before {
+  content: '\\e90c';
+}
+
+.c3.icon-homeWorld:before {
+  content: '\\e910';
+}
+
+.c3.icon-travelWorld:before {
+  content: '\\e915';
+}
+
+.c3.icon-musicTicket:before {
+  content: '\\e913';
+}
+
+.c3.icon-musicLove:before {
+  content: '\\e90a';
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <Compact
+    currentPage={1}
+    onClickPage={[MockFunction]}
+    totalPages={15}
+  >
+    <Pages
+      currentPage={1}
+      displayPages={5}
+      onClick={[MockFunction]}
+    >
+      <PageBubble
+        isActive={true}
+        key="1"
+        onClick={[Function]}
+        page={1}
+      >
+        <styled.div
+          colour="primary"
+        >
+          <StyledComponent
+            colour="primary"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c0"
+            >
+              1
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="2"
+        onClick={[Function]}
+        page={2}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c1"
+              onClick={[Function]}
+            >
+              2
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="3"
+        onClick={[Function]}
+        page={3}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c1"
+              onClick={[Function]}
+            >
+              3
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="4"
+        onClick={[Function]}
+        page={4}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c1"
+              onClick={[Function]}
+            >
+              4
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="5"
+        onClick={[Function]}
+        page={5}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c1"
+              onClick={[Function]}
+            >
+              5
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+    </Pages>
+    <Ellipsis>
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c2"
+          >
+            <Icon
+              name="ellipsisHorizontal"
+            >
+              <styled.i
+                className="icon-ellipsisHorizontal"
+              >
+                <StyledComponent
+                  className="icon-ellipsisHorizontal"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          "
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    color: ",
+                          [Function],
+                          ";
+  }
+
+  ",
+                          [Function],
+                          "
+
+  ",
+                          "
+    ",
+                          "
+      &.icon-facebook:before {
+        content: '\\\\e90d';
+      }
+    
+      &.icon-instagram:before {
+        content: '\\\\e916';
+      }
+    
+      &.icon-spotify:before {
+        content: '\\\\e926';
+      }
+    
+      &.icon-twitter:before {
+        content: '\\\\e92f';
+      }
+    
+      &.icon-youtube:before {
+        content: '\\\\e935';
+      }
+    
+      &.icon-facebookOutline:before {
+        content: '\\\\e90b';
+      }
+    
+      &.icon-instagramOutline:before {
+        content: '\\\\e911';
+      }
+    
+      &.icon-spotifyOutline:before {
+        content: '\\\\e914';
+      }
+    
+      &.icon-twitterOutline:before {
+        content: '\\\\e91a';
+      }
+    
+      &.icon-youtubeOutline:before {
+        content: '\\\\e91b';
+      }
+    
+      &.icon-caretDown:before {
+        content: '\\\\e906';
+      }
+    
+      &.icon-caretCircleDown:before {
+        content: '\\\\e908';
+      }
+    
+      &.icon-chevronLeft:before {
+        content: '\\\\e917';
+      }
+    
+      &.icon-chevronRight:before {
+        content: '\\\\e920';
+      }
+    
+      &.icon-moveVertical:before {
+        content: '\\\\e919';
+      }
+    
+      &.icon-check:before {
+        content: '\\\\e927';
+      }
+    
+      &.icon-checkCircle:before {
+        content: '\\\\e902';
+      }
+    
+      &.icon-alertCircle:before {
+        content: '\\\\e907';
+      }
+    
+      &.icon-alertTriangle:before {
+        content: '\\\\e930';
+      }
+    
+      &.icon-calendar:before {
+        content: '\\\\e901';
+      }
+    
+      &.icon-time:before {
+        content: '\\\\e929';
+      }
+    
+      &.icon-timeHand:before {
+        content: '\\\\e928';
+      }
+    
+      &.icon-byob:before {
+        content: '\\\\e900';
+      }
+    
+      &.icon-close:before {
+        content: '\\\\e903';
+      }
+    
+      &.icon-commercial:before {
+        content: '\\\\e904';
+      }
+    
+      &.icon-disabled:before {
+        content: '\\\\e905';
+      }
+    
+      &.icon-eye:before {
+        content: '\\\\e909';
+      }
+    
+      &.icon-video:before {
+        content: '\\\\e90e';
+      }
+    
+      &.icon-happyMask:before {
+        content: '\\\\e90f';
+      }
+    
+      &.icon-helpCircleOutline:before {
+        content: '\\\\e912';
+      }
+    
+      &.icon-ellipsisHorizontal:before {
+        content: '\\\\e918';
+      }
+    
+      &.icon-no:before {
+        content: '\\\\e91c';
+      }
+    
+      &.icon-pet:before {
+        content: '\\\\e91d';
+      }
+    
+      &.icon-readGlasses:before {
+        content: '\\\\e91e';
+      }
+    
+      &.icon-residential:before {
+        content: '\\\\e91f';
+      }
+    
+      &.icon-tree:before {
+        content: '\\\\e92b';
+      }
+    
+      &.icon-heartPulse:before {
+        content: '\\\\e90c';
+      }
+    
+      &.icon-homeWorld:before {
+        content: '\\\\e910';
+      }
+    
+      &.icon-travelWorld:before {
+        content: '\\\\e915';
+      }
+    
+      &.icon-musicTicket:before {
+        content: '\\\\e913';
+      }
+    
+      &.icon-musicLove:before {
+        content: '\\\\e90a';
+      }
+    ",
+                          "
+  ",
+                          ";
+",
+                        ],
+                      },
+                      "displayName": "styled.i",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "i",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <i
+                    className="icon-ellipsisHorizontal c3"
+                  />
+                </StyledComponent>
+              </styled.i>
+            </Icon>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Ellipsis>
+    <PageBubble
+      isActive={false}
+      onClick={[Function]}
+      page={15}
+    >
+      <styled.div
+        as="button"
+        clickable={true}
+        onClick={[Function]}
+      >
+        <StyledComponent
+          as="button"
+          clickable={true}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[Function]}
+        >
+          <button
+            className="c1"
+            onClick={[Function]}
+          >
+            15
+          </button>
+        </StyledComponent>
+      </styled.div>
+    </PageBubble>
+  </Compact>
+</ThemeProvider>
+`;
+
+exports[`Pagination <Compact /> it renders correctly when the last page is active 1`] = `
+.c3 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #039842;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.c0 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(17,17,17,0.1);
+}
+
+.c1 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c2:before {
+  color: #000;
+}
+
+.c2.icon-facebook:before {
+  content: '\\e90d';
+}
+
+.c2.icon-instagram:before {
+  content: '\\e916';
+}
+
+.c2.icon-spotify:before {
+  content: '\\e926';
+}
+
+.c2.icon-twitter:before {
+  content: '\\e92f';
+}
+
+.c2.icon-youtube:before {
+  content: '\\e935';
+}
+
+.c2.icon-facebookOutline:before {
+  content: '\\e90b';
+}
+
+.c2.icon-instagramOutline:before {
+  content: '\\e911';
+}
+
+.c2.icon-spotifyOutline:before {
+  content: '\\e914';
+}
+
+.c2.icon-twitterOutline:before {
+  content: '\\e91a';
+}
+
+.c2.icon-youtubeOutline:before {
+  content: '\\e91b';
+}
+
+.c2.icon-caretDown:before {
+  content: '\\e906';
+}
+
+.c2.icon-caretCircleDown:before {
+  content: '\\e908';
+}
+
+.c2.icon-chevronLeft:before {
+  content: '\\e917';
+}
+
+.c2.icon-chevronRight:before {
+  content: '\\e920';
+}
+
+.c2.icon-moveVertical:before {
+  content: '\\e919';
+}
+
+.c2.icon-check:before {
+  content: '\\e927';
+}
+
+.c2.icon-checkCircle:before {
+  content: '\\e902';
+}
+
+.c2.icon-alertCircle:before {
+  content: '\\e907';
+}
+
+.c2.icon-alertTriangle:before {
+  content: '\\e930';
+}
+
+.c2.icon-calendar:before {
+  content: '\\e901';
+}
+
+.c2.icon-time:before {
+  content: '\\e929';
+}
+
+.c2.icon-timeHand:before {
+  content: '\\e928';
+}
+
+.c2.icon-byob:before {
+  content: '\\e900';
+}
+
+.c2.icon-close:before {
+  content: '\\e903';
+}
+
+.c2.icon-commercial:before {
+  content: '\\e904';
+}
+
+.c2.icon-disabled:before {
+  content: '\\e905';
+}
+
+.c2.icon-eye:before {
+  content: '\\e909';
+}
+
+.c2.icon-video:before {
+  content: '\\e90e';
+}
+
+.c2.icon-happyMask:before {
+  content: '\\e90f';
+}
+
+.c2.icon-helpCircleOutline:before {
+  content: '\\e912';
+}
+
+.c2.icon-ellipsisHorizontal:before {
+  content: '\\e918';
+}
+
+.c2.icon-no:before {
+  content: '\\e91c';
+}
+
+.c2.icon-pet:before {
+  content: '\\e91d';
+}
+
+.c2.icon-readGlasses:before {
+  content: '\\e91e';
+}
+
+.c2.icon-residential:before {
+  content: '\\e91f';
+}
+
+.c2.icon-tree:before {
+  content: '\\e92b';
+}
+
+.c2.icon-heartPulse:before {
+  content: '\\e90c';
+}
+
+.c2.icon-homeWorld:before {
+  content: '\\e910';
+}
+
+.c2.icon-travelWorld:before {
+  content: '\\e915';
+}
+
+.c2.icon-musicTicket:before {
+  content: '\\e913';
+}
+
+.c2.icon-musicLove:before {
+  content: '\\e90a';
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <Compact
+    currentPage={15}
+    onClickPage={[MockFunction]}
+    totalPages={15}
+  >
+    <PageBubble
+      isActive={false}
+      onClick={[Function]}
+      page={1}
+    >
+      <styled.div
+        as="button"
+        clickable={true}
+        onClick={[Function]}
+      >
+        <StyledComponent
+          as="button"
+          clickable={true}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c3",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[Function]}
+        >
+          <button
+            className="c0"
+            onClick={[Function]}
+          >
+            1
+          </button>
+        </StyledComponent>
+      </styled.div>
+    </PageBubble>
+    <Ellipsis>
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": false,
+                "lastClassName": "c3",
+                "rules": Array [
+                  "
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c1"
+          >
+            <Icon
+              name="ellipsisHorizontal"
+            >
+              <styled.i
+                className="icon-ellipsisHorizontal"
+              >
+                <StyledComponent
+                  className="icon-ellipsisHorizontal"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    color: ",
+                          [Function],
+                          ";
+  }
+
+  ",
+                          [Function],
+                          "
+
+  ",
+                          "
+    ",
+                          "
+      &.icon-facebook:before {
+        content: '\\\\e90d';
+      }
+    
+      &.icon-instagram:before {
+        content: '\\\\e916';
+      }
+    
+      &.icon-spotify:before {
+        content: '\\\\e926';
+      }
+    
+      &.icon-twitter:before {
+        content: '\\\\e92f';
+      }
+    
+      &.icon-youtube:before {
+        content: '\\\\e935';
+      }
+    
+      &.icon-facebookOutline:before {
+        content: '\\\\e90b';
+      }
+    
+      &.icon-instagramOutline:before {
+        content: '\\\\e911';
+      }
+    
+      &.icon-spotifyOutline:before {
+        content: '\\\\e914';
+      }
+    
+      &.icon-twitterOutline:before {
+        content: '\\\\e91a';
+      }
+    
+      &.icon-youtubeOutline:before {
+        content: '\\\\e91b';
+      }
+    
+      &.icon-caretDown:before {
+        content: '\\\\e906';
+      }
+    
+      &.icon-caretCircleDown:before {
+        content: '\\\\e908';
+      }
+    
+      &.icon-chevronLeft:before {
+        content: '\\\\e917';
+      }
+    
+      &.icon-chevronRight:before {
+        content: '\\\\e920';
+      }
+    
+      &.icon-moveVertical:before {
+        content: '\\\\e919';
+      }
+    
+      &.icon-check:before {
+        content: '\\\\e927';
+      }
+    
+      &.icon-checkCircle:before {
+        content: '\\\\e902';
+      }
+    
+      &.icon-alertCircle:before {
+        content: '\\\\e907';
+      }
+    
+      &.icon-alertTriangle:before {
+        content: '\\\\e930';
+      }
+    
+      &.icon-calendar:before {
+        content: '\\\\e901';
+      }
+    
+      &.icon-time:before {
+        content: '\\\\e929';
+      }
+    
+      &.icon-timeHand:before {
+        content: '\\\\e928';
+      }
+    
+      &.icon-byob:before {
+        content: '\\\\e900';
+      }
+    
+      &.icon-close:before {
+        content: '\\\\e903';
+      }
+    
+      &.icon-commercial:before {
+        content: '\\\\e904';
+      }
+    
+      &.icon-disabled:before {
+        content: '\\\\e905';
+      }
+    
+      &.icon-eye:before {
+        content: '\\\\e909';
+      }
+    
+      &.icon-video:before {
+        content: '\\\\e90e';
+      }
+    
+      &.icon-happyMask:before {
+        content: '\\\\e90f';
+      }
+    
+      &.icon-helpCircleOutline:before {
+        content: '\\\\e912';
+      }
+    
+      &.icon-ellipsisHorizontal:before {
+        content: '\\\\e918';
+      }
+    
+      &.icon-no:before {
+        content: '\\\\e91c';
+      }
+    
+      &.icon-pet:before {
+        content: '\\\\e91d';
+      }
+    
+      &.icon-readGlasses:before {
+        content: '\\\\e91e';
+      }
+    
+      &.icon-residential:before {
+        content: '\\\\e91f';
+      }
+    
+      &.icon-tree:before {
+        content: '\\\\e92b';
+      }
+    
+      &.icon-heartPulse:before {
+        content: '\\\\e90c';
+      }
+    
+      &.icon-homeWorld:before {
+        content: '\\\\e910';
+      }
+    
+      &.icon-travelWorld:before {
+        content: '\\\\e915';
+      }
+    
+      &.icon-musicTicket:before {
+        content: '\\\\e913';
+      }
+    
+      &.icon-musicLove:before {
+        content: '\\\\e90a';
+      }
+    ",
+                          "
+  ",
+                          ";
+",
+                        ],
+                      },
+                      "displayName": "styled.i",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "i",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <i
+                    className="icon-ellipsisHorizontal c2"
+                  />
+                </StyledComponent>
+              </styled.i>
+            </Icon>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Ellipsis>
+    <Pages
+      currentPage={15}
+      displayPages={5}
+      enlargement={11}
+      onClick={[MockFunction]}
+    >
+      <PageBubble
+        isActive={false}
+        key="11"
+        onClick={[Function]}
+        page={11}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c0"
+              onClick={[Function]}
+            >
+              11
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="12"
+        onClick={[Function]}
+        page={12}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c0"
+              onClick={[Function]}
+            >
+              12
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="13"
+        onClick={[Function]}
+        page={13}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c0"
+              onClick={[Function]}
+            >
+              13
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={false}
+        key="14"
+        onClick={[Function]}
+        page={14}
+      >
+        <styled.div
+          as="button"
+          clickable={true}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            as="button"
+            clickable={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c0"
+              onClick={[Function]}
+            >
+              14
+            </button>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+      <PageBubble
+        isActive={true}
+        key="15"
+        onClick={[Function]}
+        page={15}
+      >
+        <styled.div
+          colour="primary"
+        >
+          <StyledComponent
+            colour="primary"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c3"
+            >
+              15
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </PageBubble>
+    </Pages>
+  </Compact>
+</ThemeProvider>
+`;

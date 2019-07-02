@@ -14,7 +14,7 @@ enum Registry {
   // directional
   caretDown = 'e906',
   caretCircleDown = 'e908',
-  chevronLeft = 'e918',
+  chevronLeft = 'e917',
   chevronRight = 'e920',
   moveVertical = 'e919',
 

@@ -1,0 +1,577 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination <Ellipsis /> renders correctly 1`] = `
+.c1 {
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c1:before {
+  color: #000;
+}
+
+.c1.icon-facebook:before {
+  content: '\\e90d';
+}
+
+.c1.icon-instagram:before {
+  content: '\\e916';
+}
+
+.c1.icon-spotify:before {
+  content: '\\e926';
+}
+
+.c1.icon-twitter:before {
+  content: '\\e92f';
+}
+
+.c1.icon-youtube:before {
+  content: '\\e935';
+}
+
+.c1.icon-facebookOutline:before {
+  content: '\\e90b';
+}
+
+.c1.icon-instagramOutline:before {
+  content: '\\e911';
+}
+
+.c1.icon-spotifyOutline:before {
+  content: '\\e914';
+}
+
+.c1.icon-twitterOutline:before {
+  content: '\\e91a';
+}
+
+.c1.icon-youtubeOutline:before {
+  content: '\\e91b';
+}
+
+.c1.icon-caretDown:before {
+  content: '\\e906';
+}
+
+.c1.icon-caretCircleDown:before {
+  content: '\\e908';
+}
+
+.c1.icon-chevronLeft:before {
+  content: '\\e917';
+}
+
+.c1.icon-chevronRight:before {
+  content: '\\e920';
+}
+
+.c1.icon-moveVertical:before {
+  content: '\\e919';
+}
+
+.c1.icon-check:before {
+  content: '\\e927';
+}
+
+.c1.icon-checkCircle:before {
+  content: '\\e902';
+}
+
+.c1.icon-alertCircle:before {
+  content: '\\e907';
+}
+
+.c1.icon-alertTriangle:before {
+  content: '\\e930';
+}
+
+.c1.icon-calendar:before {
+  content: '\\e901';
+}
+
+.c1.icon-time:before {
+  content: '\\e929';
+}
+
+.c1.icon-timeHand:before {
+  content: '\\e928';
+}
+
+.c1.icon-byob:before {
+  content: '\\e900';
+}
+
+.c1.icon-close:before {
+  content: '\\e903';
+}
+
+.c1.icon-commercial:before {
+  content: '\\e904';
+}
+
+.c1.icon-disabled:before {
+  content: '\\e905';
+}
+
+.c1.icon-eye:before {
+  content: '\\e909';
+}
+
+.c1.icon-video:before {
+  content: '\\e90e';
+}
+
+.c1.icon-happyMask:before {
+  content: '\\e90f';
+}
+
+.c1.icon-helpCircleOutline:before {
+  content: '\\e912';
+}
+
+.c1.icon-ellipsisHorizontal:before {
+  content: '\\e918';
+}
+
+.c1.icon-no:before {
+  content: '\\e91c';
+}
+
+.c1.icon-pet:before {
+  content: '\\e91d';
+}
+
+.c1.icon-readGlasses:before {
+  content: '\\e91e';
+}
+
+.c1.icon-residential:before {
+  content: '\\e91f';
+}
+
+.c1.icon-tree:before {
+  content: '\\e92b';
+}
+
+.c1.icon-heartPulse:before {
+  content: '\\e90c';
+}
+
+.c1.icon-homeWorld:before {
+  content: '\\e910';
+}
+
+.c1.icon-travelWorld:before {
+  content: '\\e915';
+}
+
+.c1.icon-musicTicket:before {
+  content: '\\e913';
+}
+
+.c1.icon-musicLove:before {
+  content: '\\e90a';
+}
+
+.c0 {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "74px",
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+    }
+  }
+>
+  <Ellipsis>
+    <styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c0"
+        >
+          <Icon
+            name="ellipsisHorizontal"
+          >
+            <styled.i
+              className="icon-ellipsisHorizontal"
+            >
+              <StyledComponent
+                className="icon-ellipsisHorizontal"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  font-family: 'sofarsounds-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    color: ",
+                        [Function],
+                        ";
+  }
+
+  ",
+                        [Function],
+                        "
+
+  ",
+                        "
+    ",
+                        "
+      &.icon-facebook:before {
+        content: '\\\\e90d';
+      }
+    
+      &.icon-instagram:before {
+        content: '\\\\e916';
+      }
+    
+      &.icon-spotify:before {
+        content: '\\\\e926';
+      }
+    
+      &.icon-twitter:before {
+        content: '\\\\e92f';
+      }
+    
+      &.icon-youtube:before {
+        content: '\\\\e935';
+      }
+    
+      &.icon-facebookOutline:before {
+        content: '\\\\e90b';
+      }
+    
+      &.icon-instagramOutline:before {
+        content: '\\\\e911';
+      }
+    
+      &.icon-spotifyOutline:before {
+        content: '\\\\e914';
+      }
+    
+      &.icon-twitterOutline:before {
+        content: '\\\\e91a';
+      }
+    
+      &.icon-youtubeOutline:before {
+        content: '\\\\e91b';
+      }
+    
+      &.icon-caretDown:before {
+        content: '\\\\e906';
+      }
+    
+      &.icon-caretCircleDown:before {
+        content: '\\\\e908';
+      }
+    
+      &.icon-chevronLeft:before {
+        content: '\\\\e917';
+      }
+    
+      &.icon-chevronRight:before {
+        content: '\\\\e920';
+      }
+    
+      &.icon-moveVertical:before {
+        content: '\\\\e919';
+      }
+    
+      &.icon-check:before {
+        content: '\\\\e927';
+      }
+    
+      &.icon-checkCircle:before {
+        content: '\\\\e902';
+      }
+    
+      &.icon-alertCircle:before {
+        content: '\\\\e907';
+      }
+    
+      &.icon-alertTriangle:before {
+        content: '\\\\e930';
+      }
+    
+      &.icon-calendar:before {
+        content: '\\\\e901';
+      }
+    
+      &.icon-time:before {
+        content: '\\\\e929';
+      }
+    
+      &.icon-timeHand:before {
+        content: '\\\\e928';
+      }
+    
+      &.icon-byob:before {
+        content: '\\\\e900';
+      }
+    
+      &.icon-close:before {
+        content: '\\\\e903';
+      }
+    
+      &.icon-commercial:before {
+        content: '\\\\e904';
+      }
+    
+      &.icon-disabled:before {
+        content: '\\\\e905';
+      }
+    
+      &.icon-eye:before {
+        content: '\\\\e909';
+      }
+    
+      &.icon-video:before {
+        content: '\\\\e90e';
+      }
+    
+      &.icon-happyMask:before {
+        content: '\\\\e90f';
+      }
+    
+      &.icon-helpCircleOutline:before {
+        content: '\\\\e912';
+      }
+    
+      &.icon-ellipsisHorizontal:before {
+        content: '\\\\e918';
+      }
+    
+      &.icon-no:before {
+        content: '\\\\e91c';
+      }
+    
+      &.icon-pet:before {
+        content: '\\\\e91d';
+      }
+    
+      &.icon-readGlasses:before {
+        content: '\\\\e91e';
+      }
+    
+      &.icon-residential:before {
+        content: '\\\\e91f';
+      }
+    
+      &.icon-tree:before {
+        content: '\\\\e92b';
+      }
+    
+      &.icon-heartPulse:before {
+        content: '\\\\e90c';
+      }
+    
+      &.icon-homeWorld:before {
+        content: '\\\\e910';
+      }
+    
+      &.icon-travelWorld:before {
+        content: '\\\\e915';
+      }
+    
+      &.icon-musicTicket:before {
+        content: '\\\\e913';
+      }
+    
+      &.icon-musicLove:before {
+        content: '\\\\e90a';
+      }
+    ",
+                        "
+  ",
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.i",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <i
+                  className="icon-ellipsisHorizontal c1"
+                />
+              </StyledComponent>
+            </styled.i>
+          </Icon>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Ellipsis>
+</ThemeProvider>
+`;
