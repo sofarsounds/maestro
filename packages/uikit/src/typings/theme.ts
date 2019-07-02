@@ -77,7 +77,7 @@ export default interface Theme {
       lg: string;
       md: string;
       xs: string;
-    }
+    };
   };
 
   borderRadius: {

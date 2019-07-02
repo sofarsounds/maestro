@@ -21,14 +21,14 @@ interface NavbarState {
 }
 
 class Navbar extends React.Component<NavbarProps, NavbarState> {
-  static ItemContainer: any;
-  static Item: any;
+  public static ItemContainer: any;
+  public static Item: any;
 
   public readonly state: NavbarState = {
     open: false
   };
 
-  onToggle = () => {
+  public onToggle = () => {
     const { open } = this.state;
     this.setState({ open: !open });
 
@@ -39,7 +39,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
     }
   };
 
-  render() {
+  public render() {
     const { open } = this.state;
     const { children } = this.props;
 
