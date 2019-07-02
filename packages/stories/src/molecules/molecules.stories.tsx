@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import { withKnobs } from '@storybook/addon-knobs';
-import { Pagination, SelectComponent } from 'uikit';
+import { Pagination } from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module)
   .addDecorator(withKnobs)
@@ -53,20 +53,6 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
   <div>
     <h1>Select</h1>
 
-    <div>
-      <SelectComponent />
-    </div>
+    <div></div>
   </div>
 ));
-
-storiesOf('05 / Molecules|Select', module).add('Select Input', () => {
-  return (
-    <div>
-      <h1>Select</h1>
-
-      <div>
-        <SelectComponent />
-      </div>
-    </div>
-  );
-});

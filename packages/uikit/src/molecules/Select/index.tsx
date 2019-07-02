@@ -5,17 +5,25 @@ import React, { useState } from 'react';
 /* import styled from '../../lib/styledComponents'; */
 
 import SelectInput from './SelectInput';
+/* import SelectMenu from './SelectMenu.tsx'; */
+/* * import { PortalComponent, StickyContainer } from '../../util/index'; *1/ */
 
-const cat = () => {
-  console.log('cat');
-};
+interface SelectProps {
+  placeholder: string;
+  dropEl: Element;
+}
 
-const SelectComponent: React.SFC = ({}) => {
-  const [count] = useState(0);
+const SelectComponent: React.SFC<SelectProps> = ({ placeholder }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      {count}
-      <SelectInput onClick={cat} />
+      <SelectInput
+        isOpen={isOpen}
+        placeholder={placeholder}
+        onClick={() => setIsOpen(!isOpen)}
+      />
+      {isOpen && <h4>I am open</h4>}
     </>
   );
 };
