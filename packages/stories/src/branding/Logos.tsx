@@ -1,61 +1,43 @@
 import React from 'react';
-import styled from 'styled-components';
-
 import { Logo } from 'uikit';
-
-import { Boundary } from '../helpers/components';
-
-const Row = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 50px;
-`;
-
-const Inversion = styled(Row)`
-  background: #000;
-`;
-
-const LogoContainer = styled.div`
-  width: 100px;
-  margin: 0 50px;
-`;
+import { Boundary, Row, Inversion, Container } from '../helpers/components';
 
 export default () => (
   <div>
     <Row>
-      <LogoContainer>
+      <Container>
         <Boundary>
           <Logo />
         </Boundary>
-      </LogoContainer>
-      <LogoContainer>
+      </Container>
+      <Container>
         <Boundary>
           <Logo circle />
         </Boundary>
-      </LogoContainer>
-      <LogoContainer>
+      </Container>
+      <Container>
         <Boundary>
           <Logo cable />
         </Boundary>
-      </LogoContainer>
+      </Container>
     </Row>
 
     <Inversion>
-      <LogoContainer>
+      <Container>
         <Boundary>
           <Logo invert />
         </Boundary>
-      </LogoContainer>
-      <LogoContainer>
+      </Container>
+      <Container>
         <Boundary>
           <Logo circle invert />
         </Boundary>
-      </LogoContainer>
-      <LogoContainer>
+      </Container>
+      <Container>
         <Boundary>
           <Logo cable invert />
         </Boundary>
-      </LogoContainer>
+      </Container>
     </Inversion>
   </div>
 );

@@ -139,6 +139,9 @@ exports[`Typography renders a Body 2 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -301,6 +304,9 @@ exports[`Typography renders a Body correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],
@@ -469,6 +475,9 @@ exports[`Typography renders a H1 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -631,6 +640,9 @@ exports[`Typography renders a H2 correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],
@@ -799,6 +811,9 @@ exports[`Typography renders a H3 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -961,6 +976,9 @@ exports[`Typography renders a H4 correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],
@@ -1129,6 +1147,9 @@ exports[`Typography renders a H5 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1291,6 +1312,9 @@ exports[`Typography renders a H6 correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],
@@ -1459,6 +1483,9 @@ exports[`Typography renders a Subtitle 2 correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1621,6 +1648,9 @@ exports[`Typography renders a Subtitle correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],
@@ -1789,6 +1819,9 @@ exports[`Typography renders a Title correctly 1`] = `
               "
   ",
               [Function],
+              "
+  ",
+              [Function],
               ";
 ",
             ],
@@ -1951,6 +1984,9 @@ exports[`Typography renders an Caption correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],
@@ -2117,6 +2153,9 @@ exports[`Typography renders an Overline correctly 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              "
+  ",
+              [Function],
               "
   ",
               [Function],
