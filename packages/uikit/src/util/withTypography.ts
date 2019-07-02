@@ -1,10 +1,10 @@
 import { css } from '../lib/styledComponents';
 
 interface TypographyProps {
-  align: 'center' | 'left' | 'right';
-  underline: boolean;
-  lineHeight: number;
-  fontWeight: 'lighter' | 'regular' | 'bold';
+  align?: 'center' | 'left' | 'right';
+  underline?: boolean;
+  lineHeight?: number;
+  fontWeight?: 'lighter' | 'regular' | 'bold';
 }
 
 export default ({
@@ -13,23 +13,23 @@ export default ({
   lineHeight,
   fontWeight
 }: TypographyProps) => css`
-  ${!!align &&
+  ${align &&
     css`
-      text-align: ${align};
+      text-align: ${align || 'none'};
     `};
 
-  ${!!underline &&
+  ${underline &&
     css`
       text-decoration: underline;
     `};
 
-  ${!!lineHeight &&
+  ${lineHeight &&
     css`
       line-height: ${lineHeight};
     `};
 
-  ${!!fontWeight &&
+  ${fontWeight &&
     css`
-      font-weight: ${fontWeight};
+      font-weight: ${fontWeight || 'regular'};
     `};
 `;

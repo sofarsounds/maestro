@@ -10,7 +10,7 @@ import {
   LinkButton,
   Textfield,
   Textarea,
-  Select,
+  Select
 } from 'uikit';
 
 storiesOf('03 / Atoms|Form Elements', module)

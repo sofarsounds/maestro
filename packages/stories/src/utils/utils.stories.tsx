@@ -1,9 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-
-import { Grid, Col, withShadow, withTypography } from 'uikit';
-import { Spacer } from 'uikit';
+import { Spacer, Grid, Col, withShadow, withTypography } from 'uikit';
 
 const Block = styled<any>(Col)`
   height: 100px;
