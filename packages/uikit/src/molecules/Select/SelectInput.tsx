@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
-import { inputBaseStyle, InputProps } from './Base';
+import { inputBaseStyle, InputProps } from '../../atoms/FormElements/Base';
 
-import Icon from '../Icon';
+import Icon from '../../atoms/Icon';
 
 interface SelectInputProps {
   isOpen?: boolean;
@@ -17,6 +17,7 @@ interface InputWrapper {
 interface Props {
   placeholder?: string;
   isOpen?: boolean;
+  onClick: () => void;
 }
 
 interface ButtonProps {
@@ -45,13 +46,13 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
   `}
 `;
 
-const Input: React.SFC<Props> = ({ isOpen, placeholder }) => (
+const SelectInput: React.SFC<Props> = ({ isOpen, placeholder, onClick }) => (
   <InputWrapper>
     <InputStyle isOpen={isOpen} placeholder={placeholder} />
-    <Button isOpen={isOpen}>
+    <Button onClick={e => onClick()} isOpen={isOpen}>
       <Icon name={isOpen ? 'caretDown' : 'check'} />
     </Button>
   </InputWrapper>
 );
 
-export default Input;
+export default SelectInput;
