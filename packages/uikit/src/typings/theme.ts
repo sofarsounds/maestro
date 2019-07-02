@@ -26,6 +26,7 @@ export default interface Theme {
 
     // green variations
     green900: string;
+    green800: string;
     green700: string;
     green600: string;
     green500: string;
