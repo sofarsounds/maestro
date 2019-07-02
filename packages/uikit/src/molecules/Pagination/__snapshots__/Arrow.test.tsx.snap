@@ -251,6 +251,11 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -835,6 +840,11 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1422,6 +1432,11 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2006,6 +2021,11 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",

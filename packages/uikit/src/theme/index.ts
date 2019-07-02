@@ -82,6 +82,11 @@ const theme: Theme = {
       default: '800px',
       large: '1000px',
       fullscreen: '100%'
+    },
+    navbarHeight: {
+      lg: '84px',
+      md: '74px',
+      xs: '62px'
     }
   },
 

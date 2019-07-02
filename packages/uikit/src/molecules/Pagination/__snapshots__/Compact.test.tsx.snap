@@ -308,6 +308,11 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1482,6 +1487,11 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2438,6 +2448,11 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
