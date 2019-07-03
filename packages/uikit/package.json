@@ -10,6 +10,31 @@
     "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u"
   },
+  "jest": {
+    "testRegex": "/.*\\.test\\.(tsx|ts)$",
+    "transform": {
+      "^.+\\.(tsx|ts)?$": "ts-jest",
+      "^.+\\.(ttf|woff)?$": "<rootDir>/src/test/fileMock.ts"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "svg",
+      "ttf",
+      "woff"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/test/setupTests.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/test/fileMock.ts"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -38,6 +63,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-react": "^6.24.1",
     "enzyme-adapter-react-16": "^1.14.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest-styled-components": "^6.3.1",
     "terser": "^4.0.0",
     "ts-jest": "^24.0.2",
