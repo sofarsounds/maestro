@@ -12,6 +12,7 @@ export { default as Spacer } from './atoms/Spacer';
 export { default as Responsive } from './atoms/Responsive';
 export { default as Pagination } from './molecules/Pagination';
 export { default as Navbar } from './molecules/Navbar';
+export { default as HeroImage } from './molecules/HeroImage';
 
 export * from './util';
 

@@ -1,6 +1,7 @@
 import { css } from '../lib/styledComponents';
 
 interface TypographyProps {
+  colour?: string;
   align?: 'center' | 'left' | 'right';
   underline?: boolean;
   lineHeight?: number;
@@ -8,11 +9,17 @@ interface TypographyProps {
 }
 
 export default ({
+  colour,
   align,
   underline,
   lineHeight,
   fontWeight
 }: TypographyProps) => css`
+  ${colour &&
+    css`
+      color: ${colour};
+    `};
+
   ${align &&
     css`
       text-align: ${align || 'none'};

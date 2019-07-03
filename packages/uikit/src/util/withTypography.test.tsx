@@ -14,7 +14,7 @@ const generateTestCase = (
   cssVariants: string[] | boolean[] | number[],
   propVariant: string
 ) => {
-  cssVariants.forEach((cssValue: any, index: any) => {
+  cssVariants.forEach((cssValue: any) => {
     let dynamicProp = { [propVariant]: cssValue };
     let wrapper = mount(<Typography {...dynamicProp} />);
     expect(wrapper).toHaveStyleRule(cssProperty, cssValue);
@@ -22,6 +22,13 @@ const generateTestCase = (
 };
 
 describe('Util: withTypography', () => {
+  it('adds a colour property to element', () => {
+    expect(mount(<Typography colour={'red'} />)).toHaveStyleRule(
+      'color',
+      'red'
+    );
+  });
+
   it('adds an aligned property to element', () => {
     expect(mount(<Typography align={'center'} />)).toHaveStyleRule(
       'color',

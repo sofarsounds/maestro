@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { Navbar, Pagination } from 'uikit';
+import { Navbar, Pagination, HeroImage, PrimaryButton } from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
   <div>
@@ -66,3 +66,23 @@ storiesOf('05 / Molecules|Navbar', module).add('Navbar', () => (
     <div style={{ height: '500px' }}>Scrollable Content</div>
   </div>
 ));
+
+storiesOf('05 / Molecules|HeroImage', module)
+  .add('Default', () => (
+    <HeroImage
+      height="400px"
+      imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+      title="I am the Title"
+      subtitle="I am a subtitle"
+    />
+  ))
+  .add('With Children', () => (
+    <HeroImage
+      height="400px"
+      imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+      title="I am the Title"
+      subtitle="I am a subtitle"
+    >
+      <PrimaryButton>An Action</PrimaryButton>
+    </HeroImage>
+  ));
