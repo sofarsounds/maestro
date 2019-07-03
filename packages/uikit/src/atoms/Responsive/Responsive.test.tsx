@@ -1,16 +1,12 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
+import { resize } from '../../test';
 import { breakPoints } from '../../theme';
 
 import Responsive from './index';
 
 const testText = 'i am amazing';
-
-const resize = (newWidth: number) => {
-  (global as any).innerWidth = newWidth;
-  (global as any).dispatchEvent(new Event('resize'));
-};
 
 const generateTestCase = (componentProps: any, hiddenOnBreakPoints: any) => {
   const visibility = Object.keys(componentProps)[0];

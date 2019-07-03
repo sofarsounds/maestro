@@ -73,6 +73,11 @@ export default interface Theme {
       large: string;
       fullscreen: string;
     };
+    navbarHeight: {
+      lg: string;
+      md: string;
+      xs: string;
+    };
   };
 
   borderRadius: {

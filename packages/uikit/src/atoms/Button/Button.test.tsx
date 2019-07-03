@@ -1,25 +1,21 @@
 import React from 'react';
 import { mountWithTheme } from '../../test';
-
-import {
-  BaseButton,
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
-  LinkButton
-} from './index';
+import theme from '../../theme';
+import { BaseButton, PrimaryButton, OutlineButton, LinkButton } from './index';
 
 const onClickMock = jest.fn();
 
 const setup = (
   Component: any,
   disabled: boolean = false,
-  loading: boolean = false
+  loading: boolean = false,
+  colour: string = 'primary'
 ) =>
   mountWithTheme(
     <Component
       disabled={disabled}
       loading={loading}
+      colour={colour}
       onClick={() => onClickMock()}
     >
       Button
@@ -67,31 +63,34 @@ describe('Buttons', () => {
     });
   });
 
-  describe('Secondary Button', () => {
+  describe('Outline Button', () => {
     it('renders correctly', () => {
-      expect(setup(SecondaryButton)).toMatchSnapshot();
+      expect(setup(OutlineButton)).toMatchSnapshot();
+    });
+
+    it('renders white outline Button correctly', () => {
+      const wrapper = setup(OutlineButton, false, false, 'primary');
+      expect(wrapper.find(OutlineButton).prop('colour')).toBe('primary');
+      expect(wrapper).toHaveStyleRule('color', theme.colours.primary);
+      expect(wrapper).toHaveStyleRule('background', theme.colours.whiteDenim);
+      expect(wrapper).toHaveStyleRule(
+        'border',
+        `1px solid ${theme.colours.primary}`
+      );
     });
 
     it('renders correctly in disabled state', () => {
-      expect(setup(SecondaryButton, true)).toMatchSnapshot();
+      expect(setup(OutlineButton, true)).toMatchSnapshot();
+      const wrapper = setup(OutlineButton, true, false, 'white');
+      expect(wrapper.find(OutlineButton).prop('colour')).toBe('white');
+      expect(wrapper).toHaveStyleRule('color', theme.colours.whiteDenim);
+      expect(wrapper).toHaveStyleRule('background', theme.colours.whiteDenim);
     });
 
     it('renders correctly in loading state', () => {
-      expect(setup(SecondaryButton, false, true)).toMatchSnapshot();
-    });
-  });
-
-  describe('Tertiary Button', () => {
-    it('renders correctly', () => {
-      expect(setup(TertiaryButton)).toMatchSnapshot();
-    });
-
-    it('renders correctly in disabled state', () => {
-      expect(setup(TertiaryButton, true)).toMatchSnapshot();
-    });
-
-    it('renders correctly in loading state', () => {
-      expect(setup(TertiaryButton, false, true)).toMatchSnapshot();
+      expect(setup(OutlineButton, false, true, 'black')).toMatchSnapshot();
+      const wrapper = setup(OutlineButton, false, true, 'black');
+      expect(wrapper.find(OutlineButton).prop('loading')).toBeTruthy();
     });
   });
 
