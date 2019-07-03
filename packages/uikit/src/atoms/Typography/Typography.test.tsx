@@ -1,6 +1,8 @@
 import React from 'react';
 import { mountWithTheme } from '../../test';
 
+import theme from '../../theme';
+
 import {
   Title,
   H1,
@@ -17,56 +19,112 @@ import {
   Caption
 } from './index';
 
+const setup = (Component: any, props: any = {}) =>
+  mountWithTheme(<Component {...props}>The Content</Component>);
+
 describe('Typography', () => {
   it('renders a Title correctly', () => {
-    expect(mountWithTheme(<Title>Title</Title>)).toMatchSnapshot();
+    const wrapper = setup(Title);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.title);
+    expect(wrapper).toHaveStyleRule('font-weight', '800');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '-2px');
   });
 
   it('renders a H1 correctly', () => {
-    expect(mountWithTheme(<H1>Heading 1</H1>)).toMatchSnapshot();
+    const wrapper = setup(H1);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.h1);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '-1.5px');
   });
 
   it('renders a H2 correctly', () => {
-    expect(mountWithTheme(<H2>Heading 2</H2>)).toMatchSnapshot();
+    const wrapper = setup(H2);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.h2);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '-0.5px');
   });
 
   it('renders a H3 correctly', () => {
-    expect(mountWithTheme(<H3>Heading 3</H3>)).toMatchSnapshot();
+    const wrapper = setup(H3);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.h3);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', 'normal');
   });
 
   it('renders a H4 correctly', () => {
-    expect(mountWithTheme(<H4>Heading 4</H4>)).toMatchSnapshot();
+    const wrapper = setup(H4);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.h4);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.3px');
   });
 
   it('renders a H5 correctly', () => {
-    expect(mountWithTheme(<H5>Heading 5</H5>)).toMatchSnapshot();
+    const wrapper = setup(H5);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.h5);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', 'normal');
   });
 
   it('renders a H6 correctly', () => {
-    expect(mountWithTheme(<H6>Heading 6</H6>)).toMatchSnapshot();
+    const wrapper = setup(H6);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.h6);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.2px');
   });
 
   it('renders a Subtitle correctly', () => {
-    expect(mountWithTheme(<Subtitle>Subtitle</Subtitle>)).toMatchSnapshot();
+    const wrapper = setup(Subtitle);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.subtitle1);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.2px');
   });
 
-  it('renders a Subtitle 2 correctly', () => {
-    expect(mountWithTheme(<Subtitle2>Subtitle 2</Subtitle2>)).toMatchSnapshot();
+  it('renders a Subtitle2 correctly', () => {
+    const wrapper = setup(Subtitle2);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.subtitle2);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.1px');
   });
 
   it('renders a Body correctly', () => {
-    expect(mountWithTheme(<Body>Body</Body>)).toMatchSnapshot();
+    const wrapper = setup(Body);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.body1);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.4px');
   });
 
-  it('renders a Body 2 correctly', () => {
-    expect(mountWithTheme(<Body2>Body 2</Body2>)).toMatchSnapshot();
+  it('renders a Body2 correctly', () => {
+    const wrapper = setup(Body2);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.body2);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.3px');
   });
 
   it('renders an Overline correctly', () => {
-    expect(mountWithTheme(<Overline>Overline</Overline>)).toMatchSnapshot();
+    const wrapper = setup(Overline);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.overline);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '1.5px');
+    expect(wrapper).toHaveStyleRule('text-transform', 'uppercase');
   });
 
-  it('renders an Caption correctly', () => {
-    expect(mountWithTheme(<Caption>Caption</Caption>)).toMatchSnapshot();
+  it('renders a Caption correctly', () => {
+    const wrapper = setup(Caption);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.caption);
+    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.3px');
   });
 });
