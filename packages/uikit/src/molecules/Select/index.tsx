@@ -1,29 +1,29 @@
-/* export { default as SelectInput } from './SelectInput'; */
-/* export { default as SelectOptions } from './SelectInput'; */
-
-import React, { useState } from 'react';
-/* import styled from '../../lib/styledComponents'; */
+import React, { useState, useRef } from 'react';
 
 import SelectInput from './SelectInput';
-/* import SelectMenu from './SelectMenu.tsx'; */
-/* * import { PortalComponent, StickyContainer } from '../../util/index'; *1/ */
+import { StickyContainer } from '../../util/index';
 
 interface SelectProps {
   placeholder: string;
-  dropEl: Element;
 }
 
 const SelectComponent: React.SFC<SelectProps> = ({ placeholder }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef<any>();
 
   return (
     <>
       <SelectInput
+        innerRef={ref}
         isOpen={isOpen}
         placeholder={placeholder}
         onClick={() => setIsOpen(!isOpen)}
       />
-      {isOpen && <h4>I am open</h4>}
+      {isOpen && (
+        <StickyContainer stickToEl={ref.current}>
+          <h4>I am open</h4>
+        </StickyContainer>
+      )}
     </>
   );
 };

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
@@ -19,6 +18,7 @@ interface Props {
   placeholder?: string;
   isOpen?: boolean;
   onClick: () => void;
+  ref: React.RefObject<HTMLInputElement>;
 }
 
 interface ButtonProps {

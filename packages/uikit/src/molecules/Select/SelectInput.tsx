@@ -18,6 +18,7 @@ interface Props {
   placeholder?: string;
   isOpen?: boolean;
   onClick: () => void;
+  innerRef?: React.RefObject<any>;
 }
 
 interface ButtonProps {
@@ -47,8 +48,13 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
   `}
 `;
 
-const SelectInput: React.SFC<Props> = ({ isOpen, placeholder, onClick }) => (
-  <InputWrapper>
+const SelectInput: React.SFC<Props> = ({
+  isOpen,
+  placeholder,
+  onClick,
+  innerRef
+}) => (
+  <InputWrapper ref={innerRef}>
     <InputStyle isOpen={isOpen} placeholder={placeholder} />
     <Button onClick={e => onClick()} isOpen={isOpen}>
       <Icon name={isOpen ? 'caretDown' : 'check'} />
