@@ -16,7 +16,8 @@ import {
   Body,
   Body2,
   Overline,
-  Caption
+  Caption,
+  FormGroupLabel
 } from './index';
 
 const setup = (Component: any, props: any = {}) =>
@@ -126,5 +127,17 @@ describe('Typography', () => {
     expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.caption);
     expect(wrapper).toHaveStyleRule('font-weight', 'normal');
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.3px');
+  });
+
+  it('renders a FormGroupLabel correctly', () => {
+    const wrapper = setup(FormGroupLabel);
+
+    expect(wrapper).toHaveStyleRule(
+      'font-size',
+      theme.fontSizes.formGroupLabel
+    );
+    expect(wrapper).toHaveStyleRule('font-weight', 'bold');
+    expect(wrapper).toHaveStyleRule('letter-spacing', '0.1px');
+    expect(wrapper).toHaveStyleRule('margin-bottom', '8px');
   });
 });

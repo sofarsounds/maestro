@@ -286,3 +286,16 @@ export const Caption = styled.span`
 
   ${withTypography}
 `;
+
+export const FormGroupLabel = styled.span`
+  ${({ theme }) => css`
+    font-size: ${theme.fontSizes.formGroupLabel};
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    color: ${theme.colours.backToBlack};
+    margin-bottom: ${theme.ruler[2]}px;
+    display: block;
+  `}
+
+  ${withTypography}
+`;
