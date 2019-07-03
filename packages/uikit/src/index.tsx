@@ -13,6 +13,10 @@ export { default as Responsive } from './atoms/Responsive';
 export { default as Pagination } from './molecules/Pagination';
 export { default as Navbar } from './molecules/Navbar';
 
+export { default as Login } from './organisms/Login';
+
+export { Modal, useModal } from './molecules/Modal';
+
 export * from './util';
 
 export { default as theme } from './theme';

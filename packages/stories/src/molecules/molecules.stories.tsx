@@ -2,7 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { Navbar, Pagination } from 'uikit';
+import {
+  Navbar,
+  Pagination,
+  Modal,
+  useModal,
+  PrimaryButton as Button
+} from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
   <div>
@@ -66,3 +72,18 @@ storiesOf('05 / Molecules|Navbar', module).add('Navbar', () => (
     <div style={{ height: '500px' }}>Scrollable Content</div>
   </div>
 ));
+
+function ModalExample() {
+  const [modal, toggleModal] = useModal();
+
+  return (
+    <>
+      <Button onClick={toggleModal}>Click me</Button>
+      <Modal {...modal}>
+        <p>Hello</p>
+      </Modal>
+    </>
+  );
+}
+
+storiesOf('05 / Molecules|Modal', module).add('Modal', () => <ModalExample />);
