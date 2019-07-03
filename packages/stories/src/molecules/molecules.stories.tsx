@@ -1,8 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
-import { Navbar, Pagination, HeroImage, PrimaryButton } from 'uikit';
+import {
+  Navbar,
+  Pagination,
+  HeroImage,
+  PrimaryButton,
+  Textfield,
+  FormGroup
+} from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
   <div>
@@ -85,4 +93,16 @@ storiesOf('05 / Molecules|HeroImage', module)
     >
       <PrimaryButton>An Action</PrimaryButton>
     </HeroImage>
+  ));
+
+storiesOf('05 / Molecules|FormGroup', module)
+  .addDecorator(withKnobs)
+  .add('FormGroup', () => (
+    <FormGroup
+      label={text('Label', 'Email address')}
+      required={boolean('Required', true)}
+      errorMsg={text('Error Msg', null)}
+    >
+      <Textfield placeholder="your@email.com" />
+    </FormGroup>
   ));
