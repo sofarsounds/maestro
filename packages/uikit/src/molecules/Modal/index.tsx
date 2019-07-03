@@ -113,7 +113,7 @@ interface ModalProps {
   hide: Function;
 }
 
-export const Modal: React.FC<ModalProps> = ({ children, isShowing, hide }) =>
+export const Modal: React.SFC<ModalProps> = ({ children, isShowing, hide }) =>
   isShowing
     ? ReactDOM.createPortal(
         <>
