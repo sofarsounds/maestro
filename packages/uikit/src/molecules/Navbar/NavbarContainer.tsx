@@ -1,18 +1,24 @@
 import styled, { css } from '../../lib/styledComponents';
 
-export default styled.div`
-  ${({ theme }) => css`
+interface NavbarContainerProps {
+  fixed?: Boolean;
+}
+
+export default styled.div<NavbarContainerProps>`
+  ${({ theme, fixed }) => css`
     width: 100%;
     height: ${theme.dimensions.navbarHeight.xs};
     background: #000;
     color: ${theme.colours.whiteDenim};
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
-    left: 0;
-    right: 0;
+    ${fixed && css`
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    `}
 
     ${theme.media.md`
       height: ${theme.dimensions.navbarHeight.md};
