@@ -74,13 +74,12 @@ EOF
   curl \
     -H'Content-Type: application/json' \
     -H"Authorization: token $GH_TOKEN" \
-    --data "{\"body\":\"# GitHub Pages Deployment\\nPull Request:\\n$STORYBOOK_PR_URL\\nBranch:\\n$BRANCH_URL\\nStorybook:\\n$DEPLOY_URL\\nBuild:\\n${DEPLOY_URL}dist.zip\"}" \
+    --data "{\"body\":\"# Storybook deployed ⭐️\\nLink:\\n$DEPLOY_URL\\"}" \
     https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues/${STORYBOOK_PR_NUMBER}/comments
 fi
 
 echo "Current working dir:"
 echo $PWD
-
 
 cd ~/repo
 
