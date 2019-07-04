@@ -1,44 +1,8 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import styled, { css } from '../../lib/styledComponents';
 
 import { LinkButton as Button } from '../../';
-
-export interface UseModalProps {
-  isShowing: boolean;
-  hide: Function;
-}
-
-export const useModal = (): [UseModalProps, () => void] => {
-  const [isShowing, setIsShowing] = useState(false);
-
-  function toggle() {
-    setIsShowing(!isShowing);
-  }
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  function handleKeyDown(event: KeyboardEvent) {
-    if (event.keyCode !== 27) return;
-
-    toggle();
-  }
-
-  useEffect(() => {
-    if (isShowing) {
-      document.addEventListener('keydown', handleKeyDown);
-    }
-
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [handleKeyDown, isShowing]);
-
-  const returnValue: UseModalProps = {
-    isShowing,
-    hide: toggle
-  };
-
-  return [returnValue, toggle];
-};
 
 interface ModalWrapperProps {
   children: any;

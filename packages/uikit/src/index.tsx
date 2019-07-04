@@ -15,7 +15,9 @@ export { default as Navbar } from './molecules/Navbar';
 
 export { default as Login } from './organisms/Login';
 
-export { Modal, useModal } from './molecules/Modal';
+export { default as useModal } from './hooks/useModal';
+export { UseModalProps } from './hooks/useModal';
+export { Modal } from './molecules/Modal';
 
 export * from './util';
 
