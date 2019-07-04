@@ -330,7 +330,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1510,7 +1510,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -2472,7 +2472,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",

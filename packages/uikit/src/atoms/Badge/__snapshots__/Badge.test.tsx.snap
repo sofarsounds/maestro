@@ -88,7 +88,7 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -260,7 +260,7 @@ exports[`Badge Primary Badge renders the badge correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
