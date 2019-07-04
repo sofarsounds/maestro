@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -38,11 +37,15 @@ module.exports = {
         loader: 'url-loader?limit=10000'
       },
       {
-        test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
+        test: /\.(otf|eot|ttf|woff|woff2).*$/,
         loader: 'url-loader',
         options: {
           limit: Infinity
         }
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       }
     ]
   },
