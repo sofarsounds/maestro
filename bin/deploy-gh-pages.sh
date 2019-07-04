@@ -74,7 +74,7 @@ EOF
   curl \
     -H'Content-Type: application/json' \
     -H"Authorization: token $GH_TOKEN" \
-    --data "{\"body\":\"# Storybook deployed ⭐️\\nLink:\\n$DEPLOY_URL\\"}" \
+    --data "{\"body\":\"# Storybook deployed ⭐️\\nLink:\\n$DEPLOY_URL\"}" \
     https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/issues/${STORYBOOK_PR_NUMBER}/comments
 fi
 
