@@ -11,7 +11,7 @@ import ItemContainer from './ItemContainer';
 import Item from './Item';
 
 interface NavbarProps {
-  fixed?: Boolean;
+  fixed?: boolean;
   invert?: boolean;
   children: any;
 }

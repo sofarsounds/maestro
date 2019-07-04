@@ -1,7 +1,7 @@
 import styled, { css } from '../../lib/styledComponents';
 
 interface NavbarContainerProps {
-  fixed?: Boolean;
+  fixed?: boolean;
 }
 
 export default styled.div<NavbarContainerProps>`
@@ -13,12 +13,13 @@ export default styled.div<NavbarContainerProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    ${fixed && css`
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-    `}
+    ${fixed &&
+      css`
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      `}
 
     ${theme.media.md`
       height: ${theme.dimensions.navbarHeight.md};
