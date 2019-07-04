@@ -40,6 +40,7 @@ export default createGlobalStyle`
 
     body {
       font-size: ${theme.fontSizes.base};
+      margin: 0px;
     }
 
     html {
