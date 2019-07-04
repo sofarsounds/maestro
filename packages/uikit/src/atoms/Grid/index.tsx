@@ -41,6 +41,7 @@ interface GridProps {
 }
 export default styled.div<GridProps>`
   ${({ cols, gap, colGap, rowGap }) => css`
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(${cols || 12}, 1fr);
 

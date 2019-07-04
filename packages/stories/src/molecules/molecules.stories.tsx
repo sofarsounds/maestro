@@ -9,7 +9,10 @@ import {
   HeroImage,
   PrimaryButton,
   Textfield,
-  FormGroup
+  FormGroup,
+  Footer,
+  Grid,
+  Col
 } from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
@@ -106,3 +109,59 @@ storiesOf('05 / Molecules|FormGroup', module)
       <Textfield placeholder="your@email.com" />
     </FormGroup>
   ));
+
+storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
+  <>
+    <Footer.Top>
+      <Footer.Title>Explore Sofar.</Footer.Title>
+      <Footer.Subtitle>
+        Each month Sofar is happening in <b>413 cities</b> all around the world.
+      </Footer.Subtitle>
+      <Footer.CityInputWrapper>
+        <Textfield placeholder="Type to find your city" />
+      </Footer.CityInputWrapper>
+      <Grid>
+        <Col xs={12} lg={6}>
+          <Footer.LogoWithSlogan />
+        </Col>
+        <Col xs={12} lg={2}>
+          <Footer.SectionHeader>Learn More</Footer.SectionHeader>
+          <Footer.SectionLink href="#">About</Footer.SectionLink>
+          <Footer.SectionLink href="#">How it works</Footer.SectionLink>
+          <Footer.SectionLink href="#">FAQ</Footer.SectionLink>
+          <Footer.SectionLink href="#">Press</Footer.SectionLink>
+          <Footer.SectionLink href="#">Our People</Footer.SectionLink>
+          <Footer.SectionLink href="#">Terms & Conditions</Footer.SectionLink>
+        </Col>
+        <Col xs={12} lg={2}>
+          <Footer.SectionHeader>Discover</Footer.SectionHeader>
+          <Footer.SectionLink href="#">Events</Footer.SectionLink>
+          <Footer.SectionLink href="#">Cities</Footer.SectionLink>
+          <Footer.SectionLink href="#">Blog</Footer.SectionLink>
+          <Footer.SectionLink href="#">Videos</Footer.SectionLink>
+          <Footer.SectionLink href="#">Student Discount</Footer.SectionLink>
+        </Col>
+        <Col xs={12} lg={2}>
+          <Footer.SectionHeader>Get Involved</Footer.SectionHeader>
+          <Footer.SectionLink href="#">Perform</Footer.SectionLink>
+          <Footer.SectionLink href="#">Host</Footer.SectionLink>
+          <Footer.SectionLink href="#">Partnerships</Footer.SectionLink>
+          <Footer.SectionLink href="#">Careers</Footer.SectionLink>
+          <Footer.SectionLink href="#">Contact us</Footer.SectionLink>
+        </Col>
+      </Grid>
+    </Footer.Top>
+    <Footer.Bottom>
+      <Footer.SocialIcons>
+        <Footer.Icon name="facebookOutline" />
+        <Footer.Icon name="twitterOutline" />
+        <Footer.Icon name="instagramOutline" />
+        <Footer.Icon name="spotifyOutline" />
+        <Footer.Icon name="youtubeOutline" />
+      </Footer.SocialIcons>
+      <Footer.CopyrightMsg>
+        &copy; 2019 Sofar Sounds. All Rights Reserved.
+      </Footer.CopyrightMsg>
+    </Footer.Bottom>
+  </>
+));
