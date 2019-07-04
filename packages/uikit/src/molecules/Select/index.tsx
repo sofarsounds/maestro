@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import SelectInput from './SelectInput';
 import Menu from './Menu';
 import { StickyContainer, PortalComponent } from '../../util/index';
+import useOutsideClick from '../../hooks/useOutsideClick';
 
 interface SelectProps {
   placeholder: string;
@@ -18,6 +19,10 @@ const SelectComponent: React.SFC<SelectProps> = ({
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
   const [value, setValue] = useState<string>('');
+
+  useOutsideClick(ref, () => {
+    setIsOpen(false);
+  });
 
   const onSelect = (value: any) => {
     setValue(value);
