@@ -258,6 +258,7 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",

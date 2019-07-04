@@ -1,13 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 import {
   Navbar,
   Pagination,
   Modal,
   useModal,
-  PrimaryButton as Button
+  HeroImage,
+  PrimaryButton,
+  Textfield,
+  FormGroup
 } from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
@@ -78,7 +82,7 @@ function ModalExample() {
 
   return (
     <>
-      <Button onClick={toggleModal}>Click me</Button>
+      <PrimaryButton onClick={toggleModal}>Click me</PrimaryButton>
       <Modal {...modal}>
         <p>Hello</p>
       </Modal>
@@ -87,3 +91,35 @@ function ModalExample() {
 }
 
 storiesOf('05 / Molecules|Modal', module).add('Modal', () => <ModalExample />);
+
+storiesOf('05 / Molecules|HeroImage', module)
+  .add('Default', () => (
+    <HeroImage
+      height="400px"
+      imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+      title="I am the Title"
+      subtitle="I am a subtitle"
+    />
+  ))
+  .add('With Children', () => (
+    <HeroImage
+      height="400px"
+      imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+      title="I am the Title"
+      subtitle="I am a subtitle"
+    >
+      <PrimaryButton>An Action</PrimaryButton>
+    </HeroImage>
+  ));
+
+storiesOf('05 / Molecules|FormGroup', module)
+  .addDecorator(withKnobs)
+  .add('FormGroup', () => (
+    <FormGroup
+      label={text('Label', 'Email address')}
+      required={boolean('Required', true)}
+      errorMsg={text('Error Msg', null)}
+    >
+      <Textfield placeholder="your@email.com" />
+    </FormGroup>
+  ));
