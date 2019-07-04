@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
+import { withShadow } from '../../util';
 import { inputBaseStyle, InputProps } from '../../atoms/FormElements/Base';
 
 import Icon from '../../atoms/Icon';
 
 interface SelectInputProps {
   isOpen?: boolean;
+  depth: any;
 }
 
 interface InputWrapper {
@@ -19,6 +21,7 @@ interface Props {
   isOpen?: boolean;
   onClick: () => void;
   innerRef?: React.RefObject<any>;
+  value?: any;
 }
 
 interface ButtonProps {
@@ -44,7 +47,10 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
     ${inputBaseStyle};
     border-right: 0px;
     border-radius: 2px 0px 0px 2px;
-    ${isOpen && css``}
+    ${isOpen &&
+      css`
+        ${withShadow}
+      `}
   `}
 `;
 
@@ -52,14 +58,28 @@ const SelectInput: React.SFC<Props> = ({
   isOpen,
   placeholder,
   onClick,
-  innerRef
-}) => (
-  <InputWrapper ref={innerRef}>
-    <InputStyle isOpen={isOpen} placeholder={placeholder} />
-    <Button onClick={e => onClick()} isOpen={isOpen}>
-      <Icon name={isOpen ? 'caretDown' : 'check'} />
-    </Button>
-  </InputWrapper>
-);
+  innerRef,
+  value
+}) => {
+  const [selectValue, setSelectValue] = useState(value);
+
+  useEffect(() => {
+    setSelectValue(value);
+  }, [value]);
+
+  return (
+    <InputWrapper ref={innerRef}>
+      <InputStyle
+        value={selectValue}
+        depth={3}
+        isOpen={isOpen}
+        placeholder={placeholder}
+      />
+      <Button onClick={e => onClick()} isOpen={isOpen}>
+        <Icon name={isOpen ? 'caretDown' : 'check'} />
+      </Button>
+    </InputWrapper>
+  );
+};
 
 export default SelectInput;
