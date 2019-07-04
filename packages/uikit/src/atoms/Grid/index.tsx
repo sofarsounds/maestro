@@ -10,9 +10,10 @@ interface ColProps {
   sm?: number;
   md?: number;
   lg?: number;
+  xl?: number;
 }
 export const Col = styled.div<ColProps>`
-  ${({ theme, xs, sm, md, lg }) => css`
+  ${({ theme, xs, sm, md, lg, xl }) => css`
     grid-column-end: span ${xs || 12};
 
     ${sm &&
@@ -28,6 +29,11 @@ export const Col = styled.div<ColProps>`
     ${lg &&
       theme.media.lg`
       grid-column-end: span ${lg};
+    `}
+
+    ${xl &&
+      theme.media.xl`
+      grid-column-end: span ${xl};
     `}
   `}
 `;

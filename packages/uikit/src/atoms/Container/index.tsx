@@ -10,7 +10,7 @@ export default styled.div<ContainerProps>`
     width: 100%;
     margin: 0 auto;
 
-    padding: 0 ${theme.ruler[5]};
+    padding: 0 ${theme.ruler[5]}px;
 
     ${theme.media.sm`
       max-width: 540px;

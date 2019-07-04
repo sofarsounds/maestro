@@ -11,8 +11,7 @@ import {
   Textfield,
   FormGroup,
   Footer,
-  Grid,
-  Col
+  Grid
 } from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
@@ -121,10 +120,8 @@ storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
         <Textfield placeholder="Type to find your city" />
       </Footer.CityInputWrapper>
       <Grid>
-        <Col xs={12} lg={6}>
-          <Footer.LogoWithSlogan />
-        </Col>
-        <Col xs={12} lg={2}>
+        <Footer.LogoWithSlogan />
+        <Footer.LinkSection>
           <Footer.SectionHeader>Learn More</Footer.SectionHeader>
           <Footer.SectionLink href="#">About</Footer.SectionLink>
           <Footer.SectionLink href="#">How it works</Footer.SectionLink>
@@ -132,23 +129,23 @@ storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
           <Footer.SectionLink href="#">Press</Footer.SectionLink>
           <Footer.SectionLink href="#">Our People</Footer.SectionLink>
           <Footer.SectionLink href="#">Terms & Conditions</Footer.SectionLink>
-        </Col>
-        <Col xs={12} lg={2}>
+        </Footer.LinkSection>
+        <Footer.LinkSection>
           <Footer.SectionHeader>Discover</Footer.SectionHeader>
           <Footer.SectionLink href="#">Events</Footer.SectionLink>
           <Footer.SectionLink href="#">Cities</Footer.SectionLink>
           <Footer.SectionLink href="#">Blog</Footer.SectionLink>
           <Footer.SectionLink href="#">Videos</Footer.SectionLink>
           <Footer.SectionLink href="#">Student Discount</Footer.SectionLink>
-        </Col>
-        <Col xs={12} lg={2}>
+        </Footer.LinkSection>
+        <Footer.LinkSection>
           <Footer.SectionHeader>Get Involved</Footer.SectionHeader>
           <Footer.SectionLink href="#">Perform</Footer.SectionLink>
           <Footer.SectionLink href="#">Host</Footer.SectionLink>
           <Footer.SectionLink href="#">Partnerships</Footer.SectionLink>
           <Footer.SectionLink href="#">Careers</Footer.SectionLink>
           <Footer.SectionLink href="#">Contact us</Footer.SectionLink>
-        </Col>
+        </Footer.LinkSection>
       </Grid>
     </Footer.Top>
     <Footer.Bottom>
