@@ -11,7 +11,7 @@ import ItemContainer from './ItemContainer';
 import Item from './Item';
 
 interface NavbarProps {
-  fixed?: boolean;
+  fixed?: Boolean;
   invert?: boolean;
   children: any;
 }
@@ -41,10 +41,10 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   public render() {
     const { open } = this.state;
-    const { children } = this.props;
+    const { children, fixed } = this.props;
 
     return (
-      <NavbarContainer>
+      <NavbarContainer fixed={fixed}>
         <Container>
           <Brand>
             <Logo invert />
