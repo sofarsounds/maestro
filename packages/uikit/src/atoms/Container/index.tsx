@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-type Sizes = 'default' | 'small' | 'large' | 'fullscreen';
+export type Sizes = 'default' | 'small' | 'large' | 'fullscreen';
 interface ContainerProps {
   size?: string;
 }

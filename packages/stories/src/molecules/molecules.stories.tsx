@@ -6,6 +6,8 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import {
   Navbar,
   Pagination,
+  Modal,
+  useModal,
   HeroImage,
   PrimaryButton,
   Textfield,
@@ -74,6 +76,21 @@ storiesOf('05 / Molecules|Navbar', module).add('Navbar', () => (
     <div style={{ height: '500px' }}>Scrollable Content</div>
   </div>
 ));
+
+function ModalExample() {
+  const [modal, toggleModal] = useModal();
+
+  return (
+    <>
+      <PrimaryButton onClick={toggleModal}>Click me</PrimaryButton>
+      <Modal {...modal}>
+        <p>Hello</p>
+      </Modal>
+    </>
+  );
+}
+
+storiesOf('05 / Molecules|Modal', module).add('Modal', () => <ModalExample />);
 
 storiesOf('05 / Molecules|HeroImage', module)
   .add('Default', () => (

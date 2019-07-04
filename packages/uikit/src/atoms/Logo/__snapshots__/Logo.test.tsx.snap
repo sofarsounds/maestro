@@ -3,21 +3,21 @@
 exports[`Logo Cable Logo renders correctly 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-cable-black.svg"
+  src="fake-file"
 />
 `;
 
 exports[`Logo Cable Logo renders correctly when inverted 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-cable-white.svg"
+  src="fake-file"
 />
 `;
 
 exports[`Logo Cable Logo renders correctly with a given width 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-cable-black.svg"
+  src="fake-file"
   width="500px"
 />
 `;
@@ -25,21 +25,21 @@ exports[`Logo Cable Logo renders correctly with a given width 1`] = `
 exports[`Logo Circle Logo renders correctly 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-circle-black.svg"
+  src="fake-file"
 />
 `;
 
 exports[`Logo Circle Logo renders correctly when inverted 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-circle-white.svg"
+  src="fake-file"
 />
 `;
 
 exports[`Logo Circle Logo renders correctly with a given width 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-circle-black.svg"
+  src="fake-file"
   width="500px"
 />
 `;
@@ -47,21 +47,21 @@ exports[`Logo Circle Logo renders correctly with a given width 1`] = `
 exports[`Logo Text Logo renders correctly 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-logo-black.svg"
+  src="fake-file"
 />
 `;
 
 exports[`Logo Text Logo renders correctly when inverted 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-logo-white.svg"
+  src="fake-file"
 />
 `;
 
 exports[`Logo Text Logo renders correctly with a given width 1`] = `
 <styled.img
   alt="Sofar Logo"
-  src="sofar-logo-black.svg"
+  src="fake-file"
   width="500px"
 />
 `;
