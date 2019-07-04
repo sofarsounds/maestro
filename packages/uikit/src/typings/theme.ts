@@ -59,6 +59,7 @@ export default interface Theme {
     overline: string;
     caption: string;
     button: string;
+    formGroupLabel: string;
   };
 
   media: any;

@@ -12,6 +12,14 @@ export { default as Spacer } from './atoms/Spacer';
 export { default as Responsive } from './atoms/Responsive';
 export { default as Pagination } from './molecules/Pagination';
 export { default as Navbar } from './molecules/Navbar';
+export { default as HeroImage } from './molecules/HeroImage';
+export { default as FormGroup } from './molecules/FormGroup';
+
+export { default as Login } from './organisms/Login';
+
+export { default as useModal } from './hooks/useModal';
+export { UseModalProps } from './hooks/useModal';
+export { Modal } from './molecules/Modal';
 
 export * from './util';
 

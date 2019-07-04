@@ -59,7 +59,8 @@ const theme: Theme = {
     body2: '14px',
     overline: '10px',
     caption: '10px',
-    button: '14px'
+    button: '14px',
+    formGroupLabel: '14px'
   },
 
   media: Object.keys(breakPoints).reduce((acc, label: string) => {
