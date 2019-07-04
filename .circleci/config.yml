@@ -29,6 +29,19 @@ jobs:
         key: npm-packages-{{ checksum "package.json" }}
     - run: yarn lint
     - run: yarn test
+  publish-storybook:
+    executor: shared-setup-exec
+    steps:
+      - checkout
+      - run:
+          name: Install lerna globally
+          command: yarn global add lerna
+      - run:
+          name: Install TypeScript globally
+          command: yarn global add typescript
+      - run:
+          name: Run storybook deploy script
+          command: ~/repo/bin/deploy-gh-pages.sh
   deploy:
     executor: shared-setup-exec
     steps:
@@ -40,12 +53,6 @@ jobs:
         name: Install deps
         command: yarn run bootstrap
     - run:
-        name: Install TypeScript globally
-        command: yarn global add typescript
-    - run:
-        name: Run storybook deploy script
-        command: ~/repo/bin/deploy-gh-pages.sh
-    - run:
         name: Chmod
         command: chmod +x ~/repo/bin/publish-on-npm.sh
     - run:
@@ -56,6 +63,12 @@ workflows:
   build-deploy:
     jobs:
       - build:
+          filters:
+            branches:
+              ignore: gh-pages
+      - publish-storybook:
+          requires:
+            - build
           filters:
             branches:
               ignore: gh-pages
