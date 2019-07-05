@@ -52,7 +52,7 @@ const theme: Theme = {
     h4: '34px',
     h5: '24px',
     h6: '20px',
-    title: '74px',
+    title: '54px',
     subtitle1: '16px',
     subtitle2: '14px',
     body1: '16px',

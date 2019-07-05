@@ -146,8 +146,20 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e91b';
 }
 
+.c2.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c2.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c2.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c2.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c2.icon-caretCircleDown:before {
@@ -330,7 +342,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -545,8 +557,20 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -973,8 +997,20 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1326,8 +1362,20 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e91b';
 }
 
+.c3.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c3.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c3.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c3.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c3.icon-caretCircleDown:before {
@@ -1510,7 +1558,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1935,8 +1983,20 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -2288,8 +2348,20 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e91b';
 }
 
+.c2.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c2.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c2.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c2.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c2.icon-caretCircleDown:before {
@@ -2472,7 +2544,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -2687,8 +2759,20 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {

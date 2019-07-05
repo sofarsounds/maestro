@@ -6,6 +6,7 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
 }
 
 .c0 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap: 20px;
@@ -72,7 +73,7 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -272,6 +273,7 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
 }
 
 .c0 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap: 100px;
@@ -337,7 +339,7 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -500,6 +502,7 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
 }
 
 .c0 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap: 20px;
@@ -567,7 +570,7 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -858,6 +861,7 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
 }
 
 .c0 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap: 20px;
@@ -924,7 +928,7 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1133,6 +1137,7 @@ exports[`Grid renders the Grid correctly 1`] = `
 }
 
 .c0 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-gap: 20px;
@@ -1216,7 +1221,7 @@ exports[`Grid renders the Grid correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",

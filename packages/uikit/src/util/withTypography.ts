@@ -18,6 +18,10 @@ export default ({
   ${colour &&
     css`
       color: ${colour};
+
+      * {
+        color: ${colour};
+      }
     `};
 
   ${align &&

@@ -6,7 +6,6 @@ export const Title = styled.h1`
     font-size: ${theme.fontSizes.title};
     font-weight: 800;
     letter-spacing: -2px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -27,7 +26,6 @@ export const H1 = styled.h1`
     font-size: ${theme.fontSizes.h1};
     font-weight: normal;
     letter-spacing: -1.5px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -49,7 +47,6 @@ export const H2 = styled.h2`
     font-size: ${theme.fontSizes.h2};
     font-weight: normal;
     letter-spacing: -0.5px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -71,7 +68,6 @@ export const H3 = styled.h3`
     font-size: ${theme.fontSizes.h3};
     font-weight: normal;
     letter-spacing: normal;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -93,7 +89,6 @@ export const H4 = styled.h4`
     font-size: ${theme.fontSizes.h4};
     font-weight: normal;
     letter-spacing: 0.3px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -115,7 +110,6 @@ export const H5 = styled.h5`
     font-size: ${theme.fontSizes.h5};
     font-weight: normal;
     letter-spacing: normal;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -137,7 +131,6 @@ export const H6 = styled.h6`
     font-size: ${theme.fontSizes.h6};
     font-weight: normal;
     letter-spacing: 0.2px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -159,7 +152,6 @@ export const Subtitle = styled.span`
     font-size: ${theme.fontSizes.subtitle1};
     font-weight: normal;
     letter-spacing: 0.2px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -181,7 +173,6 @@ export const Subtitle2 = styled.span`
     font-size: ${theme.fontSizes.subtitle2};
     font-weight: normal;
     letter-spacing: 0.1px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -203,7 +194,6 @@ export const Body = styled.p`
     font-size: ${theme.fontSizes.body1};
     font-weight: normal;
     letter-spacing: 0.4px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -225,7 +215,6 @@ export const Body2 = styled.p`
     font-size: ${theme.fontSizes.body2};
     font-weight: normal;
     letter-spacing: 0.3px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -248,7 +237,6 @@ export const Overline = styled.span`
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -270,7 +258,6 @@ export const Caption = styled.span`
     font-size: ${theme.fontSizes.caption};
     font-weight: normal;
     letter-spacing: 0.3px;
-    color: ${theme.colours.backToBlack};
     margin: 0;
     padding: 0;
 
@@ -292,7 +279,6 @@ export const FormGroupLabel = styled.span`
     font-size: ${theme.fontSizes.formGroupLabel};
     font-weight: bold;
     letter-spacing: 0.1px;
-    color: ${theme.colours.backToBlack};
     margin-bottom: ${theme.ruler[2]}px;
     display: block;
   `}
