@@ -3,7 +3,8 @@ import React from 'react';
 import { mountWithTheme } from '../../test';
 import Menu from './Menu';
 
-const setup = () => mountWithTheme(<Menu depth={2} />);
+const setup = () =>
+  mountWithTheme(<Menu depth={2}>I am a child component</Menu>);
 
 describe('Select <Menu />', () => {
   it('it renders correctly when the first page is active', () => {
@@ -11,10 +12,7 @@ describe('Select <Menu />', () => {
   });
 
   it('it renders child components', () => {
-    const wrapper = mountWithTheme(
-      <Menu depth={2}>I am a child component</Menu>
-    );
-    expect(wrapper.props().children.props.children).toBe(
+    expect(setup().props().children.props.children).toBe(
       'I am a child component'
     );
   });

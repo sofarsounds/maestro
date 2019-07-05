@@ -138,7 +138,9 @@ exports[`Select <Menu /> it renders correctly when the first page is active 1`] 
     >
       <ul
         className="c0"
-      />
+      >
+        I am a child component
+      </ul>
     </StyledComponent>
   </styled.ul>
 </ThemeProvider>

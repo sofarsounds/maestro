@@ -1,10 +1,6 @@
 import * as React from 'react';
-/* import { get as _get } from 'lodash'; */
 import { findDOMNode } from 'react-dom';
-
 import styled, { css } from '../lib/styledComponents';
-/* import { colours } from '../abstracts'; */
-/* import { zIndex } from '../abstracts/globalStyles'; */
 
 export type StickTo = 'top' | 'bottom';
 export interface DOMRect {
