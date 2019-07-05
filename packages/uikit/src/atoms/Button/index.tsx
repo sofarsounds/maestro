@@ -13,6 +13,16 @@ interface ButtonProps {
   loading?: boolean;
 }
 
+export const buttonTextStyle = ({ theme }: any) => css`
+  font-size: ${theme.fontSizes.button};
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: ${theme.utils.transition()};
+`;
+
 export const BaseButton = styled.button<ButtonProps>`
   ${({ theme, loading }) => css`
     border-radius: ${theme.borderRadius.button};
@@ -26,7 +36,6 @@ export const BaseButton = styled.button<ButtonProps>`
     padding: 0 25px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: ${theme.utils.transition()};
 
     &:disabled {
       cursor: not-allowed;
@@ -143,7 +152,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
           background-color: ${theme.colours.macyGrey};
         }
       `}
-      
+
     ${loading &&
       css`
         :after {
