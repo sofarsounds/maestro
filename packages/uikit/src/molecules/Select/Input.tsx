@@ -74,7 +74,7 @@ const Input: React.SFC<Props> = ({
         isOpen={isOpen}
         placeholder={placeholder}
       />
-      <Button onClick={e => onClick()} isOpen={isOpen}>
+      <Button onClick={() => onClick()} isOpen={isOpen}>
         <Icon name={isOpen ? 'caretDown' : 'check'} />
       </Button>
     </InputWrapper>

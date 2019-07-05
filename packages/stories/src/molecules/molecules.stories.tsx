@@ -64,7 +64,7 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
           <Option
             key={index}
             value={cityData.value}
-            onClick={e => onSelect(e)}
+            onClick={onSelect}
             name={cityData.name}
           />
         ))

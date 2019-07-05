@@ -6,6 +6,7 @@ interface Props {
   value?: any;
   name?: string;
   disabled?: boolean;
+  active?: boolean;
   error?: boolean;
   onClick: (value: any) => void;
 }
@@ -31,18 +32,14 @@ const OptionStyled = styled.li<Props>`
   `}
 `;
 
-const Option: React.SFC<Props> = ({ name, value, onClick }) => {
+const Option: React.SFC<Props> = ({ name, value, active, onClick }) => {
   const onChange = () => {
     if (onClick) {
       onClick(value);
     }
   };
 
-  return (
-    <>
-      <OptionStyled onClick={() => onChange()}>{name}</OptionStyled>
-    </>
-  );
+  return <OptionStyled onClick={() => onChange()}>{name}</OptionStyled>;
 };
 
 export default Option;

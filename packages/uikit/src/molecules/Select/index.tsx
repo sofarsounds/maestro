@@ -8,14 +8,9 @@ import { useOutsideClick, useKeyDown } from '../../hooks';
 interface SelectProps {
   placeholder: string;
   children?: any;
-  defaultValue?: any;
 }
 
-const Select: React.SFC<SelectProps> = ({
-  placeholder,
-  children,
-  defaultValue
-}) => {
+const Select: React.SFC<SelectProps> = ({ placeholder, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
   const [value, setValue] = useState<string>('');
