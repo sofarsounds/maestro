@@ -8,9 +8,12 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   -moz-letter-spacing: 0.3px;
   -ms-letter-spacing: 0.3px;
   letter-spacing: 0.3px;
-  color: #111111;
   margin: 0;
   padding: 0;
+  color: #EF4423;
+}
+
+.c2 * {
   color: #EF4423;
 }
 
@@ -21,7 +24,6 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   -moz-letter-spacing: 0.1px;
   -ms-letter-spacing: 0.1px;
   letter-spacing: 0.1px;
-  color: #111111;
   margin-bottom: 8px;
   display: block;
 }
@@ -131,7 +133,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -347,9 +349,12 @@ exports[`<FormGroup /> renders a error message 1`] = `
   -moz-letter-spacing: 0.3px;
   -ms-letter-spacing: 0.3px;
   letter-spacing: 0.3px;
-  color: #111111;
   margin: 0;
   padding: 0;
+  color: #EF4423;
+}
+
+.c2 * {
   color: #EF4423;
 }
 
@@ -360,7 +365,6 @@ exports[`<FormGroup /> renders a error message 1`] = `
   -moz-letter-spacing: 0.1px;
   -ms-letter-spacing: 0.1px;
   letter-spacing: 0.1px;
-  color: #111111;
   margin-bottom: 8px;
   display: block;
 }
@@ -470,7 +474,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -686,7 +690,6 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
   -moz-letter-spacing: 0.1px;
   -ms-letter-spacing: 0.1px;
   letter-spacing: 0.1px;
-  color: #111111;
   margin-bottom: 8px;
   display: block;
 }
@@ -783,7 +786,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -954,7 +957,6 @@ exports[`<FormGroup /> renders correctly 1`] = `
   -moz-letter-spacing: 0.1px;
   -ms-letter-spacing: 0.1px;
   letter-spacing: 0.1px;
-  color: #111111;
   margin-bottom: 8px;
   display: block;
 }
@@ -1051,7 +1053,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",

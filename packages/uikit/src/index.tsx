@@ -14,6 +14,7 @@ export { default as Pagination } from './molecules/Pagination';
 export { default as Navbar } from './molecules/Navbar';
 export { default as HeroImage } from './molecules/HeroImage';
 export { default as FormGroup } from './molecules/FormGroup';
+export { default as Footer } from './molecules/Footer';
 
 export { default as Login } from './organisms/Login';
 
