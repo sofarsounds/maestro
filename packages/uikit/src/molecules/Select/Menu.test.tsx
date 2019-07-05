@@ -7,7 +7,7 @@ const setup = () =>
   mountWithTheme(<Menu depth={2}>I am a child component</Menu>);
 
 describe('Select <Menu />', () => {
-  it('it renders correctly when the first page is active', () => {
+  it('it renders correctly', () => {
     expect(setup()).toMatchSnapshot();
   });
 
