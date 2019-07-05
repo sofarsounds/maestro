@@ -1,6 +1,6 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "0.1.18",
+  "version": "0.1.21",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -65,6 +65,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-react": "^6.24.1",
     "enzyme-adapter-react-16": "^1.14.0",
+    "image-webpack-loader": "^5.0.0",
     "jest-styled-components": "^6.3.1",
     "terser": "^4.0.0",
     "ts-jest": "^24.0.2",

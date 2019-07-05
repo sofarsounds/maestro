@@ -136,7 +136,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -384,7 +384,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -663,7 +663,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -893,7 +893,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1117,7 +1117,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1383,7 +1383,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1590,7 +1590,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1791,7 +1791,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -2017,7 +2017,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",

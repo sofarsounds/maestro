@@ -89,8 +89,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -273,7 +285,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -440,8 +452,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -679,8 +703,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -863,7 +899,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1028,8 +1064,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1272,8 +1320,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -1456,7 +1516,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1623,8 +1683,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1862,8 +1934,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -2046,7 +2130,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -2211,8 +2295,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
