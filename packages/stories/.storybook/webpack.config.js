@@ -19,7 +19,10 @@ module.exports = ({ config }) => {
   config.resolve.extensions.push('.ts', '.tsx');
 
   config.resolve.alias = {
-    uikit: path.resolve(__dirname, '../../uikit/src')
+    uikit: path.resolve(__dirname, '../../uikit/src'),
+    react: path.resolve(__dirname, '../../../node_modules', 'react'),
+    'react-dom': path.resolve(__dirname, '../../../node_modules', 'react-dom')
   };
+
   return config;
 };

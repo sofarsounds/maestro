@@ -1,6 +1,6 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "0.1.14",
+  "version": "0.1.18",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -9,6 +9,31 @@
     "moveFiles": "node moveFiles.js",
     "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u"
+  },
+  "jest": {
+    "testRegex": "/.*\\.test\\.(tsx|ts)$",
+    "transform": {
+      "^.+\\.(tsx|ts)?$": "ts-jest",
+      "^.+\\.(ttf|woff)?$": "<rootDir>/src/test/fileMock.ts"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "svg",
+      "ttf",
+      "woff"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/test/setupTests.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/test/fileMock.ts"
+    }
   },
   "keywords": [],
   "author": "",
@@ -24,7 +49,8 @@
     "awesome-typescript-loader": "^5.2.1",
     "color": "^3.1.2",
     "enzyme": "^3.10.0",
-    "styled-components": "^4"
+    "styled-components": "^4",
+    "svg-inline-loader": "^0.8.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.3.0",

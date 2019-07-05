@@ -43,5 +43,8 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "storybook-addon-styled-component-theme": "^1.2.3",
     "typescript": "^3.5.1"
+  },
+  "resolutions": {
+    "react": "^16"
   }
 }

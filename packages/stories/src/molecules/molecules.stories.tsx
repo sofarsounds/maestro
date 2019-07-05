@@ -6,6 +6,8 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import {
   Navbar,
   Pagination,
+  Modal,
+  useModal,
   HeroImage,
   PrimaryButton,
   Textfield,
@@ -58,8 +60,26 @@ storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
 
 storiesOf('05 / Molecules|Navbar', module).add('Navbar', () => (
   <div style={{ paddingTop: '100px' }}>
-    <h1>Navbar Component</h1>
     <Navbar>
+      <Navbar.ItemContainer>
+        <span style={{ color: '#fff' }}>LEFT</span>
+      </Navbar.ItemContainer>
+      <Navbar.ItemContainer align="right">
+        <Navbar.Item href="#">London</Navbar.Item>
+        <Navbar.Item href="#">Perform</Navbar.Item>
+        <Navbar.Item>Host</Navbar.Item>
+        <Navbar.Item>Your Events</Navbar.Item>
+        <Navbar.Item>Your Account</Navbar.Item>
+        <Navbar.Item>English</Navbar.Item>
+      </Navbar.ItemContainer>
+    </Navbar>
+    <h1>Navbar Component</h1>
+    <div style={{ height: '500px' }}>Scrollable Content</div>
+  </div>
+)).add('Navbar - Fixed', () => (
+  <div style={{ paddingTop: '100px' }}>
+    <h1>Navbar Component</h1>
+    <Navbar fixed={true}>
       <Navbar.ItemContainer>
         <span style={{ color: '#fff' }}>LEFT</span>
       </Navbar.ItemContainer>
@@ -76,6 +96,21 @@ storiesOf('05 / Molecules|Navbar', module).add('Navbar', () => (
     <div style={{ height: '500px' }}>Scrollable Content</div>
   </div>
 ));
+
+function ModalExample() {
+  const [modal, toggleModal] = useModal();
+
+  return (
+    <>
+      <PrimaryButton onClick={toggleModal}>Click me</PrimaryButton>
+      <Modal {...modal}>
+        <p>Hello</p>
+      </Modal>
+    </>
+  );
+}
+
+storiesOf('05 / Molecules|Modal', module).add('Modal', () => <ModalExample />);
 
 storiesOf('05 / Molecules|HeroImage', module)
   .add('Default', () => (

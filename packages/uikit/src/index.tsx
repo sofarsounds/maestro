@@ -16,6 +16,12 @@ export { default as HeroImage } from './molecules/HeroImage';
 export { default as FormGroup } from './molecules/FormGroup';
 export { default as Footer } from './molecules/Footer';
 
+export { default as Login } from './organisms/Login';
+
+export { default as useModal } from './hooks/useModal';
+export { UseModalProps } from './hooks/useModal';
+export { Modal } from './molecules/Modal';
+
 export * from './util';
 
 export { default as theme } from './theme';
