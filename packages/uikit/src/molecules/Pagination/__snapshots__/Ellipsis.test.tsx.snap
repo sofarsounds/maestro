@@ -57,8 +57,20 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -427,8 +439,20 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {

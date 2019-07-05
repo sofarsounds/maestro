@@ -146,8 +146,20 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e91b';
 }
 
+.c2.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c2.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c2.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c2.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c2.icon-caretCircleDown:before {
@@ -541,8 +553,20 @@ exports[`<Pagination /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1077,8 +1101,20 @@ exports[`<Pagination /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1408,8 +1444,20 @@ exports[`<Pagination /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {

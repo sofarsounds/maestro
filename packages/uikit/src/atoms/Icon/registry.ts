@@ -12,7 +12,10 @@ enum Registry {
   youtubeOutline = 'e91b',
 
   // directional
+  caretUp = 'e921',
   caretDown = 'e906',
+  caretLeft = 'e922',
+  caretRight = 'e923',
   caretCircleDown = 'e908',
   chevronLeft = 'e917',
   chevronRight = 'e920',

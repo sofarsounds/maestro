@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components';
 
+import { withFlex, WithFlexProps } from '../../util';
+
 // TODO do we need different sizes per container?
 // i.e. "small" or "large" container in addition to the default
 // max-width?
-interface ContainerProps {
+interface ContainerProps extends WithFlexProps {
   size?: string;
 }
 
@@ -29,4 +31,6 @@ export default styled.div<ContainerProps>`
       max-width: 1140px;
     `}
   `}
+
+  ${withFlex};
 `;
