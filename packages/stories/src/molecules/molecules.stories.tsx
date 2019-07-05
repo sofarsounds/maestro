@@ -3,9 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import { withKnobs } from '@storybook/addon-knobs';
-import { Pagination, SelectComponent } from 'uikit';
-
-import Option from '../../../uikit/src/molecules/Select/SelectOptions';
+import { Pagination, Select, Option } from 'uikit';
 
 let citiesData = [
   { name: 'London', value: 'london' },
@@ -60,7 +58,7 @@ storiesOf('05 / Molecules|Pagination', module)
 storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
   <div>
     <h1>Select</h1>
-    <SelectComponent placeholder="Select a city">
+    <Select placeholder="Select a city">
       {({ onSelect }: any) =>
         citiesData.map((cityData, index) => (
           <Option
@@ -71,6 +69,6 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
           />
         ))
       }
-    </SelectComponent>
+    </Select>
   </div>
 ));

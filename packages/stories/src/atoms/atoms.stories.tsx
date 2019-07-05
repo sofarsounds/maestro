@@ -9,7 +9,6 @@ import {
   LinkButton,
   Textfield,
   Textarea,
-  Select,
   Badge
 } from 'uikit';
 
@@ -76,19 +75,6 @@ storiesOf('03 / Atoms|Form Elements', module)
         hasError={boolean('Has Error', false)}
         placeholder={text('Placeholder', 'Type me hard...')}
       />
-    </div>
-  ))
-  .add('Select', () => (
-    <div>
-      <Select
-        disabled={boolean('Disabled', false)}
-        hasError={boolean('Has Error', false)}
-      >
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="4">Option 4</option>
-      </Select>
     </div>
   ));
 

@@ -59,7 +59,7 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
   `}
 `;
 
-const SelectInput: React.SFC<Props> = ({
+const Input: React.SFC<Props> = ({
   isOpen,
   placeholder,
   onClick,
@@ -81,4 +81,4 @@ const SelectInput: React.SFC<Props> = ({
   );
 };
 
-export default SelectInput;
+export default Input;

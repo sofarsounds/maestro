@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import SelectInput from './SelectInput';
+import Input from './Input';
 import Menu from './Menu';
 import { StickyContainer, PortalComponent } from '../../util/index';
 import { useOutsideClick, useKeyDown } from '../../hooks';
@@ -11,7 +11,7 @@ interface SelectProps {
   defaultValue?: any;
 }
 
-const SelectComponent: React.SFC<SelectProps> = ({
+const Select: React.SFC<SelectProps> = ({
   placeholder,
   children,
   defaultValue
@@ -35,7 +35,7 @@ const SelectComponent: React.SFC<SelectProps> = ({
 
   return (
     <>
-      <SelectInput
+      <Input
         innerRef={ref}
         isOpen={isOpen}
         value={value}
@@ -53,4 +53,6 @@ const SelectComponent: React.SFC<SelectProps> = ({
   );
 };
 
-export default SelectComponent;
+export { default as Option } from './Option';
+
+export default Select;
