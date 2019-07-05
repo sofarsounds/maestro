@@ -30,22 +30,15 @@ module.exports = {
             }
           }
         ]
-        // exclude: /node_modules/
       },
       {
-        test: /\.(gif|jpe?g|png|ico)$/,
-        loader: 'url-loader?limit=10000'
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: 'image-webpack-loader',
+        enforce: 'pre'
       },
       {
-        test: /\.(otf|eot|ttf|woff|woff2).*$/,
-        loader: 'url-loader',
-        options: {
-          limit: Infinity
-        }
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
+        test: /\.(otf|eot|ttf|woff|woff2|gif|jpe?g|png|ico|svg).*$/,
+        loader: 'url-loader'
       }
     ]
   },
