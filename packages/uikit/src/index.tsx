@@ -31,5 +31,6 @@ export {
   ThemeProvider,
   default as styled,
   css,
-  keyframes
+  keyframes,
+  ServerStyleSheet
 } from './lib/styledComponents';
