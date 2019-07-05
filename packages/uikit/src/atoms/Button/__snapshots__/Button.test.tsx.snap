@@ -16,8 +16,6 @@ exports[`Buttons Link Button renders correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
@@ -264,8 +262,6 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
@@ -512,8 +508,6 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   pointer-events: none;
   cursor: disabled;
   background: #039842;
@@ -791,8 +785,6 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
@@ -1015,8 +1007,6 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
@@ -1239,8 +1229,6 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   pointer-events: none;
   cursor: disabled;
   background: #039842;
@@ -1505,8 +1493,6 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
@@ -1706,8 +1692,6 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
@@ -1907,8 +1891,6 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   pointer-events: none;
   cursor: disabled;
   background: #039842;
