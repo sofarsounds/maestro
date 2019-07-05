@@ -1,5 +1,4 @@
 import React from 'react';
-import { KEY_UP, KEY_DOWN, KEY_RETURN } from 'keycode-js';
 import styled, { css } from '../../lib/styledComponents';
 
 interface Props {
@@ -40,37 +39,9 @@ const Option: React.SFC<Props> = ({ name, value, active, onClick }) => {
     }
   };
 
-  const onKeyDown = (e: any) => {
-    debugger;
-    console.log(e);
-    const { keyCode, target } = e;
-
-    switch (keyCode) {
-      case KEY_DOWN:
-        e.preventDefault();
-        target.nextElementSibling
-          ? target.nextElementSibling.focus()
-          : target.parentElement.firstChild.focus();
-        break;
-
-      case KEY_UP:
-        e.preventDefault();
-        target.previousElementSibling
-          ? target.previousElementSibling.focus()
-          : target.parentElement.lastChild.focus();
-        break;
-
-      case KEY_RETURN:
-        onChange();
-        break;
-    }
-  };
-
   return (
     <>
-      <OptionStyled onKeyDown={e => onKeyDown(e)} onClick={() => onChange()}>
-        {name}
-      </OptionStyled>
+      <OptionStyled onClick={() => onChange()}>{name}</OptionStyled>
     </>
   );
 };

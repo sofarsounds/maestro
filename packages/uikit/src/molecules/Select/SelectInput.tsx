@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
 import { withShadow } from '../../util';
@@ -43,9 +43,14 @@ const InputWrapper = styled.div<InputWrapper>`
 `;
 
 const InputStyle = styled.input<InputProps & SelectInputProps>`
-  ${({ isOpen = false }) => css`
+  ${({ theme, isOpen = false }) => css`
     ${inputBaseStyle};
     border-right: 0px;
+
+    &::placeholder {
+      color: ${theme.colours.blueSmoke};
+    }
+
     border-radius: 2px 0px 0px 2px;
     ${isOpen &&
       css`
@@ -61,16 +66,10 @@ const SelectInput: React.SFC<Props> = ({
   innerRef,
   value
 }) => {
-  const [selectValue, setSelectValue] = useState(value);
-
-  useEffect(() => {
-    setSelectValue(value);
-  }, [value]);
-
   return (
     <InputWrapper ref={innerRef}>
       <InputStyle
-        value={selectValue}
+        value={value}
         depth={3}
         isOpen={isOpen}
         placeholder={placeholder}

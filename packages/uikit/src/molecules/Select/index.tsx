@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 import SelectInput from './SelectInput';
 import Menu from './Menu';
 import { StickyContainer, PortalComponent } from '../../util/index';
-import useOutsideClick from '../../hooks/useOutsideClick';
+import { useOutsideClick, useKeyDown } from '../../hooks';
 
 interface SelectProps {
   placeholder: string;
@@ -21,6 +21,10 @@ const SelectComponent: React.SFC<SelectProps> = ({
   const [value, setValue] = useState<string>('');
 
   useOutsideClick(ref, () => {
+    setIsOpen(false);
+  });
+
+  useKeyDown('Escape', () => {
     setIsOpen(false);
   });
 
