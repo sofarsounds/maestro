@@ -57,7 +57,7 @@ const PostCard = ({
   headerImage,
   postedDate,
   slug,
-  tag = undefined,
+  tag = undefined
 }: PostCardProps) => {
   return (
     <Wrapper data-slug={slug}>
