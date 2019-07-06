@@ -53,5 +53,9 @@ export default createGlobalStyle`
       box-sizing: inherit;
     }
 
+    a:link, a:visited {
+      text-decoration: none;
+    }
+
   `}
 `;

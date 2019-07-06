@@ -6,6 +6,7 @@ exports[`<Modal /> When isShowing is false matches the snapshot 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -272,6 +273,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -555,7 +557,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-kjoXOD",
+                "componentId": "sc-ksYbfQ",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -574,7 +576,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-kjoXOD",
+              "styledComponentId": "sc-ksYbfQ",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -595,7 +597,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-cHGsZl",
+                "componentId": "sc-hmzhuo",
                 "isStatic": true,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -617,7 +619,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-cHGsZl",
+              "styledComponentId": "sc-hmzhuo",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -636,7 +638,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-TOsTZ",
+                      "componentId": "sc-frDJqD",
                       "isStatic": false,
                       "lastClassName": "c2",
                       "rules": Array [
@@ -650,7 +652,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-TOsTZ",
+                    "styledComponentId": "sc-frDJqD",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -669,7 +671,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-kgAjT",
+                            "componentId": "sc-kvZOFW",
                             "isStatic": true,
                             "lastClassName": "c3",
                             "rules": Array [
@@ -683,7 +685,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-kgAjT",
+                          "styledComponentId": "sc-kvZOFW",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -765,7 +767,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-cJSrbW",
+                            "componentId": "sc-hqyNC",
                             "isStatic": true,
                             "lastClassName": "c5",
                             "rules": Array [
@@ -780,7 +782,7 @@ exports[`<Modal /> When isShowing is true matches the snapshot 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-cJSrbW",
+                          "styledComponentId": "sc-hqyNC",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],

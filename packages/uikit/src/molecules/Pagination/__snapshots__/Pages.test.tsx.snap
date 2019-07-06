@@ -68,6 +68,7 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {

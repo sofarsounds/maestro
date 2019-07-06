@@ -16,6 +16,7 @@ export { default as HeroImage } from './molecules/HeroImage';
 export { default as FormGroup } from './molecules/FormGroup';
 export { default as Footer } from './molecules/Footer';
 export { default as Subnav } from './molecules/Subnav';
+export { default as Card } from './molecules/Card';
 
 export { default as Login } from './organisms/Login';
 

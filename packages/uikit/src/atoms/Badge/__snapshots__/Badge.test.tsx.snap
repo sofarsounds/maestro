@@ -33,6 +33,7 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -205,6 +206,7 @@ exports[`Badge Primary Badge renders the badge correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
