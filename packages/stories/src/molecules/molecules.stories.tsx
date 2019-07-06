@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { BrowserRouter } from 'react-router-dom';
 
 import {
   Navbar,
@@ -14,7 +15,8 @@ import {
   FormGroup,
   Footer,
   Grid,
-  Subnav
+  Subnav,
+  Card
 } from 'uikit';
 
 storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
@@ -222,3 +224,32 @@ storiesOf('05 / Molecules|Subnav', module).add('Subnav', () => (
     </Subnav.Container>
   </div>
 ));
+
+storiesOf('05 / Molecules|Card', module)
+  .addDecorator(withKnobs)
+  .add('With Image', () => (
+    <BrowserRouter>
+      <div style={{ width: '100%', maxWidth: '950px' }}>
+        <Card.Container linkTo="https://www.google.com">
+          <Card.Image
+            url={text(
+              'Image URL',
+              'https://sofarlive.cdn.prismic.io/sofarlive/ab56300a2ff2f667c6af44d2c0d301daa0865855_oompa-boston-041118-brandon_johnson2.jpg'
+            )}
+          />
+          <Card.Content>
+            <Card.Title>
+              {text('Title', 'Sofar turns 10! Celebrate with us')}
+            </Card.Title>
+            <Card.Preview>
+              {text(
+                'Body',
+                'Can you believe it? Sofar Sounds is turning TEN! What started as a little side hobby in a London flat with just eight people is now in...'
+              )}
+            </Card.Preview>
+            <Card.Footer>Customisable Footer</Card.Footer>
+          </Card.Content>
+        </Card.Container>
+      </div>
+    </BrowserRouter>
+  ));

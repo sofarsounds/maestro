@@ -82,6 +82,7 @@ export default interface Theme {
   };
 
   borderRadius: {
+    default: string;
     button: string;
     input: string;
   };

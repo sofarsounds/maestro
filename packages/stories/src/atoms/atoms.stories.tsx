@@ -11,7 +11,8 @@ import {
   Textfield,
   Textarea,
   Select,
-  Badge
+  Badge,
+  Divider
 } from 'uikit';
 
 const Container = styled.div`
@@ -126,5 +127,12 @@ storiesOf('03 / Atoms|Others', module)
           {text('Content', '1')}
         </Badge>
       </div>
+    </div>
+  ))
+  .add('Divider', () => (
+    <div>
+      A Divider
+      <Divider />
+      More Content
     </div>
   ));

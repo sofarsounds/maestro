@@ -79,6 +79,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -325,6 +326,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -602,6 +604,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -830,6 +833,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1052,6 +1056,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1316,6 +1321,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1521,6 +1527,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1720,6 +1727,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1944,6 +1952,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
