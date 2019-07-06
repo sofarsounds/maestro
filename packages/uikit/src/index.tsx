@@ -4,6 +4,7 @@ export * from './atoms/Typography';
 export * from './atoms/FormElements';
 export * from './atoms/Grid';
 export { default as Badge } from './atoms/Badge';
+export { default as Divider } from './atoms/Divider';
 export { default as Container } from './atoms/Container';
 export { default as Grid } from './atoms/Grid';
 export { default as Icon } from './atoms/Icon';
