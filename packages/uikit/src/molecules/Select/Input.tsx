@@ -30,10 +30,17 @@ interface ButtonProps {
 }
 
 const Button = styled.button<ButtonProps>`
+${({ theme }) => css`
   ${inputBaseStyle};
   flex-basis: 50px;
   border-radius: 0px 2px 2px 0px;
-
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    border-color: ${theme.colours.macyGrey}
+  `}
+  }
   ${({ isOpen }) => isOpen && css``}
 `;
 
@@ -75,7 +82,7 @@ const Input: React.SFC<Props> = ({
         placeholder={placeholder}
       />
       <Button onClick={() => onClick()} isOpen={isOpen}>
-        <Icon name={isOpen ? 'caretDown' : 'check'} />
+        <Icon name={isOpen ? 'check' : 'caretDown'} />
       </Button>
     </InputWrapper>
   );
