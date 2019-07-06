@@ -1,7 +1,7 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "0.1.22",
-  "description": "",
+  "version": "0.1.23",
+  "description": "The official sofar sounds uikit",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
@@ -47,10 +47,11 @@
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
+    "@types/react-router-dom": "4",
     "awesome-typescript-loader": "^5.2.1",
     "color": "^3.1.2",
     "enzyme": "^3.10.0",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^4",
     "styled-components": "^4",
     "svg-inline-loader": "^0.8.0"
   },
