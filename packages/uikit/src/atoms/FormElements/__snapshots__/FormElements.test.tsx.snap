@@ -42,6 +42,7 @@ exports[`FormElements Textarea renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -222,6 +223,7 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -410,6 +412,7 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -593,6 +596,7 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -776,6 +780,7 @@ exports[`FormElements Textfield renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -948,6 +953,7 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1128,6 +1134,7 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1303,6 +1310,7 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {

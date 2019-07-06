@@ -41,6 +41,7 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -371,6 +372,7 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {

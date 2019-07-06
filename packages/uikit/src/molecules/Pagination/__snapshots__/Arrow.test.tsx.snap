@@ -230,6 +230,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -844,6 +845,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1461,6 +1463,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -2075,6 +2078,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {

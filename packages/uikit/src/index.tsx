@@ -4,6 +4,7 @@ export * from './atoms/Typography';
 export * from './atoms/FormElements';
 export * from './atoms/Grid';
 export { default as Badge } from './atoms/Badge';
+export { default as Divider } from './atoms/Divider';
 export { default as Container } from './atoms/Container';
 export { default as Grid } from './atoms/Grid';
 export { default as Icon } from './atoms/Icon';
@@ -16,6 +17,7 @@ export { default as HeroImage } from './molecules/HeroImage';
 export { default as FormGroup } from './molecules/FormGroup';
 export { default as Footer } from './molecules/Footer';
 export { default as Subnav } from './molecules/Subnav';
+export { default as Card } from './molecules/Card';
 
 export { default as Login } from './organisms/Login';
 
