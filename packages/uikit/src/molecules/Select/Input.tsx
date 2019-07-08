@@ -9,6 +9,7 @@ import Icon from '../../atoms/Icon';
 interface SelectInputProps {
   isOpen?: boolean;
   depth: any;
+  readonly?: boolean;
 }
 
 interface InputWrapper {
@@ -18,6 +19,7 @@ interface InputWrapper {
 
 interface Props {
   placeholder?: string;
+  readonly?: boolean;
   isOpen?: boolean;
   onClick: () => void;
   innerRef?: React.RefObject<any>;
@@ -47,6 +49,9 @@ ${({ theme }) => css`
 const InputWrapper = styled.div<InputWrapper>`
   display: flex;
   flex: center;
+  &:hover {
+    background-color: red;
+  }
 `;
 
 const InputStyle = styled.input<InputProps & SelectInputProps>`
@@ -59,6 +64,7 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
     }
 
     border-radius: 2px 0px 0px 2px;
+
     ${isOpen &&
       css`
         ${withShadow}
@@ -71,12 +77,14 @@ const Input: React.SFC<Props> = ({
   placeholder,
   onClick,
   innerRef,
-  value
+  value,
+  readonly
 }) => {
   return (
     <InputWrapper ref={innerRef}>
       <InputStyle
         value={value}
+        readonly
         depth={3}
         isOpen={isOpen}
         placeholder={placeholder}

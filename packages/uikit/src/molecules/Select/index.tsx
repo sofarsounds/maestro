@@ -9,11 +9,13 @@ interface SelectProps {
   placeholder: string;
   children?: any;
   handleOptionClick?: (value: any) => void;
+  readonly: boolean;
 }
 
 const Select: React.SFC<SelectProps> = ({
   placeholder,
   children,
+  readonly,
   handleOptionClick
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +39,7 @@ const Select: React.SFC<SelectProps> = ({
   return (
     <>
       <Input
+        readonly={readonly}
         innerRef={ref}
         isOpen={isOpen}
         value={value}

@@ -62,7 +62,11 @@ storiesOf('05 / Molecules|Pagination', module)
 storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
   <div>
     <h1>Select</h1>
-    <Select handleOptionClick={callback} placeholder="Select a city">
+    <Select
+      readonly={true}
+      handleOptionClick={callback}
+      placeholder="Select a city"
+    >
       {({ onSelect }: any) =>
         citiesData.map((cityData, index) => (
           <Option
