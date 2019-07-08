@@ -74,7 +74,9 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
             value={cityData.value}
             onClick={optionClick}
             name={cityData.name}
-          />
+          >
+            {cityData.name}
+          </Option>
         ))
       }
     </Select>

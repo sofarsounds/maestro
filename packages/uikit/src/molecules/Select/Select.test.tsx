@@ -62,21 +62,7 @@ describe('Select', () => {
     expect(mockClick).toHaveBeenCalled();
   });
 
-  /* TODO: Why doesn't this work */
-  /* it('calls the select click handler when an option is clicked', () => { */
-  /*   let wrapper = setup(); */
-  /*   let button = wrapper.find('button'); */
-  /*   let outsideElement = wrapper.find('#outside_idiot'); */
-  /*   let options = wrapper.find(Option).length; */
-  /*   expect(options).toBe(0); */
-  /*   button.simulate('click'); */
-  /*   wrapper.update(); */
-  /*   expect(options).toBe(3); */
-  /*   outsideElement.simulate('click'); */
-  /*   expect(outsideClick).toHaveBeenCalled(); */
-  /*   wrapper.update(); */
-  /*   expect(options).toBe(0); */
-  /* }); */
+  it.todo('closes the menu when clicked outside of select component');
 
   it('returns the options value to the click select click handler onClick', () => {
     let wrapper = setup();
