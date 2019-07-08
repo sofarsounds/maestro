@@ -12,7 +12,7 @@ let citiesData = [
 ];
 
 let callback = (value: any) => {
-  console.log(` have been called with ${value}`);
+  action(` have been called with ${value}`);
 };
 
 storiesOf('05 / Molecules|Pagination', module)

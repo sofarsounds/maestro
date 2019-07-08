@@ -64,6 +64,8 @@ describe('Select', () => {
 
   it.todo('closes the menu when clicked outside of select component');
 
+  it.todo('closes the menu when keydown escape');
+
   it('returns the options value to the click select click handler onClick', () => {
     let wrapper = setup();
     let button = wrapper.find('button');
