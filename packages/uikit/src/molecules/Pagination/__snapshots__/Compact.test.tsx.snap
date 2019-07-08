@@ -381,6 +381,9 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -1598,6 +1601,9 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -2584,6 +2590,9 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

@@ -48,7 +48,7 @@ export const CopyrightContainer = styled.div`
 `;
 
 export const SocialIcons = styled.div`
-  i {
+  a {
     margin-right: ${({ theme }) => theme.ruler[2]}px;
 
     &:last-child {

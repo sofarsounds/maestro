@@ -135,6 +135,9 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -465,6 +468,9 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

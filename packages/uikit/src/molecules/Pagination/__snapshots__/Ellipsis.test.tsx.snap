@@ -319,6 +319,9 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >

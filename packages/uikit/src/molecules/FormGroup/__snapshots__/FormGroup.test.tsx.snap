@@ -172,6 +172,9 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -514,6 +517,9 @@ exports[`<FormGroup /> renders a error message 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -827,6 +833,9 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -1094,6 +1103,9 @@ exports[`<FormGroup /> renders correctly 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

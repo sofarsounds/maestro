@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Logo from '../../atoms/Logo';
+import Container from '../../atoms/Container';
 
 import NavbarContainer from './NavbarContainer';
-import Container from './Container';
 import CollapsibleWrapper from './Collapsible';
 import Hamburger from './CollapseIcon';
 import Brand from './Brand';
@@ -45,7 +45,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
     return (
       <NavbarContainer fixed={fixed}>
-        <Container>
+        <Container alignItems="center" justify-content="space-between">
           <Brand>
             <Logo invert />
           </Brand>

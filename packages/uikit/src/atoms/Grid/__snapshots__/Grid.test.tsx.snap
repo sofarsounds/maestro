@@ -112,6 +112,9 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -379,6 +382,9 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -610,6 +616,9 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -970,6 +979,9 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -1263,6 +1275,9 @@ exports[`Grid renders the Grid correctly 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

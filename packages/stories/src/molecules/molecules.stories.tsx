@@ -190,11 +190,21 @@ storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
     </Footer.Top>
     <Footer.Bottom>
       <Footer.SocialIcons>
-        <Footer.Icon name="facebookOutline" />
-        <Footer.Icon name="twitterOutline" />
-        <Footer.Icon name="instagramOutline" />
-        <Footer.Icon name="spotifyOutline" />
-        <Footer.Icon name="youtubeOutline" />
+        <a href="">
+          <Footer.Icon name="facebookOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="twitterOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="instagramOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="spotifyOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="youtubeOutline" />
+        </a>
       </Footer.SocialIcons>
       <Footer.CopyrightMsg>
         &copy; 2019 Sofar Sounds. All Rights Reserved.

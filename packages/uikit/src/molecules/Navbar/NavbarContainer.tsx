@@ -13,6 +13,8 @@ export default styled.div<NavbarContainerProps>`
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: ${theme.zIndex.navbar};
+
     ${fixed &&
       css`
         position: fixed;
