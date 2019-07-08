@@ -11,13 +11,13 @@ import CollapsibleWrapper from './Collapsible';
 const setup = () =>
   mountWithTheme(
     <Navbar>
-      <ItemContainer>
-        <Item>Left Item</Item>
-      </ItemContainer>
-      <ItemContainer align="right">
-        <Item>Right Item #1</Item>
-        <Item>Right Item #2</Item>
-      </ItemContainer>
+        <ItemContainer>
+          <Item>Left Item</Item>
+        </ItemContainer>
+        <ItemContainer align="right">
+          <Item>Right Item #1</Item>
+          <Item>Right Item #2</Item>
+        </ItemContainer>
     </Navbar>
   );
 
