@@ -135,6 +135,21 @@ storiesOf('05 / Molecules|HeroImage', module)
     >
       <PrimaryButton>An Action</PrimaryButton>
     </HeroImage>
+  ))
+  .add('Parallax', () => (
+    <div>
+      <HeroImage
+        height="400px"
+        imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+        title="I am the Title"
+        subtitle="I am a subtitle"
+        parallax
+      >
+        <PrimaryButton>An Action</PrimaryButton>
+      </HeroImage>
+
+      <div style={{ height: '1000px' }} />
+    </div>
   ));
 
 storiesOf('05 / Molecules|FormGroup', module)
