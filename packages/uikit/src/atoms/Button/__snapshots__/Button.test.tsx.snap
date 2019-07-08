@@ -173,6 +173,9 @@ exports[`Buttons Link Button renders correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -419,6 +422,9 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -698,6 +704,9 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -927,6 +936,9 @@ exports[`Buttons Outline Button renders correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -1149,6 +1161,9 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -1415,6 +1430,9 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -1621,6 +1639,9 @@ exports[`Buttons Primary Button renders correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -1820,6 +1841,9 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -2045,6 +2069,9 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

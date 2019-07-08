@@ -65,6 +65,9 @@ export default interface Theme {
   media: any;
 
   ruler: number[];
+  zIndex: {
+    navbar: number;
+  };
   dimensions: {
     inputHeight: string;
     buttonHeight: string;

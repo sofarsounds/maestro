@@ -73,11 +73,12 @@ const theme: Theme = {
   }, {}),
 
   ruler: Array.from({ length: 21 }, (e, i) => i * 4),
+  zIndex: {
+    navbar: 100
+  },
   dimensions: {
     inputHeight: '44px',
     buttonHeight: '44px',
-    // TODO need to work with design on what the container widths
-    // should actually be
     containerWidth: {
       small: '600px',
       default: '800px',

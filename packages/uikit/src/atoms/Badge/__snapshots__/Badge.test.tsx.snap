@@ -127,6 +127,9 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -299,6 +302,9 @@ exports[`Badge Primary Badge renders the badge correctly 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

@@ -132,6 +132,9 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
@@ -318,6 +321,9 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

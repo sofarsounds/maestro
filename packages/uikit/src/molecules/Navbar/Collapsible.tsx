@@ -6,6 +6,7 @@ interface WrapperProps {
 export default styled.div<WrapperProps>`
   ${({ open, theme }) => css`
     display: none;
+    z-index: ${theme.zIndex.navbar};
 
     ${open &&
       css`
