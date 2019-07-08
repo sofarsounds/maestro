@@ -11,6 +11,10 @@ let citiesData = [
   { name: 'Bristol', value: 'bristol' }
 ];
 
+let callback = (value: any) => {
+  console.log(` have been called with ${value}`);
+};
+
 storiesOf('05 / Molecules|Pagination', module)
   .addDecorator(withKnobs)
   .add('Pagination', () => (
@@ -58,7 +62,7 @@ storiesOf('05 / Molecules|Pagination', module)
 storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
   <div>
     <h1>Select</h1>
-    <Select placeholder="Select a city">
+    <Select handleOptionClick={callback} placeholder="Select a city">
       {({ onSelect }: any) =>
         citiesData.map((cityData, index) => (
           <Option

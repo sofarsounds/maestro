@@ -8,9 +8,14 @@ import { useOutsideClick, useKeyDown } from '../../hooks';
 interface SelectProps {
   placeholder: string;
   children?: any;
+  handleOptionClick?: (value: any) => void;
 }
 
-const Select: React.SFC<SelectProps> = ({ placeholder, children }) => {
+const Select: React.SFC<SelectProps> = ({
+  placeholder,
+  children,
+  handleOptionClick
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
   const [value, setValue] = useState<string>('');
@@ -26,6 +31,7 @@ const Select: React.SFC<SelectProps> = ({ placeholder, children }) => {
   const onSelect = (value: any) => {
     setValue(value);
     setIsOpen(false);
+    handleOptionClick ? handleOptionClick(value) : null;
   };
 
   return (
