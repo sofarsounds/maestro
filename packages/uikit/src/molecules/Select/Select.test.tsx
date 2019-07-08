@@ -18,12 +18,12 @@ const setup = () =>
         I am a idiot
       </div>
       <Select handleOptionClick={mockClick} placeholder={'I am placeholder'}>
-        {({ onSelect }: any) =>
+        {({ optionClick }: any) =>
           citiesData.map((cityData, index) => (
             <Option
               key={index}
               value={cityData.value}
-              onClick={onSelect}
+              onClick={optionClick}
               name={cityData.name}
             />
           ))

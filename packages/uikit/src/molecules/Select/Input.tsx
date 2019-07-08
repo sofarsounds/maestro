@@ -8,20 +8,20 @@ import Icon from '../../atoms/Icon';
 
 interface SelectInputProps {
   isOpen?: boolean;
-  depth: any;
   readonly?: boolean;
 }
 
 interface InputWrapper {
   children?: any;
   isOpen?: boolean;
+  depth: 3;
 }
 
 interface Props {
   placeholder?: string;
   readonly?: boolean;
   isOpen?: boolean;
-  onClick: () => void;
+  toggleSelect: () => void;
   innerRef?: React.RefObject<any>;
   value?: any;
 }
@@ -33,41 +33,57 @@ interface ButtonProps {
 
 const Button = styled.button<ButtonProps>`
 ${({ theme }) => css`
-  ${inputBaseStyle};
   flex-basis: 50px;
-  border-radius: 0px 2px 2px 0px;
+  border: none;
   &:hover {
     cursor: pointer;
   }
   &:focus {
     border-color: ${theme.colours.macyGrey}
+    outline: none;
   `}
   }
-  ${({ isOpen }) => isOpen && css``}
 `;
 
 const InputWrapper = styled.div<InputWrapper>`
-  display: flex;
-  flex: center;
-  &:hover {
-    background-color: red;
-  }
+  ${({ isOpen }) => css`
+    display: flex;
+    flex: center;
+    ${inputBaseStyle};
+    padding-right: 0px;
+
+    ${isOpen &&
+      css`
+        cursor: pointer;
+        ${withShadow}
+      `}
+  `}
 `;
 
 const InputStyle = styled.input<InputProps & SelectInputProps>`
-  ${({ theme, isOpen = false }) => css`
-    ${inputBaseStyle};
+  ${({ theme, readonly, isOpen = false }) => css`
     border-right: 0px;
+    width: 100%;
+    border: 0px;
+    font-size: ${theme.fontSizes.body2};
+    letter-spacing: 0.1px;
+    color: ${theme.colours.backToBlack};
+
+    &:hover {
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
 
     &::placeholder {
       color: ${theme.colours.blueSmoke};
     }
 
-    border-radius: 2px 0px 0px 2px;
-
-    ${isOpen &&
+    ${readonly &&
       css`
-        ${withShadow}
+        cursor: pointer;
       `}
   `}
 `;
@@ -75,21 +91,25 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
 const Input: React.SFC<Props> = ({
   isOpen,
   placeholder,
-  onClick,
+  toggleSelect,
   innerRef,
   value,
   readonly
 }) => {
   return (
-    <InputWrapper ref={innerRef}>
+    <InputWrapper
+      onClick={() => toggleSelect()}
+      depth={3}
+      isOpen={isOpen}
+      ref={innerRef}
+    >
       <InputStyle
         value={value}
-        readonly
-        depth={3}
+        readonly={readonly}
         isOpen={isOpen}
         placeholder={placeholder}
       />
-      <Button onClick={() => onClick()} isOpen={isOpen}>
+      <Button isOpen={isOpen}>
         <Icon name={isOpen ? 'check' : 'caretDown'} />
       </Button>
     </InputWrapper>

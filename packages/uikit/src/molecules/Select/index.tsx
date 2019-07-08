@@ -9,7 +9,7 @@ interface SelectProps {
   placeholder: string;
   children?: any;
   handleOptionClick?: (value: any) => void;
-  readonly: boolean;
+  readonly?: boolean;
 }
 
 const Select: React.SFC<SelectProps> = ({
@@ -30,7 +30,7 @@ const Select: React.SFC<SelectProps> = ({
     setIsOpen(false);
   });
 
-  const onSelect = (value: any) => {
+  const optionClick = (value: any) => {
     setValue(value);
     setIsOpen(false);
     handleOptionClick ? handleOptionClick(value) : null;
@@ -44,12 +44,12 @@ const Select: React.SFC<SelectProps> = ({
         isOpen={isOpen}
         value={value}
         placeholder={placeholder}
-        onClick={() => setIsOpen(!isOpen)}
+        toggleSelect={() => setIsOpen(!isOpen)}
       />
       {isOpen && (
         <PortalComponent dom={document.body}>
           <StickyContainer stickToEl={ref.current}>
-            <Menu depth={3}>{children({ onSelect })}</Menu>
+            <Menu depth={3}>{children({ optionClick })}</Menu>
           </StickyContainer>
         </PortalComponent>
       )}

@@ -67,12 +67,12 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
       handleOptionClick={callback}
       placeholder="Select a city"
     >
-      {({ onSelect }: any) =>
+      {({ optionClick }: any) =>
         citiesData.map((cityData, index) => (
           <Option
             key={index}
             value={cityData.value}
-            onClick={onSelect}
+            onClick={optionClick}
             name={cityData.name}
           />
         ))
