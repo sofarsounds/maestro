@@ -106,6 +106,9 @@ exports[`Navbar <Brand /> renders correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >

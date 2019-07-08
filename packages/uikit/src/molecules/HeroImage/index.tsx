@@ -9,20 +9,27 @@ interface Props {
   imageURL: string;
   title: string;
   subtitle?: string;
+  parallax?: boolean;
   children?: any;
 }
 
 interface WrapperProps {
   height: string;
   imageURL: string;
+  parallax: boolean;
 }
-
 export const Wrapper = styled.div<WrapperProps>`
-  ${({ imageURL, height }) => css`
+  ${({ imageURL, parallax, height }) => css`
     background-position: center;
     background-size: cover;
     background-image: url(${imageURL});
     height: ${height};
+
+    ${parallax &&
+      css`
+        position: relative;
+        background-attachment: fixed;
+      `}
   `}
 `;
 
@@ -39,9 +46,10 @@ const HeroImage: React.SFC<Props> = ({
   imageURL,
   title,
   subtitle,
+  parallax = false,
   children
 }) => (
-  <Wrapper height={height} imageURL={imageURL}>
+  <Wrapper parallax={parallax} height={height} imageURL={imageURL}>
     <LightBox>
       <div style={{ textAlign: 'center' }}>
         <Title colour="#fff" align="center">

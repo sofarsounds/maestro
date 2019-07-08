@@ -19,8 +19,6 @@ export { default as Footer } from './molecules/Footer';
 export { default as Subnav } from './molecules/Subnav';
 export { default as Card } from './molecules/Card';
 
-export { default as Login } from './organisms/Login';
-
 export { default as useModal } from './hooks/useModal';
 export { UseModalProps } from './hooks/useModal';
 export { Modal } from './molecules/Modal';

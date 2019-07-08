@@ -135,6 +135,21 @@ storiesOf('05 / Molecules|HeroImage', module)
     >
       <PrimaryButton>An Action</PrimaryButton>
     </HeroImage>
+  ))
+  .add('Parallax', () => (
+    <div>
+      <HeroImage
+        height="400px"
+        imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+        title="I am the Title"
+        subtitle="I am a subtitle"
+        parallax
+      >
+        <PrimaryButton>An Action</PrimaryButton>
+      </HeroImage>
+
+      <div style={{ height: '1000px' }} />
+    </div>
   ));
 
 storiesOf('05 / Molecules|FormGroup', module)
@@ -190,11 +205,21 @@ storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
     </Footer.Top>
     <Footer.Bottom>
       <Footer.SocialIcons>
-        <Footer.Icon name="facebookOutline" />
-        <Footer.Icon name="twitterOutline" />
-        <Footer.Icon name="instagramOutline" />
-        <Footer.Icon name="spotifyOutline" />
-        <Footer.Icon name="youtubeOutline" />
+        <a href="">
+          <Footer.Icon name="facebookOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="twitterOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="instagramOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="spotifyOutline" />
+        </a>
+        <a href="">
+          <Footer.Icon name="youtubeOutline" />
+        </a>
       </Footer.SocialIcons>
       <Footer.CopyrightMsg>
         &copy; 2019 Sofar Sounds. All Rights Reserved.
