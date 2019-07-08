@@ -42,6 +42,7 @@ exports[`FormElements Textarea renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -75,6 +76,11 @@ exports[`FormElements Textarea renders correctly 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -82,6 +88,7 @@ exports[`FormElements Textarea renders correctly 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -91,7 +98,7 @@ exports[`FormElements Textarea renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -128,6 +135,9 @@ exports[`FormElements Textarea renders correctly 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -216,6 +226,7 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -249,6 +260,11 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -256,6 +272,7 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -265,7 +282,7 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -302,6 +319,9 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -398,6 +418,7 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -431,6 +452,11 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -438,6 +464,7 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -447,7 +474,7 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -484,6 +511,9 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -575,6 +605,7 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -608,6 +639,11 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -615,6 +651,7 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -624,7 +661,7 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -661,6 +698,9 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -752,6 +792,7 @@ exports[`FormElements Textfield renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -785,6 +826,11 @@ exports[`FormElements Textfield renders correctly 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -792,6 +838,7 @@ exports[`FormElements Textfield renders correctly 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -801,7 +848,7 @@ exports[`FormElements Textfield renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -838,6 +885,9 @@ exports[`FormElements Textfield renders correctly 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -918,6 +968,7 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -951,6 +1002,11 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -958,6 +1014,7 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -967,7 +1024,7 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1004,6 +1061,9 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -1092,6 +1152,7 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1125,6 +1186,11 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1132,6 +1198,7 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -1141,7 +1208,7 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1178,6 +1245,9 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -1261,6 +1331,7 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1294,6 +1365,11 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1301,6 +1377,7 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -1310,7 +1387,7 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1347,6 +1424,9 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }

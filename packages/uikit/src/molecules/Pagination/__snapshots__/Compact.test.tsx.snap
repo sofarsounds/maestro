@@ -146,8 +146,20 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e91b';
 }
 
+.c2.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c2.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c2.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c2.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c2.icon-caretCircleDown:before {
@@ -275,6 +287,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -308,6 +321,11 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -315,6 +333,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -324,7 +343,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -361,6 +380,9 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -539,8 +561,20 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -967,8 +1001,20 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1320,8 +1366,20 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e91b';
 }
 
+.c3.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c3.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c3.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c3.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c3.icon-caretCircleDown:before {
@@ -1449,6 +1507,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1482,6 +1541,11 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1489,6 +1553,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -1498,7 +1563,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1535,6 +1600,9 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -1923,8 +1991,20 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -2276,8 +2356,20 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e91b';
 }
 
+.c2.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c2.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c2.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c2.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c2.icon-caretCircleDown:before {
@@ -2405,6 +2497,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -2438,6 +2531,11 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2445,6 +2543,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -2454,7 +2553,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -2491,6 +2590,9 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -2669,8 +2771,20 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {

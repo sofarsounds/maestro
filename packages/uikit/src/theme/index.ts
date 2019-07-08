@@ -52,14 +52,15 @@ const theme: Theme = {
     h4: '34px',
     h5: '24px',
     h6: '20px',
-    title: '74px',
+    title: '54px',
     subtitle1: '16px',
     subtitle2: '14px',
     body1: '16px',
     body2: '14px',
     overline: '10px',
     caption: '10px',
-    button: '14px'
+    button: '14px',
+    formGroupLabel: '14px'
   },
 
   media: Object.keys(breakPoints).reduce((acc, label: string) => {
@@ -72,20 +73,27 @@ const theme: Theme = {
   }, {}),
 
   ruler: Array.from({ length: 21 }, (e, i) => i * 4),
+  zIndex: {
+    navbar: 100
+  },
   dimensions: {
     inputHeight: '44px',
     buttonHeight: '44px',
-    // TODO need to work with design on what the container widths
-    // should actually be
     containerWidth: {
       small: '600px',
       default: '800px',
       large: '1000px',
       fullscreen: '100%'
+    },
+    navbarHeight: {
+      lg: '84px',
+      md: '74px',
+      xs: '62px'
     }
   },
 
   borderRadius: {
+    default: '2px',
     button: '4px',
     input: '2px'
   },

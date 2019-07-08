@@ -10,9 +10,10 @@ interface ColProps {
   sm?: number;
   md?: number;
   lg?: number;
+  xl?: number;
 }
 export const Col = styled.div<ColProps>`
-  ${({ theme, xs, sm, md, lg }) => css`
+  ${({ theme, xs, sm, md, lg, xl }) => css`
     grid-column-end: span ${xs || 12};
 
     ${sm &&
@@ -29,6 +30,11 @@ export const Col = styled.div<ColProps>`
       theme.media.lg`
       grid-column-end: span ${lg};
     `}
+
+    ${xl &&
+      theme.media.xl`
+      grid-column-end: span ${xl};
+    `}
   `}
 `;
 
@@ -41,6 +47,7 @@ interface GridProps {
 }
 export default styled.div<GridProps>`
   ${({ cols, gap, colGap, rowGap }) => css`
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(${cols || 12}, 1fr);
 

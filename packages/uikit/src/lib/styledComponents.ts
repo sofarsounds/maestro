@@ -8,11 +8,19 @@ const {
   createGlobalStyle,
   keyframes,
   ThemeProvider,
-  withTheme
+  withTheme,
+  ServerStyleSheet
 } = (styledComponents as styledComponents.ThemedStyledComponentsModule<
   Theme
 >) as styledComponents.ThemedStyledComponentsModule<Theme>;
 
-export { css, createGlobalStyle, keyframes, ThemeProvider, withTheme };
+export {
+  css,
+  createGlobalStyle,
+  keyframes,
+  ThemeProvider,
+  withTheme,
+  ServerStyleSheet
+};
 
 export default styled;

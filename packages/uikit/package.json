@@ -1,7 +1,7 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "0.1.13",
-  "description": "",
+  "version": "0.1.27",
+  "description": "The official sofar sounds uikit",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
@@ -10,6 +10,31 @@
     "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u"
   },
+  "jest": {
+    "testRegex": "/.*\\.test\\.(tsx|ts)$",
+    "transform": {
+      "^.+\\.(tsx|ts)?$": "ts-jest",
+      "^.+\\.(ttf|woff)?$": "<rootDir>/src/test/fileMock.ts"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "svg",
+      "ttf",
+      "woff"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/test/setupTests.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/test/fileMock.ts"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,6 +42,7 @@
     "prop-types": "^15.7.2",
     "react": "^16",
     "react-dom": "^16",
+    "react-router-dom": "^4",
     "typescript": "^3"
   },
   "dependencies": {
@@ -24,7 +50,9 @@
     "awesome-typescript-loader": "^5.2.1",
     "color": "^3.1.2",
     "enzyme": "^3.10.0",
-    "styled-components": "^4"
+    "react-router-dom": "^4",
+    "styled-components": "^4",
+    "svg-inline-loader": "^0.8.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.3.0",
@@ -34,10 +62,12 @@
     "@types/jest": "^24.0.14",
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.4",
     "@types/styled-components": "^4.1.16",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-react": "^6.24.1",
     "enzyme-adapter-react-16": "^1.14.0",
+    "image-webpack-loader": "^5.0.0",
     "jest-styled-components": "^6.3.1",
     "terser": "^4.0.0",
     "ts-jest": "^24.0.2",

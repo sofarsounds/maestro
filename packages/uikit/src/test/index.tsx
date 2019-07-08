@@ -8,3 +8,8 @@ export const shallowWithTheme = (tree: any) =>
 
 export const mountWithTheme = (tree: any) =>
   mount(<ThemeProvider theme={theme}>{tree}</ThemeProvider>);
+
+export const resize = (newWidth: number) => {
+  (global as any).innerWidth = newWidth;
+  (global as any).dispatchEvent(new Event('resize'));
+};

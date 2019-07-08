@@ -22,8 +22,10 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/no-unused-vars': 'error',
     'react/prop-types': 0,
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/display-name': 0
   }
 };

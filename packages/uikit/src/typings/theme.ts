@@ -59,11 +59,15 @@ export default interface Theme {
     overline: string;
     caption: string;
     button: string;
+    formGroupLabel: string;
   };
 
   media: any;
 
   ruler: number[];
+  zIndex: {
+    navbar: number;
+  };
   dimensions: {
     inputHeight: string;
     buttonHeight: string;
@@ -73,9 +77,15 @@ export default interface Theme {
       large: string;
       fullscreen: string;
     };
+    navbarHeight: {
+      lg: string;
+      md: string;
+      xs: string;
+    };
   };
 
   borderRadius: {
+    default: string;
     button: string;
     input: string;
   };

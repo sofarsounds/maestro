@@ -2,60 +2,81 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
+import styled from 'styled-components';
+
 import {
   PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
+  OutlineButton,
   LinkButton,
   Textfield,
   Textarea,
-  Badge
+  Badge,
+  Divider
 } from 'uikit';
+
+const Container = styled.div`
+  padding: 20px;
+`;
+
+const Inversion = styled(Container)`
+  background: #000;
+`;
 
 storiesOf('03 / Atoms|Form Elements', module)
   .addDecorator(withKnobs)
   .add('Buttons', () => (
     <div>
-      <PrimaryButton
-        onClick={action('Primary Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-      >
-        {text('Label', 'Button')}
-      </PrimaryButton>
+      <Container>
+        <PrimaryButton
+          onClick={action('Primary Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+        >
+          {text('Label', 'Button')}
+        </PrimaryButton>
+      </Container>
 
-      <br />
-      <br />
+      <Container>
+        <OutlineButton
+          onClick={action('Secondary Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+        >
+          {text('Label', 'Button')}
+        </OutlineButton>
+      </Container>
 
-      <SecondaryButton
-        onClick={action('Secondary Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-      >
-        {text('Label', 'Button')}
-      </SecondaryButton>
+      <Container>
+        <OutlineButton
+          colour="black"
+          onClick={action('Secondary Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+        >
+          {text('Label', 'Button')}
+        </OutlineButton>
+      </Container>
 
-      <br />
-      <br />
+      <Inversion>
+        <OutlineButton
+          colour="white"
+          onClick={action('Secondary Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+        >
+          {text('Label', 'Button')}
+        </OutlineButton>
+      </Inversion>
 
-      <TertiaryButton
-        onClick={action('Tertiary Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-      >
-        {text('Label', 'Button')}
-      </TertiaryButton>
-
-      <br />
-      <br />
-
-      <LinkButton
-        onClick={action('Link Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-      >
-        {text('Label', 'Button')}
-      </LinkButton>
+      <Container>
+        <LinkButton
+          onClick={action('Secondary Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+        >
+          {text('Label', 'Button')}
+        </LinkButton>
+      </Container>
     </div>
   ))
   .add('Textfield', () => (
@@ -92,5 +113,12 @@ storiesOf('03 / Atoms|Others', module)
           {text('Content', '1')}
         </Badge>
       </div>
+    </div>
+  ))
+  .add('Divider', () => (
+    <div>
+      A Divider
+      <Divider />
+      More Content
     </div>
   ));

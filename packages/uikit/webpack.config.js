@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -31,18 +30,15 @@ module.exports = {
             }
           }
         ]
-        // exclude: /node_modules/
       },
       {
-        test: /\.(gif|jpe?g|png|ico)$/,
-        loader: 'url-loader?limit=10000'
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: 'image-webpack-loader',
+        enforce: 'pre'
       },
       {
-        test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
-        loader: 'url-loader',
-        options: {
-          limit: Infinity
-        }
+        test: /\.(otf|eot|ttf|woff|woff2|gif|jpe?g|png|ico|svg).*$/,
+        loader: 'url-loader'
       }
     ]
   },

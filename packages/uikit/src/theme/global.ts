@@ -40,6 +40,7 @@ export default createGlobalStyle`
 
     body {
       font-size: ${theme.fontSizes.base};
+      margin: 0px;
     }
 
     html {
@@ -50,6 +51,10 @@ export default createGlobalStyle`
     ::after,
     ::before {
       box-sizing: inherit;
+    }
+
+    a:link, a:visited {
+      text-decoration: none;
     }
 
   `}

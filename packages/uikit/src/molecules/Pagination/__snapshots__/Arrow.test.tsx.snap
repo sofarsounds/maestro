@@ -89,8 +89,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -218,6 +230,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -251,6 +264,11 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -258,6 +276,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -267,7 +286,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -304,6 +323,9 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -434,8 +456,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -673,8 +707,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -802,6 +848,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -835,6 +882,11 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -842,6 +894,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -851,7 +904,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -888,6 +941,9 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -1016,8 +1072,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1260,8 +1328,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -1389,6 +1469,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -1422,6 +1503,11 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1429,6 +1515,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -1438,7 +1525,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1475,6 +1562,9 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -1605,8 +1695,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {
@@ -1844,8 +1946,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
   content: '\\e91b';
 }
 
+.c1.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c1.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c1.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c1.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c1.icon-caretCircleDown:before {
@@ -1973,6 +2087,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -2006,6 +2121,11 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2013,6 +2133,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -2022,7 +2143,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -2059,6 +2180,9 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
       ],
       "utils": Object {
         "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
       },
     }
   }
@@ -2187,8 +2311,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {

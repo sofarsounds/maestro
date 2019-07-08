@@ -13,6 +13,16 @@ interface ButtonProps {
   loading?: boolean;
 }
 
+export const buttonTextStyle = ({ theme }: any) => css`
+  font-size: ${theme.fontSizes.button};
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: ${theme.utils.transition()};
+`;
+
 export const BaseButton = styled.button<ButtonProps>`
   ${({ theme, loading }) => css`
     border-radius: ${theme.borderRadius.button};
@@ -26,7 +36,6 @@ export const BaseButton = styled.button<ButtonProps>`
     padding: 0 25px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: ${theme.utils.transition()};
 
     &:disabled {
       cursor: not-allowed;
@@ -88,8 +97,12 @@ export const PrimaryButton = styled(BaseButton)`
   `}
 `;
 
-export const SecondaryButton = styled(PrimaryButton)`
-  ${({ theme, loading }) => css`
+interface OutlineButtonProps {
+  colour?: 'primary' | 'black' | 'white';
+}
+
+export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
+  ${({ theme, loading, colour }) => css`
     background: ${theme.colours.whiteDenim};
     color: ${theme.colours.primary};
 
@@ -108,6 +121,38 @@ export const SecondaryButton = styled(PrimaryButton)`
       color: ${theme.colours.blueSmoke};
     }
 
+    ${colour === 'black' &&
+      css`
+        border-color: ${theme.colours.blackBetty};
+        color: ${theme.colours.backToBlack};
+
+        &:hover {
+          border-color: ${theme.colours.backToBlack};
+          color: ${theme.colours.backToBlack};
+        }
+
+        &:focus {
+          background-color: ${theme.colours.macyGrey};
+        }
+      `}
+
+    ${colour === 'white' &&
+      css`
+        border-color: ${theme.colours.whiteDenim};
+        color: ${theme.colours.whiteDenim};
+        background-color: transparent;
+
+        &:hover {
+          border-color: ${theme.colours.whiteDenim};
+          color: ${theme.colours.whiteDenim};
+          background-color: transparent;
+        }
+
+        &:focus {
+          background-color: ${theme.colours.macyGrey};
+        }
+      `}
+
     ${loading &&
       css`
         :after {
@@ -119,36 +164,7 @@ export const SecondaryButton = styled(PrimaryButton)`
   `}
 `;
 
-export const TertiaryButton = styled(SecondaryButton)`
-  ${({ theme, loading }) => css`
-    background: ${theme.colours.whiteDenim};
-    border-color: ${theme.colours.backToBlack};
-    color: ${theme.colours.backToBlack};
-
-    &:hover {
-      border-color: ${theme.colours.black};
-      color: ${theme.colours.black};
-      background-color: ${theme.colours.whiteDenim};
-    }
-
-    &:focus {
-      background-color: ${theme.colours.macyGrey};
-    }
-
-    ${loading &&
-      css`
-        border-color: ${theme.colours.blueSmoke};
-
-        :after {
-          border-color: ${theme.colours.blueSmoke};
-          border-right-color: transparent;
-          border-top-color: transparent;
-        }
-      `}
-  `}
-`;
-
-export const LinkButton = styled(SecondaryButton)`
+export const LinkButton = styled(OutlineButton)`
   ${({ theme }) => css`
     background: ${theme.colours.whiteDenim};
     border-color: ${theme.colours.whiteDenim};
