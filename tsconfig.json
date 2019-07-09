@@ -18,9 +18,12 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "downlevelIteration": true,
+    "downlevelIteration": true
+  },
+  "rules": {
     "react/no-find-dom-node": false,
     "member-access": [true, "no-public"]
+  }
   }
 }
 
