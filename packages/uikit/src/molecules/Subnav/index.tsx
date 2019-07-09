@@ -6,13 +6,14 @@ import { buttonTextStyle } from '../../atoms/Button';
 const Container = styled.div`
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
+  -ms-overflow-style: none; /* IE 10+ */
   white-space: nowrap;
   text-align: center;
 
-  &::-webkit-scrollbar { /* WebKit */
-      width: 0;
-      height: 0;
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
   }
 `;
 
