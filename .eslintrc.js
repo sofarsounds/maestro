@@ -27,7 +27,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/display-name': 0,
-    'react/no-find-dom-node': false,
-    'member-access': [true, 'no-public']
+    'react/no-find-dom-node': 0,
+    '@typescript-eslint/explicit-member-accessibility': 0
   }
 };
