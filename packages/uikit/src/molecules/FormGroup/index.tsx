@@ -9,7 +9,7 @@ interface Props {
   required?: boolean;
   errorMsg?: string;
   children: any;
-  qaId?: string;
+  'data-qaid'?: string;
 }
 
 const FormGroupWrapper = styled.div``;
@@ -19,7 +19,7 @@ const FormGroup: React.SFC<Props> = ({
   required,
   children,
   errorMsg,
-  qaId
+  'data-qaid': qaId
 }) => (
   <FormGroupWrapper data-qaid={qaId}>
     <FormGroupLabel>

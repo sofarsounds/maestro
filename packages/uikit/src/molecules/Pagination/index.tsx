@@ -14,7 +14,7 @@ export interface PaginationProps {
   onPageChange: (p: number) => void;
   totalRecords: number;
   perPage?: number;
-  qaId?: string;
+  'data-qaid'?: string;
 }
 
 const MAX_PAGES = 5;
@@ -29,7 +29,11 @@ export default class Pagination extends React.Component<PaginationProps> {
   };
 
   public render() {
-    const { currentPage = 1, totalRecords, qaId } = this.props;
+    const {
+      currentPage = 1,
+      totalRecords,
+      'data-qaid': qaId = ''
+    } = this.props;
 
     const perPage = this.props.perPage || PER_PAGE;
     const totalPages = Math.ceil(totalRecords / perPage);

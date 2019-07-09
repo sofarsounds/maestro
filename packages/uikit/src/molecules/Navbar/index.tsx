@@ -14,7 +14,7 @@ interface NavbarProps {
   fixed?: boolean;
   invert?: boolean;
   children: any;
-  qaId?: string;
+  'data-qaid'?: string;
 }
 
 interface NavbarState {
@@ -42,7 +42,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   public render() {
     const { open } = this.state;
-    const { children, fixed, qaId } = this.props;
+    const { children, fixed, 'data-qaid': qaId } = this.props;
 
     return (
       <NavbarContainer fixed={fixed} data-qaid={qaId}>

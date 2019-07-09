@@ -75,11 +75,11 @@ interface ModalProps {
   children: any;
   isShowing: boolean;
   hide: () => void;
-  qaId?: string;
+  'data-qaid'?: string;
 }
 
 export const Modal: React.SFC<ModalProps> = ({
-  qaId,
+  'data-qaid': qaId,
   children,
   isShowing,
   hide

@@ -64,7 +64,7 @@ storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
 storiesOf('05 / Molecules|Navbar', module)
   .add('Navbar', () => (
     <div style={{ paddingTop: '100px' }}>
-      <Navbar qaId="navbar">
+      <Navbar data-qaid="navbar">
         <Navbar.ItemContainer>
           <span style={{ color: '#fff' }}>LEFT</span>
         </Navbar.ItemContainer>
