@@ -4,8 +4,14 @@ import styled, { css } from '../../lib/styledComponents';
 import { buttonTextStyle } from '../../atoms/Button';
 
 const Container = styled.div`
-  overflow: auto;
-  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 1000px) {
+    & {
+      flex-direction: column;
+    }
+  }
 `;
 
 interface LinkProps {
@@ -15,11 +21,11 @@ const Link = styled(RouterLink)<LinkProps>`
   ${buttonTextStyle};
 
   ${({ theme, active }) => css`
-    display: inline-block;
-    margin-right: ${theme.ruler[10]}px;
+    display: inline;
     padding-bottom: 24px;
     color: ${theme.colours.blueSmoke};
     position: relative;
+    text-align:center;
 
     &:last-child {
       margin-right: 0;

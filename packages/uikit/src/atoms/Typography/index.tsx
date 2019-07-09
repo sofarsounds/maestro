@@ -21,6 +21,7 @@ export const Title = styled.h1`
 
   ${withTypography}
 `;
+
 export const H1 = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.h1};
