@@ -58,6 +58,5 @@ const Select: React.SFC<SelectProps> = ({
 };
 
 export { default as Option } from './Option';
-export { default as Dropdown } from './Dropdown';
 
 export default Select;
