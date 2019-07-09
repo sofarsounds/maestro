@@ -4,13 +4,15 @@ import styled, { css } from '../../lib/styledComponents';
 import { buttonTextStyle } from '../../atoms/Button';
 
 const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  white-space: nowrap;
+  text-align: center;
 
-  @media only screen and (max-width: 1000px) {
-    & {
-      flex-direction: column;
-    }
+  &::-webkit-scrollbar { /* WebKit */
+      width: 0;
+      height: 0;
   }
 `;
 
@@ -21,11 +23,11 @@ const Link = styled(RouterLink)<LinkProps>`
   ${buttonTextStyle};
 
   ${({ theme, active }) => css`
-    display: inline;
+    display: inline-block;
+    margin-right: ${theme.ruler[10]}px;
     padding-bottom: 24px;
     color: ${theme.colours.blueSmoke};
     position: relative;
-    text-align: center;
 
     &:last-child {
       margin-right: 0;
