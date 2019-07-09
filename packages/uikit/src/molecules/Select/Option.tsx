@@ -4,7 +4,6 @@ import styled, { css } from '../../lib/styledComponents';
 interface Props {
   children?: any;
   value?: any;
-  name?: string;
   disabled?: boolean;
   error?: boolean;
   onClick: (value: any) => void;
@@ -32,13 +31,8 @@ const OptionStyled = styled.li<Props>`
 `;
 
 const Option: React.SFC<Props> = ({ value, onClick, children }) => {
-  const onChange = () => {
-    if (onClick) {
-      onClick(value);
-    }
-  };
-
-  return <OptionStyled onClick={() => onChange()}>{children}</OptionStyled>;
+  const onChange = () => onClick(value);
+  return <OptionStyled onClick={onChange}>{children}</OptionStyled>;
 };
 
 export default Option;

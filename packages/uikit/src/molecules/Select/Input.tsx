@@ -14,7 +14,6 @@ interface SelectInputProps {
 interface InputWrapper {
   children?: any;
   isOpen?: boolean;
-  depth: 3;
 }
 
 interface Props {
@@ -55,13 +54,13 @@ const InputWrapper = styled.div<InputWrapper>`
     ${isOpen &&
       css`
         cursor: pointer;
-        ${withShadow}
+        ${withShadow({ depth: 3 })}
       `}
   `}
 `;
 
 const InputStyle = styled.input<InputProps & SelectInputProps>`
-  ${({ theme, readonly }) => css`
+  ${({ theme, readOnly }) => css`
     border-right: 0px;
     width: 100%;
     border: 0px;
@@ -81,7 +80,7 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
       color: ${theme.colours.blueSmoke};
     }
 
-    ${readonly &&
+    ${readOnly &&
       css`
         cursor: pointer;
       `}
@@ -97,15 +96,10 @@ const Input: React.SFC<Props> = ({
   readonly
 }) => {
   return (
-    <InputWrapper
-      onClick={() => toggleSelect()}
-      depth={3}
-      isOpen={isOpen}
-      ref={innerRef}
-    >
+    <InputWrapper onClick={() => toggleSelect()} isOpen={isOpen} ref={innerRef}>
       <InputStyle
         value={value}
-        readonly={readonly}
+        readOnly={readonly}
         isOpen={isOpen}
         placeholder={placeholder}
       />

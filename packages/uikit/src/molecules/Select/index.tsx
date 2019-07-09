@@ -39,7 +39,7 @@ const Select: React.SFC<SelectProps> = ({
   return (
     <>
       <Input
-        readonly={readonly}
+        readonly
         innerRef={ref}
         isOpen={isOpen}
         value={value}

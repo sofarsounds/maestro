@@ -80,12 +80,7 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
     >
       {({ optionClick }: any) =>
         citiesData.map((cityData, index) => (
-          <Option
-            key={index}
-            value={cityData.value}
-            onClick={optionClick}
-            name={cityData.name}
-          >
+          <Option key={index} value={cityData.value} onClick={optionClick}>
             {cityData.name}
           </Option>
         ))
