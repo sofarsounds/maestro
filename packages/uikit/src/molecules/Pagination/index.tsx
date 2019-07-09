@@ -16,36 +16,11 @@ export interface PaginationProps {
   perPage?: number;
 }
 
-interface PaginationState {
-  currentPage: number;
-  totalPages: number;
-}
-
 const MAX_PAGES = 5;
 const PER_PAGE = 8;
 
-export default class Pagination extends React.Component<
-  PaginationProps,
-  PaginationState
-> {
+export default class Pagination extends React.Component<PaginationProps> {
   public static DEFAULT_PER_PAGE = PER_PAGE;
-
-  public readonly state: PaginationState = {
-    currentPage: 1,
-    totalPages: 0
-  };
-
-  public constructor(props: PaginationProps) {
-    super(props);
-
-    const perPage = props.perPage || PER_PAGE;
-    const totalPages = Math.ceil(props.totalRecords / perPage);
-
-    this.state = {
-      currentPage: props.currentPage || 1,
-      totalPages
-    };
-  }
 
   public handlePageChange = (page: number) => {
     this.setState({ currentPage: page });
@@ -53,8 +28,10 @@ export default class Pagination extends React.Component<
   };
 
   public render() {
-    const { totalRecords } = this.props;
-    const { currentPage, totalPages } = this.state;
+    const { currentPage = 1, totalRecords } = this.props;
+
+    const perPage = this.props.perPage || PER_PAGE;
+    const totalPages = Math.ceil(totalRecords / perPage);
 
     if (!totalRecords) {
       return null;
