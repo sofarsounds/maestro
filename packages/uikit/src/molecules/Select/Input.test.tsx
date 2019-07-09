@@ -10,7 +10,7 @@ const setup = (
   placeholder: string = 'I am a placeholder'
 ) =>
   mountWithTheme(
-    <Input isOpen={isOpen} placeholder={placeholder} onClick={mockClick}>
+    <Input isOpen={isOpen} placeholder={placeholder} toggleSelect={mockClick}>
       I am a child component
     </Input>
   );
@@ -22,8 +22,8 @@ describe('Select <Input />', () => {
 
   it('it has the correct style properties when isOpen is false', () => {
     let wrapper = setup(false);
-    let input = wrapper.find('input');
-    expect(input).toHaveStyleRule('border-radius', '2px 0px 0px 2px');
+    let input = wrapper;
+    expect(input).toHaveStyleRule('border-radius', '2px');
     expect(input).not.toHaveStyleRule('box-shadow');
   });
 
@@ -34,8 +34,8 @@ describe('Select <Input />', () => {
 
   it('it has the correct style properties when isOpen is true', () => {
     let wrapper = setup(true);
-    let input = wrapper.find('input');
-    expect(input).toHaveStyleRule('border-radius', '2px 0px 0px 2px');
+    let input = wrapper;
+    expect(input).toHaveStyleRule('border-radius', '2px');
     expect(input).not.toHaveStyleRule('box-shadow');
 
     expect(input).toHaveStyleRule(
@@ -59,8 +59,7 @@ describe('Select <Input />', () => {
   it('it shows the up icon when isOpen is true', () => {
     let wrapper = setup(true);
     let icon = wrapper.find('Icon').props().name;
-    /* expect(icon).toBe('caretUp'); */
-    expect(icon).toBe('check');
+    expect(icon).toBe('caretUp');
   });
 
   it('it shows the down icon when isOpen is false', () => {

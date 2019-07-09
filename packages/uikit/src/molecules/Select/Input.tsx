@@ -110,7 +110,7 @@ const Input: React.SFC<Props> = ({
         placeholder={placeholder}
       />
       <Button isOpen={isOpen}>
-        <Icon name={isOpen ? 'check' : 'caretDown'} />
+        <Icon name={isOpen ? 'caretUp' : 'caretDown'} />
       </Button>
     </InputWrapper>
   );

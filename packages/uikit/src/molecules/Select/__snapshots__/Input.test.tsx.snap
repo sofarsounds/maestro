@@ -57,8 +57,20 @@ exports[`Select <Input /> it renders correctly 1`] = `
   content: '\\e91b';
 }
 
+.c3.icon-caretUp:before {
+  content: '\\e921';
+}
+
 .c3.icon-caretDown:before {
   content: '\\e906';
+}
+
+.c3.icon-caretLeft:before {
+  content: '\\e922';
+}
+
+.c3.icon-caretRight:before {
+  content: '\\e923';
 }
 
 .c3.icon-caretCircleDown:before {
@@ -182,39 +194,10 @@ exports[`Select <Input /> it renders correctly 1`] = `
 }
 
 .c2 {
-  width: 100%;
-  height: 44px;
-  background-color: #FFFFFF;
-  border-radius: 2px;
-  border: 1px solid #DBDBDB;
-  padding: 0 16px;
-  outline: none;
-  box-shadow: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  font-size: 14px;
-  -webkit-letter-spacing: 0.1px;
-  -moz-letter-spacing: 0.1px;
-  -ms-letter-spacing: 0.1px;
-  letter-spacing: 0.1px;
-  color: #111111;
   -webkit-flex-basis: 50px;
   -ms-flex-preferred-size: 50px;
   flex-basis: 50px;
-  border-radius: 0px 2px 2px 0px;
-}
-
-.c2:hover {
-  border-color: #949494;
-}
-
-.c2:focus {
-  border-color: #111111;
-}
-
-.c2:disabled {
-  color: #DBDBDB;
-  border-color: #DBDBDB;
+  border: none;
 }
 
 .c2:hover {
@@ -223,6 +206,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
 
 .c2:focus {
   border-color: #DBDBDB;
+  outline: none;
 }
 
 .c0 {
@@ -233,9 +217,6 @@ exports[`Select <Input /> it renders correctly 1`] = `
   -webkit-flex: center;
   -ms-flex: center;
   flex: center;
-}
-
-.c1 {
   width: 100%;
   height: 44px;
   background-color: #FFFFFF;
@@ -252,21 +233,40 @@ exports[`Select <Input /> it renders correctly 1`] = `
   -ms-letter-spacing: 0.1px;
   letter-spacing: 0.1px;
   color: #111111;
-  border-right: 0px;
-  border-radius: 2px 0px 0px 2px;
+  padding-right: 0px;
 }
 
-.c1:hover {
+.c0:hover {
   border-color: #949494;
 }
 
-.c1:focus {
+.c0:focus {
   border-color: #111111;
 }
 
-.c1:disabled {
+.c0:disabled {
   color: #DBDBDB;
   border-color: #DBDBDB;
+}
+
+.c1 {
+  border-right: 0px;
+  width: 100%;
+  border: 0px;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  color: #111111;
+}
+
+.c1:hover {
+  outline: none;
+}
+
+.c1:focus {
+  outline: none;
 }
 
 .c1::-webkit-input-placeholder {
@@ -290,6 +290,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
     Object {
       "borderRadius": Object {
         "button": "4px",
+        "default": "2px",
         "input": "2px",
       },
       "colours": Object {
@@ -323,6 +324,11 @@ exports[`Select <Input /> it renders correctly 1`] = `
           "small": "600px",
         },
         "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
       },
       "fontSizes": Object {
         "base": "16px",
@@ -330,6 +336,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
         "body2": "14px",
         "button": "14px",
         "caption": "10px",
+        "formGroupLabel": "14px",
         "h1": "96px",
         "h2": "60px",
         "h3": "48px",
@@ -339,7 +346,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "74px",
+        "title": "54px",
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -377,28 +384,37 @@ exports[`Select <Input /> it renders correctly 1`] = `
       "utils": Object {
         "transition": [Function],
       },
+      "zIndex": Object {
+        "navbar": 100,
+      },
     }
   }
 >
   <Input
     isOpen={false}
-    onClick={[MockFunction]}
     placeholder="I am a placeholder"
+    toggleSelect={[MockFunction]}
   >
-    <styled.div>
+    <styled.div
+      depth={3}
+      isOpen={false}
+      onClick={[Function]}
+    >
       <StyledComponent
+        depth={3}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-bxivhb",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "c0",
               "rules": Array [
                 "
-  display: flex;
-  flex: center;
+  ",
+                [Function],
+                "
 ",
               ],
             },
@@ -413,17 +429,18 @@ exports[`Select <Input /> it renders correctly 1`] = `
           }
         }
         forwardedRef={null}
+        isOpen={false}
+        onClick={[Function]}
       >
         <div
           className="c0"
+          onClick={[Function]}
         >
           <styled.input
-            depth={3}
             isOpen={false}
             placeholder="I am a placeholder"
           >
             <StyledComponent
-              depth={3}
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -462,7 +479,6 @@ exports[`Select <Input /> it renders correctly 1`] = `
           </styled.input>
           <styled.button
             isOpen={false}
-            onClick={[Function]}
           >
             <StyledComponent
               forwardedComponent={
@@ -479,9 +495,6 @@ exports[`Select <Input /> it renders correctly 1`] = `
                       [Function],
                       "
   }
-  ",
-                      [Function],
-                      "
 ",
                     ],
                   },
@@ -497,11 +510,9 @@ exports[`Select <Input /> it renders correctly 1`] = `
               }
               forwardedRef={null}
               isOpen={false}
-              onClick={[Function]}
             >
               <button
                 className="c2"
-                onClick={[Function]}
               >
                 <Icon
                   name="caretDown"
@@ -587,8 +598,20 @@ exports[`Select <Input /> it renders correctly 1`] = `
         content: '\\\\e91b';
       }
     
+      &.icon-caretUp:before {
+        content: '\\\\e921';
+      }
+    
       &.icon-caretDown:before {
         content: '\\\\e906';
+      }
+    
+      &.icon-caretLeft:before {
+        content: '\\\\e922';
+      }
+    
+      &.icon-caretRight:before {
+        content: '\\\\e923';
       }
     
       &.icon-caretCircleDown:before {

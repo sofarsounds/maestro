@@ -6,11 +6,7 @@ import Option from './Option';
 const mockClick = jest.fn();
 
 const setup = () =>
-  mountWithTheme(
-    <Option name={'cardiff'} onClick={mockClick}>
-      I am a child component
-    </Option>
-  );
+  mountWithTheme(<Option onClick={mockClick}>cardiff</Option>);
 
 describe('Select <Menu />', () => {
   it('it renders correctly', () => {

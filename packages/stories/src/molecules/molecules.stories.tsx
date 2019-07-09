@@ -6,12 +6,13 @@ import { BrowserRouter } from 'react-router-dom';
 import {
   Navbar,
   Pagination,
+  PrimaryButton,
   Select,
+  Dropdown,
   Option,
   Modal,
   useModal,
   HeroImage,
-  PrimaryButton,
   Textfield,
   FormGroup,
   Footer,
@@ -95,6 +96,29 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
         ))
       }
     </Select>
+  </div>
+));
+
+const dropDown = (onClick: any) => (
+  <PrimaryButton onClick={onClick}>Click Me</PrimaryButton>
+);
+storiesOf('05 / Molecules|Dropdown Select', module).add('Select Input', () => (
+  <div>
+    <h1>Select</h1>
+    <Dropdown component={dropDown} isOpen={true} handleOptionClick={callback}>
+      {({ optionClick }: any) =>
+        citiesData.map((cityData, index) => (
+          <Option
+            key={index}
+            value={cityData.value}
+            onClick={optionClick}
+            name={cityData.name}
+          >
+            {cityData.name}
+          </Option>
+        ))
+      }
+    </Dropdown>
   </div>
 ));
 
