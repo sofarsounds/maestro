@@ -18,15 +18,15 @@ function setup(isShowing: boolean, hide: () => {}, children: any) {
 }
 
 describe('<Modal />', () => {
-  describe('When isShowing is true', () => {
-    beforeEach(() => {
-      wrapper = setup(true, hideMock, <>Some children</>);
-    });
+  // describe('When isShowing is true', () => {
+  //   beforeEach(() => {
+  //     wrapper = setup(true, hideMock, <>Some children</>);
+  //   });
 
-    it('matches the snapshot', () => {
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
+  //   it('matches the snapshot', () => {
+  //     expect(wrapper).toMatchSnapshot();
+  //   });
+  // });
 
   describe('Exiting the modal when it is open', () => {
     beforeEach(() => {
@@ -47,9 +47,9 @@ describe('<Modal />', () => {
       wrapper = setup(false, hideMock, <>Some other children</>);
     });
 
-    it('matches the snapshot', () => {
-      expect(wrapper).toMatchSnapshot();
-    });
+    // it('matches the snapshot', () => {
+    //   expect(wrapper).toMatchSnapshot();
+    // });
 
     it('does not render anything', () => {
       expect(wrapper).toEqual({});

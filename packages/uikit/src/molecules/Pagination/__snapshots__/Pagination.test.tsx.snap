@@ -431,6 +431,7 @@ exports[`<Pagination /> renders correctly 1`] = `
           className="c0"
         >
           <Component
+            data-qaid="undefined-prev"
             disabled={false}
             onClick={[Function]}
           >
@@ -1322,6 +1323,7 @@ exports[`<Pagination /> renders correctly 1`] = `
             </PageBubble>
           </Compact>
           <Component
+            data-qaid="undefined-next"
             disabled={false}
             onClick={[Function]}
           >
