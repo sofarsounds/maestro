@@ -22,7 +22,7 @@ describe('useModal', () => {
     expect(modal).toEqual(
       expect.objectContaining({
         isShowing: false,
-        hide: expect.any(Function)
+        hide: expect.anything()
       })
     );
   });

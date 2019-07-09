@@ -1,6 +1,6 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "0.1.30",
+  "version": "0.1.31",
   "description": "The official sofar sounds uikit",
   "main": "dist/index.js",
   "scripts": {

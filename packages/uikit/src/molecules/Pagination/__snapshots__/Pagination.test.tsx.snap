@@ -399,8 +399,11 @@ exports[`<Pagination /> renders correctly 1`] = `
     onPageChange={[MockFunction]}
     totalRecords={80}
   >
-    <styled.div>
+    <styled.div
+      data-qaid=""
+    >
       <StyledComponent
+        data-qaid=""
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -429,8 +432,10 @@ exports[`<Pagination /> renders correctly 1`] = `
       >
         <div
           className="c0"
+          data-qaid=""
         >
           <Component
+            data-qaid="-prev"
             disabled={false}
             onClick={[Function]}
           >
@@ -1322,6 +1327,7 @@ exports[`<Pagination /> renders correctly 1`] = `
             </PageBubble>
           </Compact>
           <Component
+            data-qaid="-next"
             disabled={false}
             onClick={[Function]}
           >
