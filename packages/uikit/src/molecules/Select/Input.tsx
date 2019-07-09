@@ -61,7 +61,7 @@ const InputWrapper = styled.div<InputWrapper>`
 `;
 
 const InputStyle = styled.input<InputProps & SelectInputProps>`
-  ${({ theme, readonly, isOpen = false }) => css`
+  ${({ theme, readonly }) => css`
     border-right: 0px;
     width: 100%;
     border: 0px;

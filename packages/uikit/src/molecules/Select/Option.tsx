@@ -31,7 +31,7 @@ const OptionStyled = styled.li<Props>`
   `}
 `;
 
-const Option: React.SFC<Props> = ({ name, value, onClick, children }) => {
+const Option: React.SFC<Props> = ({ value, onClick, children }) => {
   const onChange = () => {
     if (onClick) {
       onClick(value);

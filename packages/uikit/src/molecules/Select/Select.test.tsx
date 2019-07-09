@@ -79,7 +79,7 @@ describe('Select', () => {
     const setup = () =>
       mountWithTheme(
         <Select placeholder={'I am placeholder'}>
-          {({ onSelect }: any) =>
+          {({ optionClick }: any) =>
             citiesData.map((cityData, index) => (
               <Option
                 key={index}
