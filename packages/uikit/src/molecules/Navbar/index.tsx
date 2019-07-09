@@ -45,7 +45,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
     return (
       <NavbarContainer fixed={fixed}>
-        <Container alignItems="center" justify-content="space-between">
+        <Container alignItems="center" justifyContent="space-between">
           <Brand>
             <Logo invert />
           </Brand>
