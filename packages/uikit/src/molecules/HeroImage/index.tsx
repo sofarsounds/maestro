@@ -11,6 +11,7 @@ interface Props {
   subtitle?: string;
   parallax?: boolean;
   children?: any;
+  qaId?: string;
 }
 
 interface WrapperProps {
@@ -47,9 +48,15 @@ const HeroImage: React.SFC<Props> = ({
   title,
   subtitle,
   parallax = false,
-  children
+  children,
+  qaId
 }) => (
-  <Wrapper parallax={parallax} height={height} imageURL={imageURL}>
+  <Wrapper
+    data-qaid={qaId}
+    parallax={parallax}
+    height={height}
+    imageURL={imageURL}
+  >
     <LightBox>
       <div style={{ textAlign: 'center' }}>
         <Title colour="#fff" align="center">

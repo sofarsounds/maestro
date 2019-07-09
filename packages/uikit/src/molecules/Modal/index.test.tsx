@@ -9,7 +9,7 @@ let wrapper: ReactWrapper;
 
 const hideMock = jest.fn();
 
-function setup(isShowing: boolean, hide: Function, children: any) {
+function setup(isShowing: boolean, hide: () => {}, children: any) {
   return mountWithTheme(
     <Modal isShowing={isShowing} hide={hide}>
       {children}
