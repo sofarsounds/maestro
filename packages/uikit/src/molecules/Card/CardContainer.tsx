@@ -1,5 +1,4 @@
 import styled, { css } from '../../lib/styledComponents';
-import { Overline } from '../../atoms/Typography';
 
 export default styled.div`
   ${({ theme }) => css`

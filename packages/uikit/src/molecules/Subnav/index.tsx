@@ -25,7 +25,7 @@ const Link = styled(RouterLink)<LinkProps>`
     padding-bottom: 24px;
     color: ${theme.colours.blueSmoke};
     position: relative;
-    text-align:center;
+    text-align: center;
 
     &:last-child {
       margin-right: 0;
