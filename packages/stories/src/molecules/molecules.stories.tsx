@@ -239,7 +239,7 @@ const links = [
   'Another Link'
 ];
 storiesOf('05 / Molecules|Subnav', module).add('Subnav', () => (
-  <div style={{ width: '100%', maxWidth: '800px' }}>
+  <div style={{ width: '100%' }}>
     <Subnav.Container>
       {links.map(l => (
         <Subnav.Link key={l} active={l === 'Backstage Pass'} to="/" as="a">
