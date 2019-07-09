@@ -60,7 +60,7 @@ const InputWrapper = styled.div<InputWrapper>`
 `;
 
 const InputStyle = styled.input<InputProps & SelectInputProps>`
-  ${({ theme, readOnly }) => css`
+  ${({ theme, readonly }) => css`
     border-right: 0px;
     width: 100%;
     border: 0px;
@@ -80,7 +80,7 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
       color: ${theme.colours.blueSmoke};
     }
 
-    ${readOnly &&
+    ${readonly &&
       css`
         cursor: pointer;
       `}

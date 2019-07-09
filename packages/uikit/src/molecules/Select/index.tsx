@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-
 import Input from './Input';
 import Menu from './Menu';
 import { StickyContainer, PortalComponent } from '../../util/index';
@@ -39,7 +38,7 @@ const Select: React.SFC<SelectProps> = ({
   return (
     <>
       <Input
-        readonly
+        readonly={readonly}
         innerRef={ref}
         isOpen={isOpen}
         value={value}
