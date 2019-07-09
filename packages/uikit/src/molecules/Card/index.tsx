@@ -1,26 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Body2 } from '../../atoms/Typography';
-
 import Container from './CardContainer';
 import Image from './CardImage';
 import Content from './CardContent';
-import { Title, Footer } from './CardElements';
+import { Title, Preview, Footer } from './CardElements';
 
 interface CardProps {
   linkTo?: string;
+  inverted?: boolean;
   children: any;
 }
 
-const Card: React.SFC<CardProps> = ({ linkTo, children }) => {
+const Card: React.SFC<CardProps> = ({ linkTo, inverted = false, children }) => {
   if (!linkTo) {
-    return <Container>{children}</Container>;
+    return <Container inverted={inverted}>{children}</Container>;
   }
 
   return (
     <Link to={linkTo}>
-      <Container>{children}</Container>
+      <Container inverted={inverted}>{children}</Container>
     </Link>
   );
 };
@@ -30,6 +29,6 @@ export default {
   Image,
   Content,
   Title,
-  Preview: Body2,
+  Preview,
   Footer
 };

@@ -1,6 +1,6 @@
 import { css } from '../lib/styledComponents';
 
-interface TypographyProps {
+export interface WithTypographyProps {
   colour?: string;
   align?: 'center' | 'left' | 'right';
   underline?: boolean;
@@ -14,7 +14,7 @@ export default ({
   underline,
   lineHeight,
   fontWeight
-}: TypographyProps) => css`
+}: WithTypographyProps) => css`
   ${colour &&
     css`
       color: ${colour};

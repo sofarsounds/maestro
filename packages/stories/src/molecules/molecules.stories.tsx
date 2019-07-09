@@ -277,4 +277,37 @@ storiesOf('05 / Molecules|Card', module)
         </Card.Container>
       </div>
     </BrowserRouter>
+  ))
+  .add('Inverted', () => (
+    <BrowserRouter>
+      <div
+        style={{
+          background: '#000',
+          padding: '25px',
+          width: '100%',
+          maxWidth: '950px'
+        }}
+      >
+        <Card.Container inverted linkTo="https://www.google.com">
+          <Card.Image
+            url={text(
+              'Image URL',
+              'https://sofarlive.cdn.prismic.io/sofarlive/ab56300a2ff2f667c6af44d2c0d301daa0865855_oompa-boston-041118-brandon_johnson2.jpg'
+            )}
+          />
+          <Card.Content>
+            <Card.Title>
+              {text('Title', 'Sofar turns 10! Celebrate with us')}
+            </Card.Title>
+            <Card.Preview>
+              {text(
+                'Body',
+                'Can you believe it? Sofar Sounds is turning TEN! What started as a little side hobby in a London flat with just eight people is now in...'
+              )}
+            </Card.Preview>
+            <Card.Footer>Customisable Footer</Card.Footer>
+          </Card.Content>
+        </Card.Container>
+      </div>
+    </BrowserRouter>
   ));

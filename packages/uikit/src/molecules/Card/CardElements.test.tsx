@@ -5,7 +5,7 @@ import { Title, Footer } from './CardElements';
 
 describe('Card Elements', () => {
   describe('<CardTitle />', () => {
-    const wrapper = mountWithTheme(<Title />);
+    const wrapper = mountWithTheme(<Title>A title</Title>);
 
     it('has the correct style rules', () => {
       expect(wrapper).toHaveStyleRule('margin-bottom', '16px');

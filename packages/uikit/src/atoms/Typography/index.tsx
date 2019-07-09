@@ -1,7 +1,11 @@
 import styled, { css } from '../../lib/styledComponents';
-import { withTypography } from '../../util';
+import { WithTypographyProps, withTypography } from '../../util';
 
-export const Title = styled.h1`
+interface TypographyProps extends WithTypographyProps {
+  children: any;
+}
+
+export const Title = styled.h1<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.title};
     font-weight: 800;
@@ -21,8 +25,7 @@ export const Title = styled.h1`
 
   ${withTypography}
 `;
-
-export const H1 = styled.h1`
+export const H1 = styled.h1<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.h1};
     font-weight: normal;
@@ -43,7 +46,7 @@ export const H1 = styled.h1`
   ${withTypography}
 `;
 
-export const H2 = styled.h2`
+export const H2 = styled.h2<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.h2};
     font-weight: normal;
@@ -64,7 +67,7 @@ export const H2 = styled.h2`
   ${withTypography}
 `;
 
-export const H3 = styled.h3`
+export const H3 = styled.h3<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.h3};
     font-weight: normal;
@@ -85,7 +88,7 @@ export const H3 = styled.h3`
   ${withTypography}
 `;
 
-export const H4 = styled.h4`
+export const H4 = styled.h4<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.h4};
     font-weight: normal;
@@ -106,7 +109,7 @@ export const H4 = styled.h4`
   ${withTypography}
 `;
 
-export const H5 = styled.h5`
+export const H5 = styled.h5<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.h5};
     font-weight: normal;
@@ -127,7 +130,7 @@ export const H5 = styled.h5`
   ${withTypography}
 `;
 
-export const H6 = styled.h6`
+export const H6 = styled.h6<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.h6};
     font-weight: normal;
@@ -148,7 +151,7 @@ export const H6 = styled.h6`
   ${withTypography}
 `;
 
-export const Subtitle = styled.span`
+export const Subtitle = styled.span<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.subtitle1};
     font-weight: normal;
@@ -169,7 +172,7 @@ export const Subtitle = styled.span`
   ${withTypography}
 `;
 
-export const Subtitle2 = styled.span`
+export const Subtitle2 = styled.span<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.subtitle2};
     font-weight: normal;
@@ -190,7 +193,7 @@ export const Subtitle2 = styled.span`
   ${withTypography}
 `;
 
-export const Body = styled.p`
+export const Body = styled.p<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.body1};
     font-weight: normal;
@@ -211,7 +214,7 @@ export const Body = styled.p`
   ${withTypography}
 `;
 
-export const Body2 = styled.p`
+export const Body2 = styled.p<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.body2};
     font-weight: normal;
@@ -232,7 +235,7 @@ export const Body2 = styled.p`
   ${withTypography}
 `;
 
-export const Overline = styled.span`
+export const Overline = styled.span<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.overline};
     font-weight: normal;
@@ -254,7 +257,7 @@ export const Overline = styled.span`
   ${withTypography}
 `;
 
-export const Caption = styled.span`
+export const Caption = styled.span<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.caption};
     font-weight: normal;
@@ -275,7 +278,7 @@ export const Caption = styled.span`
   ${withTypography}
 `;
 
-export const FormGroupLabel = styled.span`
+export const FormGroupLabel = styled.span<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.formGroupLabel};
     font-weight: bold;
