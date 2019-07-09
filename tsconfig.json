@@ -19,7 +19,8 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "downlevelIteration": true,
-    "react/no-find-dom-node": false
+    "react/no-find-dom-node": false,
+    "member-access": [true, "no-public"]
   }
 }
 
