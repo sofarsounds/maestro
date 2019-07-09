@@ -13,27 +13,27 @@ describe('Select <Menu />', () => {
     expect(setup()).toMatchSnapshot();
   });
 
-  it('it renders the name value', () => {
+  it('renders the name value', () => {
     let wrapper = setup()
       .find('li')
       .text();
     expect(wrapper).toBe('cardiff');
   });
 
-  it('it triggers onClick when clicked', () => {
+  it('triggers onClick when clicked', () => {
     let wrapper = setup();
     wrapper.simulate('click');
     expect(mockClick).toHaveBeenCalled();
   });
 
-  it('it triggers onClick when clicked', () => {
+  it('matches style properties for inactiv', () => {
     let wrapper = setup();
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.1px');
     expect(wrapper).toHaveStyleRule('margin-top', '0px');
     expect(wrapper).toHaveStyleRule('color', theme.colours.backToBlack);
   });
 
-  it('it is styled correctly for psuedo states', () => {
+  it('is styled correctly for psuedo states', () => {
     let wrapper = setup();
     expect(wrapper).toHaveStyleRule(
       'background-color',
