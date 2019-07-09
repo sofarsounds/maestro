@@ -10,16 +10,28 @@ interface CardProps {
   linkTo?: string;
   inverted?: boolean;
   children: any;
+  'data-qaid'?: string;
 }
 
-const Card: React.SFC<CardProps> = ({ linkTo, inverted = false, children }) => {
+const Card: React.SFC<CardProps> = ({
+  linkTo,
+  inverted = false,
+  children,
+  'data-qaid': qaId
+}) => {
   if (!linkTo) {
-    return <Container inverted={inverted}>{children}</Container>;
+    return (
+      <Container inverted={inverted} data-qaid={qaId}>
+        {children}
+      </Container>
+    );
   }
 
   return (
     <Link to={linkTo}>
-      <Container inverted={inverted}>{children}</Container>
+      <Container inverted={inverted} data-qaid={qaId}>
+        {children}
+      </Container>
     </Link>
   );
 };

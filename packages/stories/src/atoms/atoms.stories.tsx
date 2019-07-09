@@ -32,6 +32,7 @@ storiesOf('03 / Atoms|Form Elements', module)
           onClick={action('Primary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
+          data-qaid="button"
         >
           {text('Label', 'Button')}
         </PrimaryButton>

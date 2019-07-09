@@ -64,7 +64,7 @@ storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
 storiesOf('05 / Molecules|Navbar', module)
   .add('Navbar', () => (
     <div style={{ paddingTop: '100px' }}>
-      <Navbar>
+      <Navbar data-qaid="navbar">
         <Navbar.ItemContainer>
           <span style={{ color: '#fff' }}>LEFT</span>
         </Navbar.ItemContainer>
@@ -165,7 +165,7 @@ storiesOf('05 / Molecules|FormGroup', module)
   ));
 
 storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
-  <>
+  <Footer.Wrapper data-qaid="footer">
     <Footer.Top>
       <Footer.Title>Explore Sofar.</Footer.Title>
       <Footer.Subtitle>
@@ -225,7 +225,7 @@ storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
         &copy; 2019 Sofar Sounds. All Rights Reserved.
       </Footer.CopyrightMsg>
     </Footer.Bottom>
-  </>
+  </Footer.Wrapper>
 ));
 
 const links = [

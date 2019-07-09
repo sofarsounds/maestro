@@ -14,6 +14,7 @@ interface NavbarProps {
   fixed?: boolean;
   invert?: boolean;
   children: any;
+  'data-qaid'?: string;
 }
 
 interface NavbarState {
@@ -41,10 +42,10 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   public render() {
     const { open } = this.state;
-    const { children, fixed } = this.props;
+    const { children, fixed, 'data-qaid': qaId } = this.props;
 
     return (
-      <NavbarContainer fixed={fixed}>
+      <NavbarContainer fixed={fixed} data-qaid={qaId}>
         <Container alignItems="center" justifyContent="space-between">
           <Brand>
             <Logo invert />
