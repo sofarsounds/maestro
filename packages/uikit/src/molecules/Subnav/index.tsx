@@ -4,8 +4,17 @@ import styled, { css } from '../../lib/styledComponents';
 import { buttonTextStyle } from '../../atoms/Button';
 
 const Container = styled.div`
-  overflow: auto;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
   white-space: nowrap;
+  text-align: center;
+
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
 `;
 
 interface LinkProps {
