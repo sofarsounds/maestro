@@ -38,11 +38,7 @@ const Option: React.SFC<Props> = ({ name, value, onClick, children }) => {
     }
   };
 
-  return (
-    <>
-      <OptionStyled onClick={() => onChange()}>{children}</OptionStyled>
-    </>
-  );
+  return <OptionStyled onClick={() => onChange()}>{children}</OptionStyled>;
 };
 
 export default Option;

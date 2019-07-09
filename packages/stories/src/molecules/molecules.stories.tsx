@@ -27,10 +27,6 @@ let citiesData = [
   { name: 'Bristol', value: 'bristol' }
 ];
 
-let callback = (value: any) => {
-  action(` have been called with ${value}`);
-};
-
 storiesOf('05 / Molecules|Pagination', module)
   .addDecorator(withKnobs)
   .add('Pagination', () => (
@@ -80,7 +76,7 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
     <h1>Select</h1>
     <Select
       readonly={true}
-      handleOptionClick={callback}
+      handleOptionClick={action('Callback')}
       placeholder="Select a city"
     >
       {({ optionClick }: any) =>
@@ -102,10 +98,15 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
 const dropDown = (onClick: any) => (
   <PrimaryButton onClick={onClick}>Click Me</PrimaryButton>
 );
+
 storiesOf('05 / Molecules|Dropdown Select', module).add('Select Input', () => (
   <div>
     <h1>Select</h1>
-    <Dropdown component={dropDown} isOpen={true} handleOptionClick={callback}>
+    <Dropdown
+      component={dropDown}
+      isOpen={true}
+      handleOptionClick={action('Callback')}
+    >
       {({ optionClick }: any) =>
         citiesData.map((cityData, index) => (
           <Option
