@@ -184,6 +184,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
     disabled={false}
     loading={false}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -236,6 +237,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
       forwardedRef={null}
       loading={false}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -434,6 +436,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
     disabled={true}
     loading={false}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -486,6 +489,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
       forwardedRef={null}
       loading={false}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -715,6 +719,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
     disabled={false}
     loading={true}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -767,6 +772,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
       forwardedRef={null}
       loading={true}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -947,6 +953,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
     disabled={false}
     loading={false}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -993,6 +1000,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
       forwardedRef={null}
       loading={false}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -1173,6 +1181,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
     disabled={true}
     loading={false}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -1219,6 +1228,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
       forwardedRef={null}
       loading={false}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -1441,6 +1451,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
     disabled={false}
     loading={true}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="black"
@@ -1487,6 +1498,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
       forwardedRef={null}
       loading={true}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -1650,6 +1662,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
     disabled={false}
     loading={false}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -1690,6 +1703,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
       forwardedRef={null}
       loading={false}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -1853,6 +1867,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
     disabled={true}
     loading={false}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -1893,6 +1908,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
       forwardedRef={null}
       loading={false}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
@@ -2081,6 +2097,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
     disabled={false}
     loading={true}
     onClick={[Function]}
+    small={false}
   >
     <StyledComponent
       colour="primary"
@@ -2121,11 +2138,219 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
       forwardedRef={null}
       loading={true}
       onClick={[Function]}
+      small={false}
     >
       <button
         className="c0"
         disabled={false}
         loading={true}
+        onClick={[Function]}
+      >
+        Button
+      </button>
+    </StyledComponent>
+  </Styled(styled.button)>
+</ThemeProvider>
+`;
+
+exports[`Buttons Primary Button renders correctly with a small prop value 1`] = `
+.c0 {
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  height: 44px;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+  outline: none;
+  padding: 0 25px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 40px;
+  padding: 0 15px;
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c0:hover {
+  background-color: #006721;
+}
+
+.c0:focus {
+  background-color: #039842;
+}
+
+.c0:disabled {
+  background-color: #949494;
+  border-color: #949494;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "default": "2px",
+        "input": "2px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "formGroupLabel": "14px",
+        "h1": "96px",
+        "h2": "60px",
+        "h3": "48px",
+        "h4": "34px",
+        "h5": "24px",
+        "h6": "20px",
+        "overline": "10px",
+        "subtitle1": "16px",
+        "subtitle2": "14px",
+        "title": "54px",
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
+      },
+    }
+  }
+>
+  <Styled(styled.button)
+    colour="primary"
+    disabled={false}
+    loading={false}
+    onClick={[Function]}
+    small={true}
+  >
+    <StyledComponent
+      colour="primary"
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "Styled(styled.button)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      loading={false}
+      onClick={[Function]}
+      small={true}
+    >
+      <button
+        className="c0"
+        disabled={false}
+        loading={false}
         onClick={[Function]}
       >
         Button

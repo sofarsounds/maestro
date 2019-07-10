@@ -32,6 +32,7 @@ storiesOf('03 / Atoms|Form Elements', module)
           onClick={action('Primary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
         >
           {text('Label', 'Button')}
         </PrimaryButton>
@@ -42,6 +43,7 @@ storiesOf('03 / Atoms|Form Elements', module)
           onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
         >
           {text('Label', 'Button')}
         </OutlineButton>
@@ -53,6 +55,7 @@ storiesOf('03 / Atoms|Form Elements', module)
           onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
         >
           {text('Label', 'Button')}
         </OutlineButton>
@@ -64,6 +67,7 @@ storiesOf('03 / Atoms|Form Elements', module)
           onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
         >
           {text('Label', 'Button')}
         </OutlineButton>
@@ -74,6 +78,7 @@ storiesOf('03 / Atoms|Form Elements', module)
           onClick={action('Secondary Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
         >
           {text('Label', 'Button')}
         </LinkButton>
