@@ -396,12 +396,10 @@ exports[`Select <Input /> it renders correctly 1`] = `
     toggleSelect={[MockFunction]}
   >
     <styled.div
-      depth={3}
       isOpen={false}
       onClick={[Function]}
     >
       <StyledComponent
-        depth={3}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),

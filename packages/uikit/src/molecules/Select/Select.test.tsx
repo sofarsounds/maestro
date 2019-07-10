@@ -20,12 +20,7 @@ const setup = () =>
       <Select handleOptionClick={mockClick} placeholder={'I am placeholder'}>
         {({ optionClick }: any) =>
           citiesData.map((cityData, index) => (
-            <Option
-              key={index}
-              value={cityData.value}
-              onClick={optionClick}
-              name={cityData.name}
-            />
+            <Option key={index} value={cityData.value} onClick={optionClick} />
           ))
         }
       </Select>
@@ -85,7 +80,6 @@ describe('Select', () => {
                 key={index}
                 value={cityData.value}
                 onClick={mockClickOption}
-                name={cityData.name}
               />
             ))
           }
