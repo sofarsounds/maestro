@@ -10,7 +10,8 @@ const rotate360 = keyframes`
 `;
 
 interface ButtonProps {
-  loading?: boolean;
+  loading?: boolean | false;
+  small?: boolean;
 }
 
 export const buttonTextStyle = ({ theme }: any) => css`
@@ -24,16 +25,16 @@ export const buttonTextStyle = ({ theme }: any) => css`
 `;
 
 export const BaseButton = styled.button<ButtonProps>`
-  ${({ theme, loading }) => css`
+  ${({ theme, loading, small }) => css`
     border-radius: ${theme.borderRadius.button};
 
     cursor: pointer;
     font-size: ${theme.fontSizes.button};
     font-weight: 600;
-    height: ${theme.dimensions.buttonHeight};
+    height: ${theme.dimensions.button.default.height};
+    padding: ${theme.dimensions.button.default.padding};
     letter-spacing: 0.8px;
     outline: none;
-    padding: 0 25px;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -46,6 +47,12 @@ export const BaseButton = styled.button<ButtonProps>`
       css`
         pointer-events: none;
         cursor: disabled;
+      `}
+
+    ${small &&
+      css`
+        height: ${theme.dimensions.button.small.height};
+        padding: ${theme.dimensions.button.small.padding};
       `}
   `}
 `;

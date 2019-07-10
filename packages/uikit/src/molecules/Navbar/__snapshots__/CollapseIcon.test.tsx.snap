@@ -67,6 +67,16 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -401,6 +411,16 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",

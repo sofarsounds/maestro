@@ -68,6 +68,16 @@ exports[`FormElements Textarea renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -252,6 +262,16 @@ exports[`FormElements Textarea renders correctly in disabled state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -444,6 +464,16 @@ exports[`FormElements Textarea renders correctly in error state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -631,6 +661,16 @@ exports[`FormElements Textarea renders correctly with a value 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -818,6 +858,16 @@ exports[`FormElements Textfield renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -994,6 +1044,16 @@ exports[`FormElements Textfield renders correctly in disabled state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1178,6 +1238,16 @@ exports[`FormElements Textfield renders correctly in error state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1357,6 +1427,16 @@ exports[`FormElements Textfield renders correctly with a value 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
