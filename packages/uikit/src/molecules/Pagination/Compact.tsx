@@ -8,12 +8,14 @@ interface CompactProps {
   currentPage: number;
   totalPages: number;
   onClickPage: (p: number) => void;
+  qaId?: string;
 }
 
 const Compact: React.SFC<CompactProps> = ({
   currentPage,
   totalPages,
-  onClickPage
+  onClickPage,
+  qaId = ''
 }) => {
   if (currentPage > totalPages - 4) {
     return (
@@ -22,6 +24,7 @@ const Compact: React.SFC<CompactProps> = ({
           page={1}
           isActive={currentPage === 1}
           onClick={() => onClickPage(1)}
+          qaId={qaId}
         />
         <Ellipsis />
         <Pages
@@ -29,6 +32,7 @@ const Compact: React.SFC<CompactProps> = ({
           currentPage={currentPage}
           enlargement={totalPages - 4}
           onClick={onClickPage}
+          qaId={qaId}
         />
       </>
     );
@@ -41,12 +45,14 @@ const Compact: React.SFC<CompactProps> = ({
           displayPages={5}
           currentPage={currentPage}
           onClick={onClickPage}
+          qaId={qaId}
         />
         <Ellipsis />
         <PageBubble
           page={totalPages}
           isActive={currentPage === totalPages}
           onClick={() => onClickPage(totalPages)}
+          qaId={qaId}
         />
       </>
     );
@@ -58,6 +64,7 @@ const Compact: React.SFC<CompactProps> = ({
         page={1}
         isActive={currentPage === 1}
         onClick={() => onClickPage(1)}
+        qaId={qaId}
       />
       <Ellipsis />
       <Pages
@@ -65,12 +72,14 @@ const Compact: React.SFC<CompactProps> = ({
         currentPage={currentPage}
         enlargement={currentPage - 1}
         onClick={onClickPage}
+        qaId={qaId}
       />
       <Ellipsis />
       <PageBubble
         page={totalPages}
         isActive={currentPage === totalPages}
         onClick={() => onClickPage(totalPages)}
+        qaId={qaId}
       />
     </>
   );

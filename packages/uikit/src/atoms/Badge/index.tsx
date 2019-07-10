@@ -8,9 +8,11 @@ interface BadgeProps {
 }
 
 const Badge = styled.div<BadgeProps>`
-  ${({ theme, colour, clickable }) => css`
+  ${({ theme, colour, disabled, clickable }) => css`
     width: 36px;
     height: 36px;
+    margin: 0;
+    padding: 0;
     font-size: ${theme.fontSizes.body2};
     transition: ${theme.utils.transition()};
     border: none;
@@ -20,6 +22,8 @@ const Badge = styled.div<BadgeProps>`
     justify-content: center;
     outline: none;
     user-select: none;
+
+
 
     ${clickable &&
       css`
@@ -42,6 +46,16 @@ const Badge = styled.div<BadgeProps>`
               background-color: ${theme.colours.green800};
             }
           `}
+      `}
+
+    ${disabled &&
+      css`
+        user-select: none;
+        cursor: not-allowed;
+
+        &:hover {
+          background-color: transparent;
+        }
       `}
   `}
 `;

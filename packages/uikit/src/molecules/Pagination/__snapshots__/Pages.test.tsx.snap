@@ -4,6 +4,8 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -36,6 +38,8 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
 .c1 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -179,15 +183,18 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
       key="1"
       onClick={[Function]}
       page={1}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-1"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-1"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -219,6 +226,7 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         >
           <button
             className="c0"
+            data-qaid="-page-1"
             onClick={[Function]}
           >
             1
@@ -231,6 +239,7 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
       key="2"
       onClick={[Function]}
       page={2}
+      qaId=""
     >
       <styled.div
         colour="primary"
@@ -278,15 +287,18 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
       key="3"
       onClick={[Function]}
       page={3}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-3"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-3"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -318,6 +330,7 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         >
           <button
             className="c0"
+            data-qaid="-page-3"
             onClick={[Function]}
           >
             3
@@ -330,15 +343,18 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
       key="4"
       onClick={[Function]}
       page={4}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-4"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-4"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -370,6 +386,7 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         >
           <button
             className="c0"
+            data-qaid="-page-4"
             onClick={[Function]}
           >
             4
@@ -382,15 +399,18 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
       key="5"
       onClick={[Function]}
       page={5}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-5"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-5"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -422,6 +442,7 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         >
           <button
             className="c0"
+            data-qaid="-page-5"
             onClick={[Function]}
           >
             5

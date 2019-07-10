@@ -4,6 +4,8 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -146,11 +148,13 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
     <styled.div
       as="button"
       clickable={true}
+      data-qaid="-page-2"
       onClick={[MockFunction]}
     >
       <StyledComponent
         as="button"
         clickable={true}
+        data-qaid="-page-2"
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -182,6 +186,7 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
       >
         <button
           className="c0"
+          data-qaid="-page-2"
           onClick={[MockFunction]}
         >
           2
@@ -196,6 +201,8 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;

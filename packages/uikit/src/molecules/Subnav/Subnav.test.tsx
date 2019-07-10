@@ -8,8 +8,9 @@ describe('<Subnav />', () => {
     const setup = mountWithTheme(<Subnav.Container />);
 
     it('has the correct style attributes', () => {
-      expect(setup).toHaveStyleRule('overflow', 'auto');
-      expect(setup).toHaveStyleRule('white-space', 'nowrap');
+      expect(setup).toHaveStyleRule('overflow-x', 'auto');
+      expect(setup).toHaveStyleRule('-ms-overflow-style', 'none');
+      expect(setup).toHaveStyleRule('text-align', 'center');
     });
   });
 

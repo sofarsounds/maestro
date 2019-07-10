@@ -7,26 +7,34 @@ import Icon from '../../atoms/Icon';
 interface ArrowProps {
   onClick: () => void;
   disabled?: boolean;
+  'data-qaid'?: string;
 }
 
-export const ArrowLeft: React.SFC<ArrowProps> = ({ disabled, onClick }) =>
-  disabled ? (
-    <Badge>
-      <Icon colour={theme.colours.blueSmoke} name="chevronLeft" />
-    </Badge>
-  ) : (
-    <Badge clickable onClick={onClick}>
-      <Icon name="chevronLeft" />
-    </Badge>
-  );
+const renderArrow = (
+  disabled: boolean = false,
+  onClick: any,
+  icon: string,
+  qaId: string = ''
+) => (
+  <Badge
+    as="button"
+    disabled={disabled}
+    clickable
+    onClick={onClick}
+    data-qaid={qaId}
+  >
+    <Icon colour={disabled ? theme.colours.blueSmoke : undefined} name={icon} />
+  </Badge>
+);
 
-export const ArrowRight: React.SFC<ArrowProps> = ({ disabled, onClick }) =>
-  disabled ? (
-    <Badge>
-      <Icon colour={theme.colours.blueSmoke} name="chevronRight" />
-    </Badge>
-  ) : (
-    <Badge clickable onClick={onClick}>
-      <Icon name="chevronRight" />
-    </Badge>
-  );
+export const ArrowLeft: React.SFC<ArrowProps> = ({
+  disabled,
+  onClick,
+  'data-qaid': qaId
+}) => renderArrow(disabled, onClick, 'chevronLeft', qaId);
+
+export const ArrowRight: React.SFC<ArrowProps> = ({
+  disabled,
+  onClick,
+  'data-qaid': qaId
+}) => renderArrow(disabled, onClick, 'chevronRight', qaId);

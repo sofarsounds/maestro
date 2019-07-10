@@ -25,7 +25,6 @@ let citiesData = [
   { name: 'Cardiff', value: 'cardiff' },
   { name: 'Bristol', value: 'bristol' }
 ];
-
 storiesOf('05 / Molecules|Pagination', module)
   .addDecorator(withKnobs)
   .add('Pagination', () => (
@@ -34,10 +33,9 @@ storiesOf('05 / Molecules|Pagination', module)
 
       <div>
         <Pagination
+          data-qaid="pag1"
           currentPage={1}
-          onPageChange={p => {
-            action(`Page changed to ${p}`);
-          }}
+          onPageChange={p => action(`Page changed to ${p}`)}
           totalRecords={40}
         />
       </div>
@@ -47,6 +45,7 @@ storiesOf('05 / Molecules|Pagination', module)
 
       <div>
         <Pagination
+          data-qaid="pag2"
           currentPage={2}
           onPageChange={p => {
             action(`Page changed to ${p}`);
@@ -60,11 +59,25 @@ storiesOf('05 / Molecules|Pagination', module)
 
       <div>
         <Pagination
+          data-qaid="pag3"
           currentPage={12}
           onPageChange={p => {
             action(`Page changed to ${p}`);
           }}
           totalRecords={300}
+        />
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <Pagination
+          data-qaid="pag4"
+          currentPage={12}
+          onPageChange={p => {
+            action(`Page changed to ${p}`);
+          }}
+          totalRecords={96}
         />
       </div>
     </div>
@@ -92,7 +105,7 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
 storiesOf('05 / Molecules|Navbar', module)
   .add('Navbar', () => (
     <div style={{ paddingTop: '100px' }}>
-      <Navbar>
+      <Navbar data-qaid="navbar">
         <Navbar.ItemContainer>
           <span style={{ color: '#fff' }}>LEFT</span>
         </Navbar.ItemContainer>
@@ -193,7 +206,7 @@ storiesOf('05 / Molecules|FormGroup', module)
   ));
 
 storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
-  <>
+  <Footer.Wrapper data-qaid="footer">
     <Footer.Top>
       <Footer.Title>Explore Sofar.</Footer.Title>
       <Footer.Subtitle>
@@ -253,7 +266,7 @@ storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
         &copy; 2019 Sofar Sounds. All Rights Reserved.
       </Footer.CopyrightMsg>
     </Footer.Bottom>
-  </>
+  </Footer.Wrapper>
 ));
 
 const links = [
@@ -267,7 +280,7 @@ const links = [
   'Another Link'
 ];
 storiesOf('05 / Molecules|Subnav', module).add('Subnav', () => (
-  <div style={{ width: '100%', maxWidth: '800px' }}>
+  <div style={{ width: '100%' }}>
     <Subnav.Container>
       {links.map(l => (
         <Subnav.Link key={l} active={l === 'Backstage Pass'} to="/" as="a">
@@ -284,6 +297,39 @@ storiesOf('05 / Molecules|Card', module)
     <BrowserRouter>
       <div style={{ width: '100%', maxWidth: '950px' }}>
         <Card.Container linkTo="https://www.google.com">
+          <Card.Image
+            url={text(
+              'Image URL',
+              'https://sofarlive.cdn.prismic.io/sofarlive/ab56300a2ff2f667c6af44d2c0d301daa0865855_oompa-boston-041118-brandon_johnson2.jpg'
+            )}
+          />
+          <Card.Content>
+            <Card.Title>
+              {text('Title', 'Sofar turns 10! Celebrate with us')}
+            </Card.Title>
+            <Card.Preview>
+              {text(
+                'Body',
+                'Can you believe it? Sofar Sounds is turning TEN! What started as a little side hobby in a London flat with just eight people is now in...'
+              )}
+            </Card.Preview>
+            <Card.Footer>Customisable Footer</Card.Footer>
+          </Card.Content>
+        </Card.Container>
+      </div>
+    </BrowserRouter>
+  ))
+  .add('Inverted', () => (
+    <BrowserRouter>
+      <div
+        style={{
+          background: '#000',
+          padding: '25px',
+          width: '100%',
+          maxWidth: '950px'
+        }}
+      >
+        <Card.Container inverted linkTo="https://www.google.com">
           <Card.Image
             url={text(
               'Image URL',
