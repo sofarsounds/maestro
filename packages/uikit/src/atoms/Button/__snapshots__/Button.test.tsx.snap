@@ -7,12 +7,12 @@ exports[`Buttons Link Button renders correctly 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -105,6 +105,16 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -259,12 +269,12 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -357,6 +367,16 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -511,12 +531,12 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -640,6 +660,16 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -794,12 +824,12 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -874,6 +904,16 @@ exports[`Buttons Outline Button renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1022,12 +1062,12 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -1102,6 +1142,16 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1250,12 +1300,12 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -1372,6 +1422,16 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1520,12 +1580,12 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -1583,6 +1643,16 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1725,12 +1795,12 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -1788,6 +1858,16 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1930,12 +2010,12 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -2018,6 +2098,16 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -2160,12 +2250,12 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
   font-size: 14px;
   font-weight: 600;
   height: 44px;
+  padding: 0 25px;
   -webkit-letter-spacing: 0.8px;
   -moz-letter-spacing: 0.8px;
   -ms-letter-spacing: 0.8px;
   letter-spacing: 0.8px;
   outline: none;
-  padding: 0 25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -2225,6 +2315,16 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",

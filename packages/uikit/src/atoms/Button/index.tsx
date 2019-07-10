@@ -31,10 +31,10 @@ export const BaseButton = styled.button<ButtonProps>`
     cursor: pointer;
     font-size: ${theme.fontSizes.button};
     font-weight: 600;
-    height: ${theme.dimensions.buttonHeight};
+    height: ${theme.dimensions.button.default.height};
+    padding: ${theme.dimensions.button.default.padding};
     letter-spacing: 0.8px;
     outline: none;
-    padding: 0 25px;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -51,8 +51,8 @@ export const BaseButton = styled.button<ButtonProps>`
 
     ${small &&
       css`
-        height: 40px;
-        padding: 0 15px;
+        height: ${theme.dimensions.button.small.height};
+        padding: ${theme.dimensions.button.small.padding};
       `}
   `}
 `;
