@@ -2,11 +2,11 @@ import { css } from '../lib/styledComponents';
 
 import theme from '../theme';
 
-interface Props {
+export interface WithNavbarPaddingProps {
   stickToNavbar: boolean;
 }
 
-export default ({ stickToNavbar }: Props) => css`
+export default ({ stickToNavbar }: WithNavbarPaddingProps) => css`
     padding-top: calc(${theme.dimensions.navbarHeight.xs} + 60px);
 
     ${stickToNavbar &&
