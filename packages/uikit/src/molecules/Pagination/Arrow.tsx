@@ -9,24 +9,14 @@ interface ArrowProps {
   disabled?: boolean;
 }
 
+const renderArrow = (disabled: boolean = false, onClick: any, icon: string) => (
+  <Badge as="button" disabled={disabled} clickable onClick={onClick}>
+    <Icon colour={disabled ? theme.colours.blueSmoke : undefined} name={icon} />
+  </Badge>
+);
+
 export const ArrowLeft: React.SFC<ArrowProps> = ({ disabled, onClick }) =>
-  disabled ? (
-    <Badge>
-      <Icon colour={theme.colours.blueSmoke} name="chevronLeft" />
-    </Badge>
-  ) : (
-    <Badge clickable onClick={onClick}>
-      <Icon name="chevronLeft" />
-    </Badge>
-  );
+  renderArrow(disabled, onClick, 'chevronLeft');
 
 export const ArrowRight: React.SFC<ArrowProps> = ({ disabled, onClick }) =>
-  disabled ? (
-    <Badge>
-      <Icon colour={theme.colours.blueSmoke} name="chevronRight" />
-    </Badge>
-  ) : (
-    <Badge clickable onClick={onClick}>
-      <Icon name="chevronRight" />
-    </Badge>
-  );
+  renderArrow(disabled, onClick, 'chevronRight');
