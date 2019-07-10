@@ -4,6 +4,8 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -334,11 +336,17 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
     onClick={[MockFunction]}
   >
     <styled.div
+      as="button"
       clickable={true}
+      data-qaid=""
+      disabled={false}
       onClick={[MockFunction]}
     >
       <StyledComponent
+        as="button"
         clickable={true}
+        data-qaid=""
+        disabled={false}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -368,8 +376,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <div
+        <button
           className="c0"
+          data-qaid=""
+          disabled={false}
           onClick={[MockFunction]}
         >
           <Icon
@@ -616,7 +626,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
               </StyledComponent>
             </styled.i>
           </Icon>
-        </div>
+        </button>
       </StyledComponent>
     </styled.div>
   </Component>
@@ -627,6 +637,8 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -649,6 +661,20 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: not-allowed;
+}
+
+.c0:hover {
+  background-color: rgba(17,17,17,0.1);
+}
+
+.c0:hover {
+  background-color: transparent;
 }
 
 .c1 {
@@ -952,8 +978,18 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
     disabled={true}
     onClick={[MockFunction]}
   >
-    <styled.div>
+    <styled.div
+      as="button"
+      clickable={true}
+      data-qaid=""
+      disabled={true}
+      onClick={[MockFunction]}
+    >
       <StyledComponent
+        as="button"
+        clickable={true}
+        data-qaid=""
+        disabled={true}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -981,9 +1017,13 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
           }
         }
         forwardedRef={null}
+        onClick={[MockFunction]}
       >
-        <div
+        <button
           className="c0"
+          data-qaid=""
+          disabled={true}
+          onClick={[MockFunction]}
         >
           <Icon
             colour="#949494"
@@ -1232,7 +1272,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
               </StyledComponent>
             </styled.i>
           </Icon>
-        </div>
+        </button>
       </StyledComponent>
     </styled.div>
   </Component>
@@ -1243,6 +1283,8 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -1573,11 +1615,17 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
     onClick={[MockFunction]}
   >
     <styled.div
+      as="button"
       clickable={true}
+      data-qaid=""
+      disabled={false}
       onClick={[MockFunction]}
     >
       <StyledComponent
+        as="button"
         clickable={true}
+        data-qaid=""
+        disabled={false}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -1607,8 +1655,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <div
+        <button
           className="c0"
+          data-qaid=""
+          disabled={false}
           onClick={[MockFunction]}
         >
           <Icon
@@ -1855,7 +1905,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
               </StyledComponent>
             </styled.i>
           </Icon>
-        </div>
+        </button>
       </StyledComponent>
     </styled.div>
   </Component>
@@ -1866,6 +1916,8 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -1888,6 +1940,20 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: not-allowed;
+}
+
+.c0:hover {
+  background-color: rgba(17,17,17,0.1);
+}
+
+.c0:hover {
+  background-color: transparent;
 }
 
 .c1 {
@@ -2191,8 +2257,18 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
     disabled={true}
     onClick={[MockFunction]}
   >
-    <styled.div>
+    <styled.div
+      as="button"
+      clickable={true}
+      data-qaid=""
+      disabled={true}
+      onClick={[MockFunction]}
+    >
       <StyledComponent
+        as="button"
+        clickable={true}
+        data-qaid=""
+        disabled={true}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -2220,9 +2296,13 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
           }
         }
         forwardedRef={null}
+        onClick={[MockFunction]}
       >
-        <div
+        <button
           className="c0"
+          data-qaid=""
+          disabled={true}
+          onClick={[MockFunction]}
         >
           <Icon
             colour="#949494"
@@ -2471,7 +2551,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
               </StyledComponent>
             </styled.i>
           </Icon>
-        </div>
+        </button>
       </StyledComponent>
     </styled.div>
   </Component>

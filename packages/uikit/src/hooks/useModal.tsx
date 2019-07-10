@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export interface UseModalProps {
   isShowing: boolean;
-  hide: Function;
+  hide: () => void;
 }
 
 const useModal = (): [UseModalProps, () => void] => {

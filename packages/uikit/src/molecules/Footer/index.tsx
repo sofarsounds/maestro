@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 import { Top, Title, Subtitle, CityInputWrapper } from './Top';
 import { SectionHeader, SectionLink, LinkSection } from './Section';
 import LogoWithSlogan from './LogoWithSlogan';
@@ -10,6 +12,7 @@ import {
 } from './Bottom';
 
 export default {
+  Wrapper: styled.div``,
   Top,
   Title,
   Subtitle,

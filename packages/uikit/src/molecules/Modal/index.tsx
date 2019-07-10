@@ -74,18 +74,24 @@ const ModalContentStage = styled.div<ModalWrapperProps>`
 interface ModalProps {
   children: any;
   isShowing: boolean;
-  hide: Function;
+  hide: () => void;
+  'data-qaid'?: string;
 }
 
-export const Modal: React.SFC<ModalProps> = ({ children, isShowing, hide }) =>
+export const Modal: React.SFC<ModalProps> = ({
+  'data-qaid': qaId,
+  children,
+  isShowing,
+  hide
+}) =>
   isShowing
     ? ReactDOM.createPortal(
         <>
           <ModalOverlay />
           <ModalWrapper>
-            <ModalContentWrapper>
+            <ModalContentWrapper data-qaid={qaId}>
               <ModalCloseHeader>
-                <Button onClick={() => hide()}>X</Button>
+                <Button onClick={hide}>X</Button>
               </ModalCloseHeader>
               <ModalContentStage>{children}</ModalContentStage>
             </ModalContentWrapper>

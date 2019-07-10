@@ -33,6 +33,7 @@ storiesOf('03 / Atoms|Form Elements', module)
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
           small={boolean('Small', false)}
+          data-qaid="button"
         >
           {text('Label', 'Button')}
         </PrimaryButton>

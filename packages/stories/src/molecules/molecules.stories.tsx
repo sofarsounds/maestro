@@ -19,52 +19,69 @@ import {
   Card
 } from 'uikit';
 
-storiesOf('05 / Molecules|Pagination', module).add('Pagination', () => (
-  <div>
-    <h1>Pagination</h1>
-
+storiesOf('05 / Molecules|Pagination', module)
+  .addDecorator(withKnobs)
+  .add('Pagination', () => (
     <div>
-      <Pagination
-        currentPage={1}
-        onPageChange={p => {
-          action(`Page changed to ${p}`);
-        }}
-        totalRecords={40}
-      />
+      <h1>Pagination</h1>
+
+      <div>
+        <Pagination
+          data-qaid="pag1"
+          currentPage={1}
+          onPageChange={p => action(`Page changed to ${p}`)}
+          totalRecords={40}
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <Pagination
+          data-qaid="pag2"
+          currentPage={2}
+          onPageChange={p => {
+            action(`Page changed to ${p}`);
+          }}
+          totalRecords={80}
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <Pagination
+          data-qaid="pag3"
+          currentPage={12}
+          onPageChange={p => {
+            action(`Page changed to ${p}`);
+          }}
+          totalRecords={300}
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <Pagination
+          data-qaid="pag4"
+          currentPage={12}
+          onPageChange={p => {
+            action(`Page changed to ${p}`);
+          }}
+          totalRecords={96}
+        />
+      </div>
     </div>
-
-    <br />
-    <br />
-
-    <div>
-      <Pagination
-        currentPage={2}
-        onPageChange={p => {
-          action(`Page changed to ${p}`);
-        }}
-        totalRecords={80}
-      />
-    </div>
-
-    <br />
-    <br />
-
-    <div>
-      <Pagination
-        currentPage={12}
-        onPageChange={p => {
-          action(`Page changed to ${p}`);
-        }}
-        totalRecords={300}
-      />
-    </div>
-  </div>
-));
+  ));
 
 storiesOf('05 / Molecules|Navbar', module)
   .add('Navbar', () => (
     <div style={{ paddingTop: '100px' }}>
-      <Navbar>
+      <Navbar data-qaid="navbar">
         <Navbar.ItemContainer>
           <span style={{ color: '#fff' }}>LEFT</span>
         </Navbar.ItemContainer>
@@ -165,7 +182,7 @@ storiesOf('05 / Molecules|FormGroup', module)
   ));
 
 storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
-  <>
+  <Footer.Wrapper data-qaid="footer">
     <Footer.Top>
       <Footer.Title>Explore Sofar.</Footer.Title>
       <Footer.Subtitle>
@@ -225,7 +242,7 @@ storiesOf('05 / Molecules|Footer', module).add('Footer', () => (
         &copy; 2019 Sofar Sounds. All Rights Reserved.
       </Footer.CopyrightMsg>
     </Footer.Bottom>
-  </>
+  </Footer.Wrapper>
 ));
 
 const links = [
