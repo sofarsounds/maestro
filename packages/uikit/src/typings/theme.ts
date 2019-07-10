@@ -68,6 +68,7 @@ export default interface Theme {
   zIndex: {
     navbar: number;
   };
+
   dimensions: {
     inputHeight: string;
     buttonHeight: string;
@@ -76,6 +77,18 @@ export default interface Theme {
       default: string;
       large: string;
       fullscreen: string;
+    };
+
+    button: {
+      small: {
+        height: string;
+        padding: string;
+      };
+
+      default: {
+        height: string;
+        padding: string;
+      };
     };
     navbarHeight: {
       lg: string;
@@ -89,7 +102,6 @@ export default interface Theme {
     button: string;
     input: string;
   };
-
   utils: {
     transition: (a?: string) => string;
   };

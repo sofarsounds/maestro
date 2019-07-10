@@ -76,6 +76,7 @@ const theme: Theme = {
   zIndex: {
     navbar: 100
   },
+
   dimensions: {
     inputHeight: '44px',
     buttonHeight: '44px',
@@ -85,6 +86,19 @@ const theme: Theme = {
       large: '1000px',
       fullscreen: '100%'
     },
+
+    button: {
+      small: {
+        height: '40px',
+        padding: '0 15px'
+      },
+
+      default: {
+        height: '44px',
+        padding: '0 25px'
+      }
+    },
+
     navbarHeight: {
       lg: '84px',
       md: '74px',
