@@ -59,12 +59,14 @@ export default class Pagination extends React.Component<PaginationProps> {
             displayPages={totalPages}
             currentPage={currentPage}
             onClick={this.handlePageChange}
+            qaId={qaId}
           />
         ) : (
           <CompactPages
             currentPage={currentPage}
             totalPages={totalPages}
             onClickPage={this.handlePageChange}
+            qaId={qaId}
           />
         )}
 

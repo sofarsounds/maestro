@@ -148,11 +148,13 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
     <styled.div
       as="button"
       clickable={true}
+      data-qaid="-page-2"
       onClick={[MockFunction]}
     >
       <StyledComponent
         as="button"
         clickable={true}
+        data-qaid="-page-2"
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -184,6 +186,7 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
       >
         <button
           className="c0"
+          data-qaid="-page-2"
           onClick={[MockFunction]}
         >
           2

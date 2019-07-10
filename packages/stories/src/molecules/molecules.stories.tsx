@@ -27,10 +27,9 @@ storiesOf('05 / Molecules|Pagination', module)
 
       <div>
         <Pagination
+          data-qaid="pag1"
           currentPage={1}
-          onPageChange={p => {
-            action(`Page changed to ${p}`);
-          }}
+          onPageChange={p => action(`Page changed to ${p}`)}
           totalRecords={40}
         />
       </div>
@@ -40,6 +39,7 @@ storiesOf('05 / Molecules|Pagination', module)
 
       <div>
         <Pagination
+          data-qaid="pag2"
           currentPage={2}
           onPageChange={p => {
             action(`Page changed to ${p}`);
@@ -53,6 +53,7 @@ storiesOf('05 / Molecules|Pagination', module)
 
       <div>
         <Pagination
+          data-qaid="pag3"
           currentPage={12}
           onPageChange={p => {
             action(`Page changed to ${p}`);
@@ -66,6 +67,7 @@ storiesOf('05 / Molecules|Pagination', module)
 
       <div>
         <Pagination
+          data-qaid="pag4"
           currentPage={12}
           onPageChange={p => {
             action(`Page changed to ${p}`);

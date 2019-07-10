@@ -402,15 +402,18 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       isActive={false}
       onClick={[Function]}
       page={1}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-1"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-1"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -442,6 +445,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         >
           <button
             className="c0"
+            data-qaid="-page-1"
             onClick={[Function]}
           >
             1
@@ -736,21 +740,25 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       displayPages={3}
       enlargement={5}
       onClick={[MockFunction]}
+      qaId=""
     >
       <PageBubble
         isActive={false}
         key="5"
         onClick={[Function]}
         page={5}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-5"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-5"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -782,6 +790,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           >
             <button
               className="c0"
+              data-qaid="-page-5"
               onClick={[Function]}
             >
               5
@@ -794,6 +803,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         key="6"
         onClick={[Function]}
         page={6}
+        qaId=""
       >
         <styled.div
           colour="primary"
@@ -841,15 +851,18 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         key="7"
         onClick={[Function]}
         page={7}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-7"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-7"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -881,6 +894,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           >
             <button
               className="c0"
+              data-qaid="-page-7"
               onClick={[Function]}
             >
               7
@@ -1175,15 +1189,18 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       isActive={false}
       onClick={[Function]}
       page={15}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-15"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-15"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -1215,6 +1232,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         >
           <button
             className="c0"
+            data-qaid="-page-15"
             onClick={[Function]}
           >
             15
@@ -1628,12 +1646,14 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       currentPage={1}
       displayPages={5}
       onClick={[MockFunction]}
+      qaId=""
     >
       <PageBubble
         isActive={true}
         key="1"
         onClick={[Function]}
         page={1}
+        qaId=""
       >
         <styled.div
           colour="primary"
@@ -1681,15 +1701,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         key="2"
         onClick={[Function]}
         page={2}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-2"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-2"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -1721,6 +1744,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           >
             <button
               className="c1"
+              data-qaid="-page-2"
               onClick={[Function]}
             >
               2
@@ -1733,15 +1757,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         key="3"
         onClick={[Function]}
         page={3}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-3"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-3"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -1773,6 +1800,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           >
             <button
               className="c1"
+              data-qaid="-page-3"
               onClick={[Function]}
             >
               3
@@ -1785,15 +1813,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         key="4"
         onClick={[Function]}
         page={4}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-4"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-4"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -1825,6 +1856,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           >
             <button
               className="c1"
+              data-qaid="-page-4"
               onClick={[Function]}
             >
               4
@@ -1837,15 +1869,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         key="5"
         onClick={[Function]}
         page={5}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-5"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-5"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -1877,6 +1912,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           >
             <button
               className="c1"
+              data-qaid="-page-5"
               onClick={[Function]}
             >
               5
@@ -2171,15 +2207,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       isActive={false}
       onClick={[Function]}
       page={15}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-15"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-15"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -2211,6 +2250,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         >
           <button
             className="c1"
+            data-qaid="-page-15"
             onClick={[Function]}
           >
             15
@@ -2624,15 +2664,18 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
       isActive={false}
       onClick={[Function]}
       page={1}
+      qaId=""
     >
       <styled.div
         as="button"
         clickable={true}
+        data-qaid="-page-1"
         onClick={[Function]}
       >
         <StyledComponent
           as="button"
           clickable={true}
+          data-qaid="-page-1"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -2664,6 +2707,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         >
           <button
             className="c0"
+            data-qaid="-page-1"
             onClick={[Function]}
           >
             1
@@ -2958,21 +3002,25 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
       displayPages={5}
       enlargement={11}
       onClick={[MockFunction]}
+      qaId=""
     >
       <PageBubble
         isActive={false}
         key="11"
         onClick={[Function]}
         page={11}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-11"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-11"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -3004,6 +3052,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           >
             <button
               className="c0"
+              data-qaid="-page-11"
               onClick={[Function]}
             >
               11
@@ -3016,15 +3065,18 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         key="12"
         onClick={[Function]}
         page={12}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-12"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-12"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -3056,6 +3108,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           >
             <button
               className="c0"
+              data-qaid="-page-12"
               onClick={[Function]}
             >
               12
@@ -3068,15 +3121,18 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         key="13"
         onClick={[Function]}
         page={13}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-13"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-13"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -3108,6 +3164,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           >
             <button
               className="c0"
+              data-qaid="-page-13"
               onClick={[Function]}
             >
               13
@@ -3120,15 +3177,18 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         key="14"
         onClick={[Function]}
         page={14}
+        qaId=""
       >
         <styled.div
           as="button"
           clickable={true}
+          data-qaid="-page-14"
           onClick={[Function]}
         >
           <StyledComponent
             as="button"
             clickable={true}
+            data-qaid="-page-14"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -3160,6 +3220,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           >
             <button
               className="c0"
+              data-qaid="-page-14"
               onClick={[Function]}
             >
               14
@@ -3172,6 +3233,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         key="15"
         onClick={[Function]}
         page={15}
+        qaId=""
       >
         <styled.div
           colour="primary"
