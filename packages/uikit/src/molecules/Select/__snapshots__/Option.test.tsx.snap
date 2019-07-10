@@ -1,10 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navbar <Brand /> renders correctly 1`] = `
+exports[`Select <Menu /> it renders correctly 1`] = `
 .c0 {
-  width: 75px;
-  margin-right: 20px;
-  margin-top: 4px;
+  margin-top: 0px;
+  list-style: none;
+  padding: 10px 24px 10px 24px;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  color: #111111;
+}
+
+.c0:hover {
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+.c0:focus {
+  background-color: #F5F5F5;
+  cursor: pointer;
 }
 
 <ThemeProvider
@@ -122,40 +138,50 @@ exports[`Navbar <Brand /> renders correctly 1`] = `
     }
   }
 >
-  <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": true,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  width: 75px;
-  margin-right: 20px;
-  margin-top: 4px;
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+  <Option
+    onClick={[MockFunction]}
+  >
+    <styled.li
+      onClick={[Function]}
     >
-      <div
-        className="c0"
-      />
-    </StyledComponent>
-  </styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "styled.li",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "li",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+      >
+        <li
+          className="c0"
+          onClick={[Function]}
+        >
+          cardiff
+        </li>
+      </StyledComponent>
+    </styled.li>
+  </Option>
 </ThemeProvider>
 `;

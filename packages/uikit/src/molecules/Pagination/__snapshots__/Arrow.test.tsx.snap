@@ -258,6 +258,16 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -900,6 +910,16 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1537,6 +1557,16 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -2179,6 +2209,16 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",

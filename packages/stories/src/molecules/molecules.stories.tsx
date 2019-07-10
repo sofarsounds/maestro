@@ -3,14 +3,15 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
-
 import {
   Navbar,
   Pagination,
+  PrimaryButton,
+  Select,
+  Option,
   Modal,
   useModal,
   HeroImage,
-  PrimaryButton,
   Textfield,
   FormGroup,
   Footer,
@@ -19,6 +20,11 @@ import {
   Card
 } from 'uikit';
 
+let citiesData = [
+  { name: 'London', value: 'london' },
+  { name: 'Cardiff', value: 'cardiff' },
+  { name: 'Bristol', value: 'bristol' }
+];
 storiesOf('05 / Molecules|Pagination', module)
   .addDecorator(withKnobs)
   .add('Pagination', () => (
@@ -61,7 +67,6 @@ storiesOf('05 / Molecules|Pagination', module)
           totalRecords={300}
         />
       </div>
-
       <br />
       <br />
 
@@ -77,6 +82,25 @@ storiesOf('05 / Molecules|Pagination', module)
       </div>
     </div>
   ));
+
+storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
+  <div>
+    <h1>Select</h1>
+    <Select
+      readonly={true}
+      handleOptionClick={action('Callback')}
+      placeholder="Select a city"
+    >
+      {({ optionClick }: any) =>
+        citiesData.map((cityData, index) => (
+          <Option key={index} value={cityData.value} onClick={optionClick}>
+            {cityData.name}
+          </Option>
+        ))
+      }
+    </Select>
+  </div>
+));
 
 storiesOf('05 / Molecules|Navbar', module)
   .add('Navbar', () => (

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination <Ellipsis /> renders correctly 1`] = `
-.c1 {
+exports[`Select <Input /> it renders correctly 1`] = `
+.c3 {
   font-family: 'sofarsounds-icon-font' !important;
   speak: none;
   font-style: normal;
@@ -13,213 +13,276 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c1:before {
+.c3:before {
   color: #000;
 }
 
-.c1.icon-facebook:before {
+.c3.icon-facebook:before {
   content: '\\e90d';
 }
 
-.c1.icon-instagram:before {
+.c3.icon-instagram:before {
   content: '\\e916';
 }
 
-.c1.icon-spotify:before {
+.c3.icon-spotify:before {
   content: '\\e926';
 }
 
-.c1.icon-twitter:before {
+.c3.icon-twitter:before {
   content: '\\e92f';
 }
 
-.c1.icon-youtube:before {
+.c3.icon-youtube:before {
   content: '\\e935';
 }
 
-.c1.icon-facebookOutline:before {
+.c3.icon-facebookOutline:before {
   content: '\\e90b';
 }
 
-.c1.icon-instagramOutline:before {
+.c3.icon-instagramOutline:before {
   content: '\\e911';
 }
 
-.c1.icon-spotifyOutline:before {
+.c3.icon-spotifyOutline:before {
   content: '\\e914';
 }
 
-.c1.icon-twitterOutline:before {
+.c3.icon-twitterOutline:before {
   content: '\\e91a';
 }
 
-.c1.icon-youtubeOutline:before {
+.c3.icon-youtubeOutline:before {
   content: '\\e91b';
 }
 
-.c1.icon-caretUp:before {
+.c3.icon-caretUp:before {
   content: '\\e921';
 }
 
-.c1.icon-caretDown:before {
+.c3.icon-caretDown:before {
   content: '\\e906';
 }
 
-.c1.icon-caretLeft:before {
+.c3.icon-caretLeft:before {
   content: '\\e922';
 }
 
-.c1.icon-caretRight:before {
+.c3.icon-caretRight:before {
   content: '\\e923';
 }
 
-.c1.icon-caretCircleDown:before {
+.c3.icon-caretCircleDown:before {
   content: '\\e908';
 }
 
-.c1.icon-chevronLeft:before {
+.c3.icon-chevronLeft:before {
   content: '\\e917';
 }
 
-.c1.icon-chevronRight:before {
+.c3.icon-chevronRight:before {
   content: '\\e920';
 }
 
-.c1.icon-moveVertical:before {
+.c3.icon-moveVertical:before {
   content: '\\e919';
 }
 
-.c1.icon-check:before {
+.c3.icon-check:before {
   content: '\\e927';
 }
 
-.c1.icon-checkCircle:before {
+.c3.icon-checkCircle:before {
   content: '\\e902';
 }
 
-.c1.icon-alertCircle:before {
+.c3.icon-alertCircle:before {
   content: '\\e907';
 }
 
-.c1.icon-alertTriangle:before {
+.c3.icon-alertTriangle:before {
   content: '\\e930';
 }
 
-.c1.icon-calendar:before {
+.c3.icon-calendar:before {
   content: '\\e901';
 }
 
-.c1.icon-time:before {
+.c3.icon-time:before {
   content: '\\e929';
 }
 
-.c1.icon-timeHand:before {
+.c3.icon-timeHand:before {
   content: '\\e928';
 }
 
-.c1.icon-byob:before {
+.c3.icon-byob:before {
   content: '\\e900';
 }
 
-.c1.icon-close:before {
+.c3.icon-close:before {
   content: '\\e903';
 }
 
-.c1.icon-commercial:before {
+.c3.icon-commercial:before {
   content: '\\e904';
 }
 
-.c1.icon-disabled:before {
+.c3.icon-disabled:before {
   content: '\\e905';
 }
 
-.c1.icon-eye:before {
+.c3.icon-eye:before {
   content: '\\e909';
 }
 
-.c1.icon-video:before {
+.c3.icon-video:before {
   content: '\\e90e';
 }
 
-.c1.icon-happyMask:before {
+.c3.icon-happyMask:before {
   content: '\\e90f';
 }
 
-.c1.icon-helpCircleOutline:before {
+.c3.icon-helpCircleOutline:before {
   content: '\\e912';
 }
 
-.c1.icon-ellipsisHorizontal:before {
+.c3.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c1.icon-no:before {
+.c3.icon-no:before {
   content: '\\e91c';
 }
 
-.c1.icon-pet:before {
+.c3.icon-pet:before {
   content: '\\e91d';
 }
 
-.c1.icon-readGlasses:before {
+.c3.icon-readGlasses:before {
   content: '\\e91e';
 }
 
-.c1.icon-residential:before {
+.c3.icon-residential:before {
   content: '\\e91f';
 }
 
-.c1.icon-tree:before {
+.c3.icon-tree:before {
   content: '\\e92b';
 }
 
-.c1.icon-heartPulse:before {
+.c3.icon-heartPulse:before {
   content: '\\e90c';
 }
 
-.c1.icon-homeWorld:before {
+.c3.icon-homeWorld:before {
   content: '\\e910';
 }
 
-.c1.icon-travelWorld:before {
+.c3.icon-travelWorld:before {
   content: '\\e915';
 }
 
-.c1.icon-musicTicket:before {
+.c3.icon-musicTicket:before {
   content: '\\e913';
 }
 
-.c1.icon-musicLove:before {
+.c3.icon-musicLove:before {
   content: '\\e90a';
 }
 
-.c0 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+.c2 {
+  -webkit-flex-basis: 50px;
+  -ms-flex-preferred-size: 50px;
+  flex-basis: 50px;
   border: none;
-  border-radius: 100%;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c2:focus {
+  border-color: #DBDBDB;
+  outline: none;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-flex: center;
+  -ms-flex: center;
+  flex: center;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid #DBDBDB;
+  padding: 0 16px;
   outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  box-shadow: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  color: #111111;
+  padding-right: 0px;
+}
+
+.c0:hover {
+  border-color: #949494;
+}
+
+.c0:focus {
+  border-color: #111111;
+}
+
+.c0:disabled {
+  color: #DBDBDB;
+  border-color: #DBDBDB;
+}
+
+.c1 {
+  border-right: 0px;
+  width: 100%;
+  border: 0px;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  color: #111111;
+}
+
+.c1:hover {
+  outline: none;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #949494;
+}
+
+.c1::-moz-placeholder {
+  color: #949494;
+}
+
+.c1:-ms-input-placeholder {
+  color: #949494;
+}
+
+.c1::placeholder {
+  color: #949494;
 }
 
 <ThemeProvider
@@ -337,15 +400,22 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
     }
   }
 >
-  <Ellipsis>
-    <styled.div>
+  <Input
+    isOpen={false}
+    placeholder="I am a placeholder"
+    toggleSelect={[MockFunction]}
+  >
+    <styled.div
+      isOpen={false}
+      onClick={[Function]}
+    >
       <StyledComponent
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-bxivhb",
               "isStatic": false,
               "lastClassName": "c0",
               "rules": Array [
@@ -359,7 +429,7 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-bxivhb",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -367,28 +437,109 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
           }
         }
         forwardedRef={null}
+        isOpen={false}
+        onClick={[Function]}
       >
         <div
           className="c0"
+          onClick={[Function]}
         >
-          <Icon
-            name="ellipsisHorizontal"
+          <styled.input
+            isOpen={false}
+            placeholder="I am a placeholder"
           >
-            <styled.i
-              className="icon-ellipsisHorizontal"
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-ifAKCX",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-ifAKCX",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isOpen={false}
+              placeholder="I am a placeholder"
             >
-              <StyledComponent
-                className="icon-ellipsisHorizontal"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
+              <input
+                className="c1"
+                placeholder="I am a placeholder"
+              />
+            </StyledComponent>
+          </styled.input>
+          <styled.button
+            isOpen={false}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+",
+                      [Function],
+                      "
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.button",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "button",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isOpen={false}
+            >
+              <button
+                className="c2"
+              >
+                <Icon
+                  name="caretDown"
+                >
+                  <styled.i
+                    className="icon-caretDown"
+                  >
+                    <StyledComponent
+                      className="icon-caretDown"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bwzfXH",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "
   font-family: 'sofarsounds-icon-font' !important;
   speak: none;
   font-style: normal;
@@ -403,18 +554,18 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
 
   &:before {
     color: ",
-                        [Function],
-                        ";
+                              [Function],
+                              ";
   }
 
   ",
-                        [Function],
-                        "
+                              [Function],
+                              "
 
   ",
-                        "
+                              "
     ",
-                        "
+                              "
       &.icon-facebook:before {
         content: '\\\\e90d';
       }
@@ -591,33 +742,36 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
         content: '\\\\e90a';
       }
     ",
-                        "
+                              "
   ",
-                        ";
+                              ";
 ",
-                      ],
-                    },
-                    "displayName": "styled.i",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <i
-                  className="icon-ellipsisHorizontal c1"
-                />
-              </StyledComponent>
-            </styled.i>
-          </Icon>
+                            ],
+                          },
+                          "displayName": "styled.i",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bwzfXH",
+                          "target": "i",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <i
+                        className="icon-caretDown c3"
+                      />
+                    </StyledComponent>
+                  </styled.i>
+                </Icon>
+              </button>
+            </StyledComponent>
+          </styled.button>
         </div>
       </StyledComponent>
     </styled.div>
-  </Ellipsis>
+  </Input>
 </ThemeProvider>
 `;

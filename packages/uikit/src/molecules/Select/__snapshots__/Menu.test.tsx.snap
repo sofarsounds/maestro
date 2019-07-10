@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navbar <Brand /> renders correctly 1`] = `
+exports[`Select <Menu /> it renders correctly 1`] = `
 .c0 {
-  width: 75px;
-  margin-right: 20px;
-  margin-top: 4px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 3px 6px 0 rgba(0,0,0,0.23);
+  margin-top: 0px;
+  padding-left: 0px;
+  background-color: #FFFFFF;
 }
 
 <ThemeProvider
@@ -122,29 +123,32 @@ exports[`Navbar <Brand /> renders correctly 1`] = `
     }
   }
 >
-  <styled.div>
+  <styled.ul
+    depth={2}
+  >
     <StyledComponent
+      depth={2}
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": true,
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
-  width: 75px;
-  margin-right: 20px;
-  margin-top: 4px;
+  ",
+              [Function],
+              ";
 ",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "styled.ul",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
+          "styledComponentId": "sc-bwzfXH",
+          "target": "ul",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -152,10 +156,12 @@ exports[`Navbar <Brand /> renders correctly 1`] = `
       }
       forwardedRef={null}
     >
-      <div
+      <ul
         className="c0"
-      />
+      >
+        I am a child component
+      </ul>
     </StyledComponent>
-  </styled.div>
+  </styled.ul>
 </ThemeProvider>
 `;

@@ -9,13 +9,15 @@ const setup = (
   Component: any,
   disabled: boolean = false,
   loading: boolean = false,
-  colour: string = 'primary'
+  colour: string = 'primary',
+  small: boolean = false
 ) =>
   mountWithTheme(
     <Component
       disabled={disabled}
       loading={loading}
       colour={colour}
+      small={small}
       onClick={() => onClickMock()}
     >
       Button
@@ -47,6 +49,13 @@ describe('Buttons', () => {
       wrapper.simulate('click');
       expect(onClickMock).not.toHaveBeenCalled();
     });
+
+    it('appears as a smaller button when said prop is provide', () => {
+      const wrapper = setup(BaseButton, false, false, 'primary', true);
+      expect(wrapper).toHaveStyleRule('padding', '0 15px');
+      expect(wrapper).toHaveStyleRule('height', '40px');
+      expect(wrapper.find(BaseButton).prop('small')).toBeTruthy();
+    });
   });
 
   describe('Primary Button', () => {
@@ -60,6 +69,12 @@ describe('Buttons', () => {
 
     it('renders correctly in loading state', () => {
       expect(setup(PrimaryButton, false, true)).toMatchSnapshot();
+    });
+
+    it('renders correctly with a small prop value', () => {
+      expect(
+        setup(PrimaryButton, false, false, 'primary', true)
+      ).toMatchSnapshot();
     });
   });
 

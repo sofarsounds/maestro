@@ -104,6 +104,16 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -190,15 +200,15 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -217,7 +227,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -235,7 +245,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-jTzLTM",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -263,7 +273,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
+                    "componentId": "sc-jzJRlG",
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -277,7 +287,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
                   "displayName": "styled.input",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
+                  "styledComponentId": "sc-jzJRlG",
                   "target": "input",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -304,7 +314,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
+                    "componentId": "sc-VigVT",
                     "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
@@ -322,7 +332,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
+                  "styledComponentId": "sc-VigVT",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -449,6 +459,16 @@ exports[`<FormGroup /> renders a error message 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -535,15 +555,15 @@ exports[`<FormGroup /> renders a error message 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -562,7 +582,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -580,7 +600,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-jTzLTM",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -608,7 +628,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
+                    "componentId": "sc-jzJRlG",
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -622,7 +642,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
                   "displayName": "styled.input",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
+                  "styledComponentId": "sc-jzJRlG",
                   "target": "input",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -649,7 +669,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
+                    "componentId": "sc-VigVT",
                     "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
@@ -667,7 +687,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
+                  "styledComponentId": "sc-VigVT",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -765,6 +785,16 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -850,15 +880,15 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -877,7 +907,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -895,7 +925,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-jTzLTM",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -923,7 +953,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
+                    "componentId": "sc-jzJRlG",
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -937,7 +967,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "displayName": "styled.input",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
+                  "styledComponentId": "sc-jzJRlG",
                   "target": "input",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1036,6 +1066,16 @@ exports[`<FormGroup /> renders correctly 1`] = `
         "whiteDenim": "#FFFFFF",
       },
       "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
         "buttonHeight": "44px",
         "containerWidth": Object {
           "default": "800px",
@@ -1120,15 +1160,15 @@ exports[`<FormGroup /> renders correctly 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1147,7 +1187,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -1165,7 +1205,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-jTzLTM",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1192,7 +1232,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
+                    "componentId": "sc-jzJRlG",
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -1206,7 +1246,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
                   "displayName": "styled.input",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
+                  "styledComponentId": "sc-jzJRlG",
                   "target": "input",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
