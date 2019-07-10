@@ -2,24 +2,24 @@ import styled, { css } from '../../lib/styledComponents';
 import { WithTypographyProps, withTypography } from '../../util';
 
 interface TypographyProps extends WithTypographyProps {
-  children: any;
+  children?: any;
 }
 
 export const Title = styled.h1<TypographyProps>`
   ${({ theme }) => css`
-    font-size: ${theme.fontSizes.title};
+    font-size: ${theme.fontSizes.title.xs};
     font-weight: 800;
     letter-spacing: -2px;
+    line-height: normal;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
-      font-size: ${theme.fontSizes.title};
+      font-size: ${theme.fontSizes.title.md};
     `};
 
     ${theme.media.lg`
-      font-size: ${theme.fontSizes.title};
+      font-size: ${theme.fontSizes.title.lg};
     `};
   `};
 
@@ -27,19 +27,18 @@ export const Title = styled.h1<TypographyProps>`
 `;
 export const H1 = styled.h1<TypographyProps>`
   ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h1};
+    font-size: ${theme.fontSizes.h1.xs};
     font-weight: normal;
     letter-spacing: -1.5px;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
-      font-size: ${theme.fontSizes.h1};
+      font-size: ${theme.fontSizes.h1.md};
     `};
 
     ${theme.media.lg`
-      font-size: ${theme.fontSizes.h1};
+      font-size: ${theme.fontSizes.h1.lg};
     `};
   `};
 
@@ -48,19 +47,18 @@ export const H1 = styled.h1<TypographyProps>`
 
 export const H2 = styled.h2<TypographyProps>`
   ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h2};
+    font-size: ${theme.fontSizes.h2.xs};
     font-weight: normal;
     letter-spacing: -0.5px;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
-      font-size: ${theme.fontSizes.h2};
+      font-size: ${theme.fontSizes.h2.md};
     `};
 
     ${theme.media.lg`
-      font-size: ${theme.fontSizes.h2};
+      font-size: ${theme.fontSizes.h2.lg};
     `};
   `};
 
@@ -69,19 +67,18 @@ export const H2 = styled.h2<TypographyProps>`
 
 export const H3 = styled.h3<TypographyProps>`
   ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h3};
+    font-size: ${theme.fontSizes.h3.xs};
     font-weight: normal;
     letter-spacing: normal;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
-      font-size: ${theme.fontSizes.h3};
+      font-size: ${theme.fontSizes.h3.md};
     `};
 
     ${theme.media.lg`
-      font-size: ${theme.fontSizes.h3};
+      font-size: ${theme.fontSizes.h3.lg};
     `};
   `};
 
@@ -90,19 +87,18 @@ export const H3 = styled.h3<TypographyProps>`
 
 export const H4 = styled.h4<TypographyProps>`
   ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h4};
+    font-size: ${theme.fontSizes.h4.xs};
     font-weight: normal;
     letter-spacing: 0.3px;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
-      font-size: ${theme.fontSizes.h4};
+      font-size: ${theme.fontSizes.h4.md};
     `};
 
     ${theme.media.lg`
-      font-size: ${theme.fontSizes.h4};
+      font-size: ${theme.fontSizes.h4.lg};
     `};
   `};
 
@@ -111,19 +107,18 @@ export const H4 = styled.h4<TypographyProps>`
 
 export const H5 = styled.h5<TypographyProps>`
   ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h5};
+    font-size: ${theme.fontSizes.h5.xs};
     font-weight: normal;
     letter-spacing: normal;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
-      font-size: ${theme.fontSizes.h5};
+      font-size: ${theme.fontSizes.h5.md};
     `};
 
     ${theme.media.lg`
-      font-size: ${theme.fontSizes.h5};
+      font-size: ${theme.fontSizes.h5.lg};
     `};
   `};
 
@@ -132,19 +127,18 @@ export const H5 = styled.h5<TypographyProps>`
 
 export const H6 = styled.h6<TypographyProps>`
   ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h6};
+    font-size: ${theme.fontSizes.h6.xs};
     font-weight: normal;
     letter-spacing: 0.2px;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
-      font-size: ${theme.fontSizes.h6};
+      font-size: ${theme.fontSizes.h6.md};
     `};
 
     ${theme.media.lg`
-      font-size: ${theme.fontSizes.h6};
+      font-size: ${theme.fontSizes.h6.lg};
     `};
   `};
 
@@ -156,10 +150,10 @@ export const Subtitle = styled.span<TypographyProps>`
     font-size: ${theme.fontSizes.subtitle1};
     font-weight: normal;
     letter-spacing: 0.2px;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
       font-size: ${theme.fontSizes.subtitle1};
     `};
@@ -177,10 +171,10 @@ export const Subtitle2 = styled.span<TypographyProps>`
     font-size: ${theme.fontSizes.subtitle2};
     font-weight: normal;
     letter-spacing: 0.1px;
+    line-height: 1.71;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
       font-size: ${theme.fontSizes.subtitle2};
     `};
@@ -198,10 +192,10 @@ export const Body = styled.p<TypographyProps>`
     font-size: ${theme.fontSizes.body1};
     font-weight: normal;
     letter-spacing: 0.4px;
+    line-height: 1.75;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
       font-size: ${theme.fontSizes.body1};
     `};
@@ -219,10 +213,10 @@ export const Body2 = styled.p<TypographyProps>`
     font-size: ${theme.fontSizes.body2};
     font-weight: normal;
     letter-spacing: 0.3px;
+    line-height: 1.43;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
       font-size: ${theme.fontSizes.body2};
     `};
@@ -241,10 +235,10 @@ export const Overline = styled.span<TypographyProps>`
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
       font-size: ${theme.fontSizes.overline};
     `};
@@ -262,10 +256,10 @@ export const Caption = styled.span<TypographyProps>`
     font-size: ${theme.fontSizes.caption};
     font-weight: normal;
     letter-spacing: 0.3px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 
-    // TODO scale up fontSizes
     ${theme.media.md`
       font-size: ${theme.fontSizes.caption};
     `};
