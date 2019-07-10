@@ -4,6 +4,8 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 .c3 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -34,6 +36,8 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -66,6 +70,8 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 .c1 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -1224,6 +1230,8 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -1254,6 +1262,8 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 .c1 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -1286,6 +1296,8 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 .c2 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -2214,6 +2226,8 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 .c3 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -2244,6 +2258,8 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 .c0 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -2276,6 +2292,8 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 .c1 {
   width: 36px;
   height: 36px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
