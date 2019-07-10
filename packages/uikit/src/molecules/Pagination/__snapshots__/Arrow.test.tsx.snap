@@ -338,12 +338,14 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
     <styled.div
       as="button"
       clickable={true}
+      data-qaid=""
       disabled={false}
       onClick={[MockFunction]}
     >
       <StyledComponent
         as="button"
         clickable={true}
+        data-qaid=""
         disabled={false}
         forwardedComponent={
           Object {
@@ -376,6 +378,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
       >
         <button
           className="c0"
+          data-qaid=""
           disabled={false}
           onClick={[MockFunction]}
         >
@@ -978,12 +981,14 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
     <styled.div
       as="button"
       clickable={true}
+      data-qaid=""
       disabled={true}
       onClick={[MockFunction]}
     >
       <StyledComponent
         as="button"
         clickable={true}
+        data-qaid=""
         disabled={true}
         forwardedComponent={
           Object {
@@ -1016,6 +1021,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
       >
         <button
           className="c0"
+          data-qaid=""
           disabled={true}
           onClick={[MockFunction]}
         >
@@ -1611,12 +1617,14 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
     <styled.div
       as="button"
       clickable={true}
+      data-qaid=""
       disabled={false}
       onClick={[MockFunction]}
     >
       <StyledComponent
         as="button"
         clickable={true}
+        data-qaid=""
         disabled={false}
         forwardedComponent={
           Object {
@@ -1649,6 +1657,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
       >
         <button
           className="c0"
+          data-qaid=""
           disabled={false}
           onClick={[MockFunction]}
         >
@@ -2251,12 +2260,14 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
     <styled.div
       as="button"
       clickable={true}
+      data-qaid=""
       disabled={true}
       onClick={[MockFunction]}
     >
       <StyledComponent
         as="button"
         clickable={true}
+        data-qaid=""
         disabled={true}
         forwardedComponent={
           Object {
@@ -2289,6 +2300,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
       >
         <button
           className="c0"
+          data-qaid=""
           disabled={true}
           onClick={[MockFunction]}
         >

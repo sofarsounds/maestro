@@ -7,13 +7,15 @@ interface PagesProps {
   currentPage: number;
   enlargement?: number;
   onClick: (p: number) => void;
+  qaId?: string;
 }
 
 const Pages: React.SFC<PagesProps> = ({
   displayPages,
   currentPage,
   enlargement = 1,
-  onClick
+  onClick,
+  qaId = ''
 }) => (
   <>
     {[...Array(displayPages)].map((_, page: number) => (
@@ -22,6 +24,7 @@ const Pages: React.SFC<PagesProps> = ({
         page={page + enlargement}
         isActive={currentPage === page + enlargement}
         onClick={() => onClick(page + enlargement)}
+        qaId={qaId}
       />
     ))}
   </>
