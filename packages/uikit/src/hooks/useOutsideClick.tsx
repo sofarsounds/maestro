@@ -13,7 +13,7 @@ const useOutsideClick = (ref: React.RefObject<any>, callback: () => void) => {
     return () => {
       document.removeEventListener('click', handleClick);
     };
-  });
+  }, []);
 };
 
 export default useOutsideClick;
