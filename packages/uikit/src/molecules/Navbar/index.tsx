@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../atoms/Logo';
 import Container from '../../atoms/Container';
@@ -14,6 +15,7 @@ interface NavbarProps {
   fixed?: boolean;
   invert?: boolean;
   children: any;
+  logoLinkTo?: string;
   'data-qaid'?: string;
 }
 
@@ -42,14 +44,16 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   public render() {
     const { open } = this.state;
-    const { children, fixed, 'data-qaid': qaId } = this.props;
+    const { logoLinkTo, children, fixed, 'data-qaid': qaId } = this.props;
 
     return (
       <NavbarContainer fixed={fixed} data-qaid={qaId}>
         <Container alignItems="center" justifyContent="space-between">
-          <Brand>
-            <Logo invert />
-          </Brand>
+          <Link to={logoLinkTo || '/'}>
+            <Brand>
+              <Logo invert />
+            </Brand>
+          </Link>
           <Hamburger onClick={this.onToggle} open={open} />
           <CollapsibleWrapper open={open}>{children}</CollapsibleWrapper>
         </Container>

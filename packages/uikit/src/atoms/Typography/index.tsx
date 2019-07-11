@@ -1,153 +1,53 @@
 import styled, { css } from '../../lib/styledComponents';
 import { WithTypographyProps, withTypography } from '../../util';
 
+import {
+  withTitleStyle,
+  withH1Style,
+  withH2Style,
+  withH3Style,
+  withH4Style,
+  withH5Style,
+  withH6Style
+} from './config';
+
 interface TypographyProps extends WithTypographyProps {
-  children: any;
+  children?: any;
+  spaceAfter?: number;
 }
 
 export const Title = styled.h1<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.title};
-    font-weight: 800;
-    letter-spacing: -2px;
-    margin: 0;
-    padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.title};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.title};
-    `};
-  `};
-
+  ${withTitleStyle}
   ${withTypography}
 `;
+
 export const H1 = styled.h1<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h1};
-    font-weight: normal;
-    letter-spacing: -1.5px;
-    margin: 0;
-    padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.h1};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.h1};
-    `};
-  `};
-
+  ${withH1Style}
   ${withTypography}
 `;
 
 export const H2 = styled.h2<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h2};
-    font-weight: normal;
-    letter-spacing: -0.5px;
-    margin: 0;
-    padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.h2};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.h2};
-    `};
-  `};
-
+  ${withH2Style}
   ${withTypography}
 `;
 
 export const H3 = styled.h3<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h3};
-    font-weight: normal;
-    letter-spacing: normal;
-    margin: 0;
-    padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.h3};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.h3};
-    `};
-  `};
-
+  ${withH3Style}
   ${withTypography}
 `;
 
 export const H4 = styled.h4<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h4};
-    font-weight: normal;
-    letter-spacing: 0.3px;
-    margin: 0;
-    padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.h4};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.h4};
-    `};
-  `};
-
+  ${withH4Style}
   ${withTypography}
 `;
 
 export const H5 = styled.h5<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h5};
-    font-weight: normal;
-    letter-spacing: normal;
-    margin: 0;
-    padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.h5};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.h5};
-    `};
-  `};
-
+  ${withH5Style}
   ${withTypography}
 `;
 
 export const H6 = styled.h6<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.h6};
-    font-weight: normal;
-    letter-spacing: 0.2px;
-    margin: 0;
-    padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.h6};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.h6};
-    `};
-  `};
-
+  ${withH6Style}
   ${withTypography}
 `;
 
@@ -156,17 +56,9 @@ export const Subtitle = styled.span<TypographyProps>`
     font-size: ${theme.fontSizes.subtitle1};
     font-weight: normal;
     letter-spacing: 0.2px;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.subtitle1};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.subtitle1};
-    `};
   `};
 
   ${withTypography}
@@ -177,17 +69,9 @@ export const Subtitle2 = styled.span<TypographyProps>`
     font-size: ${theme.fontSizes.subtitle2};
     font-weight: normal;
     letter-spacing: 0.1px;
+    line-height: 1.71;
     margin: 0;
     padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.subtitle2};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.subtitle2};
-    `};
   `};
 
   ${withTypography}
@@ -198,17 +82,9 @@ export const Body = styled.p<TypographyProps>`
     font-size: ${theme.fontSizes.body1};
     font-weight: normal;
     letter-spacing: 0.4px;
+    line-height: 1.75;
     margin: 0;
     padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.body1};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.body1};
-    `};
   `};
 
   ${withTypography}
@@ -219,17 +95,9 @@ export const Body2 = styled.p<TypographyProps>`
     font-size: ${theme.fontSizes.body2};
     font-weight: normal;
     letter-spacing: 0.3px;
+    line-height: 1.43;
     margin: 0;
     padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.body2};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.body2};
-    `};
   `};
 
   ${withTypography}
@@ -241,17 +109,9 @@ export const Overline = styled.span<TypographyProps>`
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.overline};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.overline};
-    `};
   `};
 
   ${withTypography}
@@ -262,17 +122,9 @@ export const Caption = styled.span<TypographyProps>`
     font-size: ${theme.fontSizes.caption};
     font-weight: normal;
     letter-spacing: 0.3px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-
-    // TODO scale up fontSizes
-    ${theme.media.md`
-      font-size: ${theme.fontSizes.caption};
-    `};
-
-    ${theme.media.lg`
-      font-size: ${theme.fontSizes.caption};
-    `};
   `};
 
   ${withTypography}
@@ -289,3 +141,5 @@ export const FormGroupLabel = styled.span<TypographyProps>`
 
   ${withTypography}
 `;
+
+export * from './config';

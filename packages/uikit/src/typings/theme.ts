@@ -10,6 +10,12 @@
  * subtitle? We should maybe have a look at making this a bit easier.
  */
 
+interface FontSizeResponsive {
+  xs: string;
+  md: string;
+  lg: string;
+}
+
 export default interface Theme {
   colours: {
     primary: string;
@@ -45,13 +51,13 @@ export default interface Theme {
   };
   fontSizes: {
     base: string;
-    h1: string;
-    h2: string;
-    h3: string;
-    h4: string;
-    h5: string;
-    h6: string;
-    title: string;
+    h1: FontSizeResponsive;
+    h2: FontSizeResponsive;
+    h3: FontSizeResponsive;
+    h4: FontSizeResponsive;
+    h5: FontSizeResponsive;
+    h6: FontSizeResponsive;
+    title: FontSizeResponsive;
     subtitle1: string;
     subtitle2: string;
     body1: string;

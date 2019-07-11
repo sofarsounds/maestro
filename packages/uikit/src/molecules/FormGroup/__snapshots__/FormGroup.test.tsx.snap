@@ -8,6 +8,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   -moz-letter-spacing: 0.3px;
   -ms-letter-spacing: 0.3px;
   letter-spacing: 0.3px;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   color: #EF4423;
@@ -59,18 +60,6 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
 .c1:disabled {
   color: #DBDBDB;
   border-color: #DBDBDB;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    font-size: 10px;
-  }
-}
-
-@media (min-width:992px) {
-  .c2 {
-    font-size: 10px;
-  }
 }
 
 <ThemeProvider
@@ -135,16 +124,44 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         "button": "14px",
         "caption": "10px",
         "formGroupLabel": "14px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
+        "h1": Object {
+          "lg": "96px",
+          "md": "60px",
+          "xs": "48px",
+        },
+        "h2": Object {
+          "lg": "60px",
+          "md": "48px",
+          "xs": "34px",
+        },
+        "h3": Object {
+          "lg": "54px",
+          "md": "48px",
+          "xs": "26px",
+        },
+        "h4": Object {
+          "lg": "34px",
+          "md": "24px",
+          "xs": "20px",
+        },
+        "h5": Object {
+          "lg": "24px",
+          "md": "20px",
+          "xs": "20px",
+        },
+        "h6": Object {
+          "lg": "20px",
+          "md": "20px",
+          "xs": "20px",
+        },
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "54px",
+        "title": Object {
+          "lg": "54px",
+          "md": "38px",
+          "xs": "26px",
+        },
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -363,6 +380,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
   -moz-letter-spacing: 0.3px;
   -ms-letter-spacing: 0.3px;
   letter-spacing: 0.3px;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   color: #EF4423;
@@ -414,18 +432,6 @@ exports[`<FormGroup /> renders a error message 1`] = `
 .c1:disabled {
   color: #DBDBDB;
   border-color: #DBDBDB;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    font-size: 10px;
-  }
-}
-
-@media (min-width:992px) {
-  .c2 {
-    font-size: 10px;
-  }
 }
 
 <ThemeProvider
@@ -490,16 +496,44 @@ exports[`<FormGroup /> renders a error message 1`] = `
         "button": "14px",
         "caption": "10px",
         "formGroupLabel": "14px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
+        "h1": Object {
+          "lg": "96px",
+          "md": "60px",
+          "xs": "48px",
+        },
+        "h2": Object {
+          "lg": "60px",
+          "md": "48px",
+          "xs": "34px",
+        },
+        "h3": Object {
+          "lg": "54px",
+          "md": "48px",
+          "xs": "26px",
+        },
+        "h4": Object {
+          "lg": "34px",
+          "md": "24px",
+          "xs": "20px",
+        },
+        "h5": Object {
+          "lg": "24px",
+          "md": "20px",
+          "xs": "20px",
+        },
+        "h6": Object {
+          "lg": "20px",
+          "md": "20px",
+          "xs": "20px",
+        },
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "54px",
+        "title": Object {
+          "lg": "54px",
+          "md": "38px",
+          "xs": "26px",
+        },
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -816,16 +850,44 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         "button": "14px",
         "caption": "10px",
         "formGroupLabel": "14px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
+        "h1": Object {
+          "lg": "96px",
+          "md": "60px",
+          "xs": "48px",
+        },
+        "h2": Object {
+          "lg": "60px",
+          "md": "48px",
+          "xs": "34px",
+        },
+        "h3": Object {
+          "lg": "54px",
+          "md": "48px",
+          "xs": "26px",
+        },
+        "h4": Object {
+          "lg": "34px",
+          "md": "24px",
+          "xs": "20px",
+        },
+        "h5": Object {
+          "lg": "24px",
+          "md": "20px",
+          "xs": "20px",
+        },
+        "h6": Object {
+          "lg": "20px",
+          "md": "20px",
+          "xs": "20px",
+        },
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "54px",
+        "title": Object {
+          "lg": "54px",
+          "md": "38px",
+          "xs": "26px",
+        },
       },
       "fonts": Object {
         "regular": "Open Sans",
@@ -1097,16 +1159,44 @@ exports[`<FormGroup /> renders correctly 1`] = `
         "button": "14px",
         "caption": "10px",
         "formGroupLabel": "14px",
-        "h1": "96px",
-        "h2": "60px",
-        "h3": "48px",
-        "h4": "34px",
-        "h5": "24px",
-        "h6": "20px",
+        "h1": Object {
+          "lg": "96px",
+          "md": "60px",
+          "xs": "48px",
+        },
+        "h2": Object {
+          "lg": "60px",
+          "md": "48px",
+          "xs": "34px",
+        },
+        "h3": Object {
+          "lg": "54px",
+          "md": "48px",
+          "xs": "26px",
+        },
+        "h4": Object {
+          "lg": "34px",
+          "md": "24px",
+          "xs": "20px",
+        },
+        "h5": Object {
+          "lg": "24px",
+          "md": "20px",
+          "xs": "20px",
+        },
+        "h6": Object {
+          "lg": "20px",
+          "md": "20px",
+          "xs": "20px",
+        },
         "overline": "10px",
         "subtitle1": "16px",
         "subtitle2": "14px",
-        "title": "54px",
+        "title": Object {
+          "lg": "54px",
+          "md": "38px",
+          "xs": "26px",
+        },
       },
       "fonts": Object {
         "regular": "Open Sans",
