@@ -139,10 +139,8 @@ storiesOf('03 / Atoms|Others', module)
     </div>
   ))
   .add('Snackbar', () => (
-    <Snackbar
-      text={
-        'No internet connection detected. Sofar will automatically try to reconnect when it detects an internet connection (error code:4)'
-      }
-      onCancel={action('cancel clicked')}
-    />
+    <Snackbar onCancel={action('cancel clicked')}>
+      No internet connection detected. Sofar will automatically try to reconnect
+      when it detects an internet connection (error code:4)
+    </Snackbar>
   ));
