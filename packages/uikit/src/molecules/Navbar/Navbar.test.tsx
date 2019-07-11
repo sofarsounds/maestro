@@ -1,5 +1,6 @@
 import React from 'react';
 import { mountWithTheme, resize } from '../../test';
+import { MemoryRouter } from 'react-router-dom';
 
 import Navbar from './index';
 import ItemContainer from './ItemContainer';
@@ -10,15 +11,17 @@ import CollapsibleWrapper from './Collapsible';
 
 const setup = () =>
   mountWithTheme(
-    <Navbar>
-      <ItemContainer>
-        <Item>Left Item</Item>
-      </ItemContainer>
-      <ItemContainer align="right">
-        <Item>Right Item #1</Item>
-        <Item>Right Item #2</Item>
-      </ItemContainer>
-    </Navbar>
+    <MemoryRouter initialEntries={['/']}>
+      <Navbar>
+        <ItemContainer>
+          <Item>Left Item</Item>
+        </ItemContainer>
+        <ItemContainer align="right">
+          <Item>Right Item #1</Item>
+          <Item>Right Item #2</Item>
+        </ItemContainer>
+      </Navbar>
+    </MemoryRouter>
   );
 
 const wrapper = setup();

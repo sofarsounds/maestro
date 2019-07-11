@@ -104,43 +104,47 @@ storiesOf('05 / Molecules|Select Input', module).add('Select Input', () => (
 
 storiesOf('05 / Molecules|Navbar', module)
   .add('Navbar', () => (
-    <div style={{ paddingTop: '100px' }}>
-      <Navbar data-qaid="navbar">
-        <Navbar.ItemContainer>
-          <span style={{ color: '#fff' }}>LEFT</span>
-        </Navbar.ItemContainer>
-        <Navbar.ItemContainer align="right">
-          <Navbar.Item href="#">London</Navbar.Item>
-          <Navbar.Item href="#">Perform</Navbar.Item>
-          <Navbar.Item>Host</Navbar.Item>
-          <Navbar.Item>Your Events</Navbar.Item>
-          <Navbar.Item>Your Account</Navbar.Item>
-          <Navbar.Item>English</Navbar.Item>
-        </Navbar.ItemContainer>
-      </Navbar>
-      <h1>Navbar Component</h1>
-      <div style={{ height: '500px' }}>Scrollable Content</div>
-    </div>
+    <BrowserRouter>
+      <div style={{ paddingTop: '100px' }}>
+        <Navbar data-qaid="navbar">
+          <Navbar.ItemContainer>
+            <span style={{ color: '#fff' }}>LEFT</span>
+          </Navbar.ItemContainer>
+          <Navbar.ItemContainer align="right">
+            <Navbar.Item href="#">London</Navbar.Item>
+            <Navbar.Item href="#">Perform</Navbar.Item>
+            <Navbar.Item>Host</Navbar.Item>
+            <Navbar.Item>Your Events</Navbar.Item>
+            <Navbar.Item>Your Account</Navbar.Item>
+            <Navbar.Item>English</Navbar.Item>
+          </Navbar.ItemContainer>
+        </Navbar>
+        <h1>Navbar Component</h1>
+        <div style={{ height: '500px' }}>Scrollable Content</div>
+      </div>
+    </BrowserRouter>
   ))
   .add('Navbar - Fixed', () => (
-    <div style={{ paddingTop: '100px' }}>
-      <h1>Navbar Component</h1>
-      <Navbar fixed={true}>
-        <Navbar.ItemContainer>
-          <span style={{ color: '#fff' }}>LEFT</span>
-        </Navbar.ItemContainer>
-        <Navbar.ItemContainer align="right">
-          <Navbar.Item href="#">London</Navbar.Item>
-          <Navbar.Item href="#">Perform</Navbar.Item>
-          <Navbar.Item>Host</Navbar.Item>
-          <Navbar.Item>Your Events</Navbar.Item>
-          <Navbar.Item>Your Account</Navbar.Item>
-          <Navbar.Item>English</Navbar.Item>
-        </Navbar.ItemContainer>
-      </Navbar>
+    <BrowserRouter>
+      <div style={{ paddingTop: '100px' }}>
+        <h1>Navbar Component</h1>
+        <Navbar fixed={true} logoLinkTo={'/subroute'}>
+          <Navbar.ItemContainer>
+            <span style={{ color: '#fff' }}>LEFT</span>
+          </Navbar.ItemContainer>
+          <Navbar.ItemContainer align="right">
+            <Navbar.Item href="#">London</Navbar.Item>
+            <Navbar.Item href="#">Perform</Navbar.Item>
+            <Navbar.Item>Host</Navbar.Item>
+            <Navbar.Item>Your Events</Navbar.Item>
+            <Navbar.Item>Your Account</Navbar.Item>
+            <Navbar.Item>English</Navbar.Item>
+          </Navbar.ItemContainer>
+        </Navbar>
 
-      <div style={{ height: '500px' }}>Scrollable Content</div>
-    </div>
+        <div style={{ height: '500px' }}>Scrollable Content</div>
+      </div>
+    </BrowserRouter>
   ));
 
 function ModalExample() {

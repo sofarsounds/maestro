@@ -62,18 +62,6 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   border-color: #DBDBDB;
 }
 
-@media (min-width:768px) {
-  .c2 {
-    font-size: 10px;
-  }
-}
-
-@media (min-width:992px) {
-  .c2 {
-    font-size: 10px;
-  }
-}
-
 <ThemeProvider
   theme={
     Object {
@@ -444,18 +432,6 @@ exports[`<FormGroup /> renders a error message 1`] = `
 .c1:disabled {
   color: #DBDBDB;
   border-color: #DBDBDB;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    font-size: 10px;
-  }
-}
-
-@media (min-width:992px) {
-  .c2 {
-    font-size: 10px;
-  }
 }
 
 <ThemeProvider
