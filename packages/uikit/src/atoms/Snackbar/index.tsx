@@ -1,49 +1,55 @@
 import React from 'react';
+
 import styled, { css } from '../../lib/styledComponents';
-import Icon from '../../atoms/Icon';
+import { Body2 } from '../Typography';
+import { withShadow } from '../../util';
+import Icon from '../Icon';
 import theme from '../../theme';
 
 interface SnackbarProps {
-  text?: string;
+  children: any;
   onCancel: () => void;
+  'data-qaid'?: string;
 }
-
-export const DismissSnackbarIconContainer = styled.div`
-  padding: 20px 24px 0px 0px;
-`;
-
-const DismissSnackbarIconStyled = (p: any) => (
-  <Icon {...p} size="16px" colour={theme.colours.whiteDenim} />
-);
-
-export const SnackbarTextStyled = styled.div`
-  ${({ theme }) => css`
-    font-size: 14px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: 0.1px;
-    padding: 16px 0px 16px 24px;
-    color: ${theme.colours.whiteDenim};
-  `}
-`;
 
 const SnackbarStyled = styled.div`
   ${({ theme }) => css`
     border-radius: 8px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: ${theme.colours.backToBlack};
     display: flex;
     justify-content: space-between;
+    padding: ${theme.ruler[4]}px ${theme.ruler[6]}px;
+
+    ${withShadow({ depth: 3 })};
   `}
 `;
 
-const Snackbar: React.SFC<SnackbarProps> = ({ text, onCancel }) => (
-  <SnackbarStyled>
-    <SnackbarTextStyled>{text}</SnackbarTextStyled>
-    <DismissSnackbarIconContainer onClick={onCancel}>
-      <DismissSnackbarIconStyled name="close" />
-    </DismissSnackbarIconContainer>
+interface IconProps {
+  onClick: () => void;
+}
+export const CancelButton = styled.button`
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const Snackbar: React.SFC<SnackbarProps> = ({
+  children,
+  onCancel,
+  'data-qaid': qaId = ''
+}) => (
+  <SnackbarStyled data-qaid={qaId}>
+    <Body2 colour="#fff" data-qaid={`${qaId}-text`}>
+      {children}
+    </Body2>
+
+    <CancelButton onClick={onCancel} data-qaid={`${qaId}-cancel`}>
+      <Icon name="close" size="16px" colour={theme.colours.whiteDenim} />
+    </CancelButton>
   </SnackbarStyled>
 );
 

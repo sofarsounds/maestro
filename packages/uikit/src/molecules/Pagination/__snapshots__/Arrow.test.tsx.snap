@@ -386,10 +386,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
             name="chevronLeft"
           >
             <styled.i
-              className="icon-chevronLeft"
+              className="icon-chevronLeft "
             >
               <StyledComponent
-                className="icon-chevronLeft"
+                className="icon-chevronLeft "
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -621,7 +621,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronLeft c1"
+                  className="icon-chevronLeft  c1"
                 />
               </StyledComponent>
             </styled.i>
@@ -1030,11 +1030,11 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
             name="chevronLeft"
           >
             <styled.i
-              className="icon-chevronLeft"
+              className="icon-chevronLeft "
               colour="#949494"
             >
               <StyledComponent
-                className="icon-chevronLeft"
+                className="icon-chevronLeft "
                 colour="#949494"
                 forwardedComponent={
                   Object {
@@ -1267,7 +1267,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronLeft c1"
+                  className="icon-chevronLeft  c1"
                 />
               </StyledComponent>
             </styled.i>
@@ -1665,10 +1665,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
             name="chevronRight"
           >
             <styled.i
-              className="icon-chevronRight"
+              className="icon-chevronRight "
             >
               <StyledComponent
-                className="icon-chevronRight"
+                className="icon-chevronRight "
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -1900,7 +1900,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronRight c1"
+                  className="icon-chevronRight  c1"
                 />
               </StyledComponent>
             </styled.i>
@@ -2309,11 +2309,11 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
             name="chevronRight"
           >
             <styled.i
-              className="icon-chevronRight"
+              className="icon-chevronRight "
               colour="#949494"
             >
               <StyledComponent
-                className="icon-chevronRight"
+                className="icon-chevronRight "
                 colour="#949494"
                 forwardedComponent={
                   Object {
@@ -2546,7 +2546,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronRight c1"
+                  className="icon-chevronRight  c1"
                 />
               </StyledComponent>
             </styled.i>

@@ -496,10 +496,10 @@ exports[`<Pagination /> renders correctly 1`] = `
                     name="chevronLeft"
                   >
                     <styled.i
-                      className="icon-chevronLeft"
+                      className="icon-chevronLeft "
                     >
                       <StyledComponent
-                        className="icon-chevronLeft"
+                        className="icon-chevronLeft "
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -731,7 +731,7 @@ exports[`<Pagination /> renders correctly 1`] = `
                         forwardedRef={null}
                       >
                         <i
-                          className="icon-chevronLeft c2"
+                          className="icon-chevronLeft  c2"
                         />
                       </StyledComponent>
                     </styled.i>
@@ -1063,10 +1063,10 @@ exports[`<Pagination /> renders correctly 1`] = `
                       name="ellipsisHorizontal"
                     >
                       <styled.i
-                        className="icon-ellipsisHorizontal"
+                        className="icon-ellipsisHorizontal "
                       >
                         <StyledComponent
-                          className="icon-ellipsisHorizontal"
+                          className="icon-ellipsisHorizontal "
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -1298,7 +1298,7 @@ exports[`<Pagination /> renders correctly 1`] = `
                           forwardedRef={null}
                         >
                           <i
-                            className="icon-ellipsisHorizontal c2"
+                            className="icon-ellipsisHorizontal  c2"
                           />
                         </StyledComponent>
                       </styled.i>
@@ -1419,10 +1419,10 @@ exports[`<Pagination /> renders correctly 1`] = `
                     name="chevronRight"
                   >
                     <styled.i
-                      className="icon-chevronRight"
+                      className="icon-chevronRight "
                     >
                       <StyledComponent
-                        className="icon-chevronRight"
+                        className="icon-chevronRight "
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -1654,7 +1654,7 @@ exports[`<Pagination /> renders correctly 1`] = `
                         forwardedRef={null}
                       >
                         <i
-                          className="icon-chevronRight c2"
+                          className="icon-chevronRight  c2"
                         />
                       </StyledComponent>
                     </styled.i>
