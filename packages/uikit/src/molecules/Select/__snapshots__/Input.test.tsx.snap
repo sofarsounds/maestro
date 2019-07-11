@@ -554,10 +554,10 @@ exports[`Select <Input /> it renders correctly 1`] = `
                   name="caretDown"
                 >
                   <styled.i
-                    className="icon-caretDown"
+                    className="icon-caretDown "
                   >
                     <StyledComponent
-                      className="icon-caretDown"
+                      className="icon-caretDown "
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
@@ -789,7 +789,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
                       forwardedRef={null}
                     >
                       <i
-                        className="icon-caretDown c3"
+                        className="icon-caretDown  c3"
                       />
                     </StyledComponent>
                   </styled.i>
