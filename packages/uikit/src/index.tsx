@@ -3,6 +3,7 @@ export * from './atoms/Button';
 export * from './atoms/Typography';
 export * from './atoms/FormElements';
 export * from './atoms/Grid';
+export { default as Snackbar } from './atoms/Snackbar';
 export { default as Badge } from './atoms/Badge';
 export { default as Divider } from './atoms/Divider';
 export { default as Container } from './atoms/Container';

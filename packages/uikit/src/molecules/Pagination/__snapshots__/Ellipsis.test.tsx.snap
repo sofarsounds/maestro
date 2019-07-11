@@ -403,10 +403,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
             name="ellipsisHorizontal"
           >
             <styled.i
-              className="icon-ellipsisHorizontal"
+              className="icon-ellipsisHorizontal "
             >
               <StyledComponent
-                className="icon-ellipsisHorizontal"
+                className="icon-ellipsisHorizontal "
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -638,7 +638,7 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-ellipsisHorizontal c1"
+                  className="icon-ellipsisHorizontal  c1"
                 />
               </StyledComponent>
             </styled.i>
