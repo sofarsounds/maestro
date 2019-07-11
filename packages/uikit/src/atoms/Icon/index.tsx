@@ -55,9 +55,14 @@ interface IconProps {
   name: string;
   size?: string;
   colour?: string;
+  className?: string;
 }
-const Icon: React.SFC<IconProps> = ({ name, size, colour }) => (
-  <IconElement className={`icon-${name}`} size={size} colour={colour} />
+const Icon: React.SFC<IconProps> = ({ name, size, colour, className = '' }) => (
+  <IconElement
+    className={`icon-${name} ${className}`}
+    size={size}
+    colour={colour}
+  />
 );
 
 export default Icon;

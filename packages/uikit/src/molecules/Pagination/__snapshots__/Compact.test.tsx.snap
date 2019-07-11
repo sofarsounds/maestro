@@ -529,10 +529,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               name="ellipsisHorizontal"
             >
               <styled.i
-                className="icon-ellipsisHorizontal"
+                className="icon-ellipsisHorizontal "
               >
                 <StyledComponent
-                  className="icon-ellipsisHorizontal"
+                  className="icon-ellipsisHorizontal "
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
@@ -764,7 +764,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal c2"
+                    className="icon-ellipsisHorizontal  c2"
                   />
                 </StyledComponent>
               </styled.i>
@@ -979,10 +979,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               name="ellipsisHorizontal"
             >
               <styled.i
-                className="icon-ellipsisHorizontal"
+                className="icon-ellipsisHorizontal "
               >
                 <StyledComponent
-                  className="icon-ellipsisHorizontal"
+                  className="icon-ellipsisHorizontal "
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
@@ -1214,7 +1214,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal c2"
+                    className="icon-ellipsisHorizontal  c2"
                   />
                 </StyledComponent>
               </styled.i>
@@ -2035,10 +2035,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               name="ellipsisHorizontal"
             >
               <styled.i
-                className="icon-ellipsisHorizontal"
+                className="icon-ellipsisHorizontal "
               >
                 <StyledComponent
-                  className="icon-ellipsisHorizontal"
+                  className="icon-ellipsisHorizontal "
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
@@ -2270,7 +2270,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal c3"
+                    className="icon-ellipsisHorizontal  c3"
                   />
                 </StyledComponent>
               </styled.i>
@@ -2867,10 +2867,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               name="ellipsisHorizontal"
             >
               <styled.i
-                className="icon-ellipsisHorizontal"
+                className="icon-ellipsisHorizontal "
               >
                 <StyledComponent
-                  className="icon-ellipsisHorizontal"
+                  className="icon-ellipsisHorizontal "
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
@@ -3102,7 +3102,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal c2"
+                    className="icon-ellipsisHorizontal  c2"
                   />
                 </StyledComponent>
               </styled.i>

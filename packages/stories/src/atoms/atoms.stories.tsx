@@ -11,7 +11,8 @@ import {
   Textfield,
   Textarea,
   Badge,
-  Divider
+  Divider,
+  Snackbar
 } from 'uikit';
 
 const Container = styled.div`
@@ -127,4 +128,10 @@ storiesOf('03 / Atoms|Others', module)
       <Divider />
       More Content
     </div>
+  ))
+  .add('Snackbar', () => (
+    <Snackbar onCancel={action('cancel clicked')}>
+      No internet connection detected. Sofar will automatically try to reconnect
+      when it detects an internet connection (error code:4)
+    </Snackbar>
   ));
