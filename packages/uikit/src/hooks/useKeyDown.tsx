@@ -13,7 +13,7 @@ const useKeyDown = (key: string, callback: () => void) => {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  });
 };
 
 export default useKeyDown;
