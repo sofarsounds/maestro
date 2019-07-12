@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
@@ -15,4 +15,5 @@
     "node_modules"
   ]
 }
+
 
