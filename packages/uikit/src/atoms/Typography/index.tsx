@@ -51,32 +51,6 @@ export const H6 = styled.h6<TypographyProps>`
   ${withTypography}
 `;
 
-export const Subtitle = styled.span<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.subtitle1};
-    font-weight: normal;
-    letter-spacing: 0.2px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-  `};
-
-  ${withTypography}
-`;
-
-export const Subtitle2 = styled.span<TypographyProps>`
-  ${({ theme }) => css`
-    font-size: ${theme.fontSizes.subtitle2};
-    font-weight: normal;
-    letter-spacing: 0.1px;
-    line-height: 1.71;
-    margin: 0;
-    padding: 0;
-  `};
-
-  ${withTypography}
-`;
-
 export const Body = styled.p<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.body1};

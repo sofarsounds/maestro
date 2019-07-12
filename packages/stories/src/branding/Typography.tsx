@@ -9,8 +9,6 @@ import {
   H4,
   H5,
   H6,
-  Subtitle,
-  Subtitle2,
   Body,
   Body2,
   Overline,
@@ -28,7 +26,6 @@ const Spacer = styled.div`
 `;
 
 const headingTags = [H1, H2, H3, H4, H5, H6];
-const subtitleTags = [Subtitle, Subtitle2];
 const bodyTags = [Body, Body2];
 
 export default () => (
@@ -40,14 +37,6 @@ export default () => (
     {headingTags.map((T: any, key: number) => (
       <Boundary key={key}>
         <T>Heading {key + 1}</T>
-      </Boundary>
-    ))}
-
-    <Spacer />
-
-    {subtitleTags.map((T: any, key: number) => (
-      <Boundary key={key}>
-        <T>Subtitle {key + 1}</T>
       </Boundary>
     ))}
 
