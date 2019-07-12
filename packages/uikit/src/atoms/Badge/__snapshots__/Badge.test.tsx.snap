@@ -93,38 +93,36 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
         "caption": "10px",
         "formGroupLabel": "14px",
         "h1": Object {
-          "lg": "96px",
-          "md": "60px",
-          "xs": "48px",
+          "lg": "48px",
+          "md": "34px",
+          "xs": "24px",
         },
         "h2": Object {
-          "lg": "60px",
-          "md": "48px",
-          "xs": "34px",
-        },
-        "h3": Object {
-          "lg": "54px",
-          "md": "48px",
-          "xs": "26px",
-        },
-        "h4": Object {
           "lg": "34px",
           "md": "24px",
           "xs": "20px",
         },
-        "h5": Object {
+        "h3": Object {
           "lg": "24px",
           "md": "20px",
-          "xs": "20px",
+          "xs": "16px",
+        },
+        "h4": Object {
+          "lg": "20px",
+          "md": "16px",
+          "xs": "16px",
+        },
+        "h5": Object {
+          "lg": "16px",
+          "md": "14px",
+          "xs": "14px",
         },
         "h6": Object {
-          "lg": "20px",
-          "md": "20px",
-          "xs": "20px",
+          "lg": "14px",
+          "md": "14px",
+          "xs": "14px",
         },
         "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
         "title": Object {
           "lg": "54px",
           "md": "38px",
@@ -309,38 +307,36 @@ exports[`Badge Primary Badge renders the badge correctly 1`] = `
         "caption": "10px",
         "formGroupLabel": "14px",
         "h1": Object {
-          "lg": "96px",
-          "md": "60px",
-          "xs": "48px",
+          "lg": "48px",
+          "md": "34px",
+          "xs": "24px",
         },
         "h2": Object {
-          "lg": "60px",
-          "md": "48px",
-          "xs": "34px",
-        },
-        "h3": Object {
-          "lg": "54px",
-          "md": "48px",
-          "xs": "26px",
-        },
-        "h4": Object {
           "lg": "34px",
           "md": "24px",
           "xs": "20px",
         },
-        "h5": Object {
+        "h3": Object {
           "lg": "24px",
           "md": "20px",
-          "xs": "20px",
+          "xs": "16px",
+        },
+        "h4": Object {
+          "lg": "20px",
+          "md": "16px",
+          "xs": "16px",
+        },
+        "h5": Object {
+          "lg": "16px",
+          "md": "14px",
+          "xs": "14px",
         },
         "h6": Object {
-          "lg": "20px",
-          "md": "20px",
-          "xs": "20px",
+          "lg": "14px",
+          "md": "14px",
+          "xs": "14px",
         },
         "overline": "10px",
-        "subtitle1": "16px",
-        "subtitle2": "14px",
         "title": Object {
           "lg": "54px",
           "md": "38px",
