@@ -27,8 +27,32 @@ jobs:
         paths:
           - node_modules
         key: npm-packages-{{ checksum "package.json" }}
-    # - run: yarn lint
-    # - run: yarn test
+  lint:
+    executor: shared-setup-exec
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - run:
+          name: Install TypeScript globally
+          command: yarn global add typescript
+      - run:
+          name: Run Linting
+          command: yarn lint
+  test:
+    executor: shared-setup-exec
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - run:
+          name: Install TypeScript globally
+          command: yarn global add typescript
+      - run:
+          name: Run Linting
+          command: yarn test
   publish-storybook:
     executor: shared-setup-exec
     steps:
