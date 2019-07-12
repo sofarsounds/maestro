@@ -23,7 +23,7 @@ npm add @sofarsounds/maestro
 yarn add @sofarsounds/maestro
 ```
 
-Don't forget to also install styled-components `^4.0.0`.
+Don't forget to also install [styled-components](https://www.styled-components.com) `^4.0.0`.
 
 ## Usage
 
@@ -56,7 +56,7 @@ import { H1, Body, PrimaryButton} from '@sofarsounds/maestro'
 <PrimaryButton>A Button</PrimaryButton>
 ```
 
-For a live preview please check out our Storybook.
+For a live preview please check out our [Storybook](https://sofarsounds.github.io/maestro).
 
 ## Contributing
 
