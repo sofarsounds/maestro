@@ -1,5 +1,8 @@
 # 🎻 Maestro
 
+[![CircleCI](https://circleci.com/gh/sofarsounds/maestro/tree/master.svg?style=svg)](https://circleci.com/gh/sofarsounds/maestro/tree/master)
+[![CircleCI](https://circleci.com/gh/sofarsounds/maestro/tree/develop.svg?style=svg)](https://circleci.com/gh/sofarsounds/maestro/tree/develop)
+
 Sofar Sounds' Maestro is a React component library which is built after our official design system
 and helps our developers build a consistent user experience.
 
