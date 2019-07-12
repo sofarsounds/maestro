@@ -10,7 +10,7 @@ import {
 } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import Container from './index'
+import { Container } from '../../src';
 
 const ColContent = styled.div`
   background: #ccc;

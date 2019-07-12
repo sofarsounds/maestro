@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import Image from './index'
+import { Image } from '../../src';
 
 storiesOf('Image', module)
   .addDecorator(withKnobs)

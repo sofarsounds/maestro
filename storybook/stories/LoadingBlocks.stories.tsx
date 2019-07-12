@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import LoadingBlocks from './index'
+import { LoadingBlocks } from '../../src';
 
 storiesOf('Loading Blocks', module)
   .addDecorator(withKnobs)

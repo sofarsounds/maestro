@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import { Grid, Col } from './index'
+import { Grid, Col } from '../../src';
 
 const ColContent = styled.div`
   background: #ccc;

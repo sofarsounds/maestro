@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import Logo from './index'
+import { Logo } from '../../src';
 
 import { Boundary, Row, Inversion, Container } from '../helpers/components';
 

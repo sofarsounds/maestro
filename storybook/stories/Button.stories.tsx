@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import { PrimaryButton, OutlineButton, LinkButton } from './index'
+import { PrimaryButton, OutlineButton, LinkButton } from '../../src';
 
 const Container = styled.div`
   padding: 20px;

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import Badge from './index';
+import { Badge } from '../../src';
 
 storiesOf('Badge', module)
   .addDecorator(withKnobs)

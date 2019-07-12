@@ -4,8 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import HeroImage from './index'
-import { PrimaryButton } from '../../atoms/Button'
+import { PrimaryButton, HeroImage } from '../../src';
 
 storiesOf('Hero Image', module)
   .addDecorator(withKnobs)

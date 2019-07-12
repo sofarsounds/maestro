@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import Navbar from './index'
+import { Navbar } from '../../src';
 
 storiesOf('Navbar', module)
   .addDecorator(withKnobs)

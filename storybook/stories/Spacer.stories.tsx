@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import Spacer from './index'
+import { Spacer } from '../../src';
 
 const Space = styled.div`
   height: 25px;

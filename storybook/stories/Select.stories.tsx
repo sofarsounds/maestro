@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import { Select, Option } from './index'
+import { Select, Option } from '../../src';
 
 let citiesData = [
   { name: 'London', value: 'london' },

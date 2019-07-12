@@ -5,9 +5,9 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withA11y } from '@storybook/addon-a11y';
 
 import storybookTheme from './sofarTheme';
-import { theme, ThemeProvider, GlobalStyle } from 'uikit';
+import { theme, ThemeProvider, GlobalStyle } from '../src';
 
-const req = require.context('../src', true, /\.(stories|story)\.tsx$/);
+const req = require.context('../storybook', true, /\.(stories|story)\.tsx$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }

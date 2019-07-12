@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import Card from './index'
+import { Card } from '../../src';
 
 storiesOf('Card', module)
   .addDecorator(withKnobs)

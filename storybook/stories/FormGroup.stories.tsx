@@ -4,8 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import FormGroup from './index'
-import Textfield from '../../atoms/FormElements/Textfield'
+import { Textfield, FormGroup } from '../../src';
 
 storiesOf('Form Group', module)
   .addDecorator(withKnobs)

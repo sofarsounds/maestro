@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 
-import Responsive from './index'
+import { Responsive } from '../../src';
 
 const Example = styled.div`
   border: 1px dashed #ccc;

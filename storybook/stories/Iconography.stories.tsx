@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import Icon from './index'
-import Registry from 'uikit/atoms/Icon/registry';
+import { Icon } from '../../src';
+import Registry from '../../src/atoms/Icon/registry';
 
 const THEAD = styled.thead`
   background: #f9f9f9;

@@ -15,7 +15,7 @@ import {
   Body2,
   Overline,
   Caption
-} from 'uikit';
+} from '../../src';
 
 import { Boundary as Bound } from '../helpers/components';
 

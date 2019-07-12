@@ -18,5 +18,9 @@ module.exports = ({ config }) => {
 
   config.resolve.extensions.push('.ts', '.tsx');
 
+  config.resolve.alias = {
+    uikit: path.resolve(__dirname, '../src')
+  };
+
   return config;
 };
