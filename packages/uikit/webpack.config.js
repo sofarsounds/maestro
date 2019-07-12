@@ -1,16 +1,20 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
+var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   mode: 'production',
   entry: './src/index.tsx',
   output: {
     filename: 'index.js',
+    library: '',
     libraryTarget: 'commonjs',
     path: path.resolve(__dirname, 'dist')
   },
+  externals: [nodeExternals(), path.resolve(__dirname, 'src')],
   devtool: 'source-map',
   optimization: {
+    // minimize: false
     minimizer: [new TerserPlugin()]
   },
   module: {
