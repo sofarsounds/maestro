@@ -7,7 +7,7 @@ import { withA11y } from '@storybook/addon-a11y';
 import storybookTheme from './sofarTheme';
 import { theme, ThemeProvider, GlobalStyle } from 'uikit';
 
-const req = require.context('../src', true, /\.(stories|story)\.tsx$/);
+const req = require.context('../src/stories', true, /\.(stories|story)\.tsx$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
