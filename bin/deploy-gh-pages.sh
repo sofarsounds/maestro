@@ -29,8 +29,8 @@ else
 fi
 
 mkdir -p $DEPLOY_PATH
-cp -r packages/stories/storybook-static/* $DEPLOY_PATH
-zip -r $DEPLOY_PATH/dist.zip packages/stories/storybook-static/
+cp -r storybook-static/* $DEPLOY_PATH
+zip -r $DEPLOY_PATH/dist.zip storybook-static/
 
 BRANCH_PATH=branches/$BRANCH;
 BRANCH_URL=$BASE_URL/$BRANCH_PATH;
