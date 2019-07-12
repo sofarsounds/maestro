@@ -3,12 +3,12 @@
 [![CircleCI](https://circleci.com/gh/sofarsounds/maestro/tree/master.svg?style=svg)](https://circleci.com/gh/sofarsounds/maestro/tree/master)
 [![CircleCI](https://circleci.com/gh/sofarsounds/maestro/tree/develop.svg?style=svg)](https://circleci.com/gh/sofarsounds/maestro/tree/develop)
 
-Sofar Sounds' Maestro is a React component library which is built after our official design system
+[Sofar Sounds](http://www.sofarsounds.com)' Maestro is a React component library which is built after our official design system
 and helps our developers build a consistent user experience.
 
 ## Sofar Mission
 
-Sofar Sounds is reimagining the live event experience through curated, intimate performances in 438 cities around the world.
+[Sofar Sounds](http://www.sofarsounds.com) is reimagining the live event experience through curated, intimate performances in 438 cities around the world.
 
 ## Installation
 
