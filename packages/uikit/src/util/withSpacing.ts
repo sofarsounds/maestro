@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 import theme, { breakPoints } from '../theme';
 
-export interface SpacerProps {
+export interface WithSpacingProps {
   // global margin & padding
   m?: number | number[];
   p?: number | number[]; // margins
@@ -68,7 +68,7 @@ const loop = (screenSize: string, props: any) => {
   `;
 };
 
-export default (props: SpacerProps) => css`
+export default (props: WithSpacingProps) => css`
   ${loop('xs', props)};
 
   ${theme.media.sm`

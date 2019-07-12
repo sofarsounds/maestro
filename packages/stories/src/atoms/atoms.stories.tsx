@@ -138,10 +138,8 @@ storiesOf('03 / Atoms|Others', module)
   ))
   .add('Loading Blocks', () => (
     <div>
-      <LoadingBlocks.Circle width="100px" />
-      <br />
-      <LoadingBlocks.Box width="100px" />
-      <br />
+      <LoadingBlocks.Circle width="100px" mb={4} />
+      <LoadingBlocks.Box width="100px" mb={4} />
       <LoadingBlocks.Rectangle width="100%" height="20px" />
 
       <div style={{ height: '100px' }} />

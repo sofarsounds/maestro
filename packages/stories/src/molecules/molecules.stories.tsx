@@ -328,7 +328,6 @@ storiesOf('05 / Molecules|Card', module)
       <div
         style={{
           background: '#000',
-          padding: '25px',
           width: '100%',
           maxWidth: '950px'
         }}

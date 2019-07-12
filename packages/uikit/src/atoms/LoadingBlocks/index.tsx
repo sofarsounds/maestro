@@ -1,5 +1,7 @@
 import styled, { css, keyframes } from 'styled-components';
 
+import { withSpacing, WithSpacingProps } from '../../util';
+
 const animation = keyframes`
     0%{
         background-position: 0px 0
@@ -10,28 +12,29 @@ const animation = keyframes`
 }
 `;
 
-interface BoxProps {
+interface BoxProps extends WithSpacingProps {
   width: string;
 }
 
-interface RectangleProps {
+interface RectangleProps extends WithSpacingProps {
   width: string;
   height: string;
 }
 
-const Animation = styled.div`
+export const Animation = styled.div`
   animation-duration: 1.25s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: ${animation};
   animation-timing-function: linear;
-  background: #f6f6f6;
-  background: linear-gradient(to right, #f6f6f6 8%, #f2f2f2 18%, #f6f6f6 33%);
+  background-color: #f6f6f6;
+  background: linear-gradient(to right, #f6f6f6 8%, #f0f0f0 18%, #f6f6f6 33%);
   background-size: 4000px 104px;
   position: relative;
 `;
 
 const Box = styled(Animation)<BoxProps>`
+  ${withSpacing}
   ${({ width }) => css`
     width: ${width};
     height: ${width};
@@ -40,6 +43,7 @@ const Box = styled(Animation)<BoxProps>`
 `;
 
 const Circle = styled(Animation)<BoxProps>`
+  ${withSpacing}
   ${({ width }) => css`
     width: ${width};
     height: ${width};
@@ -48,6 +52,7 @@ const Circle = styled(Animation)<BoxProps>`
 `;
 
 const Rectangle = styled(Animation)<RectangleProps>`
+  ${withSpacing}
   ${({ width, height }) => css`
     width: ${width};
     height: ${height};
