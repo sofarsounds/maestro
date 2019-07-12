@@ -13,3 +13,11 @@ export const resize = (newWidth: number) => {
   (global as any).innerWidth = newWidth;
   (global as any).dispatchEvent(new Event('resize'));
 };
+
+export const checkStyleRules = (el: any, rules: any, options: any = {}) => {
+  const ruleKeys = Object.keys(rules);
+
+  ruleKeys.forEach((ruleKey: any) => {
+    expect(el).toHaveStyleRule(ruleKey, rules[ruleKey], options);
+  });
+};
