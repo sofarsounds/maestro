@@ -75,5 +75,5 @@ workflows:
           filters:
             branches:
               only:
-                - change-infrastructure
+                - master
 
