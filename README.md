@@ -1,52 +1,65 @@
-# 🎻 Maestro - Sofar's UI Kit
+# 🎻 Maestro
 
-This repo holds Sofar's UI component library. It is arranged in a [monorepo structure](https://codeburst.io/monorepos-by-example-part-1-3a883b49047e) using the open source package [Lerna](https://github.com/lerna/lerna).
+[![CircleCI](https://circleci.com/gh/sofarsounds/maestro/tree/master.svg?style=svg)](https://circleci.com/gh/sofarsounds/maestro/tree/master)
+[![CircleCI](https://circleci.com/gh/sofarsounds/maestro/tree/develop.svg?style=svg)](https://circleci.com/gh/sofarsounds/maestro/tree/develop)
 
-Lerna allows you to place arrange multiple projects, each with their own `package.json` file (and differing dependencies) in the same repository tree. Lerna specifies that your individual packages belong in the `packages/` folder.
+[Sofar Sounds](http://www.sofarsounds.com)' Maestro is a React component library which is built after our official design system
+and helps our developers build a consistent user experience.
 
-You can create a new package via Lerna's CLI by running:
+## Sofar Mission
 
+[Sofar Sounds](http://www.sofarsounds.com) is reimagining the live event experience through curated, intimate performances in 438 cities around the world.
+
+## Installation
+
+`@sofarsounds/maestro` is serverd as an npm package.
+
+Add Maestro to your project by running
 ```
-lerna create @sofarsounds/my-package
-```
+// with npm
+npm add @sofarsounds/maestro
 
-Lerna allows you to move shared dependencies from multiple `package.json` files to the top level `package.json` via `hoisting`.
-
-# Conventions
-
-As you see above, we want to get into a habit of namespacing our package names with our organisational name (`@sofarsounds`) on NPM.
-
-So if you are creating a new package (whether or not it will end up on the NPM registry), please use the naming convention:
-
-```
-@sofarsounds/my-package-name
-```
-
-You can find the `@sofarsounds` org on the NPM repository at [https://www.npmjs.com/~sofarsounds](https://www.npmjs.com/~sofarsounds)
-
-
-# Best practices
-
-- When developing new UI components, you should use `storybook` to develop the components. This will allow you to develop UI components in an isolated environment without worrying about global CSS impacting the look and feel of the components. You can run the storybook from the root of this repo by running `yarn run storybook`.
-
-# First time setup
-
-To setup this project, run:
-
-```
-yarn bootstrap
+// with yarn
+yarn add @sofarsounds/maestro
 ```
 
-Then to run all of the projects, run:
+Don't forget to also install [styled-components](https://www.styled-components.com) `^4.0.0`.
 
-```
-yarn start
+## Usage
+
+### 1. Wrap your app into the ThemeProvider and provide GlobalStyles
+
+Since we're using styled-components and are providing all styling via theme it is necessary
+that you wrap your entire application within the `ThemeProvider`. In addition to that, you can
+provide the GlobalStyle we have created which automatically provides our brand font (Open Sans)
+and does some basic HTML styling.
+
+```js
+import { ThemeProvider, GlobalStyle, theme } from '@sofarsounds/maestro'
+
+<ThemeProvider theme={theme}>
+  <GlobalStyle />
+  <YourApplication />
+</ThemeProvider>
 ```
 
-# To run storybook on the UI Kit
+### 2. Including components
 
-Run:
+All of our components are exported directly so you can simply import any component like this:
 
+```js
+import { H1, Body, PrimaryButton} from '@sofarsounds/maestro'
+
+<H1>A Heading 1</H1>
+<Body>A body text...</Body>
+
+<PrimaryButton>A Button</PrimaryButton>
 ```
-yarn run storybook
-```
+
+For a live preview please check out our [Storybook](https://sofarsounds.github.io/maestro).
+
+## Contributing
+
+We're hoping to make Maestro fully open source and would appreciate any contributions you make.
+
+Please feel free to open an issue and report any Bugs or Feature Requests.
