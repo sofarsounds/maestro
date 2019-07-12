@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 
 import { Responsive } from 'uikit';
@@ -21,7 +22,7 @@ const Spacer = styled.div`
 
 const sizes = ['xs', 'sm', 'md', 'lg', 'xl'];
 
-export default () => (
+storiesOf('Responsive', module).add('Basic', () => (
   <div>
     <h1>Responsive Wrapper</h1>
 
@@ -78,4 +79,4 @@ export default () => (
       </Example>
     ))}
   </div>
-);
+));

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { text } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 import { Icon } from 'uikit';
 import Registry from 'uikit/atoms/Icon/registry';
@@ -19,7 +20,7 @@ const TR = styled.tr`
   }
 `;
 
-export default () => (
+storiesOf('Iconography', module).add('All', () => (
   <div>
     <table style={{ borderCollapse: 'collapse' }}>
       <THEAD>
@@ -44,4 +45,4 @@ export default () => (
       </tbody>
     </table>
   </div>
-);
+));

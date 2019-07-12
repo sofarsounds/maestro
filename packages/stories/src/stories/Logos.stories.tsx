@@ -1,8 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
+import { storiesOf } from '@storybook/react';
+import { withKnobs, text } from '@storybook/addon-knobs';
+
 import { Logo } from 'uikit';
+
 import { Boundary, Row, Inversion, Container } from '../helpers/components';
 
-export default () => (
+storiesOf('Logo', module).add('Sofar Logos', () => (
   <div>
     <Row>
       <Container>
@@ -40,4 +45,4 @@ export default () => (
       </Container>
     </Inversion>
   </div>
-);
+));
