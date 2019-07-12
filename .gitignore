@@ -5,6 +5,5 @@ dist/
 dist-es/
 yarn-error.log
 
-packages/stories/storybook-static
-packages/stories/storybook
+storybook-static
 
