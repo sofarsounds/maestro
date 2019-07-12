@@ -2,12 +2,6 @@
  * Main Theme File
  * This is where all variables and colours are defined that can
  * be accessed using props in every component
- *
- * @TODO the colours collection on the zeplin guide is ridiculous so I left out any
- * colours that weren't used.
- *
- * @TODO fontSizes.. Are really ALL off the different headings being used? 2 types for body and
- * subtitle? We should maybe have a look at making this a bit easier.
  */
 
 interface FontSizeResponsive {
@@ -58,8 +52,6 @@ export default interface Theme {
     h5: FontSizeResponsive;
     h6: FontSizeResponsive;
     title: FontSizeResponsive;
-    subtitle1: string;
-    subtitle2: string;
     body1: string;
     body2: string;
     overline: string;

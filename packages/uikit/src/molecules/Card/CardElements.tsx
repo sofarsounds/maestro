@@ -1,8 +1,8 @@
 import styled from '../../lib/styledComponents';
 
-import { H4, Body2 } from '../../atoms/Typography';
+import { H2, Body2 } from '../../atoms/Typography';
 
-export const Title = styled(H4)`
+export const Title = styled(H2)`
   margin-bottom: ${({ theme }) => theme.ruler[4]}px;
 `;
 

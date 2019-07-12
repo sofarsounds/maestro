@@ -11,8 +11,6 @@ import {
   H4,
   H5,
   H6,
-  Subtitle,
-  Subtitle2,
   Body,
   Body2,
   Overline,
@@ -97,24 +95,6 @@ describe('Typography', () => {
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.2px');
 
     checkResponsiveFontSize(wrapper, theme.fontSizes.h6);
-  });
-
-  it('renders a Subtitle correctly', () => {
-    const wrapper = setup(Subtitle);
-
-    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.subtitle1);
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
-    expect(wrapper).toHaveStyleRule('letter-spacing', '0.2px');
-    expect(wrapper).toHaveStyleRule('line-height', '1.5');
-  });
-
-  it('renders a Subtitle2 correctly', () => {
-    const wrapper = setup(Subtitle2);
-
-    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.subtitle2);
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
-    expect(wrapper).toHaveStyleRule('letter-spacing', '0.1px');
-    expect(wrapper).toHaveStyleRule('line-height', '1.71');
   });
 
   it('renders a Body correctly', () => {

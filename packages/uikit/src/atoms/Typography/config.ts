@@ -14,7 +14,7 @@ export const withTitleStyle = ({ spaceAfter }: any) => css`
   line-height: normal;
   margin: 0;
   padding: 0;
-  margin-bottom: ${theme.ruler[getSpaceAfter(11, spaceAfter)]}px;
+  margin-bottom: ${theme.ruler[getSpaceAfter(10, spaceAfter)]}px;
 
   ${theme.media.md`
       font-size: ${theme.fontSizes.title.md};
@@ -31,7 +31,7 @@ export const withH1Style = ({ spaceAfter }: any) => css`
   letter-spacing: -1.5px;
   margin: 0;
   padding: 0;
-  margin-bottom: ${theme.ruler[getSpaceAfter(11, spaceAfter)]}px;
+  margin-bottom: ${theme.ruler[getSpaceAfter(10, spaceAfter)]}px;
 
   ${theme.media.md`
       font-size: ${theme.fontSizes.h1.md};
@@ -48,7 +48,7 @@ export const withH2Style = ({ spaceAfter }: any) => css`
   letter-spacing: -0.5px;
   margin: 0;
   padding: 0;
-  margin-bottom: ${theme.ruler[getSpaceAfter(9, spaceAfter)]}px;
+  margin-bottom: ${theme.ruler[getSpaceAfter(8, spaceAfter)]}px;
 
   ${theme.media.md`
       font-size: ${theme.fontSizes.h2.md};
@@ -65,7 +65,7 @@ export const withH3Style = ({ spaceAfter }: any) => css`
   letter-spacing: normal;
   margin: 0;
   padding: 0;
-  margin-bottom: ${theme.ruler[getSpaceAfter(9, spaceAfter)]}px;
+  margin-bottom: ${theme.ruler[getSpaceAfter(8, spaceAfter)]}px;
 
   ${theme.media.md`
       font-size: ${theme.fontSizes.h3.md};

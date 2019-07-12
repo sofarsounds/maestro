@@ -1,10 +1,7 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
-import {
-  Title as TitleDefault,
-  Subtitle as SubtitleDefault
-} from '../../atoms/Typography';
+import { Title as TitleDefault, H5 } from '../../atoms/Typography';
 import Container from '../../atoms/Container';
 
 const Main = styled.div`
@@ -28,7 +25,7 @@ export const Title = styled(TitleDefault)`
   text-align: center;
 `;
 
-export const Subtitle = styled(SubtitleDefault)`
+export const Subtitle = styled(H5)`
   ${({ theme }) => css`
     margin-bottom: ${theme.ruler[9]}px;
     color: ${theme.colours.whiteDenim};
