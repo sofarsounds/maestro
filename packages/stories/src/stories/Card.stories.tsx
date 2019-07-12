@@ -4,17 +4,21 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import {
-  Card
-} from 'uikit';
+import { Card } from 'uikit';
 
 storiesOf('Card', module)
   .addDecorator(withKnobs)
   .add('With Image', () => {
-    const inverted = boolean('Inverted', false)
+    const inverted = boolean('Inverted', false);
     return (
       <BrowserRouter>
-        <div style={{ width: '100%', maxWidth: '950px', background: inverted ? '#000' : '#fff' }}>
+        <div
+          style={{
+            width: '100%',
+            maxWidth: '950px',
+            background: inverted ? '#000' : '#fff'
+          }}
+        >
           <Card.Container linkTo="https://www.google.com" inverted={inverted}>
             <Card.Image
               url={text(
@@ -37,5 +41,5 @@ storiesOf('Card', module)
           </Card.Container>
         </div>
       </BrowserRouter>
-    )
-  })
+    );
+  });

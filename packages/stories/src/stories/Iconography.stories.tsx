@@ -20,32 +20,29 @@ const TR = styled.tr`
   }
 `;
 
-storiesOf('Iconography', module).add(
-  'All',
-  () => (
-    <div>
-      <table style={{ borderCollapse: 'collapse' }}>
-        <THEAD>
-          <tr>
-            <th style={{ width: '200px', textAlign: 'left' }}>Icon Name</th>
-            <th>Icon</th>
-          </tr>
-        </THEAD>
-        <tbody>
-          {Object.keys(Registry).map((icon: string) => (
-            <TR key={icon}>
-              <td>{icon}</td>
-              <td>
-                <Icon
-                  name={icon}
-                  size={text('Size', '16px')}
-                  colour={text('Colour', '#000')}
-                />
-              </td>
-            </TR>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  )
-)
+storiesOf('Iconography', module).add('All', () => (
+  <div>
+    <table style={{ borderCollapse: 'collapse' }}>
+      <THEAD>
+        <tr>
+          <th style={{ width: '200px', textAlign: 'left' }}>Icon Name</th>
+          <th>Icon</th>
+        </tr>
+      </THEAD>
+      <tbody>
+        {Object.keys(Registry).map((icon: string) => (
+          <TR key={icon}>
+            <td>{icon}</td>
+            <td>
+              <Icon
+                name={icon}
+                size={text('Size', '16px')}
+                colour={text('Colour', '#000')}
+              />
+            </td>
+          </TR>
+        ))}
+      </tbody>
+    </table>
+  </div>
+));

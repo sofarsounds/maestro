@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import { Grid, Col, } from 'uikit';
+import { Grid, Col } from 'uikit';
 
 const ColContent = styled.div`
   background: #ccc;
@@ -17,11 +17,9 @@ const Space = styled.div`
   height: 25px;
 `;
 
-
-
 storiesOf('Grid', module)
   .addDecorator(withKnobs)
-  .add('Basic', () =>  (
+  .add('Basic', () => (
     <div>
       <h1>Grid</h1>
 
@@ -86,5 +84,4 @@ storiesOf('Grid', module)
         </Col>
       </Grid>
     </div>
-    )
-  )
+  ));

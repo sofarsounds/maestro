@@ -3,12 +3,9 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import {
-  Logo
-} from 'uikit';
+import { Logo } from 'uikit';
 
 import { Boundary, Row, Inversion, Container } from '../helpers/components';
-
 
 storiesOf('Logo', module).add('Sofar Logos', () => (
   <div>
@@ -48,4 +45,4 @@ storiesOf('Logo', module).add('Sofar Logos', () => (
       </Container>
     </Inversion>
   </div>
-))
+));

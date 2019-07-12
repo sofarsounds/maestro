@@ -4,9 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import {
-  Footer, Grid, Textfield
-} from 'uikit';
+import { Footer, Grid, Textfield } from 'uikit';
 
 storiesOf('Footer', module)
   .addDecorator(withKnobs)
@@ -15,7 +13,8 @@ storiesOf('Footer', module)
       <Footer.Top>
         <Footer.Title>Explore Sofar.</Footer.Title>
         <Footer.Subtitle>
-          Each month Sofar is happening in <b>413 cities</b> all around the world.
+          Each month Sofar is happening in <b>413 cities</b> all around the
+          world.
         </Footer.Subtitle>
         <Footer.CityInputWrapper>
           <Textfield placeholder="Type to find your city" />
@@ -72,4 +71,4 @@ storiesOf('Footer', module)
         </Footer.CopyrightMsg>
       </Footer.Bottom>
     </Footer.Wrapper>
-  ))
+  ));

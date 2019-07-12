@@ -4,10 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import {
-  Textfield,
-  FormGroup
-} from 'uikit';
+import { Textfield, FormGroup } from 'uikit';
 
 storiesOf('Form Group', module)
   .addDecorator(withKnobs)
@@ -19,4 +16,4 @@ storiesOf('Form Group', module)
     >
       <Textfield placeholder="your@email.com" />
     </FormGroup>
-  ))
+  ));

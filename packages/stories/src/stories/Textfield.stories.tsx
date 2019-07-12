@@ -3,9 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import {
-  Textfield
-} from 'uikit';
+import { Textfield } from 'uikit';
 
 storiesOf('Textfield', module)
   .addDecorator(withKnobs)
@@ -15,4 +13,4 @@ storiesOf('Textfield', module)
       hasError={boolean('Has Error', false)}
       placeholder={text('Placeholder', 'Type me hard...')}
     />
-  ))
+  ));

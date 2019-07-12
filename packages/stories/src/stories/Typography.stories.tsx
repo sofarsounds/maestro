@@ -30,35 +30,35 @@ const Spacer = styled.div`
 const headingTags = [H1, H2, H3, H4, H5, H6];
 const bodyTags = [Body, Body2];
 
-storiesOf('Typography', module).add(
-  'Title',
-  () => (
+storiesOf('Typography', module)
+  .add('Title', () => (
     <>
-    <Boundary>
-      <Title>{text('Content', 'I am a title element')}</Title>
-    </Boundary>
+      <Boundary>
+        <Title>{text('Content', 'I am a title element')}</Title>
+      </Boundary>
     </>
-  )
-).add('Headings', () => (
-  <>
-  {headingTags.map((T: any, key: number) => (
+  ))
+  .add('Headings', () => (
+    <>
+      {headingTags.map((T: any, key: number) => (
         <Boundary key={key}>
           <T>Heading {key + 1}</T>
         </Boundary>
       ))}
-  </>
-)).add('Body', () => (
-  <>
-  {bodyTags.map((T: any, key: number) => (
-    <Boundary key={key}>
-      <T>Body {key + 1}</T>
-    </Boundary>
-  ))}
-  <Boundary>
-    <Overline>Overline Tag</Overline>
-  </Boundary>
-  <Boundary>
-    <Caption>Caption Tag</Caption>
-  </Boundary>
-  </>
-))
+    </>
+  ))
+  .add('Body', () => (
+    <>
+      {bodyTags.map((T: any, key: number) => (
+        <Boundary key={key}>
+          <T>Body {key + 1}</T>
+        </Boundary>
+      ))}
+      <Boundary>
+        <Overline>Overline Tag</Overline>
+      </Boundary>
+      <Boundary>
+        <Caption>Caption Tag</Caption>
+      </Boundary>
+    </>
+  ));

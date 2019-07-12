@@ -3,10 +3,8 @@ import styled from 'styled-components';
 
 import { theme } from 'uikit';
 
-
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-
 
 export const Row = styled.div`
   display: grid;

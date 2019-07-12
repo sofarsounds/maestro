@@ -4,9 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import {
-  Spacer
-} from 'uikit';
+import { Spacer } from 'uikit';
 
 const Space = styled.div`
   height: 25px;
@@ -35,7 +33,6 @@ const Line = styled(Spacer)<RulerProps>`
   border-left: 1px solid red;
   height: ${({ small }) => (small ? '50%' : '100%')};
 `;
-
 
 storiesOf('Spacer', module)
   .addDecorator(withKnobs)
@@ -80,4 +77,4 @@ storiesOf('Spacer', module)
         </div>
       </div>
     </div>
-  ))
+  ));

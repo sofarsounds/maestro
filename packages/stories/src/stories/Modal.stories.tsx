@@ -4,9 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import {
-  Modal, useModal, PrimaryButton
-} from 'uikit';
+import { Modal, useModal, PrimaryButton } from 'uikit';
 
 function ModalExample() {
   const [modal, toggleModal] = useModal();
@@ -21,10 +19,6 @@ function ModalExample() {
   );
 }
 
-
 storiesOf('Modal', module)
   .addDecorator(withKnobs)
-  .add('Basic', () =>  (
-      <ModalExample />
-    )
-  )
+  .add('Basic', () => <ModalExample />);

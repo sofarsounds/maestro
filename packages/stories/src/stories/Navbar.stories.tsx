@@ -4,9 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import {
-  Navbar
-} from 'uikit';
+import { Navbar } from 'uikit';
 
 storiesOf('Navbar', module)
   .addDecorator(withKnobs)
@@ -30,4 +28,4 @@ storiesOf('Navbar', module)
         <div style={{ height: '500px' }}>Scrollable Content</div>
       </div>
     </BrowserRouter>
-  ))
+  ));

@@ -3,9 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import {
-  Textarea
-} from 'uikit';
+import { Textarea } from 'uikit';
 
 storiesOf('Textarea', module)
   .addDecorator(withKnobs)
@@ -15,4 +13,4 @@ storiesOf('Textarea', module)
       hasError={boolean('Has Error', false)}
       placeholder={text('Placeholder', 'Type me hard...')}
     />
-  ))
+  ));

@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, select, number, boolean } from '@storybook/addon-knobs';
+import {
+  withKnobs,
+  text,
+  select,
+  number,
+  boolean
+} from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
 import { Container } from 'uikit';
@@ -15,11 +21,10 @@ const ColContent = styled.div`
 
 storiesOf('Container', module)
   .addDecorator(withKnobs)
-  .add('Basic', () =>  (
+  .add('Basic', () => (
     <div>
       <Container>
         <ColContent>Container</ColContent>
       </Container>
     </div>
-    )
-  )
+  ));

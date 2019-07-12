@@ -4,9 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
-import {
-  Subnav
-} from 'uikit';
+import { Subnav } from 'uikit';
 
 const links = [
   'All',
@@ -25,10 +23,16 @@ storiesOf('Subnav', module)
     <div style={{ width: '100%' }}>
       <Subnav.Container>
         {links.map(l => (
-          <Subnav.Link key={l} active={l === 'Backstage Pass'} to="/" href="/" as="a">
+          <Subnav.Link
+            key={l}
+            active={l === 'Backstage Pass'}
+            to="/"
+            href="/"
+            as="a"
+          >
             {l}
           </Subnav.Link>
         ))}
       </Subnav.Container>
     </div>
-  ))
+  ));

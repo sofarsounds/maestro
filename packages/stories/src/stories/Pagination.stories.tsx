@@ -3,9 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import {
-  Pagination
-} from 'uikit';
+import { Pagination } from 'uikit';
 
 storiesOf('Pagination', module)
   .addDecorator(withKnobs)
@@ -16,4 +14,4 @@ storiesOf('Pagination', module)
       totalRecords={number('Total Records', 40)}
       perPage={number('Per Page', 8)}
     />
-  ))
+  ));

@@ -1,10 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  Divider
-} from 'uikit';
+import { Divider } from 'uikit';
 
-storiesOf('Divider', module)
-  .add('Default', () => (
-      <Divider />
-  ))
+storiesOf('Divider', module).add('Default', () => <Divider />);
