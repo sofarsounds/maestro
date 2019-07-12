@@ -4,14 +4,13 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "yarn build:uikit",
-    "build:uikit": "webpack",
+    "build": "webpack",
     "postbuild": "rm -rf dist/node_modules",
     "lint": "eslint './src/**/*.{ts,tsx, js, jsx}'",
     "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",

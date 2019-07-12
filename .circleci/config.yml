@@ -29,25 +29,25 @@ jobs:
         key: npm-packages-{{ checksum "package.json" }}
     # - run: yarn lint
     # - run: yarn test
-  # publish-storybook:
-  #   executor: shared-setup-exec
-  #   steps:
-  #     - checkout
-  #     - run:
-  #         name: Install deps
-  #         command: yarn install
-  #     - run:
-  #         name: Install TypeScript globally
-  #         command: yarn global add typescript
-  #     - run:
-  #         name: Run storybook deploy script
-  #         command: ~/repo/bin/deploy-gh-pages.sh
+  publish-storybook:
+    executor: shared-setup-exec
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - run:
+          name: Install TypeScript globally
+          command: yarn global add typescript
+      - run:
+          name: Run storybook deploy script
+          command: ~/repo/bin/deploy-gh-pages.sh
   deploy:
     executor: shared-setup-exec
     steps:
     - checkout
     - run:
-        name: Install deps
+        name: Install dependencies
         command: yarn install
     - run:
         name: Chmod
@@ -63,12 +63,12 @@ workflows:
           filters:
             branches:
               ignore: gh-pages
-      # - publish-storybook:
-      #     requires:
-      #       - build
-      #     filters:
-      #       branches:
-      #         ignore: gh-pages
+      - publish-storybook:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: gh-pages
       - deploy:
           requires:
             - build

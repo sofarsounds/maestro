@@ -18,7 +18,7 @@ HASH=$(git --no-pager log --format="%H" -1);
 
 rm -rf deploy storybook-static dist
 
-yarn run build
+yarn run build-storybook
 
 if [[ "$BRANCH" == "master" ]]; then
   DEPLOY_PATH="deploy/";
