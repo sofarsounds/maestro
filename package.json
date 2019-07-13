@@ -9,7 +9,7 @@
     "lint": "eslint './src/**/*.{ts,tsx, js, jsx}'",
     "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u",
-    "storybook": "start-storybook -p 6006",
+    "start": "start-storybook -p 6006",
     "build:storybook": "build-storybook"
   },
   "keywords": [],
