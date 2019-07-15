@@ -1,0 +1,21 @@
+# Snackbar
+
+To implement a `Snackbar` into your project you'll need to add this import
+```js
+import { Snackbar } from '@sofarsounds/maestro'
+```
+
+After adding the import you can use it simply like this
+```html
+<Snackbar onCancel={() => {}}>
+  Snackbar content
+</Snackbar>
+```
+
+## Props
+
+| Name          | Type         | Default         | Description                      |
+| :------------ | :-----       | :-------------- | :------------------------------- |
+| **children**  | `React.Node` |                 | The content to display in the snackbar
+| **onCancel**  | `Function`   |                 | Function to execute when clicking the "x"
+
