@@ -36,6 +36,7 @@ interface State {
 
 const StyledStickyContainer = styled.div<StickyContainerProps>`
   position: absolute;
+  z-index: ${({ theme }) => theme.zIndex.navbar + 1};
   ${({ positionFixed }) =>
     positionFixed &&
     css`
