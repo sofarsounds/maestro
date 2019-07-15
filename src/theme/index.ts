@@ -106,6 +106,7 @@ const theme: Theme = {
 
   borderRadius: {
     default: '2px',
+    large: '8px',
     button: '4px',
     input: '2px'
   },

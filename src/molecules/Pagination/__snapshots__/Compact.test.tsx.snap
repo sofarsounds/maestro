@@ -295,6 +295,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1575,6 +1576,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -2629,6 +2631,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",

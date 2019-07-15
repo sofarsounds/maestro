@@ -24,6 +24,7 @@ export { default as FormGroup } from './molecules/FormGroup';
 export { default as Footer } from './molecules/Footer';
 export { default as Subnav } from './molecules/Subnav';
 export { default as Card } from './molecules/Card';
+export { default as Dropdown } from './molecules/Dropdown';
 
 export { default as useModal } from './hooks/useModal';
 export { UseModalProps } from './hooks/useModal';
