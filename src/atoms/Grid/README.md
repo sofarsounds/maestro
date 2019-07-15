@@ -1,4 +1,4 @@
-# Grid 
+# Grid 
 To implement a `Grid` into your project you'll need to add this import
 ```js
 import { Grid, Col } from '@sofarsounds/maestro'
