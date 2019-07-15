@@ -13,6 +13,8 @@ const Menu = styled.ul<Props>`
     margin-top: 0px;
     padding-left: 0px;
     background-color: ${theme.colours.whiteDenim};
+    max-height: 300px;
+    overflow-y: auto;
   `};
 `;
 

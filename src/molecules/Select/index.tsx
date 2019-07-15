@@ -9,13 +9,15 @@ interface SelectProps {
   children?: any;
   handleOptionClick?: (value: any) => void;
   readonly?: boolean;
+  positionFixed?: boolean;
 }
 
 const Select: React.SFC<SelectProps> = ({
   placeholder,
   children,
   readonly,
-  handleOptionClick
+  handleOptionClick,
+  positionFixed
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
@@ -47,7 +49,10 @@ const Select: React.SFC<SelectProps> = ({
       />
       {isOpen && (
         <PortalComponent dom={document.body}>
-          <StickyContainer stickToEl={ref.current}>
+          <StickyContainer
+            positionFixed={positionFixed}
+            stickToEl={ref.current}
+          >
             <Menu depth={3}>{children({ optionClick })}</Menu>
           </StickyContainer>
         </PortalComponent>

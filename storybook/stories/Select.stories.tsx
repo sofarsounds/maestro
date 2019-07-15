@@ -5,26 +5,23 @@ import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
 import { Select, Option } from '../../src';
 
-let citiesData = [
-  { name: 'London', value: 'london' },
-  { name: 'Cardiff', value: 'cardiff' },
-  { name: 'Bristol', value: 'bristol' }
-];
+import cities from '../helpers/cities';
 
 storiesOf('Select', module)
   .addDecorator(withKnobs)
   .add('Playground', () => (
     <div>
       <h1>Select</h1>
+
       <Select
         readonly
         handleOptionClick={action('Callback')}
         placeholder="Select a city"
       >
         {({ optionClick }: any) =>
-          citiesData.map((cityData, index) => (
-            <Option key={index} value={cityData.value} onClick={optionClick}>
-              {cityData.name}
+          cities.map((city, index) => (
+            <Option key={index} value={city} onClick={optionClick}>
+              {city}
             </Option>
           ))
         }
