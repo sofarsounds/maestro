@@ -12,8 +12,9 @@ After adding the import you can use it simply like this
 
 ## Props
 Table below contains all types of props available in the Badge component
-| Name          | Type                  | Default         | Description                      |
-| :------------ | :---------------------| :-------------- | :------------------------------- |
+
+| Name          | Type  | Default         | Description                      |
+| :------------ | :-----| :-------------- | :------------------------------- |
 | **children** | `React.Node`   |           | The content displayed in the badge                                       
 | colour       | [Enum](#enum)  |           | Optional prop to specifiy a colour. Otherwise background is transparent  
 | clickable    | `Boolean`      | `false`   | Whether the badge should have a cursor pointer and hover state           
