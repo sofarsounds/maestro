@@ -13,6 +13,7 @@ After adding the import you can use it simply like this
 ```
 
 ## Props
+Table below contains all types of props available in the Logo component  
 
 | Name          | Type         | Default         | Description                      |
 | :------------ | :-----       | :-------------- | :------------------------------- |

@@ -3,7 +3,7 @@
 The responsive wrapper allows you to show or hide content based on the current screen size.
 It will completely unmount a component rather than just show/hiding it with css.
 
-To implement a `Responsive` into your project you'll need to add this import
+To implement a `Responsive` wrapper into your project you'll need to add this import
 ```js
 import { Responsive } from '@sofarsounds/maestro'
 ```
@@ -14,6 +14,8 @@ After adding the import you can use it simply like this
 ```
 
 ## Props
+
+Table below contains all types of props available in the Logo component  
 
 | Name          | Type          | Default         | Description                      |
 | :------------ | :-----        | :-------------- | :------------------------------- |
