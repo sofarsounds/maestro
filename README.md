@@ -31,8 +31,7 @@ Don't forget to also install [styled-components](https://www.styled-components.c
 
 Since we're using styled-components and are providing all styling via theme it is necessary
 that you wrap your entire application within the `ThemeProvider`. In addition to that, you can
-provide the GlobalStyle we have created which automatically provides our brand font (Open Sans)
-and does some basic HTML styling.
+provide the GlobalStyle we have created which automatically provides our brand font (Open Sans) and does some basic HTML styling.
 
 ```js
 import { ThemeProvider, GlobalStyle, theme } from '@sofarsounds/maestro'
@@ -58,7 +57,24 @@ import { H1, Body, PrimaryButton} from '@sofarsounds/maestro'
 
 For a live preview please check out our [Storybook](https://sofarsounds.github.io/maestro).
 
-## Contributing
+## Developing
+
+For local developing you can start up `storybook` to see the changes you're making. For that simply
+run 
+```
+yarn start
+```
+
+Your browser will open storybook automatically, should that not be the case go to http://localhost:6006.
+
+Here are a few guidelines:
+- Make sure you split components appropriately. We believe in splitting components up into atoms, molecules and organisms.
+- If you build logic that can be re-used (styling etc) create a `with{Logic}` util in the utils folder.
+- Before writing new utils, check that your util hasn't already been built
+- Everything should be tested. We prefer writing tests that check style-rules rather than creating snapshots. Check out [jest-styled-components](https://github.com/styled-components/jest-styled-components) for help and guides
+
+
+# Contributing
 
 We're hoping to make Maestro fully open source and would appreciate any contributions you make.
 

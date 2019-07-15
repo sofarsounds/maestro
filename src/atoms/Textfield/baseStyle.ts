@@ -6,7 +6,7 @@ export interface InputProps {
   hasError?: boolean;
 }
 
-export const inputBaseStyle = (props: InputProps) => css`
+export default (props: InputProps) => css`
   width: 100%;
   height: 44px;
   background-color: ${props.theme.colours.whiteDenim};

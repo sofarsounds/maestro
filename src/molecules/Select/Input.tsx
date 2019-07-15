@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
 import { withShadow } from '../../util';
-import { inputBaseStyle, InputProps } from '../../atoms/FormElements/Base';
+import inputBaseStyle, { InputProps } from '../../atoms/Textfield/baseStyle';
 
 import Icon from '../../atoms/Icon';
 
