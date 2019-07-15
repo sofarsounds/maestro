@@ -234,6 +234,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -912,6 +913,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1585,6 +1587,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -2263,6 +2266,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",

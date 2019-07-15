@@ -1,11 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select <Menu /> it renders correctly 1`] = `
+exports[`<Dropdown /> renders correctly 1`] = `
 .c0 {
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 3px 6px 0 rgba(0,0,0,0.23);
-  margin-top: 0px;
-  padding-left: 0px;
-  background-color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 <ThemeProvider
@@ -150,45 +153,79 @@ exports[`Select <Menu /> it renders correctly 1`] = `
     }
   }
 >
-  <styled.ul
-    depth={2}
+  <OutsideDiv>
+    <button>
+      bla
+    </button>
+  </OutsideDiv>
+  <Dropdown
+    label="I am a dropdown"
   >
-    <StyledComponent
-      depth={2}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.ul",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "ul",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <styled.button
+      onClick={[Function]}
     >
-      <ul
-        className="c0"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  font-size: ",
+                [Function],
+                ";
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+",
+              ],
+            },
+            "displayName": "styled.button",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "button",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={
+          Object {
+            "current": .c0 {
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+<button
+              class="c0"
+            >
+              I am a dropdown
+            </button>,
+          }
+        }
+        onClick={[Function]}
       >
-        I am a child component
-      </ul>
-    </StyledComponent>
-  </styled.ul>
+        <button
+          className="c0"
+          onClick={[Function]}
+        >
+          I am a dropdown
+        </button>
+      </StyledComponent>
+    </styled.button>
+  </Dropdown>
 </ThemeProvider>
 `;

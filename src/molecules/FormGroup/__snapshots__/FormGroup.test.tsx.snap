@@ -69,6 +69,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -439,6 +440,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -791,6 +793,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1098,6 +1101,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",

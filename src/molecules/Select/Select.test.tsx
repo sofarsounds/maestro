@@ -29,7 +29,7 @@ const setup = () =>
 
 describe('Select', () => {
   it('renders correctly', () => {
-    expect(setup).toMatchSnapshot();
+    expect(setup()).toMatchSnapshot();
   });
 
   it('renders a placeholder', () => {

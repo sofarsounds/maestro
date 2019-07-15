@@ -97,6 +97,7 @@ export default interface Theme {
 
   borderRadius: {
     default: string;
+    large: string;
     button: string;
     input: string;
   };
