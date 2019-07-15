@@ -26,7 +26,7 @@ After adding the import you can use the Dropdown simply like this
 | size          | [Enum](#enum) |                 | The size of the flyout component
 | data-qaid     | `string`      |                 | Optional prop for testing purposes
 
-### Enum
+### Enum
 
 | Size  |
 | :---  |
