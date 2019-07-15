@@ -5,7 +5,7 @@ To implement a `Dropdown` into your project you'll need to add this import
 import { Dropdown } from '@sofarsounds/maestro'
 ```
 
-After adding the import you can use the Grid simply like this
+After adding the import you can use the Dropdown simply like this
 ```html
 <Dropdown label="Dropdown Label">
   I am the content!
