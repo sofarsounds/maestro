@@ -1,4 +1,4 @@
-# Button
+# Button
 
 To implement a `Button` into your project you'll need to add this import
 ```js
@@ -14,12 +14,12 @@ After adding the import you can use any button simply like this
 
 ## Props
 Table below contains all types of props available in any Button component  
-*all other standard button html props apply*
+**Note:** all other standard button html props apply
 
 | Name          | Type  | Default         | Description                      |
 | :------------ | :-----| :-------------- | :------------------------------- |
 | **children** | `React.Node`   |           | The content displayed in the button 
-| loading | `Boolean`      | `false`   | Whether the button should have a loading state
+| loading | `Boolean`      | `false`   | Whether the button should have a loading animation
 | small | `Boolean`      | `false`   | Whether the button should be displayed in a small version
 | data-testid  | `string`       |           | Optional prop for testing purposes                                       
 
