@@ -9,11 +9,14 @@ import { Textfield, FormGroup } from '../../src';
 storiesOf('Form Group', module)
   .addDecorator(withKnobs)
   .add('Playground', () => (
-    <FormGroup
-      label={text('Label', 'Email address')}
-      required={boolean('Required', true)}
-      errorMsg={text('Error Msg', null)}
-    >
-      <Textfield placeholder="your@email.com" />
-    </FormGroup>
+    <>
+      <h1>FormGroup</h1>
+      <FormGroup
+        label={text('Label', 'Email address')}
+        required={boolean('Required', true)}
+        errorMsg={text('Error Msg', null)}
+      >
+        <Textfield placeholder="your@email.com" />
+      </FormGroup>
+    </>
   ));

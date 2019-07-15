@@ -1,6 +1,6 @@
 # Badge
 
-To implement `Badge` intoy our project you'll need to add this import
+To implement `Badge` into your project you'll need to add this import
 ```js
 import { Badge } from '@sofarsounds/maestro'
 ```

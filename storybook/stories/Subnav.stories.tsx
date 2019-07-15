@@ -20,19 +20,22 @@ const links = [
 storiesOf('Subnav', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
-    <div style={{ width: '100%' }}>
-      <Subnav.Container>
-        {links.map(l => (
-          <Subnav.Link
-            key={l}
-            active={l === 'Backstage Pass'}
-            to="/"
-            href="/"
-            as="a"
-          >
-            {l}
-          </Subnav.Link>
-        ))}
-      </Subnav.Container>
-    </div>
+    <>
+      <h1>Subnav</h1>
+      <div style={{ width: '100%', border: '1px dotted #ccc' }}>
+        <Subnav.Container>
+          {links.map(l => (
+            <Subnav.Link
+              key={l}
+              active={l === 'Backstage Pass'}
+              to="/"
+              href="/"
+              as="a"
+            >
+              {l}
+            </Subnav.Link>
+          ))}
+        </Subnav.Container>
+      </div>
+    </>
   ));

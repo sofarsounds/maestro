@@ -8,9 +8,12 @@ import { Textarea } from '../../src';
 storiesOf('Textarea', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
-    <Textarea
-      disabled={boolean('Disabled', false)}
-      hasError={boolean('Has Error', false)}
-      placeholder={text('Placeholder', 'Type me hard...')}
-    />
+    <>
+      <h1>Textarea</h1>
+      <Textarea
+        disabled={boolean('Disabled', false)}
+        hasError={boolean('Has Error', false)}
+        placeholder={text('Placeholder', 'Type me hard...')}
+      />
+    </>
   ));

@@ -8,9 +8,12 @@ import { Textfield } from '../../src';
 storiesOf('Textfield', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
-    <Textfield
-      disabled={boolean('Disabled', false)}
-      hasError={boolean('Has Error', false)}
-      placeholder={text('Placeholder', 'Type me hard...')}
-    />
+    <>
+      <h1>Textfield</h1>
+      <Textfield
+        disabled={boolean('Disabled', false)}
+        hasError={boolean('Has Error', false)}
+        placeholder={text('Placeholder', 'Type me hard...')}
+      />
+    </>
   ));
