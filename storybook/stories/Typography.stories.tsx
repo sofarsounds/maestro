@@ -33,6 +33,7 @@ const bodyTags = [Body, Body2];
 storiesOf('Typography', module)
   .add('Title', () => (
     <>
+      <h1>Titles</h1>
       <Boundary>
         <Title>{text('Content', 'I am a title element')}</Title>
       </Boundary>
@@ -40,6 +41,7 @@ storiesOf('Typography', module)
   ))
   .add('Headings', () => (
     <>
+      <h1>Headings</h1>
       {headingTags.map((T: any, key: number) => (
         <Boundary key={key}>
           <T>Heading {key + 1}</T>
@@ -49,6 +51,7 @@ storiesOf('Typography', module)
   ))
   .add('Body', () => (
     <>
+      <h1>Body Tags</h1>
       {bodyTags.map((T: any, key: number) => (
         <Boundary key={key}>
           <T>Body {key + 1}</T>

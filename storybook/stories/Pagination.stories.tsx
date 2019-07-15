@@ -8,10 +8,13 @@ import { Pagination } from '../../src';
 storiesOf('Pagination', module)
   .addDecorator(withKnobs)
   .add('Playground', () => (
-    <Pagination
-      currentPage={number('Current Page', 1)}
-      onPageChange={p => action(`Page changed to ${p}`)}
-      totalRecords={number('Total Records', 40)}
-      perPage={number('Per Page', 8)}
-    />
+    <>
+      <h1>Pagination</h1>
+      <Pagination
+        currentPage={number('Current Page', 1)}
+        onPageChange={p => action(`Page changed to ${p}`)}
+        totalRecords={number('Total Records', 40)}
+        perPage={number('Per Page', 8)}
+      />
+    </>
   ));

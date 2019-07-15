@@ -1,6 +1,6 @@
 import styled, { css } from '../../lib/styledComponents';
 
-import { inputBaseStyle, InputProps } from './Base';
+import inputBaseStyle, { InputProps } from '../Textfield/baseStyle';
 
 export default styled.textarea<InputProps>`
   ${inputBaseStyle};

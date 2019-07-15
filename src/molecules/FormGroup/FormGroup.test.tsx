@@ -2,7 +2,7 @@ import React from 'react';
 import { mountWithTheme } from '../../test';
 
 import FormGroup from './index';
-import Textfield from '../../atoms/FormElements/Textfield';
+import Textfield from '../../atoms/Textfield';
 import theme from '../../theme';
 
 const setup = (label: string, required?: boolean, errorMsg?: string) =>

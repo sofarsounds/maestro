@@ -17,52 +17,64 @@ const Inversion = styled(Container)`
 storiesOf('Button', module)
   .addDecorator(withKnobs)
   .add('Primary', () => (
-    <Container>
-      <PrimaryButton
-        onClick={action('Primary Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-        small={boolean('Small', false)}
-        data-qaid="button"
-      >
-        {text('Label', 'Button')}
-      </PrimaryButton>
-    </Container>
+    <>
+      <h1>Primary Button</h1>
+      <Container>
+        <PrimaryButton
+          onClick={action('Primary Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
+          data-qaid="button"
+        >
+          {text('Label', 'Button')}
+        </PrimaryButton>
+      </Container>
+    </>
   ))
   .add('Outline', () => (
-    <Container>
-      <OutlineButton
-        onClick={action('Secondary Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-        small={boolean('Small', false)}
-      >
-        {text('Label', 'Button')}
-      </OutlineButton>
-    </Container>
+    <>
+      <h1>Outline Button</h1>
+      <Container>
+        <OutlineButton
+          onClick={action('Outline Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
+        >
+          {text('Label', 'Button')}
+        </OutlineButton>
+      </Container>
+    </>
   ))
   .add('Inverted', () => (
-    <Inversion>
-      <OutlineButton
-        colour="white"
-        onClick={action('Secondary Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-        small={boolean('Small', false)}
-      >
-        {text('Label', 'Button')}
-      </OutlineButton>
-    </Inversion>
+    <>
+      <h1>Inverted Button</h1>
+      <Inversion>
+        <OutlineButton
+          colour="white"
+          onClick={action('Inverted Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
+        >
+          {text('Label', 'Button')}
+        </OutlineButton>
+      </Inversion>
+    </>
   ))
   .add('Link', () => (
-    <Container>
-      <LinkButton
-        onClick={action('Secondary Button clicked')}
-        disabled={boolean('Disabled', false)}
-        loading={boolean('Loading', false)}
-        small={boolean('Small', false)}
-      >
-        {text('Label', 'Button')}
-      </LinkButton>
-    </Container>
+    <>
+      <h1>Link Button</h1>
+      <Container>
+        <LinkButton
+          onClick={action('Link Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
+        >
+          {text('Label', 'Button')}
+        </LinkButton>
+      </Container>
+    </>
   ));

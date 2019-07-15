@@ -9,6 +9,7 @@ storiesOf('Image', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
     <div style={{ maxWidth: '600px' }}>
+      <h1>Responsive Image</h1>
       <Image
         src={text(
           'URL',
