@@ -6,7 +6,7 @@ import { Badge } from '@sofarsounds/maestro'
 ```
 
 After adding the import you can use it simply like this
-```
+```html
 <Badge>12</Badge>
 ```
 
