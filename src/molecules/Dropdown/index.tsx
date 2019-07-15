@@ -4,17 +4,21 @@ import { StickyContainer, PortalComponent } from '../../util/index';
 import { useOutsideClick } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
-import Flyout from './Flyout';
+import Flyout, { FlyoutSizes } from './Flyout';
 
 interface DropdownProps {
   label?: string;
   renderLabel?: () => any;
   children: any;
+  size?: FlyoutSizes;
+  'data-qaid'?: string;
 }
 const Dropdown: React.SFC<DropdownProps> = ({
   label,
   renderLabel,
-  children
+  children,
+  size,
+  'data-qaid': qaId
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
@@ -25,14 +29,16 @@ const Dropdown: React.SFC<DropdownProps> = ({
 
   return (
     <>
-      <Trigger ref={ref} onClick={() => setIsOpen(!isOpen)}>
+      <Trigger ref={ref} onClick={() => setIsOpen(!isOpen)} data-qaid={qaId}>
         {renderLabel ? renderLabel() : label}
       </Trigger>
 
       {isOpen && (
         <PortalComponent dom={document.body}>
           <StickyContainer stickToEl={ref.current}>
-            <Flyout>{children}</Flyout>
+            <Flyout size={size} data-qaid={`${qaId}-flyout`}>
+              {children}
+            </Flyout>
           </StickyContainer>
         </PortalComponent>
       )}
