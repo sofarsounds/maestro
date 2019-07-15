@@ -30,6 +30,7 @@ exports[`Select <Menu /> it renders correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",

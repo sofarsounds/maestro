@@ -22,6 +22,7 @@ const TR = styled.tr`
 
 storiesOf('Iconography', module).add('All', () => (
   <div>
+    <h1>Icons</h1>
     <table style={{ borderCollapse: 'collapse' }}>
       <THEAD>
         <tr>

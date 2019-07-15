@@ -20,6 +20,7 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -326,6 +327,7 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -597,6 +599,7 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -995,6 +998,7 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1328,6 +1332,7 @@ exports[`Grid renders the Grid correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",

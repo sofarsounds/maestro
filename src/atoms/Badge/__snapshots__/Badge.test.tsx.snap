@@ -37,6 +37,7 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -251,6 +252,7 @@ exports[`Badge Primary Badge renders the badge correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",

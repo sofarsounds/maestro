@@ -11,6 +11,7 @@ function ModalExample() {
 
   return (
     <>
+      <h1>Modal</h1>
       <PrimaryButton onClick={toggleModal}>Click me</PrimaryButton>
       <Modal {...modal}>
         <p>Hello</p>

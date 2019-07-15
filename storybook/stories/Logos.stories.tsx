@@ -9,6 +9,7 @@ import { Boundary, Row, Inversion, Container } from '../helpers/components';
 
 storiesOf('Logo', module).add('Sofar Logos', () => (
   <div>
+    <h1>Logos</h1>
     <Row>
       <Container>
         <Boundary>
@@ -26,6 +27,11 @@ storiesOf('Logo', module).add('Sofar Logos', () => (
         </Boundary>
       </Container>
     </Row>
+
+    <br />
+    <br />
+
+    <h1>Inverted Logos</h1>
 
     <Inversion>
       <Container>

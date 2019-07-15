@@ -23,6 +23,7 @@ storiesOf('Container', module)
   .addDecorator(withKnobs)
   .add('Basic', () => (
     <div>
+      <h1>Container</h1>
       <Container>
         <ColContent>Container</ColContent>
       </Container>

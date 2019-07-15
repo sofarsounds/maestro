@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> renders correctly 1`] = `
+.c0 {
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "default": "2px",
+        "input": "2px",
+        "large": "8px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "formGroupLabel": "14px",
+        "h1": Object {
+          "lg": "48px",
+          "md": "34px",
+          "xs": "24px",
+        },
+        "h2": Object {
+          "lg": "34px",
+          "md": "24px",
+          "xs": "20px",
+        },
+        "h3": Object {
+          "lg": "24px",
+          "md": "20px",
+          "xs": "16px",
+        },
+        "h4": Object {
+          "lg": "20px",
+          "md": "16px",
+          "xs": "16px",
+        },
+        "h5": Object {
+          "lg": "16px",
+          "md": "14px",
+          "xs": "14px",
+        },
+        "h6": Object {
+          "lg": "14px",
+          "md": "14px",
+          "xs": "14px",
+        },
+        "overline": "10px",
+        "title": Object {
+          "lg": "54px",
+          "md": "38px",
+          "xs": "26px",
+        },
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
+      },
+    }
+  }
+>
+  <OutsideDiv>
+    <button>
+      bla
+    </button>
+  </OutsideDiv>
+  <Dropdown
+    label="I am a dropdown"
+  >
+    <styled.button
+      onClick={[Function]}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  font-size: ",
+                [Function],
+                ";
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+",
+              ],
+            },
+            "displayName": "styled.button",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "button",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={
+          Object {
+            "current": .c0 {
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+<button
+              class="c0"
+            >
+              I am a dropdown
+            </button>,
+          }
+        }
+        onClick={[Function]}
+      >
+        <button
+          className="c0"
+          onClick={[Function]}
+        >
+          I am a dropdown
+        </button>
+      </StyledComponent>
+    </styled.button>
+  </Dropdown>
+</ThemeProvider>
+`;

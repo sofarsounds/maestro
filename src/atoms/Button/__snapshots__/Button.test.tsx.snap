@@ -81,6 +81,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -369,6 +370,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -688,6 +690,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -958,6 +961,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1222,6 +1226,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1528,6 +1533,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -1775,6 +1781,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -2016,6 +2023,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -2282,6 +2290,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
@@ -2525,6 +2534,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
         "button": "4px",
         "default": "2px",
         "input": "2px",
+        "large": "8px",
       },
       "colours": Object {
         "backToBlack": "#111111",
