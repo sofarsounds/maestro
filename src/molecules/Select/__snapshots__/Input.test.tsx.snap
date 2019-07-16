@@ -430,6 +430,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
   <Input
     isOpen={false}
     placeholder="I am a placeholder"
+    readonly={false}
     toggleSelect={[MockFunction]}
   >
     <styled.div
@@ -474,6 +475,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
           <styled.input
             isOpen={false}
             placeholder="I am a placeholder"
+            readOnly={false}
           >
             <StyledComponent
               forwardedComponent={
@@ -505,10 +507,12 @@ exports[`Select <Input /> it renders correctly 1`] = `
               forwardedRef={null}
               isOpen={false}
               placeholder="I am a placeholder"
+              readOnly={false}
             >
               <input
                 className="c1"
                 placeholder="I am a placeholder"
+                readOnly={false}
               />
             </StyledComponent>
           </styled.input>
