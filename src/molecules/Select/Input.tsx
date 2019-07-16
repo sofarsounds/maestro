@@ -13,7 +13,7 @@ interface SelectInputProps {
 
 interface InputWrapper {
   children?: any;
-  isOpen?: any;
+  isOpen?: boolean;
 }
 
 interface Props {
