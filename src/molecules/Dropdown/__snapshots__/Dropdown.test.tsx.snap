@@ -159,6 +159,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
     </button>
   </OutsideDiv>
   <Dropdown
+    flyoutContainer={true}
     label="I am a dropdown"
   >
     <styled.button

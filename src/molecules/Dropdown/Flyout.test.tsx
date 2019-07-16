@@ -33,4 +33,11 @@ describe('Dropdown <Flyout />', () => {
       width: '250px'
     });
   });
+
+  it('does not display the styled flyout container when set to false ', () => {
+    const flyout = mountWithTheme(<Flyout flyoutContainer={false} />);
+    expect(flyout).not.toHaveStyleRule('width', '200px');
+    expect(flyout).not.toHaveStyleRule('border-radius', '8px');
+    expect(flyout).not.toHaveStyleRule('overflow-y', 'auto');
+  });
 });
