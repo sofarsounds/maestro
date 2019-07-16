@@ -7,10 +7,16 @@ const mockClick = jest.fn();
 
 const setup = (
   isOpen: boolean = false,
-  placeholder: string = 'I am a placeholder'
+  placeholder: string = 'I am a placeholder',
+  readonly: boolean = false
 ) =>
   mountWithTheme(
-    <Input isOpen={isOpen} placeholder={placeholder} toggleSelect={mockClick}>
+    <Input
+      isOpen={isOpen}
+      placeholder={placeholder}
+      toggleSelect={mockClick}
+      readonly={readonly}
+    >
       I am a child component
     </Input>
   );
@@ -60,6 +66,12 @@ describe('Select <Input />', () => {
     let wrapper = setup(true);
     let icon = wrapper.find('Icon').props().name;
     expect(icon).toBe('caretUp');
+  });
+
+  it('adds a readonly prop', () => {
+    let wrapper = setup(true, 'cat', true);
+    let input = wrapper.find('input');
+    expect(input.props().readOnly).toBe(true);
   });
 
   it('it shows the down icon when isOpen is false', () => {
