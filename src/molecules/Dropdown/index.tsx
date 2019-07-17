@@ -8,15 +8,17 @@ import Flyout, { FlyoutSizes } from './Flyout';
 
 interface DropdownProps {
   label?: string;
-  renderLabel?: () => any;
+  renderLabel?: (arg?: any) => any;
   children: any;
   size?: FlyoutSizes;
+  flyoutContainer?: boolean;
   'data-qaid'?: string;
 }
 const Dropdown: React.SFC<DropdownProps> = ({
   label,
   renderLabel,
   children,
+  flyoutContainer,
   size,
   'data-qaid': qaId
 }) => {
@@ -30,13 +32,17 @@ const Dropdown: React.SFC<DropdownProps> = ({
   return (
     <>
       <Trigger ref={ref} onClick={() => setIsOpen(!isOpen)} data-qaid={qaId}>
-        {renderLabel ? renderLabel() : label}
+        {renderLabel ? renderLabel(isOpen) : label}
       </Trigger>
 
       {isOpen && (
         <PortalComponent dom={document.body}>
           <StickyContainer stickToEl={ref.current}>
-            <Flyout size={size} data-qaid={`${qaId}-flyout`}>
+            <Flyout
+              flyoutContainer={flyoutContainer}
+              size={size}
+              data-qaid={`${qaId}-flyout`}
+            >
               {children}
             </Flyout>
           </StickyContainer>

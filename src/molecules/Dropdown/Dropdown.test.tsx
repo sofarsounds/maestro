@@ -7,11 +7,13 @@ import Flyout from './Flyout';
 
 const OutsideDiv = () => <button>bla</button>;
 
-const setup = () =>
+const setup = (flyoutContainer: boolean = true) =>
   mountWithTheme(
     <>
       <OutsideDiv />
-      <Dropdown label="I am a dropdown">Dropdown Content</Dropdown>
+      <Dropdown flyoutContainer={flyoutContainer} label="I am a dropdown">
+        Dropdown Content
+      </Dropdown>
     </>
   );
 
@@ -44,6 +46,19 @@ describe('<Dropdown />', () => {
     wrapper.find(Trigger).simulate('click');
     wrapper.find(Trigger).simulate('click');
     expect(wrapper.find(Flyout)).toHaveLength(0);
+  });
+
+  it('render the flyout container with the correct styles', () => {
+    const wrapper = setup(true);
+    wrapper.find(Trigger).simulate('click');
+    expect(wrapper.find(Flyout)).toHaveStyleRule('width', '200px');
+  });
+
+  it('does not render the styled flyout container when the prop is false', () => {
+    const wrapper = setup(false);
+    wrapper.find(Trigger).simulate('click');
+    expect(wrapper.find(Flyout)).toHaveLength(1);
+    expect(wrapper.find(Flyout)).not.toHaveStyleRule('width', '200px');
   });
 
   it.todo('closes the flyout when clicked outside');
