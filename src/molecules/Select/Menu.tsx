@@ -5,12 +5,14 @@ import { withShadow } from '../../util';
 interface Props {
   children?: any;
   depth: any;
+  width?: number;
 }
 
 const Menu = styled.ul<Props>`
-  ${({ theme }) => css`
+  ${({ theme, width }) => css`
     ${withShadow}
     margin-top: 0px;
+    width: ${width}px;
     padding-left: 0px;
     background-color: ${theme.colours.whiteDenim};
     max-height: 300px;

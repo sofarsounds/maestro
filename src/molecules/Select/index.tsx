@@ -62,5 +62,6 @@ const Select: React.SFC<SelectProps> = ({
 };
 
 export { default as Option } from './Option';
+export { default as Menu } from './Menu';
 
 export default Select;

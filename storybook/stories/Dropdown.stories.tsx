@@ -30,5 +30,17 @@ storiesOf('Dropdown', module)
       >
         <Select placeholder="cat" />
       </Dropdown>
+
+      <br />
+      <br />
+
+      <Dropdown
+        flyoutContainer={false}
+        renderLabel={isOpen => (
+          <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
+        )}
+      >
+        <Select placeholder="cat" />
+      </Dropdown>
     </>
   ));
