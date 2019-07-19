@@ -10,6 +10,8 @@ import Hamburger from './CollapseIcon';
 import Brand from './Brand';
 import ItemContainer from './ItemContainer';
 import Item from './Item';
+import DropdownItem, { SubItem } from './DropdownItem';
+
 
 interface NavbarProps {
   fixed?: boolean;
@@ -26,6 +28,8 @@ interface NavbarState {
 class Navbar extends React.Component<NavbarProps, NavbarState> {
   public static ItemContainer: any;
   public static Item: any;
+  public static DropdownItem: any;
+  public static SubItem: any;
 
   public readonly state: NavbarState = {
     open: false
@@ -64,5 +68,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
 Navbar.ItemContainer = ItemContainer;
 Navbar.Item = Item;
+Navbar.DropdownItem = DropdownItem;
+Navbar.SubItem = SubItem;
 
 export default Navbar;

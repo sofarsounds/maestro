@@ -7,7 +7,7 @@ export default styled.div<ItemContainerProps>`
   ${({ theme, align = 'left' }) => css`
     display: flex;
     flex-direction: column;
-
+    color: ${theme.colours.whiteDenim};
     ${theme.media.md`
       flex-direction: row;
       align-items: center;

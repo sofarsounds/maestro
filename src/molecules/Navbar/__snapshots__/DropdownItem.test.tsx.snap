@@ -1,0 +1,925 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar <DropdownItem /> renders children correctly 1`] = `
+.c1 {
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  padding: 15px 0px;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c0 {
+  cursor: pointer;
+}
+
+.c0 svg > path {
+  color: #FFF;
+}
+
+.c2 {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  background: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  width: 130px;
+  min-width: 130px;
+  background-color: #FFFFFF;
+}
+
+.c2::after {
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  top: -4px;
+  content: "";
+  position: absolute;
+  right: 65px;
+  -webkit-transform: rotateZ(224deg);
+  -ms-transform: rotateZ(224deg);
+  transform: rotateZ(224deg);
+}
+
+.c3 {
+  display: block;
+  padding: 8px 20px;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: auto;
+    padding: 10px 6px;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "default": "2px",
+        "input": "2px",
+        "large": "8px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "formGroupLabel": "14px",
+        "h1": Object {
+          "lg": "48px",
+          "md": "34px",
+          "xs": "24px",
+        },
+        "h2": Object {
+          "lg": "34px",
+          "md": "24px",
+          "xs": "20px",
+        },
+        "h3": Object {
+          "lg": "24px",
+          "md": "20px",
+          "xs": "16px",
+        },
+        "h4": Object {
+          "lg": "20px",
+          "md": "16px",
+          "xs": "16px",
+        },
+        "h5": Object {
+          "lg": "16px",
+          "md": "14px",
+          "xs": "14px",
+        },
+        "h6": Object {
+          "lg": "14px",
+          "md": "14px",
+          "xs": "14px",
+        },
+        "overline": "10px",
+        "title": Object {
+          "lg": "54px",
+          "md": "38px",
+          "xs": "26px",
+        },
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
+      },
+    }
+  }
+>
+  <DropdownItem
+    title="Your Account"
+  >
+    <styled.span>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  cursor: pointer;
+  svg > path {
+    color: #FFF;
+  }
+",
+              ],
+            },
+            "displayName": "styled.span",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c0"
+        >
+          <styled.a
+            onClick={[Function]}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.a",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "a",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[Function]}
+            >
+              <a
+                className="c1"
+                onClick={[Function]}
+              >
+                Your Account
+              </a>
+            </StyledComponent>
+          </styled.a>
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            color="#FFF"
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f107",
+                  "M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z",
+                ],
+                "iconName": "angle-down",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size="sm"
+            spin={false}
+            symbol={false}
+            title=""
+            transform={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-angle-down fa-w-10 fa-sm "
+              color="#FFF"
+              data-icon="angle-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </FontAwesomeIcon>
+          <styled.div
+            open={false}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      "
+  position: absolute;
+  font-size: 14px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  background: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  width: 130px;
+  min-width: 130px;
+  &::after {
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    top: -4px;
+    content: \\"\\";
+    position: absolute;
+    right: 65px;
+    transform: rotateZ(224deg);
+  }
+  ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              open={false}
+            >
+              <div
+                className="c2"
+                open={false}
+              >
+                <styled.a
+                  href="/dashboard"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  display: block;
+  padding: 8px 20px;
+",
+                          ],
+                        },
+                        "displayName": "styled.a",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "a",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    href="/dashboard"
+                  >
+                    <a
+                      className="c3"
+                      href="/dashboard"
+                    >
+                      Dashboard
+                    </a>
+                  </StyledComponent>
+                </styled.a>
+                <styled.a
+                  href="/profile/edit"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  display: block;
+  padding: 8px 20px;
+",
+                          ],
+                        },
+                        "displayName": "styled.a",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "a",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    href="/profile/edit"
+                  >
+                    <a
+                      className="c3"
+                      href="/profile/edit"
+                    >
+                      Edit Profile
+                    </a>
+                  </StyledComponent>
+                </styled.a>
+                <styled.a
+                  href="http://dev.sofarsounds.com/auth/signout"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  display: block;
+  padding: 8px 20px;
+",
+                          ],
+                        },
+                        "displayName": "styled.a",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "a",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    href="http://dev.sofarsounds.com/auth/signout"
+                  >
+                    <a
+                      className="c3"
+                      href="http://dev.sofarsounds.com/auth/signout"
+                    >
+                      Sign Out
+                    </a>
+                  </StyledComponent>
+                </styled.a>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </span>
+      </StyledComponent>
+    </styled.span>
+  </DropdownItem>
+</ThemeProvider>
+`;
+
+exports[`Navbar <DropdownItem /> renders correctly in closed state 1`] = `
+.c1 {
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-letter-spacing: 0.1px;
+  -moz-letter-spacing: 0.1px;
+  -ms-letter-spacing: 0.1px;
+  letter-spacing: 0.1px;
+  padding: 15px 0px;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c0 {
+  cursor: pointer;
+}
+
+.c0 svg > path {
+  color: #FFF;
+}
+
+.c2 {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  background: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  width: 130px;
+  min-width: 130px;
+  background-color: #FFFFFF;
+}
+
+.c2::after {
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  top: -4px;
+  content: "";
+  position: absolute;
+  right: 65px;
+  -webkit-transform: rotateZ(224deg);
+  -ms-transform: rotateZ(224deg);
+  transform: rotateZ(224deg);
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: auto;
+    padding: 10px 6px;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "borderRadius": Object {
+        "button": "4px",
+        "default": "2px",
+        "input": "2px",
+        "large": "8px",
+      },
+      "colours": Object {
+        "backToBlack": "#111111",
+        "black": "#000000",
+        "blackBetty": "#1E1E1E",
+        "blueSmoke": "#949494",
+        "green100": "#CFEACC",
+        "green200": "#9DDCAC",
+        "green300": "#72D08A",
+        "green400": "#4FC571",
+        "green50": "#E6F7EA",
+        "green500": "#23BA57",
+        "green600": "#10AD52",
+        "green700": "#039842",
+        "green800": "#008736",
+        "green900": "#006721",
+        "macyGrey": "#DBDBDB",
+        "paintItBlack": "#333333",
+        "primary": "#039842",
+        "redRedWine": "#EF4423",
+        "silverSprings": "#F5F5F5",
+        "whiteDenim": "#FFFFFF",
+      },
+      "dimensions": Object {
+        "button": Object {
+          "default": Object {
+            "height": "44px",
+            "padding": "0 25px",
+          },
+          "small": Object {
+            "height": "40px",
+            "padding": "0 15px",
+          },
+        },
+        "buttonHeight": "44px",
+        "containerWidth": Object {
+          "default": "800px",
+          "fullscreen": "100%",
+          "large": "1000px",
+          "small": "600px",
+        },
+        "inputHeight": "44px",
+        "navbarHeight": Object {
+          "lg": "84px",
+          "md": "74px",
+          "xs": "62px",
+        },
+      },
+      "fontSizes": Object {
+        "base": "16px",
+        "body1": "16px",
+        "body2": "14px",
+        "button": "14px",
+        "caption": "10px",
+        "formGroupLabel": "14px",
+        "h1": Object {
+          "lg": "48px",
+          "md": "34px",
+          "xs": "24px",
+        },
+        "h2": Object {
+          "lg": "34px",
+          "md": "24px",
+          "xs": "20px",
+        },
+        "h3": Object {
+          "lg": "24px",
+          "md": "20px",
+          "xs": "16px",
+        },
+        "h4": Object {
+          "lg": "20px",
+          "md": "16px",
+          "xs": "16px",
+        },
+        "h5": Object {
+          "lg": "16px",
+          "md": "14px",
+          "xs": "14px",
+        },
+        "h6": Object {
+          "lg": "14px",
+          "md": "14px",
+          "xs": "14px",
+        },
+        "overline": "10px",
+        "title": Object {
+          "lg": "54px",
+          "md": "38px",
+          "xs": "26px",
+        },
+      },
+      "fonts": Object {
+        "regular": "Open Sans",
+      },
+      "media": Object {
+        "lg": [Function],
+        "md": [Function],
+        "sm": [Function],
+        "xl": [Function],
+        "xs": [Function],
+      },
+      "ruler": Array [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80,
+      ],
+      "utils": Object {
+        "transition": [Function],
+      },
+      "zIndex": Object {
+        "navbar": 100,
+      },
+    }
+  }
+>
+  <DropdownItem
+    title="Your Account"
+  >
+    <styled.span>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
+  cursor: pointer;
+  svg > path {
+    color: #FFF;
+  }
+",
+              ],
+            },
+            "displayName": "styled.span",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c0"
+        >
+          <styled.a
+            onClick={[Function]}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.a",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "a",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[Function]}
+            >
+              <a
+                className="c1"
+                onClick={[Function]}
+              >
+                Your Account
+              </a>
+            </StyledComponent>
+          </styled.a>
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            color="#FFF"
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f107",
+                  "M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z",
+                ],
+                "iconName": "angle-down",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size="sm"
+            spin={false}
+            symbol={false}
+            title=""
+            transform={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-angle-down fa-w-10 fa-sm "
+              color="#FFF"
+              data-icon="angle-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </FontAwesomeIcon>
+          <styled.div
+            open={false}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      "
+  position: absolute;
+  font-size: 14px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  background: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  width: 130px;
+  min-width: 130px;
+  &::after {
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    top: -4px;
+    content: \\"\\";
+    position: absolute;
+    right: 65px;
+    transform: rotateZ(224deg);
+  }
+  ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              open={false}
+            >
+              <div
+                className="c2"
+                open={false}
+              />
+            </StyledComponent>
+          </styled.div>
+        </span>
+      </StyledComponent>
+    </styled.span>
+  </DropdownItem>
+</ThemeProvider>
+`;
