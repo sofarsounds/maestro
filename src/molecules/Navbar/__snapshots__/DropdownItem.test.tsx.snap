@@ -20,7 +20,7 @@ exports[`Navbar <DropdownItem /> renders children correctly 1`] = `
 }
 
 .c0 svg > path {
-  color: #FFF;
+  color: #fff;
 }
 
 .c2 {
@@ -42,9 +42,9 @@ exports[`Navbar <DropdownItem /> renders children correctly 1`] = `
 
 .c2::after {
   border-left: 10px solid transparent;
-  border-bottom: 10px solid #FFF;
+  border-bottom: 10px solid #fff;
   top: -4px;
-  content: "";
+  content: '';
   position: absolute;
   right: 65px;
   -webkit-transform: rotateZ(224deg);
@@ -223,7 +223,7 @@ exports[`Navbar <DropdownItem /> renders children correctly 1`] = `
                 "
   cursor: pointer;
   svg > path {
-    color: #FFF;
+    color: #fff;
   }
 ",
               ],
@@ -356,7 +356,7 @@ exports[`Navbar <DropdownItem /> renders children correctly 1`] = `
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background: #fff;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -365,9 +365,9 @@ exports[`Navbar <DropdownItem /> renders children correctly 1`] = `
   min-width: 130px;
   &::after {
     border-left: 10px solid transparent;
-    border-bottom: 10px solid #FFF;
+    border-bottom: 10px solid #fff;
     top: -4px;
-    content: \\"\\";
+    content: '';
     position: absolute;
     right: 65px;
     transform: rotateZ(224deg);
@@ -545,7 +545,7 @@ exports[`Navbar <DropdownItem /> renders correctly in closed state 1`] = `
 }
 
 .c0 svg > path {
-  color: #FFF;
+  color: #fff;
 }
 
 .c2 {
@@ -567,9 +567,9 @@ exports[`Navbar <DropdownItem /> renders correctly in closed state 1`] = `
 
 .c2::after {
   border-left: 10px solid transparent;
-  border-bottom: 10px solid #FFF;
+  border-bottom: 10px solid #fff;
   top: -4px;
-  content: "";
+  content: '';
   position: absolute;
   right: 65px;
   -webkit-transform: rotateZ(224deg);
@@ -743,7 +743,7 @@ exports[`Navbar <DropdownItem /> renders correctly in closed state 1`] = `
                 "
   cursor: pointer;
   svg > path {
-    color: #FFF;
+    color: #fff;
   }
 ",
               ],
@@ -876,7 +876,7 @@ exports[`Navbar <DropdownItem /> renders correctly in closed state 1`] = `
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background: #fff;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -885,9 +885,9 @@ exports[`Navbar <DropdownItem /> renders correctly in closed state 1`] = `
   min-width: 130px;
   &::after {
     border-left: 10px solid transparent;
-    border-bottom: 10px solid #FFF;
+    border-bottom: 10px solid #fff;
     top: -4px;
-    content: \\"\\";
+    content: '';
     position: absolute;
     right: 65px;
     transform: rotateZ(224deg);
