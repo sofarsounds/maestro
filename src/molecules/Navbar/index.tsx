@@ -12,7 +12,6 @@ import ItemContainer from './ItemContainer';
 import Item from './Item';
 import DropdownItem, { SubItem } from './DropdownItem';
 
-
 interface NavbarProps {
   fixed?: boolean;
   invert?: boolean;

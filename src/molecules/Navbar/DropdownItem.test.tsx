@@ -17,7 +17,9 @@ describe('Navbar <DropdownItem />', () => {
       <DropdownItem title="Your Account">
         <SubItem href="/dashboard">Dashboard</SubItem>
         <SubItem href="/profile/edit">Edit Profile</SubItem>
-        <SubItem href="http://dev.sofarsounds.com/auth/signout">Sign Out</SubItem>
+        <SubItem href="http://dev.sofarsounds.com/auth/signout">
+          Sign Out
+        </SubItem>
       </DropdownItem>
     );
     expect(wrapper).toMatchSnapshot();
@@ -28,9 +30,11 @@ describe('Navbar <DropdownItem />', () => {
       <DropdownItem title="Your Account">
         <SubItem href="/dashboard">Dashboard</SubItem>
         <SubItem href="/profile/edit">Edit Profile</SubItem>
-        <SubItem href="http://dev.sofarsounds.com/auth/signout">Sign Out</SubItem>
+        <SubItem href="http://dev.sofarsounds.com/auth/signout">
+          Sign Out
+        </SubItem>
       </DropdownItem>
-    );   
+    );
     expect(wrapper.find(SubItems)).toHaveStyleRule('display', 'none');
   });
 
@@ -39,10 +43,12 @@ describe('Navbar <DropdownItem />', () => {
       <DropdownItem title="Your Account">
         <SubItem href="/dashboard">Dashboard</SubItem>
         <SubItem href="/profile/edit">Edit Profile</SubItem>
-        <SubItem href="http://dev.sofarsounds.com/auth/signout">Sign Out</SubItem>
+        <SubItem href="http://dev.sofarsounds.com/auth/signout">
+          Sign Out
+        </SubItem>
       </DropdownItem>
     );
-    wrapper.find(Item).simulate('click');    
+    wrapper.find(Item).simulate('click');
     expect(wrapper.find(SubItems)).toHaveStyleRule('display', 'block');
   });
 });
