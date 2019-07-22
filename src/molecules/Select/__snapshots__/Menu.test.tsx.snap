@@ -4,10 +4,15 @@ exports[`Select <Menu /> it renders correctly 1`] = `
 .c0 {
   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 3px 6px 0 rgba(0,0,0,0.23);
   margin-top: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: px;
   padding-left: 0px;
   background-color: #FFFFFF;
   max-height: 300px;
   overflow-y: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 <ThemeProvider
