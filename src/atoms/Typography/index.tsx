@@ -91,6 +91,20 @@ export const Overline = styled.span<TypographyProps>`
   ${withTypography}
 `;
 
+export const Anchor = styled.span<TypographyProps>`
+  ${({ theme }) => css`
+    font-size: ${theme.fontSizes.body2};
+    font-weight: bold;
+    color: ${theme.colours.primary};
+  `};
+
+  ${withTypography}
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
+
 export const Caption = styled.span<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.caption};

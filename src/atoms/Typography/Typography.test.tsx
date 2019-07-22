@@ -15,6 +15,7 @@ import {
   Body2,
   Overline,
   Caption,
+  Anchor,
   FormGroupLabel
 } from './index';
 
@@ -123,6 +124,14 @@ describe('Typography', () => {
     expect(wrapper).toHaveStyleRule('letter-spacing', '1.5px');
     expect(wrapper).toHaveStyleRule('text-transform', 'uppercase');
     expect(wrapper).toHaveStyleRule('line-height', '1.6');
+  });
+
+  it('renders an Anchor correctly', () => {
+    const wrapper = setup(Anchor);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.body2);
+    expect(wrapper).toHaveStyleRule('color', theme.colours.primary);
+    expect(wrapper).toHaveStyleRule('font-weight', 'bold');
   });
 
   it('renders a Caption correctly', () => {

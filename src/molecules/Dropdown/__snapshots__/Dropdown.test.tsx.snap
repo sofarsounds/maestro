@@ -2,13 +2,13 @@
 
 exports[`<Dropdown /> renders correctly 1`] = `
 .c0 {
-  font-size: 16px;
   border: none;
   box-shadow: none;
   outline: none;
   cursor: pointer;
   margin: 0;
   padding: 0;
+  background-color: transparent;
 }
 
 <ThemeProvider
@@ -161,8 +161,9 @@ exports[`<Dropdown /> renders correctly 1`] = `
   <Dropdown
     flyoutContainer={true}
     label="I am a dropdown"
+    offsetTop={0}
   >
-    <styled.button
+    <styled.div
       onClick={[Function]}
     >
       <StyledComponent
@@ -172,27 +173,25 @@ exports[`<Dropdown /> renders correctly 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-bwzfXH",
-              "isStatic": false,
+              "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
                 "
-  font-size: ",
-                [Function],
-                ";
   border: none;
   box-shadow: none;
   outline: none;
   cursor: pointer;
   margin: 0;
   padding: 0;
+  background-color: transparent;
 ",
               ],
             },
-            "displayName": "styled.button",
+            "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-bwzfXH",
-            "target": "button",
+            "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
@@ -201,32 +200,32 @@ exports[`<Dropdown /> renders correctly 1`] = `
         forwardedRef={
           Object {
             "current": .c0 {
-  font-size: 16px;
   border: none;
   box-shadow: none;
   outline: none;
   cursor: pointer;
   margin: 0;
   padding: 0;
+  background-color: transparent;
 }
 
-<button
+<div
               class="c0"
             >
               I am a dropdown
-            </button>,
+            </div>,
           }
         }
         onClick={[Function]}
       >
-        <button
+        <div
           className="c0"
           onClick={[Function]}
         >
           I am a dropdown
-        </button>
+        </div>
       </StyledComponent>
-    </styled.button>
+    </styled.div>
   </Dropdown>
 </ThemeProvider>
 `;

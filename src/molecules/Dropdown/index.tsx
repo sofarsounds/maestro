@@ -11,6 +11,7 @@ interface DropdownProps {
   renderLabel?: (arg?: any) => any;
   children: any;
   size?: FlyoutSizes;
+  offsetTop?: number;
   flyoutContainer?: boolean;
   'data-qaid'?: string;
 }
@@ -20,6 +21,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
   children,
   flyoutContainer,
   size,
+  offsetTop,
   'data-qaid': qaId
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +39,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
 
       {isOpen && (
         <PortalComponent dom={document.body}>
-          <StickyContainer stickToEl={ref.current}>
+          <StickyContainer offsetTop={offsetTop} stickToEl={ref.current}>
             <Flyout
               flyoutContainer={flyoutContainer}
               size={size}

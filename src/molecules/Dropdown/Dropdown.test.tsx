@@ -4,14 +4,19 @@ import { mountWithTheme } from '../../test';
 import Dropdown from './index';
 import Trigger from './DropdownTrigger';
 import Flyout from './Flyout';
+import StickyContainer from '../../util/StickyContainer';
 
 const OutsideDiv = () => <button>bla</button>;
 
-const setup = (flyoutContainer: boolean = true) =>
+const setup = (flyoutContainer: boolean = true, offsetTop = 0) =>
   mountWithTheme(
     <>
       <OutsideDiv />
-      <Dropdown flyoutContainer={flyoutContainer} label="I am a dropdown">
+      <Dropdown
+        flyoutContainer={flyoutContainer}
+        label="I am a dropdown"
+        offsetTop={offsetTop}
+      >
         Dropdown Content
       </Dropdown>
     </>
@@ -59,6 +64,15 @@ describe('<Dropdown />', () => {
     wrapper.find(Trigger).simulate('click');
     expect(wrapper.find(Flyout)).toHaveLength(1);
     expect(wrapper.find(Flyout)).not.toHaveStyleRule('width', '200px');
+  });
+
+  it('applies an offset value to the sticky container', () => {
+    const wrapper = setup(true, 100);
+    wrapper.find(Trigger).simulate('click');
+    wrapper.update();
+
+    let stickyWrapper = wrapper.find(StickyContainer);
+    expect(stickyWrapper.children().props().offsetTop).toEqual(100);
   });
 
   it.todo('closes the flyout when clicked outside');
