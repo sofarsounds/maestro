@@ -156,7 +156,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
         }
 
         &:focus {
-          background-color: ${theme.colours.macyGrey};
+          background-color: ${theme.colours.backToBlack};
         }
       `}
 
