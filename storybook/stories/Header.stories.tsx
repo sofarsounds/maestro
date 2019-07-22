@@ -15,7 +15,7 @@ import {
 } from '../../src';
 import cities from '../helpers/cities';
 
-const catClick = () => {
+const mockClick = () => {
   console.log('dog');
 };
 
@@ -28,6 +28,7 @@ storiesOf('Header', module)
           <Navbar.ItemContainer>
             <Dropdown
               flyoutContainer={false}
+              offsetTop={-2}
               renderLabel={isOpen => (
                 <OutlineButton small colour={'white'}>
                   <span style={{ marginRight: '5px', color: 'inherit' }}>
@@ -41,21 +42,23 @@ storiesOf('Header', module)
                 </OutlineButton>
               )}
             >
-              <Menu depth={2} width={300}>
+              <Menu depth={2} isSelect width={150}>
                 {cities.map((city, index) => (
-                  <Option key={index} value={city} onClick={catClick}>
+                  <Option key={index} value={city} onClick={mockClick}>
                     {city}
                   </Option>
                 ))}
               </Menu>
             </Dropdown>
           </Navbar.ItemContainer>
+
           <Navbar.ItemContainer align="right">
             <Navbar.Item href="#">London</Navbar.Item>
             <Navbar.Item href="#">Perform</Navbar.Item>
             <Navbar.Item>Host</Navbar.Item>
             <Dropdown
               flyoutContainer={false}
+              offsetTop={10}
               renderLabel={isOpen => (
                 <Navbar.Item>
                   <span style={{ marginRight: '5px', color: 'inherit' }}>
@@ -71,7 +74,7 @@ storiesOf('Header', module)
             >
               <Menu width={200} depth={2}>
                 {cities.slice(0, 4).map((city, index) => (
-                  <Option key={index} value={city} onClick={catClick}>
+                  <Option key={index} value={city} onClick={mockClick}>
                     {city}
                   </Option>
                 ))}
