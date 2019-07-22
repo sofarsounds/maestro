@@ -1,27 +1,25 @@
 import React from 'react';
 import { mountWithTheme } from '../../test';
 import { Caption } from '../../atoms/Typography';
+import Image from '../../atoms/Image';
 
-import Image from './index';
+import ImageWithCaption from './index';
 
-describe('<Image />', () => {
+describe('<ImageWithCaption />', () => {
   describe('Default', () => {
     it('has the correct style attributes', () => {
-      const img = mountWithTheme(<Image src="img.png" />);
-      expect(img).toHaveStyleRule('border-radius', '2px');
-      expect(img).toHaveStyleRule('width', '100%');
-    });
-  });
-
-  describe('With Caption', () => {
-    it('has the correct style attributes', () => {
-      const img = mountWithTheme(<Image src="img.png" caption="A caption" />);
-      expect(img).toHaveStyleRule('border-radius', '2px');
-      expect(img).toHaveStyleRule('width', '100%');
+      const img = mountWithTheme(
+        <ImageWithCaption src="img.png" caption="A caption" />
+      );
+      expect(img).toHaveStyleRule('text-align', 'center');
+      expect(img.find(Image)).toHaveStyleRule('border-radius', '2px');
+      expect(img.find(Image)).toHaveStyleRule('width', '100%');
     });
 
     it('displays the caption', () => {
-      const img = mountWithTheme(<Image src="img.png" caption="A caption" />);
+      const img = mountWithTheme(
+        <ImageWithCaption src="img.png" caption="A caption" />
+      );
       expect(img.find(Caption).text()).toBe('A caption');
     });
   });
