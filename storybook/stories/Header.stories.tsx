@@ -15,10 +15,6 @@ import {
 } from '../../src';
 import cities from '../helpers/cities';
 
-const mockClick = () => {
-  console.log('dog');
-};
-
 storiesOf('Header', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
@@ -44,7 +40,11 @@ storiesOf('Header', module)
             >
               <Menu depth={2} isSelect width={150}>
                 {cities.map((city, index) => (
-                  <Option key={index} value={city} onClick={mockClick}>
+                  <Option
+                    key={index}
+                    value={city}
+                    onClick={action('I was clicked')}
+                  >
                     {city}
                   </Option>
                 ))}
@@ -74,7 +74,7 @@ storiesOf('Header', module)
             >
               <Menu width={200} depth={2}>
                 {cities.slice(0, 4).map((city, index) => (
-                  <Option key={index} value={city} onClick={mockClick}>
+                  <Option key={index} value={city} onClick={action(city)}>
                     {city}
                   </Option>
                 ))}

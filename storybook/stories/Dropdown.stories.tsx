@@ -27,25 +27,12 @@ storiesOf('Dropdown', module)
       <br />
 
       <Dropdown
-        flyoutContainer={false}
-        offsetTop={0}
-        renderLabel={isOpen => (
-          <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
-        )}
-      >
-        <p>I am the contents of a dropdown without a flyout container</p>
-      </Dropdown>
-
-      <br />
-      <br />
-
-      <Dropdown
-        offsetTop={150}
+        offsetTop={55}
         flyoutContainer={false}
         renderLabel={isOpen => (
           <>
             <span style={{ marginRight: '5px', color: 'inherit' }}>
-              My Account
+              My Account (with offset Menu)
             </span>
             <Icon
               colour={'black'}
@@ -63,7 +50,18 @@ storiesOf('Dropdown', module)
           ))}
         </Menu>
       </Dropdown>
+
       <br />
       <br />
+
+      <Dropdown
+        flyoutContainer={false}
+        offsetTop={0}
+        renderLabel={isOpen => (
+          <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
+        )}
+      >
+        <p>I am the contents of a dropdown without a flyout container</p>
+      </Dropdown>
     </>
   ));
