@@ -10,7 +10,7 @@ interface ImageProps {
 
 const Wrapper = styled.div`
   text-align: center;
-`
+`;
 
 const Image = styled.img`
   ${({ theme }) => css`
@@ -27,4 +27,3 @@ const ImageWithCaption: React.SFC<ImageProps> = ({ alt, src, caption }) => (
 );
 
 export default ImageWithCaption;
-

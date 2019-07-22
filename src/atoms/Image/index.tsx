@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
 
 export default styled.img`
@@ -7,4 +6,3 @@ export default styled.img`
     width: 100%;
   `}
 `;
-
