@@ -6,7 +6,7 @@ exports[`Select <Menu /> it renders correctly 1`] = `
   margin-top: 0px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  width: px;
+  width: 200px;
   padding-left: 0px;
   background-color: #FFFFFF;
   max-height: 300px;
@@ -159,6 +159,8 @@ exports[`Select <Menu /> it renders correctly 1`] = `
 >
   <styled.ul
     depth={2}
+    isSelect={false}
+    width={200}
   >
     <StyledComponent
       depth={2}
@@ -189,9 +191,12 @@ exports[`Select <Menu /> it renders correctly 1`] = `
         }
       }
       forwardedRef={null}
+      isSelect={false}
+      width={200}
     >
       <ul
         className="c0"
+        width={200}
       >
         I am a child component
       </ul>
