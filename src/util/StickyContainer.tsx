@@ -15,6 +15,7 @@ interface StickyContainerProps {
   onMouseUp?: (ev: React.MouseEvent<HTMLDivElement>) => void;
   stickToEl: Element | Text | null;
   stickTo?: StickTo;
+  offsetTop?: number;
   positionFixed?: boolean;
   styleOptions?: [string];
 }
@@ -86,12 +87,15 @@ const getPositionData = (
   };
 };
 
-const getComponentStyle = (stickTo: DOMRect, componentHeight: number) => {
+const getComponentStyle = (
+  stickTo: DOMRect,
+  componentHeight: number,
+  offsetTop: number
+) => {
   const { innerHeight: winHeight, scrollY: winScrollY } = window;
 
   const { width, left, top, height } = stickTo;
   const style: ComponentStyle = { left, width, top };
-
   const toTheTop = top - winScrollY;
   const toTheBottom = winScrollY + winHeight - (top + height);
 
@@ -101,6 +105,10 @@ const getComponentStyle = (stickTo: DOMRect, componentHeight: number) => {
     } else {
       style.maxHeight = toTheBottom;
     }
+  }
+
+  if (offsetTop) {
+    style.top = top + offsetTop;
   }
 
   return style;
@@ -152,7 +160,12 @@ export default class StickyContainer extends React.Component<
     if (this.state.el instanceof Element) {
       const { componentStyle } = this.state;
       const { height } = this.state.el.getBoundingClientRect();
-      const { positionFixed, stickToEl, stickTo = 'top' } = this.props;
+      const {
+        positionFixed,
+        offsetTop = 0,
+        stickToEl,
+        stickTo = 'top'
+      } = this.props;
 
       if (stickToEl instanceof Element) {
         if (height !== prevState.componentHeight) {
@@ -168,7 +181,11 @@ export default class StickyContainer extends React.Component<
             componentStyle:
               height === 0
                 ? INITIAL_COMPONENT_STYLE
-                : getComponentStyle(recalcPositionData.stickTo, height)
+                : getComponentStyle(
+                    recalcPositionData.stickTo,
+                    height,
+                    offsetTop
+                  )
           });
         } else {
           const elementPos = stickToEl.getBoundingClientRect()[stickTo];
