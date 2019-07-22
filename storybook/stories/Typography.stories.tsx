@@ -14,6 +14,7 @@ import {
   Body,
   Body2,
   Overline,
+  Anchor,
   Caption
 } from '../../src';
 
@@ -59,6 +60,9 @@ storiesOf('Typography', module)
       ))}
       <Boundary>
         <Overline>Overline Tag</Overline>
+      </Boundary>
+      <Boundary>
+        <Anchor>Anchor Tag</Anchor>
       </Boundary>
       <Boundary>
         <Caption>Caption Tag</Caption>

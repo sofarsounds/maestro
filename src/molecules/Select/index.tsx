@@ -53,7 +53,9 @@ const Select: React.SFC<SelectProps> = ({
             positionFixed={positionFixed}
             stickToEl={ref.current}
           >
-            <Menu depth={3}>{children({ optionClick })}</Menu>
+            <Menu isSelect depth={3}>
+              {children({ optionClick })}
+            </Menu>
           </StickyContainer>
         </PortalComponent>
       )}
@@ -62,5 +64,6 @@ const Select: React.SFC<SelectProps> = ({
 };
 
 export { default as Option } from './Option';
+export { default as Menu } from './Menu';
 
 export default Select;

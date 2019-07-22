@@ -8,7 +8,6 @@ describe('Dropdown <Trigger />', () => {
     const trigger = mountWithTheme(<Trigger />);
 
     checkStyleRules(trigger, {
-      'font-size': '16px',
       border: 'none',
       'box-shadow': 'none',
       outline: 'none',
