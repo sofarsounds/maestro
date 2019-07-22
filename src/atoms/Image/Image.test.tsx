@@ -4,7 +4,7 @@ import { mountWithTheme } from '../../test';
 import Image from './index';
 
 describe('<Image />', () => {
-  describe('Default' , () => {
+  describe('Default', () => {
     it('has the correct style attributes', () => {
       const img = mountWithTheme(<Image src="img.png" />);
       expect(img).toHaveStyleRule('border-radius', '2px');
@@ -12,7 +12,7 @@ describe('<Image />', () => {
     });
   });
 
-  describe('With Caption' , () => {
+  describe('With Caption', () => {
     it('has the correct style attributes', () => {
       const img = mountWithTheme(<Image src="img.png" caption="A caption" />);
       expect(img).toHaveStyleRule('border-radius', '2px');
@@ -21,8 +21,7 @@ describe('<Image />', () => {
 
     it('displays the caption', () => {
       const img = mountWithTheme(<Image src="img.png" caption="A caption" />);
-      expect(img.find('div').text()).toBe("A caption")
+      expect(img.find('div').text()).toBe('A caption');
     });
   });
-
 });

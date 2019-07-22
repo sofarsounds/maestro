@@ -24,11 +24,7 @@ const Caption = styled.div`
   `}
 `;
 
-const ImageWithCaption: React.SFC<ImageProps> = ({
-  alt,
-  src,
-  caption
-}) => (
+const ImageWithCaption: React.SFC<ImageProps> = ({ alt, src, caption }) => (
   <>
     <Image alt={alt} src={src} />
     <Caption>{caption}</Caption>
