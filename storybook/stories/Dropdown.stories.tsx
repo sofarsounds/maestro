@@ -28,6 +28,7 @@ storiesOf('Dropdown', module)
 
       <Dropdown
         flyoutContainer={false}
+        offsetTop={0}
         renderLabel={isOpen => (
           <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
         )}

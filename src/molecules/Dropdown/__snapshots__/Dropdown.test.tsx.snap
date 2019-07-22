@@ -161,6 +161,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
   <Dropdown
     flyoutContainer={true}
     label="I am a dropdown"
+    offsetTop={0}
   >
     <styled.div
       onClick={[Function]}
