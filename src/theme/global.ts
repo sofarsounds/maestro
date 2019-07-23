@@ -31,6 +31,10 @@ export default createGlobalStyle`
       font-style: normal;
     }
 
+  button {
+    background: none;
+  }
+
     body,
     html,
     * {

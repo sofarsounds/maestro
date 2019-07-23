@@ -19,8 +19,8 @@ storiesOf('Header', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
     <BrowserRouter>
-      <div style={{ paddingTop: '100px' }}>
-        <Navbar data-qaid="navbar" fixed>
+      <div>
+        <Navbar data-qaid="navbar">
           <Navbar.ItemContainer>
             <Dropdown
               flyoutContainer={false}
@@ -72,7 +72,7 @@ storiesOf('Header', module)
                 </Navbar.Item>
               )}
             >
-              <Menu width={200} depth={2}>
+              <Menu depth={2}>
                 {cities.slice(0, 4).map((city, index) => (
                   <Option key={index} value={city} onClick={action(city)}>
                     {city}
