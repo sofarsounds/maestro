@@ -29,12 +29,16 @@ interface LogoWithSloganProps {
   href?: any;
 }
 
-const LogoWithSlogan: React.SFC<LogoWithSloganProps> = ({
-  href
-}) => (
+const LogoWithSlogan: React.SFC<LogoWithSloganProps> = ({ href }) => (
   <Col xs={12} xl={5}>
     <LogoSloganContainer>
-      { href ? <a href={href}><Logo width="133px" invert /></a> : <Logo width="133px" invert /> }
+      {href ? (
+        <a href={href}>
+          <Logo width="133px" invert />
+        </a>
+      ) : (
+        <Logo width="133px" invert />
+      )}
       <Slogan>Intimate gigs all around the world</Slogan>
     </LogoSloganContainer>
   </Col>
