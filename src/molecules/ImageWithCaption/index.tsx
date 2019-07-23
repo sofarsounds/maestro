@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Caption } from '../../atoms/Typography';
 import Image from '../../atoms/Image';
 
