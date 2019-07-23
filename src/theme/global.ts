@@ -33,6 +33,8 @@ export default createGlobalStyle`
 
   button {
     background: none;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
     body,
