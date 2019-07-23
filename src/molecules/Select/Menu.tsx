@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Menu = styled.ul<Props>`
-  ${({ theme, width = 200, isSelect = false }) => css`
+  ${({ theme, width, isSelect = false }) => css`
     ${withShadow}
     margin-top: 0px;
     border-bottom-left-radius: ${theme.borderRadius.large};
@@ -20,6 +20,16 @@ const Menu = styled.ul<Props>`
     background-color: ${theme.colours.whiteDenim};
     max-height: 300px;
     overflow-y: auto;
+
+    ${!width &&
+      css`
+        width: auto;
+      `}
+
+    ${width &&
+      css`
+        width: ${width}px;
+      `}
 
     ${!isSelect &&
       css`

@@ -47,7 +47,7 @@ storiesOf('Button', module)
       </Container>
     </>
   ))
-  .add('Inverted', () => (
+  .add('Inverted white', () => (
     <>
       <h1>Inverted Button</h1>
       <Inversion>
@@ -61,6 +61,22 @@ storiesOf('Button', module)
           {text('Label', 'Button')}
         </OutlineButton>
       </Inversion>
+    </>
+  ))
+  .add('Inverted black', () => (
+    <>
+      <h1>Inverted Button</h1>
+      <Container>
+        <OutlineButton
+          colour="black"
+          onClick={action('Inverted Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
+        >
+          {text('Label', 'Button')}
+        </OutlineButton>
+      </Container>
     </>
   ))
   .add('Link', () => (

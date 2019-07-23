@@ -11,6 +11,7 @@ exports[`Select <Menu /> it renders correctly 1`] = `
   background-color: #FFFFFF;
   max-height: 300px;
   overflow-y: auto;
+  width: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
