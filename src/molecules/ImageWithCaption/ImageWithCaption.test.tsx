@@ -11,7 +11,6 @@ describe('<ImageWithCaption />', () => {
       const img = mountWithTheme(
         <ImageWithCaption src="img.png" caption="A caption" />
       );
-      expect(img).toHaveStyleRule('text-align', 'center');
       expect(img.find(Image)).toHaveStyleRule('border-radius', '2px');
       expect(img.find(Image)).toHaveStyleRule('width', '100%');
     });
