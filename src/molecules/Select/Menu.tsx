@@ -5,7 +5,7 @@ import { withShadow } from '../../util';
 interface Props {
   children?: any;
   depth: any;
-  width?: any;
+  width?: number;
   isSelect?: boolean;
 }
 
