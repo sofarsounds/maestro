@@ -28,7 +28,7 @@ const Menu = styled.ul<Props>`
 
     ${width &&
       css`
-        width: ${width};
+        width: ${width}px;
       `}
 
     ${!isSelect &&
