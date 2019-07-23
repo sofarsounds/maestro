@@ -22,7 +22,7 @@ storiesOf('Footer', module)
             <Textfield placeholder="Type to find your city" />
           </Footer.CityInputWrapper>
           <Grid>
-            <Footer.LogoWithSlogan />
+            <Footer.LogoWithSlogan href="/" />
             <Footer.LinkSection>
               <Footer.SectionHeader>Learn More</Footer.SectionHeader>
               <Footer.SectionLink href="#">About</Footer.SectionLink>
