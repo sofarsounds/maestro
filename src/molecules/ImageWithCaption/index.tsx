@@ -9,15 +9,11 @@ interface ImageProps {
   caption?: string;
 }
 
-const Wrapper = styled.div`
-  text-align: center;
-`;
-
 const ImageWithCaption: React.SFC<ImageProps> = ({ alt, src, caption }) => (
-  <Wrapper>
+  <>
     <Image alt={alt} src={src} />
     <Caption>{caption}</Caption>
-  </Wrapper>
+  </>
 );
 
 export default ImageWithCaption;
