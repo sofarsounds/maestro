@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import {
   Dropdown,
   Select,
+  Responsive,
   Icon,
   Option,
   Navbar,
@@ -80,7 +81,9 @@ storiesOf('Header', module)
                 ))}
               </Menu>
             </Dropdown>
-            <Navbar.Item>English</Navbar.Item>
+            <Responsive hideUp={'sm'}>
+              <Navbar.Item>How it works</Navbar.Item>
+            </Responsive>
           </Navbar.ItemContainer>
         </Navbar>
         <h1>Navbar Component</h1>

@@ -6,7 +6,7 @@ export default styled.a`
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
     display: block;
-    padding: 15px 0px;
+    padding: 12px 0px;
     width: 100%;
     text-decoration: none;
     white-space: nowrap;
