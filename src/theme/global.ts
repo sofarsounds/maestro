@@ -22,20 +22,32 @@ export default createGlobalStyle`
     }
 
     @font-face {
-      font-family: 'Open Sans Regular';
-      src:
-        url(${OpenSansRegular}) format('truetype'),
-        url(${OpenSansSemiBold}) format('truetype'),
-        url(${OpenSansBold}) format('truetype'),
-        url(${OpenSansExtraBold}) format('truetype');
+      font-family: 'Open Sans';
+      src: url(${OpenSansRegular}) format('truetype');
       font-style: normal;
+      font-weight: 400;
     }
 
-  button {
-    background: none;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+    @font-face {
+      font-family: 'Open Sans';
+      src: url(${OpenSansSemiBold}) format('truetype');
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    @font-face {
+      font-family: 'Open Sans';
+      src: url(${OpenSansBold}) format('truetype');
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: 'Open Sans';
+      src: url(${OpenSansExtraBold}) format('truetype');
+      font-style: normal;
+      font-weight: 800;
+    }
 
     body,
     html,
@@ -63,5 +75,10 @@ export default createGlobalStyle`
       text-decoration: none;
     }
 
+    button {
+      background: none;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   `}
 `;

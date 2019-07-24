@@ -27,7 +27,7 @@ export const withTitleStyle = ({ spaceAfter }: any) => css`
 
 export const withH1Style = ({ spaceAfter }: any) => css`
   font-size: ${theme.fontSizes.h1.xs};
-  font-weight: normal;
+  font-weight: 600;
   letter-spacing: -1.5px;
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@ export const withH1Style = ({ spaceAfter }: any) => css`
 
 export const withH2Style = ({ spaceAfter }: any) => css`
   font-size: ${theme.fontSizes.h2.xs};
-  font-weight: normal;
+  font-weight: 600;
   letter-spacing: -0.5px;
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@ export const withH2Style = ({ spaceAfter }: any) => css`
 
 export const withH3Style = ({ spaceAfter }: any) => css`
   font-size: ${theme.fontSizes.h3.xs};
-  font-weight: normal;
+  font-weight: 600;
   letter-spacing: normal;
   margin: 0;
   padding: 0;
@@ -78,7 +78,7 @@ export const withH3Style = ({ spaceAfter }: any) => css`
 
 export const withH4Style = ({ spaceAfter }: any) => css`
   font-size: ${theme.fontSizes.h4.xs};
-  font-weight: normal;
+  font-weight: 600;
   letter-spacing: 0.3px;
   margin: 0;
   padding: 0;
@@ -95,7 +95,7 @@ export const withH4Style = ({ spaceAfter }: any) => css`
 
 export const withH5Style = ({ spaceAfter }: any) => css`
   font-size: ${theme.fontSizes.h5.xs};
-  font-weight: normal;
+  font-weight: 600;
   letter-spacing: normal;
   margin: 0;
   padding: 0;
@@ -112,7 +112,7 @@ export const withH5Style = ({ spaceAfter }: any) => css`
 
 export const withH6Style = ({ spaceAfter }: any) => css`
   font-size: ${theme.fontSizes.h6.xs};
-  font-weight: normal;
+  font-weight: 600;
   letter-spacing: 0.2px;
   margin: 0;
   padding: 0;
