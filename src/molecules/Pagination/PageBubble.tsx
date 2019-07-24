@@ -1,4 +1,5 @@
 import React from 'react';
+import styled, { css } from '../../lib/styledComponents';
 
 import Badge from '../../atoms/Badge';
 
@@ -9,6 +10,12 @@ interface BubbleProps {
   qaId?: string;
 }
 
+const BadgeWithSpacing = styled(Badge)`
+  ${({ theme }) => css`
+    margin: 0 ${theme.ruler[1]}px;
+  `}
+`;
+
 const PageBubble: React.SFC<BubbleProps> = ({
   isActive,
   page,
@@ -16,16 +23,16 @@ const PageBubble: React.SFC<BubbleProps> = ({
   qaId = ''
 }) =>
   isActive ? (
-    <Badge colour="primary">{page}</Badge>
+    <BadgeWithSpacing colour="primary">{page}</BadgeWithSpacing>
   ) : (
-    <Badge
+    <BadgeWithSpacing
       as="button"
       clickable
       onClick={onClick}
       data-qaid={`${qaId}-page-${page}`}
     >
       {page}
-    </Badge>
+    </BadgeWithSpacing>
   );
 
 export default PageBubble;

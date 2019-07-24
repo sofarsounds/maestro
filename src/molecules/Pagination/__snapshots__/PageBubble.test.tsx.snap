@@ -29,6 +29,7 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  margin: 0 4px;
 }
 
 .c0:hover {
@@ -182,7 +183,7 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
     onClick={[MockFunction]}
     page={2}
   >
-    <styled.div
+    <Styled(styled.div)
       as="button"
       clickable={true}
       data-qaid="-page-2"
@@ -197,7 +198,7 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
+              "componentId": "sc-bwzfXH",
               "isStatic": false,
               "lastClassName": "c0",
               "rules": Array [
@@ -206,12 +207,19 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
                 [Function],
                 "
 ",
+                "
+  ",
+                [Function],
+                "
+",
               ],
             },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
+            "displayName": "Styled(styled.div)",
+            "foldedComponentIds": Array [
+              "sc-bdVaJa",
+            ],
             "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
+            "styledComponentId": "sc-bwzfXH",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -229,7 +237,7 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
           2
         </button>
       </StyledComponent>
-    </styled.div>
+    </Styled(styled.div)>
   </PageBubble>
 </ThemeProvider>
 `;
@@ -265,6 +273,7 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
+  margin: 0 4px;
 }
 
 <ThemeProvider
@@ -414,7 +423,7 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
     onClick={[MockFunction]}
     page={5}
   >
-    <styled.div
+    <Styled(styled.div)
       colour="primary"
     >
       <StyledComponent
@@ -424,7 +433,7 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
+              "componentId": "sc-bwzfXH",
               "isStatic": false,
               "lastClassName": "c0",
               "rules": Array [
@@ -433,12 +442,19 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
                 [Function],
                 "
 ",
+                "
+  ",
+                [Function],
+                "
+",
               ],
             },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
+            "displayName": "Styled(styled.div)",
+            "foldedComponentIds": Array [
+              "sc-bdVaJa",
+            ],
             "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
+            "styledComponentId": "sc-bwzfXH",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -453,7 +469,7 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
           5
         </div>
       </StyledComponent>
-    </styled.div>
+    </Styled(styled.div)>
   </PageBubble>
 </ThemeProvider>
 `;
