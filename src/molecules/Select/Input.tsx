@@ -14,6 +14,7 @@ interface SelectInputProps {
 interface InputWrapper {
   children?: any;
   isOpen?: boolean;
+  hasError?: boolean;
 }
 
 interface Props {
@@ -23,6 +24,7 @@ interface Props {
   toggleSelect: () => void;
   innerRef?: React.RefObject<any>;
   value?: any;
+  hasError?: boolean;
 }
 
 interface ButtonProps {
@@ -93,10 +95,16 @@ const Input: React.SFC<Props> = ({
   toggleSelect,
   innerRef,
   value,
-  readonly
+  readonly,
+  hasError
 }) => {
   return (
-    <InputWrapper onClick={() => toggleSelect()} isOpen={isOpen} ref={innerRef}>
+    <InputWrapper
+      hasError={hasError}
+      onClick={toggleSelect}
+      isOpen={isOpen}
+      ref={innerRef}
+    >
       <InputStyle
         value={value}
         readOnly={readonly}

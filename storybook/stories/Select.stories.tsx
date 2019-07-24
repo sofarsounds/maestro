@@ -17,6 +17,7 @@ storiesOf('Select', module)
         readonly
         handleOptionClick={action('Callback')}
         placeholder="Select a city"
+        hasError={boolean('Has Error', false)}
       >
         {({ optionClick }: any) =>
           cities.map((city, index) => (

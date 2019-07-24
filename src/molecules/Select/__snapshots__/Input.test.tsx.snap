@@ -435,7 +435,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
   >
     <styled.div
       isOpen={false}
-      onClick={[Function]}
+      onClick={[MockFunction]}
     >
       <StyledComponent
         forwardedComponent={
@@ -466,11 +466,11 @@ exports[`Select <Input /> it renders correctly 1`] = `
         }
         forwardedRef={null}
         isOpen={false}
-        onClick={[Function]}
+        onClick={[MockFunction]}
       >
         <div
           className="c0"
-          onClick={[Function]}
+          onClick={[MockFunction]}
         >
           <styled.input
             isOpen={false}
