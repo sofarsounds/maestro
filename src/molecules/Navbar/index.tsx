@@ -44,7 +44,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   componentDidUpdate = (_: NavbarProps, prevState: NavbarState) => {
     if (prevState.isMobile && !this.state.isMobile) {
-      this.setState({ open: false });
+      this.onToggle();
     }
   };
 
