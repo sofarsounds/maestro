@@ -2,6 +2,7 @@ export { default as Logo } from './atoms/Logo';
 export * from './atoms/Button';
 export * from './atoms/Typography';
 export * from './atoms/Grid';
+export * from './atoms/Link';
 export { default as Image } from './atoms/Image';
 export { default as ImageWithCaption } from './molecules/ImageWithCaption';
 export { default as LoadingBlocks } from './atoms/LoadingBlocks';

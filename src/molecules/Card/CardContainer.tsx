@@ -4,10 +4,11 @@ import { Title, Preview, Footer } from './CardElements';
 
 interface CardContainerProps {
   inverted?: boolean;
+  clickable?: boolean;
 }
 
 export default styled.div<CardContainerProps>`
-  ${({ theme, inverted }) => css`
+  ${({ theme, inverted, clickable }) => css`
     display: flex;
     flex-direction: column;
 
@@ -20,6 +21,16 @@ export default styled.div<CardContainerProps>`
       ${Title}, ${Preview}, ${Footer} {
         color: ${theme.colours.whiteDenim};
       }
+    `}
+
+    ${clickable &&
+      css`
+        &:hover {
+          ${Title} {
+            text-decoration: underline;
+            color: ${theme.colours.primary};
+          }
+        }
       `}
   `}
 `;

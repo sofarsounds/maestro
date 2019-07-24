@@ -14,7 +14,6 @@ export default styled.div<ImageProps>`
     background-size: cover;
     background-position: center;
 
-
     ${theme.media.md`
       width: 45%;
       padding-top: 25%;

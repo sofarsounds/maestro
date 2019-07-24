@@ -4,7 +4,7 @@ import { mountWithTheme } from '../../test';
 import theme from '../../theme';
 import Badge from './index';
 
-describe('Badge', () => {
+describe('<Badge />', () => {
   const setup = (props: any) => mountWithTheme(<Badge {...props}>1</Badge>);
 
   describe('Default Badge', () => {

@@ -23,6 +23,10 @@ export const SectionLink = styled.a`
   text-decoration: none;
   padding: 4px 0;
   color: ${({ theme }) => theme.colours.whiteDenim};
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const LinkSection: React.SFC<any> = ({ children }) => (

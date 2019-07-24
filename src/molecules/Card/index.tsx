@@ -29,7 +29,7 @@ const Card: React.SFC<CardProps> = ({
 
   return (
     <Link to={linkTo}>
-      <Container inverted={inverted} data-qaid={qaId}>
+      <Container clickable inverted={inverted} data-qaid={qaId}>
         {children}
       </Container>
     </Link>
