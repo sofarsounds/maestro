@@ -1,6 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination <Compact /> it renders correctly when a middle page is active 1`] = `
+.c1 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .c3 {
   width: 36px;
   height: 36px;
@@ -31,6 +60,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
+  margin: 0 4px;
 }
 
 .c0 {
@@ -61,39 +91,11 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  margin: 0 4px;
 }
 
 .c0:hover {
   background-color: rgba(17,17,17,0.1);
-}
-
-.c1 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c2 {
@@ -441,7 +443,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       page={1}
       qaId=""
     >
-      <styled.div
+      <Styled(styled.div)
         as="button"
         clickable={true}
         data-qaid="-page-1"
@@ -456,7 +458,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-bwzfXH",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -465,12 +467,19 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                   [Function],
                   "
 ",
+                  "
+  ",
+                  [Function],
+                  "
+",
                 ],
               },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
+              "displayName": "Styled(styled.div)",
+              "foldedComponentIds": Array [
+                "sc-bdVaJa",
+              ],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-bwzfXH",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -488,7 +497,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
             1
           </button>
         </StyledComponent>
-      </styled.div>
+      </Styled(styled.div)>
     </PageBubble>
     <Ellipsis>
       <styled.div>
@@ -500,7 +509,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               "componentStyle": ComponentStyle {
                 "componentId": "sc-bdVaJa",
                 "isStatic": false,
-                "lastClassName": "c0",
+                "lastClassName": "c1",
                 "rules": Array [
                   "
   ",
@@ -537,7 +546,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
+                        "componentId": "sc-htpNat",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -753,7 +762,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                       "displayName": "styled.i",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
+                      "styledComponentId": "sc-htpNat",
                       "target": "i",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -786,7 +795,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         page={5}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-5"
@@ -801,7 +810,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c0",
                   "rules": Array [
@@ -810,12 +819,19 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -833,7 +849,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               5
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={true}
@@ -842,7 +858,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         page={6}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           colour="primary"
         >
           <StyledComponent
@@ -852,7 +868,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c0",
                   "rules": Array [
@@ -861,12 +877,19 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -881,7 +904,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               6
             </div>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -890,7 +913,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         page={7}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-7"
@@ -905,7 +928,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c0",
                   "rules": Array [
@@ -914,12 +937,19 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -937,7 +967,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               7
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
     </Pages>
     <Ellipsis>
@@ -950,7 +980,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               "componentStyle": ComponentStyle {
                 "componentId": "sc-bdVaJa",
                 "isStatic": false,
-                "lastClassName": "c0",
+                "lastClassName": "c1",
                 "rules": Array [
                   "
   ",
@@ -987,7 +1017,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
+                        "componentId": "sc-htpNat",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -1203,7 +1233,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                       "displayName": "styled.i",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
+                      "styledComponentId": "sc-htpNat",
                       "target": "i",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -1228,7 +1258,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       page={15}
       qaId=""
     >
-      <styled.div
+      <Styled(styled.div)
         as="button"
         clickable={true}
         data-qaid="-page-15"
@@ -1243,7 +1273,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-bwzfXH",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -1252,12 +1282,19 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                   [Function],
                   "
 ",
+                  "
+  ",
+                  [Function],
+                  "
+",
                 ],
               },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
+              "displayName": "Styled(styled.div)",
+              "foldedComponentIds": Array [
+                "sc-bdVaJa",
+              ],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-bwzfXH",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -1275,13 +1312,42 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
             15
           </button>
         </StyledComponent>
-      </styled.div>
+      </Styled(styled.div)>
     </PageBubble>
   </Compact>
 </ThemeProvider>
 `;
 
 exports[`Pagination <Compact /> it renders correctly when the first page is active 1`] = `
+.c2 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .c0 {
   width: 36px;
   height: 36px;
@@ -1312,6 +1378,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
+  margin: 0 4px;
 }
 
 .c1 {
@@ -1342,39 +1409,11 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  margin: 0 4px;
 }
 
 .c1:hover {
   background-color: rgba(17,17,17,0.1);
-}
-
-.c2 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c3 {
@@ -1729,7 +1768,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         page={1}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           colour="primary"
         >
           <StyledComponent
@@ -1739,7 +1778,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1748,12 +1787,19 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1768,7 +1814,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               1
             </div>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -1777,7 +1823,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         page={2}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-2"
@@ -1792,7 +1838,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1801,12 +1847,19 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1824,7 +1877,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               2
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -1833,7 +1886,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         page={3}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-3"
@@ -1848,7 +1901,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1857,12 +1910,19 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1880,7 +1940,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               3
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -1889,7 +1949,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         page={4}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-4"
@@ -1904,7 +1964,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1913,12 +1973,19 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1936,7 +2003,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               4
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -1945,7 +2012,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         page={5}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-5"
@@ -1960,7 +2027,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -1969,12 +2036,19 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1992,7 +2066,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               5
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
     </Pages>
     <Ellipsis>
@@ -2005,7 +2079,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               "componentStyle": ComponentStyle {
                 "componentId": "sc-bdVaJa",
                 "isStatic": false,
-                "lastClassName": "c1",
+                "lastClassName": "c2",
                 "rules": Array [
                   "
   ",
@@ -2042,7 +2116,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
+                        "componentId": "sc-htpNat",
                         "isStatic": false,
                         "lastClassName": "c3",
                         "rules": Array [
@@ -2258,7 +2332,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                       "displayName": "styled.i",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
+                      "styledComponentId": "sc-htpNat",
                       "target": "i",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -2283,7 +2357,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       page={15}
       qaId=""
     >
-      <styled.div
+      <Styled(styled.div)
         as="button"
         clickable={true}
         data-qaid="-page-15"
@@ -2298,7 +2372,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-bwzfXH",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -2307,12 +2381,19 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                   [Function],
                   "
 ",
+                  "
+  ",
+                  [Function],
+                  "
+",
                 ],
               },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
+              "displayName": "Styled(styled.div)",
+              "foldedComponentIds": Array [
+                "sc-bdVaJa",
+              ],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-bwzfXH",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2330,13 +2411,42 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
             15
           </button>
         </StyledComponent>
-      </styled.div>
+      </Styled(styled.div)>
     </PageBubble>
   </Compact>
 </ThemeProvider>
 `;
 
 exports[`Pagination <Compact /> it renders correctly when the last page is active 1`] = `
+.c1 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .c3 {
   width: 36px;
   height: 36px;
@@ -2367,6 +2477,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
+  margin: 0 4px;
 }
 
 .c0 {
@@ -2397,39 +2508,11 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  margin: 0 4px;
 }
 
 .c0:hover {
   background-color: rgba(17,17,17,0.1);
-}
-
-.c1 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c2 {
@@ -2777,7 +2860,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
       page={1}
       qaId=""
     >
-      <styled.div
+      <Styled(styled.div)
         as="button"
         clickable={true}
         data-qaid="-page-1"
@@ -2792,7 +2875,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "sc-bwzfXH",
                 "isStatic": false,
                 "lastClassName": "c3",
                 "rules": Array [
@@ -2801,12 +2884,19 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                   [Function],
                   "
 ",
+                  "
+  ",
+                  [Function],
+                  "
+",
                 ],
               },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
+              "displayName": "Styled(styled.div)",
+              "foldedComponentIds": Array [
+                "sc-bdVaJa",
+              ],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "sc-bwzfXH",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2824,7 +2914,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
             1
           </button>
         </StyledComponent>
-      </styled.div>
+      </Styled(styled.div)>
     </PageBubble>
     <Ellipsis>
       <styled.div>
@@ -2836,7 +2926,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               "componentStyle": ComponentStyle {
                 "componentId": "sc-bdVaJa",
                 "isStatic": false,
-                "lastClassName": "c3",
+                "lastClassName": "c1",
                 "rules": Array [
                   "
   ",
@@ -2873,7 +2963,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
+                        "componentId": "sc-htpNat",
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -3089,7 +3179,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                       "displayName": "styled.i",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
+                      "styledComponentId": "sc-htpNat",
                       "target": "i",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -3122,7 +3212,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         page={11}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-11"
@@ -3137,7 +3227,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -3146,12 +3236,19 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3169,7 +3266,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               11
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -3178,7 +3275,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         page={12}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-12"
@@ -3193,7 +3290,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -3202,12 +3299,19 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3225,7 +3329,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               12
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -3234,7 +3338,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         page={13}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-13"
@@ -3249,7 +3353,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -3258,12 +3362,19 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3281,7 +3392,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               13
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={false}
@@ -3290,7 +3401,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         page={14}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           as="button"
           clickable={true}
           data-qaid="-page-14"
@@ -3305,7 +3416,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -3314,12 +3425,19 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3337,7 +3455,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               14
             </button>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
       <PageBubble
         isActive={true}
@@ -3346,7 +3464,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         page={15}
         qaId=""
       >
-        <styled.div
+        <Styled(styled.div)
           colour="primary"
         >
           <StyledComponent
@@ -3356,7 +3474,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -3365,12 +3483,19 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                     [Function],
                     "
 ",
+                    "
+  ",
+                    [Function],
+                    "
+",
                   ],
                 },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -3385,7 +3510,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
               15
             </div>
           </StyledComponent>
-        </styled.div>
+        </Styled(styled.div)>
       </PageBubble>
     </Pages>
   </Compact>
