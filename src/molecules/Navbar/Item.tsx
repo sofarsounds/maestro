@@ -5,7 +5,8 @@ export default styled.a`
     color: ${theme.colours.whiteDenim};
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
-    padding: 15px 0px;
+    display: block;
+    padding: 12px 0px;
     width: 100%;
     text-decoration: none;
     white-space: nowrap;
