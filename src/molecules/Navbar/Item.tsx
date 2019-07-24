@@ -13,7 +13,7 @@ export default styled.a`
 
     ${theme.media.md`
       width: auto;
-      padding: 10px 6px;
+      padding: 10px ${theme.ruler[3]}px;
     `}
   `}
 `;

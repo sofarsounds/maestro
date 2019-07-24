@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge Default Badge renders the badge correctly 1`] = `
+exports[`<Badge /> Default Badge renders the badge correctly 1`] = `
 .c0 {
   width: 36px;
   height: 36px;
@@ -212,7 +212,7 @@ exports[`Badge Default Badge renders the badge correctly 1`] = `
 </ThemeProvider>
 `;
 
-exports[`Badge Primary Badge renders the badge correctly 1`] = `
+exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
 .c0 {
   width: 36px;
   height: 36px;

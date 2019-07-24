@@ -12,7 +12,7 @@ describe('Navbar <Item />', () => {
     expect(wrapper).toHaveStyleRule('padding', '12px 0px');
     expect(wrapper).toHaveStyleRule('white-space', 'nowrap');
 
-    expect(wrapper).toHaveStyleRule('padding', '10px 6px', {
+    expect(wrapper).toHaveStyleRule('padding', '10px 12px', {
       media: '(min-width:768px)'
     });
   });
