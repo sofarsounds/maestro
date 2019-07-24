@@ -121,7 +121,7 @@ export const Caption = styled.span<TypographyProps>`
 export const FormGroupLabel = styled.span<TypographyProps>`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.formGroupLabel};
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 0.1px;
     margin-bottom: ${theme.ruler[2]}px;
     display: block;

@@ -47,7 +47,7 @@ describe('Typography', () => {
   it('renders a H1 correctly', () => {
     const wrapper = setup(H1);
 
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
     expect(wrapper).toHaveStyleRule('letter-spacing', '-1.5px');
 
     checkResponsiveFontSize(wrapper, theme.fontSizes.h1);
@@ -56,7 +56,7 @@ describe('Typography', () => {
   it('renders a H2 correctly', () => {
     const wrapper = setup(H2);
 
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
     expect(wrapper).toHaveStyleRule('letter-spacing', '-0.5px');
 
     checkResponsiveFontSize(wrapper, theme.fontSizes.h2);
@@ -65,7 +65,7 @@ describe('Typography', () => {
   it('renders a H3 correctly', () => {
     const wrapper = setup(H3);
 
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
     expect(wrapper).toHaveStyleRule('letter-spacing', 'normal');
 
     checkResponsiveFontSize(wrapper, theme.fontSizes.h3);
@@ -74,7 +74,7 @@ describe('Typography', () => {
   it('renders a H4 correctly', () => {
     const wrapper = setup(H4);
 
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.3px');
 
     checkResponsiveFontSize(wrapper, theme.fontSizes.h4);
@@ -83,7 +83,7 @@ describe('Typography', () => {
   it('renders a H5 correctly', () => {
     const wrapper = setup(H5);
 
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
     expect(wrapper).toHaveStyleRule('letter-spacing', 'normal');
 
     checkResponsiveFontSize(wrapper, theme.fontSizes.h5);
@@ -92,7 +92,7 @@ describe('Typography', () => {
   it('renders a H6 correctly', () => {
     const wrapper = setup(H6);
 
-    expect(wrapper).toHaveStyleRule('font-weight', 'normal');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.2px');
 
     checkResponsiveFontSize(wrapper, theme.fontSizes.h6);
@@ -150,7 +150,7 @@ describe('Typography', () => {
       'font-size',
       theme.fontSizes.formGroupLabel
     );
-    expect(wrapper).toHaveStyleRule('font-weight', 'bold');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.1px');
     expect(wrapper).toHaveStyleRule('margin-bottom', '8px');
   });
