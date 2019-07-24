@@ -10,6 +10,7 @@ interface SelectProps {
   handleOptionClick?: (value: any) => void;
   readonly?: boolean;
   positionFixed?: boolean;
+  hasError?: boolean;
 }
 
 const Select: React.SFC<SelectProps> = ({
@@ -17,7 +18,8 @@ const Select: React.SFC<SelectProps> = ({
   children,
   readonly,
   handleOptionClick,
-  positionFixed
+  positionFixed,
+  hasError
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
@@ -46,6 +48,7 @@ const Select: React.SFC<SelectProps> = ({
         value={value}
         placeholder={placeholder}
         toggleSelect={() => setIsOpen(!isOpen)}
+        hasError={hasError}
       />
       {isOpen && (
         <PortalComponent dom={document.body}>
