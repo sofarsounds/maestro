@@ -25,17 +25,21 @@ interface NavbarState {
   isMobile: boolean;
 }
 
+const hasWindow = typeof window !== 'undefined';
+
 class Navbar extends React.Component<NavbarProps, NavbarState> {
   public static ItemContainer: any;
   public static Item: any;
 
   public readonly state: NavbarState = {
     open: false,
-    isMobile: window.innerWidth < breakPoints.md
+    isMobile: hasWindow ? window.innerWidth < breakPoints.md : true
   };
 
   componentDidMount = () => {
-    window.addEventListener('resize', this.resize);
+    if (hasWindow) {
+      window.addEventListener('resize', this.resize);
+    }
   };
 
   componentDidUpdate = (_: NavbarProps, prevState: NavbarState) => {
@@ -45,7 +49,9 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
   };
 
   componentWillUnmount = () => {
-    window.removeEventListener('resize', this.resize);
+    if (hasWindow) {
+      window.removeEventListener('resize', this.resize);
+    }
   };
 
   private resize = () => {
