@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { breakPoints } from '../../theme';
 import Logo from '../../atoms/Logo';
 import Container from '../../atoms/Container';
 
@@ -21,6 +22,7 @@ interface NavbarProps {
 
 interface NavbarState {
   open: boolean;
+  isMobile: boolean;
 }
 
 class Navbar extends React.Component<NavbarProps, NavbarState> {
@@ -28,7 +30,27 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
   public static Item: any;
 
   public readonly state: NavbarState = {
-    open: false
+    open: false,
+    isMobile: window.innerWidth < breakPoints.md
+  };
+
+  componentDidMount = () => {
+    window.addEventListener('resize', this.resize);
+  };
+
+  componentDidUpdate = (_: NavbarProps, prevState: NavbarState) => {
+    if (prevState.isMobile && !this.state.isMobile) {
+      this.setState({ open: false });
+    }
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.resize);
+  };
+
+  private resize = () => {
+    const size = window.innerWidth;
+    this.setState({ isMobile: size < breakPoints.md });
   };
 
   public onToggle = () => {
