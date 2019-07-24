@@ -9,7 +9,7 @@ describe('Navbar <Item />', () => {
 
     expect(wrapper).toHaveStyleRule('color', '#FFFFFF');
     expect(wrapper).toHaveStyleRule('font-size', '14px');
-    expect(wrapper).toHaveStyleRule('padding', '15px 0px');
+    expect(wrapper).toHaveStyleRule('padding', '12px 0px');
     expect(wrapper).toHaveStyleRule('white-space', 'nowrap');
 
     expect(wrapper).toHaveStyleRule('padding', '10px 6px', {
