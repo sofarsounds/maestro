@@ -179,6 +179,14 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c2.icon-chevronRight:before {
+  content: '\\e92c';
+}
+
+.c2.icon-chevronUp:before {
+  content: '\\e92a';
+}
+
+.c2.icon-chevronDown:before {
   content: '\\e920';
 }
 
@@ -288,6 +296,14 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 
 .c2.icon-musicLove:before {
   content: '\\e90a';
+}
+
+.c2.icon-plus:before {
+  content: '\\e924';
+}
+
+.c2.icon-padlock:before {
+  content: '\\e925';
 }
 
 <ThemeProvider
@@ -642,6 +658,14 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       }
     
       &.icon-chevronRight:before {
+        content: '\\\\e92c';
+      }
+    
+      &.icon-chevronUp:before {
+        content: '\\\\e92a';
+      }
+    
+      &.icon-chevronDown:before {
         content: '\\\\e920';
       }
     
@@ -751,6 +775,14 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
     
       &.icon-musicLove:before {
         content: '\\\\e90a';
+      }
+    
+      &.icon-plus:before {
+        content: '\\\\e924';
+      }
+    
+      &.icon-padlock:before {
+        content: '\\\\e925';
       }
     ",
                           "
@@ -1113,6 +1145,14 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       }
     
       &.icon-chevronRight:before {
+        content: '\\\\e92c';
+      }
+    
+      &.icon-chevronUp:before {
+        content: '\\\\e92a';
+      }
+    
+      &.icon-chevronDown:before {
         content: '\\\\e920';
       }
     
@@ -1222,6 +1262,14 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
     
       &.icon-musicLove:before {
         content: '\\\\e90a';
+      }
+    
+      &.icon-plus:before {
+        content: '\\\\e924';
+      }
+    
+      &.icon-padlock:before {
+        content: '\\\\e925';
       }
     ",
                           "
@@ -1497,6 +1545,14 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c3.icon-chevronRight:before {
+  content: '\\e92c';
+}
+
+.c3.icon-chevronUp:before {
+  content: '\\e92a';
+}
+
+.c3.icon-chevronDown:before {
   content: '\\e920';
 }
 
@@ -1606,6 +1662,14 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c3.icon-musicLove:before {
   content: '\\e90a';
+}
+
+.c3.icon-plus:before {
+  content: '\\e924';
+}
+
+.c3.icon-padlock:before {
+  content: '\\e925';
 }
 
 <ThemeProvider
@@ -2212,6 +2276,14 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       }
     
       &.icon-chevronRight:before {
+        content: '\\\\e92c';
+      }
+    
+      &.icon-chevronUp:before {
+        content: '\\\\e92a';
+      }
+    
+      &.icon-chevronDown:before {
         content: '\\\\e920';
       }
     
@@ -2321,6 +2393,14 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
     
       &.icon-musicLove:before {
         content: '\\\\e90a';
+      }
+    
+      &.icon-plus:before {
+        content: '\\\\e924';
+      }
+    
+      &.icon-padlock:before {
+        content: '\\\\e925';
       }
     ",
                           "
@@ -2596,6 +2676,14 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c2.icon-chevronRight:before {
+  content: '\\e92c';
+}
+
+.c2.icon-chevronUp:before {
+  content: '\\e92a';
+}
+
+.c2.icon-chevronDown:before {
   content: '\\e920';
 }
 
@@ -2705,6 +2793,14 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c2.icon-musicLove:before {
   content: '\\e90a';
+}
+
+.c2.icon-plus:before {
+  content: '\\e924';
+}
+
+.c2.icon-padlock:before {
+  content: '\\e925';
 }
 
 <ThemeProvider
@@ -3059,6 +3155,14 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
       }
     
       &.icon-chevronRight:before {
+        content: '\\\\e92c';
+      }
+    
+      &.icon-chevronUp:before {
+        content: '\\\\e92a';
+      }
+    
+      &.icon-chevronDown:before {
         content: '\\\\e920';
       }
     
@@ -3168,6 +3272,14 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
     
       &.icon-musicLove:before {
         content: '\\\\e90a';
+      }
+    
+      &.icon-plus:before {
+        content: '\\\\e924';
+      }
+    
+      &.icon-padlock:before {
+        content: '\\\\e925';
       }
     ",
                           "
