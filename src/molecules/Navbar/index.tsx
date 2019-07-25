@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { breakPoints } from '../../theme';
 import Logo from '../../atoms/Logo';
@@ -82,11 +81,11 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
     return (
       <NavbarContainer fixed={fixed} data-qaid={qaId}>
         <Container alignItems="center" justifyContent="space-between">
-          <Link to={logoLinkTo || '/'}>
+          <a href={logoLinkTo || '/'}>
             <Brand>
               <Logo invert />
             </Brand>
-          </Link>
+          </a>
           <Hamburger onClick={this.onToggle} open={open} />
           <CollapsibleWrapper open={open}>{children}</CollapsibleWrapper>
         </Container>
