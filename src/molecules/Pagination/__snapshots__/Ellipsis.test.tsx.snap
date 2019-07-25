@@ -82,6 +82,14 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
 }
 
 .c1.icon-chevronRight:before {
+  content: '\\e92c';
+}
+
+.c1.icon-chevronUp:before {
+  content: '\\e92a';
+}
+
+.c1.icon-chevronDown:before {
   content: '\\e920';
 }
 
@@ -191,6 +199,14 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
 
 .c1.icon-musicLove:before {
   content: '\\e90a';
+}
+
+.c1.icon-plus:before {
+  content: '\\e924';
+}
+
+.c1.icon-padlock:before {
+  content: '\\e925';
 }
 
 .c0 {
@@ -507,6 +523,14 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
       }
     
       &.icon-chevronRight:before {
+        content: '\\\\e92c';
+      }
+    
+      &.icon-chevronUp:before {
+        content: '\\\\e92a';
+      }
+    
+      &.icon-chevronDown:before {
         content: '\\\\e920';
       }
     
@@ -616,6 +640,14 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
     
       &.icon-musicLove:before {
         content: '\\\\e90a';
+      }
+    
+      &.icon-plus:before {
+        content: '\\\\e924';
+      }
+    
+      &.icon-padlock:before {
+        content: '\\\\e925';
       }
     ",
                         "

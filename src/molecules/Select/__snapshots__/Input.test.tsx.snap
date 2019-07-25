@@ -82,6 +82,14 @@ exports[`Select <Input /> it renders correctly 1`] = `
 }
 
 .c3.icon-chevronRight:before {
+  content: '\\e92c';
+}
+
+.c3.icon-chevronUp:before {
+  content: '\\e92a';
+}
+
+.c3.icon-chevronDown:before {
   content: '\\e920';
 }
 
@@ -191,6 +199,14 @@ exports[`Select <Input /> it renders correctly 1`] = `
 
 .c3.icon-musicLove:before {
   content: '\\e90a';
+}
+
+.c3.icon-plus:before {
+  content: '\\e924';
+}
+
+.c3.icon-padlock:before {
+  content: '\\e925';
 }
 
 .c2 {
@@ -662,6 +678,14 @@ exports[`Select <Input /> it renders correctly 1`] = `
       }
     
       &.icon-chevronRight:before {
+        content: '\\\\e92c';
+      }
+    
+      &.icon-chevronUp:before {
+        content: '\\\\e92a';
+      }
+    
+      &.icon-chevronDown:before {
         content: '\\\\e920';
       }
     
@@ -771,6 +795,14 @@ exports[`Select <Input /> it renders correctly 1`] = `
     
       &.icon-musicLove:before {
         content: '\\\\e90a';
+      }
+    
+      &.icon-plus:before {
+        content: '\\\\e924';
+      }
+    
+      &.icon-padlock:before {
+        content: '\\\\e925';
       }
     ",
                               "

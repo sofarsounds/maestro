@@ -18,7 +18,9 @@ enum Registry {
   caretRight = 'e923',
   caretCircleDown = 'e908',
   chevronLeft = 'e917',
-  chevronRight = 'e920',
+  chevronRight = 'e92c',
+  chevronUp = 'e92a',
+  chevronDown = 'e920',
   moveVertical = 'e919',
 
   // status
@@ -51,7 +53,9 @@ enum Registry {
   homeWorld = 'e910',
   travelWorld = 'e915',
   musicTicket = 'e913',
-  musicLove = 'e90a'
+  musicLove = 'e90a',
+  plus = 'e924',
+  padlock = 'e925'
 }
 
 export default Registry;
