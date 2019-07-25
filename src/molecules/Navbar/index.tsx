@@ -44,7 +44,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   componentDidUpdate = (_: NavbarProps, prevState: NavbarState) => {
     if (prevState.isMobile && !this.state.isMobile) {
-      this.onToggle();
+      this.onToggle(false);
     }
   };
 
@@ -59,10 +59,15 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
     this.setState({ isMobile: size < breakPoints.md });
   };
 
-  public onToggle = () => {
-    const { open } = this.state;
-    this.setState({ open: !open });
+  public onToggle = (isMobile?: boolean) => {
+    if (!isMobile) {
+      this.setState({ open: false });
+      return;
+    }
 
+    this.setState(prevState => ({ open: !prevState.open }));
+
+    const { open } = this.state;
     if (!open) {
       document.body.style.overflow = 'hidden';
     } else {
