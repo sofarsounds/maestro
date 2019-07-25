@@ -61,6 +61,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
   public onToggle = (isMobile?: boolean) => {
     if (!isMobile) {
       this.setState({ open: false });
+      document.body.style.overflow = 'auto';
       return;
     }
 
