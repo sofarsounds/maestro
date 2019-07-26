@@ -6,6 +6,7 @@ interface Props {
   cable?: boolean;
   invert?: boolean;
   width?: string;
+  className?: string;
   'data-qaid'?: string;
 }
 
@@ -35,10 +36,12 @@ const Logo: React.SFC<Props> = ({
   cable = false,
   invert = false,
   width,
+  className,
   'data-qaid': qaId
 }) => (
   <LogoImg
     data-qaid={qaId}
+    className={className}
     alt="Sofar Logo"
     src={require(`../../assets/${generateFileName(circle, cable, invert)}`)}
     width={width}

@@ -1,8 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export default styled.hr`
-  border: none;
-  border-top: 1px solid ${({ theme }) => theme.colours.macyGrey};
-  width: 100%;
-  margin: ${({ theme }) => theme.ruler[11]}px 0;
+interface DividerProps {
+  space?: number;
+}
+
+export default styled.hr<DividerProps>`
+  ${({ theme, space }) => css`
+    border: none;
+    border-top: 1px solid ${theme.colours.macyGrey};
+    width: 100%;
+    margin: ${theme.ruler[space || 11]}px 0;
+  `}
 `;

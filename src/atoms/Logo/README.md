@@ -19,6 +19,7 @@ Table below contains all types of props available in the Logo component
 | cable         | `Boolean` | `false`         | Use `Cable` version
 | invert        | `Boolean` | `false`         | Invert the Logo colour
 | width         | `string ` | `false`         | Optional width for the logo
+| className     | `string ` |                 | Optional className to add additional styling
 | data-qaid     | `string`  |                 | Optional prop for testing purposes
 
 
