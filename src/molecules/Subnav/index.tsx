@@ -27,7 +27,7 @@ const Link = styled(RouterLink)<LinkProps>`
     display: inline-block;
     margin-right: ${theme.ruler[10]}px;
     padding-bottom: 24px;
-    color: ${theme.colours.blueSmoke};
+    color: ${theme.colors.blueSmoke};
     position: relative;
 
     &:last-child {
@@ -35,12 +35,12 @@ const Link = styled(RouterLink)<LinkProps>`
     }
 
     &:hover {
-      color: ${theme.colours.primary};
+      color: ${theme.colors.primary};
     }
 
     ${active &&
       css`
-        color: ${theme.colours.backToBlack};
+        color: ${theme.colors.backToBlack};
 
         &:before {
           content: '';
@@ -49,7 +49,7 @@ const Link = styled(RouterLink)<LinkProps>`
           height: 3px;
           bottom: 15px;
           left: calc(50% - 13px);
-          border-bottom: 2px solid ${theme.colours.primary};
+          border-bottom: 2px solid ${theme.colors.primary};
         }
       `}
   `}

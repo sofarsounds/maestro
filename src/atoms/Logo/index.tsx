@@ -26,9 +26,9 @@ const generateFileName = (circle: boolean, cable: boolean, invert: boolean) => {
     kind = 'cable';
   }
 
-  const colour = invert ? 'white' : 'black';
+  const color = invert ? 'white' : 'black';
 
-  return `sofar-${kind}-${colour}.svg`;
+  return `sofar-${kind}-${color}.svg`;
 };
 
 const Logo: React.SFC<Props> = ({

@@ -16,7 +16,7 @@ exports[`Navbar <Brand /> renders correctly 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",

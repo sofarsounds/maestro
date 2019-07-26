@@ -13,7 +13,7 @@ export default styled.div<FlyoutProps>`
   ${({ theme, size = 'regular', flyoutContainer = true }) => css`
     ${flyoutContainer &&
       css`
-        background-color: ${theme.colours.whiteDenim};
+        background-color: ${theme.colors.whiteDenim};
         ${withShadow({ depth: 4 })};
         max-height: 300px;
         margin-top: ${theme.ruler[1]}px;

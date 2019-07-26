@@ -34,24 +34,21 @@ describe('<Badge />', () => {
 
   describe('Primary Badge', () => {
     it('renders the badge correctly', () => {
-      const wrapper = setup({ colour: 'primary' });
+      const wrapper = setup({ color: 'primary' });
 
-      expect(wrapper).toHaveStyleRule(
-        'background-color',
-        theme.colours.primary
-      );
-      expect(wrapper).toHaveStyleRule('color', theme.colours.whiteDenim);
+      expect(wrapper).toHaveStyleRule('background-color', theme.colors.primary);
+      expect(wrapper).toHaveStyleRule('color', theme.colors.whiteDenim);
       expect(wrapper).toHaveStyleRule('font-weight', '600');
 
       expect(wrapper).toMatchSnapshot();
     });
 
     it('is clickable', () => {
-      const wrapper = setup({ colour: 'primary', clickable: true });
+      const wrapper = setup({ color: 'primary', clickable: true });
 
       expect(wrapper).toHaveStyleRule(
         'background-color',
-        theme.colours.green800,
+        theme.colors.green800,
         {
           modifier: ':hover'
         }

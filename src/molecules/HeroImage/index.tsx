@@ -59,11 +59,11 @@ const HeroImage: React.SFC<Props> = ({
   >
     <LightBox>
       <div style={{ textAlign: 'center' }}>
-        <Title colour="#fff" align="center" spaceAfter={5}>
+        <Title color="#fff" align="center" spaceAfter={5}>
           {title}
         </Title>
         {subtitle && (
-          <H4 colour="#fff" align="center">
+          <H4 color="#fff" align="center">
             {subtitle}
           </H4>
         )}

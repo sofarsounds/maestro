@@ -25,7 +25,7 @@ describe('<Subnav />', () => {
       expect(link).toHaveStyleRule('display', 'inline-block');
       expect(link).toHaveStyleRule('margin-right', '40px');
       expect(link).toHaveStyleRule('padding-bottom', '24px');
-      expect(link).toHaveStyleRule('color', theme.colours.blueSmoke);
+      expect(link).toHaveStyleRule('color', theme.colors.blueSmoke);
       expect(link).toHaveStyleRule('position', 'relative');
     });
 
@@ -36,7 +36,7 @@ describe('<Subnav />', () => {
         </Subnav.Link>
       );
 
-      expect(link).toHaveStyleRule('color', theme.colours.primary, {
+      expect(link).toHaveStyleRule('color', theme.colors.primary, {
         modifier: ':hover'
       });
     });
@@ -48,10 +48,10 @@ describe('<Subnav />', () => {
         </Subnav.Link>
       );
 
-      expect(link).toHaveStyleRule('color', theme.colours.backToBlack);
+      expect(link).toHaveStyleRule('color', theme.colors.backToBlack);
       expect(link).toHaveStyleRule(
         'border-bottom',
-        `2px solid ${theme.colours.primary}`,
+        `2px solid ${theme.colors.primary}`,
         {
           modifier: ':before'
         }

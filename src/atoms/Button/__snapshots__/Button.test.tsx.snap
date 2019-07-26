@@ -83,7 +83,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -218,7 +218,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
 >
   <Styled(Styled(Styled(styled.button)))
     block={false}
-    colour="primary"
+    color="primary"
     disabled={false}
     loading={false}
     onClick={[Function]}
@@ -226,7 +226,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -280,6 +280,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={false}
         loading={false}
         onClick={[Function]}
@@ -374,7 +375,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -509,7 +510,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
 >
   <Styled(Styled(Styled(styled.button)))
     block={false}
-    colour="primary"
+    color="primary"
     disabled={true}
     loading={false}
     onClick={[Function]}
@@ -517,7 +518,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={true}
       forwardedComponent={
         Object {
@@ -571,6 +572,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={true}
         loading={false}
         onClick={[Function]}
@@ -696,7 +698,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -831,7 +833,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 >
   <Styled(Styled(Styled(styled.button)))
     block={false}
-    colour="primary"
+    color="primary"
     disabled={false}
     loading={true}
     onClick={[Function]}
@@ -839,7 +841,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -893,6 +895,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={false}
         loading={true}
         onClick={[Function]}
@@ -969,7 +972,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -1104,7 +1107,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
 >
   <Styled(Styled(styled.button))
     block={false}
-    colour="primary"
+    color="primary"
     disabled={false}
     loading={false}
     onClick={[Function]}
@@ -1112,7 +1115,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -1160,6 +1163,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={false}
         loading={false}
         onClick={[Function]}
@@ -1236,7 +1240,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -1371,7 +1375,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
 >
   <Styled(Styled(styled.button))
     block={false}
-    colour="primary"
+    color="primary"
     disabled={true}
     loading={false}
     onClick={[Function]}
@@ -1379,7 +1383,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={true}
       forwardedComponent={
         Object {
@@ -1427,6 +1431,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={true}
         loading={false}
         onClick={[Function]}
@@ -1545,7 +1550,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -1680,7 +1685,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
 >
   <Styled(Styled(styled.button))
     block={false}
-    colour="black"
+    color="black"
     disabled={false}
     loading={true}
     onClick={[Function]}
@@ -1688,7 +1693,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="black"
+      color="black"
       disabled={false}
       forwardedComponent={
         Object {
@@ -1736,6 +1741,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
     >
       <button
         className="c0"
+        color="black"
         disabled={false}
         loading={true}
         onClick={[Function]}
@@ -1795,7 +1801,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -1930,7 +1936,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
 >
   <Styled(styled.button)
     block={false}
-    colour="primary"
+    color="primary"
     disabled={false}
     loading={false}
     onClick={[Function]}
@@ -1938,7 +1944,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -1980,6 +1986,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={false}
         loading={false}
         onClick={[Function]}
@@ -2039,7 +2046,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -2174,7 +2181,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
 >
   <Styled(styled.button)
     block={false}
-    colour="primary"
+    color="primary"
     disabled={true}
     loading={false}
     onClick={[Function]}
@@ -2182,7 +2189,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={true}
       forwardedComponent={
         Object {
@@ -2224,6 +2231,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={true}
         loading={false}
         onClick={[Function]}
@@ -2308,7 +2316,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -2443,7 +2451,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
 >
   <Styled(styled.button)
     block={false}
-    colour="primary"
+    color="primary"
     disabled={false}
     loading={true}
     onClick={[Function]}
@@ -2451,7 +2459,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -2493,6 +2501,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
     >
       <button
         className="c0"
+        color="primary"
         disabled={false}
         loading={true}
         onClick={[Function]}
@@ -2554,7 +2563,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -2689,7 +2698,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
 >
   <Styled(styled.button)
     block={false}
-    colour="primary"
+    color="primary"
     disabled={false}
     loading={false}
     onClick={[Function]}
@@ -2697,7 +2706,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
   >
     <StyledComponent
       block={false}
-      colour="primary"
+      color="primary"
       disabled={false}
       forwardedComponent={
         Object {
@@ -2739,6 +2748,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
     >
       <button
         className="c0"
+        color="primary"
         disabled={false}
         loading={false}
         onClick={[Function]}

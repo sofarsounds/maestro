@@ -26,9 +26,7 @@ const FormGroup: React.SFC<Props> = ({
       {label} {required ? '*' : null}
     </FormGroupLabel>
     {React.cloneElement(children, { hasError: !!errorMsg })}
-    {errorMsg && (
-      <Caption colour={theme.colours.redRedWine}>{errorMsg}</Caption>
-    )}
+    {errorMsg && <Caption color={theme.colors.redRedWine}>{errorMsg}</Caption>}
   </FormGroupWrapper>
 );
 

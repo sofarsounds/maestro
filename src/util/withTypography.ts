@@ -1,7 +1,7 @@
 import { css } from '../lib/styledComponents';
 
 export interface WithTypographyProps {
-  colour?: string;
+  color?: string;
   align?: 'center' | 'left' | 'right';
   underline?: boolean;
   lineHeight?: number;
@@ -9,18 +9,18 @@ export interface WithTypographyProps {
 }
 
 export default ({
-  colour,
+  color,
   align,
   underline,
   lineHeight,
   fontWeight
 }: WithTypographyProps) => css`
-  ${colour &&
+  ${color &&
     css`
-      color: ${colour};
+      color: ${color};
 
       * {
-        color: ${colour};
+        color: ${color};
       }
     `};
 

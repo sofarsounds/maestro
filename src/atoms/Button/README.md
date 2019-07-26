@@ -27,10 +27,10 @@ Table below contains all types of props available in any Button component
 ### OutlineButton Props
 | Name          | Type          | Default         | Description                      |
 | :------------ | :-----        | :-------------- | :------------------------------- |
-| colour        | [Enum](#enum) | `primary`       | Which colour the outline and text should be
+| color        | [Enum](#enum) | `primary`       | Which color the outline and text should be
 
 #### Enum
-| Colour  |
+| color  |
 | :-----  |
 | primary |
 | black   |

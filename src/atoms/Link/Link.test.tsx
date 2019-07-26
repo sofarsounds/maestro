@@ -16,7 +16,7 @@ describe('<Link />', () => {
 
   it('has the correct style attributes', () => {
     checkStyleRules(wrapper, {
-      color: theme.colours.primary,
+      color: theme.colors.primary,
       'font-weight': 'bold'
     });
   });
@@ -25,7 +25,7 @@ describe('<Link />', () => {
     checkStyleRules(
       wrapper,
       {
-        color: theme.colours.primary,
+        color: theme.colors.primary,
         'text-decoration': 'underline'
       },
       {

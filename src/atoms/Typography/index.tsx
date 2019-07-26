@@ -99,7 +99,7 @@ export const Anchor = styled.span<TypographyProps>`
   ${({ theme, spaceAfter }) => css`
     font-size: ${theme.fontSizes.body2};
     font-weight: bold;
-    color: ${theme.colours.primary};
+    color: ${theme.colors.primary};
     margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
     display: inline-block;
   `};

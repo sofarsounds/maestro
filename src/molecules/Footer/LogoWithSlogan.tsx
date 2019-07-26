@@ -22,7 +22,7 @@ const LogoSloganContainer = styled.div`
 
 const Slogan = styled.div`
   text-align: center;
-  color: ${({ theme }) => theme.colours.blueSmoke};
+  color: ${({ theme }) => theme.colors.blueSmoke};
 `;
 
 interface LogoWithSloganProps {

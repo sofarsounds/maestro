@@ -9,7 +9,7 @@ const setup = (
   Component: any,
   disabled: boolean = false,
   loading: boolean = false,
-  colour: string = 'primary',
+  color: string = 'primary',
   small: boolean = false,
   block: boolean = false
 ) =>
@@ -17,7 +17,7 @@ const setup = (
     <Component
       disabled={disabled}
       loading={loading}
-      colour={colour}
+      color={color}
       small={small}
       block={block}
       onClick={() => onClickMock()}
@@ -94,21 +94,21 @@ describe('Buttons', () => {
 
     it('renders white outline Button correctly', () => {
       const wrapper = setup(OutlineButton, false, false, 'primary');
-      expect(wrapper.find(OutlineButton).prop('colour')).toBe('primary');
-      expect(wrapper).toHaveStyleRule('color', theme.colours.primary);
-      expect(wrapper).toHaveStyleRule('background', theme.colours.whiteDenim);
+      expect(wrapper.find(OutlineButton).prop('color')).toBe('primary');
+      expect(wrapper).toHaveStyleRule('color', theme.colors.primary);
+      expect(wrapper).toHaveStyleRule('background', theme.colors.whiteDenim);
       expect(wrapper).toHaveStyleRule(
         'border',
-        `1px solid ${theme.colours.primary}`
+        `1px solid ${theme.colors.primary}`
       );
     });
 
     it('renders correctly in disabled state', () => {
       expect(setup(OutlineButton, true)).toMatchSnapshot();
       const wrapper = setup(OutlineButton, true, false, 'white');
-      expect(wrapper.find(OutlineButton).prop('colour')).toBe('white');
-      expect(wrapper).toHaveStyleRule('color', theme.colours.whiteDenim);
-      expect(wrapper).toHaveStyleRule('background', theme.colours.whiteDenim);
+      expect(wrapper.find(OutlineButton).prop('color')).toBe('white');
+      expect(wrapper).toHaveStyleRule('color', theme.colors.whiteDenim);
+      expect(wrapper).toHaveStyleRule('background', theme.colors.whiteDenim);
     });
 
     it('renders correctly in loading state', () => {
