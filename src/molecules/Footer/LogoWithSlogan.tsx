@@ -25,7 +25,7 @@ const Slogan = styled.div`
   color: ${({ theme }) => theme.colors.blueSmoke};
 `;
 
-interface LogoWithSloganProps {
+export interface LogoWithSloganProps {
   href?: any;
 }
 

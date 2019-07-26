@@ -7,7 +7,7 @@ import Card from './index';
 
 describe('<Card />', () => {
   it('is not clickable in default state', () => {
-    const wrapper = mountWithTheme(<Card.Container>Card</Card.Container>);
+    const wrapper = mountWithTheme(<Card>Card</Card>);
 
     expect(wrapper.find(Link)).toHaveLength(0);
   });
@@ -15,7 +15,7 @@ describe('<Card />', () => {
   it('is clickable when linkTo prop is being passed', () => {
     const wrapper = mountWithTheme(
       <MemoryRouter initialEntries={['/']}>
-        <Card.Container linkTo="/test">Card</Card.Container>
+        <Card linkTo="/test">Card</Card>
       </MemoryRouter>
     );
 
