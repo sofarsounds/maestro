@@ -10,7 +10,8 @@ const setup = (
   disabled: boolean = false,
   loading: boolean = false,
   colour: string = 'primary',
-  small: boolean = false
+  small: boolean = false,
+  block: boolean = false
 ) =>
   mountWithTheme(
     <Component
@@ -18,6 +19,7 @@ const setup = (
       loading={loading}
       colour={colour}
       small={small}
+      block={block}
       onClick={() => onClickMock()}
     >
       Button
@@ -50,11 +52,18 @@ describe('Buttons', () => {
       expect(onClickMock).not.toHaveBeenCalled();
     });
 
-    it('appears as a smaller button when said prop is provide', () => {
+    it('appears as a smaller button when said prop is provided', () => {
       const wrapper = setup(BaseButton, false, false, 'primary', true);
       expect(wrapper).toHaveStyleRule('padding', '0 15px');
       expect(wrapper).toHaveStyleRule('height', '40px');
       expect(wrapper.find(BaseButton).prop('small')).toBeTruthy();
+    });
+
+    it('appears as a block button when said prop is provided', () => {
+      const wrapper = setup(BaseButton, false, false, 'primary', false, true);
+      expect(wrapper).toHaveStyleRule('display', 'block');
+      expect(wrapper).toHaveStyleRule('width', '100%');
+      expect(wrapper.find(BaseButton).prop('block')).toBeTruthy();
     });
   });
 

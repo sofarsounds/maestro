@@ -12,6 +12,7 @@ const rotate360 = keyframes`
 interface ButtonProps {
   loading?: boolean | false;
   small?: boolean;
+  block?: boolean;
 }
 
 export const buttonTextStyle = ({ theme }: any) => css`
@@ -25,7 +26,7 @@ export const buttonTextStyle = ({ theme }: any) => css`
 `;
 
 export const BaseButton = styled.button<ButtonProps>`
-  ${({ theme, loading, small }) => css`
+  ${({ theme, loading, small, block }) => css`
     border-radius: ${theme.borderRadius.button};
 
     cursor: pointer;
@@ -53,6 +54,12 @@ export const BaseButton = styled.button<ButtonProps>`
       css`
         height: ${theme.dimensions.button.small.height};
         padding: ${theme.dimensions.button.small.padding};
+      `}
+
+    ${block &&
+      css`
+        display: block;
+        width: 100%;
       `}
   `}
 `;

@@ -217,6 +217,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
   }
 >
   <Styled(Styled(Styled(styled.button)))
+    block={false}
     colour="primary"
     disabled={false}
     loading={false}
@@ -224,6 +225,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={false}
       forwardedComponent={
@@ -506,6 +508,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   }
 >
   <Styled(Styled(Styled(styled.button)))
+    block={false}
     colour="primary"
     disabled={true}
     loading={false}
@@ -513,6 +516,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={true}
       forwardedComponent={
@@ -826,6 +830,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   }
 >
   <Styled(Styled(Styled(styled.button)))
+    block={false}
     colour="primary"
     disabled={false}
     loading={true}
@@ -833,6 +838,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={false}
       forwardedComponent={
@@ -1097,6 +1103,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   }
 >
   <Styled(Styled(styled.button))
+    block={false}
     colour="primary"
     disabled={false}
     loading={false}
@@ -1104,6 +1111,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={false}
       forwardedComponent={
@@ -1362,6 +1370,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   }
 >
   <Styled(Styled(styled.button))
+    block={false}
     colour="primary"
     disabled={true}
     loading={false}
@@ -1369,6 +1378,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={true}
       forwardedComponent={
@@ -1669,6 +1679,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   }
 >
   <Styled(Styled(styled.button))
+    block={false}
     colour="black"
     disabled={false}
     loading={true}
@@ -1676,6 +1687,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="black"
       disabled={false}
       forwardedComponent={
@@ -1917,6 +1929,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   }
 >
   <Styled(styled.button)
+    block={false}
     colour="primary"
     disabled={false}
     loading={false}
@@ -1924,6 +1937,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={false}
       forwardedComponent={
@@ -2159,6 +2173,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   }
 >
   <Styled(styled.button)
+    block={false}
     colour="primary"
     disabled={true}
     loading={false}
@@ -2166,6 +2181,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={true}
       forwardedComponent={
@@ -2426,6 +2442,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   }
 >
   <Styled(styled.button)
+    block={false}
     colour="primary"
     disabled={false}
     loading={true}
@@ -2433,6 +2450,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
     small={false}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={false}
       forwardedComponent={
@@ -2670,6 +2688,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
   }
 >
   <Styled(styled.button)
+    block={false}
     colour="primary"
     disabled={false}
     loading={false}
@@ -2677,6 +2696,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
     small={true}
   >
     <StyledComponent
+      block={false}
       colour="primary"
       disabled={false}
       forwardedComponent={
