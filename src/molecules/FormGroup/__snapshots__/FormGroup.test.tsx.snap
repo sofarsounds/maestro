@@ -11,6 +11,8 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  margin-bottom: 0px;
+  display: inline-block;
   color: #EF4423;
 }
 
@@ -382,6 +384,8 @@ exports[`<FormGroup /> renders a error message 1`] = `
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  margin-bottom: 0px;
+  display: inline-block;
   color: #EF4423;
 }
 

@@ -52,33 +52,35 @@ export const H6 = styled.h6<TypographyProps>`
 `;
 
 export const Body = styled.p<TypographyProps>`
-  ${({ theme }) => css`
+  ${({ theme, spaceAfter }) => css`
     font-size: ${theme.fontSizes.body1};
     font-weight: normal;
     letter-spacing: 0.4px;
     line-height: 1.75;
     margin: 0;
     padding: 0;
+    margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
   `};
 
   ${withTypography}
 `;
 
 export const Body2 = styled.p<TypographyProps>`
-  ${({ theme }) => css`
+  ${({ theme, spaceAfter }) => css`
     font-size: ${theme.fontSizes.body2};
     font-weight: normal;
     letter-spacing: 0.3px;
     line-height: 1.43;
     margin: 0;
     padding: 0;
+    margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
   `};
 
   ${withTypography}
 `;
 
 export const Overline = styled.span<TypographyProps>`
-  ${({ theme }) => css`
+  ${({ theme, spaceAfter }) => css`
     font-size: ${theme.fontSizes.overline};
     font-weight: normal;
     text-transform: uppercase;
@@ -86,19 +88,24 @@ export const Overline = styled.span<TypographyProps>`
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
+    display: inline-block;
   `};
 
   ${withTypography}
 `;
 
 export const Anchor = styled.span<TypographyProps>`
-  ${({ theme }) => css`
+  ${({ theme, spaceAfter }) => css`
     font-size: ${theme.fontSizes.body2};
     font-weight: bold;
     color: ${theme.colours.primary};
+    margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
+    display: inline-block;
   `};
 
   ${withTypography}
+
   &:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -106,13 +113,15 @@ export const Anchor = styled.span<TypographyProps>`
 `;
 
 export const Caption = styled.span<TypographyProps>`
-  ${({ theme }) => css`
+  ${({ theme, spaceAfter }) => css`
     font-size: ${theme.fontSizes.caption};
     font-weight: normal;
     letter-spacing: 0.3px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
+    display: inline-block;
   `};
 
   ${withTypography}

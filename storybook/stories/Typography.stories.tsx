@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, number, text } from '@storybook/addon-knobs';
 
 import {
   Title,
@@ -32,6 +32,7 @@ const headingTags = [H1, H2, H3, H4, H5, H6];
 const bodyTags = [Body, Body2];
 
 storiesOf('Typography', module)
+  .addDecorator(withKnobs)
   .add('Title', () => (
     <>
       <h1>Titles</h1>
@@ -55,17 +56,17 @@ storiesOf('Typography', module)
       <h1>Body Tags</h1>
       {bodyTags.map((T: any, key: number) => (
         <Boundary key={key}>
-          <T>Body {key + 1}</T>
+          <T spaceAfter={number('SpaceAfter', 0)}>Body {key + 1}</T>
         </Boundary>
       ))}
       <Boundary>
-        <Overline>Overline Tag</Overline>
+        <Overline spaceAfter={number('SpaceAfter', 0)}>Overline Tag</Overline>
       </Boundary>
       <Boundary>
-        <Anchor>Anchor Tag</Anchor>
+        <Anchor spaceAfter={number('SpaceAfter', 0)}>Anchor Tag</Anchor>
       </Boundary>
       <Boundary>
-        <Caption>Caption Tag</Caption>
+        <Caption spaceAfter={number('SpaceAfter', 0)}>Caption Tag</Caption>
       </Boundary>
     </>
   ));
