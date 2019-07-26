@@ -16,15 +16,15 @@ const OptionStyled = styled.li<Props>`
     padding: 10px 24px 10px 24px;
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
-    color: ${theme.colours.backToBlack};
+    color: ${theme.colors.backToBlack};
 
     &:hover {
-      background-color: ${theme.colours.silverSprings};
+      background-color: ${theme.colors.silverSprings};
       cursor: pointer;
     }
 
     &:focus {
-      background-color: ${theme.colours.silverSprings};
+      background-color: ${theme.colors.silverSprings};
       cursor: pointer;
     }
   `}

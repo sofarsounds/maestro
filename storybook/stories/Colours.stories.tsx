@@ -24,7 +24,7 @@ const Heading = styled.div`
   margin: 5px 0;
 `;
 
-const Colour = styled.div<any>`
+const Color = styled.div<any>`
   height: 120px;
   background: ${({ bg }) => bg};
   border-radius: 4px;
@@ -34,22 +34,22 @@ const Footer = styled.div`
   font-size: 80%;
 `;
 
-const ColourPanel: React.SFC<any> = ({ colourName, hex }) => (
+const ColorPanel: React.SFC<any> = ({ colorName, hex }) => (
   <Panel>
-    <Colour bg={hex} />
-    <Heading>{colourName}</Heading>
+    <Color bg={hex} />
+    <Heading>{colorName}</Heading>
     <Footer>{hex}</Footer>
   </Panel>
 );
 
-storiesOf('Colours', module).add(
+storiesOf('Colors', module).add(
   'Brand',
   () => (
     <>
-      <h1>Colour Schema</h1>
+      <h1>color Schema</h1>
 
       <Row>
-        <ColourPanel colourName="Primary" hex={theme.colours.primary} />
+        <ColorPanel colorName="Primary" hex={theme.colors.primary} />
       </Row>
 
       <h2>Blacks & Greys</h2>
@@ -63,7 +63,7 @@ storiesOf('Colours', module).add(
           'silverSprings',
           'whiteDenim'
         ].map(k => (
-          <ColourPanel key={k} colourName={k} hex={theme.colours[k]} />
+          <ColorPanel key={k} colorName={k} hex={theme.colors[k]} />
         ))}
       </Row>
 
@@ -80,13 +80,13 @@ storiesOf('Colours', module).add(
           'green100',
           'green50'
         ].map(k => (
-          <ColourPanel key={k} colourName={k} hex={theme.colours[k]} />
+          <ColorPanel key={k} colorName={k} hex={theme.colors[k]} />
         ))}
       </Row>
 
-      <h2>Misc Colours</h2>
+      <h2>Misc colors</h2>
       <Row>
-        <ColourPanel colourName="redRedWine" hex={theme.colours.redRedWine} />
+        <ColorPanel colorName="redRedWine" hex={theme.colors.redRedWine} />
       </Row>
     </>
   ),

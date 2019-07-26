@@ -315,7 +315,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -891,10 +891,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         qaId=""
       >
         <Styled(styled.div)
-          colour="primary"
+          color="primary"
         >
           <StyledComponent
-            colour="primary"
+            color="primary"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -932,6 +932,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           >
             <div
               className="c3"
+              color="primary"
             >
               6
             </div>
@@ -1681,7 +1682,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -1833,10 +1834,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         qaId=""
       >
         <Styled(styled.div)
-          colour="primary"
+          color="primary"
         >
           <StyledComponent
-            colour="primary"
+            color="primary"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -1874,6 +1875,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           >
             <div
               className="c0"
+              color="primary"
             >
               1
             </div>
@@ -2812,7 +2814,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -3577,10 +3579,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         qaId=""
       >
         <Styled(styled.div)
-          colour="primary"
+          color="primary"
         >
           <StyledComponent
-            colour="primary"
+            color="primary"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -3618,6 +3620,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           >
             <div
               className="c3"
+              color="primary"
             >
               15
             </div>

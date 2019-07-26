@@ -39,7 +39,7 @@ describe('<FormGroup />', () => {
 
     expect(wrapper.find(Textfield)).toHaveStyleRule(
       'border-color',
-      theme.colours.redRedWine
+      theme.colors.redRedWine
     );
     expect(wrapper).toMatchSnapshot();
   });

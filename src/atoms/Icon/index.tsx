@@ -24,7 +24,7 @@ const generateIcons = () => {
 const IconElement = styled.i<{
   className: string;
   size?: string;
-  colour?: string;
+  color?: string;
 }>`
   font-family: 'sofarsounds-icon-font' !important;
   speak: none;
@@ -39,7 +39,7 @@ const IconElement = styled.i<{
   -moz-osx-font-smoothing: grayscale;
 
   &:before {
-    color: ${({ colour }) => colour || '#000'};
+    color: ${({ color }) => color || '#000'};
   }
 
   ${({ size }) =>
@@ -54,21 +54,21 @@ const IconElement = styled.i<{
 interface IconProps {
   name: string;
   size?: string;
-  colour?: string;
+  color?: string;
   className?: string;
   'data-qaid'?: string;
 }
 const Icon: React.SFC<IconProps> = ({
   name,
   size,
-  colour,
+  color,
   className = '',
   'data-qaid': qaId
 }) => (
   <IconElement
     className={`icon-${name} ${className}`}
     size={size}
-    colour={colour}
+    color={color}
     data-qaid={qaId}
   />
 );

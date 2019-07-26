@@ -38,7 +38,7 @@ storiesOf('Iconography', module).add('All', () => (
               <Icon
                 name={icon}
                 size={text('Size', '16px')}
-                colour={text('Colour', '#000')}
+                color={text('color', '#000')}
               />
             </td>
           </TR>

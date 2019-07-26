@@ -21,7 +21,7 @@ storiesOf('Card', module)
               background: inverted ? '#000' : '#fff'
             }}
           >
-            <Card.Container linkTo="https://www.google.com" inverted={inverted}>
+            <Card linkTo="https://www.google.com" inverted={inverted}>
               <Card.Image
                 url={text(
                   'Image URL',
@@ -42,7 +42,7 @@ storiesOf('Card', module)
                   {text('Footer', 'Customisable Footer')}
                 </Card.Footer>
               </Card.Content>
-            </Card.Container>
+            </Card>
           </div>
         </BrowserRouter>
       </>

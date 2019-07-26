@@ -9,15 +9,17 @@ const setup = (
   Component: any,
   disabled: boolean = false,
   loading: boolean = false,
-  colour: string = 'primary',
-  small: boolean = false
+  color: string = 'primary',
+  small: boolean = false,
+  block: boolean = false
 ) =>
   mountWithTheme(
     <Component
       disabled={disabled}
       loading={loading}
-      colour={colour}
+      color={color}
       small={small}
+      block={block}
       onClick={() => onClickMock()}
     >
       Button
@@ -50,11 +52,18 @@ describe('Buttons', () => {
       expect(onClickMock).not.toHaveBeenCalled();
     });
 
-    it('appears as a smaller button when said prop is provide', () => {
+    it('appears as a smaller button when said prop is provided', () => {
       const wrapper = setup(BaseButton, false, false, 'primary', true);
       expect(wrapper).toHaveStyleRule('padding', '0 15px');
       expect(wrapper).toHaveStyleRule('height', '40px');
       expect(wrapper.find(BaseButton).prop('small')).toBeTruthy();
+    });
+
+    it('appears as a block button when said prop is provided', () => {
+      const wrapper = setup(BaseButton, false, false, 'primary', false, true);
+      expect(wrapper).toHaveStyleRule('display', 'block');
+      expect(wrapper).toHaveStyleRule('width', '100%');
+      expect(wrapper.find(BaseButton).prop('block')).toBeTruthy();
     });
   });
 
@@ -85,21 +94,21 @@ describe('Buttons', () => {
 
     it('renders white outline Button correctly', () => {
       const wrapper = setup(OutlineButton, false, false, 'primary');
-      expect(wrapper.find(OutlineButton).prop('colour')).toBe('primary');
-      expect(wrapper).toHaveStyleRule('color', theme.colours.primary);
-      expect(wrapper).toHaveStyleRule('background', theme.colours.whiteDenim);
+      expect(wrapper.find(OutlineButton).prop('color')).toBe('primary');
+      expect(wrapper).toHaveStyleRule('color', theme.colors.primary);
+      expect(wrapper).toHaveStyleRule('background', theme.colors.whiteDenim);
       expect(wrapper).toHaveStyleRule(
         'border',
-        `1px solid ${theme.colours.primary}`
+        `1px solid ${theme.colors.primary}`
       );
     });
 
     it('renders correctly in disabled state', () => {
       expect(setup(OutlineButton, true)).toMatchSnapshot();
       const wrapper = setup(OutlineButton, true, false, 'white');
-      expect(wrapper.find(OutlineButton).prop('colour')).toBe('white');
-      expect(wrapper).toHaveStyleRule('color', theme.colours.whiteDenim);
-      expect(wrapper).toHaveStyleRule('background', theme.colours.whiteDenim);
+      expect(wrapper.find(OutlineButton).prop('color')).toBe('white');
+      expect(wrapper).toHaveStyleRule('color', theme.colors.whiteDenim);
+      expect(wrapper).toHaveStyleRule('background', theme.colors.whiteDenim);
     });
 
     it('renders correctly in loading state', () => {

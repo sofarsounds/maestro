@@ -2,7 +2,7 @@ import styled, { css } from '../../lib/styledComponents';
 
 export default styled.a`
   ${({ theme }) => css`
-    color: ${theme.colours.whiteDenim};
+    color: ${theme.colors.whiteDenim};
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
     display: block;

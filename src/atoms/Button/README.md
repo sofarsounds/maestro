@@ -21,15 +21,16 @@ Table below contains all types of props available in any Button component
 | **children**  | `React.Node` |                 | The content displayed in the button
 | loading       | `Boolean`    | `false`         | Whether the button should have a loading animation
 | small         | `Boolean`    | `false`         | Whether the button should be displayed in a small version
+| block         | `Boolean`    | `false`         | Whether the button should be displayed as block
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
 
 ### OutlineButton Props
 | Name          | Type          | Default         | Description                      |
 | :------------ | :-----        | :-------------- | :------------------------------- |
-| colour        | [Enum](#enum) | `primary`       | Which colour the outline and text should be
+| color        | [Enum](#enum) | `primary`       | Which color the outline and text should be
 
 #### Enum
-| Colour  |
+| color  |
 | :-----  |
 | primary |
 | black   |

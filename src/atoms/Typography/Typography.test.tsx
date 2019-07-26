@@ -130,7 +130,7 @@ describe('Typography', () => {
     const wrapper = setup(Anchor);
 
     expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.body2);
-    expect(wrapper).toHaveStyleRule('color', theme.colours.primary);
+    expect(wrapper).toHaveStyleRule('color', theme.colors.primary);
     expect(wrapper).toHaveStyleRule('font-weight', 'bold');
   });
 

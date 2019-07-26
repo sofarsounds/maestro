@@ -35,7 +35,7 @@ storiesOf('Dropdown', module)
               My Account (with offset Menu)
             </span>
             <Icon
-              colour={'black'}
+              color={'black'}
               name={isOpen ? 'caretUp' : 'caretDown'}
               size={'8px'}
             />

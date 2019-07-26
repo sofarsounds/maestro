@@ -17,7 +17,7 @@ const Menu = styled.ul<Props>`
     border-bottom-right-radius: ${theme.borderRadius.large};
     width: ${width}px;
     padding-left: 0px;
-    background-color: ${theme.colours.whiteDenim};
+    background-color: ${theme.colors.whiteDenim};
     max-height: 300px;
     overflow-y: auto;
 
