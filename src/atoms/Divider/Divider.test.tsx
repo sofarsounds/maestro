@@ -12,7 +12,7 @@ describe('<Divider />', () => {
     expect(wrapper).toHaveStyleRule('border', 'none');
     expect(wrapper).toHaveStyleRule(
       'border-top',
-      `1px solid ${theme.colors.macyGrey}`
+      `1px solid ${theme.colors.silverSprings}`
     );
     expect(wrapper).toHaveStyleRule('width', '100%');
     expect(wrapper).toHaveStyleRule('margin', '44px 0');

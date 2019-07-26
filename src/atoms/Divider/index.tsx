@@ -7,7 +7,7 @@ interface DividerProps {
 export default styled.hr<DividerProps>`
   ${({ theme, space }) => css`
     border: none;
-    border-top: 1px solid ${theme.colors.macyGrey};
+    border-top: 1px solid ${theme.colors.silverSprings};
     width: 100%;
     margin: ${theme.ruler[space || 11]}px 0;
   `}
