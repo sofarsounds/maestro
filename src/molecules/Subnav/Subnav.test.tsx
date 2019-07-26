@@ -4,8 +4,8 @@ import theme from '../../theme';
 import Subnav from './index';
 
 describe('<Subnav />', () => {
-  describe('<Container />', () => {
-    const setup = mountWithTheme(<Subnav.Container />);
+  describe('<Subnav/>', () => {
+    const setup = mountWithTheme(<Subnav>Links</Subnav>);
 
     it('has the correct style attributes', () => {
       expect(setup).toHaveStyleRule('overflow-x', 'auto');

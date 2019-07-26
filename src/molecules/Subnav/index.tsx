@@ -1,7 +1,25 @@
-import { Link as RouterLink } from 'react-router-dom';
+import React from 'react';
+import {
+  Link as RouterLink,
+  LinkProps as RouterLinkProps
+} from 'react-router-dom';
 
 import styled, { css } from '../../lib/styledComponents';
 import { buttonTextStyle } from '../../atoms/Button';
+
+interface SubnavProps {
+  children: any;
+  'data-qaid'?: string;
+}
+
+interface LinkProps extends RouterLinkProps {
+  as?: string;
+  active?: boolean;
+}
+
+interface Composition {
+  Link: React.SFC<LinkProps>;
+}
 
 const Container = styled.div`
   overflow-x: auto;
@@ -16,10 +34,6 @@ const Container = styled.div`
     height: 0;
   }
 `;
-
-interface LinkProps {
-  active?: boolean;
-}
 const Link = styled(RouterLink)<LinkProps>`
   ${buttonTextStyle};
 
@@ -55,7 +69,11 @@ const Link = styled(RouterLink)<LinkProps>`
   `}
 `;
 
-export default {
-  Container,
-  Link
-};
+const Subnav: React.SFC<SubnavProps> & Composition = ({
+  children,
+  'data-qaid': qaId
+}) => <Container data-qaid={qaId}>{children}</Container>;
+
+Subnav.Link = Link;
+
+export default Subnav;
