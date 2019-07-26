@@ -53,7 +53,7 @@ export default createGlobalStyle`
     html,
     * {
       font-family: "${theme.fonts.regular}", sans-serif;
-      color: ${theme.colours.backToBlack};
+      color: ${theme.colors.backToBlack};
     }
 
     body {

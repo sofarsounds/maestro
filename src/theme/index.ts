@@ -12,7 +12,7 @@ export const breakPoints = {
 };
 
 const theme: Theme = {
-  colours: {
+  colors: {
     primary: '#039842',
 
     // blacks & greys

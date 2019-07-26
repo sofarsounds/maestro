@@ -12,6 +12,7 @@ const rotate360 = keyframes`
 interface ButtonProps {
   loading?: boolean | false;
   small?: boolean;
+  block?: boolean;
 }
 
 export const buttonTextStyle = ({ theme }: any) => css`
@@ -25,7 +26,7 @@ export const buttonTextStyle = ({ theme }: any) => css`
 `;
 
 export const BaseButton = styled.button<ButtonProps>`
-  ${({ theme, loading, small }) => css`
+  ${({ theme, loading, small, block }) => css`
     border-radius: ${theme.borderRadius.button};
 
     cursor: pointer;
@@ -54,38 +55,44 @@ export const BaseButton = styled.button<ButtonProps>`
         height: ${theme.dimensions.button.small.height};
         padding: ${theme.dimensions.button.small.padding};
       `}
+
+    ${block &&
+      css`
+        display: block;
+        width: 100%;
+      `}
   `}
 `;
 
 export const PrimaryButton = styled(BaseButton)`
   ${({ theme, loading }) => css`
-    background: ${theme.colours.primary};
-    border: 1px solid ${theme.colours.primary};
-    color: ${theme.colours.whiteDenim};
+    background: ${theme.colors.primary};
+    border: 1px solid ${theme.colors.primary};
+    color: ${theme.colors.whiteDenim};
 
     &:hover {
-      background-color: ${theme.colours.green900};
+      background-color: ${theme.colors.green900};
     }
 
     &:focus {
-      background-color: ${theme.colours.green700};
+      background-color: ${theme.colors.green700};
     }
 
     &:disabled {
-      background-color: ${theme.colours.blueSmoke};
-      border-color: ${theme.colours.blueSmoke};
+      background-color: ${theme.colors.blueSmoke};
+      border-color: ${theme.colors.blueSmoke};
     }
 
     ${loading &&
       css`
         color: transparent !important;
-        background-color: ${theme.colours.blueSmoke};
-        border-color: ${theme.colours.blueSmoke};
+        background-color: ${theme.colors.blueSmoke};
+        border-color: ${theme.colors.blueSmoke};
         position: relative;
 
         :after {
           animation: ${rotate360} 0.5s linear infinite;
-          border: 0.1rem solid ${theme.colours.whiteDenim};
+          border: 0.1rem solid ${theme.colors.whiteDenim};
           border-radius: 50%;
           border-right-color: transparent;
           border-top-color: transparent;
@@ -105,65 +112,65 @@ export const PrimaryButton = styled(BaseButton)`
 `;
 
 interface OutlineButtonProps {
-  colour?: 'primary' | 'black' | 'white';
+  color?: 'primary' | 'black' | 'white';
 }
 
 export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
-  ${({ theme, loading, colour }) => css`
-    background: ${theme.colours.whiteDenim};
-    color: ${theme.colours.primary};
+  ${({ theme, loading, color }) => css`
+    background: ${theme.colors.whiteDenim};
+    color: ${theme.colors.primary};
 
     &:hover {
-      border-color: ${theme.colours.green900};
-      color: ${theme.colours.green900};
-      background-color: ${theme.colours.whiteDenim};
+      border-color: ${theme.colors.green900};
+      color: ${theme.colors.green900};
+      background-color: ${theme.colors.whiteDenim};
     }
 
     &:focus {
-      background-color: ${theme.colours.green50};
+      background-color: ${theme.colors.green50};
     }
 
     &:disabled {
-      background-color: ${theme.colours.whiteDenim};
-      color: ${theme.colours.blueSmoke};
+      background-color: ${theme.colors.whiteDenim};
+      color: ${theme.colors.blueSmoke};
     }
 
-    ${colour === 'black' &&
+    ${color === 'black' &&
       css`
-        border-color: ${theme.colours.blackBetty};
-        color: ${theme.colours.backToBlack};
+        border-color: ${theme.colors.blackBetty};
+        color: ${theme.colors.backToBlack};
 
         &:hover {
-          border-color: ${theme.colours.backToBlack};
-          color: ${theme.colours.backToBlack};
+          border-color: ${theme.colors.backToBlack};
+          color: ${theme.colors.backToBlack};
         }
 
         &:focus {
-          background-color: ${theme.colours.macyGrey};
+          background-color: ${theme.colors.macyGrey};
         }
       `}
 
-    ${colour === 'white' &&
+    ${color === 'white' &&
       css`
-        border-color: ${theme.colours.whiteDenim};
-        color: ${theme.colours.whiteDenim};
+        border-color: ${theme.colors.whiteDenim};
+        color: ${theme.colors.whiteDenim};
         background-color: transparent;
 
         &:hover {
-          border-color: ${theme.colours.whiteDenim};
-          color: ${theme.colours.whiteDenim};
+          border-color: ${theme.colors.whiteDenim};
+          color: ${theme.colors.whiteDenim};
           background-color: transparent;
         }
 
         &:focus {
-          background-color: ${theme.colours.backToBlack};
+          background-color: ${theme.colors.backToBlack};
         }
       `}
 
     ${loading &&
       css`
         :after {
-          border-color: ${theme.colours.blueSmoke};
+          border-color: ${theme.colors.blueSmoke};
           border-right-color: transparent;
           border-top-color: transparent;
         }
@@ -173,23 +180,23 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
 
 export const LinkButton = styled(OutlineButton)`
   ${({ theme }) => css`
-    background: ${theme.colours.whiteDenim};
-    border-color: ${theme.colours.whiteDenim};
-    color: ${theme.colours.primary};
+    background: ${theme.colors.whiteDenim};
+    border-color: ${theme.colors.whiteDenim};
+    color: ${theme.colors.primary};
 
     &:hover {
-      color: ${theme.colours.green900};
-      border-color: ${theme.colours.whiteDenim};
+      color: ${theme.colors.green900};
+      border-color: ${theme.colors.whiteDenim};
     }
 
     &:focus {
-      background-color: ${theme.colours.green50};
-      border-color: ${theme.colours.green50};
+      background-color: ${theme.colors.green50};
+      border-color: ${theme.colors.green50};
     }
 
     &:disabled {
-      background-color: ${theme.colours.whiteDenim};
-      border-color: ${theme.colours.whiteDenim};
+      background-color: ${theme.colors.whiteDenim};
+      border-color: ${theme.colors.whiteDenim};
     }
   `};
 `;

@@ -1,6 +1,6 @@
 import styled, { css } from '../../lib/styledComponents';
 
-interface ImageProps {
+export interface ImageProps {
   url: string;
 }
 

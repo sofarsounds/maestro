@@ -24,12 +24,12 @@ const RowContainer = styled(Container)`
 `;
 
 export const IconStyled = (p: any) => (
-  <Icon {...p} size="40px" colour={theme.colours.blueSmoke} />
+  <Icon {...p} size="40px" color={theme.colors.blueSmoke} />
 );
 
 export const CopyrightContainer = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colours.backToBlack};
+    background-color: ${theme.colors.backToBlack};
     min-height: 100px;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ export const CopyrightContainer = styled.div`
     padding: ${theme.ruler[4]}px 0;
 
     * {
-      color: ${theme.colours.whiteDenim};
+      color: ${theme.colors.whiteDenim};
     }
 
     ${theme.media.md`

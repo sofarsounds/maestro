@@ -15,14 +15,14 @@ const LinkSectionCol = styled(Col)`
 `;
 
 export const SectionHeader = styled(H6)`
-  color: ${({ theme }) => theme.colours.primary};
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const SectionLink = styled.a`
   display: block;
   text-decoration: none;
   padding: 4px 0;
-  color: ${({ theme }) => theme.colours.whiteDenim};
+  color: ${({ theme }) => theme.colors.whiteDenim};
 
   &:hover {
     text-decoration: underline;

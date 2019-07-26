@@ -40,7 +40,7 @@ ${({ theme }) => css`
     cursor: pointer;
   }
   &:focus {
-    border-color: ${theme.colours.macyGrey}
+    border-color: ${theme.colors.macyGrey}
     outline: none;
   `}
   }
@@ -68,7 +68,7 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
     border: 0px;
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
-    color: ${theme.colours.backToBlack};
+    color: ${theme.colors.backToBlack};
 
     &:hover {
       outline: none;
@@ -79,7 +79,7 @@ const InputStyle = styled.input<InputProps & SelectInputProps>`
     }
 
     &::placeholder {
-      color: ${theme.colours.blueSmoke};
+      color: ${theme.colors.blueSmoke};
     }
 
     ${readOnly &&

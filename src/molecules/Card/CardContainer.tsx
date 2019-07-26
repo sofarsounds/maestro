@@ -19,7 +19,7 @@ export default styled.div<CardContainerProps>`
     ${inverted &&
       css`
       ${Title}, ${Preview}, ${Footer} {
-        color: ${theme.colours.whiteDenim};
+        color: ${theme.colors.whiteDenim};
       }
     `}
 
@@ -28,7 +28,7 @@ export default styled.div<CardContainerProps>`
         &:hover {
           ${Title} {
             text-decoration: underline;
-            color: ${theme.colours.primary};
+            color: ${theme.colors.primary};
           }
         }
       `}

@@ -10,14 +10,14 @@ storiesOf('Badge', module)
   .add('Default', () => (
     <>
       <h1>Default Badge</h1>
-      <Badge colour="primary">{text('Content', '1')}</Badge>
+      <Badge color="primary">{text('Content', '1')}</Badge>
     </>
   ))
 
   .add('Clickable', () => (
     <>
       <h1>Clickable Badge</h1>
-      <Badge colour="primary" clickable onClick={action('Badge clicked')}>
+      <Badge color="primary" clickable onClick={action('Badge clicked')}>
         {text('Content', '1')}
       </Badge>
     </>

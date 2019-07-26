@@ -22,11 +22,8 @@ const generateTestCase = (
 };
 
 describe('Util: withTypography', () => {
-  it('adds a colour property to element', () => {
-    expect(mount(<Typography colour={'red'} />)).toHaveStyleRule(
-      'color',
-      'red'
-    );
+  it('adds a color property to element', () => {
+    expect(mount(<Typography color={'red'} />)).toHaveStyleRule('color', 'red');
   });
 
   it('adds an aligned property to element', () => {

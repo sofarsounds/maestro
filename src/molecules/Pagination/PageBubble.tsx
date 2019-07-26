@@ -23,7 +23,7 @@ const PageBubble: React.SFC<BubbleProps> = ({
   qaId = ''
 }) =>
   isActive ? (
-    <BadgeWithSpacing colour="primary">{page}</BadgeWithSpacing>
+    <BadgeWithSpacing color="primary">{page}</BadgeWithSpacing>
   ) : (
     <BadgeWithSpacing
       as="button"

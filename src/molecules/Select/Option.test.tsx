@@ -30,21 +30,21 @@ describe('Select <Menu />', () => {
     let wrapper = setup();
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.1px');
     expect(wrapper).toHaveStyleRule('margin-top', '0px');
-    expect(wrapper).toHaveStyleRule('color', theme.colours.backToBlack);
+    expect(wrapper).toHaveStyleRule('color', theme.colors.backToBlack);
   });
 
   it('is styled correctly for psuedo states', () => {
     let wrapper = setup();
     expect(wrapper).toHaveStyleRule(
       'background-color',
-      theme.colours.silverSprings,
+      theme.colors.silverSprings,
       {
         modifier: ':hover'
       }
     );
     expect(wrapper).toHaveStyleRule(
       'background-color',
-      theme.colours.silverSprings,
+      theme.colors.silverSprings,
       {
         modifier: ':focus'
       }

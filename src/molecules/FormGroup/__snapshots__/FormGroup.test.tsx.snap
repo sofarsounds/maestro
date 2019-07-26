@@ -11,6 +11,8 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  margin-bottom: 0px;
+  display: inline-block;
   color: #EF4423;
 }
 
@@ -71,7 +73,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -321,10 +323,10 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
             </StyledComponent>
           </styled.input>
           <styled.span
-            colour="#EF4423"
+            color="#EF4423"
           >
             <StyledComponent
-              colour="#EF4423"
+              color="#EF4423"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -359,6 +361,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
             >
               <span
                 className="c2"
+                color="#EF4423"
               >
                 Something went wrong
               </span>
@@ -382,6 +385,8 @@ exports[`<FormGroup /> renders a error message 1`] = `
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  margin-bottom: 0px;
+  display: inline-block;
   color: #EF4423;
 }
 
@@ -442,7 +447,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -692,10 +697,10 @@ exports[`<FormGroup /> renders a error message 1`] = `
             </StyledComponent>
           </styled.input>
           <styled.span
-            colour="#EF4423"
+            color="#EF4423"
           >
             <StyledComponent
-              colour="#EF4423"
+              color="#EF4423"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -730,6 +735,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
             >
               <span
                 className="c2"
+                color="#EF4423"
               >
                 Something went wrong
               </span>
@@ -795,7 +801,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
@@ -1103,7 +1109,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
         "input": "2px",
         "large": "8px",
       },
-      "colours": Object {
+      "colors": Object {
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",

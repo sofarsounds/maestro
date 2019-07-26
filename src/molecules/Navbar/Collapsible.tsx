@@ -19,7 +19,7 @@ export default styled.div<WrapperProps>`
         right: 0;
         bottom: 0;
         background: #000;
-        border-top: 1px solid ${theme.colours.paintItBlack};
+        border-top: 1px solid ${theme.colors.paintItBlack};
         padding: 0 15px;
       `}
 

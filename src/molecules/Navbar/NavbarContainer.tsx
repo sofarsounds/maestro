@@ -9,7 +9,7 @@ export default styled.div<NavbarContainerProps>`
     width: 100%;
     height: ${theme.dimensions.navbarHeight.xs};
     background: #000;
-    color: ${theme.colours.whiteDenim};
+    color: ${theme.colors.whiteDenim};
     display: flex;
     align-items: center;
     justify-content: center;
