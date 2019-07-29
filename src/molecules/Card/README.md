@@ -1,4 +1,4 @@
-# Textarea
+# Card
 
 To implement `Card` into your project you'll need to add this import
 ```js
