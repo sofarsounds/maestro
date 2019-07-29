@@ -1,10 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Divider } from '../../src';
+import { withKnobs, number } from '@storybook/addon-knobs';
 
-storiesOf('Divider', module).add('Default', () => (
-  <>
-    <h1>Divider</h1>
-    <Divider />
-  </>
-));
+import { Divider } from '../../src';
+import { Boundary } from '../helpers/components';
+
+storiesOf('Divider', module)
+  .addDecorator(withKnobs)
+  .add('Default', () => (
+    <>
+      <h1>Divider</h1>
+      <Boundary>
+        <Divider space={number('Space', 11)} />
+      </Boundary>
+    </>
+  ));

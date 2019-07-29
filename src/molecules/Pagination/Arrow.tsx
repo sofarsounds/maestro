@@ -23,7 +23,7 @@ const renderArrow = (
     onClick={onClick}
     data-qaid={qaId}
   >
-    <Icon colour={disabled ? theme.colours.blueSmoke : undefined} name={icon} />
+    <Icon color={disabled ? theme.colors.blueSmoke : undefined} name={icon} />
   </Badge>
 );
 

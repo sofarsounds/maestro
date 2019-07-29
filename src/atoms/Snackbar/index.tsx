@@ -15,7 +15,7 @@ interface SnackbarProps {
 const SnackbarStyled = styled.div`
   ${({ theme }) => css`
     border-radius: 8px;
-    background-color: ${theme.colours.backToBlack};
+    background-color: ${theme.colors.backToBlack};
     display: flex;
     justify-content: space-between;
     padding: ${theme.ruler[4]}px ${theme.ruler[6]}px;
@@ -43,12 +43,12 @@ const Snackbar: React.SFC<SnackbarProps> = ({
   'data-qaid': qaId = ''
 }) => (
   <SnackbarStyled data-qaid={qaId}>
-    <Body2 colour="#fff" data-qaid={`${qaId}-text`}>
+    <Body2 color="#fff" data-qaid={`${qaId}-text`}>
       {children}
     </Body2>
 
     <CancelButton onClick={onCancel} data-qaid={`${qaId}-cancel`}>
-      <Icon name="close" size="16px" colour={theme.colours.whiteDenim} />
+      <Icon name="close" size="16px" color={theme.colors.whiteDenim} />
     </CancelButton>
   </SnackbarStyled>
 );

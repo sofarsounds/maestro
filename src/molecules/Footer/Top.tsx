@@ -6,7 +6,7 @@ import Container from '../../atoms/Container';
 
 const Main = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colours.blackBetty};
+    background-color: ${theme.colors.blackBetty};
     background-image: url(${require('./world-map-1.png')});
     background-position: center;
     background-repeat: no-repeat;
@@ -21,18 +21,18 @@ const Main = styled.div`
 
 export const Title = styled(TitleDefault)`
   margin-bottom: ${({ theme }) => theme.ruler[3]}px;
-  color: ${({ theme }) => theme.colours.whiteDenim};
+  color: ${({ theme }) => theme.colors.whiteDenim};
   text-align: center;
 `;
 
 export const Subtitle = styled(H5)`
   ${({ theme }) => css`
     margin-bottom: ${theme.ruler[9]}px;
-    color: ${theme.colours.whiteDenim};
+    color: ${theme.colors.whiteDenim};
     text-align: center;
 
     b {
-      color: ${theme.colours.whiteDenim};
+      color: ${theme.colors.whiteDenim};
     }
   `}
 `;

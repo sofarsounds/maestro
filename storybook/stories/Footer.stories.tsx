@@ -11,7 +11,7 @@ storiesOf('Footer', module)
   .add('Default', () => (
     <>
       <h1>Footer</h1>
-      <Footer.Wrapper data-qaid="footer">
+      <Footer data-qaid="footer">
         <Footer.Top>
           <Footer.Title>Explore Sofar.</Footer.Title>
           <Footer.Subtitle>
@@ -74,6 +74,6 @@ storiesOf('Footer', module)
             &copy; 2019 Sofar Sounds. All Rights Reserved.
           </Footer.CopyrightMsg>
         </Footer.Bottom>
-      </Footer.Wrapper>
+      </Footer>
     </>
   ));

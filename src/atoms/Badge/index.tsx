@@ -2,13 +2,13 @@ import styled, { css } from '../../lib/styledComponents';
 
 interface BadgeProps {
   children: any;
-  colour?: 'primary';
+  color?: 'primary';
   clickable?: boolean;
   disabled?: boolean;
 }
 
 const Badge = styled.div<BadgeProps>`
-  ${({ theme, colour, disabled, clickable }) => css`
+  ${({ theme, color, disabled, clickable }) => css`
     width: 36px;
     height: 36px;
     margin: 0;
@@ -34,16 +34,16 @@ const Badge = styled.div<BadgeProps>`
         }
       `}
 
-    ${colour === 'primary' &&
+    ${color === 'primary' &&
       css`
-        background-color: ${theme.colours.primary};
-        color: ${theme.colours.whiteDenim};
+        background-color: ${theme.colors.primary};
+        color: ${theme.colors.whiteDenim};
         font-weight: 600;
 
         ${clickable &&
           css`
             &:hover {
-              background-color: ${theme.colours.green800};
+              background-color: ${theme.colors.green800};
             }
           `}
       `}

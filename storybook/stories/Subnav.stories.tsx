@@ -23,7 +23,7 @@ storiesOf('Subnav', module)
     <>
       <h1>Subnav</h1>
       <div style={{ width: '100%', border: '1px dotted #ccc' }}>
-        <Subnav.Container>
+        <Subnav>
           {links.map(l => (
             <Subnav.Link
               key={l}
@@ -35,7 +35,7 @@ storiesOf('Subnav', module)
               {l}
             </Subnav.Link>
           ))}
-        </Subnav.Container>
+        </Subnav>
       </div>
     </>
   ));

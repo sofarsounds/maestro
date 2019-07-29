@@ -9,3 +9,10 @@ After adding the import you can use the Divider simply like this
 ```html
 <Divider />
 ```
+
+## Props
+Table below contains all types of props available in the Divider component  
+
+| Name          | Type     | Default         | Description                      |
+| :------------ | :-----   | :-------------- | :------------------------------- |
+| space         | `Number` | `11`            | Customise the space before and after the divider

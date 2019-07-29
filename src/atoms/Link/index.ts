@@ -4,7 +4,7 @@ import styled, { css } from '../../lib/styledComponents';
 import theme from '../../theme';
 
 export const withLinkStyle = () => css`
-  color: ${theme.colours.primary};
+  color: ${theme.colors.primary};
   font-weight: bold;
 
   &:link,
@@ -14,7 +14,7 @@ export const withLinkStyle = () => css`
 
   &:hover {
     text-decoration: underline;
-    color: ${theme.colours.primary};
+    color: ${theme.colors.primary};
   }
 `;
 

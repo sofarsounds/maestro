@@ -25,6 +25,7 @@ storiesOf('Button', module)
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
           small={boolean('Small', false)}
+          block={boolean('Block', false)}
           data-qaid="button"
         >
           {text('Label', 'Button')}
@@ -52,7 +53,7 @@ storiesOf('Button', module)
       <h1>Inverted Button</h1>
       <Inversion>
         <OutlineButton
-          colour="white"
+          color="white"
           onClick={action('Inverted Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
@@ -68,7 +69,7 @@ storiesOf('Button', module)
       <h1>Inverted Button</h1>
       <Container>
         <OutlineButton
-          colour="black"
+          color="black"
           onClick={action('Inverted Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}

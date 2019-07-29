@@ -27,12 +27,12 @@ storiesOf('Header', module)
               flyoutContainer={false}
               offsetTop={-2}
               renderLabel={isOpen => (
-                <OutlineButton small colour={'white'}>
+                <OutlineButton small color={'white'}>
                   <span style={{ marginRight: '5px', color: 'inherit' }}>
                     Cities
                   </span>
                   <Icon
-                    colour={'#ffffff'}
+                    color={'#ffffff'}
                     name={isOpen ? 'caretUp' : 'caretDown'}
                     size={'8px'}
                   />
@@ -66,7 +66,7 @@ storiesOf('Header', module)
                     My Account
                   </span>
                   <Icon
-                    colour={'#ffffff'}
+                    color={'#ffffff'}
                     name={isOpen ? 'caretUp' : 'caretDown'}
                     size={'8px'}
                   />

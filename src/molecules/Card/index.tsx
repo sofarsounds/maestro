@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Container from './CardContainer';
-import Image from './CardImage';
+import Image, { ImageProps } from './CardImage';
 import Content from './CardContent';
 import { Title, Preview, Footer } from './CardElements';
 
@@ -13,7 +13,15 @@ interface CardProps {
   'data-qaid'?: string;
 }
 
-const Card: React.SFC<CardProps> = ({
+interface Composition {
+  Image: React.SFC<ImageProps>;
+  Content: React.SFC;
+  Title: React.SFC;
+  Preview: React.SFC;
+  Footer: React.SFC;
+}
+
+const Card: React.SFC<CardProps> & Composition = ({
   linkTo,
   inverted = false,
   children,
@@ -36,11 +44,10 @@ const Card: React.SFC<CardProps> = ({
   );
 };
 
-export default {
-  Container: Card,
-  Image,
-  Content,
-  Title,
-  Preview,
-  Footer
-};
+Card.Image = Image;
+Card.Content = Content;
+Card.Title = Title;
+Card.Preview = Preview;
+Card.Footer = Footer;
+
+export default Card;

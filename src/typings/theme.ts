@@ -1,6 +1,6 @@
 /**
  * Main Theme File
- * This is where all variables and colours are defined that can
+ * This is where all variables and colors are defined that can
  * be accessed using props in every component
  */
 
@@ -11,7 +11,7 @@ interface FontSizeResponsive {
 }
 
 export default interface Theme {
-  colours: {
+  colors: {
     primary: string;
 
     // blacks & greys
