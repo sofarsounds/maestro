@@ -25,6 +25,7 @@ interface Props {
   innerRef?: React.RefObject<any>;
   value?: any;
   hasError?: boolean;
+  name?: string;
 }
 
 interface ButtonProps {
@@ -96,7 +97,8 @@ const Input: React.SFC<Props> = ({
   innerRef,
   value,
   readonly,
-  hasError
+  hasError,
+  name
 }) => {
   return (
     <InputWrapper
@@ -110,6 +112,7 @@ const Input: React.SFC<Props> = ({
         readOnly={readonly}
         isOpen={isOpen}
         placeholder={placeholder}
+        name={name}
       />
       <Button isOpen={isOpen}>
         <Icon name={isOpen ? 'caretUp' : 'caretDown'} />
