@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import withSpacing from './withSpacing';
 import { mount } from 'enzyme';
+
+import withSpacing from './index';
 
 describe('Util: withSpacing', () => {
   const Spacer = styled.div`

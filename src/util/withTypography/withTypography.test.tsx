@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { mount } from 'enzyme';
-import withTypography from './withTypography';
+import withTypography from './index';
 
 const Typography = styled.h1<any>`
   color: yellow;

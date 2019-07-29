@@ -1,4 +1,4 @@
-import { css } from '../lib/styledComponents';
+import { css } from '../../lib/styledComponents';
 
 export interface WithTypographyProps {
   colour?: string;
