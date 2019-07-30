@@ -1,12 +1,11 @@
 import React from 'react';
+import useModal from './index';
 
 const mockSetState = jest.fn();
 jest.mock('react', () => ({
   useState: (initial: any) => [initial, mockSetState],
   useEffect: () => React.useLayoutEffect
 }));
-
-import useModal from './useModal';
 
 describe('useModal', () => {
   it('sets the isShowing value to true', () => {

@@ -1,6 +1,6 @@
-import { css } from 'styled-components';
+import { css } from '../../lib/styledComponents';
 
-import theme, { breakPoints } from '../theme';
+import theme, { breakPoints } from '../../theme';
 
 export interface WithSpacingProps {
   // global margin & padding

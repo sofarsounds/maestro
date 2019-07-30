@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { findDOMNode } from 'react-dom';
-import styled, { css } from '../lib/styledComponents';
+import styled, { css } from '../../lib/styledComponents';
 
 export type StickTo = 'top' | 'bottom';
 export interface DOMRect {
