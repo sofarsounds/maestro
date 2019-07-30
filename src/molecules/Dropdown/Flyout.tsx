@@ -21,6 +21,7 @@ export default styled.div<FlyoutProps>`
         padding: ${theme.ruler[8]}px ${theme.ruler[6]}px;
 
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
 
         width: 200px;
 

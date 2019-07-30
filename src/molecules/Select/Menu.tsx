@@ -20,6 +20,7 @@ const Menu = styled.ul<Props>`
     background-color: ${theme.colors.whiteDenim};
     max-height: 300px;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 
     ${!width &&
       css`

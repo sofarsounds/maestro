@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
-import { withShadow } from '../../util';
-import inputBaseStyle, { InputProps } from '../../atoms/Textfield/baseStyle';
+import { withTextfieldStyle, withShadow } from '../../util';
+import { InputProps } from '../../typings/input';
 
 import Icon from '../../atoms/Icon';
 
@@ -51,7 +51,7 @@ const InputWrapper = styled.div<InputWrapper>`
   ${({ isOpen }) => css`
     display: flex;
     flex: center;
-    ${inputBaseStyle};
+    ${withTextfieldStyle};
     padding-right: 0px;
 
     ${isOpen &&
