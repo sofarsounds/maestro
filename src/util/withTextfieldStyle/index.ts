@@ -1,14 +1,9 @@
-import Theme from '../../typings/theme';
+import { InputProps } from '../../typings/input';
 import { css } from '../../lib/styledComponents';
-
-export interface InputProps {
-  theme: Theme;
-  hasError?: boolean;
-}
 
 export default (props: InputProps) => css`
   width: 100%;
-  height: {props.theme.dimensions.inputHeight};
+  height: ${props.theme.dimensions.inputHeight};
   background-color: ${props.theme.colors.whiteDenim};
   border-radius: ${props.theme.borderRadius.input};
   border: 1px solid ${props.theme.colors.macyGrey};
