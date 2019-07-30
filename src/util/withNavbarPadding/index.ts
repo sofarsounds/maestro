@@ -1,6 +1,5 @@
-import { css } from '../lib/styledComponents';
-
-import theme from '../theme';
+import { css } from '../../lib/styledComponents';
+import theme from '../../theme';
 
 export interface WithNavbarPaddingProps {
   stickToNavbar: boolean;

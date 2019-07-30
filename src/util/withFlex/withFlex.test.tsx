@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import withFlex from './withFlex';
 import { mount } from 'enzyme';
+
+import withFlex from './index';
 
 describe('Util: withFlex', () => {
   const Flex = styled.div<any>`

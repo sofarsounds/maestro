@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import withShadow from './withShadow';
 import { mount } from 'enzyme';
+
+import withShadow from './index';
 
 describe('Util: withShadow', () => {
   const Shadow = styled.div<any>`

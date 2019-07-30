@@ -12,7 +12,7 @@ interface DropdownProps {
   children: any;
   size?: FlyoutSizes;
   offsetTop?: number;
-  flyoutContainer?: boolean;
+  flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   'data-qaid'?: string;
 }
 const Dropdown: React.SFC<DropdownProps> = ({
