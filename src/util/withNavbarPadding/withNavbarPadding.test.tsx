@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import withNavbarPadding from './withNavbarPadding';
 import { mount } from 'enzyme';
+
+import withNavbarPadding from './index';
 
 describe('Util: withNavbarPadding', () => {
   const HasPadding = styled.div<any>`

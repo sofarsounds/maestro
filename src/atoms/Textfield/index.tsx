@@ -1,7 +1,7 @@
 import styled from '../../lib/styledComponents';
-
-import inputBaseStyle, { InputProps } from './baseStyle';
+import { InputProps } from '../../typings/input';
+import { withTextfieldStyle } from '../../util';
 
 export default styled.input<InputProps>`
-  ${inputBaseStyle};
+  ${withTextfieldStyle};
 `;

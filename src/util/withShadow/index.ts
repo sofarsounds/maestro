@@ -1,4 +1,4 @@
-import { css } from '../lib/styledComponents';
+import { css } from '../../lib/styledComponents';
 
 interface ShadowProps {
   depth: 1 | 2 | 3 | 4 | 5;

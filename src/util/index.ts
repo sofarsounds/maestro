@@ -11,3 +11,5 @@ export {
   default as withNavbarPadding,
   WithNavbarPaddingProps
 } from './withNavbarPadding';
+
+export { default as withTextfieldStyle } from './withTextfieldStyle';

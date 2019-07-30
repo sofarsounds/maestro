@@ -1,9 +1,9 @@
 import styled, { css } from '../../lib/styledComponents';
-
-import inputBaseStyle, { InputProps } from '../Textfield/baseStyle';
+import { InputProps } from '../../typings/input';
+import { withTextfieldStyle } from '../../util';
 
 export default styled.textarea<InputProps>`
-  ${inputBaseStyle};
+  ${withTextfieldStyle};
 
   ${({ theme }) => css`
     height: auto;

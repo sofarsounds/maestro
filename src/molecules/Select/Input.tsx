@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
-import { withShadow } from '../../util';
-import inputBaseStyle, { InputProps } from '../../atoms/Textfield/baseStyle';
+import { withTextfieldStyle, withShadow } from '../../util';
+import { InputProps } from '../../typings/input';
 
 import Icon from '../../atoms/Icon';
 
@@ -25,6 +25,7 @@ interface Props {
   innerRef?: React.RefObject<any>;
   value?: any;
   hasError?: boolean;
+  name?: string;
 }
 
 interface ButtonProps {
@@ -50,7 +51,7 @@ const InputWrapper = styled.div<InputWrapper>`
   ${({ isOpen }) => css`
     display: flex;
     flex: center;
-    ${inputBaseStyle};
+    ${withTextfieldStyle};
     padding-right: 0px;
 
     ${isOpen &&
@@ -96,7 +97,8 @@ const Input: React.SFC<Props> = ({
   innerRef,
   value,
   readonly,
-  hasError
+  hasError,
+  name
 }) => {
   return (
     <InputWrapper
@@ -110,6 +112,7 @@ const Input: React.SFC<Props> = ({
         readOnly={readonly}
         isOpen={isOpen}
         placeholder={placeholder}
+        name={name}
       />
       <Button isOpen={isOpen}>
         <Icon name={isOpen ? 'caretUp' : 'caretDown'} />
