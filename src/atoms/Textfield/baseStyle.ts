@@ -8,7 +8,7 @@ export interface InputProps {
 
 export default (props: InputProps) => css`
   width: 100%;
-  height: 44px;
+  height: {props.theme.dimensions.inputHeight};
   background-color: ${props.theme.colors.whiteDenim};
   border-radius: ${props.theme.borderRadius.input};
   border: 1px solid ${props.theme.colors.macyGrey};
