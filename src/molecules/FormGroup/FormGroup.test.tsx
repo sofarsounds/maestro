@@ -3,11 +3,22 @@ import { mountWithTheme } from '../../test';
 
 import FormGroup from './index';
 import Textfield from '../../atoms/Textfield';
+import Icon from '../../atoms/Icon';
 import theme from '../../theme';
 
-const setup = (label: string, required?: boolean, errorMsg?: string) =>
+const setup = (
+  label: string,
+  required?: boolean,
+  errorMsg?: string,
+  renderIcon?: any
+) =>
   mountWithTheme(
-    <FormGroup label={label} required={required} errorMsg={errorMsg}>
+    <FormGroup
+      label={label}
+      required={required}
+      errorMsg={errorMsg}
+      renderIcon={renderIcon}
+    >
       <Textfield placeholder="Test Input" />
     </FormGroup>
   );
@@ -24,6 +35,15 @@ describe('<FormGroup />', () => {
     const wrapper = setup('A required field', true);
 
     expect(wrapper.text()).toContain('A required field *');
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it.only('renders a with an Icon', () => {
+    const wrapper = setup('A required field', true, undefined, () => (
+      <Icon name="helpCircleOutline" />
+    ));
+
+    expect(wrapper.find(Icon)).toHaveLength(1);
     expect(wrapper).toMatchSnapshot();
   });
 

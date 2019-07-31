@@ -12,6 +12,15 @@ After adding the import you can use any button simply like this
 <LinkButton>Link Button</LinkButton>
 ```
 
+You can also use the Button in combination with an icon which will be automatically aligned
+and coloured correctly.
+```html
+<PrimaryButton>
+  <Icon name="helpCircleOutline" />
+  Help me please!
+</PrimaryButton>
+```
+
 ## Props
 Table below contains all types of props available in any Button component  
 **Note:** all other standard button html props apply

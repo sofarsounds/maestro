@@ -8,4 +8,5 @@ export default styled.div`
   margin: 0;
   padding: 0;
   background-color: transparent;
+  display: inline-block;
 `;

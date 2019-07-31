@@ -31,6 +31,10 @@ exports[`Buttons Link Button renders correctly 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -44,10 +48,22 @@ exports[`Buttons Link Button renders correctly 1`] = `
   border-color: #949494;
 }
 
+.c0 i:before {
+  color: #FFFFFF;
+}
+
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   border-color: #006721;
   color: #006721;
   background-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -59,9 +75,21 @@ exports[`Buttons Link Button renders correctly 1`] = `
   color: #949494;
 }
 
+.c0:disabled i:before {
+  color: #949494;
+}
+
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   color: #006721;
   border-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -323,6 +351,10 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -336,10 +368,22 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   border-color: #949494;
 }
 
+.c0 i:before {
+  color: #FFFFFF;
+}
+
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   border-color: #006721;
   color: #006721;
   background-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -351,9 +395,21 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   color: #949494;
 }
 
+.c0:disabled i:before {
+  color: #949494;
+}
+
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   color: #006721;
   border-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -621,6 +677,14 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
+.c0 i {
+  opacity: 0;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -632,6 +696,10 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 .c0:disabled {
   background-color: #949494;
   border-color: #949494;
+}
+
+.c0 i:before {
+  color: #FFFFFF;
 }
 
 .c0:after {
@@ -653,10 +721,18 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   z-index: 1;
 }
 
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   border-color: #006721;
   color: #006721;
   background-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -668,15 +744,27 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   color: #949494;
 }
 
+.c0:disabled i:before {
+  color: #949494;
+}
+
 .c0:after {
   border-color: #949494;
   border-right-color: transparent;
   border-top-color: transparent;
 }
 
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   color: #006721;
   border-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -935,6 +1023,10 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -948,10 +1040,22 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   border-color: #949494;
 }
 
+.c0 i:before {
+  color: #FFFFFF;
+}
+
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   border-color: #006721;
   color: #006721;
   background-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -960,6 +1064,10 @@ exports[`Buttons Outline Button renders correctly 1`] = `
 
 .c0:disabled {
   background-color: #FFFFFF;
+  color: #949494;
+}
+
+.c0:disabled i:before {
   color: #949494;
 }
 
@@ -1203,6 +1311,10 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -1216,10 +1328,22 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   border-color: #949494;
 }
 
+.c0 i:before {
+  color: #FFFFFF;
+}
+
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   border-color: #006721;
   color: #006721;
   background-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -1228,6 +1352,10 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
 
 .c0:disabled {
   background-color: #FFFFFF;
+  color: #949494;
+}
+
+.c0:disabled i:before {
   color: #949494;
 }
 
@@ -1479,6 +1607,14 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
+.c0 i {
+  opacity: 0;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -1490,6 +1626,10 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
 .c0:disabled {
   background-color: #949494;
   border-color: #949494;
+}
+
+.c0 i:before {
+  color: #FFFFFF;
 }
 
 .c0:after {
@@ -1511,10 +1651,18 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   z-index: 1;
 }
 
+.c0 i:before {
+  color: #039842;
+}
+
 .c0:hover {
   border-color: #006721;
   color: #006721;
   background-color: #FFFFFF;
+}
+
+.c0:hover i:before {
+  color: #006721;
 }
 
 .c0:focus {
@@ -1526,8 +1674,20 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   color: #949494;
 }
 
+.c0:disabled i:before {
+  color: #949494;
+}
+
+.c0 i:before {
+  color: #111111;
+}
+
 .c0:hover {
   border-color: #111111;
+  color: #111111;
+}
+
+.c0:hover i:before {
   color: #111111;
 }
 
@@ -1779,6 +1939,10 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -1790,6 +1954,10 @@ exports[`Buttons Primary Button renders correctly 1`] = `
 .c0:disabled {
   background-color: #949494;
   border-color: #949494;
+}
+
+.c0 i:before {
+  color: #FFFFFF;
 }
 
 <ThemeProvider
@@ -2024,6 +2192,10 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -2035,6 +2207,10 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
 .c0:disabled {
   background-color: #949494;
   border-color: #949494;
+}
+
+.c0 i:before {
+  color: #FFFFFF;
 }
 
 <ThemeProvider
@@ -2275,6 +2451,14 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
+.c0 i {
+  opacity: 0;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -2286,6 +2470,10 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
 .c0:disabled {
   background-color: #949494;
   border-color: #949494;
+}
+
+.c0 i:before {
+  color: #FFFFFF;
 }
 
 .c0:after {
@@ -2541,6 +2729,10 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
   pointer-events: none;
 }
 
+.c0 i {
+  margin-right: 8px;
+}
+
 .c0:hover {
   background-color: #006721;
 }
@@ -2552,6 +2744,10 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
 .c0:disabled {
   background-color: #949494;
   border-color: #949494;
+}
+
+.c0 i:before {
+  color: #FFFFFF;
 }
 
 <ThemeProvider

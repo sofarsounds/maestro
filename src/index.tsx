@@ -27,10 +27,10 @@ export { default as Footer } from './molecules/Footer';
 export { default as Subnav } from './molecules/Subnav';
 export { default as Card } from './molecules/Card';
 export { default as Dropdown } from './molecules/Dropdown';
+export { Modal } from './molecules/Modal';
 
 export { default as useModal } from './hooks/useModal';
 export { UseModalProps } from './hooks/useModal';
-export { Modal } from './molecules/Modal';
 
 export * from './util';
 

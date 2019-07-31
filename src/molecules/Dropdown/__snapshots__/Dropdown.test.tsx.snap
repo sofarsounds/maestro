@@ -9,6 +9,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
   margin: 0;
   padding: 0;
   background-color: transparent;
+  display: inline-block;
 }
 
 <ThemeProvider
@@ -184,6 +185,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
   margin: 0;
   padding: 0;
   background-color: transparent;
+  display: inline-block;
 ",
               ],
             },
@@ -207,6 +209,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
   margin: 0;
   padding: 0;
   background-color: transparent;
+  display: inline-block;
 }
 
 <div

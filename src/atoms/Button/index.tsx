@@ -44,10 +44,19 @@ export const BaseButton = styled.button<ButtonProps>`
       pointer-events: none;
     }
 
+    // icon tag
+    i {
+      margin-right: ${theme.ruler[2]}px;
+    }
+
     ${loading &&
       css`
         pointer-events: none;
         cursor: disabled;
+
+        i {
+          opacity: 0;
+        }
       `}
 
     ${small &&
@@ -61,6 +70,7 @@ export const BaseButton = styled.button<ButtonProps>`
         display: block;
         width: 100%;
       `}
+
   `}
 `;
 
@@ -81,6 +91,10 @@ export const PrimaryButton = styled(BaseButton)`
     &:disabled {
       background-color: ${theme.colors.blueSmoke};
       border-color: ${theme.colors.blueSmoke};
+    }
+
+    i:before {
+      color: ${theme.colors.whiteDenim};
     }
 
     ${loading &&
@@ -120,10 +134,18 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     background: ${theme.colors.whiteDenim};
     color: ${theme.colors.primary};
 
+    i:before {
+      color: ${theme.colors.primary};
+    }
+
     &:hover {
       border-color: ${theme.colors.green900};
       color: ${theme.colors.green900};
       background-color: ${theme.colors.whiteDenim};
+
+      i:before {
+        color: ${theme.colors.green900};
+      }
     }
 
     &:focus {
@@ -133,6 +155,10 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     &:disabled {
       background-color: ${theme.colors.whiteDenim};
       color: ${theme.colors.blueSmoke};
+
+      i:before {
+        color: ${theme.colors.blueSmoke};
+      }
     }
 
     ${color === 'black' &&
@@ -140,9 +166,17 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
         border-color: ${theme.colors.blackBetty};
         color: ${theme.colors.backToBlack};
 
+        i:before {
+          color: ${theme.colors.backToBlack};
+        }
+
         &:hover {
           border-color: ${theme.colors.backToBlack};
           color: ${theme.colors.backToBlack};
+
+          i:before {
+            color: ${theme.colors.backToBlack};
+          }
         }
 
         &:focus {
@@ -156,10 +190,18 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
         color: ${theme.colors.whiteDenim};
         background-color: transparent;
 
+        i:before {
+          color: ${theme.colors.whiteDenim};
+        }
+
         &:hover {
           border-color: ${theme.colors.whiteDenim};
           color: ${theme.colors.whiteDenim};
           background-color: transparent;
+
+          i:before {
+            color: ${theme.colors.whiteDenim};
+          }
         }
 
         &:focus {
@@ -184,9 +226,17 @@ export const LinkButton = styled(OutlineButton)`
     border-color: ${theme.colors.whiteDenim};
     color: ${theme.colors.primary};
 
+    i:before {
+      color: ${theme.colors.primary};
+    }
+
     &:hover {
       color: ${theme.colors.green900};
       border-color: ${theme.colors.whiteDenim};
+
+      i:before {
+        color: ${theme.colors.green900};
+      }
     }
 
     &:focus {

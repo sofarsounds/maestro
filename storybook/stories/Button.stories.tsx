@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
-import { PrimaryButton, OutlineButton, LinkButton } from '../../src';
+import { PrimaryButton, OutlineButton, LinkButton, Icon } from '../../src';
 
 const Container = styled.div`
   padding: 20px;
@@ -90,6 +90,71 @@ storiesOf('Button', module)
           loading={boolean('Loading', false)}
           small={boolean('Small', false)}
         >
+          {text('Label', 'Button')}
+        </LinkButton>
+      </Container>
+    </>
+  ))
+  .add('With Icon', () => (
+    <>
+      <h1>Buttons with Icon</h1>
+      <Container>
+        <PrimaryButton
+          onClick={action('Link Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
+        >
+          <Icon name="padlock" />
+          {text('Label', 'Button')}
+        </PrimaryButton>
+        <br />
+        <br />
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <OutlineButton
+            onClick={action('Link Button clicked')}
+            disabled={boolean('Disabled', false)}
+            loading={boolean('Loading', false)}
+            small={boolean('Small', false)}
+          >
+            <Icon name="padlock" />
+            {text('Label', 'Button')}
+          </OutlineButton>
+          &nbsp;
+          <OutlineButton
+            color="black"
+            onClick={action('Link Button clicked')}
+            disabled={boolean('Disabled', false)}
+            loading={boolean('Loading', false)}
+            small={boolean('Small', false)}
+          >
+            <Icon name="padlock" />
+            {text('Label', 'Button')}
+          </OutlineButton>
+          &nbsp;
+          <div style={{ background: '#000', padding: '15px' }}>
+            <OutlineButton
+              color="white"
+              onClick={action('Link Button clicked')}
+              disabled={boolean('Disabled', false)}
+              loading={boolean('Loading', false)}
+              small={boolean('Small', false)}
+            >
+              <Icon name="padlock" />
+              {text('Label', 'Button')}
+            </OutlineButton>
+          </div>
+        </div>
+        <br />
+        <br />
+        <LinkButton
+          onClick={action('Link Button clicked')}
+          disabled={boolean('Disabled', false)}
+          loading={boolean('Loading', false)}
+          small={boolean('Small', false)}
+        >
+          <Icon name="padlock" />
           {text('Label', 'Button')}
         </LinkButton>
       </Container>
