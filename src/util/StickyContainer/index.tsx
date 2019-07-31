@@ -11,13 +11,13 @@ export interface DOMRect {
 }
 
 interface StickyContainerProps {
-  innerRef?: React.RefObject<HTMLInputElement>;
-  onMouseUp?: (ev: React.MouseEvent<HTMLDivElement>) => void;
+  children: any;
+  // onMouseUp?: (ev: React.MouseEvent<HTMLDivElement>) => void;
   stickToEl: Element | Text | null;
   stickTo?: StickTo;
   offsetTop?: number;
-  positionFixed?: boolean;
-  styleOptions?: [string];
+  positionFixed?: boolean; // TODO maybe rename to `targetElementFixed` ?
+  styleOptions?: [string]; // deprecate?
 }
 
 interface ComponentStyle {
