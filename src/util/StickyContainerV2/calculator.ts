@@ -6,8 +6,8 @@ type WindowSize = number[];
 interface AnchorEl {
   width: number;
   height: number;
-  x: number;
-  y: number;
+  left: number;
+  top: number;
 }
 
 type Position = 'top' | 'bottom' | 'left' | 'right';
@@ -19,7 +19,10 @@ interface PopoverDomEl {
 
 // Calculate an elements center coordinates based on top/left position and width/height
 export const calcElCenter = (anchorEl: AnchorEl) => {
-  return [anchorEl.x + anchorEl.width / 2, anchorEl.y - anchorEl.height / 2];
+  return [
+    anchorEl.left + anchorEl.width / 2,
+    anchorEl.top - anchorEl.height / 2
+  ];
 };
 
 export const calculateContainerPosition = (
@@ -34,20 +37,20 @@ export const calculateContainerPosition = (
   let popoverY = 0;
 
   if (position === 'top') {
-    popoverY = anchorEl.y - popoverEl.height;
+    popoverY = anchorEl.top - popoverEl.height;
   }
   if (position === 'bottom') {
-    popoverY = anchorEl.y + anchorEl.height;
+    popoverY = anchorEl.top + anchorEl.height;
   }
 
   if (position === 'left') {
-    popoverY = anchorEl.y + anchorEl.height / 2 - popoverEl.height / 2;
-    popoverX = anchorEl.x - anchorEl.width - anchorEl.width;
+    popoverY = anchorEl.top + anchorEl.height / 2 - popoverEl.height / 2;
+    popoverX = anchorEl.left - anchorEl.width - anchorEl.width;
   }
 
   if (position === 'right') {
-    popoverY = anchorEl.y + anchorEl.height / 2 - popoverEl.height / 2;
-    popoverX = anchorEl.x + anchorEl.width;
+    popoverY = anchorEl.top + anchorEl.height / 2 - popoverEl.height / 2;
+    popoverX = anchorEl.left + anchorEl.width;
   }
 
   return {

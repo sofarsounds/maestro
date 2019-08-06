@@ -789,7 +789,7 @@ exports[`Select renders correctly 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bxivhb",
+                "componentId": "sc-ifAKCX",
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -803,7 +803,7 @@ exports[`Select renders correctly 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bxivhb",
+              "styledComponentId": "sc-ifAKCX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -848,7 +848,7 @@ exports[`Select renders correctly 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-ifAKCX",
+                      "componentId": "sc-EHOje",
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -862,7 +862,7 @@ exports[`Select renders correctly 1`] = `
                     "displayName": "styled.input",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-ifAKCX",
+                    "styledComponentId": "sc-EHOje",
                     "target": "input",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -890,7 +890,7 @@ exports[`Select renders correctly 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-htpNat",
+                      "componentId": "sc-bxivhb",
                       "isStatic": false,
                       "lastClassName": "c2",
                       "rules": Array [
@@ -905,7 +905,7 @@ exports[`Select renders correctly 1`] = `
                     "displayName": "styled.button",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-htpNat",
+                    "styledComponentId": "sc-bxivhb",
                     "target": "button",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -931,7 +931,7 @@ exports[`Select renders correctly 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bwzfXH",
+                              "componentId": "sc-htpNat",
                               "isStatic": false,
                               "lastClassName": "c3",
                               "rules": Array [
@@ -1163,7 +1163,7 @@ exports[`Select renders correctly 1`] = `
                             "displayName": "styled.i",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bwzfXH",
+                            "styledComponentId": "sc-htpNat",
                             "target": "i",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],

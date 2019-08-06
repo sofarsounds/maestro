@@ -186,7 +186,7 @@ exports[`<Textarea /> renders correctly 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -204,7 +204,7 @@ exports[`<Textarea /> renders correctly 1`] = `
           "displayName": "styled.textarea",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "textarea",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -411,7 +411,7 @@ exports[`<Textarea /> renders correctly in disabled state 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -429,7 +429,7 @@ exports[`<Textarea /> renders correctly in disabled state 1`] = `
           "displayName": "styled.textarea",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "textarea",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -638,7 +638,7 @@ exports[`<Textarea /> renders correctly in error state 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -656,7 +656,7 @@ exports[`<Textarea /> renders correctly in error state 1`] = `
           "displayName": "styled.textarea",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "textarea",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -864,7 +864,7 @@ exports[`<Textarea /> renders correctly with a value 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -882,7 +882,7 @@ exports[`<Textarea /> renders correctly with a value 1`] = `
           "displayName": "styled.textarea",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "textarea",
           "toString": [Function],
           "warnTooManyClasses": [Function],

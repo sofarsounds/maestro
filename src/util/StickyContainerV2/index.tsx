@@ -1,6 +1,8 @@
-import React from 'react';
-import styled, { css } from '../../lib/styledComponents';
+import React, { useCallback, useRef, useEffect, useState } from 'react';
+import styled from '../../lib/styledComponents';
 
+import { useScrollPosition, useWindowSize } from '../../hooks';
+import { getPosition } from '../../hooks/usePosition';
 import { calculateContainerPosition } from './calculator';
 
 const Container = styled.div<any>`
@@ -11,12 +13,7 @@ const Container = styled.div<any>`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  ${({ calculated }) => css`
-    position: fixed;
-    top: ${calculated.y}px;
-    left: ${calculated.x}px;
-  `}
+  position: fixed;
 `;
 
 const StickyContainerV2: React.SFC<any> = ({
@@ -24,32 +21,54 @@ const StickyContainerV2: React.SFC<any> = ({
   position,
   children
 }) => {
-  const windowWidth = [window.innerWidth, window.innerHeight];
+  const popoverRef = useRef<any>();
+  const [calculatedPosition, setCalculatedPosition] = useState<any>({});
+  const [popoverElRect, setPopoverElRect] = useState<any>({});
+  const windowSize = useWindowSize();
 
-  if (!anchorEl) {
-    return null;
-  }
+  const updateCalculatedPosition = useCallback(
+    (updatedAnchorEl: any) => {
+      if (updatedAnchorEl.current) {
+        const pos = getPosition(updatedAnchorEl.current);
 
-  const anchor = {
-    width: 100,
-    height: 100,
-    x: 403,
-    y: 164
-  };
+        const calculated = calculateContainerPosition(
+          windowSize,
+          pos,
+          position,
+          popoverElRect
+        );
 
-  const popoverEl = {
-    width: 200,
-    height: 50
-  };
-
-  const pos = calculateContainerPosition(
-    windowWidth,
-    anchor,
-    position,
-    popoverEl
+        setCalculatedPosition(calculated);
+      }
+    },
+    [popoverElRect, position, windowSize]
   );
 
-  return <Container calculated={pos}>{children}</Container>;
+  useEffect(() => {
+    if (popoverRef.current) {
+      setPopoverElRect(getPosition(popoverRef.current));
+    }
+  }, [popoverRef]);
+
+  useEffect(() => {
+    updateCalculatedPosition(anchorEl);
+  }, [anchorEl, popoverElRect, position, updateCalculatedPosition, windowSize]);
+
+  useScrollPosition(() => {
+    updateCalculatedPosition(anchorEl);
+  });
+
+  return (
+    <Container
+      ref={popoverRef}
+      style={{
+        top: `${calculatedPosition.y}px`,
+        left: `${calculatedPosition.x}px`
+      }}
+    >
+      {children}
+    </Container>
+  );
 };
 
 export default StickyContainerV2;

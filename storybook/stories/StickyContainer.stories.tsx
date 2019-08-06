@@ -16,7 +16,7 @@ const Anchor = styled.div`
   background: #ccc;
   width: 100px;
   height: 100px;
-  position: fixed;
+  position: absolute;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
   display: flex;
@@ -28,7 +28,7 @@ const Example = () => {
   const ref = React.useRef<any>();
 
   return (
-    <div>
+    <div style={{ height: '5000px' }}>
       <Anchor ref={ref}>Anchor</Anchor>
       <StickyContainerV2
         anchorEl={ref}

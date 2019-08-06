@@ -173,7 +173,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-htpNat",
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
@@ -192,7 +192,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-htpNat",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],

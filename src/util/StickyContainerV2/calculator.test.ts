@@ -2,10 +2,9 @@ import { calcElCenter, calculateContainerPosition } from './calculator';
 
 describe('<StickyContainerV2 />', () => {
   it('calculates the center of an element', () => {
-    expect(calcElCenter({ width: 100, height: 50, x: 200, y: 200 })).toEqual([
-      250,
-      175
-    ]);
+    expect(
+      calcElCenter({ width: 100, height: 50, left: 200, top: 200 })
+    ).toEqual([250, 175]);
   });
 
   describe('calculateContainerPosition', () => {
@@ -13,8 +12,8 @@ describe('<StickyContainerV2 />', () => {
     const StickToDomElement = {
       width: 100,
       height: 50,
-      x: 200,
-      y: 500
+      left: 200,
+      top: 500
     };
     const PopoverDom = {
       width: 200,

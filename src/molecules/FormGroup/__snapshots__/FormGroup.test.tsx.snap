@@ -1462,15 +1462,15 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -1489,7 +1489,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -1507,7 +1507,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-jTzLTM",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1543,7 +1543,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-jzJRlG",
+                            "componentId": "sc-cSHVUG",
                             "isStatic": false,
                             "lastClassName": "c1",
                             "rules": Array [
@@ -1775,7 +1775,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                           "displayName": "styled.i",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-jzJRlG",
+                          "styledComponentId": "sc-cSHVUG",
                           "target": "i",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -1803,7 +1803,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
+                    "componentId": "sc-jzJRlG",
                     "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
@@ -1817,7 +1817,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                   "displayName": "styled.input",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
+                  "styledComponentId": "sc-jzJRlG",
                   "target": "input",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],

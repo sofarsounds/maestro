@@ -171,7 +171,7 @@ exports[`Select <Menu /> it renders correctly 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-htpNat",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -185,7 +185,7 @@ exports[`Select <Menu /> it renders correctly 1`] = `
           "displayName": "styled.ul",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-htpNat",
           "target": "ul",
           "toString": [Function],
           "warnTooManyClasses": [Function],
