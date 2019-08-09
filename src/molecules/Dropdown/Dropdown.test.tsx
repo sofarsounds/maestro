@@ -4,7 +4,7 @@ import { mountWithTheme } from '../../test';
 import Dropdown from './index';
 import Trigger from './DropdownTrigger';
 import Flyout from './Flyout';
-import StickyContainer from '../../util/StickyContainer';
+import StickyContainer from '../../util/StickyContainerV2';
 
 const OutsideDiv = () => <button>bla</button>;
 

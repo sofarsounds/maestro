@@ -26,8 +26,8 @@ export const getPosition = (el: any): ReturnRect => {
   let parentOffset = { top: 0, left: 0 };
 
   return {
-    top: offset.top - parentOffset.top - 0,
-    left: offset.left - parentOffset.left - 0,
+    top: offset.top - parentOffset.top,
+    left: offset.left - parentOffset.left,
     width: el.getBoundingClientRect().width || 0,
     height: el.getBoundingClientRect().height || 0
   };

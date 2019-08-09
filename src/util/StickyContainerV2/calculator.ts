@@ -2,7 +2,6 @@
  * Calculate the position of the container
  */
 type WindowSize = number[];
-
 interface AnchorEl {
   width: number;
   height: number;
@@ -11,6 +10,16 @@ interface AnchorEl {
 }
 
 type Position = 'top' | 'bottom' | 'left' | 'right';
+
+interface AnchorOrigin {
+  vertical?: string;
+  horizontal?: string;
+}
+
+interface TransformOrigin {
+  vertical?: string;
+  horizontal?: string;
+}
 
 interface PopoverDomEl {
   width: number;
@@ -28,29 +37,101 @@ export const calcElCenter = (anchorEl: AnchorEl) => {
 export const calculateContainerPosition = (
   windowSize: WindowSize,
   anchorEl: AnchorEl,
-  position: Position,
+  anchorOrigin: AnchorOrigin,
+  transformOrigin: TransformOrigin,
   popoverEl: PopoverDomEl
 ) => {
   const anchorElCenter = calcElCenter(anchorEl);
 
-  let popoverX = anchorElCenter[0] - popoverEl.width / 2;
+  let popoverX = 0;
   let popoverY = 0;
 
-  if (position === 'top') {
-    popoverY = anchorEl.top - popoverEl.height;
-  }
-  if (position === 'bottom') {
-    popoverY = anchorEl.top + anchorEl.height;
+  const { vertical = 'bottom', horizontal = 'left' } = anchorOrigin;
+  const {
+    vertical: transformVertical = 'bottom',
+    horizontal: transformHorizontal = 'right'
+  } = transformOrigin;
+
+  const verticalTop = anchorEl.top - popoverEl.height;
+  const verticalCenter =
+    anchorEl.top + anchorEl.height / 2 - popoverEl.height / 2;
+  const verticalBottom = anchorEl.top + anchorEl.height;
+
+  const horizontalLeft = anchorEl.left; // - anchorEl.width - anchorEl.width;
+  const horizontalCenter =
+    anchorEl.left + anchorEl.width / 2 - popoverEl.width / 2;
+  const horizontalRight = anchorEl.left + anchorEl.width;
+
+  if (vertical === 'top') {
+    popoverY = verticalTop;
+
+    if (transformVertical === 'top') {
+      popoverY += popoverEl.height;
+    }
+
+    if (transformVertical === 'center') {
+      popoverY += popoverEl.height / 2;
+    }
   }
 
-  if (position === 'left') {
-    popoverY = anchorEl.top + anchorEl.height / 2 - popoverEl.height / 2;
-    popoverX = anchorEl.left - anchorEl.width - anchorEl.width;
+  if (vertical === 'center') {
+    popoverY = verticalCenter;
+
+    if (transformVertical === 'top') {
+      popoverY += popoverEl.height / 2;
+    }
+
+    if (transformVertical === 'bottom') {
+      popoverY -= popoverEl.height / 2;
+    }
   }
 
-  if (position === 'right') {
-    popoverY = anchorEl.top + anchorEl.height / 2 - popoverEl.height / 2;
-    popoverX = anchorEl.left + anchorEl.width;
+  if (vertical === 'bottom') {
+    popoverY = verticalBottom;
+
+    if (transformVertical === 'center') {
+      popoverY -= popoverEl.height / 2;
+    }
+
+    if (transformVertical === 'bottom') {
+      popoverY -= popoverEl.height;
+    }
+  }
+
+  if (horizontal === 'left') {
+    popoverX = horizontalLeft;
+
+    if (transformHorizontal === 'center') {
+      popoverX -= popoverEl.width / 2;
+    }
+
+    if (transformHorizontal === 'right') {
+      popoverX -= popoverEl.width;
+    }
+  }
+
+  if (horizontal === 'center') {
+    popoverX = horizontalCenter;
+
+    if (transformHorizontal === 'left') {
+      popoverX += popoverEl.width / 2;
+    }
+
+    if (transformHorizontal === 'right') {
+      popoverX -= popoverEl.width / 2;
+    }
+  }
+
+  if (horizontal === 'right') {
+    popoverX = horizontalRight - popoverEl.width;
+
+    if (transformHorizontal === 'left') {
+      popoverX += popoverEl.width;
+    }
+
+    if (transformHorizontal === 'center') {
+      popoverX += popoverEl.width / 2;
+    }
   }
 
   return {

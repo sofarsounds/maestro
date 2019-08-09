@@ -6,19 +6,13 @@ import { getPosition } from '../../hooks/usePosition';
 import { calculateContainerPosition } from './calculator';
 
 const Container = styled.div<any>`
-  background: #ccc;
-  border: 1px solid #aaa;
-  width: 200px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
 `;
 
 const StickyContainerV2: React.SFC<any> = ({
   anchorEl,
-  position,
+  anchorOrigin,
+  transformOrigin,
   children
 }) => {
   const popoverRef = useRef<any>();
@@ -34,14 +28,15 @@ const StickyContainerV2: React.SFC<any> = ({
         const calculated = calculateContainerPosition(
           windowSize,
           pos,
-          position,
+          anchorOrigin,
+          transformOrigin,
           popoverElRect
         );
 
         setCalculatedPosition(calculated);
       }
     },
-    [popoverElRect, position, windowSize]
+    [popoverElRect, anchorOrigin, windowSize]
   );
 
   useEffect(() => {
@@ -52,18 +47,27 @@ const StickyContainerV2: React.SFC<any> = ({
 
   useEffect(() => {
     updateCalculatedPosition(anchorEl);
-  }, [anchorEl, popoverElRect, position, updateCalculatedPosition, windowSize]);
+  }, [
+    anchorEl,
+    popoverElRect,
+    anchorOrigin,
+    transformOrigin,
+    updateCalculatedPosition,
+    windowSize
+  ]);
 
   useScrollPosition(() => {
     updateCalculatedPosition(anchorEl);
   });
 
+  const { y = -10000, x = -10000 } = calculatedPosition;
+
   return (
     <Container
       ref={popoverRef}
       style={{
-        top: `${calculatedPosition.y}px`,
-        left: `${calculatedPosition.x}px`
+        top: `${y}px`,
+        left: `${x}px`
       }}
     >
       {children}

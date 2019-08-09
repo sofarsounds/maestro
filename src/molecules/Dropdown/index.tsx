@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import { StickyContainer, PortalComponent } from '../../util/index';
+import { StickyContainerV2, PortalComponent } from '../../util/index';
 import { useOutsideClick } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
@@ -12,6 +12,14 @@ interface DropdownProps {
   children: any;
   size?: FlyoutSizes;
   offsetTop?: number;
+  anchorOrigin?: {
+    vertical: string;
+    horizontal: string;
+  };
+  transformOrigin?: {
+    vertical: string;
+    horizontal: string;
+  };
   flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   'data-qaid'?: string;
 }
@@ -20,6 +28,14 @@ const Dropdown: React.SFC<DropdownProps> = ({
   renderLabel,
   children,
   flyoutContainer,
+  anchorOrigin = {
+    vertical: 'bottom',
+    horizontal: 'left'
+  },
+  transformOrigin = {
+    vertical: 'top',
+    horizontal: 'left'
+  },
   size,
   offsetTop,
   'data-qaid': qaId
@@ -39,7 +55,12 @@ const Dropdown: React.SFC<DropdownProps> = ({
 
       {isOpen && (
         <PortalComponent dom={document.body}>
-          <StickyContainer offsetTop={offsetTop} stickToEl={ref.current}>
+          <StickyContainerV2
+            offsetTop={offsetTop}
+            anchorEl={ref}
+            anchorOrigin={anchorOrigin}
+            transformOrigin={transformOrigin}
+          >
             <Flyout
               flyoutContainer={flyoutContainer}
               size={size}
@@ -47,7 +68,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
             >
               {children}
             </Flyout>
-          </StickyContainer>
+          </StickyContainerV2>
         </PortalComponent>
       )}
     </>
