@@ -57,15 +57,18 @@ interface IconProps {
   color?: string;
   className?: string;
   'data-qaid'?: string;
+  id?: string;
 }
 const Icon: React.SFC<IconProps> = ({
   name,
   size,
   color,
   className = '',
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => (
   <IconElement
+    id={id}
     className={`icon-${name} ${className}`}
     size={size}
     color={color}

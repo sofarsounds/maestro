@@ -14,6 +14,7 @@ interface DropdownProps {
   offsetTop?: number;
   flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   'data-qaid'?: string;
+  id?: string;
 }
 const Dropdown: React.SFC<DropdownProps> = ({
   label,
@@ -22,7 +23,8 @@ const Dropdown: React.SFC<DropdownProps> = ({
   flyoutContainer,
   size,
   offsetTop,
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
@@ -33,7 +35,12 @@ const Dropdown: React.SFC<DropdownProps> = ({
 
   return (
     <>
-      <Trigger ref={ref} onClick={() => setIsOpen(!isOpen)} data-qaid={qaId}>
+      <Trigger
+        id={id}
+        ref={ref}
+        onClick={() => setIsOpen(!isOpen)}
+        data-qaid={qaId}
+      >
         {renderLabel ? renderLabel(isOpen) : label}
       </Trigger>
 

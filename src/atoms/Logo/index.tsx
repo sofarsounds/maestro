@@ -8,6 +8,7 @@ interface Props {
   width?: string;
   className?: string;
   'data-qaid'?: string;
+  id?: string;
 }
 
 const LogoImg = styled.img`
@@ -37,9 +38,11 @@ const Logo: React.SFC<Props> = ({
   invert = false,
   width,
   className,
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => (
   <LogoImg
+    id={id}
     data-qaid={qaId}
     className={className}
     alt="Sofar Logo"

@@ -1482,8 +1482,11 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
         <div
           className=""
         >
-          <styled.span>
+          <styled.span
+            data-qaid="undefined-label"
+          >
             <StyledComponent
+              data-qaid="undefined-label"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -1518,6 +1521,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
             >
               <span
                 className="c0"
+                data-qaid="undefined-label"
               >
                 A required field
                 <span

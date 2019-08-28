@@ -10,6 +10,7 @@ import { buttonTextStyle } from '../../atoms/Button';
 interface SubnavProps {
   children: any;
   'data-qaid'?: string;
+  id?: string;
 }
 
 interface LinkProps extends RouterLinkProps {
@@ -71,8 +72,13 @@ const Link = styled(RouterLink)<LinkProps>`
 
 const Subnav: React.SFC<SubnavProps> & Composition = ({
   children,
-  'data-qaid': qaId
-}) => <Container data-qaid={qaId}>{children}</Container>;
+  'data-qaid': qaId,
+  id
+}) => (
+  <Container id={id} data-qaid={qaId}>
+    {children}
+  </Container>
+);
 
 Subnav.Link = Link;
 

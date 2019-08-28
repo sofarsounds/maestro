@@ -14,10 +14,11 @@ After adding the import you can use it simply like this
 Table below contains all types of props available in the Link component  
 *Info*: The router is wrapping a React Router Link so all props from that apply.
 
-| Name          | Type          | Default         | Description                      |
-| :------------ | :-----        | :-------------- | :------------------------------- |
-| **children**  | `React.Node`  |                 | The content displayed in the Link
-| to            | `string`      |                 | Where the link points to
+| Name          | Type         | Default         | Description                      |
+| :------------ | :-----       | :-------------- | :------------------------------- |
+| **children**  | `React.Node` |                 | The content displayed in the Link
+| to            | `string`     |                 | Where the link points to
+| id            | `string`     |                 | Default HTML id prop to identify the element
 
 ## Additional Information
 

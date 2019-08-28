@@ -11,6 +11,7 @@ interface CardProps {
   inverted?: boolean;
   children: any;
   'data-qaid'?: string;
+  id?: string;
 }
 
 interface Composition {
@@ -25,11 +26,12 @@ const Card: React.SFC<CardProps> & Composition = ({
   linkTo,
   inverted = false,
   children,
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => {
   if (!linkTo) {
     return (
-      <Container inverted={inverted} data-qaid={qaId}>
+      <Container id={id} inverted={inverted} data-qaid={qaId}>
         {children}
       </Container>
     );
@@ -37,7 +39,7 @@ const Card: React.SFC<CardProps> & Composition = ({
 
   return (
     <Link to={linkTo}>
-      <Container clickable inverted={inverted} data-qaid={qaId}>
+      <Container id={id} clickable inverted={inverted} data-qaid={qaId}>
         {children}
       </Container>
     </Link>

@@ -11,6 +11,7 @@ interface Props {
   children: any;
   renderIcon?: Function;
   'data-qaid'?: string;
+  id?: string;
 }
 
 const FormGroupWrapper = styled.div``;
@@ -21,9 +22,10 @@ const FormGroup: React.SFC<Props> = ({
   children,
   errorMsg,
   renderIcon,
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => (
-  <FormGroupWrapper data-qaid={qaId}>
+  <FormGroupWrapper id={id} data-qaid={qaId}>
     <FormGroupLabel data-qaid={`${qaId}-label`}>
       {label}
       {required ? (

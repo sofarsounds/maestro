@@ -26,6 +26,7 @@ After adding the import you can use the Grid simply like this
 | colGap        | `string`     | 20px            | Optional prop if you want to customise the gap between columns
 | rowGap        | `string`     | 20px            | Optional prop if you want to customise the gap between rows
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element
 
 ## Col Props
 
@@ -38,3 +39,4 @@ After adding the import you can use the Grid simply like this
 | lg            | `number`     |                 | Number of columns taken up on `lg` devices
 | xl            | `number`     |                 | Number of columns taken up on `xl` devices
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element
