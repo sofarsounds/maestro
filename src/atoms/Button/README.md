@@ -32,6 +32,7 @@ Table below contains all types of props available in any Button component
 | small         | `Boolean`    | `false`         | Whether the button should be displayed in a small version
 | block         | `Boolean`    | `false`         | Whether the button should be displayed as block
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element
 
 ### OutlineButton Props
 | Name          | Type          | Default         | Description                      |

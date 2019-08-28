@@ -12,6 +12,7 @@ interface Props {
   parallax?: boolean;
   children?: any;
   'data-qaid'?: string;
+  id?: string;
 }
 
 interface WrapperProps {
@@ -49,9 +50,11 @@ const HeroImage: React.SFC<Props> = ({
   subtitle,
   parallax = false,
   children,
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => (
   <Wrapper
+    id={id}
     data-qaid={qaId}
     parallax={parallax}
     height={height}

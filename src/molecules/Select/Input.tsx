@@ -26,6 +26,7 @@ interface Props {
   value?: any;
   hasError?: boolean;
   name?: string;
+  id?: string;
 }
 
 interface ButtonProps {
@@ -98,10 +99,12 @@ const Input: React.SFC<Props> = ({
   value,
   readonly,
   hasError,
-  name
+  name,
+  id
 }) => {
   return (
     <InputWrapper
+      id={id}
       hasError={hasError}
       onClick={toggleSelect}
       isOpen={isOpen}

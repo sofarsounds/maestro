@@ -19,4 +19,5 @@ Table below contains all types of props available in the Logo component
 | :------------ | :-----       | :-------------- | :------------------------------- |
 | **children**  | `React.Node` |                 | The content to display in the snackbar
 | **onCancel**  | `Function`   |                 | Function to execute when clicking the "x"
-
+| data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element

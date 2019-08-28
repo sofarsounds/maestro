@@ -18,3 +18,6 @@ Table below contains all types of props available in the Image component
 | :------------ | :-----   | :-------------- | :------------------------------- |
 | **src**       | `string` |                 | Src for the image
 | data-qaid     | `string` |                 | Optional prop for testing purposes
+| id            | `string` |                 | Default HTML id prop to identify the element
+
+
