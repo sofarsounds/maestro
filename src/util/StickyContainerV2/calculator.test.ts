@@ -95,5 +95,59 @@ describe('<StickyContainerV2 />', () => {
         );
       });
     });
+
+    describe('boundary awareness', () => {
+      it('sticks to the left side of the screen if the container would run out', () => {
+        const pos = calculateContainerPosition(
+          [350, 500],
+          StickTo,
+          { horizontal: 'left' },
+          { horizontal: 'right' },
+          { width: 250, height: 100 }
+        );
+
+        expect(pos).toHaveProperty('x', 0);
+      });
+
+      it('sticks to the right side of the screen if the container would run out', () => {
+        const pos = calculateContainerPosition(
+          [350, 500],
+          StickTo,
+          { horizontal: 'right' },
+          { horizontal: 'left' },
+          { width: 250, height: 100 }
+        );
+
+        expect(pos).toHaveProperty('x', 100);
+      });
+    });
+
+    describe('offset', () => {
+      it('adds a vertical offset to the container', () => {
+        const pos = calculateContainerPosition(
+          windowSize,
+          StickTo,
+          { horizontal: 'right' },
+          { horizontal: 'left' },
+          { width: 100, height: 100 },
+          { vertical: 100 }
+        );
+
+        expect(pos).toHaveProperty('y', 300);
+      });
+
+      it('adds a horizontal offset to the container', () => {
+        const pos = calculateContainerPosition(
+          windowSize,
+          StickTo,
+          { horizontal: 'right' },
+          { horizontal: 'left' },
+          { width: 100, height: 100 },
+          { horizontal: 100 }
+        );
+
+        expect(pos).toHaveProperty('x', 400);
+      });
+    });
   });
 });

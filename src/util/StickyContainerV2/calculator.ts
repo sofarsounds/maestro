@@ -11,14 +11,19 @@ interface AnchorEl {
 
 type Position = 'top' | 'bottom' | 'left' | 'right';
 
-interface AnchorOrigin {
+export interface AnchorOrigin {
   vertical?: string;
   horizontal?: string;
 }
 
-interface TransformOrigin {
+export interface TransformOrigin {
   vertical?: string;
   horizontal?: string;
+}
+
+export interface Offset {
+  vertical?: number;
+  horizontal?: number;
 }
 
 interface PopoverDomEl {
@@ -39,9 +44,10 @@ export const calculateContainerPosition = (
   anchorEl: AnchorEl,
   anchorOrigin: AnchorOrigin,
   transformOrigin: TransformOrigin,
-  popoverEl: PopoverDomEl
+  popoverEl: PopoverDomEl,
+  offset?: Offset
 ) => {
-  const anchorElCenter = calcElCenter(anchorEl);
+  const [windowWidth, windowHeight] = windowSize;
 
   let popoverX = 0;
   let popoverY = 0;
@@ -57,7 +63,7 @@ export const calculateContainerPosition = (
     anchorEl.top + anchorEl.height / 2 - popoverEl.height / 2;
   const verticalBottom = anchorEl.top + anchorEl.height;
 
-  const horizontalLeft = anchorEl.left; // - anchorEl.width - anchorEl.width;
+  const horizontalLeft = anchorEl.left;
   const horizontalCenter =
     anchorEl.left + anchorEl.width / 2 - popoverEl.width / 2;
   const horizontalRight = anchorEl.left + anchorEl.width;
@@ -132,6 +138,38 @@ export const calculateContainerPosition = (
     if (transformHorizontal === 'center') {
       popoverX += popoverEl.width / 2;
     }
+  }
+
+  /**
+   * Adjust if an offset has been set
+   */
+  if (offset) {
+    if (offset.vertical) {
+      popoverY += offset.vertical;
+    }
+
+    if (offset.horizontal) {
+      popoverX += offset.horizontal;
+    }
+  }
+
+  /**
+   * Adjust the popover element position if it would run out of the screen
+   */
+  if (popoverX < 0) {
+    popoverX = 0;
+  }
+
+  if (popoverY < 0) {
+    popoverY = 0;
+  }
+
+  if (popoverX + popoverEl.width > windowWidth) {
+    popoverX = windowWidth - popoverEl.width;
+  }
+
+  if (popoverY + popoverEl.height > windowHeight) {
+    popoverY = windowHeight - popoverEl.height;
   }
 
   return {

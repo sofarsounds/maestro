@@ -25,7 +25,7 @@ storiesOf('Header', module)
           <Navbar.ItemContainer>
             <Dropdown
               flyoutContainer={false}
-              offsetTop={-2}
+              offset={{ vertical: -2 }}
               renderLabel={isOpen => (
                 <OutlineButton small color={'white'}>
                   <span style={{ marginRight: '5px', color: 'inherit' }}>
@@ -59,7 +59,7 @@ storiesOf('Header', module)
             <Navbar.Item>Host</Navbar.Item>
             <Dropdown
               flyoutContainer={false}
-              offsetTop={10}
+              offset={{ vertical: 10 }}
               renderLabel={isOpen => (
                 <Navbar.Item>
                   <span style={{ marginRight: '5px', color: 'inherit' }}>

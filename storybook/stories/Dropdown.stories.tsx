@@ -36,7 +36,7 @@ storiesOf('Dropdown', module)
     <>
       <h1>Dropdown with Offset</h1>
       <Dropdown
-        offsetTop={55}
+        offset={{ vertical: 55 }}
         flyoutContainer={false}
         renderLabel={isOpen => (
           <>
@@ -66,7 +66,7 @@ storiesOf('Dropdown', module)
       <h1>Without Flyout Container</h1>
       <Dropdown
         flyoutContainer={false}
-        offsetTop={0}
+        offset={{ vertical: 50 }}
         renderLabel={isOpen => (
           <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
         )}

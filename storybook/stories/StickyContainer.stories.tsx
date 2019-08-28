@@ -73,6 +73,10 @@ const Example = () => {
             'left'
           )
         }}
+        offset={{
+          vertical: number('Vertical Offset', 0),
+          horizontal: number('Horizontal Offset', 0)
+        }}
       >
         <StickyStyle>I am Sticky</StickyStyle>
       </StickyContainerV2>

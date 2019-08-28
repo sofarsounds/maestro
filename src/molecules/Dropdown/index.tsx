@@ -1,25 +1,17 @@
 import React, { useState, useRef } from 'react';
 
 import { StickyContainerV2, PortalComponent } from '../../util/index';
+import { StickyContainerProps } from '../../util/StickyContainerV2';
 import { useOutsideClick } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
 import Flyout, { FlyoutSizes } from './Flyout';
 
-interface DropdownProps {
+interface DropdownProps extends StickyContainerProps {
   label?: string;
   renderLabel?: (arg?: any) => any;
   children: any;
   size?: FlyoutSizes;
-  offsetTop?: number;
-  anchorOrigin?: {
-    vertical: string;
-    horizontal: string;
-  };
-  transformOrigin?: {
-    vertical: string;
-    horizontal: string;
-  };
   flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   'data-qaid'?: string;
 }
@@ -36,8 +28,8 @@ const Dropdown: React.SFC<DropdownProps> = ({
     vertical: 'top',
     horizontal: 'left'
   },
+  offset,
   size,
-  offsetTop,
   'data-qaid': qaId
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +48,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
       {isOpen && (
         <PortalComponent dom={document.body}>
           <StickyContainerV2
-            offsetTop={offsetTop}
+            offset={offset}
             anchorEl={ref}
             anchorOrigin={anchorOrigin}
             transformOrigin={transformOrigin}

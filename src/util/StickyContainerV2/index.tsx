@@ -3,7 +3,18 @@ import styled from '../../lib/styledComponents';
 
 import { useScrollPosition, useWindowSize } from '../../hooks';
 import { getPosition } from '../../hooks/usePosition';
-import { calculateContainerPosition } from './calculator';
+import {
+  AnchorOrigin,
+  TransformOrigin,
+  Offset,
+  calculateContainerPosition
+} from './calculator';
+
+export interface StickyContainerProps {
+  anchorOrigin?: AnchorOrigin;
+  transformOrigin?: TransformOrigin;
+  offset?: Offset;
+}
 
 const Container = styled.div<any>`
   position: fixed;
@@ -13,6 +24,7 @@ const StickyContainerV2: React.SFC<any> = ({
   anchorEl,
   anchorOrigin,
   transformOrigin,
+  offset,
   children
 }) => {
   const popoverRef = useRef<any>();
@@ -30,13 +42,14 @@ const StickyContainerV2: React.SFC<any> = ({
           pos,
           anchorOrigin,
           transformOrigin,
-          popoverElRect
+          popoverElRect,
+          offset
         );
 
         setCalculatedPosition(calculated);
       }
     },
-    [popoverElRect, anchorOrigin, windowSize]
+    [windowSize, anchorOrigin, transformOrigin, popoverElRect, offset]
   );
 
   useEffect(() => {
