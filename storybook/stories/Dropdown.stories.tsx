@@ -20,17 +20,21 @@ const positions = ['top', 'right', 'bottom', 'left'];
 storiesOf('Dropdown', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
-    <>
+    <div style={{ height: '1000px' }}>
       <h1>Dropdown</h1>
 
-      <Dropdown label="Click me to open the dropdown">
+      <Dropdown
+        disableScrollWhenOpen={boolean('Disable Scroll', false)}
+        keepInViewPort={boolean('Keep In ViewPort', false)}
+        label="Click me to open the dropdown"
+      >
         <b>A Dropdown</b>
         <p>
           A dropdown component can be used to display help information or a
           short list of options
         </p>
       </Dropdown>
-    </>
+    </div>
   ))
   .add('With Offset', () => (
     <>
