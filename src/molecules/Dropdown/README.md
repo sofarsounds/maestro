@@ -27,6 +27,7 @@ After adding the import you can use the Dropdown simply like this
 | size                  | [Enum](#enum) |                 | The size of the flyout component
 | flyoutContainer       | `Boolean`     |                 | Whether to display the default flyout container
 | disableScrollWhenOpen | `Boolean`     |                 | Disables body scroll when dropdown is open
+| keepInViewPort        | `Boolean`     |                 | Always keep the dropdown flyout within the viewport
 | data-qaid             | `string`      |                 | Optional prop for testing purposes
 | id                    | `string`      |                 | Default HTML id prop to identify the element
 
