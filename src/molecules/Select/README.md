@@ -18,13 +18,14 @@ After adding the import you can use it simply like this
 
 Table below contains all types of props available in the Select component  
 
-| Name              | Type       | Default         | Description                      |
-| :------------     | :-----     | :-------------- | :------------------------------- |
-| **children**      | `Function` |                 | Render the `Option`s for the select
-| **placeholder**   | `string`   |                 | The placeholder/label to display in the select field
-| handleOptionClick | `Function` |                 | Optional funtion that's executed when selecting an option. Returns the options value
-| positionFixed     | `Boolean`  | `false`         | Set to true when the Select is positioned fixed on the screen. Otherwise the Menu will scroll away
-| id                | `string`   |                 | Default HTML id prop to identify the element
+| Name                  | Type       | Default         | Description                      |
+| :------------         | :-----     | :-------------- | :------------------------------- |
+| **children**          | `Function` |                 | Render the `Option`s for the select
+| **placeholder**       | `string`   |                 | The placeholder/label to display in the select field
+| handleOptionClick     | `Function` |                 | Optional funtion that's executed when selecting an option. Returns the options value
+| positionFixed         | `Boolean`  | `false`         | Set to true when the Select is positioned fixed on the screen. Otherwise the Menu will scroll away
+| disableScrollWhenOpen | `Boolean`  |                 | Disables body scroll when select is open
+| id                    | `string`   |                 | Default HTML id prop to identify the element
 
 ## Option Props
 

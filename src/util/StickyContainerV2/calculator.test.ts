@@ -96,14 +96,15 @@ describe('<StickyContainerV2 />', () => {
       });
     });
 
-    describe('boundary awareness', () => {
+    describe('Keep in ViewPort', () => {
       it('sticks to the left side of the screen if the container would run out', () => {
         const pos = calculateContainerPosition(
           [350, 500],
           StickTo,
           { horizontal: 'left' },
           { horizontal: 'right' },
-          { width: 250, height: 100 }
+          { width: 250, height: 100 },
+          true
         );
 
         expect(pos).toHaveProperty('x', 0);
@@ -115,7 +116,8 @@ describe('<StickyContainerV2 />', () => {
           StickTo,
           { horizontal: 'right' },
           { horizontal: 'left' },
-          { width: 250, height: 100 }
+          { width: 250, height: 100 },
+          true
         );
 
         expect(pos).toHaveProperty('x', 100);
@@ -130,6 +132,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'right' },
           { horizontal: 'left' },
           { width: 100, height: 100 },
+          false,
           { vertical: 100 }
         );
 
@@ -143,6 +146,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'right' },
           { horizontal: 'left' },
           { width: 100, height: 100 },
+          false,
           { horizontal: 100 }
         );
 

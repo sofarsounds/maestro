@@ -14,17 +14,25 @@ export interface StickyContainerProps {
   anchorOrigin?: AnchorOrigin;
   transformOrigin?: TransformOrigin;
   offset?: Offset;
+  keepInViewPort?: boolean;
+}
+
+interface Props extends StickyContainerProps {
+  anchorEl: any;
+  children: any;
 }
 
 const Container = styled.div<any>`
+  z-index: ${({ theme }) => theme.zIndex.navbar + 1};
   position: fixed;
 `;
 
-const StickyContainerV2: React.SFC<any> = ({
+const StickyContainerV2: React.SFC<Props> = ({
   anchorEl,
-  anchorOrigin,
-  transformOrigin,
+  anchorOrigin = { vertical: 'bottom', horizontal: 'left' },
+  transformOrigin = { vertical: 'top', horizontal: 'left' },
   offset,
+  keepInViewPort = false,
   children
 }) => {
   const popoverRef = useRef<any>();
@@ -43,6 +51,7 @@ const StickyContainerV2: React.SFC<any> = ({
           anchorOrigin,
           transformOrigin,
           popoverElRect,
+          keepInViewPort,
           offset
         );
 
