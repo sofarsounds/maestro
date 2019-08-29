@@ -1,7 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
+import {
+  withKnobs,
+  text,
+  number,
+  boolean,
+  select
+} from '@storybook/addon-knobs';
 import { Icon, Dropdown, Menu, Option, Select, PrimaryButton } from '../../src';
 import cities from '../helpers/cities';
 
@@ -9,25 +15,28 @@ const mockClick = () => {
   console.log('dog');
 };
 
+const positions = ['top', 'right', 'bottom', 'left'];
+
 storiesOf('Dropdown', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
     <>
       <h1>Dropdown</h1>
 
-      <Dropdown label="I am a clickable label">
+      <Dropdown label="Click me to open the dropdown">
         <b>A Dropdown</b>
         <p>
           A dropdown component can be used to display help information or a
           short list of options
         </p>
       </Dropdown>
-
-      <br />
-      <br />
-
+    </>
+  ))
+  .add('With Offset', () => (
+    <>
+      <h1>Dropdown with Offset</h1>
       <Dropdown
-        offsetTop={55}
+        offset={{ vertical: 55 }}
         flyoutContainer={false}
         renderLabel={isOpen => (
           <>
@@ -50,18 +59,21 @@ storiesOf('Dropdown', module)
           ))}
         </Menu>
       </Dropdown>
-
-      <br />
-      <br />
-
+    </>
+  ))
+  .add('Without Flyout Container', () => (
+    <>
+      <h1>Without Flyout Container</h1>
       <Dropdown
         flyoutContainer={false}
-        offsetTop={0}
+        offset={{ vertical: 50 }}
         renderLabel={isOpen => (
           <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
         )}
       >
-        <p>I am the contents of a dropdown without a flyout container</p>
+        <p style={{ width: '200px' }}>
+          I am the contents of a dropdown without a flyout container
+        </p>
       </Dropdown>
     </>
   ));
