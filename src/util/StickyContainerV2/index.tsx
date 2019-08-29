@@ -58,7 +58,14 @@ const StickyContainerV2: React.SFC<Props> = ({
         setCalculatedPosition(calculated);
       }
     },
-    [windowSize, anchorOrigin, transformOrigin, popoverElRect, offset]
+    [
+      windowSize,
+      anchorOrigin,
+      transformOrigin,
+      popoverElRect,
+      offset,
+      keepInViewPort
+    ]
   );
 
   useEffect(() => {

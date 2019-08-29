@@ -46,7 +46,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
     } else {
       document.body.style.overflow = 'unset';
     }
-  }, [isOpen]);
+  }, [isOpen, disableScrollWhenOpen]);
 
   useOutsideClick(ref, () => {
     setIsOpen(false);

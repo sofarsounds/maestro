@@ -37,7 +37,7 @@ const Select: React.SFC<SelectProps> = ({
     } else {
       document.body.style.overflow = 'unset';
     }
-  }, [isOpen]);
+  }, [isOpen, disableScrollWhenOpen]);
 
   useOutsideClick(ref, () => {
     setIsOpen(false);
