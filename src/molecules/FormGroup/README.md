@@ -30,3 +30,4 @@ with the `hasError` prop and render in the error state
 | errorMsg      | `string`     |                 | Show the given error message in this form group
 | renderIcon    | `Function`   |                 | Render an additional help icon component
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element

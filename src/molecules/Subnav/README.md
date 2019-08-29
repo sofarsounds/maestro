@@ -19,6 +19,7 @@ After adding the import you can use the Pagination simply like this
 | :------------ | :-----       | :-------------- | :------------------------------- |
 | **children**  | `React.Node` |                 | The Links to be displayed in the subnav
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element
 
 
 ## `Subnav.Link` Props

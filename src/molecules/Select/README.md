@@ -24,6 +24,7 @@ Table below contains all types of props available in the Select component
 | **placeholder**   | `string`   |                 | The placeholder/label to display in the select field
 | handleOptionClick | `Function` |                 | Optional funtion that's executed when selecting an option. Returns the options value
 | positionFixed     | `Boolean`  | `false`         | Set to true when the Select is positioned fixed on the screen. Otherwise the Menu will scroll away
+| id                | `string`   |                 | Default HTML id prop to identify the element
 
 ## Option Props
 

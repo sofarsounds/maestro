@@ -15,6 +15,7 @@ export interface PaginationProps {
   totalRecords: number;
   perPage?: number;
   'data-qaid'?: string;
+  id?: string;
 }
 
 const MAX_PAGES = 5;
@@ -32,7 +33,8 @@ export default class Pagination extends React.Component<PaginationProps> {
     const {
       currentPage = 1,
       totalRecords,
-      'data-qaid': qaId = ''
+      'data-qaid': qaId = '',
+      id
     } = this.props;
 
     const perPage = this.props.perPage || PER_PAGE;
@@ -47,7 +49,7 @@ export default class Pagination extends React.Component<PaginationProps> {
     }
 
     return (
-      <PaginationWrapper data-qaid={qaId}>
+      <PaginationWrapper id={id} data-qaid={qaId}>
         <ArrowLeft
           disabled={currentPage <= 1}
           onClick={() => this.handlePageChange(currentPage - 1)}

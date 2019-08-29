@@ -9,6 +9,7 @@ import theme from '../../theme';
 interface SnackbarProps {
   children: any;
   onCancel: () => void;
+  id?: string;
   'data-qaid'?: string;
 }
 
@@ -40,9 +41,10 @@ export const CancelButton = styled.button`
 const Snackbar: React.SFC<SnackbarProps> = ({
   children,
   onCancel,
+  id,
   'data-qaid': qaId = ''
 }) => (
-  <SnackbarStyled data-qaid={qaId}>
+  <SnackbarStyled id={id} data-qaid={qaId}>
     <Body2 color="#fff" data-qaid={`${qaId}-text`}>
       {children}
     </Body2>
