@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Input from './Input';
 import Menu from './Menu';
 import { StickyContainer, PortalComponent } from '../../util/index';
-import { useOutsideClick, useKeyDown } from '../../hooks';
+import { useDisableScroll, useOutsideClick, useKeyDown } from '../../hooks';
 
 interface SelectProps {
   placeholder: string;
@@ -22,7 +22,7 @@ const Select: React.SFC<SelectProps> = ({
   readonly,
   handleOptionClick,
   positionFixed,
-  disableScrollWhenOpen,
+  disableScrollWhenOpen = false,
   hasError,
   name,
   id
@@ -31,13 +31,7 @@ const Select: React.SFC<SelectProps> = ({
   const ref = useRef<any>();
   const [value, setValue] = useState<string>('');
 
-  useEffect(() => {
-    if (isOpen && disableScrollWhenOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [isOpen, disableScrollWhenOpen]);
+  useDisableScroll(isOpen, disableScrollWhenOpen);
 
   useOutsideClick(ref, () => {
     setIsOpen(false);
