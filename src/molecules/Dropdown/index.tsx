@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 import { StickyContainerV2, PortalComponent } from '../../util/index';
 import { StickyContainerProps } from '../../util/StickyContainerV2';
-import { useOutsideClick } from '../../hooks';
+import { useDisableScroll, useOutsideClick } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
 import Flyout, { FlyoutSizes } from './Flyout';
@@ -17,12 +17,13 @@ interface DropdownProps extends StickyContainerProps {
   'data-qaid'?: string;
   id?: string;
 }
+
 const Dropdown: React.SFC<DropdownProps> = ({
   label,
   renderLabel,
   children,
   flyoutContainer,
-  disableScrollWhenOpen,
+  disableScrollWhenOpen = false,
   anchorOrigin = {
     vertical: 'bottom',
     horizontal: 'left'
@@ -40,13 +41,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
 
-  useEffect(() => {
-    if (isOpen && disableScrollWhenOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [isOpen, disableScrollWhenOpen]);
+  useDisableScroll(isOpen, disableScrollWhenOpen);
 
   useOutsideClick(ref, () => {
     setIsOpen(false);
