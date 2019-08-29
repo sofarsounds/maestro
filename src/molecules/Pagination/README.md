@@ -24,4 +24,4 @@ After adding the import you can use the Pagination simply like this
 | perPage          | `number`   | `8`             | Customise how many items are being display per page
 | currentPage      | `number`   | `1`             | Set the current page
 | data-qaid        | `string`   |                 | Optional prop for testing purposes
-
+| id               | `string`   |                 | Default HTML id prop to identify the element

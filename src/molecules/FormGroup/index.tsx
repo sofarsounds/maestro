@@ -11,6 +11,7 @@ interface Props {
   children: any;
   renderIcon?: Function;
   'data-qaid'?: string;
+  id?: string;
 }
 
 const FormGroupWrapper = styled.div``;
@@ -21,10 +22,11 @@ const FormGroup: React.SFC<Props> = ({
   children,
   errorMsg,
   renderIcon,
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => (
-  <FormGroupWrapper data-qaid={qaId}>
-    <FormGroupLabel>
+  <FormGroupWrapper id={id} data-qaid={qaId}>
+    <FormGroupLabel data-qaid={`${qaId}-label`}>
       {label}
       {required ? (
         <span style={{ color: theme.colors.green700 }}>*</span>
@@ -32,7 +34,11 @@ const FormGroup: React.SFC<Props> = ({
       {renderIcon ? renderIcon() : null}
     </FormGroupLabel>
     {React.cloneElement(children, { hasError: !!errorMsg })}
-    {errorMsg && <Caption color={theme.colors.redRedWine}>{errorMsg}</Caption>}
+    {errorMsg && (
+      <Caption color={theme.colors.redRedWine} data-qaid={`${qaId}-error`}>
+        {errorMsg}
+      </Caption>
+    )}
   </FormGroupWrapper>
 );
 

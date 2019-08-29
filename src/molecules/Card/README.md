@@ -30,6 +30,7 @@ Table below contains all types of props available in the Card component
 | inverted      | `Boolean`    |                 | Whether this card is inverted. Will make text white instead of black
 | linkTo        | `string`     |                 | When provided, this Card will be wrapped in a `Link` element and point to the url provided
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element
 
 ## Card.Image Props
 Table below contains all types of props available in the `Card.Image` component  

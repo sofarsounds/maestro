@@ -1,28 +1,38 @@
 import React, { useState, useRef } from 'react';
 
-import { StickyContainer, PortalComponent } from '../../util/index';
+import { StickyContainerV2, PortalComponent } from '../../util/index';
+import { StickyContainerProps } from '../../util/StickyContainerV2';
 import { useOutsideClick } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
 import Flyout, { FlyoutSizes } from './Flyout';
 
-interface DropdownProps {
+interface DropdownProps extends StickyContainerProps {
   label?: string;
   renderLabel?: (arg?: any) => any;
   children: any;
   size?: FlyoutSizes;
-  offsetTop?: number;
   flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   'data-qaid'?: string;
+  id?: string;
 }
 const Dropdown: React.SFC<DropdownProps> = ({
   label,
   renderLabel,
   children,
   flyoutContainer,
+  anchorOrigin = {
+    vertical: 'bottom',
+    horizontal: 'left'
+  },
+  transformOrigin = {
+    vertical: 'top',
+    horizontal: 'left'
+  },
+  offset,
   size,
-  offsetTop,
-  'data-qaid': qaId
+  'data-qaid': qaId,
+  id
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
@@ -33,13 +43,23 @@ const Dropdown: React.SFC<DropdownProps> = ({
 
   return (
     <>
-      <Trigger ref={ref} onClick={() => setIsOpen(!isOpen)} data-qaid={qaId}>
+      <Trigger
+        id={id}
+        ref={ref}
+        onClick={() => setIsOpen(!isOpen)}
+        data-qaid={qaId}
+      >
         {renderLabel ? renderLabel(isOpen) : label}
       </Trigger>
 
       {isOpen && (
         <PortalComponent dom={document.body}>
-          <StickyContainer offsetTop={offsetTop} stickToEl={ref.current}>
+          <StickyContainerV2
+            offset={offset}
+            anchorEl={ref}
+            anchorOrigin={anchorOrigin}
+            transformOrigin={transformOrigin}
+          >
             <Flyout
               flyoutContainer={flyoutContainer}
               size={size}
@@ -47,7 +67,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
             >
               {children}
             </Flyout>
-          </StickyContainer>
+          </StickyContainerV2>
         </PortalComponent>
       )}
     </>

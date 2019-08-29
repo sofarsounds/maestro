@@ -12,6 +12,7 @@ interface SelectProps {
   positionFixed?: boolean;
   hasError?: boolean;
   name?: string;
+  id?: string;
 }
 
 const Select: React.SFC<SelectProps> = ({
@@ -21,7 +22,8 @@ const Select: React.SFC<SelectProps> = ({
   handleOptionClick,
   positionFixed,
   hasError,
-  name
+  name,
+  id
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
@@ -44,6 +46,7 @@ const Select: React.SFC<SelectProps> = ({
   return (
     <>
       <Input
+        id={id}
         readonly={readonly}
         innerRef={ref}
         isOpen={isOpen}

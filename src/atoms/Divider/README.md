@@ -16,3 +16,4 @@ Table below contains all types of props available in the Divider component
 | Name          | Type     | Default         | Description                      |
 | :------------ | :-----   | :-------------- | :------------------------------- |
 | space         | `Number` | `11`            | Customise the space before and after the divider
+| id            | `string` |                 | Default HTML id prop to identify the element

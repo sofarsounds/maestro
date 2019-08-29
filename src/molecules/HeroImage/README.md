@@ -29,4 +29,6 @@ After adding the import you can use the HeroImage simply like this
 | children      | `React.Node` |                 | Optional children (i.e. actions)
 | parallax      | `boolean`    |                 | Whether to enable parallax scrolling for the header
 | errorMsg      | `string`     |                 | Show the given error message in this form group
+| data-qaid     | `string`     |                 | Optional prop for testing purposes
+| id            | `string`     |                 | Default HTML id prop to identify the element
 
