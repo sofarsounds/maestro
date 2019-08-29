@@ -45,6 +45,7 @@ export const calculateContainerPosition = (
   anchorOrigin: AnchorOrigin,
   transformOrigin: TransformOrigin,
   popoverEl: PopoverDomEl,
+  keepInViewPort?: boolean,
   offset?: Offset
 ) => {
   const [windowWidth, windowHeight] = windowSize;
@@ -153,23 +154,22 @@ export const calculateContainerPosition = (
     }
   }
 
-  /**
-   * Adjust the popover element position if it would run out of the screen
-   */
-  if (popoverX < 0) {
-    popoverX = 0;
-  }
+  if (keepInViewPort) {
+    if (popoverX < 0) {
+      popoverX = 0;
+    }
 
-  if (popoverY < 0) {
-    popoverY = 0;
-  }
+    if (popoverY < 0) {
+      popoverY = 0;
+    }
 
-  if (popoverX + popoverEl.width > windowWidth) {
-    popoverX = windowWidth - popoverEl.width;
-  }
+    if (popoverX + popoverEl.width > windowWidth) {
+      popoverX = windowWidth - popoverEl.width;
+    }
 
-  if (popoverY + popoverEl.height > windowHeight) {
-    popoverY = windowHeight - popoverEl.height;
+    if (popoverY + popoverEl.height > windowHeight) {
+      popoverY = windowHeight - popoverEl.height;
+    }
   }
 
   return {
