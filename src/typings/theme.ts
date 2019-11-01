@@ -70,6 +70,7 @@ export default interface Theme {
   dimensions: {
     inputHeight: string;
     buttonHeight: string;
+    radioBox: string;
     containerWidth: {
       small: string;
       default: string;
