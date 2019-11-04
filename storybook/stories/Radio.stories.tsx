@@ -11,17 +11,17 @@ storiesOf('Radio Button', module)
     <>
       <h1>Radio Button</h1>
 
-      <Radio id="opt1" value="1" name="opt">
+      <Radio id="opt1" value="1" name="opt" onChange={action('change to 1')}>
         Option 1
       </Radio>
       <br />
       <br />
-      <Radio id="opt2" value="2" name="opt">
+      <Radio id="opt2" value="2" name="opt" onChange={action('change to 2')}>
         Option 2
       </Radio>
       <br />
       <br />
-      <Radio id="opt3" value="3" name="opt">
+      <Radio id="opt3" value="3" name="opt" onChange={action('change to 3')}>
         Option 3
       </Radio>
       <br />

@@ -7,7 +7,7 @@ const Center = styled.label`
   align-items: center;
 `;
 
-const FakeArea = styled.label`
+export const Circle = styled.label`
   ${({ theme }) => css`
     border-radius: 100%;
     display: block;
@@ -36,7 +36,7 @@ const FakeArea = styled.label`
   `}
 `;
 
-const Input = styled.input`
+export const Input = styled.input`
   ${({ theme }) => css`
     position: absolute;
     top: auto;
@@ -46,21 +46,21 @@ const Input = styled.input`
     height: 1px;
     white-space: nowrap;
 
-    &:checked + ${FakeArea}:hover {
+    &:checked + ${Circle}:hover {
       box-shadow: 0px 0px 0px 8px ${makeOpaque(theme.colors.primary, 0.1)};
     }
 
-    &:checked + ${FakeArea}::before {
+    &:checked + ${Circle}::before {
       background-color: ${theme.colors.primary};
       border-color: ${theme.colors.primary};
       box-shadow: inset 0 0 0 3px ${theme.colors.whiteDenim};
     }
 
-    &:disabled + ${FakeArea}:hover {
+    &:disabled + ${Circle}:hover {
       box-shadow: none;
     }
 
-    &:disabled + ${FakeArea}::before {
+    &:disabled + ${Circle}::before {
       border-color: ${theme.colors.macyGrey};
       background-color: transparent;
       cursor: not-allowed;
@@ -68,7 +68,7 @@ const Input = styled.input`
   `}
 `;
 
-const Wrapper = styled.div<any>`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     width: ${theme.dimensions.radioBox};
     height: ${theme.dimensions.radioBox};
@@ -77,7 +77,7 @@ const Wrapper = styled.div<any>`
   `}
 `;
 
-const Label = styled.span<any>`
+export const Label = styled.span<any>`
   ${({ theme, disabled }) => css`
     margin-left: 10px;
 
@@ -94,7 +94,7 @@ interface Props {
   onChange?: (e: any) => void;
   checked?: boolean;
   value?: string;
-  id?: string;
+  id: string;
   name: string;
 }
 
@@ -104,13 +104,15 @@ const Radio: React.SFC<Props> = ({
   ...props
 }) => (
   <Center htmlFor={props.id}>
-    <Wrapper disabled={props.disabled}>
+    <Wrapper>
       <Input type="radio" {...props} />
-      <FakeArea htmlFor={props.id} data-qaid={qaId} />
+      <Circle htmlFor={props.id} data-qaid={qaId} />
     </Wrapper>
-    <Label disabled={props.disabled} data-qaid={`${qaId}-label`}>
-      {children}
-    </Label>
+    {children && (
+      <Label disabled={props.disabled} data-qaid={`${qaId}-label`}>
+        {children}
+      </Label>
+    )}
   </Center>
 );
 
