@@ -78,6 +78,7 @@ const theme: Theme = {
   dimensions: {
     inputHeight: '44px',
     buttonHeight: '44px',
+    radioBox: '20px',
     containerWidth: {
       small: '600px',
       default: '800px',

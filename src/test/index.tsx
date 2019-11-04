@@ -21,3 +21,15 @@ export const checkStyleRules = (el: any, rules: any, options: any = {}) => {
     expect(el).toHaveStyleRule(ruleKey, rules[ruleKey], options);
   });
 };
+
+/**
+ * Get an element by their data-qaid attribute
+ */
+export const getByTestId = (container: any, text: string) => {
+  const el = container.find(`[data-qaid="${text}"]`);
+  return el ? el.first() : null;
+};
+
+export const getAllByTestId = (container: any, text: string) => {
+  return container.find(`[data-qaid="${text}"]`);
+};
