@@ -68,6 +68,7 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -375,6 +376,7 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -647,6 +649,7 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1046,6 +1049,7 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1380,6 +1384,7 @@ exports[`Grid renders the Grid correctly 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",

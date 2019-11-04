@@ -157,6 +157,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -477,6 +478,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -832,6 +834,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1126,6 +1129,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1414,6 +1418,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1756,6 +1761,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2015,6 +2021,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2268,6 +2275,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2550,6 +2558,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2805,6 +2814,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
