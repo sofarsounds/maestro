@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 import { makeOpaque } from '../../lib/color';
+import { Body2 } from '../Typography';
 
 const Center = styled.label`
   display: flex;
@@ -77,7 +78,7 @@ export const Wrapper = styled.div`
   `}
 `;
 
-export const Label = styled.span<any>`
+export const Label = styled(Body2)<any>`
   ${({ theme, disabled }) => css`
     margin-left: 10px;
 
