@@ -361,6 +361,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -1728,6 +1729,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2860,6 +2862,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",

@@ -402,6 +402,7 @@ exports[`<Pagination /> renders correctly 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",

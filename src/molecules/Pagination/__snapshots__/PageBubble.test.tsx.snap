@@ -91,6 +91,7 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -331,6 +332,7 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
