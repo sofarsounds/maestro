@@ -16,6 +16,7 @@ export const Input = styled.input.attrs({ type: 'checkbox' })`
     clip: rect(1px, 1px, 1px, 1px);
     width: 1px;
     height: 1px;
+    user-select: none;
     white-space: nowrap;
 
     &:checked + ${Square}:hover {
@@ -24,10 +25,6 @@ export const Input = styled.input.attrs({ type: 'checkbox' })`
 
     &:checked + ${Square} ${Tick} {
       display: block;
-    }
-
-    &:focused + ${Square} ${Tick} {
-      :none ;
     }
 
     &:checked + ${Square}::before {

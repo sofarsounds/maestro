@@ -35,71 +35,116 @@ describe('<Checkbox/>', () => {
     expect(mockClick).toHaveBeenCalled();
   });
 
-  it('it cannot be toggle to when disable', () => {
-    const wrapper = setup({ checked: false }, 'Check MY Box');
-    const input = wrapper.find('input');
-    const squareEl = wrapper.find(Square);
+  it('has the correct styling when checked', () => {
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Input onChange={mockClick} checked />
+          <Square />
+        </>
+      ),
+      {
+        'background-color': theme.colors.primary,
+        'border-color': theme.colors.primary
+      },
+      { modifier: `:checked + ${Square}::before` }
+    );
 
-    checkStyleRules(mountWithTheme(<Input />), {
-      display: 'inline-block'
-    });
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Input onChange={mockClick} checked />
+          <Square />
+        </>
+      ),
+      {
+        'box-shadow': '0px 0px 0px 10px rgba(3,152,66,0.1)'
+      },
+      { modifier: `:checked + ${Square}:hover` }
+    );
+
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Input onChange={mockClick} checked />
+          <Tick />
+        </>
+      ),
+      {
+        display: 'block'
+      },
+      { modifier: `:checked + ${Square} ${Tick}` }
+    );
   });
 
-  // it('has the correct style rules when checked', () => {
-  //   checkStyleRules(
-  //     mountWithTheme(
-  //       <>
-  //         <Input onChange={mockClick} checked />
-  //         <Square />
-  //         <Tick />
-  //       </>
-  //     ),
-  //     {
-  //       display: 'none'
-  //     },
-  //     { modifier: `:disabled + ${Square} ${Tick}` }
-  //   );
-  // });
+  it('has the correct styling when unchecked', () => {
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Square />
+        </>
+      ),
+      {
+        'border-radius': '50%'
+      }
+    );
 
-  // it('has the correct style rules when checked', () => {
-  //   checkStyleRules(
-  //     mountWithTheme(
-  //       <>
-  //         <Input onChange={mockClick} checked />
-  //         <Square />
-  //         <Tick />
-  //       </>
-  //     ),
-  //     {
-  //       display: 'none'
-  //     },
-  //     { modifier: `:disabled + ${Square} ${Tick}` }
-  //   );
-  // });
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Square />
+        </>
+      ),
+      {
+        'background-color': 'transparent',
+        border: '2px solid rgba(0,0,0,0.75)'
+      },
+      { modifier: `::before` }
+    );
 
-  // it('has the correct style rules when disabled', () => {
-  //   checkStyleRules(
-  //     mountWithTheme(
-  //       <>
-  //         <Input disabled />
-  //         <Square />
-  //       </>
-  //     ),
-  //     {
-  //       'box-shadow': 'none'
-  //     },
-  //     { modifier: `:disabled + ${Square}:hover` }
-  //   );
-  // });
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Tick />
+        </>
+      ),
+      {
+        display: 'none'
+      }
+    );
+  });
 
-  // it('has the correct style rules when disabled', () => {
-  //   const wrapper = setup({ disabled: true }, 'Check MY Box');
-  //   wrapper.find('input').simulate('change', { target: { disabled: true } });
-  //   const ticket = wrapper.find(Tick);
-  //   console.log(wrapper.find(Tick).debug());
+  it('has the correct styling when disabled', () => {
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Input onChange={mockClick} disabled />
+          <Square />
+        </>
+      ),
+      {
+        'box-shadow': 'none',
+        'background-color': 'transparent'
+      },
+      { modifier: `:disabled + ${Square}:hover` }
+    );
 
-  //   expect(ticket).toHaveStyleRule('display', 'none');
-  // });
+    checkStyleRules(
+      mountWithTheme(
+        <>
+          <Input onChange={mockClick} disabled />
+          <Square />
+        </>
+      ),
+      {
+        'border-color': '#DBDBDB',
+        'background-color': 'transparent',
+        cursor: 'not-allowed',
+        'box-shadow': undefined
+      },
+      { modifier: `:disabled + ${Square}::before` }
+    );
+  });
 
   // it('it cannot be toggled to unchecked when disabled');
   // it('it cannot be checked clicked when disabled');
