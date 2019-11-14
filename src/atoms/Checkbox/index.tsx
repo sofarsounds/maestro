@@ -123,6 +123,7 @@ export const Input = styled.input.attrs({ type: 'checkbox' })`
 export const Label = styled(Body2)<any>`
   ${({ theme, disabled }) => css`
     margin-left: 10px;
+    user-select: none;
 
     ${disabled &&
       css`
