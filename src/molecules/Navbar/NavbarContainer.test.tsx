@@ -38,4 +38,44 @@ describe('Navbar', () => {
       });
     });
   });
+
+  describe('<Navbar transparent={true} />', () => {
+    it('has the correct style rules', () => {
+      const wrapper = mountWithTheme(
+        <Navbar transparent={true}>children</Navbar>
+      );
+
+      expect(wrapper).toHaveStyleRule('height', '62px');
+      expect(wrapper).toHaveStyleRule('background', '#000');
+
+      expect(wrapper).toHaveStyleRule('height', '74px', {
+        media: '(min-width:768px)'
+      });
+      expect(wrapper).toHaveStyleRule('background', 'transparent', {
+        media: '(min-width:768px)'
+      });
+      expect(wrapper).toHaveStyleRule('height', '84px', {
+        media: '(min-width:992px)'
+      });
+    });
+  });
+
+  describe('<Navbar absolutePosition={true} />', () => {
+    it('has the correct style rules', () => {
+      const wrapper = mountWithTheme(
+        <Navbar absolutePosition={true}>children</Navbar>
+      );
+
+      expect(wrapper).toHaveStyleRule('height', '62px');
+      expect(wrapper).toHaveStyleRule('background', '#000');
+      expect(wrapper).toHaveStyleRule('position', 'absolute');
+
+      expect(wrapper).toHaveStyleRule('height', '74px', {
+        media: '(min-width:768px)'
+      });
+      expect(wrapper).toHaveStyleRule('height', '84px', {
+        media: '(min-width:992px)'
+      });
+    });
+  });
 });

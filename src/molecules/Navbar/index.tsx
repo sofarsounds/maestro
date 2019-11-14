@@ -14,6 +14,8 @@ import Item from './Item';
 interface NavbarProps {
   fixed?: boolean;
   invert?: boolean;
+  transparent?: boolean;
+  absolutePosition?: boolean;
   children: any;
   logoLinkTo?: string;
   'data-qaid'?: string;
@@ -77,10 +79,22 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   public render() {
     const { open } = this.state;
-    const { logoLinkTo, children, fixed, 'data-qaid': qaId } = this.props;
+    const {
+      logoLinkTo,
+      children,
+      fixed,
+      'data-qaid': qaId,
+      transparent,
+      absolutePosition
+    } = this.props;
 
     return (
-      <NavbarContainer fixed={fixed} data-qaid={qaId}>
+      <NavbarContainer
+        fixed={fixed}
+        data-qaid={qaId}
+        transparent={transparent}
+        absolutePosition={absolutePosition}
+      >
         <Container alignItems="center" justifyContent="space-between">
           <a href={logoLinkTo || '/'}>
             <Brand>
