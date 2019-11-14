@@ -8,70 +8,16 @@ const Center = styled.label`
   align-items: center;
 `;
 
-export const Input = styled.input.attrs({ type: 'checkbox' })`
-  ${({ theme }) => css`
-    position: absolute;
-    top: auto;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    width: 1px;
-    height: 1px;
-    user-select: none;
-    white-space: nowrap;
-
-    &:checked + ${Square}:hover {
-      box-shadow: 0px 0px 0px 10px ${makeOpaque(theme.colors.primary, 0.1)};
-    }
-
-    &:checked + ${Square} ${Tick} {
-      display: block;
-    }
-
-    &:checked + ${Square}::before {
-      background-color: ${theme.colors.primary};
-      border-color: ${theme.colors.primary};
-    }
-
-    &:disabled + ${Square}:hover {
-      box-shadow: none;
-      background-color: transparent;
-    }
-
-    &:disabled + ${Square} ${Tick} {
-      display: none;
-    }
-
-    &:disabled + ${Square}::before {
-      border-color: ${theme.colors.macyGrey};
-      background-color: transparent;
-      cursor: not-allowed;
-    }
-  `}
-`;
-
-export const Label = styled(Body2)<any>`
-  ${({ theme, disabled }) => css`
-    margin-left: 10px;
-
-    ${disabled &&
-      css`
-        color: ${theme.colors.macyGrey};
-      `}
-  `}
-`;
-
 export const Tick = styled.div`
-  ${({ theme }) => css`
-    position: absolute;
-    display: none;
-    top: -1px;
-    left: -1px;
-    width: 21px;
-    height: 21px;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-  `}
+  position: absolute;
+  display: none;
+  top: -1px;
+  left: -1px;
+  width: 21px;
+  height: 21px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
 `;
 
 export const TickStem = styled.div`
@@ -130,6 +76,58 @@ export const Square = styled.label`
       cursor: pointer;
       transition: all 0.1s ease-out;
     }
+  `}
+`;
+
+export const Input = styled.input.attrs({ type: 'checkbox' })`
+  ${({ theme }) => css`
+    position: absolute;
+    top: auto;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    user-select: none;
+    white-space: nowrap;
+
+    &:checked + ${Square}:hover {
+      box-shadow: 0px 0px 0px 10px ${makeOpaque(theme.colors.primary, 0.1)};
+    }
+
+    &:checked + ${Square} ${Tick} {
+      display: block;
+    }
+
+    &:checked + ${Square}::before {
+      background-color: ${theme.colors.primary};
+      border-color: ${theme.colors.primary};
+    }
+
+    &:disabled + ${Square}:hover {
+      box-shadow: none;
+      background-color: transparent;
+    }
+
+    &:disabled + ${Square} ${Tick} {
+      display: none;
+    }
+
+    &:disabled + ${Square}::before {
+      border-color: ${theme.colors.macyGrey};
+      background-color: transparent;
+      cursor: not-allowed;
+    }
+  `}
+`;
+
+export const Label = styled(Body2)<any>`
+  ${({ theme, disabled }) => css`
+    margin-left: 10px;
+
+    ${disabled &&
+      css`
+        color: ${theme.colors.macyGrey};
+      `}
   `}
 `;
 
