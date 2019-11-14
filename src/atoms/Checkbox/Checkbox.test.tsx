@@ -146,8 +146,12 @@ describe('<Checkbox/>', () => {
     );
   });
 
-  // it('it cannot be toggled to unchecked when disabled');
+  it('cannot be toggled to unchecked when disabled', () => {
+    const wrapper = setup({ disabled: true, checked: false }, 'Check MY Box');
+    wrapper.find('input').simulate('change', { target: { checked: true } });
+    expect(mockClick).toHaveBeenCalled();
+  });
   // it('it cannot be checked clicked when disabled');
   // it('it can be toggled and untoggled when clicked');
-  // it('does not have a hover effect when disabled', () => {
+  // it('does not have a hover effect when disabled')
 });
