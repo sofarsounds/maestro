@@ -2,7 +2,6 @@ import React from 'react';
 
 import { mountWithTheme, getByTestId, checkStyleRules } from '../../test';
 import theme from '../../theme';
-// import Checkbox, { Wrapper, Input, Label, Circle } from './index';
 import Checkbox, { Tick, Input, Square } from './index';
 
 const mockClick = jest.fn();
