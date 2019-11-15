@@ -17,6 +17,7 @@ export { default as Textfield } from './atoms/Textfield';
 export { default as Textarea } from './atoms/Textarea';
 export { default as Spacer } from './atoms/Spacer';
 export { default as Radio } from './atoms/Radio';
+export { default as Checkbox } from './atoms/Checkbox';
 export { default as Responsive } from './atoms/Responsive';
 export { default as Pagination } from './molecules/Pagination';
 export { default as Select } from './molecules/Select';
