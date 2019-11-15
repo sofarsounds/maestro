@@ -1,13 +1,14 @@
 import styled, { css } from '../../lib/styledComponents';
 
+export type NavbarPositions = 'absolute' | 'fixed';
+
 interface NavbarContainerProps {
-  absolutePosition?: boolean;
-  fixed?: boolean;
+  position?: NavbarPositions;
   transparent?: boolean;
 }
 
 export default styled.div<NavbarContainerProps>`
-  ${({ theme, fixed, transparent, absolutePosition }) => css`
+  ${({ theme, position, transparent }) => css`
     width: 100%;
     height: ${theme.dimensions.navbarHeight.xs};
     background: #000;
@@ -16,13 +17,12 @@ export default styled.div<NavbarContainerProps>`
     align-items: center;
     justify-content: center;
     z-index: ${theme.zIndex.navbar};
-      ${absolutePosition &&
+      ${position &&
         css`
-          position: absolute;
+          position: ${position};
         `}
-      ${fixed &&
+      ${position === 'fixed' &&
         css`
-          position: fixed;
           top: 0;
           left: 0;
           right: 0;

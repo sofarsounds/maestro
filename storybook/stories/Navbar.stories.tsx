@@ -10,7 +10,7 @@ storiesOf('Navbar', module)
   .add('Default', () => (
     <BrowserRouter>
       <div style={{ paddingTop: '100px' }}>
-        <Navbar data-qaid="navbar" fixed>
+        <Navbar data-qaid="navbar" position="fixed">
           <Navbar.ItemContainer>
             <span style={{ color: '#fff' }}>LEFT</span>
           </Navbar.ItemContainer>
@@ -31,7 +31,7 @@ storiesOf('Navbar', module)
   .add('Transparent', () => (
     <BrowserRouter>
       <>
-        <Navbar data-qaid="navbar" fixed transparent>
+        <Navbar data-qaid="navbar" position="fixed" transparent>
           <Navbar.ItemContainer>
             <span style={{ color: '#fff' }}>LEFT</span>
           </Navbar.ItemContainer>

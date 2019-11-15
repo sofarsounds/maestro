@@ -19,9 +19,11 @@ describe('Navbar', () => {
     });
   });
 
-  describe('<Navbar fixed={true} />', () => {
+  describe('<Navbar position="fixed" />', () => {
     it('has the correct style rules', () => {
-      const wrapper = mountWithTheme(<Navbar fixed={true}>children</Navbar>);
+      const wrapper = mountWithTheme(
+        <Navbar position="fixed">children</Navbar>
+      );
 
       expect(wrapper).toHaveStyleRule('height', '62px');
       expect(wrapper).toHaveStyleRule('background', '#000');
@@ -60,10 +62,10 @@ describe('Navbar', () => {
     });
   });
 
-  describe('<Navbar absolutePosition={true} />', () => {
+  describe('<Navbar position="absolute" />', () => {
     it('has the correct style rules', () => {
       const wrapper = mountWithTheme(
-        <Navbar absolutePosition={true}>children</Navbar>
+        <Navbar position="absolute">children</Navbar>
       );
 
       expect(wrapper).toHaveStyleRule('height', '62px');
