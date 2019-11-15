@@ -17,12 +17,13 @@ export default styled.div<NavbarContainerProps>`
     align-items: center;
     justify-content: center;
     z-index: ${theme.zIndex.navbar};
-      ${position &&
+      ${position === 'absolute' &&
         css`
-          position: ${position};
+          position: absolute;
         `}
       ${position === 'fixed' &&
         css`
+          position: fixed;
           top: 0;
           left: 0;
           right: 0;
