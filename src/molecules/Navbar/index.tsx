@@ -4,7 +4,7 @@ import { breakPoints } from '../../theme';
 import Logo from '../../atoms/Logo';
 import Container from '../../atoms/Container';
 
-import NavbarContainer from './NavbarContainer';
+import NavbarContainer, { NavbarPositions } from './NavbarContainer';
 import CollapsibleWrapper from './Collapsible';
 import Hamburger from './CollapseIcon';
 import Brand from './Brand';
@@ -12,8 +12,9 @@ import ItemContainer from './ItemContainer';
 import Item from './Item';
 
 interface NavbarProps {
-  fixed?: boolean;
+  position?: NavbarPositions;
   invert?: boolean;
+  transparent?: boolean;
   children: any;
   logoLinkTo?: string;
   'data-qaid'?: string;
@@ -77,10 +78,20 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
 
   public render() {
     const { open } = this.state;
-    const { logoLinkTo, children, fixed, 'data-qaid': qaId } = this.props;
+    const {
+      logoLinkTo,
+      children,
+      'data-qaid': qaId,
+      transparent,
+      position
+    } = this.props;
 
     return (
-      <NavbarContainer fixed={fixed} data-qaid={qaId}>
+      <NavbarContainer
+        position={position}
+        data-qaid={qaId}
+        transparent={transparent}
+      >
         <Container alignItems="center" justifyContent="space-between">
           <a href={logoLinkTo || '/'}>
             <Brand>
