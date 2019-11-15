@@ -28,14 +28,20 @@ icon that can expand the navbar.
 
 ## `Navbar` Props
 
-| Name          | Type         | Default         | Description                      |
-| :------------ | :-----       | :-------------- | :------------------------------- |
-| **children**  | `React.Node` |                 | The content to be rendered in the navbar
-| fixed         | `Boolean`    |                 | Whether the navbar is fixed to the top of the screen
-| invert        | `Boolean`    |                 | Whether to invert the colour of the navbar
-| logoLinkTo    | `string`     |                 | Where does clicking the logo link to
-| data-qaid     | `string`     |                 | Optional prop for testing purposes
+| Name          | Type          | Default         | Description                      |
+| :------------ | :-----        | :-------------- | :------------------------------- |
+| **children**  | `React.Node`  |                 | The content to be rendered in the navbar
+| position      | [Enum](#enum) |                 | Whether the navbar is fixed to the top of the screen or absolute positioned
+| invert        | `Boolean`     |                 | Whether to invert the colour of the navbar
+| logoLinkTo    | `string`      |                 | Where does clicking the logo link to
+| data-qaid     | `string`      |                 | Optional prop for testing purposes
 
+### Enum
+
+| position  |
+| :---      |
+| absolute  |
+| fixed     |
 
 ## `Navbar.ItemContainer` Props
 
