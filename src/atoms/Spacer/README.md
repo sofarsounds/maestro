@@ -15,6 +15,10 @@ After adding the import you can use it simply like this
 <Spacer mb={[2, 4, 6]} /> // 8px on xs,  16px on sm, 24px on md devices
 ```
 
+## Implements
+
+- [withSpacing](../../util/withSpacing)
+
 ## Props
 Table below contains all types of props available in the Logo component  
 
