@@ -60,4 +60,63 @@ describe('<HeroImage />', () => {
 
     expect(wrapper.find(PrimaryButton)).toHaveLength(1);
   });
+
+  describe('When imageURL is a string', () => {
+    it('renders the correct background image', () => {
+      const wrapper = mountWithTheme(
+        <HeroImage title="I am a title" imageURL={imgUrl} />
+      );
+
+      expect(wrapper.find(Wrapper)).toHaveStyleRule(
+        'background-image',
+        `url(${imgUrl})`
+      );
+    });
+  });
+
+  describe('When imageURL is an array', () => {
+    it('renders the correct background image url for each screen size', () => {
+      const imageURL = [
+        'https://www.randomimage.com/xs',
+        'https://www.randomimage.com/sm',
+        'https://www.randomimage.com/md',
+        'https://www.randomimage.com/lg'
+      ];
+      const wrapper = mountWithTheme(
+        <HeroImage title="I am a title" imageURL={imageURL} />
+      );
+
+      expect(wrapper).toHaveStyleRule(
+        'background-image',
+        `url(${imageURL[0]})`,
+        {
+          media: '(min-width:0px)'
+        }
+      );
+
+      expect(wrapper).toHaveStyleRule(
+        'background-image',
+        `url(${imageURL[1]})`,
+        {
+          media: '(min-width:576px)'
+        }
+      );
+
+      expect(wrapper).toHaveStyleRule(
+        'background-image',
+        `url(${imageURL[2]})`,
+        {
+          media: '(min-width:768px)'
+        }
+      );
+
+      expect(wrapper).toHaveStyleRule(
+        'background-image',
+        `url(${imageURL[3]})`,
+        {
+          media: '(min-width:992px)'
+        }
+      );
+    });
+  });
 });
