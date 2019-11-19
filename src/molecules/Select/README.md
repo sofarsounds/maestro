@@ -14,6 +14,12 @@ After adding the import you can use it simply like this
 </Select>
 ```
 
+## Implements
+
+- [useDisableScroll](../../hooks/useDisableScroll)
+- [useOutsideClick](../../hooks/useOutsideClick)
+- [useKeyDown](../../hooks/useKeyDown)
+
 ## Select Props
 
 Table below contains all types of props available in the Select component  
