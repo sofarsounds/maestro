@@ -16,6 +16,10 @@ After adding the import you can use the Dropdown simply like this
 </Dropdown>
 ```
 
+## Implements
+
+- [useDisableScroll](../../hooks/useDisableScroll)
+
 ## Props
 
 | Name                  | Type          | Default         | Description                      |
@@ -37,4 +41,3 @@ After adding the import you can use the Dropdown simply like this
 | :---  |
 | small |
 | large |
-

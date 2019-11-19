@@ -1,12 +1,13 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "The official sofar sounds react uikit library",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
     "postbuild": "rm -rf dist/node_modules",
     "lint": "eslint './src/**/*.{ts,tsx, js, jsx}'",
+    "type-check": "tsc --noEmit",
     "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u",
     "start": "start-storybook -p 6006",
@@ -90,7 +91,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn lint && yarn type-check"
     }
   },
   "jest": {

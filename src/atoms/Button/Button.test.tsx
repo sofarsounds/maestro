@@ -96,7 +96,7 @@ describe('Buttons', () => {
       const wrapper = setup(OutlineButton, false, false, 'primary');
       expect(wrapper.find(OutlineButton).prop('color')).toBe('primary');
       expect(wrapper).toHaveStyleRule('color', theme.colors.primary);
-      expect(wrapper).toHaveStyleRule('background', theme.colors.whiteDenim);
+      expect(wrapper).toHaveStyleRule('background', 'transparent');
       expect(wrapper).toHaveStyleRule(
         'border',
         `1px solid ${theme.colors.primary}`
@@ -108,7 +108,7 @@ describe('Buttons', () => {
       const wrapper = setup(OutlineButton, true, false, 'white');
       expect(wrapper.find(OutlineButton).prop('color')).toBe('white');
       expect(wrapper).toHaveStyleRule('color', theme.colors.whiteDenim);
-      expect(wrapper).toHaveStyleRule('background', theme.colors.whiteDenim);
+      expect(wrapper).toHaveStyleRule('background', 'transparent');
     });
 
     it('renders correctly in loading state', () => {

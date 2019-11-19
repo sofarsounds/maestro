@@ -131,7 +131,7 @@ interface OutlineButtonProps {
 
 export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
   ${({ theme, loading, color }) => css`
-    background: ${theme.colors.whiteDenim};
+    background: transparent;
     color: ${theme.colors.primary};
 
     i:before {
@@ -141,7 +141,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     &:hover {
       border-color: ${theme.colors.green900};
       color: ${theme.colors.green900};
-      background-color: ${theme.colors.whiteDenim};
+      background-color: transparent;
 
       i:before {
         color: ${theme.colors.green900};

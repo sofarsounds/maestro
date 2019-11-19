@@ -14,6 +14,10 @@ After adding the import you can use it simply like this
 <Body>I am a body tag</Body>
 ```
 
+## Implements
+
+- [withTypography](../../util/withTypography)
+
 ## Typography Elements
 
 | Tag              | Default HTML Element |
@@ -40,4 +44,3 @@ Table below contains all types of props available in the Logo component
 | :------------ | :-----     | :-------------- | :------------------------------- |
 | **children**  | React.Node |                 | What to display within the tag
 | spaceAfter    | number     |                 | How much space to add after element. Based on `withSpacing` util
-
