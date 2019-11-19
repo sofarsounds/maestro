@@ -1,26 +1,28 @@
-# Spacer
+# withSpacing
 
-The `Spacer` component can be used to add margins and paddings to elements. It works based of the
-main ruler defined in the theme which works on multiple of fours.  
-You can also specify different margins based on screen size by providing an array of numbers.
+The `withSpacing` util allows the developer to add custom spacing to elements
+the util has been applied to.
 
-To implement a `Spacer` wrapper into your project you'll need to add this import
+To implement `withSpacing` in a component
 ```js
-import { Spacer } from '@sofarsounds/maestro'
+import { withSpacing } from '@sofarsounds/maestro'
 ```
 
-After adding the import you can use it simply like this
+After adding the import you can use `withSpacing` like this
+```js
+const DivWithSpacing = styled.div`
+  ${withSpacing};
+`
+```
+
 ```html
-<Spacer mb={2} /> // 8px on all screen sizes
-<Spacer mb={[2, 4, 6]} /> // 8px on xs,  16px on sm, 24px on md devices
+<DivWithSpacing mb={2} /> // 8px on all screen sizes
+<DivWithSpacing mb={[2, 4, 6]} /> // 8px on xs,  16px on sm, 24px on md devices
 ```
 
-## Implements
-
-- [withSpacing](../../util/withSpacing)
 
 ## Props
-Table below contains all types of props available in the Spacer component  
+Table below contains all types of props available in the withSpacing util
 
 | Name   | Type                | Default         | Description                      |
 | :----- | :-----              | :-------------- | :------------------------------- |

@@ -7,6 +7,7 @@
     "build": "webpack",
     "postbuild": "rm -rf dist/node_modules",
     "lint": "eslint './src/**/*.{ts,tsx, js, jsx}'",
+    "type-check": "tsc --noEmit",
     "test": "jest --colors --runInBand",
     "test:update": "yarn jest -u",
     "start": "start-storybook -p 6006",
@@ -90,7 +91,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn lint && yarn type-check"
     }
   },
   "jest": {

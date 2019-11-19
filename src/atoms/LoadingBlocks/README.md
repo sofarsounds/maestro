@@ -12,6 +12,10 @@ After adding the import you can use any button simply like this
 <LoadingBlock.Circle width="20px" />
 ```
 
+## Implements
+
+- [withSpacing](../../util/withSpacing)
+
 ## Box & Circle Props
 Table below contains all types of props available in the Box & Cicle component  
 

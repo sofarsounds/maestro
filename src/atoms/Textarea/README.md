@@ -10,6 +10,10 @@ After adding the import you can use it simply like this
 <Textarea />
 ```
 
+## Implements
+
+- [withTextfieldStyle](../../util/withTextfieldStyle)
+
 ## Props
 Table below contains all types of props available in the Textarea component  
 **Note**: All standard html textarea attributes are supported
