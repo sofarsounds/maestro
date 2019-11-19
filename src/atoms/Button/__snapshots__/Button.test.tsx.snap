@@ -19,7 +19,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
-  background: #FFFFFF;
+  background: transparent;
   color: #039842;
   background: #FFFFFF;
   border-color: #FFFFFF;
@@ -59,7 +59,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
 .c0:hover {
   border-color: #006721;
   color: #006721;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .c0:hover i:before {
@@ -340,7 +340,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
-  background: #FFFFFF;
+  background: transparent;
   color: #039842;
   background: #FFFFFF;
   border-color: #FFFFFF;
@@ -380,7 +380,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
 .c0:hover {
   border-color: #006721;
   color: #006721;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .c0:hover i:before {
@@ -667,7 +667,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   background-color: #949494;
   border-color: #949494;
   position: relative;
-  background: #FFFFFF;
+  background: transparent;
   color: #039842;
   background: #FFFFFF;
   border-color: #FFFFFF;
@@ -730,7 +730,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 .c0:hover {
   border-color: #006721;
   color: #006721;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .c0:hover i:before {
@@ -1017,7 +1017,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
-  background: #FFFFFF;
+  background: transparent;
   color: #039842;
 }
 
@@ -1054,7 +1054,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
 .c0:hover {
   border-color: #006721;
   color: #006721;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .c0:hover i:before {
@@ -1306,7 +1306,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   background: #039842;
   border: 1px solid #039842;
   color: #FFFFFF;
-  background: #FFFFFF;
+  background: transparent;
   color: #039842;
 }
 
@@ -1343,7 +1343,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
 .c0:hover {
   border-color: #006721;
   color: #006721;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .c0:hover i:before {
@@ -1601,7 +1601,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   background-color: #949494;
   border-color: #949494;
   position: relative;
-  background: #FFFFFF;
+  background: transparent;
   color: #039842;
   border-color: #1E1E1E;
   color: #111111;
@@ -1663,7 +1663,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
 .c0:hover {
   border-color: #006721;
   color: #006721;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .c0:hover i:before {
