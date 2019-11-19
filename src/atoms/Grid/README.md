@@ -16,6 +16,20 @@ After adding the import you can use the Grid simply like this
 </Grid>
 ```
 
+If you'd like to add a row height to a column that use the `rows` attribute,
+which uses css-grid's `grid-row` attribute.
+
+```html
+<Grid>
+  <Col xs={12} sm={6} rows={2}>
+    A column that will take 2 rows in height.
+  </Col>
+  <Col xs={12} sm={6}>
+    A second column that will take 1 row.
+  </Col>
+</Grid>
+```
+
 ## Grid Props
 
 | Name          | Type         | Default         | Description                      |
@@ -40,3 +54,4 @@ After adding the import you can use the Grid simply like this
 | xl            | `number`     |                 | Number of columns taken up on `xl` devices
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
 | id            | `string`     |                 | Default HTML id prop to identify the element
+| rows          | `number`     | 'auto'          | Number of rows taken up on all size screens
