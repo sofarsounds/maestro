@@ -20,3 +20,6 @@ After adding the import you can use the Container simply like this
 | `>= 992px`  | `960px`   |
 | `>= 1200px` | `1140px`  |
 
+## Implements
+
+- [withFlex](../../util/withFlex)
