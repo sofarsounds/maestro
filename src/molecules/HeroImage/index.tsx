@@ -4,9 +4,11 @@ import styled, { css } from '../../lib/styledComponents';
 import { Title, H4 } from '../../atoms/Typography';
 import Spacer from '../../atoms/Spacer';
 
+import { breakPoints } from '../../theme';
+
 interface Props {
   height?: string;
-  imageURL: string | string[];
+  imageURL: string | ImageURLObj;
   title: string;
   subtitle?: string;
   parallax?: boolean;
@@ -15,43 +17,68 @@ interface Props {
   id?: string;
 }
 
+interface ImageURLObj {
+  xs?: string;
+  sm?: string;
+  md?: string;
+  lg?: string;
+  xl?: string;
+}
+
 interface WrapperProps {
   height: string;
-  imageURL: string | string[];
+  imageURL: string | ImageURLObj;
   parallax: boolean;
 }
+
+const isObject = (imageURL: string | ImageURLObj) =>
+  typeof imageURL === 'object' && imageURL !== null;
+
+const breakPointsKeys = Object.keys(breakPoints);
+
+const largerImage = (size: string, imageURL: string | ImageURLObj) => {
+  const sizeIndex = breakPointsKeys.findIndex((key: string) => size === key);
+  const largerImageIndex = Array.from(
+    Array(breakPointsKeys.length - sizeIndex - 1),
+    (x, i) => i + 1
+  ).find(key => imageURL[breakPointsKeys[sizeIndex + key]]);
+
+  if (largerImageIndex) {
+    return imageURL[breakPointsKeys[largerImageIndex + sizeIndex]];
+  }
+};
+
+const setMediaQuery = (
+  size: string,
+  imageURL: string | ImageURLObj,
+  theme: any
+) => {
+  const largerImageUrl = largerImage(size, imageURL);
+  if (!isObject(imageURL) || (!imageURL[size] && !largerImageUrl)) {
+    return;
+  }
+  return theme.media[size]`
+  background-image: url(${imageURL[size] || largerImageUrl});
+`;
+};
 
 export const Wrapper = styled.div<WrapperProps>`
   ${({ theme, imageURL, parallax, height }) => css`
     background-position: center;
     background-size: cover;
     height: ${height};
-    ${!Array.isArray(imageURL) &&
+    ${!isObject(imageURL) &&
       css`
         background-image: url(${typeof imageURL === 'string'
           ? imageURL
-          : null});
+          : undefined});
       `}
 
-      ${Array.isArray(imageURL) &&
-        theme.media.xs`
-          background-image: url(${imageURL[0]});
-        `}
-
-      ${Array.isArray(imageURL) &&
-        theme.media.sm`
-          background-image: url(${imageURL[1]});
-        `}
-
-      ${Array.isArray(imageURL) &&
-        theme.media.md`
-          background-image: url(${imageURL[2]});
-        `}
-
-      ${Array.isArray(imageURL) &&
-        theme.media.lg`
-          background-image: url(${imageURL[3]});
-        `}
+    ${setMediaQuery('xs', imageURL, theme)}
+    ${setMediaQuery('sm', imageURL, theme)}
+    ${setMediaQuery('md', imageURL, theme)}
+    ${setMediaQuery('lg', imageURL, theme)}
+    ${setMediaQuery('xl', imageURL, theme)}
 
     ${parallax &&
       css`
