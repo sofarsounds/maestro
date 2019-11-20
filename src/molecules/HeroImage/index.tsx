@@ -8,7 +8,8 @@ import { breakPoints } from '../../theme';
 
 interface Props {
   height?: string;
-  imageURL: string | ImageURLObj;
+  imageURL?: string;
+  images?: ImagesObj;
   title: string;
   subtitle?: string;
   parallax?: boolean;
@@ -17,7 +18,7 @@ interface Props {
   id?: string;
 }
 
-interface ImageURLObj {
+interface ImagesObj {
   xs?: string;
   sm?: string;
   md?: string;
@@ -27,58 +28,50 @@ interface ImageURLObj {
 
 interface WrapperProps {
   height: string;
-  imageURL: string | ImageURLObj;
+  imageURL?: string;
+  images?: ImagesObj;
   parallax: boolean;
 }
 
-const isObject = (imageURL: string | ImageURLObj) =>
-  typeof imageURL === 'object' && imageURL !== null;
-
 const breakPointsKeys = Object.keys(breakPoints);
 
-const largerImage = (size: string, imageURL: string | ImageURLObj) => {
+const largerImage = (size: string, images: ImagesObj) => {
   const sizeIndex = breakPointsKeys.findIndex((key: string) => size === key);
   const largerImageIndex = Array.from(
     Array(breakPointsKeys.length - sizeIndex - 1),
     (x, i) => i + 1
-  ).find(key => imageURL[breakPointsKeys[sizeIndex + key]]);
+  ).find(key => images[breakPointsKeys[sizeIndex + key]]);
 
   if (largerImageIndex) {
-    return imageURL[breakPointsKeys[largerImageIndex + sizeIndex]];
+    return images[breakPointsKeys[largerImageIndex + sizeIndex]];
   }
 };
 
-const setMediaQuery = (
-  size: string,
-  imageURL: string | ImageURLObj,
-  theme: any
-) => {
-  const largerImageUrl = largerImage(size, imageURL);
-  if (!isObject(imageURL) || (!imageURL[size] && !largerImageUrl)) {
+const setMediaQuery = (size: string, images: ImagesObj, theme: any) => {
+  const largerImageUrl = largerImage(size, images);
+  if (!images[size] && !largerImageUrl) {
     return;
   }
   return theme.media[size]`
-  background-image: url(${imageURL[size] || largerImageUrl});
+  background-image: url(${images[size] || largerImageUrl});
 `;
 };
 
 export const Wrapper = styled.div<WrapperProps>`
-  ${({ theme, imageURL, parallax, height }) => css`
+  ${({ theme, imageURL, images, parallax, height }) => css`
     background-position: center;
     background-size: cover;
     height: ${height};
-    ${!isObject(imageURL) &&
+    ${imageURL &&
       css`
-        background-image: url(${typeof imageURL === 'string'
-          ? imageURL
-          : undefined});
+        background-image: url(${imageURL});
       `}
 
-    ${setMediaQuery('xs', imageURL, theme)}
-    ${setMediaQuery('sm', imageURL, theme)}
-    ${setMediaQuery('md', imageURL, theme)}
-    ${setMediaQuery('lg', imageURL, theme)}
-    ${setMediaQuery('xl', imageURL, theme)}
+    ${images && setMediaQuery('xs', images, theme)}
+    ${images && setMediaQuery('sm', images, theme)}
+    ${images && setMediaQuery('md', images, theme)}
+    ${images && setMediaQuery('lg', images, theme)}
+    ${images && setMediaQuery('xl', images, theme)}
 
     ${parallax &&
       css`
@@ -98,6 +91,7 @@ export const LightBox = styled.div`
 
 const HeroImage: React.SFC<Props> = ({
   height = '300px',
+  images,
   imageURL,
   title,
   subtitle,
@@ -112,6 +106,7 @@ const HeroImage: React.SFC<Props> = ({
     parallax={parallax}
     height={height}
     imageURL={imageURL}
+    images={images}
   >
     <LightBox>
       <div style={{ textAlign: 'center' }}>

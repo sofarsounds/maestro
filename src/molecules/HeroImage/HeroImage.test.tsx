@@ -61,7 +61,7 @@ describe('<HeroImage />', () => {
     expect(wrapper.find(PrimaryButton)).toHaveLength(1);
   });
 
-  describe('When imageURL is a string', () => {
+  describe('When imageURL prop is set', () => {
     it('renders the correct background image', () => {
       const wrapper = mountWithTheme(
         <HeroImage title="I am a title" imageURL={imgUrl} />
@@ -74,9 +74,9 @@ describe('<HeroImage />', () => {
     });
   });
 
-  describe('When imageURL is an object', () => {
+  describe('When images prop is set', () => {
     it('renders the correct background image url for each screen size', () => {
-      const imageURL = {
+      const images = {
         xs: 'https://www.randomimage.com/xs',
         sm: 'https://www.randomimage.com/sm',
         md: 'https://www.randomimage.com/md',
@@ -84,82 +84,50 @@ describe('<HeroImage />', () => {
         xl: 'https://www.randomimage.com/xl'
       };
       const wrapper = mountWithTheme(
-        <HeroImage title="I am a title" imageURL={imageURL} />
+        <HeroImage title="I am a title" images={images} />
       );
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.xs})`,
-        {
-          media: '(min-width:0px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.xs})`, {
+        media: '(min-width:0px)'
+      });
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.sm})`,
-        {
-          media: '(min-width:576px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.sm})`, {
+        media: '(min-width:576px)'
+      });
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.md})`,
-        {
-          media: '(min-width:768px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.md})`, {
+        media: '(min-width:768px)'
+      });
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.lg})`,
-        {
-          media: '(min-width:992px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.lg})`, {
+        media: '(min-width:992px)'
+      });
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.xl})`,
-        {
-          media: '(min-width:1200px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.xl})`, {
+        media: '(min-width:1200px)'
+      });
     });
 
     it('renders the correct background image url when some size urls are missing', () => {
-      const imageURL = {
+      const images = {
         sm: 'https://www.randomimage.com/sm',
         lg: 'https://www.randomimage.com/lg'
       };
       const wrapper = mountWithTheme(
-        <HeroImage title="I am a title" imageURL={imageURL} />
+        <HeroImage title="I am a title" images={images} />
       );
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.sm})`,
-        {
-          media: '(min-width:0px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.sm})`, {
+        media: '(min-width:0px)'
+      });
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.sm})`,
-        {
-          media: '(min-width:576px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.sm})`, {
+        media: '(min-width:576px)'
+      });
 
-      expect(wrapper).toHaveStyleRule(
-        'background-image',
-        `url(${imageURL.lg})`,
-        {
-          media: '(min-width:992px)'
-        }
-      );
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.lg})`, {
+        media: '(min-width:992px)'
+      });
     });
   });
 });
