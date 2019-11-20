@@ -60,4 +60,74 @@ describe('<HeroImage />', () => {
 
     expect(wrapper.find(PrimaryButton)).toHaveLength(1);
   });
+
+  describe('When imageURL prop is set', () => {
+    it('renders the correct background image', () => {
+      const wrapper = mountWithTheme(
+        <HeroImage title="I am a title" imageURL={imgUrl} />
+      );
+
+      expect(wrapper.find(Wrapper)).toHaveStyleRule(
+        'background-image',
+        `url(${imgUrl})`
+      );
+    });
+  });
+
+  describe('When images prop is set', () => {
+    it('renders the correct background image url for each screen size', () => {
+      const images = {
+        xs: 'https://www.randomimage.com/xs',
+        sm: 'https://www.randomimage.com/sm',
+        md: 'https://www.randomimage.com/md',
+        lg: 'https://www.randomimage.com/lg',
+        xl: 'https://www.randomimage.com/xl'
+      };
+      const wrapper = mountWithTheme(
+        <HeroImage title="I am a title" images={images} />
+      );
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.xs})`, {
+        media: '(min-width:0px)'
+      });
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.sm})`, {
+        media: '(min-width:576px)'
+      });
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.md})`, {
+        media: '(min-width:768px)'
+      });
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.lg})`, {
+        media: '(min-width:992px)'
+      });
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.xl})`, {
+        media: '(min-width:1200px)'
+      });
+    });
+
+    it('renders the correct background image url when some size urls are missing', () => {
+      const images = {
+        sm: 'https://www.randomimage.com/sm',
+        lg: 'https://www.randomimage.com/lg'
+      };
+      const wrapper = mountWithTheme(
+        <HeroImage title="I am a title" images={images} />
+      );
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.sm})`, {
+        media: '(min-width:0px)'
+      });
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.sm})`, {
+        media: '(min-width:576px)'
+      });
+
+      expect(wrapper).toHaveStyleRule('background-image', `url(${images.lg})`, {
+        media: '(min-width:992px)'
+      });
+    });
+  });
 });
