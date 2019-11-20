@@ -5,6 +5,7 @@ import { Title, H4 } from '../../atoms/Typography';
 import Spacer from '../../atoms/Spacer';
 
 import { breakPoints } from '../../theme';
+import Theme from '../../typings/theme';
 
 interface Props {
   height?: string;
@@ -47,7 +48,7 @@ const largerImage = (size: string, images: ImagesObj) => {
   }
 };
 
-const setMediaQuery = (size: string, images: ImagesObj, theme: any) => {
+const setMediaQuery = (size: string, images: ImagesObj, theme: Theme) => {
   const largerImageUrl = largerImage(size, images);
   if (!images[size] && !largerImageUrl) {
     return;
