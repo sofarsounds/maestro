@@ -149,7 +149,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     }
 
     &:focus {
-      background-color: ${theme.colors.green50};
+      background-color: transparent;
     }
 
     &:disabled {

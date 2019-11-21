@@ -67,7 +67,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
 }
 
 .c0:focus {
-  background-color: #E6F7EA;
+  background-color: transparent;
 }
 
 .c0:disabled {
@@ -388,7 +388,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
 }
 
 .c0:focus {
-  background-color: #E6F7EA;
+  background-color: transparent;
 }
 
 .c0:disabled {
@@ -738,7 +738,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 }
 
 .c0:focus {
-  background-color: #E6F7EA;
+  background-color: transparent;
 }
 
 .c0:disabled {
@@ -1062,7 +1062,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
 }
 
 .c0:focus {
-  background-color: #E6F7EA;
+  background-color: transparent;
 }
 
 .c0:disabled {
@@ -1351,7 +1351,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
 }
 
 .c0:focus {
-  background-color: #E6F7EA;
+  background-color: transparent;
 }
 
 .c0:disabled {
@@ -1671,7 +1671,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
 }
 
 .c0:focus {
-  background-color: #E6F7EA;
+  background-color: transparent;
 }
 
 .c0:disabled {
