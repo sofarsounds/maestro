@@ -1,6 +1,7 @@
 import React from 'react';
 import { mountWithTheme } from '../../test';
 
+import { FormGroupLabel } from '../../atoms/Typography';
 import FormGroup from './index';
 import Textfield from '../../atoms/Textfield';
 import Icon from '../../atoms/Icon';
@@ -34,11 +35,11 @@ describe('<FormGroup />', () => {
   it('renders a required indicator', () => {
     const wrapper = setup('A required field', true);
 
-    expect(wrapper.text()).toContain('A required field *');
+    expect(wrapper.text()).toContain('A required field*');
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.only('renders a with an Icon', () => {
+  it('renders a with an Icon', () => {
     const wrapper = setup('A required field', true, undefined, () => (
       <Icon name="helpCircleOutline" />
     ));
@@ -57,8 +58,16 @@ describe('<FormGroup />', () => {
   it('applies a hasError prop to the input', () => {
     const wrapper = setup('An error field', true, 'Something went wrong');
 
+    expect(wrapper.find(FormGroupLabel)).toHaveStyleRule(
+      'color',
+      theme.colors.redRedWine
+    );
     expect(wrapper.find(Textfield)).toHaveStyleRule(
       'border-color',
+      theme.colors.redRedWine
+    );
+    expect(wrapper.find('span')).toHaveStyleRule(
+      'color',
       theme.colors.redRedWine
     );
     expect(wrapper).toMatchSnapshot();

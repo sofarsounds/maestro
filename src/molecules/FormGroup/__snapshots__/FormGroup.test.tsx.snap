@@ -29,6 +29,11 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   letter-spacing: 0.1px;
   margin-bottom: 8px;
   display: block;
+  color: #EF4423;
+}
+
+.c0 * {
+  color: #EF4423;
 }
 
 .c1 {
@@ -119,6 +124,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -218,15 +224,15 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -238,14 +244,19 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         <div
           className=""
         >
-          <styled.span>
+          <styled.span
+            color="#EF4423"
+            data-qaid="undefined-label"
+          >
             <StyledComponent
+              color="#EF4423"
+              data-qaid="undefined-label"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -253,6 +264,105 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   ",
                       [Function],
                       "
+
+  ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-jTzLTM",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="c0"
+                color="#EF4423"
+                data-qaid="undefined-label"
+              >
+                An error field
+                <span
+                  style={
+                    Object {
+                      "color": "#EF4423",
+                    }
+                  }
+                >
+                  *
+                </span>
+                 
+              </span>
+            </StyledComponent>
+          </styled.span>
+          <styled.input
+            hasError={true}
+            placeholder="Test Input"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-jzJRlG",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-jzJRlG",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              hasError={true}
+              placeholder="Test Input"
+            >
+              <input
+                className="c1"
+                placeholder="Test Input"
+              />
+            </StyledComponent>
+          </styled.input>
+          <styled.span
+            color="#EF4423"
+            data-qaid="undefined-error"
+          >
+            <StyledComponent
+              color="#EF4423"
+              data-qaid="undefined-error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-VigVT",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      ";
 
   ",
                       [Function],
@@ -273,95 +383,9 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
               forwardedRef={null}
             >
               <span
-                className="c0"
-              >
-                An error field
-                 
-                *
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
-            placeholder="Test Input"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={true}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.span
-            color="#EF4423"
-          >
-            <StyledComponent
-              color="#EF4423"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
                 className="c2"
                 color="#EF4423"
+                data-qaid="undefined-error"
               >
                 Something went wrong
               </span>
@@ -403,6 +427,11 @@ exports[`<FormGroup /> renders a error message 1`] = `
   letter-spacing: 0.1px;
   margin-bottom: 8px;
   display: block;
+  color: #EF4423;
+}
+
+.c0 * {
+  color: #EF4423;
 }
 
 .c1 {
@@ -493,6 +522,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -592,15 +622,15 @@ exports[`<FormGroup /> renders a error message 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -612,14 +642,19 @@ exports[`<FormGroup /> renders a error message 1`] = `
         <div
           className=""
         >
-          <styled.span>
+          <styled.span
+            color="#EF4423"
+            data-qaid="undefined-label"
+          >
             <StyledComponent
+              color="#EF4423"
+              data-qaid="undefined-label"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -627,6 +662,105 @@ exports[`<FormGroup /> renders a error message 1`] = `
   ",
                       [Function],
                       "
+
+  ",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-jTzLTM",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="c0"
+                color="#EF4423"
+                data-qaid="undefined-label"
+              >
+                An error field
+                <span
+                  style={
+                    Object {
+                      "color": "#EF4423",
+                    }
+                  }
+                >
+                  *
+                </span>
+                 
+              </span>
+            </StyledComponent>
+          </styled.span>
+          <styled.input
+            hasError={true}
+            placeholder="Test Input"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-jzJRlG",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-jzJRlG",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              hasError={true}
+              placeholder="Test Input"
+            >
+              <input
+                className="c1"
+                placeholder="Test Input"
+              />
+            </StyledComponent>
+          </styled.input>
+          <styled.span
+            color="#EF4423"
+            data-qaid="undefined-error"
+          >
+            <StyledComponent
+              color="#EF4423"
+              data-qaid="undefined-error"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-VigVT",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      ";
 
   ",
                       [Function],
@@ -647,95 +781,9 @@ exports[`<FormGroup /> renders a error message 1`] = `
               forwardedRef={null}
             >
               <span
-                className="c0"
-              >
-                An error field
-                 
-                *
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
-            placeholder="Test Input"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={true}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.span
-            color="#EF4423"
-          >
-            <StyledComponent
-              color="#EF4423"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
                 className="c2"
                 color="#EF4423"
+                data-qaid="undefined-error"
               >
                 Something went wrong
               </span>
@@ -847,6 +895,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -945,15 +994,15 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -965,14 +1014,17 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         <div
           className=""
         >
-          <styled.span>
+          <styled.span
+            data-qaid="undefined-label"
+          >
             <StyledComponent
+              data-qaid="undefined-label"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -990,7 +1042,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-jTzLTM",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1001,10 +1053,19 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
             >
               <span
                 className="c0"
+                data-qaid="undefined-label"
               >
                 A required field
+                <span
+                  style={
+                    Object {
+                      "color": "#039842",
+                    }
+                  }
+                >
+                  *
+                </span>
                  
-                *
               </span>
             </StyledComponent>
           </styled.span>
@@ -1018,7 +1079,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
+                    "componentId": "sc-jzJRlG",
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -1032,7 +1093,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "displayName": "styled.input",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
+                  "styledComponentId": "sc-jzJRlG",
                   "target": "input",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1945,6 +2006,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
           "md": "74px",
           "xs": "62px",
         },
+        "radioBox": "20px",
       },
       "fontSizes": Object {
         "base": "16px",
@@ -2042,15 +2104,15 @@ exports[`<FormGroup /> renders correctly 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
+              "componentId": "sc-fjdhpX",
               "isStatic": true,
-              "lastClassName": "eCMmlJ",
+              "lastClassName": "nsimD",
               "rules": Array [],
             },
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
+            "styledComponentId": "sc-fjdhpX",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2062,14 +2124,17 @@ exports[`<FormGroup /> renders correctly 1`] = `
         <div
           className=""
         >
-          <styled.span>
+          <styled.span
+            data-qaid="undefined-label"
+          >
             <StyledComponent
+              data-qaid="undefined-label"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-jTzLTM",
                     "isStatic": false,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -2087,7 +2152,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
                   "displayName": "styled.span",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-jTzLTM",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -2098,6 +2163,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
             >
               <span
                 className="c0"
+                data-qaid="undefined-label"
               >
                 A Label
                  
@@ -2114,7 +2180,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
+                    "componentId": "sc-jzJRlG",
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -2128,7 +2194,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
                   "displayName": "styled.input",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
+                  "styledComponentId": "sc-jzJRlG",
                   "target": "input",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
