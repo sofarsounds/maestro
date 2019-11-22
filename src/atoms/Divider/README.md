@@ -13,8 +13,15 @@ After adding the import you can use the Divider simply like this
 ## Props
 Table below contains all types of props available in the Divider component
 
-| Name          | Type     | Default         | Description                      |
-| :------------ | :-----   | :-------------- | :------------------------------- |
-| space         | `Number` | `11`            | Customise the space before and after the divider
-| id            | `string` |                 | Default HTML id prop to identify the element
-| color         | `string` | `#F5F5F5`       | Custom color for the divider (hexcode)
+| Name          | Type          | Default         | Description                      |
+| :------------ | :-----        | :-------------- | :------------------------------- |
+| space         | `Number`      | `11`            | Customise the space before and after the divider
+| id            | `string`      |                 | Default HTML id prop to identify the element
+| color         | [Enum](#enum) | `#F5F5F5`       | Custom color for the divider
+
+### Enum
+| Color   | Description |
+| :------ | :---------- |
+| black   | #111111     |
+| white   | #FFFFFF     |
+| grey    | #DBDBDB     |

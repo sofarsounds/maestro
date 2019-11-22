@@ -19,7 +19,7 @@ storiesOf('Divider', module)
     <>
       <h1>Divider</h1>
       <Boundary>
-        <Divider color={text('Color', '#000')} />
+        <Divider color="black" />
       </Boundary>
     </>
   ));

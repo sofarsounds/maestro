@@ -24,9 +24,12 @@ describe('<Divider />', () => {
     expect(wrapper).toHaveStyleRule('margin', '8px 0');
   });
 
-  it('applies a custom color', () => {
-    const wrapper = mountWithTheme(<Divider color="#000" />);
+  it('applies a color', () => {
+    const wrapper = mountWithTheme(<Divider color="black" />);
 
-    expect(wrapper).toHaveStyleRule('border-top', '1px solid #000');
+    expect(wrapper).toHaveStyleRule(
+      'border-top',
+      `1px solid ${theme.colors.backToBlack}`
+    );
   });
 });
