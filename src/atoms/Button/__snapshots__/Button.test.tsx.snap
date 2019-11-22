@@ -22,7 +22,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
   background: transparent;
   color: #039842;
   background: #FFFFFF;
-  border-color: #FFFFFF;
+  border: none;
   color: #039842;
 }
 
@@ -85,7 +85,6 @@ exports[`Buttons Link Button renders correctly 1`] = `
 
 .c0:hover {
   color: #006721;
-  border-color: #FFFFFF;
 }
 
 .c0:hover i:before {
@@ -93,12 +92,11 @@ exports[`Buttons Link Button renders correctly 1`] = `
 }
 
 .c0:focus {
-  background-color: rgba(230,247,234,0.1) border-color:#E6F7EA;
+  background-color: rgba(16,173,82,0.1);
 }
 
 .c0:disabled {
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
 }
 
 <ThemeProvider
@@ -342,7 +340,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   background: transparent;
   color: #039842;
   background: #FFFFFF;
-  border-color: #FFFFFF;
+  border: none;
   color: #039842;
 }
 
@@ -405,7 +403,6 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
 
 .c0:hover {
   color: #006721;
-  border-color: #FFFFFF;
 }
 
 .c0:hover i:before {
@@ -413,12 +410,11 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
 }
 
 .c0:focus {
-  background-color: rgba(230,247,234,0.1) border-color:#E6F7EA;
+  background-color: rgba(16,173,82,0.1);
 }
 
 .c0:disabled {
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
 }
 
 <ThemeProvider
@@ -668,7 +664,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   background: transparent;
   color: #039842;
   background: #FFFFFF;
-  border-color: #FFFFFF;
+  border: none;
   color: #039842;
 }
 
@@ -760,7 +756,6 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 
 .c0:hover {
   color: #006721;
-  border-color: #FFFFFF;
 }
 
 .c0:hover i:before {
@@ -768,12 +763,11 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 }
 
 .c0:focus {
-  background-color: rgba(230,247,234,0.1) border-color:#E6F7EA;
+  background-color: rgba(16,173,82,0.1);
 }
 
 .c0:disabled {
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
 }
 
 <ThemeProvider
