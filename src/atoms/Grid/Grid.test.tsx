@@ -71,7 +71,7 @@ describe('Grid', () => {
   it('renders a Grid with a custom row height', () => {
     const grid = mountWithTheme(
       <Grid colGap="1px">
-        <Col rows={2}>Col 1</Col>
+        <Col rowSpan={2}>Col 1</Col>
         <Col>Col 2</Col>
       </Grid>
     );

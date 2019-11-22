@@ -1502,7 +1502,7 @@ exports[`Grid renders a Grid with a custom row height 1`] = `
         className="c0"
       >
         <styled.div
-          rows={2}
+          rowSpan={2}
         >
           <StyledComponent
             forwardedComponent={
@@ -1532,11 +1532,11 @@ exports[`Grid renders a Grid with a custom row height 1`] = `
               }
             }
             forwardedRef={null}
-            rows={2}
+            rowSpan={2}
           >
             <div
               className="c1"
-              rows={2}
+              rowSpan={2}
             >
               Col 1
             </div>

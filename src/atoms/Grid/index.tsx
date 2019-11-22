@@ -11,12 +11,12 @@ interface ColProps {
   md?: number;
   lg?: number;
   xl?: number;
-  rows?: number;
+  rowSpan?: number;
 }
 export const Col = styled.div<ColProps>`
-  ${({ theme, xs, sm, md, lg, xl, rows }) => css`
+  ${({ theme, xs, sm, md, lg, xl, rowSpan }) => css`
     grid-column-end: span ${xs || 12};
-    grid-row: span ${rows || 'auto'};
+    grid-row: span ${rowSpan || 'auto'};
 
     ${sm &&
       theme.media.md`
