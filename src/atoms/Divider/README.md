@@ -17,4 +17,4 @@ Table below contains all types of props available in the Divider component
 | :------------ | :-----   | :-------------- | :------------------------------- |
 | space         | `Number` | `11`            | Customise the space before and after the divider
 | id            | `string` |                 | Default HTML id prop to identify the element
-| color         | `string` | `#F5F5F5`       | Custom color for the divider (hexcode)
+| color         | `string` | `silverSprings` | Custom color for the divider coming from the theme

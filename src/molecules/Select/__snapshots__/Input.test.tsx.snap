@@ -14,7 +14,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
 }
 
 .c3:before {
-  color: #000;
+  color: #000000;
 }
 
 .c3.icon-facebook:before {
@@ -588,24 +588,6 @@ exports[`Select <Input /> it renders correctly 1`] = `
                             "lastClassName": "c3",
                             "rules": Array [
                               "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                              [Function],
-                              ";
-  }
-
   ",
                               [Function],
                               "

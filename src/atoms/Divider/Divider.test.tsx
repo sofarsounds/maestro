@@ -25,8 +25,11 @@ describe('<Divider />', () => {
   });
 
   it('applies a custom color', () => {
-    const wrapper = mountWithTheme(<Divider color="#000" />);
+    const wrapper = mountWithTheme(<Divider color="redRedWine" />);
 
-    expect(wrapper).toHaveStyleRule('border-top', '1px solid #000');
+    expect(wrapper).toHaveStyleRule(
+      'border-top',
+      `1px solid ${theme.colors.redRedWine}`
+    );
   });
 });
