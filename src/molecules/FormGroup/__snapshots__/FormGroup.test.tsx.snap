@@ -1174,7 +1174,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1:before {
-  color: #000;
+  color: #000000;
 }
 
 .c1.icon-facebook:before {
@@ -1614,24 +1614,6 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                             "lastClassName": "c1",
                             "rules": Array [
                               "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                              [Function],
-                              ";
-  }
-
   ",
                               [Function],
                               "

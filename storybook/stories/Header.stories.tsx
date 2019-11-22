@@ -32,7 +32,7 @@ storiesOf('Header', module)
                     Cities
                   </span>
                   <Icon
-                    color={'#ffffff'}
+                    color={'whiteDenim'}
                     name={isOpen ? 'caretUp' : 'caretDown'}
                     size={'8px'}
                   />
@@ -66,7 +66,7 @@ storiesOf('Header', module)
                     My Account
                   </span>
                   <Icon
-                    color={'#ffffff'}
+                    color={'whiteDenim'}
                     name={isOpen ? 'caretUp' : 'caretDown'}
                     size={'8px'}
                   />

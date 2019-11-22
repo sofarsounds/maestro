@@ -5,6 +5,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 
 import { Icon } from '../../src';
 import Registry from '../../src/atoms/Icon/registry';
+import { Colors } from '../../src/typings/theme';
 
 const THEAD = styled.thead`
   background: #f9f9f9;
@@ -38,7 +39,7 @@ storiesOf('Iconography', module).add('All', () => (
               <Icon
                 name={icon}
                 size={text('Size', '16px')}
-                color={text('color', '#000')}
+                color={text('color', '#000') as Colors}
               />
             </td>
           </TR>

@@ -10,6 +10,27 @@ interface FontSizeResponsive {
   lg: string;
 }
 
+export type Colors =
+  | 'primary'
+  | 'black'
+  | 'blackBetty'
+  | 'paintItBlack'
+  | 'blueSmoke'
+  | 'macyGrey'
+  | 'silverSprings'
+  | 'whiteDenim'
+  | 'green900'
+  | 'green800'
+  | 'green700'
+  | 'green600'
+  | 'green500'
+  | 'green400'
+  | 'green300'
+  | 'green200'
+  | 'green100'
+  | 'green50'
+  | 'redRedWine';
+
 export default interface Theme {
   colors: {
     primary: string;

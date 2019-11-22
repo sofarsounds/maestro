@@ -48,7 +48,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
 }
 
 .c1:before {
-  color: #000;
+  color: #000000;
 }
 
 .c1.icon-facebook:before {
@@ -454,24 +454,6 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                        [Function],
-                        ";
-  }
-
   ",
                         [Function],
                         "
@@ -1150,16 +1132,16 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
           onClick={[MockFunction]}
         >
           <Icon
-            color="#949494"
+            color="blueSmoke"
             name="chevronLeft"
           >
             <styled.i
               className="icon-chevronLeft "
-              color="#949494"
+              color="blueSmoke"
             >
               <StyledComponent
                 className="icon-chevronLeft "
-                color="#949494"
+                color="blueSmoke"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -1170,24 +1152,6 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                        [Function],
-                        ";
-  }
-
   ",
                         [Function],
                         "
@@ -1408,7 +1372,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
               >
                 <i
                   className="icon-chevronLeft  c1"
-                  color="#949494"
+                  color="blueSmoke"
                 />
               </StyledComponent>
             </styled.i>
@@ -1468,7 +1432,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 }
 
 .c1:before {
-  color: #000;
+  color: #000000;
 }
 
 .c1.icon-facebook:before {
@@ -1874,24 +1838,6 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                        [Function],
-                        ";
-  }
-
   ",
                         [Function],
                         "
@@ -2570,16 +2516,16 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
           onClick={[MockFunction]}
         >
           <Icon
-            color="#949494"
+            color="blueSmoke"
             name="chevronRight"
           >
             <styled.i
               className="icon-chevronRight "
-              color="#949494"
+              color="blueSmoke"
             >
               <StyledComponent
                 className="icon-chevronRight "
-                color="#949494"
+                color="blueSmoke"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -2590,24 +2536,6 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                        [Function],
-                        ";
-  }
-
   ",
                         [Function],
                         "
@@ -2828,7 +2756,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
               >
                 <i
                   className="icon-chevronRight  c1"
-                  color="#949494"
+                  color="blueSmoke"
                 />
               </StyledComponent>
             </styled.i>

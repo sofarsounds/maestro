@@ -1,6 +1,5 @@
 import React from 'react';
 
-import theme from '../../theme';
 import Badge from '../../atoms/Badge';
 import Icon from '../../atoms/Icon';
 
@@ -23,7 +22,7 @@ const renderArrow = (
     onClick={onClick}
     data-qaid={qaId}
   >
-    <Icon color={disabled ? theme.colors.blueSmoke : undefined} name={icon} />
+    <Icon color={disabled ? 'blueSmoke' : undefined} name={icon} />
   </Badge>
 );
 
