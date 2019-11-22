@@ -1,4 +1,5 @@
 import styled, { keyframes, css } from 'styled-components';
+import { makeOpaque } from '../../lib/color';
 
 const rotate360 = keyframes`
   from {
@@ -149,7 +150,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     }
 
     &:focus {
-      background-color: transparent;
+      background-color: ${makeOpaque(theme.colors.green600, 0.01)}
     }
 
     &:disabled {
@@ -240,7 +241,7 @@ export const LinkButton = styled(OutlineButton)`
     }
 
     &:focus {
-      background-color: ${theme.colors.green50};
+      background-color: ${makeOpaque(theme.colors.green50, 0.01)}
       border-color: ${theme.colors.green50};
     }
 
