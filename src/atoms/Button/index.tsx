@@ -150,7 +150,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     }
 
     &:focus {
-      background-color: ${makeOpaque(theme.colors.green600, 0.01)}
+      background-color: ${makeOpaque(theme.colors.green600, 0.1)}
     }
 
     &:disabled {
@@ -241,7 +241,7 @@ export const LinkButton = styled(OutlineButton)`
     }
 
     &:focus {
-      background-color: ${makeOpaque(theme.colors.green50, 0.01)}
+      background-color: ${makeOpaque(theme.colors.green50, 0.1)}
       border-color: ${theme.colors.green50};
     }
 
