@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, number } from '@storybook/addon-knobs';
+import { withKnobs, number, text } from '@storybook/addon-knobs';
 
+import { Colors } from '../../src/typings/theme';
 import { Divider } from '../../src';
 import { Boundary } from '../helpers/components';
 
@@ -12,6 +13,14 @@ storiesOf('Divider', module)
       <h1>Divider</h1>
       <Boundary>
         <Divider space={number('Space', 11)} />
+      </Boundary>
+    </>
+  ))
+  .add('Custom color', () => (
+    <>
+      <h1>Divider</h1>
+      <Boundary>
+        <Divider color={text('Color', 'redRedWine') as Colors} />
       </Boundary>
     </>
   ));

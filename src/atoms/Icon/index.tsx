@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
+import { Colors } from '../../typings/theme';
 
 import Registry from './registry';
 
@@ -24,29 +25,30 @@ const generateIcons = () => {
 const IconElement = styled.i<{
   className: string;
   size?: string;
-  color?: string;
+  color?: Colors;
 }>`
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+  ${({ theme, size, color }) => css`
+    font-family: 'sofarsounds-icon-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  &:before {
-    color: ${({ color }) => color || '#000'};
-  }
+    &:before {
+      color: ${theme.colors[color || 'black']};
+    }
 
-  ${({ size }) =>
-    size &&
-    css`
-      font-size: ${size};
-    `}
+    ${size &&
+      css`
+        font-size: ${size};
+      `}
+  `}
 
   ${generateIcons()};
 `;
@@ -54,7 +56,7 @@ const IconElement = styled.i<{
 interface IconProps {
   name: string;
   size?: string;
-  color?: string;
+  color?: Colors;
   className?: string;
   'data-qaid'?: string;
   id?: string;

@@ -4,7 +4,6 @@ import styled, { css } from '../../lib/styledComponents';
 import { Body2 } from '../Typography';
 import { withShadow } from '../../util';
 import Icon from '../Icon';
-import theme from '../../theme';
 
 interface SnackbarProps {
   children: any;
@@ -50,7 +49,7 @@ const Snackbar: React.SFC<SnackbarProps> = ({
     </Body2>
 
     <CancelButton onClick={onCancel} data-qaid={`${qaId}-cancel`}>
-      <Icon name="close" size="16px" color={theme.colors.whiteDenim} />
+      <Icon name="close" size="16px" color="whiteDenim" />
     </CancelButton>
   </SnackbarStyled>
 );

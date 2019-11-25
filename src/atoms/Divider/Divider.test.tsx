@@ -23,4 +23,13 @@ describe('<Divider />', () => {
 
     expect(wrapper).toHaveStyleRule('margin', '8px 0');
   });
+
+  it('applies a custom color', () => {
+    const wrapper = mountWithTheme(<Divider color="redRedWine" />);
+
+    expect(wrapper).toHaveStyleRule(
+      'border-top',
+      `1px solid ${theme.colors.redRedWine}`
+    );
+  });
 });

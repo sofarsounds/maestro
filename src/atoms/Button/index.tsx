@@ -1,4 +1,5 @@
 import styled, { keyframes, css } from 'styled-components';
+import { makeOpaque } from '../../lib/color';
 
 const rotate360 = keyframes`
   from {
@@ -149,7 +150,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     }
 
     &:focus {
-      background-color: ${theme.colors.green50};
+      background-color: ${makeOpaque(theme.colors.green600, 0.1)};
     }
 
     &:disabled {
@@ -223,7 +224,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
 export const LinkButton = styled(OutlineButton)`
   ${({ theme }) => css`
     background: ${theme.colors.whiteDenim};
-    border-color: ${theme.colors.whiteDenim};
+    border: none;
     color: ${theme.colors.primary};
 
     i:before {
@@ -232,7 +233,6 @@ export const LinkButton = styled(OutlineButton)`
 
     &:hover {
       color: ${theme.colors.green900};
-      border-color: ${theme.colors.whiteDenim};
 
       i:before {
         color: ${theme.colors.green900};
@@ -240,13 +240,11 @@ export const LinkButton = styled(OutlineButton)`
     }
 
     &:focus {
-      background-color: ${theme.colors.green50};
-      border-color: ${theme.colors.green50};
+      background-color: ${makeOpaque(theme.colors.green600, 0.1)};
     }
 
     &:disabled {
       background-color: ${theme.colors.whiteDenim};
-      border-color: ${theme.colors.whiteDenim};
     }
   `};
 `;

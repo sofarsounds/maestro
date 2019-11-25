@@ -36,13 +36,23 @@ storiesOf('Button', module)
   .add('Outline', () => (
     <>
       <h1>Outline Button</h1>
+      <Inversion>
+          <OutlineButton
+            onClick={action('Outline Button clicked')}
+            disabled={boolean('Disabled', false)}
+            loading={boolean('Loading', false)}
+            small={boolean('Small', false)}
+            >
+            {text('Label', 'Button')}
+          </OutlineButton>
+      </Inversion>
       <Container>
         <OutlineButton
           onClick={action('Outline Button clicked')}
           disabled={boolean('Disabled', false)}
           loading={boolean('Loading', false)}
           small={boolean('Small', false)}
-        >
+          >
           {text('Label', 'Button')}
         </OutlineButton>
       </Container>

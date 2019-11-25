@@ -26,10 +26,19 @@ const FormGroup: React.SFC<Props> = ({
   id
 }) => (
   <FormGroupWrapper id={id} data-qaid={qaId}>
-    <FormGroupLabel data-qaid={`${qaId}-label`}>
+    <FormGroupLabel
+      color={errorMsg ? theme.colors.redRedWine : undefined}
+      data-qaid={`${qaId}-label`}
+    >
       {label}
       {required ? (
-        <span style={{ color: theme.colors.green700 }}>*</span>
+        <span
+          style={{
+            color: errorMsg ? theme.colors.redRedWine : theme.colors.green700
+          }}
+        >
+          *
+        </span>
       ) : null}{' '}
       {renderIcon ? renderIcon() : null}
     </FormGroupLabel>

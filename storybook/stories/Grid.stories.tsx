@@ -11,6 +11,7 @@ const ColContent = styled.div`
   border-radius: 5px;
   text-align: center;
   padding: 10px;
+  height: 100%;
 `;
 
 const Space = styled.div`
@@ -87,5 +88,31 @@ storiesOf('Grid', module)
           <ColContent>Row 2</ColContent>
         </Col>
       </Grid>
+
+      <Space />
+
+      <h2>Row Span</h2>
+      <Grid>
+        <Col xs={12} sm={6} rowSpan={2}>
+          <ColContent>A column that will take 2 rows in height.</ColContent>
+        </Col>
+        <Col xs={12} sm={6}>
+          <ColContent>A column that will take 1 row.</ColContent>
+        </Col>
+        <Col xs={12} sm={6}>
+          <ColContent>A column that will take 1 row.</ColContent>
+        </Col>
+        <Col xs={12} sm={4}>
+          <ColContent>A column that will take 1 row.</ColContent>
+        </Col>
+        <Col xs={12} sm={4}>
+          <ColContent>A column that will take 1 row.</ColContent>
+        </Col>
+        <Col xs={12} sm={4}>
+          <ColContent>A column that will take 1 row.</ColContent>
+        </Col>
+      </Grid>
+
+      <Space />
     </div>
   ));
