@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 import { Body2 } from '../Typography';
-import { makeOpaque } from '../../lib/color';
+import { makeOpaque } from '../../lib';
 
 const Center = styled.label`
   display: flex;

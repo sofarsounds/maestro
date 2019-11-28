@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from 'styled-components';
-import { makeOpaque } from '../../lib/color';
+import { makeOpaque } from '../../lib';
 
 const rotate360 = keyframes`
   from {

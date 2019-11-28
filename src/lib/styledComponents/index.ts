@@ -1,6 +1,6 @@
 import * as styledComponents from 'styled-components';
 
-import Theme from '../typings/theme';
+import Theme from '../../typings/theme';
 
 const {
   default: styled,

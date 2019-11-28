@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
-import { makeOpaque } from '../../lib/color';
+import { makeOpaque } from '../../lib';
 import { Body2 } from '../Typography';
 
 const Center = styled.label`
