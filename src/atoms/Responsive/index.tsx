@@ -12,6 +12,8 @@ interface Props {
   showUp?: string;
 }
 
+const hasWindow = typeof window !== 'undefined';
+
 const findNext = (key: string): string | null => {
   const keys = Object.keys(breakPoints);
 
@@ -46,15 +48,19 @@ interface State {
 }
 export default class Responsive extends React.Component<Props, State> {
   public readonly state: State = {
-    windowSize: window.innerWidth
+    windowSize: hasWindow ? window.innerWidth : 0
   };
 
   public componentDidMount = () => {
-    window.addEventListener('resize', this.handleResize);
+    if (hasWindow) {
+      window.addEventListener('resize', this.handleResize);
+    }
   };
 
   public componentWillUnmount = () => {
-    window.removeEventListener('resize', this.handleResize);
+    if (hasWindow) {
+      window.removeEventListener('resize', this.handleResize);
+    }
   };
 
   private handleResize = () => {
