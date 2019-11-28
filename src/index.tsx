@@ -35,8 +35,9 @@ export { default as useModal } from './hooks/useModal';
 export { UseModalProps } from './hooks/useModal';
 
 export * from './util';
+export * from './lib';
 
-export { default as theme } from './theme';
+export { default as theme, breakPoints } from './theme';
 export { default as Theme } from './typings/theme';
 export { default as GlobalStyle } from './theme/global';
 export {
