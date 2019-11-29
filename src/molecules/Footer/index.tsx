@@ -24,7 +24,7 @@ interface Composition {
   LogoWithSlogan: React.SFC<LogoWithSloganProps>;
   LinkSection: React.SFC;
   SectionHeader: React.SFC;
-  SectionLink: React.SFC<{ href: string }>;
+  SectionLink: React.SFC<any>;
   SocialIcons: React.SFC;
   Icon: React.SFC<{ name: string }>;
   CopyrightMsg: React.SFC;
