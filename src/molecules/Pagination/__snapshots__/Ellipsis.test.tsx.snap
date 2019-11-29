@@ -652,7 +652,7 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-ellipsisHorizontal  c1"
+                  className="c1 icon-ellipsisHorizontal "
                 />
               </StyledComponent>
             </styled.i>
