@@ -4,8 +4,6 @@ const nodeExternals = require('webpack-node-externals');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
-const isBuild = process.env === 'production';
-
 module.exports = {
   mode: 'production',
   entry: './src/index.tsx',
@@ -21,7 +19,7 @@ module.exports = {
     // minimize: false
     minimizer: [new TerserPlugin()]
   },
-  plugins: isBuild ? [new BundleAnalyzerPlugin()] : [],
+  plugins: [new BundleAnalyzerPlugin()],
   module: {
     rules: [
       {
