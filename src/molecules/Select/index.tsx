@@ -14,6 +14,7 @@ interface SelectProps {
   hasError?: boolean;
   name?: string;
   id?: string;
+  'data-qaid'?: string;
 }
 
 const Select: React.SFC<SelectProps> = ({
@@ -25,7 +26,8 @@ const Select: React.SFC<SelectProps> = ({
   disableScrollWhenOpen = false,
   hasError,
   name,
-  id
+  id,
+  'data-qaid': qaId
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
@@ -59,6 +61,7 @@ const Select: React.SFC<SelectProps> = ({
         toggleSelect={() => setIsOpen(!isOpen)}
         hasError={hasError}
         name={name}
+        data-qaid={qaId}
       />
       {isOpen && (
         <PortalComponent dom={document.body}>

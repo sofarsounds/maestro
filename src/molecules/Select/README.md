@@ -32,6 +32,7 @@ Table below contains all types of props available in the Select component
 | positionFixed         | `Boolean`  | `false`         | Set to true when the Select is positioned fixed on the screen. Otherwise the Menu will scroll away
 | disableScrollWhenOpen | `Boolean`  |                 | Disables body scroll when select is open
 | id                    | `string`   |                 | Default HTML id prop to identify the element
+| data-qaid             | `string`   |                 | Optional prop for testing purposes
 
 ## Option Props
 
@@ -44,3 +45,4 @@ Table below contains all types of props available in the Option component
 | disabled      | `Boolean`    | false           | Whether the option is enabled or not
 | error         | `Boolean`    | false           | Whether the option is highlighted with an error state
 | onClick       | `Function`   |                 | The function that's executed when clicking this option
+| data-qaid             | `string`   |                 | Optional prop for testing purposes
