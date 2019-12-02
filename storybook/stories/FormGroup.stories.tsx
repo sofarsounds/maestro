@@ -14,7 +14,7 @@ storiesOf('Form Group', module)
       <FormGroup
         label={text('Label', 'Email address')}
         required={boolean('Required', true)}
-        errorMsg={text('Error Msg', null)}
+        errorMsg={text('Error Msg', '')}
         data-qaid="formgroup"
       >
         <Textfield placeholder="your@email.com" />
