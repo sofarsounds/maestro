@@ -179,7 +179,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-htpNat",
-              "isStatic": false,
+              "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
                 "

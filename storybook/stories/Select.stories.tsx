@@ -7,6 +7,11 @@ import { Select, Option } from '../../src';
 
 import cities from '../helpers/cities';
 
+const clickedSelect = (e: any) => {
+  action('Callback');
+  console.log(e);
+};
+
 storiesOf('Select', module)
   .addDecorator(withKnobs)
   .add('Playground', () => (
@@ -15,7 +20,7 @@ storiesOf('Select', module)
 
       <Select
         readonly
-        handleOptionClick={action('Callback')}
+        handleOptionClick={e => clickedSelect(e)}
         placeholder="Select a city"
         hasError={boolean('Has Error', false)}
         disableScrollWhenOpen={boolean('Disable Scroll', false)}

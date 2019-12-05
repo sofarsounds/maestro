@@ -26,7 +26,7 @@ describe('Select <Menu />', () => {
     expect(mockClick).toHaveBeenCalled();
   });
 
-  it('matches style properties for inactiv', () => {
+  it('matches style properties for inactive', () => {
     let wrapper = setup();
     expect(wrapper).toHaveStyleRule('letter-spacing', '0.1px');
     expect(wrapper).toHaveStyleRule('margin-top', '0px');

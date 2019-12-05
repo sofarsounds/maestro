@@ -43,8 +43,8 @@ const Select: React.SFC<SelectProps> = ({
     setIsOpen(false);
   });
 
-  const optionClick = (value: any) => {
-    setValue(value);
+  const optionClick = (value: any, title: any) => {
+    setValue(title);
     setIsOpen(false);
     handleOptionClick ? handleOptionClick(value) : null;
   };

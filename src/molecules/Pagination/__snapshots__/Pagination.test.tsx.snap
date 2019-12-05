@@ -506,7 +506,7 @@ exports[`<Pagination /> renders correctly 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-bxivhb",
-              "isStatic": false,
+              "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
                 "
@@ -819,7 +819,7 @@ exports[`<Pagination /> renders correctly 1`] = `
                         forwardedRef={null}
                       >
                         <i
-                          className="c2 icon-chevronLeft "
+                          className="icon-chevronLeft  c2"
                         />
                       </StyledComponent>
                     </styled.i>
@@ -1420,7 +1420,7 @@ exports[`<Pagination /> renders correctly 1`] = `
                           forwardedRef={null}
                         >
                           <i
-                            className="c2 icon-ellipsisHorizontal "
+                            className="icon-ellipsisHorizontal  c2"
                           />
                         </StyledComponent>
                       </styled.i>
@@ -1781,7 +1781,7 @@ exports[`<Pagination /> renders correctly 1`] = `
                         forwardedRef={null}
                       >
                         <i
-                          className="c2 icon-chevronRight "
+                          className="icon-chevronRight  c2"
                         />
                       </StyledComponent>
                     </styled.i>
