@@ -14,7 +14,7 @@ import {
   Menu,
   OutlineButton
 } from '../../src';
-import cities from '../helpers/cities';
+import { cities } from '../helpers/cities';
 
 storiesOf('Header', module)
   .addDecorator(withKnobs)
