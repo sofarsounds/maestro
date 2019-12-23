@@ -807,7 +807,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
                       forwardedRef={null}
                     >
                       <i
-                        className="icon-caretDown  c3"
+                        className="c3 icon-caretDown "
                       />
                     </StyledComponent>
                   </styled.i>

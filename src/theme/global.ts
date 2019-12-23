@@ -1,16 +1,13 @@
 import { createGlobalStyle, css } from '../lib/styledComponents';
 
-import OpenSansRegular from '../assets/fonts/OpenSans-Regular.ttf';
-import OpenSansSemiBold from '../assets/fonts/OpenSans-SemiBold.ttf';
-import OpenSansBold from '../assets/fonts/OpenSans-Bold.ttf';
-import OpenSansExtraBold from '../assets/fonts/OpenSans-ExtraBold.ttf';
-
 import IconFontTTF from '../assets/fonts/sofarsounds-icon-font.ttf';
 import IconFontWOFF from '../assets/fonts/sofarsounds-icon-font.woff';
 import IconFontSVG from '../assets/fonts/sofarsounds-icon-font.svg';
 
 export default createGlobalStyle`
   ${({ theme }) => css`
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
     @font-face {
       font-family: 'sofarsounds-icon-font';
       src:
@@ -19,34 +16,6 @@ export default createGlobalStyle`
         url(${IconFontSVG}) format('svg');
       font-weight: normal;
       font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Open Sans';
-      src: url(${OpenSansRegular}) format('truetype');
-      font-style: normal;
-      font-weight: 400;
-    }
-
-    @font-face {
-      font-family: 'Open Sans';
-      src: url(${OpenSansSemiBold}) format('truetype');
-      font-style: normal;
-      font-weight: 600;
-    }
-
-    @font-face {
-      font-family: 'Open Sans';
-      src: url(${OpenSansBold}) format('truetype');
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    @font-face {
-      font-family: 'Open Sans';
-      src: url(${OpenSansExtraBold}) format('truetype');
-      font-style: normal;
-      font-weight: 800;
     }
 
     body,

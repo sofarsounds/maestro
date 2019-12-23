@@ -787,7 +787,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal  c2"
+                    className="c2 icon-ellipsisHorizontal "
                   />
                 </StyledComponent>
               </styled.i>
@@ -1257,7 +1257,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal  c2"
+                    className="c2 icon-ellipsisHorizontal "
                   />
                 </StyledComponent>
               </styled.i>
@@ -2372,7 +2372,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal  c3"
+                    className="c3 icon-ellipsisHorizontal "
                   />
                 </StyledComponent>
               </styled.i>
@@ -3234,7 +3234,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
                   forwardedRef={null}
                 >
                   <i
-                    className="icon-ellipsisHorizontal  c2"
+                    className="c2 icon-ellipsisHorizontal "
                   />
                 </StyledComponent>
               </styled.i>

@@ -11,6 +11,7 @@
   "exclude": [
     "**/*.test.tsx",
     "**/*.test.ts",
+    "**/*.test.tsx.snap",
     "src/test",
     "node_modules"
   ]
