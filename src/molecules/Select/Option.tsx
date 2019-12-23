@@ -6,7 +6,7 @@ interface Props {
   value?: any;
   disabled?: boolean;
   error?: boolean;
-  onClick: (value: any) => void;
+  onClick: (value: any, title: any) => void;
   'data-qaid'?: string;
 }
 
@@ -37,7 +37,7 @@ const Option: React.SFC<Props> = ({
   children,
   'data-qaid': qaId
 }) => {
-  const onChange = () => onClick(value);
+  const onChange = () => onClick(value, children);
   return (
     <OptionStyled onClick={onChange} data-qaid={qaId}>
       {children}
