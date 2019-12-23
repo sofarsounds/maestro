@@ -225,7 +225,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-fjdhpX",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "nsimD",
               "rules": Array [],
             },
@@ -623,7 +623,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-fjdhpX",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "nsimD",
               "rules": Array [],
             },
@@ -995,7 +995,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-fjdhpX",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "nsimD",
               "rules": Array [],
             },
@@ -1525,7 +1525,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-fjdhpX",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "nsimD",
               "rules": Array [],
             },
@@ -1833,7 +1833,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                       forwardedRef={null}
                     >
                       <i
-                        className="icon-helpCircleOutline  c1"
+                        className="c1 icon-helpCircleOutline "
                       />
                     </StyledComponent>
                   </styled.i>
@@ -2087,7 +2087,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-fjdhpX",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "nsimD",
               "rules": Array [],
             },

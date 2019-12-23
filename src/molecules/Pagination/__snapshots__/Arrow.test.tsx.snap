@@ -673,7 +673,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronLeft  c1"
+                  className="c1 icon-chevronLeft "
                 />
               </StyledComponent>
             </styled.i>
@@ -1371,7 +1371,7 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronLeft  c1"
+                  className="c1 icon-chevronLeft "
                   color="blueSmoke"
                 />
               </StyledComponent>
@@ -2057,7 +2057,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronRight  c1"
+                  className="c1 icon-chevronRight "
                 />
               </StyledComponent>
             </styled.i>
@@ -2755,7 +2755,7 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
                 forwardedRef={null}
               >
                 <i
-                  className="icon-chevronRight  c1"
+                  className="c1 icon-chevronRight "
                   color="blueSmoke"
                 />
               </StyledComponent>

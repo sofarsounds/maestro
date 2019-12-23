@@ -257,7 +257,7 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
                     "componentId": "c1",
-                    "isStatic": true,
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
                       "
@@ -302,7 +302,7 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
                     "componentId": "c1",
-                    "isStatic": true,
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
                       "
@@ -633,7 +633,7 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
                     "componentId": "c1",
-                    "isStatic": true,
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
                       "
@@ -678,7 +678,7 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
                     "componentId": "c1",
-                    "isStatic": true,
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
                       "
