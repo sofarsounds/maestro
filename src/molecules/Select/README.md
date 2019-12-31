@@ -45,4 +45,4 @@ Table below contains all types of props available in the Option component
 | disabled      | `Boolean`    | false           | Whether the option is enabled or not
 | error         | `Boolean`    | false           | Whether the option is highlighted with an error state
 | onClick       | `Function`   |                 | The function that's executed when clicking this option
-| data-qaid             | `string`   |                 | Optional prop for testing purposes
+| data-qaid     | `string`     |                 | Optional prop for testing purposes
