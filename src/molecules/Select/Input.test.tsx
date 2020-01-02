@@ -25,7 +25,9 @@ const setup = (
 
 describe('Select <Input />', () => {
   it('it renders correctly', () => {
-    expect(setup()).toMatchSnapshot();
+    expect(
+      setup(false, 'I am a placeholder', false, 'testDataId')
+    ).toMatchSnapshot();
   });
 
   it('it has the correct style properties when isOpen is false', () => {
@@ -56,10 +58,14 @@ describe('Select <Input />', () => {
     expect(placeholder).toBe('I am a placeholder');
   });
 
-  it('it adds a data-qaid', () => {
+  it('it adds a data-qaid on the InputWrapper, InputStyle, and Button', () => {
     let wrapper = setup(true, 'cat', true, 'testDataId');
-    let qaid = wrapper.find('Input').props()['data-qaid'];
-    expect(qaid).toBe('testDataId');
+    let wrapperQaid = wrapper.find('Input').props()['data-qaid'];
+    expect(wrapperQaid).toBe('testDataId');
+    let inputQaid = wrapper.find('input').props()['data-qaid'];
+    expect(inputQaid).toBe('testDataId-input');
+    let buttonQaid = wrapper.find('button').props()['data-qaid'];
+    expect(buttonQaid).toBe('testDataId-toggle');
   });
 
   it('it handles no data-qaid', () => {
