@@ -119,8 +119,9 @@ const Input: React.SFC<Props> = ({
         isOpen={isOpen}
         placeholder={placeholder}
         name={name}
+        data-qaid={`${qaId}-input`}
       />
-      <Button isOpen={isOpen}>
+      <Button isOpen={isOpen} type="button" data-qaid={`${qaId}-toggle`}>
         <Icon name={isOpen ? 'caretUp' : 'caretDown'} />
       </Button>
     </InputWrapper>
