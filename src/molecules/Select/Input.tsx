@@ -27,6 +27,7 @@ interface Props {
   hasError?: boolean;
   name?: string;
   id?: string;
+  'data-qaid'?: string;
 }
 
 interface ButtonProps {
@@ -100,7 +101,8 @@ const Input: React.SFC<Props> = ({
   readonly,
   hasError,
   name,
-  id
+  id,
+  'data-qaid': qaId
 }) => {
   return (
     <InputWrapper
@@ -109,6 +111,7 @@ const Input: React.SFC<Props> = ({
       onClick={toggleSelect}
       isOpen={isOpen}
       ref={innerRef}
+      data-qaid={qaId}
     >
       <InputStyle
         value={value}

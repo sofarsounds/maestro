@@ -25,6 +25,7 @@ storiesOf('Select', module)
           placeholder="Select a city"
           hasError={boolean('Has Error', false)}
           disableScrollWhenOpen={boolean('Disable Scroll', false)}
+          data-qaid="test-data-qaid"
         >
           {({ optionClick }: any) =>
             cities.map((city, index) => (
