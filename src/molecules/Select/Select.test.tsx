@@ -19,7 +19,7 @@ const setup = () =>
       </div>
       <Select
         handleOptionClick={mockClick}
-        placeholder={'I am placeholder'}
+        placeholder="I am placeholder"
         data-qaid="testQaId"
       >
         {({ optionClick }: any) =>
