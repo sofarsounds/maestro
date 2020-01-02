@@ -445,16 +445,19 @@ exports[`Select <Input /> it renders correctly 1`] = `
   }
 >
   <Input
+    data-qaid="testDataId"
     isOpen={false}
     placeholder="I am a placeholder"
     readonly={false}
     toggleSelect={[MockFunction]}
   >
     <styled.div
+      data-qaid="testDataId"
       isOpen={false}
       onClick={[MockFunction]}
     >
       <StyledComponent
+        data-qaid="testDataId"
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -487,14 +490,17 @@ exports[`Select <Input /> it renders correctly 1`] = `
       >
         <div
           className="c0"
+          data-qaid="testDataId"
           onClick={[MockFunction]}
         >
           <styled.input
+            data-qaid="testDataId-input"
             isOpen={false}
             placeholder="I am a placeholder"
             readOnly={false}
           >
             <StyledComponent
+              data-qaid="testDataId-input"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -528,15 +534,19 @@ exports[`Select <Input /> it renders correctly 1`] = `
             >
               <input
                 className="c1"
+                data-qaid="testDataId-input"
                 placeholder="I am a placeholder"
                 readOnly={false}
               />
             </StyledComponent>
           </styled.input>
           <styled.button
+            data-qaid="testDataId-toggle"
             isOpen={false}
+            type="button"
           >
             <StyledComponent
+              data-qaid="testDataId-toggle"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -566,9 +576,12 @@ exports[`Select <Input /> it renders correctly 1`] = `
               }
               forwardedRef={null}
               isOpen={false}
+              type="button"
             >
               <button
                 className="c2"
+                data-qaid="testDataId-toggle"
+                type="button"
               >
                 <Icon
                   name="caretDown"
