@@ -451,10 +451,12 @@ exports[`Select renders correctly 1`] = `
     I am a idiot
   </div>
   <Select
+    data-qaid="testQaId"
     handleOptionClick={[MockFunction]}
     placeholder="I am placeholder"
   >
     <Input
+      data-qaid="testQaId"
       innerRef={
         Object {
           "current": .c3 {
@@ -759,14 +761,18 @@ exports[`Select renders correctly 1`] = `
 
 <div
             class="c0"
+            data-qaid="testQaId"
           >
             <input
               class="c1"
+              data-qaid="testQaId-input"
               placeholder="I am placeholder"
               value=""
             />
             <button
               class="c2"
+              data-qaid="testQaId-toggle"
+              type="button"
             >
               <i
                 class="c3 icon-caretDown "
@@ -781,10 +787,12 @@ exports[`Select renders correctly 1`] = `
       value=""
     >
       <styled.div
+        data-qaid="testQaId"
         isOpen={false}
         onClick={[Function]}
       >
         <StyledComponent
+          data-qaid="testQaId"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -815,14 +823,18 @@ exports[`Select renders correctly 1`] = `
             Object {
               "current": <div
                 class="c0"
+                data-qaid="testQaId"
               >
                 <input
                   class="c1"
+                  data-qaid="testQaId-input"
                   placeholder="I am placeholder"
                   value=""
                 />
                 <button
                   class="c2"
+                  data-qaid="testQaId-toggle"
+                  type="button"
                 >
                   <i
                     class="c3 icon-caretDown "
@@ -836,14 +848,17 @@ exports[`Select renders correctly 1`] = `
         >
           <div
             className="c0"
+            data-qaid="testQaId"
             onClick={[Function]}
           >
             <styled.input
+              data-qaid="testQaId-input"
               isOpen={false}
               placeholder="I am placeholder"
               value=""
             >
               <StyledComponent
+                data-qaid="testQaId-input"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -877,15 +892,19 @@ exports[`Select renders correctly 1`] = `
               >
                 <input
                   className="c1"
+                  data-qaid="testQaId-input"
                   placeholder="I am placeholder"
                   value=""
                 />
               </StyledComponent>
             </styled.input>
             <styled.button
+              data-qaid="testQaId-toggle"
               isOpen={false}
+              type="button"
             >
               <StyledComponent
+                data-qaid="testQaId-toggle"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -915,9 +934,12 @@ exports[`Select renders correctly 1`] = `
                 }
                 forwardedRef={null}
                 isOpen={false}
+                type="button"
               >
                 <button
                   className="c2"
+                  data-qaid="testQaId-toggle"
+                  type="button"
                 >
                   <Icon
                     name="caretDown"

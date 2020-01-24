@@ -27,6 +27,7 @@ interface Props {
   hasError?: boolean;
   name?: string;
   id?: string;
+  'data-qaid'?: string;
 }
 
 interface ButtonProps {
@@ -100,7 +101,8 @@ const Input: React.SFC<Props> = ({
   readonly,
   hasError,
   name,
-  id
+  id,
+  'data-qaid': qaId
 }) => {
   return (
     <InputWrapper
@@ -109,6 +111,7 @@ const Input: React.SFC<Props> = ({
       onClick={toggleSelect}
       isOpen={isOpen}
       ref={innerRef}
+      data-qaid={qaId}
     >
       <InputStyle
         value={value}
@@ -116,8 +119,9 @@ const Input: React.SFC<Props> = ({
         isOpen={isOpen}
         placeholder={placeholder}
         name={name}
+        data-qaid={`${qaId}-input`}
       />
-      <Button isOpen={isOpen}>
+      <Button isOpen={isOpen} type="button" data-qaid={`${qaId}-toggle`}>
         <Icon name={isOpen ? 'caretUp' : 'caretDown'} />
       </Button>
     </InputWrapper>

@@ -8,7 +8,8 @@ const mockClick = jest.fn();
 const setup = (
   isOpen: boolean = false,
   placeholder: string = 'I am a placeholder',
-  readonly: boolean = false
+  readonly: boolean = false,
+  dataQaId: string | undefined = undefined
 ) =>
   mountWithTheme(
     <Input
@@ -16,6 +17,7 @@ const setup = (
       placeholder={placeholder}
       toggleSelect={mockClick}
       readonly={readonly}
+      data-qaid={dataQaId}
     >
       I am a child component
     </Input>
@@ -23,14 +25,15 @@ const setup = (
 
 describe('Select <Input />', () => {
   it('it renders correctly', () => {
-    expect(setup()).toMatchSnapshot();
+    expect(
+      setup(false, 'I am a placeholder', false, 'testDataId')
+    ).toMatchSnapshot();
   });
 
   it('it has the correct style properties when isOpen is false', () => {
     let wrapper = setup(false);
-    let input = wrapper;
-    expect(input).toHaveStyleRule('border-radius', '2px');
-    expect(input).not.toHaveStyleRule('box-shadow');
+    expect(wrapper).toHaveStyleRule('border-radius', '2px');
+    expect(wrapper).not.toHaveStyleRule('box-shadow');
   });
 
   /* TODO: Why this doesn't work */
@@ -40,11 +43,10 @@ describe('Select <Input />', () => {
 
   it('it has the correct style properties when isOpen is true', () => {
     let wrapper = setup(true);
-    let input = wrapper;
-    expect(input).toHaveStyleRule('border-radius', '2px');
-    expect(input).not.toHaveStyleRule('box-shadow');
+    expect(wrapper).toHaveStyleRule('border-radius', '2px');
+    expect(wrapper).not.toHaveStyleRule('box-shadow');
 
-    expect(input).toHaveStyleRule(
+    expect(wrapper).toHaveStyleRule(
       'box-shadow',
       '0 10px 20px 0 rgba(0,0,0,0.19)'
     );
@@ -54,6 +56,22 @@ describe('Select <Input />', () => {
     let wrapper = setup();
     let placeholder = wrapper.find('input').props().placeholder;
     expect(placeholder).toBe('I am a placeholder');
+  });
+
+  it('it adds a data-qaid on the InputWrapper, InputStyle, and Button', () => {
+    let wrapper = setup(true, 'cat', true, 'testDataId');
+    let wrapperQaid = wrapper.find('Input').props()['data-qaid'];
+    expect(wrapperQaid).toBe('testDataId');
+    let inputQaid = wrapper.find('input').props()['data-qaid'];
+    expect(inputQaid).toBe('testDataId-input');
+    let buttonQaid = wrapper.find('button').props()['data-qaid'];
+    expect(buttonQaid).toBe('testDataId-toggle');
+  });
+
+  it('it handles no data-qaid', () => {
+    let wrapper = setup();
+    let inputWrapper = wrapper.find('Input');
+    expect(inputWrapper).toBeDefined();
   });
 
   it('it triggers onClick when clicked', () => {
