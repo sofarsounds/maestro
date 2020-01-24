@@ -48,12 +48,15 @@ interface GridProps {
   rowGap?: string;
 }
 export default styled.div<GridProps>`
-  ${({ cols, gap, colGap, rowGap }) => css`
+  ${({ cols, gap, colGap, rowGap, theme }) => css`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(${cols || 12}, 1fr);
+    grid-gap: ${gap || '15px'};
 
-    grid-gap: ${gap || '30px'};
+    ${theme.media.sm`
+      grid-gap: ${gap || '30px'}
+     `}
 
     ${colGap &&
       css`

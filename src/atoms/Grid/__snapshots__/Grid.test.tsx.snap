@@ -10,8 +10,14 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
   grid-column-gap: 1px;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-gap: 30px;
+  }
 }
 
 <ThemeProvider
@@ -323,6 +329,12 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
   grid-gap: 100px;
 }
 
+@media (min-width:576px) {
+  .c0 {
+    grid-gap: 100px;
+  }
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -592,9 +604,15 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
   grid-column-gap: 1px;
   grid-row-gap: 10px;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-gap: 30px;
+  }
 }
 
 <ThemeProvider
@@ -994,8 +1012,14 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
   grid-column-gap: 1px;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-gap: 30px;
+  }
 }
 
 <ThemeProvider
@@ -1318,8 +1342,14 @@ exports[`Grid renders a Grid with a custom row height 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
   grid-column-gap: 1px;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-gap: 30px;
+  }
 }
 
 <ThemeProvider
@@ -1595,7 +1625,7 @@ exports[`Grid renders the Grid correctly 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
 }
 
 @media (min-width:768px) {
@@ -1613,6 +1643,12 @@ exports[`Grid renders the Grid correctly 1`] = `
 @media (min-width:992px) {
   .c1 {
     grid-column-end: span 4;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-gap: 30px;
   }
 }
 
