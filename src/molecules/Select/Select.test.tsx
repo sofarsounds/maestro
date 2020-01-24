@@ -17,7 +17,11 @@ const setup = () =>
       <div onClick={outsideClick} id="outside_idiot">
         I am a idiot
       </div>
-      <Select handleOptionClick={mockClick} placeholder={'I am placeholder'}>
+      <Select
+        handleOptionClick={mockClick}
+        placeholder="I am placeholder"
+        data-qaid="testQaId"
+      >
         {({ optionClick }: any) =>
           citiesData.map((cityData, index) => (
             <Option key={index} value={cityData.value} onClick={optionClick} />
