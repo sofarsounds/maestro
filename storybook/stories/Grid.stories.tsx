@@ -67,30 +67,6 @@ storiesOf('Grid', module)
 
       <Space />
 
-      <h2>Custom Column Spacing</h2>
-      <Grid colGap="80px">
-        <Col sm={6}>
-          <ColContent>Column 1</ColContent>
-        </Col>
-        <Col sm={6}>
-          <ColContent>Column 2</ColContent>
-        </Col>
-      </Grid>
-
-      <Space />
-
-      <h2>Custom Row Spacing</h2>
-      <Grid rowGap="80px">
-        <Col>
-          <ColContent>Row 1</ColContent>
-        </Col>
-        <Col>
-          <ColContent>Row 2</ColContent>
-        </Col>
-      </Grid>
-
-      <Space />
-
       <h2>Row Span</h2>
       <Grid>
         <Col xs={12} sm={6} rowSpan={2}>

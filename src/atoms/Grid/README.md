@@ -37,8 +37,6 @@ which uses css-grid's `grid-row` attribute.
 | **children**  | `React.Node` |                 | The content displayed in the grid
 | cols          | `number`     |                 | Optional prop if you want a grid that isn't based on 12 columns
 | gap           | `string`     | 20px            | Optional prop if you need more gap between rows and columns
-| colGap        | `string`     | 20px            | Optional prop if you want to customise the gap between columns
-| rowGap        | `string`     | 20px            | Optional prop if you want to customise the gap between rows
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
 | id            | `string`     |                 | Default HTML id prop to identify the element
 

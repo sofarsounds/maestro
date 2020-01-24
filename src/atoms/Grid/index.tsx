@@ -44,25 +44,16 @@ export const Col = styled.div<ColProps>`
 interface GridProps {
   cols?: number;
   gap?: string;
-  colGap?: string;
-  rowGap?: string;
 }
 export default styled.div<GridProps>`
-  ${({ cols, gap, colGap, rowGap }) => css`
+  ${({ cols, gap, theme }) => css`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(${cols || 12}, 1fr);
+    grid-gap: 15px;
 
-    grid-gap: ${gap || '20px'};
-
-    ${colGap &&
-      css`
-        grid-column-gap: ${colGap};
-      `};
-
-    ${rowGap &&
-      css`
-        grid-row-gap: ${rowGap};
-      `};
+    ${theme.media.sm`
+      grid-gap: ${gap || '30px'}
+    `}
   `}
 `;
