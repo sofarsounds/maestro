@@ -52,7 +52,7 @@ export default styled.div<GridProps>`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(${cols || 12}, 1fr);
-    grid-gap: ${gap || '15px'};
+    grid-gap: '15px';
 
     ${theme.media.sm`
       grid-gap: ${gap || '30px'}
