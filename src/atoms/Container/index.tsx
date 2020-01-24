@@ -17,10 +17,11 @@ export default styled.div<ContainerProps>`
 
     ${theme.media.sm`
       max-width: 540px;
+      padding: 0 10px;
     `}
 
     ${theme.media.md`
-      max-width: 720px;
+      max-width: 740px;
     `}
 
     ${theme.media.lg`
@@ -28,7 +29,7 @@ export default styled.div<ContainerProps>`
     `}
 
     ${theme.media.xl`
-      max-width: 1140px;
+      max-width: 1160px;
     `}
   `}
 
