@@ -19,7 +19,7 @@ describe('<Container />', () => {
   });
 
   it('has the correct width on md devices', () => {
-    expect(wrapper).toHaveStyleRule('max-width', '720px', {
+    expect(wrapper).toHaveStyleRule('max-width', '740px', {
       media: '(min-width:768px)'
     });
   });
@@ -31,7 +31,7 @@ describe('<Container />', () => {
   });
 
   it('has the correct width on xl devices', () => {
-    expect(wrapper).toHaveStyleRule('max-width', '1140px', {
+    expect(wrapper).toHaveStyleRule('max-width', '1160px', {
       media: '(min-width:1200px)'
     });
   });

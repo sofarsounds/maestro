@@ -10,7 +10,7 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-column-gap: 1px;
 }
 
@@ -592,7 +592,7 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-column-gap: 1px;
   grid-row-gap: 10px;
 }
@@ -994,7 +994,7 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-column-gap: 1px;
 }
 
@@ -1318,7 +1318,7 @@ exports[`Grid renders a Grid with a custom row height 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-column-gap: 1px;
 }
 
@@ -1595,7 +1595,7 @@ exports[`Grid renders the Grid correctly 1`] = `
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
 @media (min-width:768px) {
