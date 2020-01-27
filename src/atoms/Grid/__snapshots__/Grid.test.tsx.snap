@@ -291,13 +291,13 @@ exports[`Grid renders the Grid correctly 1`] = `
   grid-gap: 15px;
 }
 
-@media (min-width:768px) {
+@media (min-width:576px) {
   .c1 {
     grid-column-end: span 4;
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   .c1 {
     grid-column-end: span 4;
   }

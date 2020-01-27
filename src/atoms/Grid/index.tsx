@@ -19,12 +19,12 @@ export const Col = styled.div<ColProps>`
     grid-row: span ${rowSpan || 'auto'};
 
     ${sm &&
-      theme.media.md`
+      theme.media.sm`
       grid-column-end: span ${sm};
     `}
 
     ${md &&
-      theme.media.lg`
+      theme.media.md`
       grid-column-end: span ${md};
     `}
 
