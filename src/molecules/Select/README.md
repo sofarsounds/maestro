@@ -1,17 +1,20 @@
 # Select
 
-To implement a `Select` wrapper into your project you'll need to add this import
+To implement a readonly `Select` wrapper into your project you'll need to add this import
 ```js
-import { Select, Option } from '@sofarsounds/maestro'
+import { Select } from '@sofarsounds/maestro'
 ```
 
 After adding the import you can use it simply like this
-```html
+```js
+const cities = [
+  { id: 1, title: 'London', country: 'UK },
+  { id: 2, title: 'New York', country: 'USA' }
+]
 
-<Select placeholder="Gender">
-  <Option value="m">Male</Option>
-  <Option value="f">Female</Option>
-</Select>
+<Select 
+  options={cities}
+/>
 ```
 
 ## Implements
@@ -26,23 +29,15 @@ Table below contains all types of props available in the Select component
 
 | Name                  | Type       | Default         | Description                      |
 | :------------         | :-----     | :-------------- | :------------------------------- |
-| **children**          | `Function` |                 | Render the `Option`s for the select
-| **placeholder**       | `string`   |                 | The placeholder/label to display in the select field
+| **options**           | `Function` |                 | An array of options to render in the select
+| **placeholder**       | `string`   |                 | The placeholder/label to display before a value has been selected
+| getOptionValue        | `Function` | `id`            | If the option key is a different field than `id` you can override the default behaviour
+| getOptionLabel        | `Function` | `title`         | If the label you want to display is any other field than `title` you can override the default behaviour
+| renderOption          | `Function` |                 | Optional to render a custom option instead of the default one
+| renderLeftIcon        | `Function` |                 | Render an icon component on the left next to the label
 | handleOptionClick     | `Function` |                 | Optional funtion that's executed when selecting an option. Returns the options value
 | positionFixed         | `Boolean`  | `false`         | Set to true when the Select is positioned fixed on the screen. Otherwise the Menu will scroll away
 | disableScrollWhenOpen | `Boolean`  |                 | Disables body scroll when select is open
 | id                    | `string`   |                 | Default HTML id prop to identify the element
 | data-qaid             | `string`   |                 | Optional prop for testing purposes
 
-## Option Props
-
-Table below contains all types of props available in the Option component  
-
-| Name          | Type         | Default         | Description                      |
-| :------------ | :-----       | :-------------- | :------------------------------- |
-| **children**  | `React.Node` |                 | The content to render in the option and the text that get's shown as the label text
-| value         | `string`     |                 | The value for the given option that will be returned when selecting the option
-| disabled      | `Boolean`    | false           | Whether the option is enabled or not
-| error         | `Boolean`    | false           | Whether the option is highlighted with an error state
-| onClick       | `Function`   |                 | The function that's executed when clicking this option
-| data-qaid     | `string`     |                 | Optional prop for testing purposes

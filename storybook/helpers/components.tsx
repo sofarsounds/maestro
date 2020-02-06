@@ -4,6 +4,10 @@ export const Boundary = styled.div`
   border: 1px dashed #ccc;
 `;
 
+export const Spacer = styled.div`
+  height: 50px;
+`;
+
 export const Row = styled.div`
   display: flex;
   align-items: center;

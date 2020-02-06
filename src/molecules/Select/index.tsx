@@ -1,36 +1,46 @@
 import React, { useState, useRef } from 'react';
 import Input from './Input';
-import Menu from './Menu';
-import { StickyContainer, PortalComponent } from '../../util/index';
+import Menu from '../../atoms/Menu';
+import MenuItem from '../../atoms/MenuItem';
+import { StickyContainerV2, PortalComponent } from '../../util/index';
 import { useDisableScroll, useOutsideClick, useKeyDown } from '../../hooks';
 
 interface SelectProps {
+  options: any[];
   placeholder: string;
-  children?: any;
-  handleOptionClick?: (value: any) => void;
-  readonly?: boolean;
+
+  id?: string;
+  invertColor?: boolean;
+  handleOptionClick?: (value: any, option: any) => void;
   positionFixed?: boolean;
   disableScrollWhenOpen?: boolean;
   hasError?: boolean;
   name?: string;
-  id?: string;
   'data-qaid'?: string;
+  renderLeftIcon?: (props: any) => React.ReactNode;
+  getOptionValue?: (opt: any) => any;
+  getOptionLabel?: (opt: any) => any;
+  renderOption?: (opt: any) => React.ReactNode;
 }
 
 const Select: React.SFC<SelectProps> = ({
+  options,
   placeholder,
-  children,
-  readonly,
+  invertColor,
   handleOptionClick,
   positionFixed,
   disableScrollWhenOpen = false,
   hasError,
   name,
   id,
+  renderLeftIcon,
+  getOptionLabel,
+  getOptionValue,
+  renderOption,
   'data-qaid': qaId
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [labelText, setLabelText] = useState<string>('');
 
   useDisableScroll(isOpen, disableScrollWhenOpen);
@@ -43,43 +53,69 @@ const Select: React.SFC<SelectProps> = ({
     setIsOpen(false);
   });
 
-  const optionClick = (value: any, labelText: any) => {
-    setLabelText(labelText);
+  const optionClick = (value: any, label: any, option: any) => {
+    setLabelText(label);
     setIsOpen(false);
-    handleOptionClick ? handleOptionClick(value) : null;
+    handleOptionClick ? handleOptionClick(value, option) : null;
   };
 
   return (
     <>
       <Input
-        id={id}
-        readonly={readonly}
         innerRef={ref}
         isOpen={isOpen}
-        value={labelText}
-        placeholder={placeholder}
-        toggleSelect={() => setIsOpen(!isOpen)}
+        invertColor={invertColor}
+        inputProps={{
+          id,
+          readOnly: true,
+          placeholder,
+          value: labelText,
+          name
+        }}
+        onToggle={() => setIsOpen(!isOpen)}
+        renderLeftIcon={renderLeftIcon}
         hasError={hasError}
-        name={name}
         data-qaid={qaId}
       />
+
       {isOpen && (
         <PortalComponent dom={document.body}>
-          <StickyContainer
-            positionFixed={positionFixed}
-            stickToEl={ref.current}
+          <StickyContainerV2
+            anchorEl={ref}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left'
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left'
+            }}
+            width="auto"
           >
-            <Menu isSelect depth={3}>
-              {children({ optionClick })}
+            <Menu bordered>
+              {options.map((option, index) => {
+                const val = getOptionValue ? getOptionValue(option) : option.id;
+                const label = getOptionLabel
+                  ? getOptionLabel(option)
+                  : option.title;
+                const onClick = () => optionClick(val, label, option);
+
+                if (renderOption) {
+                  return renderOption({ key: val, option, onClick });
+                }
+
+                return (
+                  <MenuItem key={val} onClick={onClick}>
+                    {label}
+                  </MenuItem>
+                );
+              })}
             </Menu>
-          </StickyContainer>
+          </StickyContainerV2>
         </PortalComponent>
       )}
     </>
   );
 };
-
-export { default as Option } from './Option';
-export { default as Menu } from './Menu';
 
 export default Select;

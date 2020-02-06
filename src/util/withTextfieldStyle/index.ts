@@ -7,7 +7,7 @@ export default (props: InputProps) => css`
   background-color: ${props.theme.colors.whiteDenim};
   border-radius: ${props.theme.borderRadius.input};
   border: 1px solid ${props.theme.colors.macyGrey};
-  padding: 0 16px;
+  padding: 0 ${props.theme.ruler[4]}px;
   outline: none;
   box-shadow: none;
   transition: ${props.theme.utils.transition()};

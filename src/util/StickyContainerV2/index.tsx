@@ -15,6 +15,7 @@ export interface StickyContainerProps {
   transformOrigin?: TransformOrigin;
   offset?: Offset;
   keepInViewPort?: boolean;
+  width?: string;
 }
 
 interface Props extends StickyContainerProps {
@@ -33,7 +34,8 @@ const StickyContainerV2: React.SFC<Props> = ({
   transformOrigin = { vertical: 'top', horizontal: 'left' },
   offset,
   keepInViewPort = false,
-  children
+  children,
+  width = 'auto'
 }) => {
   const popoverRef = useRef<any>();
   const [calculatedPosition, setCalculatedPosition] = useState<any>({});
@@ -89,14 +91,15 @@ const StickyContainerV2: React.SFC<Props> = ({
     updateCalculatedPosition(anchorEl);
   });
 
-  const { y = -10000, x = -10000 } = calculatedPosition;
+  const { y = -10000, x = -10000, width: anchorElWidth } = calculatedPosition;
 
   return (
     <Container
       ref={popoverRef}
       style={{
         top: `${y}px`,
-        left: `${x}px`
+        left: `${x}px`,
+        width: width === 'auto' ? anchorElWidth : width
       }}
     >
       {children}

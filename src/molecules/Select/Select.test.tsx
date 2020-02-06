@@ -1,6 +1,7 @@
 import React from 'react';
 import { mountWithTheme } from '../../test';
-import Select, { Option } from './index';
+import Select from './index';
+// import MenuItem from '../../atoms/MenuItem';
 const mockClick = jest.fn();
 const mockClickOption = jest.fn();
 const outsideClick = jest.fn();
@@ -21,13 +22,8 @@ const setup = () =>
         handleOptionClick={mockClick}
         placeholder="I am placeholder"
         data-qaid="testQaId"
-      >
-        {({ optionClick }: any) =>
-          citiesData.map((cityData, index) => (
-            <Option key={index} value={cityData.value} onClick={optionClick} />
-          ))
-        }
-      </Select>
+        options={citiesData}
+      />
     </>
   );
 
@@ -77,17 +73,7 @@ describe('Select', () => {
   it('calls the onClick options handler when an option is clicked', () => {
     const setup = () =>
       mountWithTheme(
-        <Select placeholder={'I am placeholder'}>
-          {() =>
-            citiesData.map((cityData, index) => (
-              <Option
-                key={index}
-                value={cityData.value}
-                onClick={mockClickOption}
-              />
-            ))
-          }
-        </Select>
+        <Select placeholder={'I am placeholder'} options={citiesData} />
       );
 
     let wrapper = setup();

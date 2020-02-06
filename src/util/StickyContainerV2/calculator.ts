@@ -175,7 +175,7 @@ export const calculateContainerPosition = (
   return {
     x: popoverX,
     y: popoverY,
-    width: popoverEl.width,
+    width: anchorEl.width,
     height: popoverEl.height
   };
 };
