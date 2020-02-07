@@ -5,24 +5,24 @@ import { useSelect } from '../../hooks';
 import Input from './Input';
 import Options from './Options';
 
-interface SelectProps {
-  options: any[];
+interface SelectProps<T> {
+  options: T[];
   placeholder: string;
 
   id?: string;
   invertColor?: boolean;
-  handleOptionClick?: (value: any, option: any) => void;
+  handleOptionClick?: (value: any, option: T) => void;
   disableScrollWhenOpen?: boolean;
   hasError?: boolean;
   name?: string;
   'data-qaid'?: string;
-  renderLeftIcon?: (props: any) => React.ReactNode;
-  getOptionValue?: (opt: any) => any;
-  getOptionLabel?: (opt: any) => any;
-  renderOption?: (opt: any) => React.ReactNode;
+  renderLeftIcon?: () => React.ReactNode;
+  getOptionValue?: (opt: T) => string | number;
+  getOptionLabel?: (opt: T) => string | number;
+  renderOption?: (opt: { option: T; onClick: any }) => React.ReactNode;
 }
 
-const Select: React.SFC<SelectProps> = ({
+const Select = <T extends {}>({
   options,
   placeholder,
   invertColor,
@@ -36,7 +36,7 @@ const Select: React.SFC<SelectProps> = ({
   getOptionValue,
   renderOption,
   'data-qaid': qaId
-}) => {
+}: SelectProps<T>) => {
   const { selectRef, isOpen, labelText, onToggle, onOptionClick } = useSelect({
     disableScrollWhenOpen,
     handleOptionClick

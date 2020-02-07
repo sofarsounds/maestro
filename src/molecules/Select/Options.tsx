@@ -3,19 +3,24 @@ import Menu from '../../atoms/Menu';
 import MenuItem from '../../atoms/MenuItem';
 import { StickyContainerV2, PortalComponent } from '../../util/index';
 
-interface Props {
+// interface DefaultOption {
+//   id: number;
+//   title: string;
+// }
+
+interface Props<T> {
   innerRef: React.RefObject<any>;
   isOpen: boolean;
-  options: any[];
+  options: T[];
   onOptionClick: (val: any, label: any, option: any) => any;
   qaId?: string;
 
-  getOptionValue?: (opt: any) => any;
-  getOptionLabel?: (opt: any) => any;
-  renderOption?: (opt: any) => React.ReactNode;
+  getOptionValue?: (opt: T) => string | number;
+  getOptionLabel?: (opt: T) => string | number;
+  renderOption?: (props: { option: T; onClick: any }) => React.ReactNode;
 }
 
-const Options: React.SFC<Props> = ({
+const Options = <T extends {}>({
   innerRef,
   isOpen,
   qaId,
@@ -24,7 +29,7 @@ const Options: React.SFC<Props> = ({
   renderOption,
   options,
   onOptionClick
-}) => {
+}: Props<T>) => {
   if (!isOpen) {
     return null;
   }
@@ -45,10 +50,10 @@ const Options: React.SFC<Props> = ({
       >
         <Menu bordered data-qaid={`${qaId}-menu`}>
           {options.map((option, key) => {
-            const val = getOptionValue ? getOptionValue(option) : option.id;
+            const val = getOptionValue ? getOptionValue(option) : option['id'];
             const label = getOptionLabel
               ? getOptionLabel(option)
-              : option.title;
+              : option['title'];
             const onClick = () => onOptionClick(val, label, option);
 
             if (renderOption) {

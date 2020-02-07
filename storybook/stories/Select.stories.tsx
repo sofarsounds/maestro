@@ -25,8 +25,8 @@ storiesOf('Select', module)
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
             data-qaid="test-data-qaid"
             options={multiDimensional}
-            getOptionValue={(option: any) => option.id}
-            getOptionLabel={(option: any) => option.title}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
           />
         </Boundary>
 
@@ -41,8 +41,8 @@ storiesOf('Select', module)
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
             data-qaid="test-data-qaid"
             options={multiDimensional}
-            getOptionValue={(option: any) => option.id}
-            getOptionLabel={(option: any) => option.title}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
           />
         </Boundary>
       </div>
@@ -61,8 +61,8 @@ storiesOf('Select', module)
             renderLeftIcon={() => <Icon name="helpCircleOutline" />}
             data-qaid="test-data-qaid"
             options={multiDimensional}
-            getOptionValue={(option: any) => option.id}
-            getOptionLabel={(option: any) => option.title}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
           />
         </Boundary>
 
@@ -78,8 +78,8 @@ storiesOf('Select', module)
             renderLeftIcon={() => <Icon name="helpCircleOutline" />}
             data-qaid="test-data-qaid"
             options={multiDimensional}
-            getOptionValue={(option: any) => option.id}
-            getOptionLabel={(option: any) => option.title}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
           />
         </Boundary>
       </div>
@@ -98,8 +98,8 @@ storiesOf('Select', module)
             renderLeftIcon={() => <Icon name="helpCircleOutline" />}
             data-qaid="test-data-qaid"
             options={multiDimensional}
-            getOptionValue={(option: any) => option.id}
-            getOptionLabel={(option: any) => option.title}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
             renderOption={({ option, ...props }) => (
               <MenuItem {...props}>
                 🇬🇧 {option.title}
@@ -118,13 +118,11 @@ storiesOf('Select', module)
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
-            renderLeftIcon={(iconProps: any) => (
-              <Icon name="helpCircleOutline" {...iconProps} />
-            )}
+            renderLeftIcon={() => <Icon name="helpCircleOutline" />}
             data-qaid="test-data-qaid"
             options={multiDimensional}
-            getOptionValue={(option: any) => option.id}
-            getOptionLabel={(option: any) => option.title}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
             renderOption={({ option, ...props }) => (
               <MenuItem {...props}>
                 🇬🇧 {option.title}
