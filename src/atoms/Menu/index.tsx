@@ -1,6 +1,5 @@
 import styled, { css } from '../../lib/styledComponents';
 import { withShadow } from '../../util';
-import { ShadowDepth } from '../../util/withShadow';
 
 interface Props {
   children?: any;

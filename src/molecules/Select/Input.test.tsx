@@ -17,7 +17,7 @@ describe('<Select />', () => {
       expect(mockClick).toHaveBeenCalledTimes(1);
     });
 
-    it('renders the correctly', () => {
+    it('renders correctly', () => {
       const { queryByTestId, queryByPlaceholderText } = setup({
         inputProps: {
           placeholder: 'Awesome Select'
@@ -34,7 +34,7 @@ describe('<Select />', () => {
       expect(queryByTestId('test-toggle-icon')).toHaveClass('icon-caretDown');
     });
 
-    it('renders the correctly with a custom icon', () => {
+    it('renders correctly with a custom icon', () => {
       const { queryByTestId } = setup({
         renderLeftIcon: () => <Icon name="spotify" />
       });
@@ -44,7 +44,7 @@ describe('<Select />', () => {
 
     describe('<Wrapper />', () => {
       it('has the correct style attributes', () => {
-        const { container, queryByTestId } = setup({});
+        const { container } = setup({});
         const wrapper = container.firstChild;
 
         checkStyleRules(wrapper, {
@@ -55,7 +55,7 @@ describe('<Select />', () => {
       });
 
       it('has a pointer cursor when readOnly is true', () => {
-        const { container, queryByTestId } = setup({
+        const { container } = setup({
           inputProps: { readOnly: true }
         });
         const wrapper = container.firstChild;
@@ -66,7 +66,7 @@ describe('<Select />', () => {
       });
 
       it('has a pointer cursor when isOpen is true', () => {
-        const { container, queryByTestId } = setup({
+        const { container } = setup({
           isOpen: true
         });
         const wrapper = container.firstChild;
@@ -87,7 +87,7 @@ describe('<Select />', () => {
       });
 
       it('has the correct style attributes when color is inverted', () => {
-        const { container, queryByTestId } = setup({ invertColor: true });
+        const { container } = setup({ invertColor: true });
         const wrapper = container.firstChild;
 
         checkStyleRules(wrapper, {
@@ -146,6 +146,132 @@ describe('<Select />', () => {
           {
             modifier: 'i::before'
           }
+        );
+      });
+    });
+
+    describe('<StyledInput />', () => {
+      it('has the correct style attributes', () => {
+        const { queryByTestId } = setup({});
+
+        const input = queryByTestId('test-input');
+
+        checkStyleRules(input, {
+          background: 'transparent',
+          height: '100%',
+          width: '100%',
+          border: 'none',
+          'font-size': theme.fontSizes.body2,
+          'letter-spacing': '0.1px',
+          color: theme.colors.backToBlack
+        });
+
+        checkStyleRules(
+          queryByTestId('test-input'),
+          {
+            outline: 'none'
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          queryByTestId('test-input'),
+          {
+            outline: 'none'
+          },
+          { modifier: ':focus' }
+        );
+
+        checkStyleRules(
+          input,
+          {
+            color: theme.colors.blueSmoke
+          },
+          { modifier: '::placeholder' }
+        );
+      });
+
+      it('has the correct style attributes when color is inverted', () => {
+        const { queryByTestId } = setup({ invertColor: true });
+
+        const input = queryByTestId('test-input');
+
+        checkStyleRules(input, {
+          color: theme.colors.whiteDenim
+        });
+
+        checkStyleRules(
+          input,
+          {
+            color: theme.colors.whiteDenim
+          },
+          { modifier: '::placeholder' }
+        );
+      });
+    });
+
+    describe('<ActionButton />', () => {
+      it('has the correct style attributes', () => {
+        const { queryByTestId } = setup({});
+
+        const btn = queryByTestId('test-toggle');
+
+        checkStyleRules(btn, {
+          width: '25px',
+          height: '25px',
+          border: 'none',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          transition: 'all 0.15s ease',
+          cursor: 'pointer',
+          'border-radius': '100%'
+        });
+
+        checkStyleRules(
+          btn,
+          {
+            'background-color': theme.colors.silverSprings
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          btn,
+          {
+            outline: 'none'
+          },
+          { modifier: ':focus' }
+        );
+
+        checkStyleRules(
+          btn,
+          {
+            color: theme.colors.blueSmoke
+          },
+          { modifier: 'i::before' }
+        );
+      });
+
+      it('has the correct style attributes when color is inverted', () => {
+        const { queryByTestId } = setup({ invertColor: true });
+
+        const btn = queryByTestId('test-toggle');
+
+        checkStyleRules(
+          btn,
+          {
+            'background-color': theme.colors.paintItBlack
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          btn,
+          {
+            color: theme.colors.whiteDenim
+          },
+          { modifier: 'i::before' }
         );
       });
     });

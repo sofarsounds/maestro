@@ -3,8 +3,6 @@ import theme from '../../theme';
 import { checkStyleRules, renderWithTheme } from '../../test';
 import Menu from './';
 
-const mockClick = jest.fn();
-
 const setup = ({ width, bordered = false, depth }: any) =>
   renderWithTheme(
     <Menu data-qaid="option" width={width} bordered={bordered} depth={depth}>

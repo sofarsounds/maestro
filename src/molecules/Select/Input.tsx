@@ -95,9 +95,9 @@ const IconWrapper = styled.div<{ invertColor?: boolean }>`
 const StyledInput = styled.input<InputProps & SelectInputProps>`
   ${({ theme, invertColor, readOnly }) => css`
     background: transparent;
-    border-right: 0px;
+    height: 100%;
     width: 100%;
-    border: 0px;
+    border: none;
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
     color: ${theme.colors.backToBlack};
@@ -107,11 +107,7 @@ const StyledInput = styled.input<InputProps & SelectInputProps>`
         cursor: pointer;
       `}
 
-    &:hover {
-      outline: none;
-    }
-
-    &:focus {
+    &:hover, &:focus {
       outline: none;
     }
 
@@ -130,29 +126,32 @@ const StyledInput = styled.input<InputProps & SelectInputProps>`
   `}
 `;
 
-const Button = styled.button<ButtonProps>`
-${({ theme, invertColor }) => css`
-  width: 25px;
-  height: 25px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .15s ease;
-
-  &:hover {
+const ActionButton = styled.button<ButtonProps>`
+  ${({ theme, invertColor }) => css`
+    width: 25px;
+    height: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
     cursor: pointer;
-    background-color: ${
-      theme.colors[invertColor ? 'paintItBlack' : 'silverSprings']
-    };
     border-radius: 100%;
-  }
 
-  &:focus {
-    border-color: ${theme.colors.macyGrey}
-    outline: none;
+    &:hover {
+      background-color: ${theme.colors[
+        invertColor ? 'paintItBlack' : 'silverSprings'
+      ]};
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    i::before {
+      color: ${theme.colors[invertColor ? 'whiteDenim' : 'blueSmoke']};
+    }
   `}
-  }
 `;
 
 const Input: React.SFC<Props> = ({
@@ -191,7 +190,7 @@ const Input: React.SFC<Props> = ({
       data-qaid={`${qaId}-input`}
     />
 
-    <Button
+    <ActionButton
       invertColor={invertColor}
       isOpen={isOpen}
       type="button"
@@ -200,9 +199,8 @@ const Input: React.SFC<Props> = ({
       <Icon
         data-qaid={`${qaId}-toggle-icon`}
         name={isOpen ? 'caretUp' : 'caretDown'}
-        color={invertColor ? 'whiteDenim' : 'blueSmoke'}
       />
-    </Button>
+    </ActionButton>
   </Wrapper>
 );
 

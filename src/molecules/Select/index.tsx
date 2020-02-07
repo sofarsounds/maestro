@@ -12,7 +12,6 @@ interface SelectProps {
   id?: string;
   invertColor?: boolean;
   handleOptionClick?: (value: any, option: any) => void;
-  positionFixed?: boolean;
   disableScrollWhenOpen?: boolean;
   hasError?: boolean;
   name?: string;
@@ -28,7 +27,6 @@ const Select: React.SFC<SelectProps> = ({
   placeholder,
   invertColor,
   handleOptionClick,
-  positionFixed,
   disableScrollWhenOpen = false,
   hasError,
   name,
@@ -93,7 +91,7 @@ const Select: React.SFC<SelectProps> = ({
             width="auto"
           >
             <Menu bordered>
-              {options.map((option, index) => {
+              {options.map((option, key) => {
                 const val = getOptionValue ? getOptionValue(option) : option.id;
                 const label = getOptionLabel
                   ? getOptionLabel(option)
@@ -101,11 +99,11 @@ const Select: React.SFC<SelectProps> = ({
                 const onClick = () => optionClick(val, label, option);
 
                 if (renderOption) {
-                  return renderOption({ key: val, option, onClick });
+                  return renderOption({ key, option, onClick });
                 }
 
                 return (
-                  <MenuItem key={val} onClick={onClick}>
+                  <MenuItem key={key} onClick={onClick}>
                     {label}
                   </MenuItem>
                 );

@@ -29,5 +29,13 @@ module.exports = {
     'react/display-name': 0,
     'react/no-find-dom-node': 0,
     '@typescript-eslint/explicit-member-accessibility': 0
-  }
+  },
+  overrides: [
+    {
+      files: ['*.test.ts', '*.test.tsx', '*.spec.tsx'],
+      rules: {
+        '@typescript-eslint/no-non-null-assertion': 0
+      }
+    }
+  ]
 };
