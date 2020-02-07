@@ -90,7 +90,7 @@ const Select: React.SFC<SelectProps> = ({
             }}
             width="auto"
           >
-            <Menu bordered>
+            <Menu bordered data-qaid={`${qaId}-menu`}>
               {options.map((option, key) => {
                 const val = getOptionValue ? getOptionValue(option) : option.id;
                 const label = getOptionLabel
@@ -99,11 +99,15 @@ const Select: React.SFC<SelectProps> = ({
                 const onClick = () => optionClick(val, label, option);
 
                 if (renderOption) {
-                  return renderOption({ key, option, onClick });
+                  return renderOption({ option, onClick });
                 }
 
                 return (
-                  <MenuItem key={key} onClick={onClick}>
+                  <MenuItem
+                    data-qaid={`${qaId}-option`}
+                    key={key}
+                    onClick={onClick}
+                  >
                     {label}
                   </MenuItem>
                 );

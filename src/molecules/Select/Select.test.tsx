@@ -1,97 +1,160 @@
 import React from 'react';
-import { mountWithTheme } from '../../test';
+import { renderWithTheme, fireEvent } from '../../test';
+import Icon from '../../atoms/Icon';
 import Select from './index';
-// import MenuItem from '../../atoms/MenuItem';
-const mockClick = jest.fn();
-const mockClickOption = jest.fn();
-const outsideClick = jest.fn();
 
-let citiesData = [
-  { name: 'London', value: 'london' },
-  { name: 'Cardiff', value: 'cardiff' },
-  { name: 'Bristol', value: 'bristol' }
+let cities = [
+  { id: 1, title: 'London', country: 'UK', value: 'london' },
+  { id: 2, title: 'Cardiff', country: 'UK', value: 'cardiff' },
+  { id: 3, title: 'Bristol', country: 'UK', value: 'bristol' },
+  { id: 4, title: 'New York', country: 'US', value: 'newyork' }
 ];
 
-const setup = () =>
-  mountWithTheme(
-    <>
-      <div onClick={outsideClick} id="outside_idiot">
-        I am a idiot
-      </div>
-      <Select
-        handleOptionClick={mockClick}
-        placeholder="I am placeholder"
-        data-qaid="testQaId"
-        options={citiesData}
-      />
-    </>
+const setup = (extraProps?: any) =>
+  renderWithTheme(
+    <Select
+      data-qaid="select"
+      options={cities}
+      placeholder="Select City"
+      {...extraProps}
+    />
   );
 
-describe('Select', () => {
-  it('renders correctly', () => {
-    expect(setup()).toMatchSnapshot();
+describe('<Select />', () => {
+  it('renders correctly with default props', () => {
+    const { queryByTestId } = setup();
+    expect(queryByTestId('select')).toBeInTheDocument();
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it('renders a placeholder', () => {
-    let wrapper = setup();
-    let placeholder = wrapper.find('input').props().placeholder;
-    expect(placeholder).toBe('I am placeholder');
+  it('renders correctly with a custom left hand side icon', () => {
+    const { queryByTestId } = setup({
+      renderLeftIcon: () => <Icon name="helpCircleOutline" />
+    });
+
+    expect(queryByTestId('select-left-icon')).toBeInTheDocument();
   });
 
-  it('opens the menu when the button is clicked', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    let options = wrapper.find(Option);
-    expect(options.length).toBe(0);
-    button.simulate('click');
-    let optionUpdated = wrapper.find(Option);
-    expect(optionUpdated.length).toBe(3);
+  it('opens the select when clicking the input', () => {
+    const { queryByTestId } = setup();
+
+    fireEvent.click(queryByTestId('select')!);
+
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
   });
 
-  it('calls the select click handler when an option is clicked', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option).first();
-    options.simulate('click');
-    expect(mockClick).toHaveBeenCalled();
+  it('closes the select when clicking the input', () => {
+    const { queryByTestId } = setup();
+
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
+
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it.todo('closes the menu when clicked outside of select component');
+  it('closes the select when clicking outside of the input', () => {
+    const { queryByTestId } = setup();
 
-  it.todo('closes the menu when keydown escape');
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
 
-  it('returns the options value to the click select click handler onClick', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option).first();
-    options.simulate('click');
-    expect(mockClick).toHaveBeenCalledWith('london');
+    fireEvent.click(document);
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it('calls the onClick options handler when an option is clicked', () => {
-    const setup = () =>
-      mountWithTheme(
-        <Select placeholder={'I am placeholder'} options={citiesData} />
-      );
+  it('closes the select when hitting escape', () => {
+    const { queryByTestId } = setup();
 
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option);
-    options.first().simulate('click');
-    expect(mockClickOption).toHaveBeenCalled();
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
+
+    fireEvent.keyDown(document, { key: 'Escape', code: 27 });
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it('collapses the open menu when an option is clicked', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option);
-    expect(options.length).toBe(3);
-    options.first().simulate('click');
-    let optionUpdated = wrapper.find(Option);
-    expect(optionUpdated.length).toBe(0);
+  it('renders the correct options', () => {
+    const { queryByTestId, queryAllByTestId } = setup();
+
+    fireEvent.click(queryByTestId('select')!);
+
+    const options = queryAllByTestId('select-option');
+    expect(options).toHaveLength(4);
+    expect(options[0]).toHaveTextContent('London');
+    expect(options[1]).toHaveTextContent('Cardiff');
+    expect(options[2]).toHaveTextContent('Bristol');
+    expect(options[3]).toHaveTextContent('New York');
+  });
+
+  it('renders the correct options when getOptionLabel is provided', () => {
+    const { queryByTestId, queryAllByTestId } = setup({
+      getOptionLabel: (opt: any) => (
+        <span>
+          {opt.title}, {opt.country}
+        </span>
+      )
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+
+    const options = queryAllByTestId('select-option');
+    expect(options).toHaveLength(4);
+
+    expect(options[0]).toHaveTextContent('London, UK');
+    expect(options[1]).toHaveTextContent('Cardiff, UK');
+    expect(options[2]).toHaveTextContent('Bristol, UK');
+    expect(options[3]).toHaveTextContent('New York, US');
+  });
+
+  it('renders a custom open when renderOption is provided', () => {
+    const { queryByTestId, queryAllByTestId } = setup({
+      renderOption: ({ option }: any) => (
+        <div key={option.value} data-qaid="select-custom-opt">
+          {option.country}
+        </div>
+      )
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+
+    const options = queryAllByTestId('select-custom-opt');
+    expect(options).toHaveLength(4);
+
+    expect(options[0]).toHaveTextContent('UK');
+    expect(options[1]).toHaveTextContent('UK');
+    expect(options[2]).toHaveTextContent('UK');
+    expect(options[3]).toHaveTextContent('US');
+  });
+
+  it('executes a callback and updates the label when an option is selected', () => {
+    const mockClick = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      handleOptionClick: mockClick
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+    fireEvent.click(queryAllByTestId('select-option')[0]);
+
+    expect(mockClick).toHaveBeenCalledTimes(1);
+    expect(mockClick).toHaveBeenCalledWith(1, cities[0]);
+
+    expect(queryByTestId('select-input')).toHaveValue('London');
+  });
+
+  it('executes a callback with custom parameters when an option is selected', () => {
+    const mockClick = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      handleOptionClick: mockClick,
+      getOptionValue: (opt: any) => opt.value,
+      getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+    fireEvent.click(queryAllByTestId('select-option')[0]);
+
+    expect(mockClick).toHaveBeenCalledTimes(1);
+    expect(mockClick).toHaveBeenCalledWith('london', cities[0]);
+
+    expect(queryByTestId('select-input')).toHaveValue('London, UK');
   });
 });
