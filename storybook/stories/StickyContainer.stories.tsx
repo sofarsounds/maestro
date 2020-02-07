@@ -10,7 +10,7 @@ import {
   boolean
 } from '@storybook/addon-knobs';
 
-import { StickyContainerV2 } from '../../src';
+import { StickyContainer } from '../../src';
 
 const Anchor = styled.div<any>`
   background: #ccc;
@@ -47,7 +47,7 @@ const Example = () => {
       <Anchor ref={ref} fixed={boolean('Fix Anchor', false)}>
         Anchor
       </Anchor>
-      <StickyContainerV2
+      <StickyContainer
         anchorEl={ref}
         anchorOrigin={{
           vertical: select(
@@ -79,7 +79,7 @@ const Example = () => {
         }}
       >
         <StickyStyle>I am Sticky</StickyStyle>
-      </StickyContainerV2>
+      </StickyContainer>
     </div>
   );
 };

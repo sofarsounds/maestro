@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from '../../atoms/Menu';
 import MenuItem from '../../atoms/MenuItem';
-import { StickyContainerV2, PortalComponent } from '../../util/index';
+import { StickyContainer, PortalComponent } from '../../util/index';
 
 export interface OptionsListProps<T> {
   getOptionValue?: (opt: T) => string | number;
@@ -33,7 +33,7 @@ const Options = <T extends {}>({
 
   return (
     <PortalComponent dom={document.body}>
-      <StickyContainerV2
+      <StickyContainer
         anchorEl={innerRef}
         anchorOrigin={{
           vertical: 'bottom',
@@ -68,7 +68,7 @@ const Options = <T extends {}>({
             );
           })}
         </Menu>
-      </StickyContainerV2>
+      </StickyContainer>
     </PortalComponent>
   );
 };
