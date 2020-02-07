@@ -3,21 +3,18 @@ import Menu from '../../atoms/Menu';
 import MenuItem from '../../atoms/MenuItem';
 import { StickyContainerV2, PortalComponent } from '../../util/index';
 
-// interface DefaultOption {
-//   id: number;
-//   title: string;
-// }
-
-interface Props<T> {
-  innerRef: React.RefObject<any>;
-  isOpen: boolean;
-  options: T[];
-  onOptionClick: (val: any, label: any, option: any) => any;
-  qaId?: string;
-
+export interface OptionsListProps<T> {
   getOptionValue?: (opt: T) => string | number;
   getOptionLabel?: (opt: T) => string | number;
   renderOption?: (props: { option: T; onClick: any }) => React.ReactNode;
+}
+
+interface Props<T> extends OptionsListProps<T> {
+  qaId?: string;
+  options: T[];
+  isOpen: boolean;
+  innerRef: React.RefObject<any>;
+  onOptionClick: (val: any, label: any, option: T) => void;
 }
 
 const Options = <T extends {}>({

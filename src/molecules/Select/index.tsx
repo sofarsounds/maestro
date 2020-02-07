@@ -3,23 +3,21 @@ import React from 'react';
 import { useSelect } from '../../hooks';
 
 import Input from './Input';
-import Options from './Options';
+import Options, { OptionsListProps } from './Options';
 
-interface SelectProps<T> {
+interface SelectProps<T> extends OptionsListProps<T> {
   options: T[];
   placeholder: string;
+  'data-qaid'?: string;
 
   id?: string;
+  name?: string;
   invertColor?: boolean;
+  hasError?: boolean;
+
+  renderLeftIcon?: () => React.ReactNode;
   handleOptionClick?: (value: any, option: T) => void;
   disableScrollWhenOpen?: boolean;
-  hasError?: boolean;
-  name?: string;
-  'data-qaid'?: string;
-  renderLeftIcon?: () => React.ReactNode;
-  getOptionValue?: (opt: T) => string | number;
-  getOptionLabel?: (opt: T) => string | number;
-  renderOption?: (opt: { option: T; onClick: any }) => React.ReactNode;
 }
 
 const Select = <T extends {}>({
