@@ -5,7 +5,7 @@ import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
 import { Icon, Select, MenuItem } from '../../src';
 
-import { cities, multiDimensional } from '../helpers/cities';
+import { cities, multiDimensional, MultiDimensional } from '../helpers/cities';
 import { Spacer, Boundary } from '../helpers/components';
 
 storiesOf('Select', module)
@@ -18,7 +18,7 @@ storiesOf('Select', module)
 
       <div style={{ width: '100%', display: 'flex' }}>
         <Boundary style={{ width: '300px', padding: '20px' }}>
-          <Select
+          <Select<MultiDimensional>
             handleOptionClick={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
@@ -33,7 +33,7 @@ storiesOf('Select', module)
         <Boundary
           style={{ background: '#000', width: '300px', padding: '20px' }}
         >
-          <Select
+          <Select<MultiDimensional>
             invertColor
             handleOptionClick={action('Selected option')}
             placeholder="Select a city"
@@ -53,7 +53,7 @@ storiesOf('Select', module)
 
       <div style={{ width: '100%', display: 'flex' }}>
         <Boundary style={{ width: '300px', padding: '20px' }}>
-          <Select
+          <Select<MultiDimensional>
             handleOptionClick={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
@@ -69,7 +69,7 @@ storiesOf('Select', module)
         <Boundary
           style={{ background: '#000', width: '300px', padding: '20px' }}
         >
-          <Select
+          <Select<MultiDimensional>
             invertColor
             handleOptionClick={action('Selected option')}
             placeholder="Select a city"
@@ -90,7 +90,7 @@ storiesOf('Select', module)
 
       <div style={{ width: '100%', display: 'flex' }}>
         <Boundary style={{ width: '300px', padding: '20px' }}>
-          <Select
+          <Select<MultiDimensional>
             handleOptionClick={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
@@ -112,7 +112,7 @@ storiesOf('Select', module)
         <Boundary
           style={{ background: '#000', width: '300px', padding: '20px' }}
         >
-          <Select
+          <Select<MultiDimensional>
             invertColor
             handleOptionClick={action('Selected option')}
             placeholder="Select a city"

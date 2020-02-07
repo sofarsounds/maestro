@@ -7,12 +7,18 @@ import { Select } from '@sofarsounds/maestro'
 
 After adding the import you can use it simply like this
 ```js
+interface Cities = {
+  id: number;
+  title: string;
+  country: string;
+}
+
 const cities = [
   { id: 1, title: 'London', country: 'UK },
   { id: 2, title: 'New York', country: 'USA' }
 ]
 
-<Select 
+<Select<Cities>
   options={cities}
 />
 ```

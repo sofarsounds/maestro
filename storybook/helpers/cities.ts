@@ -5,6 +5,13 @@ export const multiDmensional = [
   { name: 'London', id: 44 }
 ];
 
+export interface MultiDimensional {
+  id: number;
+  title: string;
+  country: string;
+}
+[];
+
 export const multiDimensional = [
   { id: 1, title: 'Avon', country: 'England' },
   { id: 2, title: 'Bedfordshire', country: 'England' },

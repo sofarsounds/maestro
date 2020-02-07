@@ -3,7 +3,14 @@ import { renderWithTheme, fireEvent } from '../../test';
 import Icon from '../../atoms/Icon';
 import Select from './index';
 
-let cities = [
+interface Cities {
+  id: number;
+  title: string;
+  country: string;
+  value: string;
+}
+[];
+const cities = [
   { id: 1, title: 'London', country: 'UK', value: 'london' },
   { id: 2, title: 'Cardiff', country: 'UK', value: 'cardiff' },
   { id: 3, title: 'Bristol', country: 'UK', value: 'bristol' },
@@ -12,7 +19,7 @@ let cities = [
 
 const setup = (extraProps?: any) =>
   renderWithTheme(
-    <Select
+    <Select<Cities>
       data-qaid="select"
       options={cities}
       placeholder="Select City"
