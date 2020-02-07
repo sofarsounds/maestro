@@ -3,47 +3,118 @@ import { useDisableScroll, useOutsideClick, useKeyDown } from '../';
 
 interface Props {
   disableScrollWhenOpen?: boolean;
-  handleOptionClick?: (value: any, option: any) => void;
-}
-
-interface ReturnProps {
-  selectRef: any;
-  isOpen: boolean;
-  labelText: string;
-  onToggle: (o: boolean) => any;
-  onOptionClick: (v: any, l: any, o: any) => any;
+  onChange: (option: any | null) => void;
+  defaultOptions?: any;
+  getOptionValue?: any;
+  getOptionLabel?: any;
+  filterable?: boolean;
 }
 
 const useSelect = ({
   disableScrollWhenOpen = false,
-  handleOptionClick
-}: Props): ReturnProps => {
+  onChange,
+  defaultOptions,
+  filterable
+}: Props) => {
   const ref = useRef<any>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [labelText, setLabelText] = useState<string>('');
+  const [selectedOption, setSelectedOption] = useState();
+
+  const [filterValue, setFilterValue] = useState('');
 
   useDisableScroll(isOpen, disableScrollWhenOpen);
 
+  const onToggle = (open: boolean) => {
+    setIsOpen(open);
+
+    if (!open) {
+      if (filterValue) {
+        setFilterValue('');
+      }
+    }
+  };
+
   useOutsideClick(ref, () => {
-    setIsOpen(false);
+    onToggle(false);
   });
 
   useKeyDown('Escape', () => {
-    setIsOpen(false);
+    onToggle(false);
   });
 
-  const onOptionClick = (value: any, label: any, option: any) => {
-    setLabelText(label);
-    setIsOpen(false);
-    handleOptionClick ? handleOptionClick(value, option) : null;
+  const getValueAndLabel = (option: any) => {
+    // TODO make dynamic
+    return { value: option['id'], label: option['title'] };
+  };
+
+  const onSelectOption = (option: any) => {
+    setSelectedOption(option);
+
+    if (!option) {
+      onChange ? onChange(null) : null;
+      onToggle(false);
+      return;
+    }
+
+    const { value, label } = getValueAndLabel(option);
+
+    onChange ? onChange(option) : null;
+
+    if (filterValue) {
+      setFilterValue('');
+    }
+
+    onToggle(false);
+  };
+
+  const onChangeInput = (e: any) => {
+    setFilterValue(e.target.value);
+
+    if (e.target.value === '') {
+      setSelectedOption(undefined);
+    }
+  };
+
+  const labelText = selectedOption
+    ? getValueAndLabel(selectedOption).label
+    : '';
+
+  const matchingOptions = filterable
+    ? defaultOptions.filter((o: any) =>
+        o.title.toLowerCase().includes(String(filterValue).toLowerCase())
+      )
+    : defaultOptions;
+
+  const getDisplayValue = () => {
+    if (filterable) {
+      if (selectedOption) {
+        if (filterValue && filterValue !== labelText) {
+          return filterValue;
+        }
+
+        return labelText;
+      }
+
+      return filterValue;
+    }
+
+    return labelText;
   };
 
   return {
     selectRef: ref,
     isOpen,
-    labelText,
-    onToggle: setIsOpen,
-    onOptionClick
+    onToggle,
+    onOptionClick: onSelectOption,
+    inputProps: {
+      value: getDisplayValue(),
+      onChange: onChangeInput
+    },
+    options: filterable && filterValue ? matchingOptions : defaultOptions,
+    clearSelection: () => {
+      setFilterValue('');
+      onSelectOption(null);
+    }
   };
 };
 

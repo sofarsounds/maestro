@@ -2,26 +2,12 @@ import React from 'react';
 
 import { useSelect } from '../../hooks';
 
-import Input from './Input';
-import Options, { OptionsListProps } from './Options';
-
-export interface SelectProps<T> extends OptionsListProps<T> {
-  options: T[];
-  placeholder: string;
-  onChange: (option: T | null) => void;
-  'data-qaid'?: string;
-
-  id?: string;
-  name?: string;
-  invertColor?: boolean;
-  hasError?: boolean;
-
-  renderLeftIcon?: () => React.ReactNode;
-  disableScrollWhenOpen?: boolean;
-}
+import { SelectProps } from '../Select';
+import Input from '../Select/Input';
+import Options, { OptionsListProps } from '../Select/Options';
 
 const Select = <T extends {}>({
-  options,
+  options: defaultOptions,
   placeholder,
   invertColor,
   onChange,
@@ -35,10 +21,21 @@ const Select = <T extends {}>({
   renderOption,
   'data-qaid': qaId
 }: SelectProps<T>) => {
-  const { selectRef, isOpen, onToggle, inputProps, onOptionClick } = useSelect({
+  const {
+    selectRef,
+    isOpen,
+    onToggle,
+    options,
+    inputProps,
+    clearSelection,
+    onOptionClick
+  } = useSelect({
     disableScrollWhenOpen,
     onChange,
-    defaultOptions: options
+    defaultOptions,
+    getOptionValue,
+    getOptionLabel,
+    filterable: true
   });
 
   return (
@@ -49,12 +46,12 @@ const Select = <T extends {}>({
         invertColor={invertColor}
         inputProps={{
           id,
-          readOnly: true,
-          placeholder,
           name,
+          placeholder,
           ...inputProps
         }}
         onToggle={() => onToggle(!isOpen)}
+        onClear={clearSelection}
         renderLeftIcon={renderLeftIcon}
         hasError={hasError}
         data-qaid={qaId}

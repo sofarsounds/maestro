@@ -14,7 +14,7 @@ interface Props<T> extends OptionsListProps<T> {
   options: T[];
   isOpen: boolean;
   innerRef: React.RefObject<any>;
-  onOptionClick: (val: any, label: any, option: T) => void;
+  onOptionClick: (option: T) => void;
 }
 
 const Options = <T extends {}>({
@@ -46,12 +46,14 @@ const Options = <T extends {}>({
         width="auto"
       >
         <Menu bordered data-qaid={`${qaId}-menu`}>
+          {options.length === 0 && <MenuItem disabled>No Options...</MenuItem>}
+
           {options.map((option, key) => {
             const val = getOptionValue ? getOptionValue(option) : option['id'];
             const label = getOptionLabel
               ? getOptionLabel(option)
               : option['title'];
-            const onClick = () => onOptionClick(val, label, option);
+            const onClick = () => onOptionClick(option);
 
             if (renderOption) {
               return renderOption({ option, onClick });

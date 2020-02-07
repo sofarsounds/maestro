@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import { Icon, Select, MenuItem } from '../../src';
+import { Icon, Select, Typeahead, MenuItem } from '../../src';
 
 import { cities, multiDimensional, MultiDimensional } from '../helpers/cities';
 import { Spacer, Boundary } from '../helpers/components';
@@ -19,7 +19,7 @@ storiesOf('Select', module)
       <div style={{ width: '100%', display: 'flex' }}>
         <Boundary style={{ width: '300px', padding: '20px' }}>
           <Select<MultiDimensional>
-            handleOptionClick={action('Selected option')}
+            onChange={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
@@ -35,7 +35,7 @@ storiesOf('Select', module)
         >
           <Select<MultiDimensional>
             invertColor
-            handleOptionClick={action('Selected option')}
+            onChange={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
@@ -54,7 +54,7 @@ storiesOf('Select', module)
       <div style={{ width: '100%', display: 'flex' }}>
         <Boundary style={{ width: '300px', padding: '20px' }}>
           <Select<MultiDimensional>
-            handleOptionClick={action('Selected option')}
+            onChange={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
@@ -71,7 +71,7 @@ storiesOf('Select', module)
         >
           <Select<MultiDimensional>
             invertColor
-            handleOptionClick={action('Selected option')}
+            onChange={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
@@ -91,7 +91,7 @@ storiesOf('Select', module)
       <div style={{ width: '100%', display: 'flex' }}>
         <Boundary style={{ width: '300px', padding: '20px' }}>
           <Select<MultiDimensional>
-            handleOptionClick={action('Selected option')}
+            onChange={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
@@ -114,7 +114,7 @@ storiesOf('Select', module)
         >
           <Select<MultiDimensional>
             invertColor
-            handleOptionClick={action('Selected option')}
+            onChange={action('Selected option')}
             placeholder="Select a city"
             hasError={boolean('Has Error', false)}
             disableScrollWhenOpen={boolean('Disable Scroll', false)}
@@ -129,6 +129,44 @@ storiesOf('Select', module)
                 <span style={{ color: '#ccc' }}>, {option.country}</span>
               </MenuItem>
             )}
+          />
+        </Boundary>
+      </div>
+    </div>
+  ))
+  .add('Typeahead', () => (
+    <div>
+      <h1>Typeahead</h1>
+
+      <h2>Default</h2>
+
+      <div style={{ width: '100%', display: 'flex' }}>
+        <Boundary style={{ width: '300px', padding: '20px' }}>
+          <Typeahead<MultiDimensional>
+            onChange={action('Selected option')}
+            placeholder="Select a city"
+            hasError={boolean('Has Error', false)}
+            disableScrollWhenOpen={boolean('Disable Scroll', false)}
+            data-qaid="test-data-qaid"
+            options={multiDimensional}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
+          />
+        </Boundary>
+
+        <Boundary
+          style={{ background: '#000', width: '300px', padding: '20px' }}
+        >
+          <Typeahead<MultiDimensional>
+            invertColor
+            onChange={action('Selected option')}
+            placeholder="Select a city"
+            hasError={boolean('Has Error', false)}
+            disableScrollWhenOpen={boolean('Disable Scroll', false)}
+            data-qaid="test-data-qaid"
+            options={multiDimensional}
+            getOptionValue={option => option.id}
+            getOptionLabel={option => option.title}
           />
         </Boundary>
       </div>

@@ -24,6 +24,7 @@ interface Props {
   invertColor?: boolean;
   isOpen?: boolean;
   onToggle: () => void;
+  onClear?: () => void;
   innerRef?: React.RefObject<any>;
   hasError?: boolean;
   renderLeftIcon?: () => React.ReactNode;
@@ -35,6 +36,7 @@ interface Props {
     readOnly?: boolean;
     name?: string;
     value?: string;
+    onChange?: (e: any) => void;
   };
 }
 
@@ -162,6 +164,7 @@ const Input: React.SFC<Props> = ({
   hasError,
   invertColor,
   renderLeftIcon,
+  onClear,
   'data-qaid': qaId
 }) => (
   <Wrapper
@@ -188,7 +191,19 @@ const Input: React.SFC<Props> = ({
       name={inputProps.name}
       invertColor={invertColor}
       data-qaid={`${qaId}-input`}
+      onChange={inputProps.onChange}
     />
+
+    {onClear && inputProps.value && (
+      <ActionButton
+        onClick={onClear}
+        invertColor={invertColor}
+        type="button"
+        data-qaid={`${qaId}-clear`}
+      >
+        <Icon data-qaid={`${qaId}-clear-icon`} name="close" />
+      </ActionButton>
+    )}
 
     <ActionButton
       invertColor={invertColor}
