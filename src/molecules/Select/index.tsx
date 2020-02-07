@@ -1,9 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
+
+import { useSelect } from '../../hooks';
+
 import Input from './Input';
-import Menu from '../../atoms/Menu';
-import MenuItem from '../../atoms/MenuItem';
-import { StickyContainerV2, PortalComponent } from '../../util/index';
-import { useDisableScroll, useOutsideClick, useKeyDown } from '../../hooks';
+import Options from './Options';
 
 interface SelectProps {
   options: any[];
@@ -37,30 +37,15 @@ const Select: React.SFC<SelectProps> = ({
   renderOption,
   'data-qaid': qaId
 }) => {
-  const ref = useRef<any>();
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [labelText, setLabelText] = useState<string>('');
-
-  useDisableScroll(isOpen, disableScrollWhenOpen);
-
-  useOutsideClick(ref, () => {
-    setIsOpen(false);
+  const { selectRef, isOpen, labelText, onToggle, onOptionClick } = useSelect({
+    disableScrollWhenOpen,
+    handleOptionClick
   });
-
-  useKeyDown('Escape', () => {
-    setIsOpen(false);
-  });
-
-  const optionClick = (value: any, label: any, option: any) => {
-    setLabelText(label);
-    setIsOpen(false);
-    handleOptionClick ? handleOptionClick(value, option) : null;
-  };
 
   return (
     <>
       <Input
-        innerRef={ref}
+        innerRef={selectRef}
         isOpen={isOpen}
         invertColor={invertColor}
         inputProps={{
@@ -70,52 +55,22 @@ const Select: React.SFC<SelectProps> = ({
           value: labelText,
           name
         }}
-        onToggle={() => setIsOpen(!isOpen)}
+        onToggle={() => onToggle(!isOpen)}
         renderLeftIcon={renderLeftIcon}
         hasError={hasError}
         data-qaid={qaId}
       />
 
-      {isOpen && (
-        <PortalComponent dom={document.body}>
-          <StickyContainerV2
-            anchorEl={ref}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left'
-            }}
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left'
-            }}
-            width="auto"
-          >
-            <Menu bordered data-qaid={`${qaId}-menu`}>
-              {options.map((option, key) => {
-                const val = getOptionValue ? getOptionValue(option) : option.id;
-                const label = getOptionLabel
-                  ? getOptionLabel(option)
-                  : option.title;
-                const onClick = () => optionClick(val, label, option);
-
-                if (renderOption) {
-                  return renderOption({ option, onClick });
-                }
-
-                return (
-                  <MenuItem
-                    data-qaid={`${qaId}-option`}
-                    key={key}
-                    onClick={onClick}
-                  >
-                    {label}
-                  </MenuItem>
-                );
-              })}
-            </Menu>
-          </StickyContainerV2>
-        </PortalComponent>
-      )}
+      <Options
+        qaId={qaId}
+        innerRef={selectRef}
+        isOpen={isOpen}
+        options={options}
+        onOptionClick={onOptionClick}
+        getOptionValue={getOptionValue}
+        getOptionLabel={getOptionLabel}
+        renderOption={renderOption}
+      />
     </>
   );
 };
