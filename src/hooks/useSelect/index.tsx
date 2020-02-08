@@ -1,37 +1,37 @@
 import { useRef, useState } from 'react';
 import { useDisableScroll, useOutsideClick, useKeyDown } from '../';
 
-interface Props {
-  onChange: (option: any) => void;
-  defaultValue: any;
+interface Props<T> {
+  onChange: (option: T | null) => void;
+  defaultValue?: T | null;
   disableScrollWhenOpen?: boolean;
-  getOptionLabel: (opt: any) => string;
+  getOptionLabel: (opt: T) => string;
   searchable: boolean;
-  defaultOptions: any;
+  defaultOptions: T[];
 }
 
-interface ReturnProps {
+interface ReturnProps<T> {
   selectRef: any;
   isOpen: boolean;
-  onToggle: (isOpen: boolean) => any;
-  onOptionClick: (option: any) => any;
-  options: any;
+  onToggle: (isOpen: boolean) => void;
+  onOptionClick: (option: T) => any;
+  options: T[];
   inputProps: {
     value: string;
-    onChange: (e: any) => void;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onClear: () => void;
   };
 }
 
-const useSelect = ({
+const useSelect = <T extends {}>({
   disableScrollWhenOpen = false,
   defaultValue = null,
   getOptionLabel,
   defaultOptions,
   searchable,
   onChange
-}: Props): ReturnProps => {
-  const ref = useRef<any>();
+}: Props<T>): ReturnProps<T> => {
+  const ref = useRef<HTMLInputElement>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selected, setSelected] = useState(defaultValue);
   const [inputValue, setInputValue] = useState('');
@@ -50,20 +50,23 @@ const useSelect = ({
 
   useKeyDown('Escape', () => toggleSelect(false));
 
-  const onOptionClick = (option: any | null) => {
+  const onOptionClick = (option: T | null) => {
     setSelected(option);
     setIsOpen(false);
     setInputValue('');
     onChange(option);
   };
 
-  const onChangeInput = (e: any) => {
+  const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
+
     if (val === '') {
       return onOptionClick(null);
     }
+
     setInputValue(val);
 
+    // when user types, force open the select
     if (val !== '' && !isOpen) {
       toggleSelect(true);
     }
@@ -104,15 +107,13 @@ const useSelect = ({
   return {
     selectRef: ref,
     isOpen,
-    onToggle: setIsOpen,
+    onToggle: toggleSelect,
     onOptionClick,
     options: getOptions(),
     inputProps: {
       onChange: onChangeInput,
       value: getValue(),
-      onClear: () => {
-        onOptionClick(null);
-      }
+      onClear: () => onOptionClick(null)
     }
   };
 };

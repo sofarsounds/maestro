@@ -12,7 +12,7 @@ interface Props<T> extends OptionsListProps<T> {
   qaId?: string;
   options: T[];
   isOpen: boolean;
-  innerRef: React.RefObject<any>;
+  innerRef: React.RefObject<HTMLDivElement>;
   onOptionClick: (option: T) => void;
 }
 

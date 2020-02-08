@@ -50,7 +50,7 @@ const Select = <T extends {}>({
     onOptionClick,
     inputProps,
     options
-  } = useSelect({
+  } = useSelect<T>({
     disableScrollWhenOpen,
     getOptionLabel,
     defaultValue,

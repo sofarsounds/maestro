@@ -26,7 +26,7 @@ export interface Offset {
   horizontal?: number;
 }
 
-interface PopoverDomEl {
+export interface PopoverDomEl {
   width: number;
   height: number;
 }

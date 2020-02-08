@@ -7,6 +7,7 @@ import {
   AnchorOrigin,
   TransformOrigin,
   Offset,
+  PopoverDomEl,
   calculateContainerPosition
 } from './calculator';
 
@@ -19,14 +20,21 @@ export interface StickyContainerProps {
 }
 
 interface Props extends StickyContainerProps {
-  anchorEl: any;
-  children: any;
+  anchorEl: React.RefObject<HTMLDivElement>;
+  children: React.ReactNode;
 }
 
-const Container = styled.div<any>`
+const Container = styled.div<{ ref?: any }>`
   z-index: ${({ theme }) => theme.zIndex.navbar + 1};
   position: fixed;
 `;
+
+interface CalculatedPosition {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
 
 const StickyContainerV2: React.SFC<Props> = ({
   anchorEl,
@@ -37,13 +45,23 @@ const StickyContainerV2: React.SFC<Props> = ({
   children,
   width = 'auto'
 }) => {
-  const popoverRef = useRef<any>();
-  const [calculatedPosition, setCalculatedPosition] = useState<any>({});
-  const [popoverElRect, setPopoverElRect] = useState<any>({});
+  const popoverRef = useRef<HTMLDivElement>();
+  const [calculatedPosition, setCalculatedPosition] = useState<
+    CalculatedPosition
+  >({
+    x: -10000,
+    y: -10000,
+    width: 0,
+    height: 0
+  });
+  const [popoverElRect, setPopoverElRect] = useState<PopoverDomEl>({
+    width: 0,
+    height: 0
+  });
   const windowSize = useWindowSize();
 
   const updateCalculatedPosition = useCallback(
-    (updatedAnchorEl: any) => {
+    (updatedAnchorEl: React.RefObject<HTMLDivElement>) => {
       if (updatedAnchorEl.current) {
         const pos = getPosition(updatedAnchorEl.current);
 
@@ -91,7 +109,7 @@ const StickyContainerV2: React.SFC<Props> = ({
     updateCalculatedPosition(anchorEl);
   });
 
-  const { y = -10000, x = -10000, width: anchorElWidth } = calculatedPosition;
+  const { y, x, width: anchorElWidth } = calculatedPosition;
 
   return (
     <Container

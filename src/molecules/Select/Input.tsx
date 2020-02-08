@@ -13,7 +13,7 @@ interface SelectInputProps {
 }
 
 interface Wrapper {
-  children?: any;
+  children?: React.ReactNode;
   isOpen?: boolean;
   hasError?: boolean;
   invertColor?: boolean;
@@ -24,7 +24,7 @@ interface Props {
   invertColor?: boolean;
   isOpen?: boolean;
   onToggle: () => void;
-  innerRef?: React.RefObject<any>;
+  innerRef?: React.RefObject<HTMLInputElement>;
   hasError?: boolean;
   renderLeftIcon?: React.ReactNode;
   'data-qaid'?: string;
@@ -35,7 +35,7 @@ interface Props {
     readOnly?: boolean;
     name?: string;
     value?: string;
-    onChange?: (e: any) => void;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onClear?: () => void;
   };
 }
