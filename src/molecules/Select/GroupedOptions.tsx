@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuHeader from '../../atoms/MenuHeader';
+import groupArray from '../../util/groupBy';
 
-import groupArray from './groupBy';
 import SimpleOptions from './SimpleOptions';
 import { OptionsListProps } from './Options';
 
@@ -15,6 +15,7 @@ interface Props<T> extends OptionsListProps<T> {
 const GroupedOptions = <T extends {}>({
   options,
   groupBy,
+  qaId,
   ...rest
 }: Props<T>) => {
   const groups = groupArray(options, groupBy);
@@ -24,11 +25,17 @@ const GroupedOptions = <T extends {}>({
   return (
     <>
       {keys.map(key => (
-        <React.Fragment key={`group-${key}`}>
-          <MenuHeader data-qaid={`${rest.qaId}-group-header`}>{key}</MenuHeader>
+        <div key={`group-${key}`} data-qaid={`${qaId}-group`}>
+          <MenuHeader data-qaid={`${qaId}-group-${key}-header`}>
+            {key}
+          </MenuHeader>
 
-          <SimpleOptions options={groups[key]} {...rest} />
-        </React.Fragment>
+          <SimpleOptions
+            options={groups[key]}
+            {...rest}
+            qaId={`${qaId}-group-${key}`}
+          />
+        </div>
       ))}
     </>
   );
