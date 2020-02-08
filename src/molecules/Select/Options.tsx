@@ -44,6 +44,12 @@ const Options = <T extends {}>({
         width="auto"
       >
         <Menu bordered data-qaid={`${qaId}-menu`}>
+          {options.length === 0 && (
+            <MenuItem disabled data-qaid={`${qaId}-empty`}>
+              No options...
+            </MenuItem>
+          )}
+
           {options.map((option, key) => {
             const label = getOptionLabel(option);
             const onClick = () => onOptionClick(option);
