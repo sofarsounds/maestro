@@ -6,44 +6,102 @@ interface Props {
   defaultValue: any;
   disableScrollWhenOpen?: boolean;
   getOptionLabel: (opt: any) => string;
+  searchable: boolean;
+  defaultOptions: any;
 }
 
 interface ReturnProps {
   selectRef: any;
   isOpen: boolean;
-  labelText: string;
   onToggle: (isOpen: boolean) => any;
   onOptionClick: (option: any) => any;
+  options: any;
+  inputProps: {
+    value: string;
+    onChange: (e: any) => void;
+  };
 }
 
 const useSelect = ({
   disableScrollWhenOpen = false,
   defaultValue = null,
   getOptionLabel,
+  defaultOptions,
+  searchable,
   onChange
 }: Props): ReturnProps => {
   const ref = useRef<any>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selected, setSelected] = useState(defaultValue);
+  const [inputValue, setInputValue] = useState('');
+
+  const toggleSelect = (toOpen: boolean) => {
+    if (!toOpen && inputValue) {
+      setInputValue('');
+    }
+
+    setIsOpen(toOpen);
+  };
 
   useDisableScroll(isOpen, disableScrollWhenOpen);
 
-  useOutsideClick(ref, () => setIsOpen(false));
+  useOutsideClick(ref, () => toggleSelect(false));
 
-  useKeyDown('Escape', () => setIsOpen(false));
+  useKeyDown('Escape', () => toggleSelect(false));
 
   const onOptionClick = (option: any) => {
     setSelected(option);
     setIsOpen(false);
+    setInputValue('');
     onChange(option);
+  };
+
+  const onChangeInput = (e: any) => {
+    setInputValue(e.target.value);
+  };
+
+  const getValue = () => {
+    if (!searchable) {
+      return selected ? getOptionLabel(selected) : '';
+    }
+
+    if (selected) {
+      const lbl = getOptionLabel(selected);
+      if (inputValue && lbl !== inputValue) {
+        return inputValue;
+      }
+      return getOptionLabel(selected);
+    }
+
+    return inputValue;
+  };
+
+  const getOptions = () => {
+    if (!searchable) {
+      return defaultOptions;
+    }
+
+    if (!inputValue) {
+      return defaultOptions;
+    }
+
+    const lower = inputValue.toLowerCase();
+    return defaultOptions.filter((o: any) => {
+      const lbl = getOptionLabel(o);
+      return lbl.toLowerCase().includes(lower);
+    });
   };
 
   return {
     selectRef: ref,
     isOpen,
-    labelText: selected ? getOptionLabel(selected) : '',
     onToggle: setIsOpen,
-    onOptionClick
+    onOptionClick,
+    options: getOptions(),
+    inputProps: {
+      onChange: onChangeInput,
+      value: getValue()
+    }
   };
 };
 

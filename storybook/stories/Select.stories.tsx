@@ -15,7 +15,7 @@ const defaultProps = {
   getOptionLabel: (opt: any) => opt.title
 };
 
-const examples = [
+const staticExamples = [
   {
     title: 'Default',
     props: defaultProps
@@ -55,13 +55,51 @@ const examples = [
   }
 ];
 
+const defaultTypeaheadProps = {
+  ...defaultProps,
+  searchable: true
+};
+const typeaheadExamples = [
+  {
+    title: 'Static',
+    props: defaultTypeaheadProps
+  }
+];
+
 storiesOf('Select', module)
   .addDecorator(withKnobs)
   .add('Standard', () => (
     <div style={{ paddingBottom: '500px' }}>
       <h1>Select</h1>
 
-      {examples.map(e => (
+      {staticExamples.map(e => (
+        <>
+          <h2>{e.title}</h2>
+
+          <div style={{ width: '100%', display: 'flex' }}>
+            <Boundary
+              style={{ width: '300px', padding: '20px', marginRight: '10px' }}
+            >
+              <Select<MultiDimensional> {...e.props} />
+            </Boundary>
+
+            <Boundary
+              style={{ background: '#000', width: '300px', padding: '20px' }}
+            >
+              <Select<MultiDimensional> invertColor {...e.props} />
+            </Boundary>
+          </div>
+
+          <Spacer />
+        </>
+      ))}
+    </div>
+  ))
+  .add('Typeahead', () => (
+    <div style={{ paddingBottom: '500px' }}>
+      <h1>Typeahead</h1>
+
+      {typeaheadExamples.map(e => (
         <>
           <h2>{e.title}</h2>
 

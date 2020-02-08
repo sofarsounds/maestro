@@ -35,6 +35,7 @@ interface Props {
     readOnly?: boolean;
     name?: string;
     value?: string;
+    onChange?: (e: any) => void;
   };
 }
 
@@ -186,6 +187,7 @@ const Input: React.SFC<Props> = ({
       isOpen={isOpen}
       placeholder={inputProps.placeholder || 'Please Select'}
       name={inputProps.name}
+      onChange={inputProps.onChange}
       invertColor={invertColor}
       data-qaid={`${qaId}-input`}
     />

@@ -54,9 +54,9 @@ const Options = <T extends {}>({
 
             return (
               <MenuItem
+                key={key}
                 data-qaid={`${qaId}-option`}
                 tabIndex={key}
-                key={key}
                 onClick={onClick}
               >
                 {label}
