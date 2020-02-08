@@ -183,6 +183,7 @@ const Input: React.SFC<Props> = ({
     )}
 
     <StyledInput
+      type="search"
       value={inputProps.value}
       readOnly={inputProps.readOnly}
       isOpen={isOpen}
@@ -191,6 +192,7 @@ const Input: React.SFC<Props> = ({
       onChange={inputProps.onChange}
       invertColor={invertColor}
       data-qaid={`${qaId}-input`}
+      autoComplete="nope"
     />
 
     {!inputProps.readOnly && inputProps.onClear && inputProps.value && (

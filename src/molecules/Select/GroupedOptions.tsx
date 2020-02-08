@@ -24,10 +24,7 @@ const GroupedOptions = <T extends {}>({
   return (
     <>
       {keys.map(key => (
-        <React.Fragment
-          data-qaid={`${rest.qaId}-group-${key}`}
-          key={`group-${key}`}
-        >
+        <React.Fragment key={`group-${key}`}>
           <MenuHeader data-qaid={`${rest.qaId}-group-header`}>{key}</MenuHeader>
 
           <SimpleOptions options={groups[key]} {...rest} />
