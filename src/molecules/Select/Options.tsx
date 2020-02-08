@@ -3,6 +3,9 @@ import Menu from '../../atoms/Menu';
 import MenuItem from '../../atoms/MenuItem';
 import { StickyContainer, PortalComponent } from '../../util/index';
 
+import SimpleOptions from './SimpleOptions';
+import GroupedOptions from './GroupedOptions';
+
 export interface OptionsListProps<T> {
   getOptionLabel: (opt: T) => string;
   renderOption?: (option: T, props: any) => React.ReactNode;
@@ -14,6 +17,7 @@ interface Props<T> extends OptionsListProps<T> {
   isOpen: boolean;
   innerRef: React.RefObject<HTMLDivElement>;
   onOptionClick: (option: T) => void;
+  groupBy?: (option: T) => string;
 }
 
 const Options = <T extends {}>({
@@ -23,7 +27,8 @@ const Options = <T extends {}>({
   getOptionLabel,
   renderOption,
   options,
-  onOptionClick
+  onOptionClick,
+  groupBy
 }: Props<T>) => {
   if (!isOpen) {
     return null;
@@ -50,25 +55,26 @@ const Options = <T extends {}>({
             </MenuItem>
           )}
 
-          {options.map((option, key) => {
-            const label = getOptionLabel(option);
-            const onClick = () => onOptionClick(option);
+          {!groupBy && (
+            <SimpleOptions
+              qaId={qaId}
+              options={options}
+              getOptionLabel={getOptionLabel}
+              onOptionClick={onOptionClick}
+              renderOption={renderOption}
+            />
+          )}
 
-            if (renderOption) {
-              return renderOption(option, { onClick });
-            }
-
-            return (
-              <MenuItem
-                key={key}
-                data-qaid={`${qaId}-option`}
-                tabIndex={key}
-                onClick={onClick}
-              >
-                {label}
-              </MenuItem>
-            );
-          })}
+          {groupBy && (
+            <GroupedOptions
+              qaId={qaId}
+              options={options}
+              groupBy={groupBy}
+              getOptionLabel={getOptionLabel}
+              onOptionClick={onOptionClick}
+              renderOption={renderOption}
+            />
+          )}
         </Menu>
       </StickyContainer>
     </PortalComponent>

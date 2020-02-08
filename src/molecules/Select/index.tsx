@@ -23,6 +23,7 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   searchable?: boolean;
 
   // misc props
+  groupBy?: (option: T) => string;
   disableScrollWhenOpen?: boolean;
   'data-qaid'?: string;
 }
@@ -40,6 +41,7 @@ const Select = <T extends {}>({
   invertColor,
   renderLeftIcon,
   searchable = false,
+  groupBy,
   disableScrollWhenOpen = false,
   'data-qaid': qaId
 }: SelectProps<T>) => {
@@ -83,6 +85,7 @@ const Select = <T extends {}>({
         innerRef={selectRef}
         isOpen={isOpen}
         options={options}
+        groupBy={groupBy}
         onOptionClick={onOptionClick}
         getOptionLabel={getOptionLabel}
         renderOption={renderOption}
