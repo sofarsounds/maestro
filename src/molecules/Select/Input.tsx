@@ -36,6 +36,7 @@ interface Props {
     name?: string;
     value?: string;
     onChange?: (e: any) => void;
+    onClear?: () => void;
   };
 }
 
@@ -192,6 +193,16 @@ const Input: React.SFC<Props> = ({
       data-qaid={`${qaId}-input`}
     />
 
+    {!inputProps.readOnly && inputProps.onClear && inputProps.value && (
+      <ActionButton
+        invertColor={invertColor}
+        type="button"
+        data-qaid={`${qaId}-clear`}
+        onClick={inputProps.onClear}
+      >
+        <Icon data-qaid={`${qaId}-clear-icon`} name="close" />
+      </ActionButton>
+    )}
     <ActionButton
       invertColor={invertColor}
       isOpen={isOpen}

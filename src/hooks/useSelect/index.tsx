@@ -19,6 +19,7 @@ interface ReturnProps {
   inputProps: {
     value: string;
     onChange: (e: any) => void;
+    onClear: () => void;
   };
 }
 
@@ -49,7 +50,7 @@ const useSelect = ({
 
   useKeyDown('Escape', () => toggleSelect(false));
 
-  const onOptionClick = (option: any) => {
+  const onOptionClick = (option: any | null) => {
     setSelected(option);
     setIsOpen(false);
     setInputValue('');
@@ -57,7 +58,11 @@ const useSelect = ({
   };
 
   const onChangeInput = (e: any) => {
-    setInputValue(e.target.value);
+    const val = e.target.value;
+    if (val === '') {
+      return onOptionClick(null);
+    }
+    setInputValue(val);
   };
 
   const getValue = () => {
@@ -100,7 +105,10 @@ const useSelect = ({
     options: getOptions(),
     inputProps: {
       onChange: onChangeInput,
-      value: getValue()
+      value: getValue(),
+      onClear: () => {
+        onOptionClick(null);
+      }
     }
   };
 };
