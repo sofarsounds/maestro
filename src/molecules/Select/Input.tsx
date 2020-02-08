@@ -199,15 +199,18 @@ const Input: React.SFC<Props> = ({
         type="button"
         data-qaid={`${qaId}-clear`}
         onClick={inputProps.onClear}
+        title="Clear"
       >
         <Icon data-qaid={`${qaId}-clear-icon`} name="close" />
       </ActionButton>
     )}
+
     <ActionButton
       invertColor={invertColor}
       isOpen={isOpen}
       type="button"
       data-qaid={`${qaId}-toggle`}
+      title="Toggle"
     >
       <Icon
         data-qaid={`${qaId}-toggle-icon`}
