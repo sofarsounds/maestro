@@ -63,6 +63,10 @@ const useSelect = ({
       return onOptionClick(null);
     }
     setInputValue(val);
+
+    if (val !== '' && !isOpen) {
+      toggleSelect(true);
+    }
   };
 
   const getValue = () => {
