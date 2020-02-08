@@ -36,7 +36,7 @@ describe('<Select />', () => {
 
     it('renders correctly with a custom icon', () => {
       const { queryByTestId } = setup({
-        renderLeftIcon: () => <Icon name="spotify" />
+        renderLeftIcon: <Icon name="spotify" />
       });
 
       expect(queryByTestId('test-left-icon')).toBeInTheDocument();
@@ -110,7 +110,7 @@ describe('<Select />', () => {
     describe('<IconWrapper />', () => {
       it('has the correct style attributes', () => {
         const { queryByTestId } = setup({
-          renderLeftIcon: () => <Icon name="spotify" />
+          renderLeftIcon: <Icon name="spotify" />
         });
 
         checkStyleRules(queryByTestId('test-left-icon'), {
@@ -135,7 +135,7 @@ describe('<Select />', () => {
       it('has the correct style attributes when color is inverted', () => {
         const { queryByTestId } = setup({
           invertColor: true,
-          renderLeftIcon: () => <Icon name="spotify" />
+          renderLeftIcon: <Icon name="spotify" />
         });
 
         checkStyleRules(

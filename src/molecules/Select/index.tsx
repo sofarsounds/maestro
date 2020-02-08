@@ -6,38 +6,44 @@ import Input from './Input';
 import Options, { OptionsListProps } from './Options';
 
 interface SelectProps<T> extends OptionsListProps<T> {
+  // select props
   options: T[];
-  placeholder: string;
-  'data-qaid'?: string;
+  onChange: (option: T) => void;
 
+  // input props
+  placeholder: string;
+  defaultValue?: T | null;
   id?: string;
   name?: string;
-  invertColor?: boolean;
   hasError?: boolean;
+  invertColor?: boolean;
+  renderLeftIcon?: React.ReactNode;
 
-  renderLeftIcon?: () => React.ReactNode;
-  handleOptionClick?: (value: any, option: T) => void;
+  // misc props
   disableScrollWhenOpen?: boolean;
+  'data-qaid'?: string;
 }
 
 const Select = <T extends {}>({
   options,
-  placeholder,
-  invertColor,
-  handleOptionClick,
-  disableScrollWhenOpen = false,
-  hasError,
-  name,
-  id,
-  renderLeftIcon,
-  getOptionLabel,
-  getOptionValue,
+  onChange,
   renderOption,
+  getOptionLabel,
+  placeholder,
+  defaultValue,
+  id,
+  name,
+  hasError,
+  invertColor,
+  renderLeftIcon,
+  disableScrollWhenOpen = false,
   'data-qaid': qaId
 }: SelectProps<T>) => {
   const { selectRef, isOpen, labelText, onToggle, onOptionClick } = useSelect({
     disableScrollWhenOpen,
-    handleOptionClick
+    getOptionLabel,
+    defaultValue,
+    onChange
   });
 
   return (
@@ -65,7 +71,6 @@ const Select = <T extends {}>({
         isOpen={isOpen}
         options={options}
         onOptionClick={onOptionClick}
-        getOptionValue={getOptionValue}
         getOptionLabel={getOptionLabel}
         renderOption={renderOption}
       />

@@ -2,46 +2,46 @@ import { useRef, useState } from 'react';
 import { useDisableScroll, useOutsideClick, useKeyDown } from '../';
 
 interface Props {
+  onChange: (option: any) => void;
+  defaultValue: any;
   disableScrollWhenOpen?: boolean;
-  handleOptionClick?: (value: any, option: any) => void;
+  getOptionLabel: (opt: any) => string;
 }
 
 interface ReturnProps {
   selectRef: any;
   isOpen: boolean;
   labelText: string;
-  onToggle: (o: boolean) => any;
-  onOptionClick: (v: any, l: any, o: any) => any;
+  onToggle: (isOpen: boolean) => any;
+  onOptionClick: (option: any) => any;
 }
 
 const useSelect = ({
   disableScrollWhenOpen = false,
-  handleOptionClick
+  defaultValue = null,
+  getOptionLabel,
+  onChange
 }: Props): ReturnProps => {
   const ref = useRef<any>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [labelText, setLabelText] = useState<string>('');
+  const [selected, setSelected] = useState(defaultValue);
 
   useDisableScroll(isOpen, disableScrollWhenOpen);
 
-  useOutsideClick(ref, () => {
-    setIsOpen(false);
-  });
+  useOutsideClick(ref, () => setIsOpen(false));
 
-  useKeyDown('Escape', () => {
-    setIsOpen(false);
-  });
+  useKeyDown('Escape', () => setIsOpen(false));
 
-  const onOptionClick = (value: any, label: any, option: any) => {
-    setLabelText(label);
+  const onOptionClick = (option: any) => {
+    setSelected(option);
     setIsOpen(false);
-    handleOptionClick ? handleOptionClick(value, option) : null;
+    onChange(option);
   };
 
   return {
     selectRef: ref,
     isOpen,
-    labelText,
+    labelText: selected ? getOptionLabel(selected) : '',
     onToggle: setIsOpen,
     onOptionClick
   };

@@ -8,129 +8,79 @@ import { Icon, Select, MenuItem } from '../../src';
 import { cities, multiDimensional, MultiDimensional } from '../helpers/cities';
 import { Spacer, Boundary } from '../helpers/components';
 
+const defaultProps = {
+  onChange: action('Option selected'),
+  placeholder: 'Select City',
+  options: multiDimensional,
+  getOptionLabel: (opt: any) => opt.title
+};
+
+const examples = [
+  {
+    title: 'Default',
+    props: defaultProps
+  },
+  {
+    title: 'With defaultValue',
+    props: {
+      ...defaultProps,
+      defaultValue: multiDimensional[12]
+    }
+  },
+  {
+    title: 'With advanced getOptionLabel',
+    props: {
+      ...defaultProps,
+      getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`
+    }
+  },
+  {
+    title: 'With renderLeftIcon',
+    props: {
+      ...defaultProps,
+      renderLeftIcon: <Icon name="helpCircleOutline" />
+    }
+  },
+  {
+    title: 'With renderOption',
+    props: {
+      ...defaultProps,
+      renderOption: (option: any, props: any) => (
+        <MenuItem {...props}>
+          🇬🇧 {option.title}
+          <span style={{ color: '#ccc' }}>, {option.country}</span>
+        </MenuItem>
+      )
+    }
+  }
+];
+
 storiesOf('Select', module)
   .addDecorator(withKnobs)
   .add('Standard', () => (
     <div style={{ paddingBottom: '500px' }}>
       <h1>Select</h1>
 
-      <h2>Default</h2>
+      {examples.map(e => (
+        <>
+          <h2>{e.title}</h2>
 
-      <div style={{ width: '100%', display: 'flex' }}>
-        <Boundary style={{ width: '300px', padding: '20px' }}>
-          <Select<MultiDimensional>
-            handleOptionClick={action('Selected option')}
-            placeholder="Select a city"
-            hasError={boolean('Has Error', false)}
-            disableScrollWhenOpen={boolean('Disable Scroll', false)}
-            data-qaid="test-data-qaid"
-            options={multiDimensional}
-            getOptionValue={option => option.id}
-            getOptionLabel={option => option.title}
-          />
-        </Boundary>
+          <div style={{ width: '100%', display: 'flex' }}>
+            <Boundary
+              style={{ width: '300px', padding: '20px', marginRight: '10px' }}
+            >
+              <Select<MultiDimensional> {...e.props} />
+            </Boundary>
 
-        <Boundary
-          style={{ background: '#000', width: '300px', padding: '20px' }}
-        >
-          <Select<MultiDimensional>
-            invertColor
-            handleOptionClick={action('Selected option')}
-            placeholder="Select a city"
-            hasError={boolean('Has Error', false)}
-            disableScrollWhenOpen={boolean('Disable Scroll', false)}
-            data-qaid="test-data-qaid"
-            options={multiDimensional}
-            getOptionValue={option => option.id}
-            getOptionLabel={option => option.title}
-          />
-        </Boundary>
-      </div>
+            <Boundary
+              style={{ background: '#000', width: '300px', padding: '20px' }}
+            >
+              <Select<MultiDimensional> invertColor {...e.props} />
+            </Boundary>
+          </div>
 
-      <Spacer />
-
-      <h2>With custom icon on left hand side</h2>
-
-      <div style={{ width: '100%', display: 'flex' }}>
-        <Boundary style={{ width: '300px', padding: '20px' }}>
-          <Select<MultiDimensional>
-            handleOptionClick={action('Selected option')}
-            placeholder="Select a city"
-            hasError={boolean('Has Error', false)}
-            disableScrollWhenOpen={boolean('Disable Scroll', false)}
-            renderLeftIcon={() => <Icon name="helpCircleOutline" />}
-            data-qaid="test-data-qaid"
-            options={multiDimensional}
-            getOptionValue={option => option.id}
-            getOptionLabel={option => option.title}
-          />
-        </Boundary>
-
-        <Boundary
-          style={{ background: '#000', width: '300px', padding: '20px' }}
-        >
-          <Select<MultiDimensional>
-            invertColor
-            handleOptionClick={action('Selected option')}
-            placeholder="Select a city"
-            hasError={boolean('Has Error', false)}
-            disableScrollWhenOpen={boolean('Disable Scroll', false)}
-            renderLeftIcon={() => <Icon name="helpCircleOutline" />}
-            data-qaid="test-data-qaid"
-            options={multiDimensional}
-            getOptionValue={option => option.id}
-            getOptionLabel={option => option.title}
-          />
-        </Boundary>
-      </div>
-
-      <Spacer />
-
-      <h2>With custom renderOption prop</h2>
-
-      <div style={{ width: '100%', display: 'flex' }}>
-        <Boundary style={{ width: '300px', padding: '20px' }}>
-          <Select<MultiDimensional>
-            handleOptionClick={action('Selected option')}
-            placeholder="Select a city"
-            hasError={boolean('Has Error', false)}
-            disableScrollWhenOpen={boolean('Disable Scroll', false)}
-            renderLeftIcon={() => <Icon name="helpCircleOutline" />}
-            data-qaid="test-data-qaid"
-            options={multiDimensional}
-            getOptionValue={option => option.id}
-            getOptionLabel={option => option.title}
-            renderOption={({ option, ...props }) => (
-              <MenuItem {...props}>
-                🇬🇧 {option.title}
-                <span style={{ color: '#ccc' }}>, {option.country}</span>
-              </MenuItem>
-            )}
-          />
-        </Boundary>
-
-        <Boundary
-          style={{ background: '#000', width: '300px', padding: '20px' }}
-        >
-          <Select<MultiDimensional>
-            invertColor
-            handleOptionClick={action('Selected option')}
-            placeholder="Select a city"
-            hasError={boolean('Has Error', false)}
-            disableScrollWhenOpen={boolean('Disable Scroll', false)}
-            renderLeftIcon={() => <Icon name="helpCircleOutline" />}
-            data-qaid="test-data-qaid"
-            options={multiDimensional}
-            getOptionValue={option => option.id}
-            getOptionLabel={option => option.title}
-            renderOption={({ option, ...props }) => (
-              <MenuItem {...props}>
-                🇬🇧 {option.title}
-                <span style={{ color: '#ccc' }}>, {option.country}</span>
-              </MenuItem>
-            )}
-          />
-        </Boundary>
-      </div>
+          <Spacer />
+        </>
+      ))}
     </div>
   ));

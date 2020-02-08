@@ -4,9 +4,8 @@ import MenuItem from '../../atoms/MenuItem';
 import { StickyContainer, PortalComponent } from '../../util/index';
 
 export interface OptionsListProps<T> {
-  getOptionValue?: (opt: T) => string | number;
-  getOptionLabel?: (opt: T) => string | number;
-  renderOption?: (props: { option: T; onClick: any }) => React.ReactNode;
+  getOptionLabel: (opt: T) => string;
+  renderOption?: (option: T, props: any) => React.ReactNode;
 }
 
 interface Props<T> extends OptionsListProps<T> {
@@ -14,7 +13,7 @@ interface Props<T> extends OptionsListProps<T> {
   options: T[];
   isOpen: boolean;
   innerRef: React.RefObject<any>;
-  onOptionClick: (val: any, label: any, option: T) => void;
+  onOptionClick: (option: T) => void;
 }
 
 const Options = <T extends {}>({
@@ -22,7 +21,6 @@ const Options = <T extends {}>({
   isOpen,
   qaId,
   getOptionLabel,
-  getOptionValue,
   renderOption,
   options,
   onOptionClick
@@ -47,19 +45,17 @@ const Options = <T extends {}>({
       >
         <Menu bordered data-qaid={`${qaId}-menu`}>
           {options.map((option, key) => {
-            const val = getOptionValue ? getOptionValue(option) : option['id'];
-            const label = getOptionLabel
-              ? getOptionLabel(option)
-              : option['title'];
-            const onClick = () => onOptionClick(val, label, option);
+            const label = getOptionLabel(option);
+            const onClick = () => onOptionClick(option);
 
             if (renderOption) {
-              return renderOption({ option, onClick });
+              return renderOption(option, { onClick });
             }
 
             return (
               <MenuItem
                 data-qaid={`${qaId}-option`}
+                tabIndex={key}
                 key={key}
                 onClick={onClick}
               >

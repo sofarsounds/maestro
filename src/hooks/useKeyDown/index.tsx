@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
-const useKeyDown = (key: string, callback: () => void) => {
+const useKeyDown = (key: string, callback: (e: any) => void) => {
   const handleKeyDown = (e: any) => {
     if (e.key === key) {
-      callback();
+      callback(e);
     }
   };
 

@@ -23,20 +23,29 @@ const setup = (extraProps?: any) =>
       data-qaid="select"
       options={cities}
       placeholder="Select City"
+      getOptionLabel={o => o.title}
       {...extraProps}
     />
   );
 
 describe('<Select />', () => {
-  it('renders correctly with default props', () => {
+  it('renders correctly', () => {
     const { queryByTestId } = setup();
     expect(queryByTestId('select')).toBeInTheDocument();
     expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
+  it('renders correctly with a defaultValue', () => {
+    const { queryByTestId } = setup({
+      defaultValue: cities[2]
+    });
+
+    expect(queryByTestId('select-input')).toHaveValue('Bristol');
+  });
+
   it('renders correctly with a custom left hand side icon', () => {
     const { queryByTestId } = setup({
-      renderLeftIcon: () => <Icon name="helpCircleOutline" />
+      renderLeftIcon: <Icon name="helpCircleOutline" />
     });
 
     expect(queryByTestId('select-left-icon')).toBeInTheDocument();
@@ -80,26 +89,9 @@ describe('<Select />', () => {
     expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it('renders the correct options', () => {
-    const { queryByTestId, queryAllByTestId } = setup();
-
-    fireEvent.click(queryByTestId('select')!);
-
-    const options = queryAllByTestId('select-option');
-    expect(options).toHaveLength(4);
-    expect(options[0]).toHaveTextContent('London');
-    expect(options[1]).toHaveTextContent('Cardiff');
-    expect(options[2]).toHaveTextContent('Bristol');
-    expect(options[3]).toHaveTextContent('New York');
-  });
-
-  it('renders the correct options when getOptionLabel is provided', () => {
+  it('renders the correct options with the correct label', () => {
     const { queryByTestId, queryAllByTestId } = setup({
-      getOptionLabel: (opt: any) => (
-        <span>
-          {opt.title}, {opt.country}
-        </span>
-      )
+      getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`
     });
 
     fireEvent.click(queryByTestId('select')!);
@@ -115,7 +107,7 @@ describe('<Select />', () => {
 
   it('renders a custom open when renderOption is provided', () => {
     const { queryByTestId, queryAllByTestId } = setup({
-      renderOption: ({ option }: any) => (
+      renderOption: (option: any) => (
         <div key={option.value} data-qaid="select-custom-opt">
           {option.country}
         </div>
@@ -136,23 +128,7 @@ describe('<Select />', () => {
   it('executes a callback and updates the label when an option is selected', () => {
     const mockClick = jest.fn();
     const { queryByTestId, queryAllByTestId } = setup({
-      handleOptionClick: mockClick
-    });
-
-    fireEvent.click(queryByTestId('select')!);
-    fireEvent.click(queryAllByTestId('select-option')[0]);
-
-    expect(mockClick).toHaveBeenCalledTimes(1);
-    expect(mockClick).toHaveBeenCalledWith(1, cities[0]);
-
-    expect(queryByTestId('select-input')).toHaveValue('London');
-  });
-
-  it('executes a callback with custom parameters when an option is selected', () => {
-    const mockClick = jest.fn();
-    const { queryByTestId, queryAllByTestId } = setup({
-      handleOptionClick: mockClick,
-      getOptionValue: (opt: any) => opt.value,
+      onChange: mockClick,
       getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`
     });
 
@@ -160,8 +136,26 @@ describe('<Select />', () => {
     fireEvent.click(queryAllByTestId('select-option')[0]);
 
     expect(mockClick).toHaveBeenCalledTimes(1);
-    expect(mockClick).toHaveBeenCalledWith('london', cities[0]);
+    expect(mockClick).toHaveBeenCalledWith(cities[0]);
 
     expect(queryByTestId('select-input')).toHaveValue('London, UK');
+  });
+
+  it('executes a callback and updates the label when an option is selected and a defaultValue is given', () => {
+    const mockClick = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      onChange: mockClick,
+      defaultValue: cities[2]
+    });
+
+    expect(queryByTestId('select-input')).toHaveValue('Bristol');
+
+    fireEvent.click(queryByTestId('select')!);
+    fireEvent.click(queryAllByTestId('select-option')[1]);
+
+    expect(mockClick).toHaveBeenCalledTimes(1);
+    expect(mockClick).toHaveBeenCalledWith(cities[1]);
+
+    expect(queryByTestId('select-input')).toHaveValue('Cardiff');
   });
 });

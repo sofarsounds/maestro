@@ -3,12 +3,13 @@ import styled, { css } from '../../lib/styledComponents';
 
 interface Props {
   children: string | React.ReactNode;
+  active?: boolean;
   onClick?: () => any;
   'data-qaid'?: string;
 }
 
-const OptionStyled = styled.li<Props>`
-  ${({ theme }) => css`
+export default styled.li<Props>`
+  ${({ theme, active }) => css`
     margin-top: 0px;
     list-style: none;
     padding: ${theme.ruler[2]}px ${theme.ruler[4]}px;
@@ -24,13 +25,10 @@ const OptionStyled = styled.li<Props>`
     &:focus {
       background-color: ${theme.colors.silverSprings};
     }
+
+    ${active &&
+      css`
+        background-color: ${theme.colors.silverSprings};
+      `}
   `}
 `;
-
-const Option: React.SFC<Props> = ({ children, onClick, 'data-qaid': qaId }) => (
-  <OptionStyled onClick={onClick} data-qaid={qaId}>
-    {children}
-  </OptionStyled>
-);
-
-export default Option;

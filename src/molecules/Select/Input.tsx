@@ -26,7 +26,7 @@ interface Props {
   onToggle: () => void;
   innerRef?: React.RefObject<any>;
   hasError?: boolean;
-  renderLeftIcon?: () => React.ReactNode;
+  renderLeftIcon?: React.ReactNode;
   'data-qaid'?: string;
 
   inputProps: {
@@ -176,7 +176,7 @@ const Input: React.SFC<Props> = ({
   >
     {renderLeftIcon && (
       <IconWrapper invertColor={invertColor} data-qaid={`${qaId}-left-icon`}>
-        {renderLeftIcon()}
+        {renderLeftIcon}
       </IconWrapper>
     )}
 
