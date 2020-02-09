@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../../../atoms/Menu';
 import MenuItem from '../../../atoms/MenuItem';
+import MenuHeader from '../../../atoms/MenuHeader';
 import { StickyContainer, PortalComponent } from '../../../util/index';
 
 import SimpleOptions from './Simple';
@@ -9,6 +10,9 @@ import GroupedOptions from './Grouped';
 export interface OptionsListProps<T> {
   getOptionLabel: (opt: T) => string;
   renderOption?: (option: T, props: any) => React.ReactNode;
+  popularOptions?: T[];
+  getPopularOptionsTitle?: (options: T[]) => string;
+  userIsSearching?: boolean;
 }
 
 interface Props<T> extends OptionsListProps<T> {
@@ -28,10 +32,50 @@ const Options = <T extends {}>({
   renderOption,
   options,
   onOptionClick,
+  popularOptions,
+  getPopularOptionsTitle,
+  userIsSearching,
   groupBy
 }: Props<T>) => {
   if (!isOpen) {
     return null;
+  }
+
+  if (!userIsSearching && popularOptions) {
+    const heading = getPopularOptionsTitle
+      ? getPopularOptionsTitle(popularOptions)
+      : `Top ${popularOptions.length}`;
+
+    return (
+      <PortalComponent dom={document.body}>
+        <StickyContainer
+          anchorEl={innerRef}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left'
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'left'
+          }}
+          width="auto"
+        >
+          <Menu bordered data-qaid={`${qaId}-popular`}>
+            <MenuHeader data-qaid={`${qaId}-popular-header`}>
+              {heading}
+            </MenuHeader>
+
+            <SimpleOptions
+              options={popularOptions}
+              getOptionLabel={getOptionLabel}
+              onOptionClick={onOptionClick}
+              renderOption={renderOption}
+              qaId={qaId}
+            />
+          </Menu>
+        </StickyContainer>
+      </PortalComponent>
+    );
   }
 
   return (

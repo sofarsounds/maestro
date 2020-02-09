@@ -17,6 +17,14 @@ const cities = [
   { id: 4, title: 'New York', country: 'US', value: 'newyork' }
 ];
 
+const popularOptions = [
+  { id: 20, title: 'Brecon Beacons', country: 'UK', value: 'bb' },
+  { id: 21, title: 'Tryfan', country: 'UK', value: 'tryfan' },
+  { id: 22, title: 'Lake District', country: 'UK', value: 'lakes' },
+  { id: 23, title: 'Box Hill', country: 'UK', value: 'boxhill' },
+  { id: 24, title: 'Mont Blanc', country: 'IT', value: 'mb' }
+];
+
 const setup = (extraProps?: any) =>
   renderWithTheme(
     <Select<Cities>
@@ -165,5 +173,70 @@ describe('<Typeahead />', () => {
 
     expect(input).toHaveValue('London');
     expect(mockOnChange).toHaveBeenCalledTimes(0);
+  });
+
+  it('renders a list of popular options when first opening the select', () => {
+    const mockOnChange = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      onChange: mockOnChange,
+      getPopularOptionsTitle: (options: any) =>
+        `Top ${options.length} Mountains`,
+      popularOptions
+    });
+
+    fireEvent.click(queryByTestId('typeahead')!);
+
+    expect(queryByTestId('typeahead-popular')).toBeInTheDocument();
+
+    expect(queryByTestId('typeahead-popular-header')).toHaveTextContent(
+      'Top 5 Mountains'
+    );
+
+    expect(queryAllByTestId('typeahead-option')).toHaveLength(5);
+  });
+
+  it('clears the list of popular options when user starts typing in input', () => {
+    const mockOnChange = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      onChange: mockOnChange,
+      getPopularOptionsTitle: (options: any) =>
+        `Top ${options.length} Mountains`,
+      popularOptions
+    });
+
+    fireEvent.click(queryByTestId('typeahead')!);
+
+    expect(queryByTestId('typeahead-popular')).toBeInTheDocument();
+    expect(queryAllByTestId('typeahead-option')).toHaveLength(5);
+
+    const input = queryByTestId('typeahead-input')!;
+    fireEvent.change(input, { target: { value: 'Lo' } });
+
+    expect(queryByTestId('typeahead-popular')).not.toBeInTheDocument();
+    expect(queryAllByTestId('typeahead-option')).toHaveLength(1);
+  });
+
+  it('reverts to the list of popular options when clearing the input', () => {
+    const mockOnChange = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      onChange: mockOnChange,
+      getPopularOptionsTitle: (options: any) =>
+        `Top ${options.length} Mountains`,
+      popularOptions
+    });
+
+    fireEvent.click(queryByTestId('typeahead')!);
+
+    expect(queryByTestId('typeahead-popular')).toBeInTheDocument();
+    expect(queryAllByTestId('typeahead-option')).toHaveLength(5);
+
+    const input = queryByTestId('typeahead-input')!;
+    fireEvent.change(input, { target: { value: 'Lo' } });
+
+    expect(queryByTestId('typeahead-popular')).not.toBeInTheDocument();
+
+    fireEvent.change(input, { target: { value: '' } });
+
+    expect(queryByTestId('typeahead-popular')).toBeInTheDocument();
   });
 });

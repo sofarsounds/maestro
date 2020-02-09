@@ -77,6 +77,24 @@ const typeaheadExamples = [
       ...defaultTypeaheadProps,
       groupBy: (o: any) => o.title.slice(0, 1)
     }
+  },
+  {
+    title: 'Popular Options',
+    props: {
+      ...defaultTypeaheadProps,
+      popularOptions: multiDimensional.slice(0, 5),
+      getPopularOptionsTitle: (o: any) => `Top ${o.length} cities:`
+    }
+  },
+
+  {
+    title: 'Popular Options with grouped options',
+    props: {
+      ...defaultTypeaheadProps,
+      popularOptions: multiDimensional.slice(0, 5),
+      getPopularOptionsTitle: (o: any) => `Top ${o.length} cities:`,
+      groupBy: (o: any) => o.title.slice(0, 1)
+    }
   }
 ];
 
