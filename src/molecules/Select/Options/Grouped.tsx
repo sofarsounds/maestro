@@ -1,9 +1,9 @@
 import React from 'react';
-import MenuHeader from '../../atoms/MenuHeader';
-import groupArray from '../../util/groupBy';
+import MenuHeader from '../../../atoms/MenuHeader';
+import groupArray from '../../../util/groupBy';
 
-import SimpleOptions from './SimpleOptions';
-import { OptionsListProps } from './Options';
+import SimpleOptions from './Simple';
+import { OptionsListProps } from './';
 
 interface Props<T> extends OptionsListProps<T> {
   qaId?: string;

@@ -1,10 +1,10 @@
 import React from 'react';
-import Menu from '../../atoms/Menu';
-import MenuItem from '../../atoms/MenuItem';
-import { StickyContainer, PortalComponent } from '../../util/index';
+import Menu from '../../../atoms/Menu';
+import MenuItem from '../../../atoms/MenuItem';
+import { StickyContainer, PortalComponent } from '../../../util/index';
 
-import SimpleOptions from './SimpleOptions';
-import GroupedOptions from './GroupedOptions';
+import SimpleOptions from './Simple';
+import GroupedOptions from './Grouped';
 
 export interface OptionsListProps<T> {
   getOptionLabel: (opt: T) => string;

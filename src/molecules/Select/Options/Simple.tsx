@@ -1,7 +1,7 @@
 import React from 'react';
-import MenuItem from '../../atoms/MenuItem';
+import MenuItem from '../../../atoms/MenuItem';
 
-import { OptionsListProps } from './Options';
+import { OptionsListProps } from './';
 
 interface Props<T> extends OptionsListProps<T> {
   qaId?: string;

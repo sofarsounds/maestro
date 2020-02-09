@@ -183,7 +183,6 @@ const Input: React.SFC<Props> = ({
     )}
 
     <StyledInput
-      type="search"
       value={inputProps.value}
       readOnly={inputProps.readOnly}
       isOpen={isOpen}
