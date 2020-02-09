@@ -33,10 +33,11 @@ Table below contains all types of props available in the StickyContainerV2
 | :------------   | :------------------------ | :-------------- | :------------------------------- |
 | **children**    | `React.Node`              |                 | The content to be rendered in the StickyContainer
 | **anchorEl**    | `Ref`                     |                 | The element this container will stick to
-| anchorOrigin    | [Origin](#origin)           |                 | Set the anchor origin position for the element
-| transformOrigin | [Origin](#origin)                  |                 | Customise the transform origin for the sticky container
-| offset          | [Offset](#offset)                  |                 | Set a vertical & horizontal offset
+| anchorOrigin    | [Origin](#origin)         |                 | Set the anchor origin position for the element
+| transformOrigin | [Origin](#origin)         |                 | Customise the transform origin for the sticky container
+| offset          | [Offset](#offset)         |                 | Set a vertical & horizontal offset
 | keepInViewPort  | `Boolean`                 |                 | Whether the StickyContainer should
+| flip            | `Boolean`                 |                 | flip placement when it starts to overlap
 
 ### Origin
 

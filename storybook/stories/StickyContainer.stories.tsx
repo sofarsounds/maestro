@@ -77,6 +77,8 @@ const Example = () => {
           vertical: number('Vertical Offset', 0),
           horizontal: number('Horizontal Offset', 0)
         }}
+        keepInViewPort={boolean('Keep in viewport?', false)}
+        flip={boolean('Flip', false)}
       >
         <StickyStyle>I am Sticky</StickyStyle>
       </StickyContainer>

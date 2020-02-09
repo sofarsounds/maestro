@@ -15,6 +15,7 @@ export interface StickyContainerProps {
   transformOrigin?: TransformOrigin;
   offset?: Offset;
   keepInViewPort?: boolean;
+  flip?: boolean;
   width?: string;
 }
 
@@ -34,6 +35,7 @@ const StickyContainerV2: React.SFC<Props> = ({
   transformOrigin = { vertical: 'top', horizontal: 'left' },
   offset,
   keepInViewPort = false,
+  flip = false,
   children,
   width = 'auto'
 }) => {
@@ -54,6 +56,7 @@ const StickyContainerV2: React.SFC<Props> = ({
           transformOrigin,
           popoverElRect,
           keepInViewPort,
+          flip,
           offset
         );
 

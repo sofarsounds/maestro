@@ -46,6 +46,7 @@ export const calculateContainerPosition = (
   transformOrigin: TransformOrigin,
   popoverEl: PopoverDomEl,
   keepInViewPort?: boolean,
+  flip?: boolean,
   offset?: Offset
 ) => {
   const [windowWidth, windowHeight] = windowSize;
@@ -169,6 +170,18 @@ export const calculateContainerPosition = (
 
     if (popoverY + popoverEl.height > windowHeight) {
       popoverY = windowHeight - popoverEl.height;
+    }
+  }
+
+  if (flip) {
+    // TODO flip horizontally
+
+    if (popoverY < 0) {
+      popoverY = anchorEl.top + anchorEl.height;
+    }
+
+    if (popoverY + popoverEl.height > windowHeight) {
+      popoverY = anchorEl.top - popoverEl.height;
     }
   }
 
