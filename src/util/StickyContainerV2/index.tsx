@@ -69,7 +69,8 @@ const StickyContainerV2: React.SFC<Props> = ({
       transformOrigin,
       popoverElRect,
       offset,
-      keepInViewPort
+      keepInViewPort,
+      flip
     ]
   );
 
