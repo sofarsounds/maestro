@@ -10,8 +10,6 @@ executors:
       SOURCE_BRANCH: master
       CIRCLE_ARTIFACTS: /tmp/circleci-artifacts
       CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
-      GH_EMAIL: david.floegel@sofarsounds.com
-      GH_NAME: David Floegel
 jobs:
   build:
     executor: shared-setup-exec
