@@ -209,6 +209,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e925';
 }
 
+.c1.icon-search:before {
+  content: '\\e830';
+}
+
 .c0 {
   width: 36px;
   height: 36px;
@@ -631,6 +635,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                         "
