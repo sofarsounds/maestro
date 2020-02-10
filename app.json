@@ -1,0 +1,16 @@
+{
+  "name": "Sofar Sounds Maestro UIKit",
+  "description": "This is the official uikit developed by sofar sounds.",
+  "keywords": ["sofar sounds", "uikit", "maestro"],
+  "website": "https://sofarsounds.com",
+  "repository": "https://github.com/sofarsounds/maestro",
+  "env": {
+    "NPM_PRODUCTION": {
+      "required": true
+    },
+    "YARN_PRODUCTION": {
+      "required": true
+    }
+  },
+  "image": "heroku/ruby"
+}
