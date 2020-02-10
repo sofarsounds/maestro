@@ -243,6 +243,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e925';
 }
 
+.c1.icon-search:before {
+  content: '\\e830';
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -652,6 +656,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                         "
@@ -937,6 +945,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e925';
 }
 
+.c1.icon-search:before {
+  content: '\\e830';
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -1351,6 +1363,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
       &.icon-padlock:before {
         content: '\\\\e925';
       }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
+      }
     ",
                         "
   ",
@@ -1625,6 +1641,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-padlock:before {
   content: '\\e925';
+}
+
+.c1.icon-search:before {
+  content: '\\e830';
 }
 
 <ThemeProvider
@@ -2037,6 +2057,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
       &.icon-padlock:before {
         content: '\\\\e925';
       }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
+      }
     ",
                         "
   ",
@@ -2319,6 +2343,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-padlock:before {
   content: '\\e925';
+}
+
+.c1.icon-search:before {
+  content: '\\e830';
 }
 
 <ThemeProvider
@@ -2734,6 +2762,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                         "
