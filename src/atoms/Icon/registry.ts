@@ -55,7 +55,8 @@ enum Registry {
   musicTicket = 'e913',
   musicLove = 'e90a',
   plus = 'e924',
-  padlock = 'e925'
+  padlock = 'e925',
+  search = 'e830'
 }
 
 export default Registry;
