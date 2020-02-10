@@ -1,7 +1,8 @@
 import React from 'react';
 import Menu from '../../atoms/Menu';
 import MenuItem from '../../atoms/MenuItem';
-import { StickyContainer, PortalComponent } from '../../util/index';
+import Popper from '../../atoms/Popper';
+import Portal from '../../atoms/Portal';
 
 export interface OptionsListProps<T> {
   getOptionLabel: (opt: T) => string;
@@ -30,8 +31,8 @@ const Options = <T extends {}>({
   }
 
   return (
-    <PortalComponent dom={document.body}>
-      <StickyContainer
+    <Portal dom={document.body}>
+      <Popper
         anchorEl={innerRef}
         anchorOrigin={{
           vertical: 'bottom',
@@ -64,8 +65,8 @@ const Options = <T extends {}>({
             );
           })}
         </Menu>
-      </StickyContainer>
-    </PortalComponent>
+      </Popper>
+    </Portal>
   );
 };
 

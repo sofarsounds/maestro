@@ -1,11 +1,11 @@
-# StickyContainerV2
+# Popper
 
-The `StickyContainerV2` allows you to render content that sticks to another element. We mostly
+The `Popper` allows you to render content that sticks to another element. We mostly
 use it in conjuction with the `PortalComponent` to create for example a dropdown flyout container.
 
-To implement a `StickyContainerV2` into your project you'll need to add this import
+To implement a `Popper` into your project you'll need to add this import
 ```js
-import { StickyContainerV2 } from '@sofarsounds/maestro'
+import { Popper } from '@sofarsounds/maestro'
 ```
 
 After adding the import you can use the StickyContainer simply like this
@@ -16,18 +16,19 @@ const ref = useRef<any>()
   Something is going to be sticky...
 </div>
 
-<StickyContainerV2
+<Popper
   anchorEl={ref}
   anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
   anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-  keepInViewPort={true}
+  keepInViewPort={true|false}
+  flip={true|false}
 >
   I am sticky...
-</StickyContainerV2>
+</Popper>
 ```
 
 ## Props
-Table below contains all types of props available in the StickyContainerV2
+Table below contains all types of props available in the Popper
 
 | Name            | Type                      | Default         | Description                      |
 | :------------   | :------------------------ | :-------------- | :------------------------------- |
@@ -37,18 +38,18 @@ Table below contains all types of props available in the StickyContainerV2
 | transformOrigin | [Origin](#origin)         |                 | Customise the transform origin for the sticky container
 | offset          | [Offset](#offset)         |                 | Set a vertical & horizontal offset
 | keepInViewPort  | `Boolean`                 |                 | Whether the StickyContainer should
-| flip            | `Boolean`                 |                 | flip placement when it starts to overlap
+| flip            | `Boolean`                 |                 | flip placement when it starts to overlap. Will override the `keepInViewPort` behaviour
 
 ### Origin
 
-| origin     | Type |values |
-| :---       | :--- |:---  |
-| vertical   | String |`top` `bottom` `left` `right` |
+| origin     | Type   | values                        |
+| :---       | :---   | :---                          |
+| vertical   | String | `top` `bottom` `left` `right` |
 | horizontal | String | `top` `bottom` `left` `right` |
 
 ### Offset
 
-| origin     | Type |
-| :---       | :---  |
+| origin     | Type   |
+| :---       | :---   |
 | vertical   | Number |
 | horizontal | Number |

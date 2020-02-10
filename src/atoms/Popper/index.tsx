@@ -10,7 +10,7 @@ import {
   calculateContainerPosition
 } from './calculator';
 
-export interface StickyContainerProps {
+export interface PopperProps {
   anchorOrigin?: AnchorOrigin;
   transformOrigin?: TransformOrigin;
   offset?: Offset;
@@ -19,7 +19,7 @@ export interface StickyContainerProps {
   width?: string;
 }
 
-interface Props extends StickyContainerProps {
+interface Props extends PopperProps {
   anchorEl: any;
   children: any;
 }
@@ -29,7 +29,7 @@ const Container = styled.div<any>`
   position: fixed;
 `;
 
-const StickyContainerV2: React.SFC<Props> = ({
+const Popper: React.SFC<Props> = ({
   anchorEl,
   anchorOrigin = { vertical: 'bottom', horizontal: 'left' },
   transformOrigin = { vertical: 'top', horizontal: 'left' },
@@ -111,4 +111,4 @@ const StickyContainerV2: React.SFC<Props> = ({
   );
 };
 
-export default StickyContainerV2;
+export default Popper;
