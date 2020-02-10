@@ -340,6 +340,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e925';
 }
 
+.c2.icon-search:before {
+  content: '\\e830';
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -798,6 +802,10 @@ exports[`<Pagination /> renders correctly 1`] = `
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                                 "
@@ -1400,6 +1408,10 @@ exports[`<Pagination /> renders correctly 1`] = `
       &.icon-padlock:before {
         content: '\\\\e925';
       }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
+      }
     ",
                                   "
   ",
@@ -1760,6 +1772,10 @@ exports[`<Pagination /> renders correctly 1`] = `
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                                 "

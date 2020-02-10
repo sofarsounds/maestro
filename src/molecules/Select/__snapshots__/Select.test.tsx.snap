@@ -209,6 +209,10 @@ exports[`Select renders correctly 1`] = `
   content: '\\e925';
 }
 
+.c3.icon-search:before {
+  content: '\\e830';
+}
+
 .c2 {
   -webkit-flex-basis: 50px;
   -ms-flex-preferred-size: 50px;
@@ -665,6 +669,10 @@ exports[`Select renders correctly 1`] = `
 
 .c3.icon-padlock:before {
   content: '\\e925';
+}
+
+.c3.icon-search:before {
+  content: '\\e830';
 }
 
 .c2 {
@@ -1157,6 +1165,10 @@ exports[`Select renders correctly 1`] = `
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                                 "
