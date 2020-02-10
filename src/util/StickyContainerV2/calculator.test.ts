@@ -150,6 +150,34 @@ describe('<StickyContainerV2 />', () => {
 
         expect(pos).toHaveProperty('y', 100);
       });
+
+      it('flips the positioning horizontally if there is not enough space on the left for the popover', () => {
+        const pos = calculateContainerPosition(
+          [1000, 1000],
+          StickTo,
+          { vertical: 'top', horizontal: 'left' },
+          { vertical: 'top', horizontal: 'right' },
+          { width: 250, height: 100 },
+          false,
+          true
+        );
+
+        expect(pos).toHaveProperty('x', 300);
+      });
+
+      it('flips the positioning horizontally if there is not enough space on the right for the popover', () => {
+        const pos = calculateContainerPosition(
+          [350, 1000],
+          StickTo,
+          { vertical: 'top', horizontal: 'right' },
+          { vertical: 'top', horizontal: 'left' },
+          { width: 100, height: 100 },
+          false,
+          true
+        );
+
+        expect(pos).toHaveProperty('x', 100);
+      });
     });
 
     describe('offset', () => {

@@ -155,6 +155,9 @@ export const calculateContainerPosition = (
     }
   }
 
+  /**
+   * Adjust coordinates if user wants to keep element in the viewport
+   */
   if (keepInViewPort) {
     if (popoverX < 0) {
       popoverX = 0;
@@ -173,8 +176,17 @@ export const calculateContainerPosition = (
     }
   }
 
+  /**
+   * Flip the positioning when there's not enough space in the viewport
+   */
   if (flip) {
-    // TODO flip horizontally
+    if (popoverX < 0) {
+      popoverX = anchorEl.left + anchorEl.width;
+    }
+
+    if (popoverX + popoverEl.width > windowWidth) {
+      popoverX = anchorEl.left - popoverEl.width;
+    }
 
     if (popoverY < 0) {
       popoverY = anchorEl.top + anchorEl.height;
