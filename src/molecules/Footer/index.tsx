@@ -1,6 +1,13 @@
 import React from 'react';
 
-import { Top, Title, Subtitle, CityInputWrapper } from './Top';
+import {
+  Top,
+  Title,
+  Subtitle,
+  CityInputWrapper,
+  CityContainer,
+  CityLink
+} from './Top';
 import { SectionHeader, SectionLink, LinkSection } from './Section';
 import LogoWithSlogan, { LogoWithSloganProps } from './LogoWithSlogan';
 
@@ -22,6 +29,8 @@ interface Composition {
   Subtitle: React.SFC;
   CityInputWrapper: React.SFC;
   LogoWithSlogan: React.SFC<LogoWithSloganProps>;
+  CityContainer: React.SFC;
+  CityLink: React.SFC<any>;
   LinkSection: React.SFC;
   SectionHeader: React.SFC;
   SectionLink: React.SFC<any>;
@@ -41,6 +50,8 @@ Footer.Title = Title;
 Footer.Subtitle = Subtitle;
 Footer.CityInputWrapper = CityInputWrapper;
 Footer.LogoWithSlogan = LogoWithSlogan;
+Footer.CityContainer = CityContainer;
+Footer.CityLink = CityLink;
 Footer.LinkSection = LinkSection;
 Footer.SectionHeader = SectionHeader;
 Footer.SectionLink = SectionLink;

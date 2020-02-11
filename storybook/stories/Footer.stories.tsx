@@ -21,6 +21,13 @@ storiesOf('Footer', module)
           <Footer.CityInputWrapper>
             <Textfield placeholder="Type to find your city" />
           </Footer.CityInputWrapper>
+          <Footer.CityContainer>
+            <Footer.CityLink href="#">London</Footer.CityLink>
+            <Footer.CityLink href="#">New York</Footer.CityLink>
+            <Footer.CityLink href="#">Los Angeles</Footer.CityLink>
+            <Footer.CityLink href="#">Chicago</Footer.CityLink>
+            <Footer.CityLink href="#">Seattle</Footer.CityLink>
+          </Footer.CityContainer>
           <Grid>
             <Footer.LogoWithSlogan href="/" />
             <Footer.LinkSection>
