@@ -42,6 +42,62 @@ describe('<Select />', () => {
       expect(queryByTestId('test-left-icon')).toBeInTheDocument();
     });
 
+    it('does not render a clear button the input is read only', () => {
+      const mockClear = jest.fn();
+      const { queryByTestId } = setup({
+        inputProps: {
+          readOnly: true,
+          onChange: () => {},
+          onClear: mockClear,
+          value: 'Lon'
+        }
+      });
+
+      expect(queryByTestId('test-clear')).not.toBeInTheDocument();
+    });
+
+    it('does not render a clear button if onClear is not given', () => {
+      const { queryByTestId } = setup({
+        inputProps: {
+          readOnly: false,
+          onChange: () => {},
+          value: 'Lon'
+        }
+      });
+
+      expect(queryByTestId('test-clear')).not.toBeInTheDocument();
+    });
+
+    it('does not render a clear button if input has no value', () => {
+      const mockClear = jest.fn();
+      const { queryByTestId } = setup({
+        inputProps: {
+          readOnly: false,
+          onChange: () => {},
+          onClear: mockClear,
+          value: ''
+        }
+      });
+
+      expect(queryByTestId('test-clear')).not.toBeInTheDocument();
+    });
+
+    it('renders a clear button when onClear is given and input has a value', () => {
+      const mockClear = jest.fn();
+      const { queryByTestId } = setup({
+        inputProps: {
+          readOnly: false,
+          onChange: () => {},
+          onClear: mockClear,
+          value: 'Lon'
+        }
+      });
+
+      expect(queryByTestId('test-clear')).toBeInTheDocument();
+      fireEvent.click(queryByTestId('test-clear')!);
+      expect(mockClear).toHaveBeenCalledTimes(1);
+    });
+
     describe('<Wrapper />', () => {
       it('has the correct style attributes', () => {
         const { container } = setup({});

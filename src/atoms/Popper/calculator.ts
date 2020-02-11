@@ -2,7 +2,7 @@
  * Calculate the position of the container
  */
 type WindowSize = number[];
-interface AnchorEl {
+export interface AnchorEl {
   width: number;
   height: number;
   left: number;
@@ -26,7 +26,7 @@ export interface Offset {
   horizontal?: number;
 }
 
-interface PopoverDomEl {
+export interface PopoverDomEl {
   width: number;
   height: number;
 }

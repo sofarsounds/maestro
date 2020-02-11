@@ -7,6 +7,7 @@ import {
   AnchorOrigin,
   TransformOrigin,
   Offset,
+  PopoverDomEl,
   calculateContainerPosition
 } from './calculator';
 
@@ -24,7 +25,14 @@ interface Props extends PopperProps {
   children: any;
 }
 
-const Container = styled.div<any>`
+interface CalculatedPosition {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+const Container = styled.div<{ ref?: any }>`
   z-index: ${({ theme }) => theme.zIndex.navbar + 1};
   position: fixed;
 `;
@@ -39,13 +47,23 @@ const Popper: React.SFC<Props> = ({
   children,
   width = 'auto'
 }) => {
-  const popoverRef = useRef<any>();
-  const [calculatedPosition, setCalculatedPosition] = useState<any>({});
-  const [popoverElRect, setPopoverElRect] = useState<any>({});
+  const popoverRef = useRef<HTMLDivElement>();
+  const [calculatedPosition, setCalculatedPosition] = useState<
+    CalculatedPosition
+  >({
+    x: -10000,
+    y: -10000,
+    width: 0,
+    height: 0
+  });
+  const [popoverElRect, setPopoverElRect] = useState<PopoverDomEl>({
+    width: 0,
+    height: 0
+  });
   const windowSize = useWindowSize();
 
   const updateCalculatedPosition = useCallback(
-    (updatedAnchorEl: any) => {
+    (updatedAnchorEl: React.RefObject<HTMLDivElement>) => {
       if (updatedAnchorEl.current) {
         const pos = getPosition(updatedAnchorEl.current);
 
@@ -95,7 +113,7 @@ const Popper: React.SFC<Props> = ({
     updateCalculatedPosition(anchorEl);
   });
 
-  const { y = -10000, x = -10000, width: anchorElWidth } = calculatedPosition;
+  const { y, x, width: anchorElWidth } = calculatedPosition;
 
   return (
     <Container
