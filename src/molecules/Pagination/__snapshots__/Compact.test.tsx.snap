@@ -306,6 +306,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e925';
 }
 
+.c2.icon-search:before {
+  content: '\\e830';
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -766,6 +770,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                           "
@@ -1237,6 +1245,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       &.icon-padlock:before {
         content: '\\\\e925';
       }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
+      }
     ",
                           "
   ",
@@ -1636,6 +1648,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c3.icon-padlock:before {
   content: '\\e925';
+}
+
+.c3.icon-search:before {
+  content: '\\e830';
 }
 
 <ThemeProvider
@@ -2352,6 +2368,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       &.icon-padlock:before {
         content: '\\\\e925';
       }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
+      }
     ",
                           "
   ",
@@ -2751,6 +2771,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c2.icon-padlock:before {
   content: '\\e925';
+}
+
+.c2.icon-search:before {
+  content: '\\e830';
 }
 
 <ThemeProvider
@@ -3213,6 +3237,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
     
       &.icon-padlock:before {
         content: '\\\\e925';
+      }
+    
+      &.icon-search:before {
+        content: '\\\\e830';
       }
     ",
                           "
