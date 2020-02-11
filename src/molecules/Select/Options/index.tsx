@@ -2,8 +2,8 @@ import React from 'react';
 import Menu from '../../../atoms/Menu';
 import MenuItem from '../../../atoms/MenuItem';
 import MenuHeader from '../../../atoms/MenuHeader';
-import Popper from '../../../atoms/Popper'
-import Portal from '../../../atoms/Portal'
+import Popper from '../../../atoms/Popper';
+import Portal from '../../../atoms/Portal';
 
 import SimpleOptions from './Simple';
 import GroupedOptions from './Grouped';
