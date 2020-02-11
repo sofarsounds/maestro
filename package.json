@@ -33,6 +33,8 @@
     "@storybook/addon-viewport": "^5.1.3",
     "@storybook/addons": "^5.1.3",
     "@storybook/react": "^5.1.3",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.0",
     "@types/color": "^3.0.0",
     "@types/enzyme": "^3.9.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",

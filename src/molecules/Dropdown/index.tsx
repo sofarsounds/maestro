@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import { StickyContainerV2, PortalComponent } from '../../util/index';
+import { StickyContainer, PortalComponent } from '../../util/index';
 import { StickyContainerProps } from '../../util/StickyContainerV2';
 import { useDisableScroll, useOutsideClick } from '../../hooks';
 
@@ -60,7 +60,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
 
       {isOpen && (
         <PortalComponent dom={document.body}>
-          <StickyContainerV2
+          <StickyContainer
             offset={offset}
             anchorEl={ref}
             anchorOrigin={anchorOrigin}
@@ -74,7 +74,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
             >
               {children}
             </Flyout>
-          </StickyContainerV2>
+          </StickyContainer>
         </PortalComponent>
       )}
     </>

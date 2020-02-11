@@ -9,7 +9,7 @@ import { useWindowSize } from '@sofarsounds/maestro'
 
 After adding the import you can use the hook simply like this
 ```js
-const Comp = (isOpen) => {
+const Comp = () => {
   const [width, height] = useWindowSize()
 }
 ```

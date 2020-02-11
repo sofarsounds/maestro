@@ -1,13 +1,22 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from '../lib/styledComponents';
 import theme from '../theme';
+
+export { render, cleanup, wait, fireEvent } from '@testing-library/react';
 
 export const shallowWithTheme = (tree: any) =>
   shallow(<ThemeProvider theme={theme}>{tree}</ThemeProvider>);
 
 export const mountWithTheme = (tree: any) =>
   mount(<ThemeProvider theme={theme}>{tree}</ThemeProvider>);
+
+export const renderWithTheme = (tree: any) => {
+  const utils = render(<ThemeProvider theme={theme}>{tree}</ThemeProvider>);
+
+  return utils;
+};
 
 export const resize = (newWidth: number) => {
   (global as any).innerWidth = newWidth;

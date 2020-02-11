@@ -1,85 +1,81 @@
-import React, { useState, useRef } from 'react';
-import Input from './Input';
-import Menu from './Menu';
-import { StickyContainer, PortalComponent } from '../../util/index';
-import { useDisableScroll, useOutsideClick, useKeyDown } from '../../hooks';
+import React from 'react';
 
-interface SelectProps {
+import { useSelect } from '../../hooks';
+
+import Input from './Input';
+import Options, { OptionsListProps } from './Options';
+
+interface SelectProps<T> extends OptionsListProps<T> {
+  // select props
+  options: T[];
+  onChange: (option: T) => void;
+
+  // input props
   placeholder: string;
-  children?: any;
-  handleOptionClick?: (value: any) => void;
-  readonly?: boolean;
-  positionFixed?: boolean;
-  disableScrollWhenOpen?: boolean;
-  hasError?: boolean;
-  name?: string;
+  defaultValue?: T | null;
   id?: string;
+  name?: string;
+  hasError?: boolean;
+  invertColor?: boolean;
+  renderLeftIcon?: React.ReactNode;
+
+  // misc props
+  disableScrollWhenOpen?: boolean;
   'data-qaid'?: string;
 }
 
-const Select: React.SFC<SelectProps> = ({
+const Select = <T extends {}>({
+  options,
+  onChange,
+  renderOption,
+  getOptionLabel,
   placeholder,
-  children,
-  readonly,
-  handleOptionClick,
-  positionFixed,
-  disableScrollWhenOpen = false,
-  hasError,
-  name,
+  defaultValue,
   id,
+  name,
+  hasError,
+  invertColor,
+  renderLeftIcon,
+  disableScrollWhenOpen = false,
   'data-qaid': qaId
-}) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef<any>();
-  const [labelText, setLabelText] = useState<string>('');
-
-  useDisableScroll(isOpen, disableScrollWhenOpen);
-
-  useOutsideClick(ref, () => {
-    setIsOpen(false);
+}: SelectProps<T>) => {
+  const { selectRef, isOpen, labelText, onToggle, onOptionClick } = useSelect({
+    disableScrollWhenOpen,
+    getOptionLabel,
+    defaultValue,
+    onChange
   });
-
-  useKeyDown('Escape', () => {
-    setIsOpen(false);
-  });
-
-  const optionClick = (value: any, labelText: any) => {
-    setLabelText(labelText);
-    setIsOpen(false);
-    handleOptionClick ? handleOptionClick(value) : null;
-  };
 
   return (
     <>
       <Input
-        id={id}
-        readonly={readonly}
-        innerRef={ref}
+        innerRef={selectRef}
         isOpen={isOpen}
-        value={labelText}
-        placeholder={placeholder}
-        toggleSelect={() => setIsOpen(!isOpen)}
+        invertColor={invertColor}
+        inputProps={{
+          id,
+          readOnly: true,
+          placeholder,
+          value: labelText,
+          name
+        }}
+        onToggle={() => onToggle(!isOpen)}
+        renderLeftIcon={renderLeftIcon}
         hasError={hasError}
-        name={name}
         data-qaid={qaId}
       />
-      {isOpen && (
-        <PortalComponent dom={document.body}>
-          <StickyContainer
-            positionFixed={positionFixed}
-            stickToEl={ref.current}
-          >
-            <Menu isSelect depth={3}>
-              {children({ optionClick })}
-            </Menu>
-          </StickyContainer>
-        </PortalComponent>
-      )}
+
+      <Options
+        qaId={qaId}
+        innerRef={selectRef}
+        isOpen={isOpen}
+        options={options}
+        onOptionClick={onOptionClick}
+        getOptionLabel={getOptionLabel}
+        renderOption={renderOption}
+      />
     </>
   );
 };
-
-export { default as Option } from './Option';
-export { default as Menu } from './Menu';
 
 export default Select;

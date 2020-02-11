@@ -10,6 +10,8 @@ export { default as Snackbar } from './atoms/Snackbar';
 export { default as Badge } from './atoms/Badge';
 export { default as Divider } from './atoms/Divider';
 export { default as Container } from './atoms/Container';
+export { default as Menu } from './atoms/Menu';
+export { default as MenuItem } from './atoms/MenuItem';
 export { default as Grid } from './atoms/Grid';
 export { default as Icon } from './atoms/Icon';
 export { default as Icons } from './atoms/Icon/registry';

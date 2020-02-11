@@ -1,100 +1,279 @@
 import React from 'react';
-/* import theme from '../../theme'; */
-import { mountWithTheme } from '../../test';
+import theme from '../../theme';
+import { checkStyleRules, renderWithTheme, fireEvent } from '../../test';
+import Icon from '../../atoms/Icon';
 import Input from './Input';
 
-const mockClick = jest.fn();
+const setup = (props: any) =>
+  renderWithTheme(<Input data-qaid="test" {...props} />);
 
-const setup = (
-  isOpen: boolean = false,
-  placeholder: string = 'I am a placeholder',
-  readonly: boolean = false,
-  dataQaId: string | undefined = undefined
-) =>
-  mountWithTheme(
-    <Input
-      isOpen={isOpen}
-      placeholder={placeholder}
-      toggleSelect={mockClick}
-      readonly={readonly}
-      data-qaid={dataQaId}
-    >
-      I am a child component
-    </Input>
-  );
+describe('<Select />', () => {
+  describe('<Input />', () => {
+    it('executes a callback when clicking the container', () => {
+      const mockClick = jest.fn();
+      const { queryByTestId } = setup({ onToggle: mockClick });
 
-describe('Select <Input />', () => {
-  it('it renders correctly', () => {
-    expect(
-      setup(false, 'I am a placeholder', false, 'testDataId')
-    ).toMatchSnapshot();
-  });
+      fireEvent.click(queryByTestId('test')!);
+      expect(mockClick).toHaveBeenCalledTimes(1);
+    });
 
-  it('it has the correct style properties when isOpen is false', () => {
-    let wrapper = setup(false);
-    expect(wrapper).toHaveStyleRule('border-radius', '2px');
-    expect(wrapper).not.toHaveStyleRule('box-shadow');
-  });
+    it('renders correctly', () => {
+      const { queryByTestId, queryByPlaceholderText } = setup({
+        inputProps: {
+          placeholder: 'Awesome Select'
+        }
+      });
 
-  /* TODO: Why this doesn't work */
-  /* wrapper.setProps({ children: <Input isOpen={true} onClick={mockClick} /> }); */
-  /* wrapper.update(); */
-  /* input.update(); */
+      expect(queryByTestId('test')).toBeInTheDocument();
+      expect(queryByTestId('test-input')).toBeInTheDocument();
+      expect(queryByTestId('test-toggle')).toBeInTheDocument();
 
-  it('it has the correct style properties when isOpen is true', () => {
-    let wrapper = setup(true);
-    expect(wrapper).toHaveStyleRule('border-radius', '2px');
-    expect(wrapper).not.toHaveStyleRule('box-shadow');
+      expect(queryByPlaceholderText('Awesome Select')).toBeInTheDocument();
+      expect(queryByTestId('test-left-icon')).not.toBeInTheDocument();
 
-    expect(wrapper).toHaveStyleRule(
-      'box-shadow',
-      '0 10px 20px 0 rgba(0,0,0,0.19)'
-    );
-  });
+      expect(queryByTestId('test-toggle-icon')).toHaveClass('icon-caretDown');
+    });
 
-  it('it renders a placeholder', () => {
-    let wrapper = setup();
-    let placeholder = wrapper.find('input').props().placeholder;
-    expect(placeholder).toBe('I am a placeholder');
-  });
+    it('renders correctly with a custom icon', () => {
+      const { queryByTestId } = setup({
+        renderLeftIcon: <Icon name="spotify" />
+      });
 
-  it('it adds a data-qaid on the InputWrapper, InputStyle, and Button', () => {
-    let wrapper = setup(true, 'cat', true, 'testDataId');
-    let wrapperQaid = wrapper.find('Input').props()['data-qaid'];
-    expect(wrapperQaid).toBe('testDataId');
-    let inputQaid = wrapper.find('input').props()['data-qaid'];
-    expect(inputQaid).toBe('testDataId-input');
-    let buttonQaid = wrapper.find('button').props()['data-qaid'];
-    expect(buttonQaid).toBe('testDataId-toggle');
-  });
+      expect(queryByTestId('test-left-icon')).toBeInTheDocument();
+    });
 
-  it('it handles no data-qaid', () => {
-    let wrapper = setup();
-    let inputWrapper = wrapper.find('Input');
-    expect(inputWrapper).toBeDefined();
-  });
+    describe('<Wrapper />', () => {
+      it('has the correct style attributes', () => {
+        const { container } = setup({});
+        const wrapper = container.firstChild;
 
-  it('it triggers onClick when clicked', () => {
-    let wrapper = setup().find('button');
-    wrapper.simulate('click');
-    expect(mockClick).toHaveBeenCalled();
-  });
+        checkStyleRules(wrapper, {
+          'padding-right': '8px',
+          display: 'flex',
+          'align-items': 'center'
+        });
+      });
 
-  it('it shows the up icon when isOpen is true', () => {
-    let wrapper = setup(true);
-    let icon = wrapper.find('Icon').props().name;
-    expect(icon).toBe('caretUp');
-  });
+      it('has a pointer cursor when readOnly is true', () => {
+        const { container } = setup({
+          inputProps: { readOnly: true }
+        });
+        const wrapper = container.firstChild;
 
-  it('adds a readonly prop', () => {
-    let wrapper = setup(true, 'cat', true);
-    let input = wrapper.find('input');
-    expect(input.props().readOnly).toBe(true);
-  });
+        checkStyleRules(wrapper, {
+          cursor: 'pointer'
+        });
+      });
 
-  it('it shows the down icon when isOpen is false', () => {
-    let wrapper = setup(false);
-    let icon = wrapper.find('Icon').props().name;
-    expect(icon).toBe('caretDown');
+      it('has a pointer cursor when isOpen is true', () => {
+        const { container } = setup({
+          isOpen: true
+        });
+        const wrapper = container.firstChild;
+
+        checkStyleRules(wrapper, {
+          'box-shadow': '0 10px 20px 0 rgba(0,0,0,0.19)'
+        });
+
+        checkStyleRules(
+          wrapper,
+          {
+            'border-color': theme.colors.macyGrey
+          },
+          {
+            modifier: ':hover'
+          }
+        );
+      });
+
+      it('has the correct style attributes when color is inverted', () => {
+        const { container } = setup({ invertColor: true });
+        const wrapper = container.firstChild;
+
+        checkStyleRules(wrapper, {
+          background: 'transparent',
+          'border-color': theme.colors.whiteDenim
+        });
+
+        checkStyleRules(
+          wrapper,
+          {
+            'border-color': theme.colors.whiteDenim
+          },
+          {
+            modifier: ':hover'
+          }
+        );
+      });
+    });
+
+    describe('<IconWrapper />', () => {
+      it('has the correct style attributes', () => {
+        const { queryByTestId } = setup({
+          renderLeftIcon: <Icon name="spotify" />
+        });
+
+        checkStyleRules(queryByTestId('test-left-icon'), {
+          'margin-right': '8px',
+          height: '100%',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center'
+        });
+
+        checkStyleRules(
+          queryByTestId('test-left-icon'),
+          {
+            color: theme.colors.blueSmoke
+          },
+          {
+            modifier: 'i::before'
+          }
+        );
+      });
+
+      it('has the correct style attributes when color is inverted', () => {
+        const { queryByTestId } = setup({
+          invertColor: true,
+          renderLeftIcon: <Icon name="spotify" />
+        });
+
+        checkStyleRules(
+          queryByTestId('test-left-icon'),
+          {
+            color: theme.colors.whiteDenim
+          },
+          {
+            modifier: 'i::before'
+          }
+        );
+      });
+    });
+
+    describe('<StyledInput />', () => {
+      it('has the correct style attributes', () => {
+        const { queryByTestId } = setup({});
+
+        const input = queryByTestId('test-input');
+
+        checkStyleRules(input, {
+          background: 'transparent',
+          height: '100%',
+          width: '100%',
+          border: 'none',
+          'font-size': theme.fontSizes.body2,
+          'letter-spacing': '0.1px',
+          color: theme.colors.backToBlack
+        });
+
+        checkStyleRules(
+          queryByTestId('test-input'),
+          {
+            outline: 'none'
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          queryByTestId('test-input'),
+          {
+            outline: 'none'
+          },
+          { modifier: ':focus' }
+        );
+
+        checkStyleRules(
+          input,
+          {
+            color: theme.colors.blueSmoke
+          },
+          { modifier: '::placeholder' }
+        );
+      });
+
+      it('has the correct style attributes when color is inverted', () => {
+        const { queryByTestId } = setup({ invertColor: true });
+
+        const input = queryByTestId('test-input');
+
+        checkStyleRules(input, {
+          color: theme.colors.whiteDenim
+        });
+
+        checkStyleRules(
+          input,
+          {
+            color: theme.colors.whiteDenim
+          },
+          { modifier: '::placeholder' }
+        );
+      });
+    });
+
+    describe('<ActionButton />', () => {
+      it('has the correct style attributes', () => {
+        const { queryByTestId } = setup({});
+
+        const btn = queryByTestId('test-toggle');
+
+        checkStyleRules(btn, {
+          width: '25px',
+          height: '25px',
+          border: 'none',
+          display: 'flex',
+          'align-items': 'center',
+          'justify-content': 'center',
+          transition: 'all 0.15s ease',
+          cursor: 'pointer',
+          'border-radius': '100%'
+        });
+
+        checkStyleRules(
+          btn,
+          {
+            'background-color': theme.colors.silverSprings
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          btn,
+          {
+            outline: 'none'
+          },
+          { modifier: ':focus' }
+        );
+
+        checkStyleRules(
+          btn,
+          {
+            color: theme.colors.blueSmoke
+          },
+          { modifier: 'i::before' }
+        );
+      });
+
+      it('has the correct style attributes when color is inverted', () => {
+        const { queryByTestId } = setup({ invertColor: true });
+
+        const btn = queryByTestId('test-toggle');
+
+        checkStyleRules(
+          btn,
+          {
+            'background-color': theme.colors.paintItBlack
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          btn,
+          {
+            color: theme.colors.whiteDenim
+          },
+          { modifier: 'i::before' }
+        );
+      });
+    });
   });
 });
