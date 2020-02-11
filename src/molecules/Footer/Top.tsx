@@ -40,7 +40,32 @@ export const Subtitle = styled(H5)`
 export const CityInputWrapper = styled.div`
   width: 100%;
   max-width: 555px;
+  margin-bottom: ${({ theme }) => theme.ruler[2]}px;
+`;
+
+export const CityContainer = styled.div`
   margin-bottom: ${({ theme }) => theme.ruler[16]}px;
+  display: inline-grid;
+  text-align: center;
+
+  ${({ theme }) => theme.media.md`
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 555px;
+    `}
+`;
+
+export const CityLink = styled.a`
+  ${({ theme }) => css`
+    color: ${theme.colors.blueSmoke};
+    font-size: ${theme.fontSizes.body2};
+    padding: ${theme.ruler[1]}px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  `}
 `;
 
 export const Top: React.SFC<any> = ({ children }) => (
