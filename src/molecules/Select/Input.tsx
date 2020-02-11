@@ -191,6 +191,7 @@ const Input: React.SFC<Props> = ({
       onChange={inputProps.onChange}
       invertColor={invertColor}
       data-qaid={`${qaId}-input`}
+      autoComplete="nope"
     />
 
     {!inputProps.readOnly && inputProps.onClear && inputProps.value && (

@@ -61,7 +61,10 @@ const useSelect = <T extends {}>({
     const val = e.target.value;
 
     if (val === '') {
-      return onOptionClick(null);
+      setSelected(null);
+      setInputValue('');
+      onChange(null);
+      return;
     }
 
     setInputValue(val);
