@@ -22,6 +22,10 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   // typeahead props
   searchable?: boolean;
 
+  // popular picks
+  popularOptions?: T[];
+  getPopularOptionsTitle?: (options: T[]) => string;
+
   // misc props
   groupBy?: (option: T) => string;
   disableScrollWhenOpen?: boolean;
@@ -30,9 +34,11 @@ export interface SelectProps<T> extends OptionsListProps<T> {
 
 const Select = <T extends {}>({
   options: defaultOptions,
+  popularOptions,
   onChange,
   renderOption,
   getOptionLabel,
+  getPopularOptionsTitle,
   placeholder,
   defaultValue,
   id,
@@ -89,6 +95,9 @@ const Select = <T extends {}>({
         onOptionClick={onOptionClick}
         getOptionLabel={getOptionLabel}
         renderOption={renderOption}
+        popularOptions={popularOptions}
+        getPopularOptionsTitle={getPopularOptionsTitle}
+        userIsSearching={!!inputProps.value}
       />
     </>
   );
