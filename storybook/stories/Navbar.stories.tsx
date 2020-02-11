@@ -19,7 +19,7 @@ storiesOf('Navbar', module)
             <Navbar.Item href="#">Perform</Navbar.Item>
             <Navbar.Item>Host</Navbar.Item>
             <Navbar.Item>Your Events</Navbar.Item>
-            <Navbar.Item>Your Account</Navbar.Item>
+            <Navbar.Item emphasize>Your Account</Navbar.Item>
             <Navbar.Item>English</Navbar.Item>
           </Navbar.ItemContainer>
         </Navbar>
@@ -40,7 +40,7 @@ storiesOf('Navbar', module)
             <Navbar.Item href="#">Perform</Navbar.Item>
             <Navbar.Item>Host</Navbar.Item>
             <Navbar.Item>Your Events</Navbar.Item>
-            <Navbar.Item>Your Account</Navbar.Item>
+            <Navbar.Item emphasize>Your Account</Navbar.Item>
             <Navbar.Item>English</Navbar.Item>
           </Navbar.ItemContainer>
         </Navbar>

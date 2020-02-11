@@ -58,5 +58,6 @@ icon that can expand the navbar.
 | :------------ | :-----       | :-------------- | :------------------------------- |
 | **children**  | `React.Node` |                 | The content to be rendered in this link
 | href          | `string`     |                 | Whether to align the items to the left or right
+| emphasize     | `boolean`     |                 | Whether the emphasize the item
 | data-qaid     | `string`     |                 | Optional prop for testing purposes
 
