@@ -122,6 +122,62 @@ describe('<StickyContainerV2 />', () => {
 
         expect(pos).toHaveProperty('x', 100);
       });
+
+      it('flips the positioning vertically if there is not enough space above for the popover', () => {
+        const pos = calculateContainerPosition(
+          [350, 1000],
+          StickTo,
+          { vertical: 'top', horizontal: 'left' },
+          { vertical: 'bottom', horizontal: 'left' },
+          { width: 250, height: 250 },
+          false,
+          true
+        );
+
+        expect(pos).toHaveProperty('y', 300);
+      });
+
+      it('flips the positioning vertically if there is not enough space below for the popover', () => {
+        const pos = calculateContainerPosition(
+          [350, 350],
+          StickTo,
+          { vertical: 'bottom', horizontal: 'left' },
+          { vertical: 'top', horizontal: 'left' },
+          { width: 250, height: 100 },
+          false,
+          true
+        );
+
+        expect(pos).toHaveProperty('y', 100);
+      });
+
+      it('flips the positioning horizontally if there is not enough space on the left for the popover', () => {
+        const pos = calculateContainerPosition(
+          [1000, 1000],
+          StickTo,
+          { vertical: 'top', horizontal: 'left' },
+          { vertical: 'top', horizontal: 'right' },
+          { width: 250, height: 100 },
+          false,
+          true
+        );
+
+        expect(pos).toHaveProperty('x', 300);
+      });
+
+      it('flips the positioning horizontally if there is not enough space on the right for the popover', () => {
+        const pos = calculateContainerPosition(
+          [350, 1000],
+          StickTo,
+          { vertical: 'top', horizontal: 'right' },
+          { vertical: 'top', horizontal: 'left' },
+          { width: 100, height: 100 },
+          false,
+          true
+        );
+
+        expect(pos).toHaveProperty('x', 100);
+      });
     });
 
     describe('offset', () => {
@@ -132,6 +188,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'right' },
           { horizontal: 'left' },
           { width: 100, height: 100 },
+          false,
           false,
           { vertical: 100 }
         );
@@ -146,6 +203,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'right' },
           { horizontal: 'left' },
           { width: 100, height: 100 },
+          false,
           false,
           { horizontal: 100 }
         );

@@ -13,7 +13,7 @@ interface SelectInputProps {
 }
 
 interface Wrapper {
-  children?: any;
+  children?: React.ReactNode;
   isOpen?: boolean;
   hasError?: boolean;
   invertColor?: boolean;
@@ -24,7 +24,7 @@ interface Props {
   invertColor?: boolean;
   isOpen?: boolean;
   onToggle: () => void;
-  innerRef?: React.RefObject<any>;
+  innerRef?: React.RefObject<HTMLInputElement>;
   hasError?: boolean;
   renderLeftIcon?: React.ReactNode;
   'data-qaid'?: string;
@@ -35,6 +35,8 @@ interface Props {
     readOnly?: boolean;
     name?: string;
     value?: string;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onClear?: () => void;
   };
 }
 
@@ -186,15 +188,30 @@ const Input: React.SFC<Props> = ({
       isOpen={isOpen}
       placeholder={inputProps.placeholder || 'Please Select'}
       name={inputProps.name}
+      onChange={inputProps.onChange}
       invertColor={invertColor}
       data-qaid={`${qaId}-input`}
+      autoComplete="nope"
     />
+
+    {!inputProps.readOnly && inputProps.onClear && inputProps.value && (
+      <ActionButton
+        invertColor={invertColor}
+        type="button"
+        data-qaid={`${qaId}-clear`}
+        onClick={inputProps.onClear}
+        title="Clear"
+      >
+        <Icon data-qaid={`${qaId}-clear-icon`} name="close" />
+      </ActionButton>
+    )}
 
     <ActionButton
       invertColor={invertColor}
       isOpen={isOpen}
       type="button"
       data-qaid={`${qaId}-toggle`}
+      title="Toggle"
     >
       <Icon
         data-qaid={`${qaId}-toggle-icon`}

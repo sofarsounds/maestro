@@ -1,7 +1,5 @@
 export { default as withSpacing, WithSpacingProps } from './withSpacing';
 export { default as withShadow, WithShadowProps } from './withShadow';
-export { default as PortalComponent } from './PortalComponent';
-export { default as StickyContainer } from './StickyContainerV2';
 export {
   default as withTypography,
   WithTypographyProps

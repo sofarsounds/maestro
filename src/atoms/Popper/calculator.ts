@@ -2,7 +2,7 @@
  * Calculate the position of the container
  */
 type WindowSize = number[];
-interface AnchorEl {
+export interface AnchorEl {
   width: number;
   height: number;
   left: number;
@@ -26,7 +26,7 @@ export interface Offset {
   horizontal?: number;
 }
 
-interface PopoverDomEl {
+export interface PopoverDomEl {
   width: number;
   height: number;
 }
@@ -46,6 +46,7 @@ export const calculateContainerPosition = (
   transformOrigin: TransformOrigin,
   popoverEl: PopoverDomEl,
   keepInViewPort?: boolean,
+  flip?: boolean,
   offset?: Offset
 ) => {
   const [windowWidth, windowHeight] = windowSize;
@@ -154,6 +155,9 @@ export const calculateContainerPosition = (
     }
   }
 
+  /**
+   * Adjust coordinates if user wants to keep element in the viewport
+   */
   if (keepInViewPort) {
     if (popoverX < 0) {
       popoverX = 0;
@@ -169,6 +173,27 @@ export const calculateContainerPosition = (
 
     if (popoverY + popoverEl.height > windowHeight) {
       popoverY = windowHeight - popoverEl.height;
+    }
+  }
+
+  /**
+   * Flip the positioning when there's not enough space in the viewport
+   */
+  if (flip) {
+    if (popoverX < 0) {
+      popoverX = anchorEl.left + anchorEl.width;
+    }
+
+    if (popoverX + popoverEl.width > windowWidth) {
+      popoverX = anchorEl.left - popoverEl.width;
+    }
+
+    if (popoverY < 0) {
+      popoverY = anchorEl.top + anchorEl.height;
+    }
+
+    if (popoverY + popoverEl.height > windowHeight) {
+      popoverY = anchorEl.top - popoverEl.height;
     }
   }
 

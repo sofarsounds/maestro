@@ -1,13 +1,13 @@
 import React, { useState, useRef } from 'react';
 
-import { StickyContainer, PortalComponent } from '../../util/index';
-import { StickyContainerProps } from '../../util/StickyContainerV2';
+import Popper, { PopperProps } from '../../atoms/Popper';
+import Portal from '../../atoms/Portal';
 import { useDisableScroll, useOutsideClick } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
 import Flyout, { FlyoutSizes } from './Flyout';
 
-interface DropdownProps extends StickyContainerProps {
+interface DropdownProps extends PopperProps {
   label?: string;
   renderLabel?: (arg?: any) => any;
   children: any;
@@ -59,8 +59,8 @@ const Dropdown: React.SFC<DropdownProps> = ({
       </Trigger>
 
       {isOpen && (
-        <PortalComponent dom={document.body}>
-          <StickyContainer
+        <Portal dom={document.body}>
+          <Popper
             offset={offset}
             anchorEl={ref}
             anchorOrigin={anchorOrigin}
@@ -74,8 +74,8 @@ const Dropdown: React.SFC<DropdownProps> = ({
             >
               {children}
             </Flyout>
-          </StickyContainer>
-        </PortalComponent>
+          </Popper>
+        </Portal>
       )}
     </>
   );

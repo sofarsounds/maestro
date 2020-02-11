@@ -125,6 +125,27 @@ describe('<Select />', () => {
     expect(options[3]).toHaveTextContent('US');
   });
 
+  it('renders the correct groups if a groupBy function is provided', () => {
+    const { queryByTestId, queryAllByTestId } = setup({
+      groupBy: (opt: any) => opt.country
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+
+    const groups = queryAllByTestId('select-group');
+    expect(groups).toHaveLength(2);
+
+    // check group 1
+    const groupUK = queryAllByTestId('select-group-UK-option');
+    expect(queryByTestId('select-group-UK-header')).toHaveTextContent('UK');
+    expect(groupUK).toHaveLength(3);
+
+    // check group 1
+    const groupUS = queryAllByTestId('select-group-US-option');
+    expect(queryByTestId('select-group-US-header')).toHaveTextContent('US');
+    expect(groupUS).toHaveLength(1);
+  });
+
   it('executes a callback and updates the label when an option is selected', () => {
     const mockClick = jest.fn();
     const { queryByTestId, queryAllByTestId } = setup({

@@ -5,7 +5,7 @@ import { useSelect } from '../../hooks';
 import Input from './Input';
 import Options, { OptionsListProps } from './Options';
 
-interface SelectProps<T> extends OptionsListProps<T> {
+export interface SelectProps<T> extends OptionsListProps<T> {
   // select props
   options: T[];
   onChange: (option: T) => void;
@@ -19,16 +19,26 @@ interface SelectProps<T> extends OptionsListProps<T> {
   invertColor?: boolean;
   renderLeftIcon?: React.ReactNode;
 
+  // typeahead props
+  searchable?: boolean;
+
+  // popular picks
+  popularOptions?: T[];
+  getPopularOptionsTitle?: (options: T[]) => string;
+
   // misc props
+  groupBy?: (option: T) => string;
   disableScrollWhenOpen?: boolean;
   'data-qaid'?: string;
 }
 
 const Select = <T extends {}>({
-  options,
+  options: defaultOptions,
+  popularOptions,
   onChange,
   renderOption,
   getOptionLabel,
+  getPopularOptionsTitle,
   placeholder,
   defaultValue,
   id,
@@ -36,13 +46,24 @@ const Select = <T extends {}>({
   hasError,
   invertColor,
   renderLeftIcon,
+  searchable = false,
+  groupBy,
   disableScrollWhenOpen = false,
   'data-qaid': qaId
 }: SelectProps<T>) => {
-  const { selectRef, isOpen, labelText, onToggle, onOptionClick } = useSelect({
+  const {
+    selectRef,
+    isOpen,
+    onToggle,
+    onOptionClick,
+    inputProps,
+    options
+  } = useSelect<T>({
     disableScrollWhenOpen,
     getOptionLabel,
     defaultValue,
+    searchable,
+    defaultOptions,
     onChange
   });
 
@@ -54,10 +75,10 @@ const Select = <T extends {}>({
         invertColor={invertColor}
         inputProps={{
           id,
-          readOnly: true,
+          readOnly: !searchable,
           placeholder,
-          value: labelText,
-          name
+          name,
+          ...inputProps
         }}
         onToggle={() => onToggle(!isOpen)}
         renderLeftIcon={renderLeftIcon}
@@ -70,9 +91,13 @@ const Select = <T extends {}>({
         innerRef={selectRef}
         isOpen={isOpen}
         options={options}
+        groupBy={groupBy}
         onOptionClick={onOptionClick}
         getOptionLabel={getOptionLabel}
         renderOption={renderOption}
+        popularOptions={popularOptions}
+        getPopularOptionsTitle={getPopularOptionsTitle}
+        userIsSearching={!!inputProps.value}
       />
     </>
   );
