@@ -2,7 +2,8 @@ import React from 'react';
 import Menu from '../../../atoms/Menu';
 import MenuItem from '../../../atoms/MenuItem';
 import MenuHeader from '../../../atoms/MenuHeader';
-import { StickyContainer, PortalComponent } from '../../../util/index';
+import Popper from '../../../atoms/Popper'
+import Portal from '../../../atoms/Portal'
 
 import SimpleOptions from './Simple';
 import GroupedOptions from './Grouped';
@@ -47,8 +48,8 @@ const Options = <T extends {}>({
       : `Top ${popularOptions.length}`;
 
     return (
-      <PortalComponent dom={document.body}>
-        <StickyContainer
+      <Portal dom={document.body}>
+        <Popper
           anchorEl={innerRef}
           anchorOrigin={{
             vertical: 'bottom',
@@ -59,6 +60,7 @@ const Options = <T extends {}>({
             horizontal: 'left'
           }}
           width="auto"
+          flip
         >
           <Menu bordered data-qaid={`${qaId}-popular`}>
             <MenuHeader data-qaid={`${qaId}-popular-header`}>
@@ -73,14 +75,14 @@ const Options = <T extends {}>({
               qaId={qaId}
             />
           </Menu>
-        </StickyContainer>
-      </PortalComponent>
+        </Popper>
+      </Portal>
     );
   }
 
   return (
-    <PortalComponent dom={document.body}>
-      <StickyContainer
+    <Portal dom={document.body}>
+      <Popper
         anchorEl={innerRef}
         anchorOrigin={{
           vertical: 'bottom',
@@ -91,6 +93,7 @@ const Options = <T extends {}>({
           horizontal: 'left'
         }}
         width="auto"
+        flip
       >
         <Menu bordered data-qaid={`${qaId}-menu`}>
           {options.length === 0 && (
@@ -120,8 +123,8 @@ const Options = <T extends {}>({
             />
           )}
         </Menu>
-      </StickyContainer>
-    </PortalComponent>
+      </Popper>
+    </Portal>
   );
 };
 

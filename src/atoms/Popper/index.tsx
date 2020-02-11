@@ -11,23 +11,19 @@ import {
   calculateContainerPosition
 } from './calculator';
 
-export interface StickyContainerProps {
+export interface PopperProps {
   anchorOrigin?: AnchorOrigin;
   transformOrigin?: TransformOrigin;
   offset?: Offset;
   keepInViewPort?: boolean;
+  flip?: boolean;
   width?: string;
 }
 
-interface Props extends StickyContainerProps {
-  anchorEl: React.RefObject<HTMLDivElement>;
-  children: React.ReactNode;
+interface Props extends PopperProps {
+  anchorEl: any;
+  children: any;
 }
-
-const Container = styled.div<{ ref?: any }>`
-  z-index: ${({ theme }) => theme.zIndex.navbar + 1};
-  position: fixed;
-`;
 
 interface CalculatedPosition {
   x: number;
@@ -36,12 +32,18 @@ interface CalculatedPosition {
   height: number;
 }
 
-const StickyContainerV2: React.SFC<Props> = ({
+const Container = styled.div<{ ref?: any }>`
+  z-index: ${({ theme }) => theme.zIndex.navbar + 1};
+  position: fixed;
+`;
+
+const Popper: React.SFC<Props> = ({
   anchorEl,
   anchorOrigin = { vertical: 'bottom', horizontal: 'left' },
   transformOrigin = { vertical: 'top', horizontal: 'left' },
   offset,
   keepInViewPort = false,
+  flip = false,
   children,
   width = 'auto'
 }) => {
@@ -72,6 +74,7 @@ const StickyContainerV2: React.SFC<Props> = ({
           transformOrigin,
           popoverElRect,
           keepInViewPort,
+          flip,
           offset
         );
 
@@ -84,7 +87,8 @@ const StickyContainerV2: React.SFC<Props> = ({
       transformOrigin,
       popoverElRect,
       offset,
-      keepInViewPort
+      keepInViewPort,
+      flip
     ]
   );
 
@@ -125,4 +129,4 @@ const StickyContainerV2: React.SFC<Props> = ({
   );
 };
 
-export default StickyContainerV2;
+export default Popper;
