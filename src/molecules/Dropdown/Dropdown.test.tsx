@@ -60,8 +60,7 @@ describe('<Dropdown />', () => {
   it('does not render the styled flyout container when the prop is false', () => {
     const wrapper = setup(false);
     wrapper.find(Trigger).simulate('click');
-    expect(wrapper.find(StyledMenu)).toHaveLength(1);
-    expect(wrapper.find(StyledMenu)).not.toHaveStyleRule('width', '200px');
+    expect(wrapper.find(StyledMenu)).toHaveLength(0);
   });
 
   it.todo('closes the flyout when clicked outside');

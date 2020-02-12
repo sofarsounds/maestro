@@ -64,50 +64,7 @@ const Options = <T extends {}>({
     return null;
   }
 
-  if (!userIsSearching && popularOptions) {
-    const heading = getPopularOptionsTitle
-      ? getPopularOptionsTitle(popularOptions)
-      : `Top ${popularOptions.length}`;
-
-    return (
-      <Portal dom={document.body}>
-        <Popper
-          anchorEl={innerRef}
-          anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'left'
-          }}
-          transformOrigin={{
-            vertical: 'top',
-            horizontal: 'left'
-          }}
-          width="auto"
-          flip
-        >
-          {({ contactPoint }: { contactPoint: string }) => (
-            <AdvancedMenu
-              contactPoint={contactPoint}
-              isOpen={isOpen}
-              bordered
-              data-qaid={`${qaId}-popular`}
-            >
-              <MenuHeader data-qaid={`${qaId}-popular-header`}>
-                {heading}
-              </MenuHeader>
-
-              <SimpleOptions
-                options={popularOptions}
-                getOptionLabel={getOptionLabel}
-                onOptionClick={onOptionClick}
-                renderOption={renderOption}
-                qaId={qaId}
-              />
-            </AdvancedMenu>
-          )}
-        </Popper>
-      </Portal>
-    );
-  }
+  const showPopularOptions = !userIsSearching && popularOptions;
 
   return (
     <Portal dom={document.body}>
@@ -129,7 +86,7 @@ const Options = <T extends {}>({
             isOpen={isOpen}
             contactPoint={contactPoint}
             bordered
-            data-qaid={`${qaId}-menu`}
+            data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
           >
             {options.length === 0 && (
               <MenuItem disabled data-qaid={`${qaId}-empty`}>
@@ -137,25 +94,46 @@ const Options = <T extends {}>({
               </MenuItem>
             )}
 
-            {!groupBy && (
-              <SimpleOptions
-                qaId={qaId}
-                options={options}
-                getOptionLabel={getOptionLabel}
-                onOptionClick={onOptionClick}
-                renderOption={renderOption}
-              />
-            )}
+            {showPopularOptions && popularOptions ? (
+              <>
+                <MenuHeader data-qaid={`${qaId}-popular-header`}>
+                  {getPopularOptionsTitle
+                    ? getPopularOptionsTitle(popularOptions)
+                    : `Top ${popularOptions.length}`}
+                  ;
+                </MenuHeader>
 
-            {groupBy && (
-              <GroupedOptions
-                qaId={qaId}
-                options={options}
-                groupBy={groupBy}
-                getOptionLabel={getOptionLabel}
-                onOptionClick={onOptionClick}
-                renderOption={renderOption}
-              />
+                <SimpleOptions
+                  options={popularOptions}
+                  getOptionLabel={getOptionLabel}
+                  onOptionClick={onOptionClick}
+                  renderOption={renderOption}
+                  qaId={qaId}
+                />
+              </>
+            ) : (
+              <>
+                {!groupBy && (
+                  <SimpleOptions
+                    qaId={qaId}
+                    options={options}
+                    getOptionLabel={getOptionLabel}
+                    onOptionClick={onOptionClick}
+                    renderOption={renderOption}
+                  />
+                )}
+
+                {groupBy && (
+                  <GroupedOptions
+                    qaId={qaId}
+                    options={options}
+                    groupBy={groupBy}
+                    getOptionLabel={getOptionLabel}
+                    onOptionClick={onOptionClick}
+                    renderOption={renderOption}
+                  />
+                )}
+              </>
             )}
           </AdvancedMenu>
         )}
