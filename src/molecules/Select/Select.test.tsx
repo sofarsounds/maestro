@@ -1,111 +1,182 @@
 import React from 'react';
-import { mountWithTheme } from '../../test';
-import Select, { Option } from './index';
-const mockClick = jest.fn();
-const mockClickOption = jest.fn();
-const outsideClick = jest.fn();
+import { renderWithTheme, fireEvent } from '../../test';
+import Icon from '../../atoms/Icon';
+import Select from './index';
 
-let citiesData = [
-  { name: 'London', value: 'london' },
-  { name: 'Cardiff', value: 'cardiff' },
-  { name: 'Bristol', value: 'bristol' }
+interface Cities {
+  id: number;
+  title: string;
+  country: string;
+  value: string;
+}
+[];
+const cities = [
+  { id: 1, title: 'London', country: 'UK', value: 'london' },
+  { id: 2, title: 'Cardiff', country: 'UK', value: 'cardiff' },
+  { id: 3, title: 'Bristol', country: 'UK', value: 'bristol' },
+  { id: 4, title: 'New York', country: 'US', value: 'newyork' }
 ];
 
-const setup = () =>
-  mountWithTheme(
-    <>
-      <div onClick={outsideClick} id="outside_idiot">
-        I am a idiot
-      </div>
-      <Select
-        handleOptionClick={mockClick}
-        placeholder="I am placeholder"
-        data-qaid="testQaId"
-      >
-        {({ optionClick }: any) =>
-          citiesData.map((cityData, index) => (
-            <Option key={index} value={cityData.value} onClick={optionClick} />
-          ))
-        }
-      </Select>
-    </>
+const setup = (extraProps?: any) =>
+  renderWithTheme(
+    <Select<Cities>
+      data-qaid="select"
+      options={cities}
+      placeholder="Select City"
+      getOptionLabel={o => o.title}
+      {...extraProps}
+    />
   );
 
-describe('Select', () => {
+describe('<Select />', () => {
   it('renders correctly', () => {
-    expect(setup()).toMatchSnapshot();
+    const { queryByTestId } = setup();
+    expect(queryByTestId('select')).toBeInTheDocument();
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it('renders a placeholder', () => {
-    let wrapper = setup();
-    let placeholder = wrapper.find('input').props().placeholder;
-    expect(placeholder).toBe('I am placeholder');
+  it('renders correctly with a defaultValue', () => {
+    const { queryByTestId } = setup({
+      defaultValue: cities[2]
+    });
+
+    expect(queryByTestId('select-input')).toHaveValue('Bristol');
   });
 
-  it('opens the menu when the button is clicked', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    let options = wrapper.find(Option);
-    expect(options.length).toBe(0);
-    button.simulate('click');
-    let optionUpdated = wrapper.find(Option);
-    expect(optionUpdated.length).toBe(3);
+  it('renders correctly with a custom left hand side icon', () => {
+    const { queryByTestId } = setup({
+      renderLeftIcon: <Icon name="helpCircleOutline" />
+    });
+
+    expect(queryByTestId('select-left-icon')).toBeInTheDocument();
   });
 
-  it('calls the select click handler when an option is clicked', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option).first();
-    options.simulate('click');
-    expect(mockClick).toHaveBeenCalled();
+  it('opens the select when clicking the input', () => {
+    const { queryByTestId } = setup();
+
+    fireEvent.click(queryByTestId('select')!);
+
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
   });
 
-  it.todo('closes the menu when clicked outside of select component');
+  it('closes the select when clicking the input', () => {
+    const { queryByTestId } = setup();
 
-  it.todo('closes the menu when keydown escape');
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
 
-  it('returns the options value to the click select click handler onClick', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option).first();
-    options.simulate('click');
-    expect(mockClick).toHaveBeenCalledWith('london');
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it('calls the onClick options handler when an option is clicked', () => {
-    const setup = () =>
-      mountWithTheme(
-        <Select placeholder={'I am placeholder'}>
-          {() =>
-            citiesData.map((cityData, index) => (
-              <Option
-                key={index}
-                value={cityData.value}
-                onClick={mockClickOption}
-              />
-            ))
-          }
-        </Select>
-      );
+  it('closes the select when clicking outside of the input', () => {
+    const { queryByTestId } = setup();
 
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option);
-    options.first().simulate('click');
-    expect(mockClickOption).toHaveBeenCalled();
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
+
+    fireEvent.click(document);
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
-  it('collapses the open menu when an option is clicked', () => {
-    let wrapper = setup();
-    let button = wrapper.find('button');
-    button.simulate('click');
-    let options = wrapper.find(Option);
-    expect(options.length).toBe(3);
-    options.first().simulate('click');
-    let optionUpdated = wrapper.find(Option);
-    expect(optionUpdated.length).toBe(0);
+  it('closes the select when hitting escape', () => {
+    const { queryByTestId } = setup();
+
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-menu')).toBeInTheDocument();
+
+    fireEvent.keyDown(document, { key: 'Escape', code: 27 });
+    expect(queryByTestId('select-menu')).not.toBeInTheDocument();
+  });
+
+  it('renders the correct options with the correct label', () => {
+    const { queryByTestId, queryAllByTestId } = setup({
+      getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+
+    const options = queryAllByTestId('select-option');
+    expect(options).toHaveLength(4);
+
+    expect(options[0]).toHaveTextContent('London, UK');
+    expect(options[1]).toHaveTextContent('Cardiff, UK');
+    expect(options[2]).toHaveTextContent('Bristol, UK');
+    expect(options[3]).toHaveTextContent('New York, US');
+  });
+
+  it('renders a custom open when renderOption is provided', () => {
+    const { queryByTestId, queryAllByTestId } = setup({
+      renderOption: (option: any) => (
+        <div key={option.value} data-qaid="select-custom-opt">
+          {option.country}
+        </div>
+      )
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+
+    const options = queryAllByTestId('select-custom-opt');
+    expect(options).toHaveLength(4);
+
+    expect(options[0]).toHaveTextContent('UK');
+    expect(options[1]).toHaveTextContent('UK');
+    expect(options[2]).toHaveTextContent('UK');
+    expect(options[3]).toHaveTextContent('US');
+  });
+
+  it('renders the correct groups if a groupBy function is provided', () => {
+    const { queryByTestId, queryAllByTestId } = setup({
+      groupBy: (opt: any) => opt.country
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+
+    const groups = queryAllByTestId('select-group');
+    expect(groups).toHaveLength(2);
+
+    // check group 1
+    const groupUK = queryAllByTestId('select-group-UK-option');
+    expect(queryByTestId('select-group-UK-header')).toHaveTextContent('UK');
+    expect(groupUK).toHaveLength(3);
+
+    // check group 1
+    const groupUS = queryAllByTestId('select-group-US-option');
+    expect(queryByTestId('select-group-US-header')).toHaveTextContent('US');
+    expect(groupUS).toHaveLength(1);
+  });
+
+  it('executes a callback and updates the label when an option is selected', () => {
+    const mockClick = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      onChange: mockClick,
+      getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`
+    });
+
+    fireEvent.click(queryByTestId('select')!);
+    fireEvent.click(queryAllByTestId('select-option')[0]);
+
+    expect(mockClick).toHaveBeenCalledTimes(1);
+    expect(mockClick).toHaveBeenCalledWith(cities[0]);
+
+    expect(queryByTestId('select-input')).toHaveValue('London, UK');
+  });
+
+  it('executes a callback and updates the label when an option is selected and a defaultValue is given', () => {
+    const mockClick = jest.fn();
+    const { queryByTestId, queryAllByTestId } = setup({
+      onChange: mockClick,
+      defaultValue: cities[2]
+    });
+
+    expect(queryByTestId('select-input')).toHaveValue('Bristol');
+
+    fireEvent.click(queryByTestId('select')!);
+    fireEvent.click(queryAllByTestId('select-option')[1]);
+
+    expect(mockClick).toHaveBeenCalledTimes(1);
+    expect(mockClick).toHaveBeenCalledWith(cities[1]);
+
+    expect(queryByTestId('select-input')).toHaveValue('Cardiff');
   });
 });

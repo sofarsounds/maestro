@@ -8,7 +8,14 @@ import {
   boolean,
   select
 } from '@storybook/addon-knobs';
-import { Icon, Dropdown, Menu, Option, Select, PrimaryButton } from '../../src';
+import {
+  Icon,
+  Dropdown,
+  Menu,
+  MenuItem,
+  Select,
+  PrimaryButton
+} from '../../src';
 import cities from '../helpers/cities';
 
 const mockClick = () => {
@@ -55,11 +62,11 @@ storiesOf('Dropdown', module)
           </>
         )}
       >
-        <Menu width={200} depth={4}>
+        <Menu width={'200px'}>
           {cities.slice(0, 4).map((city, index) => (
-            <Option key={index} value={city} onClick={mockClick}>
+            <MenuItem key={index} onClick={mockClick}>
               {city}
-            </Option>
+            </MenuItem>
           ))}
         </Menu>
       </Dropdown>

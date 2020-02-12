@@ -1,7 +1,11 @@
 import styled, { css } from '../../lib/styledComponents';
 
-export default styled.a`
-  ${({ theme }) => css`
+interface Props {
+  emphasize?: boolean;
+}
+
+export default styled.a<Props>`
+  ${({ theme, emphasize }) => css`
     color: ${theme.colors.whiteDenim};
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
@@ -15,5 +19,14 @@ export default styled.a`
       width: auto;
       padding: 10px ${theme.ruler[3]}px;
     `}
+
+    ${emphasize &&
+      css`
+        text-align: center;
+        border: 1px solid ${theme.colors.whiteDenim};
+        border-radius: ${theme.borderRadius.default};
+        text-transform: uppercase;
+        font-weight: bold;
+      `}
   `}
 `;
