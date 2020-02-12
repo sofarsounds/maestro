@@ -1,10 +1,11 @@
 import { css } from '../../lib/styledComponents';
 
-interface ShadowProps {
-  depth: 1 | 2 | 3 | 4 | 5;
+export type ShadowDepth = 1 | 2 | 3 | 4 | 5;
+export interface WithShadowProps {
+  depth: ShadowDepth;
 }
 
-export default ({ depth }: ShadowProps) => css`
+export default ({ depth }: WithShadowProps) => css`
   ${depth <= 1 &&
     css`
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);

@@ -9,7 +9,7 @@ import {
   Select,
   Responsive,
   Icon,
-  Option,
+  MenuItem,
   Navbar,
   Menu,
   OutlineButton
@@ -39,15 +39,11 @@ storiesOf('Header', module)
                 </OutlineButton>
               )}
             >
-              <Menu depth={2} isSelect width={150}>
+              <Menu width={'150px'}>
                 {cities.map((city, index) => (
-                  <Option
-                    key={index}
-                    value={city}
-                    onClick={action('I was clicked')}
-                  >
+                  <MenuItem key={index} onClick={action('I was clicked')}>
                     {city}
-                  </Option>
+                  </MenuItem>
                 ))}
               </Menu>
             </Dropdown>
@@ -75,9 +71,9 @@ storiesOf('Header', module)
             >
               <Menu depth={2}>
                 {cities.slice(0, 4).map((city, index) => (
-                  <Option key={index} value={city} onClick={action(city)}>
+                  <MenuItem key={index} onClick={action(city)}>
                     {city}
-                  </Option>
+                  </MenuItem>
                 ))}
               </Menu>
             </Dropdown>

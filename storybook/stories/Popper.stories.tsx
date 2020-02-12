@@ -10,7 +10,7 @@ import {
   boolean
 } from '@storybook/addon-knobs';
 
-import { StickyContainerV2 } from '../../src';
+import { Popper } from '../../src';
 
 const Anchor = styled.div<any>`
   background: #ccc;
@@ -47,7 +47,7 @@ const Example = () => {
       <Anchor ref={ref} fixed={boolean('Fix Anchor', false)}>
         Anchor
       </Anchor>
-      <StickyContainerV2
+      <Popper
         anchorEl={ref}
         anchorOrigin={{
           vertical: select(
@@ -77,13 +77,15 @@ const Example = () => {
           vertical: number('Vertical Offset', 0),
           horizontal: number('Horizontal Offset', 0)
         }}
+        keepInViewPort={boolean('Keep in viewport?', false)}
+        flip={boolean('Flip', false)}
       >
         <StickyStyle>I am Sticky</StickyStyle>
-      </StickyContainerV2>
+      </Popper>
     </div>
   );
 };
 
-storiesOf('Sticky Container', module)
+storiesOf('Popper', module)
   .addDecorator(withKnobs)
   .add('Default', () => <Example />);
