@@ -1,5 +1,11 @@
 version: 2.1
 
+executors:
+  shared-setup-exec:
+    shell: /bin/bash --login
+    docker:
+      - image: circleci/node:11.12.0
+    working_directory: ~/repo
 jobs:
   test:
     docker:
@@ -44,4 +50,3 @@ workflows:
             branches:
               only:
                 - master
-
