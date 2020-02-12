@@ -176,6 +176,7 @@ export const calculateContainerPosition = (
     }
   }
 
+  let contactPoint = 'bottom';
   /**
    * Flip the positioning when there's not enough space in the viewport
    */
@@ -190,10 +191,12 @@ export const calculateContainerPosition = (
 
     if (popoverY < 0) {
       popoverY = anchorEl.top + anchorEl.height;
+      contactPoint = 'bottom';
     }
 
     if (popoverY + popoverEl.height > windowHeight) {
       popoverY = anchorEl.top - popoverEl.height;
+      contactPoint = 'top';
     }
   }
 
@@ -201,6 +204,7 @@ export const calculateContainerPosition = (
     x: popoverX,
     y: popoverY,
     width: anchorEl.width,
-    height: popoverEl.height
+    height: popoverEl.height,
+    contactPoint
   };
 };
