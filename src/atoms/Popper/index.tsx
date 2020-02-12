@@ -20,6 +20,9 @@ export interface PopperProps {
   width?: string;
 }
 
+interface PopperReturnProps {
+  contactPoint: string;
+}
 interface Props extends PopperProps {
   anchorEl: any;
   children: any;
@@ -30,6 +33,7 @@ interface CalculatedPosition {
   y: number;
   width: number;
   height: number;
+  contactPoint: string;
 }
 
 const Container = styled.div<{ ref?: any }>`
@@ -54,7 +58,8 @@ const Popper: React.SFC<Props> = ({
     x: -10000,
     y: -10000,
     width: 0,
-    height: 0
+    height: 0,
+    contactPoint: 'bottom'
   });
   const [popoverElRect, setPopoverElRect] = useState<PopoverDomEl>({
     width: 0,
@@ -113,7 +118,7 @@ const Popper: React.SFC<Props> = ({
     updateCalculatedPosition(anchorEl);
   });
 
-  const { y, x, width: anchorElWidth } = calculatedPosition;
+  const { y, x, width: anchorElWidth, contactPoint } = calculatedPosition;
 
   return (
     <Container
@@ -124,7 +129,7 @@ const Popper: React.SFC<Props> = ({
         width: width === 'auto' ? anchorElWidth : width
       }}
     >
-      {children}
+      {typeof children === 'function' ? children({ contactPoint }) : children}
     </Container>
   );
 };

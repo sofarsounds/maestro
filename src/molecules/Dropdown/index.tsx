@@ -1,28 +1,35 @@
 import React, { useState, useRef } from 'react';
+import styled, { css } from '../../lib/styledComponents';
 
 import Popper, { PopperProps } from '../../atoms/Popper';
 import Portal from '../../atoms/Portal';
+import Menu from '../../atoms/Menu';
 import { useDisableScroll, useOutsideClick } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
-import Flyout, { FlyoutSizes } from './Flyout';
 
 interface DropdownProps extends PopperProps {
   label?: string;
   renderLabel?: (arg?: any) => any;
   children: any;
-  size?: FlyoutSizes;
+  size?: 'small' | 'large';
   flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   disableScrollWhenOpen?: boolean;
   'data-qaid'?: string;
   id?: string;
 }
 
+export const StyledMenu = styled(Menu)`
+  ${({ theme }) => css`
+    padding: ${theme.ruler[8]}px ${theme.ruler[6]}px;
+  `}
+`;
+
 const Dropdown: React.SFC<DropdownProps> = ({
   label,
   renderLabel,
   children,
-  flyoutContainer,
+  flyoutContainer = true,
   disableScrollWhenOpen = false,
   anchorOrigin = {
     vertical: 'bottom',
@@ -47,6 +54,13 @@ const Dropdown: React.SFC<DropdownProps> = ({
     setIsOpen(false);
   });
 
+  let width = '200px';
+  if (size === 'small') {
+    width = '150px';
+  } else if (size === 'large') {
+    width = '250px';
+  }
+
   return (
     <>
       <Trigger
@@ -67,13 +81,13 @@ const Dropdown: React.SFC<DropdownProps> = ({
             transformOrigin={transformOrigin}
             keepInViewPort={keepInViewPort}
           >
-            <Flyout
-              flyoutContainer={flyoutContainer}
-              size={size}
-              data-qaid={`${qaId}-flyout`}
-            >
-              {children}
-            </Flyout>
+            {flyoutContainer ? (
+              <StyledMenu width={width} data-qaid={`${qaId}-flyout`}>
+                {children}
+              </StyledMenu>
+            ) : (
+              children
+            )}
           </Popper>
         </Portal>
       )}

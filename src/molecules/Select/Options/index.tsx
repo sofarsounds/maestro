@@ -1,4 +1,5 @@
 import React from 'react';
+import styled, { css } from '../../../lib/styledComponents';
 import Menu from '../../../atoms/Menu';
 import MenuItem from '../../../atoms/MenuItem';
 import MenuHeader from '../../../atoms/MenuHeader';
@@ -25,6 +26,27 @@ interface Props<T> extends OptionsListProps<T> {
   groupBy?: (option: T) => string;
 }
 
+const AdvancedMenu = styled(Menu)<{ isOpen: boolean; contactPoint: string }>`
+  ${({ theme, isOpen, contactPoint }) =>
+    isOpen &&
+    contactPoint === 'bottom' &&
+    css`
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      margin-top: -${theme.borderRadius.default};
+    `}
+
+  ${({ theme, isOpen, contactPoint }) =>
+    isOpen &&
+    contactPoint === 'top' &&
+    css`
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin-bottom: -${theme.borderRadius.default};
+      box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    `}
+`;
+
 const Options = <T extends {}>({
   innerRef,
   isOpen,
@@ -42,43 +64,7 @@ const Options = <T extends {}>({
     return null;
   }
 
-  if (!userIsSearching && popularOptions) {
-    const heading = getPopularOptionsTitle
-      ? getPopularOptionsTitle(popularOptions)
-      : `Top ${popularOptions.length}`;
-
-    return (
-      <Portal dom={document.body}>
-        <Popper
-          anchorEl={innerRef}
-          anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'left'
-          }}
-          transformOrigin={{
-            vertical: 'top',
-            horizontal: 'left'
-          }}
-          width="auto"
-          flip
-        >
-          <Menu bordered data-qaid={`${qaId}-popular`}>
-            <MenuHeader data-qaid={`${qaId}-popular-header`}>
-              {heading}
-            </MenuHeader>
-
-            <SimpleOptions
-              options={popularOptions}
-              getOptionLabel={getOptionLabel}
-              onOptionClick={onOptionClick}
-              renderOption={renderOption}
-              qaId={qaId}
-            />
-          </Menu>
-        </Popper>
-      </Portal>
-    );
-  }
+  const showPopularOptions = !userIsSearching && popularOptions;
 
   return (
     <Portal dom={document.body}>
@@ -95,34 +81,62 @@ const Options = <T extends {}>({
         width="auto"
         flip
       >
-        <Menu bordered data-qaid={`${qaId}-menu`}>
-          {options.length === 0 && (
-            <MenuItem disabled data-qaid={`${qaId}-empty`}>
-              No options...
-            </MenuItem>
-          )}
+        {({ contactPoint }: { contactPoint: string }) => (
+          <AdvancedMenu
+            isOpen={isOpen}
+            contactPoint={contactPoint}
+            bordered
+            data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
+          >
+            {options.length === 0 && (
+              <MenuItem disabled data-qaid={`${qaId}-empty`}>
+                No options...
+              </MenuItem>
+            )}
 
-          {!groupBy && (
-            <SimpleOptions
-              qaId={qaId}
-              options={options}
-              getOptionLabel={getOptionLabel}
-              onOptionClick={onOptionClick}
-              renderOption={renderOption}
-            />
-          )}
+            {showPopularOptions && popularOptions ? (
+              <>
+                <MenuHeader data-qaid={`${qaId}-popular-header`}>
+                  {getPopularOptionsTitle
+                    ? getPopularOptionsTitle(popularOptions)
+                    : `Top ${popularOptions.length}`}
+                  ;
+                </MenuHeader>
 
-          {groupBy && (
-            <GroupedOptions
-              qaId={qaId}
-              options={options}
-              groupBy={groupBy}
-              getOptionLabel={getOptionLabel}
-              onOptionClick={onOptionClick}
-              renderOption={renderOption}
-            />
-          )}
-        </Menu>
+                <SimpleOptions
+                  options={popularOptions}
+                  getOptionLabel={getOptionLabel}
+                  onOptionClick={onOptionClick}
+                  renderOption={renderOption}
+                  qaId={qaId}
+                />
+              </>
+            ) : (
+              <>
+                {!groupBy && (
+                  <SimpleOptions
+                    qaId={qaId}
+                    options={options}
+                    getOptionLabel={getOptionLabel}
+                    onOptionClick={onOptionClick}
+                    renderOption={renderOption}
+                  />
+                )}
+
+                {groupBy && (
+                  <GroupedOptions
+                    qaId={qaId}
+                    options={options}
+                    groupBy={groupBy}
+                    getOptionLabel={getOptionLabel}
+                    onOptionClick={onOptionClick}
+                    renderOption={renderOption}
+                  />
+                )}
+              </>
+            )}
+          </AdvancedMenu>
+        )}
       </Popper>
     </Portal>
   );
