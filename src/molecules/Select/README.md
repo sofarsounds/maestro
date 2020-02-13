@@ -46,6 +46,7 @@ Table below contains all types of props available in the Select component
 | getPopularOptionsTitle | `Function`      |                 | Customise the title that is displayed for the group of popular options
 | groupBy                | `Function`      |                 | A custom group by function to create a grouped select.
 | disableScrollWhenOpen  | `Boolean`       |                 | Disables body scroll when select is open
+| initialWidth           | `String`        |                 | Render the Select with a different width when closed to when opened
 | id                     | `string`        |                 | Default HTML id prop to identify the element by id
 | name                   | `string`        |                 | Default HTML id prop to identify the element by name
 | data-qaid              | `string`        |                 | Optional prop for testing purposes
