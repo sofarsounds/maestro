@@ -21,6 +21,13 @@ const staticExamples = [
     props: defaultProps
   },
   {
+    title: 'Scaling',
+    props: {
+      ...defaultProps,
+      initialWidth: '150px'
+    }
+  },
+  {
     title: 'Grouped',
     props: {
       ...defaultProps,
