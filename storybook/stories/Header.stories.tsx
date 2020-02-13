@@ -14,7 +14,7 @@ import {
   Menu,
   OutlineButton
 } from '../../src';
-import { cities } from '../helpers/cities';
+import { cities, MultiDimensional, multiDimensional } from '../helpers/cities';
 
 storiesOf('Header', module)
   .addDecorator(withKnobs)
@@ -23,30 +23,13 @@ storiesOf('Header', module)
       <div>
         <Navbar data-qaid="navbar">
           <Navbar.ItemContainer>
-            <Dropdown
-              flyoutContainer={false}
-              offset={{ vertical: -2 }}
-              renderLabel={isOpen => (
-                <OutlineButton small color={'white'}>
-                  <span style={{ marginRight: '5px', color: 'inherit' }}>
-                    Cities
-                  </span>
-                  <Icon
-                    color={'whiteDenim'}
-                    name={isOpen ? 'caretUp' : 'caretDown'}
-                    size={'8px'}
-                  />
-                </OutlineButton>
-              )}
-            >
-              <Menu width={'150px'}>
-                {cities.map((city, index) => (
-                  <MenuItem key={index} onClick={action('I was clicked')}>
-                    {city}
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Dropdown>
+            <Select<MultiDimensional>
+              invertColor
+              options={multiDimensional}
+              getOptionLabel={o => o.title}
+              placeholder="Select City"
+              onChange={o => console.log(o)}
+            />
           </Navbar.ItemContainer>
 
           <Navbar.ItemContainer align="right">
