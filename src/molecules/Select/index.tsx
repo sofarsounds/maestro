@@ -33,6 +33,7 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   getPopularOptionsTitle?: (options: T[]) => string;
 
   // misc props
+  initialWidth?: string;
   groupBy?: (option: T) => string;
   disableScrollWhenOpen?: boolean;
   state?: SelectState;
@@ -55,6 +56,7 @@ const Select = <T extends {}>({
   renderLeftIcon,
   searchable = false,
   groupBy,
+  initialWidth,
   state = SelectState.ready,
   disableScrollWhenOpen = false,
   'data-qaid': qaId
@@ -92,6 +94,7 @@ const Select = <T extends {}>({
         renderLeftIcon={renderLeftIcon}
         hasError={hasError}
         state={state}
+        initialWidth={initialWidth}
         data-qaid={qaId}
       />
 

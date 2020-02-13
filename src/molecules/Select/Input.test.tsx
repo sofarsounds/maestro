@@ -142,6 +142,40 @@ describe('<Select />', () => {
         });
       });
 
+      it('has the correct style attributes when initialWidth is provided', () => {
+        const { container } = setup({ initialWidth: '200px' });
+        const wrapper = container.firstChild;
+
+        checkStyleRules(wrapper, {
+          width: '100%',
+          'max-width': '200px'
+        });
+
+        checkStyleRules(
+          wrapper,
+          {
+            'max-width': '100%'
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          wrapper,
+          {
+            'max-width': '100%'
+          },
+          { modifier: ':focus' }
+        );
+
+        checkStyleRules(
+          wrapper,
+          {
+            'max-width': '100%'
+          },
+          { modifier: ':active' }
+        );
+      });
+
       it('has a pointer cursor when readOnly is true', () => {
         const { container } = setup({
           inputProps: { readOnly: true }

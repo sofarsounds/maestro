@@ -20,6 +20,7 @@ interface Wrapper {
   hasError?: boolean;
   invertColor?: boolean;
   readOnly?: boolean;
+  initialWidth?: string;
 }
 
 interface Props {
@@ -30,6 +31,7 @@ interface Props {
   hasError?: boolean;
   renderLeftIcon?: React.ReactNode;
   state: SelectState;
+  initialWidth?: string;
   'data-qaid'?: string;
 
   inputProps: {
@@ -50,7 +52,7 @@ interface ButtonProps {
 }
 
 const Wrapper = styled.div<Wrapper>`
-  ${({ theme, readOnly, invertColor, isOpen }) => css`
+  ${({ theme, readOnly, invertColor, isOpen, initialWidth }) => css`
     display: flex;
     flex: center;
     align-items: center;
@@ -79,6 +81,23 @@ const Wrapper = styled.div<Wrapper>`
         &:hover {
           border-color: ${theme.colors.whiteDenim};
         }
+      `}
+
+    ${initialWidth &&
+      css`
+        width: 100%;
+        max-width: ${initialWidth};
+
+        &:focus,
+        &:hover,
+        &:active {
+          max-width: 100%;
+        }
+
+        ${isOpen &&
+          css`
+            max-width: 100%;
+          `}
       `}
   `}
 `;
@@ -168,6 +187,7 @@ const Input: React.SFC<Props> = ({
   invertColor,
   renderLeftIcon,
   state,
+  initialWidth,
   'data-qaid': qaId
 }) => {
   const enableClearButton =
@@ -185,6 +205,7 @@ const Input: React.SFC<Props> = ({
       isOpen={isOpen}
       ref={innerRef}
       invertColor={invertColor}
+      initialWidth={initialWidth}
       data-qaid={qaId}
     >
       {renderLeftIcon && (
