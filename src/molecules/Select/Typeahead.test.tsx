@@ -115,8 +115,10 @@ describe('<Typeahead />', () => {
     const input = queryByTestId('typeahead-input')!;
     fireEvent.change(input, { target: { value: 'I will not match' } });
 
-    expect(queryByTestId('typeahead-empty')).toBeInTheDocument();
-    expect(queryByTestId('typeahead-empty')).toHaveTextContent('No options...');
+    expect(queryByTestId('typeahead-empty-msg')).toBeInTheDocument();
+    expect(queryByTestId('typeahead-empty-msg')).toHaveTextContent(
+      'No options...'
+    );
   });
 
   it('selects an option and executes onChange after clicking a filtered option', () => {

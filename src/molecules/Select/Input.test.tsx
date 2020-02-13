@@ -5,7 +5,7 @@ import Icon from '../../atoms/Icon';
 import Input from './Input';
 
 const setup = (props: any) =>
-  renderWithTheme(<Input data-qaid="test" {...props} />);
+  renderWithTheme(<Input data-qaid="test" state="ready" {...props} />);
 
 describe('<Select />', () => {
   describe('<Input />', () => {
@@ -79,6 +79,38 @@ describe('<Select />', () => {
         }
       });
 
+      expect(queryByTestId('test-clear')).not.toBeInTheDocument();
+    });
+
+    it('renders a loading spinner and no clear button when select state is loading', () => {
+      const mockClear = jest.fn();
+      const { queryByTestId } = setup({
+        state: 'loading',
+        inputProps: {
+          readOnly: false,
+          onChange: () => {},
+          onClear: mockClear,
+          value: ''
+        }
+      });
+
+      expect(queryByTestId('test-spinner')).toBeInTheDocument();
+      expect(queryByTestId('test-clear')).not.toBeInTheDocument();
+    });
+
+    it('renders an error icon and no clear button when select state is error', () => {
+      const mockClear = jest.fn();
+      const { queryByTestId } = setup({
+        state: 'error',
+        inputProps: {
+          readOnly: false,
+          onChange: () => {},
+          onClear: mockClear,
+          value: ''
+        }
+      });
+
+      expect(queryByTestId('test-error-icon')).toBeInTheDocument();
       expect(queryByTestId('test-clear')).not.toBeInTheDocument();
     });
 

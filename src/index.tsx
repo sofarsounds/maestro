@@ -21,6 +21,7 @@ export { default as Icons } from './atoms/Icon/registry';
 export { default as Textfield } from './atoms/Textfield';
 export { default as Textarea } from './atoms/Textarea';
 export { default as Spacer } from './atoms/Spacer';
+export { default as Spinner } from './atoms/Spinner';
 export { default as Radio } from './atoms/Radio';
 export { default as Checkbox } from './atoms/Checkbox';
 export { default as Responsive } from './atoms/Responsive';

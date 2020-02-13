@@ -5,6 +5,12 @@ import { useSelect } from '../../hooks';
 import Input from './Input';
 import Options, { OptionsListProps } from './Options';
 
+export enum SelectState {
+  ready = 'ready',
+  loading = 'loading',
+  error = 'error'
+}
+
 export interface SelectProps<T> extends OptionsListProps<T> {
   // select props
   options: T[];
@@ -29,6 +35,7 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   // misc props
   groupBy?: (option: T) => string;
   disableScrollWhenOpen?: boolean;
+  state?: SelectState;
   'data-qaid'?: string;
 }
 
@@ -48,6 +55,7 @@ const Select = <T extends {}>({
   renderLeftIcon,
   searchable = false,
   groupBy,
+  state = SelectState.ready,
   disableScrollWhenOpen = false,
   'data-qaid': qaId
 }: SelectProps<T>) => {
@@ -83,6 +91,7 @@ const Select = <T extends {}>({
         onToggle={() => onToggle(!isOpen)}
         renderLeftIcon={renderLeftIcon}
         hasError={hasError}
+        state={state}
         data-qaid={qaId}
       />
 
@@ -97,6 +106,7 @@ const Select = <T extends {}>({
         renderOption={renderOption}
         popularOptions={popularOptions}
         getPopularOptionsTitle={getPopularOptionsTitle}
+        state={state}
         userIsSearching={!!inputProps.value}
       />
     </>

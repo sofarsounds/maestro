@@ -89,6 +89,26 @@ describe('<Select />', () => {
     expect(queryByTestId('select-menu')).not.toBeInTheDocument();
   });
 
+  it('renders correctly in the loading state', () => {
+    const { queryByTestId } = setup({
+      state: 'loading'
+    });
+
+    expect(queryByTestId('select-spinner')).toBeInTheDocument();
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-loading-msg')).toBeInTheDocument();
+  });
+
+  it('renders correctly in the error state', () => {
+    const { queryByTestId } = setup({
+      state: 'error'
+    });
+
+    expect(queryByTestId('select-error-icon')).toBeInTheDocument();
+    fireEvent.click(queryByTestId('select')!);
+    expect(queryByTestId('select-error-msg')).toBeInTheDocument();
+  });
+
   it('renders the correct options with the correct label', () => {
     const { queryByTestId, queryAllByTestId } = setup({
       getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`
