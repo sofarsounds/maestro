@@ -27,7 +27,7 @@ interface Props {
   invertColor?: boolean;
   isOpen?: boolean;
   onToggle: () => void;
-  innerRef?: React.RefObject<HTMLInputElement>;
+  innerRef?: React.Ref<any>;
   hasError?: boolean;
   renderLeftIcon?: React.ReactNode;
   state: SelectState;

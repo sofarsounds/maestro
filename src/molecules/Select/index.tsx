@@ -1,4 +1,5 @@
 import React from 'react';
+import { Manager, Reference } from 'react-popper';
 
 import { useSelect } from '../../hooks';
 
@@ -78,29 +79,32 @@ const Select = <T extends {}>({
   });
 
   return (
-    <>
-      <Input
-        innerRef={selectRef}
-        isOpen={isOpen}
-        invertColor={invertColor}
-        inputProps={{
-          id,
-          readOnly: !searchable,
-          placeholder,
-          name,
-          ...inputProps
-        }}
-        onToggle={() => onToggle(!isOpen)}
-        renderLeftIcon={renderLeftIcon}
-        hasError={hasError}
-        state={state}
-        initialWidth={initialWidth}
-        data-qaid={qaId}
-      />
+    <Manager>
+      <Reference innerRef={selectRef}>
+        {({ ref }) => (
+          <Input
+            innerRef={ref}
+            isOpen={isOpen}
+            invertColor={invertColor}
+            inputProps={{
+              id,
+              readOnly: !searchable,
+              placeholder,
+              name,
+              ...inputProps
+            }}
+            onToggle={() => onToggle(!isOpen)}
+            renderLeftIcon={renderLeftIcon}
+            hasError={hasError}
+            state={state}
+            initialWidth={initialWidth}
+            data-qaid={qaId}
+          />
+        )}
+      </Reference>
 
       <Options
         qaId={qaId}
-        innerRef={selectRef}
         isOpen={isOpen}
         options={options}
         groupBy={groupBy}
@@ -112,7 +116,7 @@ const Select = <T extends {}>({
         state={state}
         userIsSearching={!!inputProps.value}
       />
-    </>
+    </Manager>
   );
 };
 
