@@ -5,7 +5,7 @@ import Icon from '../../atoms/Icon';
 import Input from './Input';
 
 const setup = (props: any) =>
-  renderWithTheme(<Input data-qaid="test" {...props} />);
+  renderWithTheme(<Input data-qaid="test" state="ready" {...props} />);
 
 describe('<Select />', () => {
   describe('<Input />', () => {
@@ -82,6 +82,38 @@ describe('<Select />', () => {
       expect(queryByTestId('test-clear')).not.toBeInTheDocument();
     });
 
+    it('renders a loading spinner and no clear button when select state is loading', () => {
+      const mockClear = jest.fn();
+      const { queryByTestId } = setup({
+        state: 'loading',
+        inputProps: {
+          readOnly: false,
+          onChange: () => {},
+          onClear: mockClear,
+          value: ''
+        }
+      });
+
+      expect(queryByTestId('test-spinner')).toBeInTheDocument();
+      expect(queryByTestId('test-clear')).not.toBeInTheDocument();
+    });
+
+    it('renders an error icon and no clear button when select state is error', () => {
+      const mockClear = jest.fn();
+      const { queryByTestId } = setup({
+        state: 'error',
+        inputProps: {
+          readOnly: false,
+          onChange: () => {},
+          onClear: mockClear,
+          value: ''
+        }
+      });
+
+      expect(queryByTestId('test-error-icon')).toBeInTheDocument();
+      expect(queryByTestId('test-clear')).not.toBeInTheDocument();
+    });
+
     it('renders a clear button when onClear is given and input has a value', () => {
       const mockClear = jest.fn();
       const { queryByTestId } = setup({
@@ -108,6 +140,40 @@ describe('<Select />', () => {
           display: 'flex',
           'align-items': 'center'
         });
+      });
+
+      it('has the correct style attributes when initialWidth is provided', () => {
+        const { container } = setup({ initialWidth: '200px' });
+        const wrapper = container.firstChild;
+
+        checkStyleRules(wrapper, {
+          width: '100%',
+          'max-width': '200px'
+        });
+
+        checkStyleRules(
+          wrapper,
+          {
+            'max-width': '100%'
+          },
+          { modifier: ':hover' }
+        );
+
+        checkStyleRules(
+          wrapper,
+          {
+            'max-width': '100%'
+          },
+          { modifier: ':focus' }
+        );
+
+        checkStyleRules(
+          wrapper,
+          {
+            'max-width': '100%'
+          },
+          { modifier: ':active' }
+        );
       });
 
       it('has a pointer cursor when readOnly is true', () => {

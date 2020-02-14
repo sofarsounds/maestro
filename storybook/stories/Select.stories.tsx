@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import { Icon, Select, MenuItem } from '../../src';
+import { Icon, Select, SelectState, MenuItem } from '../../src';
 
 import { cities, multiDimensional, MultiDimensional } from '../helpers/cities';
 import { Spacer, Boundary } from '../helpers/components';
@@ -19,6 +19,13 @@ const staticExamples = [
   {
     title: 'Default',
     props: defaultProps
+  },
+  {
+    title: 'Scaling',
+    props: {
+      ...defaultProps,
+      initialWidth: '150px'
+    }
   },
   {
     title: 'Grouped',
@@ -58,6 +65,20 @@ const staticExamples = [
           <span style={{ color: '#ccc' }}>, {option.country}</span>
         </MenuItem>
       )
+    }
+  },
+  {
+    title: 'Loading',
+    props: {
+      ...defaultProps,
+      state: SelectState.loading
+    }
+  },
+  {
+    title: 'Error',
+    props: {
+      ...defaultProps,
+      state: SelectState.error
     }
   }
 ];

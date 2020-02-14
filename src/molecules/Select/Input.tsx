@@ -4,7 +4,9 @@ import styled, { css } from '../../lib/styledComponents';
 import { withTextfieldStyle, withShadow } from '../../util';
 import { InputProps } from '../../typings/input';
 
+import { SelectState } from './index';
 import Icon from '../../atoms/Icon';
+import Spinner from '../../atoms/Spinner';
 
 interface SelectInputProps {
   isOpen?: boolean;
@@ -18,6 +20,7 @@ interface Wrapper {
   hasError?: boolean;
   invertColor?: boolean;
   readOnly?: boolean;
+  initialWidth?: string;
 }
 
 interface Props {
@@ -27,6 +30,8 @@ interface Props {
   innerRef?: React.RefObject<HTMLInputElement>;
   hasError?: boolean;
   renderLeftIcon?: React.ReactNode;
+  state: SelectState;
+  initialWidth?: string;
   'data-qaid'?: string;
 
   inputProps: {
@@ -47,7 +52,7 @@ interface ButtonProps {
 }
 
 const Wrapper = styled.div<Wrapper>`
-  ${({ theme, readOnly, invertColor, isOpen }) => css`
+  ${({ theme, readOnly, invertColor, isOpen, initialWidth }) => css`
     display: flex;
     flex: center;
     align-items: center;
@@ -76,6 +81,23 @@ const Wrapper = styled.div<Wrapper>`
         &:hover {
           border-color: ${theme.colors.whiteDenim};
         }
+      `}
+
+    ${initialWidth &&
+      css`
+        width: 100%;
+        max-width: ${initialWidth};
+
+        &:focus,
+        &:hover,
+        &:active {
+          max-width: 100%;
+        }
+
+        ${isOpen &&
+          css`
+            max-width: 100%;
+          `}
       `}
   `}
 `;
@@ -164,61 +186,86 @@ const Input: React.SFC<Props> = ({
   hasError,
   invertColor,
   renderLeftIcon,
+  state,
+  initialWidth,
   'data-qaid': qaId
-}) => (
-  <Wrapper
-    id={inputProps.id}
-    readOnly={inputProps.readOnly}
-    hasError={hasError}
-    onClick={onToggle}
-    isOpen={isOpen}
-    ref={innerRef}
-    invertColor={invertColor}
-    data-qaid={qaId}
-  >
-    {renderLeftIcon && (
-      <IconWrapper invertColor={invertColor} data-qaid={`${qaId}-left-icon`}>
-        {renderLeftIcon}
-      </IconWrapper>
-    )}
+}) => {
+  const enableClearButton =
+    state === SelectState.ready &&
+    !inputProps.readOnly &&
+    inputProps.onClear &&
+    inputProps.value;
 
-    <StyledInput
-      value={inputProps.value}
+  return (
+    <Wrapper
+      id={inputProps.id}
       readOnly={inputProps.readOnly}
+      hasError={hasError}
+      onClick={onToggle}
       isOpen={isOpen}
-      placeholder={inputProps.placeholder || 'Please Select'}
-      name={inputProps.name}
-      onChange={inputProps.onChange}
+      ref={innerRef}
       invertColor={invertColor}
-      data-qaid={`${qaId}-input`}
-      autoComplete="nope"
-    />
+      initialWidth={initialWidth}
+      data-qaid={qaId}
+    >
+      {renderLeftIcon && (
+        <IconWrapper invertColor={invertColor} data-qaid={`${qaId}-left-icon`}>
+          {renderLeftIcon}
+        </IconWrapper>
+      )}
 
-    {!inputProps.readOnly && inputProps.onClear && inputProps.value && (
+      <StyledInput
+        value={inputProps.value}
+        readOnly={inputProps.readOnly}
+        isOpen={isOpen}
+        placeholder={inputProps.placeholder || 'Please Select'}
+        name={inputProps.name}
+        onChange={inputProps.onChange}
+        invertColor={invertColor}
+        data-qaid={`${qaId}-input`}
+        autoComplete="nope"
+      />
+
+      {state === SelectState.loading && (
+        <div style={{ width: '30px' }}>
+          <Spinner data-qaid={`${qaId}-spinner`} size="20px" />
+        </div>
+      )}
+
+      {state === SelectState.error && (
+        <Icon
+          data-qaid={`${qaId}-error-icon`}
+          color="redRedWine"
+          name="alertTriangle"
+          title="Could not load options..."
+        />
+      )}
+
+      {enableClearButton && (
+        <ActionButton
+          invertColor={invertColor}
+          type="button"
+          data-qaid={`${qaId}-clear`}
+          onClick={inputProps.onClear}
+          title="Clear"
+        >
+          <Icon data-qaid={`${qaId}-clear-icon`} name="close" />
+        </ActionButton>
+      )}
+
       <ActionButton
         invertColor={invertColor}
+        isOpen={isOpen}
         type="button"
-        data-qaid={`${qaId}-clear`}
-        onClick={inputProps.onClear}
-        title="Clear"
+        data-qaid={`${qaId}-toggle`}
+        title="Toggle"
       >
-        <Icon data-qaid={`${qaId}-clear-icon`} name="close" />
+        <Icon
+          data-qaid={`${qaId}-toggle-icon`}
+          name={isOpen ? 'caretUp' : 'caretDown'}
+        />
       </ActionButton>
-    )}
-
-    <ActionButton
-      invertColor={invertColor}
-      isOpen={isOpen}
-      type="button"
-      data-qaid={`${qaId}-toggle`}
-      title="Toggle"
-    >
-      <Icon
-        data-qaid={`${qaId}-toggle-icon`}
-        name={isOpen ? 'caretUp' : 'caretDown'}
-      />
-    </ActionButton>
-  </Wrapper>
-);
-
+    </Wrapper>
+  );
+};
 export default Input;

@@ -11,8 +11,8 @@ export default styled.div<WrapperProps>`
     ${open &&
       css`
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: flex-start;
         position: fixed;
         top: ${theme.dimensions.navbarHeight.xs};
         left: 0;
@@ -20,7 +20,7 @@ export default styled.div<WrapperProps>`
         bottom: 0;
         background: #000;
         border-top: 1px solid ${theme.colors.paintItBlack};
-        padding: 0 15px;
+        padding: ${theme.ruler[4]}px;
       `}
 
     ${theme.media.md`
