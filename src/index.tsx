@@ -13,7 +13,6 @@ export { default as Container } from './atoms/Container';
 export { default as Menu } from './atoms/Menu';
 export { default as MenuHeader } from './atoms/MenuHeader';
 export { default as MenuItem } from './atoms/MenuItem';
-export { default as Popper } from './atoms/Popper';
 export { default as Portal } from './atoms/Portal';
 export { default as Grid } from './atoms/Grid';
 export { default as Icon } from './atoms/Icon';
