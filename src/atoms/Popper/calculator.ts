@@ -143,19 +143,6 @@ export const calculateContainerPosition = (
   }
 
   /**
-   * Adjust if an offset has been set
-   */
-  if (offset) {
-    if (offset.vertical) {
-      popoverY += offset.vertical;
-    }
-
-    if (offset.horizontal) {
-      popoverX += offset.horizontal;
-    }
-  }
-
-  /**
    * Adjust coordinates if user wants to keep element in the viewport
    */
   if (keepInViewPort) {
@@ -176,7 +163,7 @@ export const calculateContainerPosition = (
     }
   }
 
-  let contactPoint = 'bottom';
+  let isFlipped = false;
   /**
    * Flip the positioning when there's not enough space in the viewport
    */
@@ -191,12 +178,33 @@ export const calculateContainerPosition = (
 
     if (popoverY < 0) {
       popoverY = anchorEl.top + anchorEl.height;
-      contactPoint = 'bottom';
+      isFlipped = true;
     }
 
     if (popoverY + popoverEl.height > windowHeight) {
       popoverY = anchorEl.top - popoverEl.height;
-      contactPoint = 'top';
+      isFlipped = true;
+    }
+  }
+
+  /**
+   * Adjust if an offset has been set
+   */
+  if (offset) {
+    if (offset.vertical) {
+      if (isFlipped) {
+        popoverY -= offset.vertical;
+      } else {
+        popoverY += offset.vertical;
+      }
+    }
+
+    if (offset.horizontal) {
+      if (isFlipped) {
+        popoverX -= offset.horizontal;
+      } else {
+        popoverX += offset.horizontal;
+      }
     }
   }
 
@@ -205,6 +213,6 @@ export const calculateContainerPosition = (
     y: popoverY,
     width: anchorEl.width,
     height: popoverEl.height,
-    contactPoint
+    isFlipped
   };
 };
