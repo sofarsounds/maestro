@@ -118,7 +118,7 @@ const Popper: React.SFC<Props> = ({
     updateCalculatedPosition(anchorEl);
   });
 
-  const { y, x, width: anchorElWidth, contactPoint } = calculatedPosition;
+  const { y, x, contactPoint, width: anchorElWidth } = calculatedPosition;
 
   return (
     <Container
