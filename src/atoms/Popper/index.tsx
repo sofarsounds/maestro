@@ -17,6 +17,7 @@ export interface PopperProps {
   offset?: Offset;
   keepInViewPort?: boolean;
   flip?: boolean;
+  reactToChange?: number | boolean;
   width?: string;
 }
 
@@ -33,7 +34,7 @@ interface CalculatedPosition {
   y: number;
   width: number;
   height: number;
-  contactPoint: string;
+  isFlipped: boolean;
 }
 
 const Container = styled.div<{ ref?: any }>`
@@ -49,7 +50,8 @@ const Popper: React.SFC<Props> = ({
   keepInViewPort = false,
   flip = false,
   children,
-  width = 'auto'
+  reactToChange,
+  width
 }) => {
   const popoverRef = useRef<HTMLDivElement>();
   const [calculatedPosition, setCalculatedPosition] = useState<
@@ -59,7 +61,7 @@ const Popper: React.SFC<Props> = ({
     y: -10000,
     width: 0,
     height: 0,
-    contactPoint: 'bottom'
+    isFlipped: false
   });
   const [popoverElRect, setPopoverElRect] = useState<PopoverDomEl>({
     width: 0,
@@ -101,7 +103,7 @@ const Popper: React.SFC<Props> = ({
     if (popoverRef.current) {
       setPopoverElRect(getPosition(popoverRef.current));
     }
-  }, [popoverRef]);
+  }, [popoverRef, reactToChange]);
 
   useEffect(() => {
     updateCalculatedPosition(anchorEl);
@@ -118,7 +120,21 @@ const Popper: React.SFC<Props> = ({
     updateCalculatedPosition(anchorEl);
   });
 
-  const { y, x, contactPoint, width: anchorElWidth } = calculatedPosition;
+  const { y, x, isFlipped, width: anchorElWidth } = calculatedPosition;
+
+  if (typeof children === 'function') {
+    return children({
+      ref: popoverRef,
+      isFlipped,
+      style: {
+        top: `${y}px`,
+        left: `${x}px`,
+        zIndex: 500,
+        position: 'fixed',
+        width: width === 'auto' ? anchorElWidth : width
+      }
+    });
+  }
 
   return (
     <Container
@@ -126,10 +142,12 @@ const Popper: React.SFC<Props> = ({
       style={{
         top: `${y}px`,
         left: `${x}px`,
+        zIndex: 500,
+        position: 'fixed',
         width: width === 'auto' ? anchorElWidth : width
       }}
     >
-      {typeof children === 'function' ? children({ contactPoint }) : children}
+      {typeof children === 'function' ? children({ isFlipped }) : children}
     </Container>
   );
 };

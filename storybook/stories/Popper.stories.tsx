@@ -80,7 +80,11 @@ const Example = () => {
         keepInViewPort={boolean('Keep in viewport?', false)}
         flip={boolean('Flip', false)}
       >
-        <StickyStyle>I am Sticky</StickyStyle>
+        {({ ref, style }: any) => (
+          <StickyStyle ref={ref} style={style}>
+            I am Sticky
+          </StickyStyle>
+        )}
       </Popper>
     </div>
   );

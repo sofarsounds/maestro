@@ -28,23 +28,21 @@ interface Props<T> extends OptionsListProps<T> {
   state?: SelectState;
 }
 
-const AdvancedMenu = styled(Menu)<{ isOpen: boolean; contactPoint: string }>`
-  ${({ theme, isOpen, contactPoint }) =>
+const AdvancedMenu = styled(Menu)<{ isOpen: boolean; isFlipped: boolean }>`
+  ${({ isOpen, isFlipped }) =>
     isOpen &&
-    contactPoint === 'bottom' &&
+    !isFlipped &&
     css`
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
-      margin-top: -${theme.borderRadius.default};
     `}
 
-  ${({ theme, isOpen, contactPoint }) =>
+  ${({ isOpen, isFlipped }) =>
     isOpen &&
-    contactPoint === 'top' &&
+    isFlipped &&
     css`
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin-bottom: -${theme.borderRadius.default};
       box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.19);
     `}
 `;
@@ -148,6 +146,7 @@ const Options = <T extends {}>({
     <Portal dom={document.body}>
       <Popper
         anchorEl={innerRef}
+        reactToChange={options.length}
         anchorOrigin={{
           vertical: 'bottom',
           horizontal: 'left'
@@ -156,13 +155,26 @@ const Options = <T extends {}>({
           vertical: 'top',
           horizontal: 'left'
         }}
+        offset={{
+          vertical: -2
+        }}
         width="auto"
         flip
       >
-        {({ contactPoint }: { contactPoint: string }) => (
+        {({
+          ref,
+          style,
+          isFlipped
+        }: {
+          ref: any;
+          style: any;
+          isFlipped: boolean;
+        }) => (
           <AdvancedMenu
+            ref={ref}
+            style={style}
             isOpen={isOpen}
-            contactPoint={contactPoint}
+            isFlipped={isFlipped}
             bordered
             data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
           >
