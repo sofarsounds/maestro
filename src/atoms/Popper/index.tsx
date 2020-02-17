@@ -118,7 +118,7 @@ const Popper: React.SFC<Props> = ({
     updateCalculatedPosition(anchorEl);
   });
 
-  const { y, x, contactPoint } = calculatedPosition;
+  const { y, x, contactPoint, width: anchorElWidth } = calculatedPosition;
 
   return (
     <Container
@@ -126,7 +126,7 @@ const Popper: React.SFC<Props> = ({
       style={{
         top: `${y}px`,
         left: `${x}px`,
-        width: width === 'auto' ? 'undefined' : width
+        width: width === 'auto' ? anchorElWidth : width
       }}
     >
       {typeof children === 'function' ? children({ contactPoint }) : children}
