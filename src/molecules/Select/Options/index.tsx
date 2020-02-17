@@ -1,9 +1,9 @@
 import React from 'react';
+import { Popper } from 'react-popper';
 import styled, { css } from '../../../lib/styledComponents';
 import Menu from '../../../atoms/Menu';
 import MenuItem from '../../../atoms/MenuItem';
 import MenuHeader from '../../../atoms/MenuHeader';
-import Popper from '../../../atoms/Popper';
 import Portal from '../../../atoms/Portal';
 
 import { SelectState } from '../index';
@@ -22,25 +22,25 @@ interface Props<T> extends OptionsListProps<T> {
   qaId?: string;
   options: T[];
   isOpen: boolean;
-  innerRef: React.RefObject<HTMLDivElement>;
   onOptionClick: (option: T) => void;
   groupBy?: (option: T) => string;
   state?: SelectState;
 }
 
-const AdvancedMenu = styled(Menu)<{ isOpen: boolean; contactPoint: string }>`
-  ${({ theme, isOpen, contactPoint }) =>
+const AdvancedMenu = styled(Menu)<{ isOpen: boolean; flipped: boolean }>`
+  z-index: 100;
+
+  ${({ theme, isOpen }) =>
     isOpen &&
-    contactPoint === 'bottom' &&
     css`
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       margin-top: -${theme.borderRadius.default};
     `}
 
-  ${({ theme, isOpen, contactPoint }) =>
+  ${({ theme, isOpen, flipped }) =>
     isOpen &&
-    contactPoint === 'top' &&
+    flipped &&
     css`
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
@@ -50,7 +50,6 @@ const AdvancedMenu = styled(Menu)<{ isOpen: boolean; contactPoint: string }>`
 `;
 
 const Options = <T extends {}>({
-  innerRef,
   isOpen,
   qaId,
   getOptionLabel,
@@ -147,22 +146,33 @@ const Options = <T extends {}>({
   return (
     <Portal dom={document.body}>
       <Popper
-        anchorEl={innerRef}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left'
+        placement="bottom-start"
+        modifiers={{
+          flip: {
+            enabled: true
+          },
+          setPopperWidth: {
+            enabled: true,
+            order: 849,
+            fn: (data: any) => {
+              const { width, left, right } = data.offsets.reference;
+
+              data.styles.width = width;
+              data.offsets.popper.width = width;
+              data.offsets.popper.left = left;
+              data.offsets.popper.right = right;
+
+              return data;
+            }
+          }
         }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left'
-        }}
-        width="auto"
-        flip
       >
-        {({ contactPoint }: { contactPoint: string }) => (
+        {({ ref, style, placement = '' }) => (
           <AdvancedMenu
+            ref={ref}
+            style={style}
             isOpen={isOpen}
-            contactPoint={contactPoint}
+            flipped={placement.includes('top')}
             bordered
             data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
           >
