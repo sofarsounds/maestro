@@ -1,10 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { Manager, Reference, Popper, PopperProps } from 'react-popper';
 import styled, { css } from '../../lib/styledComponents';
 
-import Popper, { PopperProps } from '../../atoms/Popper';
 import Portal from '../../atoms/Portal';
 import Menu from '../../atoms/Menu';
-import { useDisableScroll, useOutsideClick } from '../../hooks';
+import { useOutsideClick, useDisableScroll } from '../../hooks';
 
 import Trigger from './DropdownTrigger';
 
@@ -15,6 +15,10 @@ interface DropdownProps extends PopperProps {
   size?: 'small' | 'large';
   flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   disableScrollWhenOpen?: boolean;
+  offset?: {
+    horizontal?: string;
+    vertical?: string;
+  };
   'data-qaid'?: string;
   id?: string;
 }
@@ -29,30 +33,24 @@ const Dropdown: React.SFC<DropdownProps> = ({
   label,
   renderLabel,
   children,
+  placement = 'bottom-start',
+  modifiers = {
+    flip: {
+      enabled: true
+    }
+  },
   flyoutContainer = true,
   disableScrollWhenOpen = false,
-  anchorOrigin = {
-    vertical: 'bottom',
-    horizontal: 'left'
-  },
-  transformOrigin = {
-    vertical: 'top',
-    horizontal: 'left'
-  },
-  offset,
-  keepInViewPort,
   size,
+  offset,
   'data-qaid': qaId,
   id
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef<any>();
+  const myRef = useRef<any>();
 
+  useOutsideClick(myRef, () => setIsOpen(false));
   useDisableScroll(isOpen, disableScrollWhenOpen);
-
-  useOutsideClick(ref, () => {
-    setIsOpen(false);
-  });
 
   let width = '200px';
   if (size === 'small') {
@@ -61,37 +59,63 @@ const Dropdown: React.SFC<DropdownProps> = ({
     width = '250px';
   }
 
+  const genStyle = (baseStyle: any, placement: string = '') => {
+    const customStyle: any = {};
+    if (offset) {
+      if (offset.vertical) {
+        const isFlipped = placement.includes('top');
+        customStyle[isFlipped ? 'marginBottom' : 'marginTop'] = offset.vertical;
+      }
+
+      if (offset.horizontal) {
+        const isFlipped = placement.includes('left');
+        customStyle[isFlipped ? 'marginRight' : 'marginLeft'] =
+          offset.horizontal;
+      }
+    }
+
+    customStyle.zIndex = 1000;
+    return { ...baseStyle, ...customStyle };
+  };
+
   return (
-    <>
-      <Trigger
-        id={id}
-        ref={ref}
-        onClick={() => setIsOpen(!isOpen)}
-        data-qaid={qaId}
-      >
-        {renderLabel ? renderLabel(isOpen) : label}
-      </Trigger>
+    <Manager>
+      <Reference innerRef={myRef}>
+        {({ ref }) => (
+          <Trigger
+            id={id}
+            ref={ref}
+            onClick={() => setIsOpen(!isOpen)}
+            data-qaid={qaId}
+          >
+            {renderLabel ? renderLabel(isOpen) : label}
+          </Trigger>
+        )}
+      </Reference>
 
       {isOpen && (
         <Portal dom={document.body}>
-          <Popper
-            offset={offset}
-            anchorEl={ref}
-            anchorOrigin={anchorOrigin}
-            transformOrigin={transformOrigin}
-            keepInViewPort={keepInViewPort}
-          >
-            {flyoutContainer ? (
-              <StyledMenu width={width} data-qaid={`${qaId}-flyout`}>
-                {children}
-              </StyledMenu>
-            ) : (
-              children
+          <Popper placement={placement} modifiers={modifiers}>
+            {({ ref, style, placement }) => (
+              <div
+                ref={ref}
+                style={genStyle(style, placement)}
+                data-placement={placement}
+                data-qaid={`${qaId}-flyout`}
+              >
+                {flyoutContainer ? (
+                  <StyledMenu ref={ref} width={width}>
+                    {children}
+                  </StyledMenu>
+                ) : (
+                  children
+                )}
+              </div>
             )}
           </Popper>
         </Portal>
       )}
-    </>
+    </Manager>
   );
 };
 

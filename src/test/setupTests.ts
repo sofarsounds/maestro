@@ -7,4 +7,19 @@ import 'jest-styled-components';
 
 configure({ testIdAttribute: 'data-qaid' });
 
+jest.mock('popper.js', () => {
+  const PopperJS = jest.requireActual('popper.js');
+
+  return class {
+    static placements = PopperJS.placements;
+
+    constructor() {
+      return {
+        destroy: () => {},
+        scheduleUpdate: () => {}
+      };
+    }
+  };
+});
+
 Enzyme.configure({ adapter: new Adapter() });

@@ -21,14 +21,15 @@ storiesOf('Header', module)
   .add('Default', () => (
     <BrowserRouter>
       <div>
-        <Navbar data-qaid="navbar">
+        <Navbar data-qaid="navbar" position="fixed">
           <Navbar.ItemContainer>
             <Select<MultiDimensional>
               invertColor
               options={multiDimensional}
-              getOptionLabel={o => o.title}
+              getOptionLabel={o => `${o.title}, ${o.country}`}
               placeholder="Select City"
               onChange={o => console.log(o)}
+              initialWidth="200px"
             />
           </Navbar.ItemContainer>
 
@@ -38,7 +39,6 @@ storiesOf('Header', module)
             <Navbar.Item>Host</Navbar.Item>
             <Dropdown
               flyoutContainer={false}
-              offset={{ vertical: 10 }}
               renderLabel={isOpen => (
                 <Navbar.Item>
                   <span style={{ marginRight: '5px', color: 'inherit' }}>
