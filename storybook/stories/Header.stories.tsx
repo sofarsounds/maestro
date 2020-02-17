@@ -25,6 +25,7 @@ storiesOf('Header', module)
           <Navbar.ItemContainer>
             <Select<MultiDimensional>
               invertColor
+              initialWidth="175px"
               options={multiDimensional}
               getOptionLabel={o => o.title}
               placeholder="Select City"

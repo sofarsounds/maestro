@@ -101,7 +101,6 @@ const Options = <T extends {}>({
                 {getPopularOptionsTitle
                   ? getPopularOptionsTitle(popularOptions)
                   : `Top ${popularOptions.length}`}
-                ;
               </MenuHeader>
 
               <SimpleOptions
