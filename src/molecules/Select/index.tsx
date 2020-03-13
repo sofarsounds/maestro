@@ -27,6 +27,7 @@ export interface SelectProps<T> extends OptionsListProps<T> {
 
   // typeahead props
   searchable?: boolean;
+  filterBy?: (option: T, query: string) => boolean;
 
   // popular picks
   popularOptions?: T[];
@@ -55,6 +56,7 @@ const Select = <T extends {}>({
   invertColor,
   renderLeftIcon,
   searchable = false,
+  filterBy,
   groupBy,
   initialWidth,
   state = SelectState.ready,
@@ -73,6 +75,7 @@ const Select = <T extends {}>({
     getOptionLabel,
     defaultValue,
     searchable,
+    filterBy,
     defaultOptions,
     onChange
   });

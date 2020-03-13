@@ -7,6 +7,7 @@ interface Props<T> {
   disableScrollWhenOpen?: boolean;
   getOptionLabel: (opt: T) => string;
   searchable: boolean;
+  filterBy?: (option: T, query: string) => boolean;
   defaultOptions: T[];
 }
 
@@ -29,6 +30,7 @@ const useSelect = <T extends {}>({
   getOptionLabel,
   defaultOptions,
   searchable,
+  filterBy,
   onChange
 }: Props<T>): ReturnProps<T> => {
   const ref = useRef<HTMLInputElement>();
@@ -102,6 +104,9 @@ const useSelect = <T extends {}>({
 
     const lower = inputValue.toLowerCase();
     return defaultOptions.filter((o: any) => {
+      if (filterBy) {
+        return filterBy(o, inputValue);
+      }
       const lbl = getOptionLabel(o);
       return lbl.toLowerCase().includes(lower);
     });
