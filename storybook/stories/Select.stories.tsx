@@ -93,6 +93,15 @@ const typeaheadExamples = [
     props: defaultTypeaheadProps
   },
   {
+    title: 'Custom FilterBy',
+    props: {
+      ...defaultTypeaheadProps,
+      getOptionLabel: (opt: any) => `${opt.title}, ${opt.country}`,
+      filterBy: (o: any, q: string) =>
+        o.title.indexOf(q) > -1 || o.country.indexOf(q) > -1
+    }
+  },
+  {
     title: 'Grouped',
     props: {
       ...defaultTypeaheadProps,
