@@ -107,6 +107,31 @@ describe('<Typeahead />', () => {
     expect(newOptions[1]).toHaveTextContent('New York');
   });
 
+  it('filters the options by a custom filterBy function', () => {
+    const { queryByTestId, queryAllByTestId } = setup({
+      filterBy: (option: any, qs: string) => String(option.id) === qs
+    });
+
+    fireEvent.click(queryByTestId('typeahead')!);
+    expect(queryByTestId('typeahead-menu')).toBeInTheDocument();
+
+    const input = queryByTestId('typeahead-input')!;
+    fireEvent.change(input, { target: { value: 'B' } });
+    expect(input).toHaveValue('B');
+
+    // make sure default filter doesn't kick in
+    const options = queryAllByTestId('typeahead-option');
+    expect(options).toHaveLength(0);
+
+    // do some more filtering
+    fireEvent.change(input, { target: { value: '3' } });
+    expect(input).toHaveValue('3');
+
+    const newOptions = queryAllByTestId('typeahead-option');
+    expect(newOptions).toHaveLength(1);
+    expect(newOptions[0]).toHaveTextContent('Bristol');
+  });
+
   it('renders an "empty message" when no options match the search string', () => {
     const { queryByTestId } = setup();
 
