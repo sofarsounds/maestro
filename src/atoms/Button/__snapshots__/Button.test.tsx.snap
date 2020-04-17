@@ -224,70 +224,15 @@ exports[`Buttons Link Button renders correctly 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm sc-AxirZ sc-AxiKw c0"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "Styled(Styled(Styled(styled.button)))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-            "sc-htpNat",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(Styled(styled.button)))>
 </ThemeProvider>
 `;
@@ -516,70 +461,15 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm sc-AxirZ sc-AxiKw c0"
       color="primary"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "Styled(Styled(Styled(styled.button)))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-            "sc-htpNat",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={true}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(Styled(styled.button)))>
 </ThemeProvider>
 `;
@@ -635,8 +525,8 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 }
 
 .c0:after {
-  -webkit-animation: iVXCSc 0.5s linear infinite;
-  animation: iVXCSc 0.5s linear infinite;
+  -webkit-animation: fvtopB 0.5s linear infinite;
+  animation: fvtopB 0.5s linear infinite;
   border: 0.1rem solid #FFFFFF;
   border-radius: 50%;
   border-right-color: transparent;
@@ -839,70 +729,15 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm sc-AxirZ sc-AxiKw c0"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "Styled(Styled(Styled(styled.button)))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-            "sc-htpNat",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={true}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={true}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(Styled(styled.button)))>
 </ThemeProvider>
 `;
@@ -1113,64 +948,15 @@ exports[`Buttons Outline Button renders correctly 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm sc-AxirZ c0"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(Styled(styled.button))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(styled.button))>
 </ThemeProvider>
 `;
@@ -1381,64 +1167,15 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm sc-AxirZ c0"
       color="primary"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(Styled(styled.button))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={true}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(styled.button))>
 </ThemeProvider>
 `;
@@ -1493,8 +1230,8 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
 }
 
 .c0:after {
-  -webkit-animation: iVXCSc 0.5s linear infinite;
-  animation: iVXCSc 0.5s linear infinite;
+  -webkit-animation: fvtopB 0.5s linear infinite;
+  animation: fvtopB 0.5s linear infinite;
   border: 0.1rem solid #FFFFFF;
   border-radius: 50%;
   border-right-color: transparent;
@@ -1691,64 +1428,15 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm sc-AxirZ c0"
       color="black"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(Styled(styled.button))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={true}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="black"
-        disabled={false}
-        loading={true}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(styled.button))>
 </ThemeProvider>
 `;
@@ -1942,58 +1630,15 @@ exports[`Buttons Primary Button renders correctly 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm c0"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
 </ThemeProvider>
 `;
@@ -2187,58 +1832,15 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm c0"
       color="primary"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={true}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
 </ThemeProvider>
 `;
@@ -2289,8 +1891,8 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
 }
 
 .c0:after {
-  -webkit-animation: iVXCSc 0.5s linear infinite;
-  animation: iVXCSc 0.5s linear infinite;
+  -webkit-animation: fvtopB 0.5s linear infinite;
+  animation: fvtopB 0.5s linear infinite;
   border: 0.1rem solid #FFFFFF;
   border-radius: 50%;
   border-right-color: transparent;
@@ -2457,58 +2059,15 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm c0"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={true}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={true}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
 </ThemeProvider>
 `;
@@ -2704,58 +2263,15 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
     onClick={[Function]}
     small={true}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="sc-AxjAm c0"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={true}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
 </ThemeProvider>
 `;

@@ -180,43 +180,9 @@ exports[`<Textarea /> renders correctly 1`] = `
   }
 >
   <styled.textarea>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <textarea
-        className="c0"
-      />
-    </StyledComponent>
+    <textarea
+      className="c0"
+    />
   </styled.textarea>
 </ThemeProvider>
 `;
@@ -404,47 +370,11 @@ exports[`<Textarea /> renders correctly in disabled state 1`] = `
     disabled={true}
     value="Disabled"
   >
-    <StyledComponent
+    <textarea
+      className="c0"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       value="Disabled"
-    >
-      <textarea
-        className="c0"
-        disabled={true}
-        value="Disabled"
-      />
-    </StyledComponent>
+    />
   </styled.textarea>
 </ThemeProvider>
 `;
@@ -632,44 +562,9 @@ exports[`<Textarea /> renders correctly in error state 1`] = `
   <styled.textarea
     hasError={true}
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      hasError={true}
-    >
-      <textarea
-        className="c0"
-      />
-    </StyledComponent>
+    <textarea
+      className="c0"
+    />
   </styled.textarea>
 </ThemeProvider>
 `;
@@ -857,47 +752,11 @@ exports[`<Textarea /> renders correctly with a value 1`] = `
     disabled={true}
     value="I am a textarea"
   >
-    <StyledComponent
+    <textarea
+      className="c0"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.textarea",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "textarea",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       value="I am a textarea"
-    >
-      <textarea
-        className="c0"
-        disabled={true}
-        value="I am a textarea"
-      />
-    </StyledComponent>
+    />
   </styled.textarea>
 </ThemeProvider>
 `;

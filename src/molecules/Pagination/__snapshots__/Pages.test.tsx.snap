@@ -230,54 +230,13 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         data-qaid="-page-1"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="sc-AxjAm c0"
           data-qaid="-page-1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-1"
-            onClick={[Function]}
-          >
-            1
-          </button>
-        </StyledComponent>
+          1
+        </button>
       </Styled(styled.div)>
     </PageBubble>
     <PageBubble
@@ -290,50 +249,12 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
       <Styled(styled.div)
         color="primary"
       >
-        <StyledComponent
+        <div
+          className="sc-AxjAm c1"
           color="primary"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
         >
-          <div
-            className="c1"
-            color="primary"
-          >
-            2
-          </div>
-        </StyledComponent>
+          2
+        </div>
       </Styled(styled.div)>
     </PageBubble>
     <PageBubble
@@ -349,54 +270,13 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         data-qaid="-page-3"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="sc-AxjAm c0"
           data-qaid="-page-3"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-3"
-            onClick={[Function]}
-          >
-            3
-          </button>
-        </StyledComponent>
+          3
+        </button>
       </Styled(styled.div)>
     </PageBubble>
     <PageBubble
@@ -412,54 +292,13 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         data-qaid="-page-4"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="sc-AxjAm c0"
           data-qaid="-page-4"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-4"
-            onClick={[Function]}
-          >
-            4
-          </button>
-        </StyledComponent>
+          4
+        </button>
       </Styled(styled.div)>
     </PageBubble>
     <PageBubble
@@ -475,54 +314,13 @@ exports[`Pagination <Pages /> renders correctly 1`] = `
         data-qaid="-page-5"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="sc-AxjAm c0"
           data-qaid="-page-5"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-5"
-            onClick={[Function]}
-          >
-            5
-          </button>
-        </StyledComponent>
+          5
+        </button>
       </Styled(styled.div)>
     </PageBubble>
   </Pages>

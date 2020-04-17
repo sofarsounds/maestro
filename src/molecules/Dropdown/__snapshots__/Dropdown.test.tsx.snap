@@ -166,65 +166,12 @@ exports[`<Dropdown /> renders correctly 1`] = `
     <styled.div
       onClick={[Function]}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
-              "isStatic": true,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  border: none;
-  box-shadow: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={
-          Object {
-            "current": .c0 {
-  border: none;
-  box-shadow: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-}
-
-<div
-              class="c0"
-            >
-              I am a dropdown
-            </div>,
-          }
-        }
+      <div
+        className="c0"
         onClick={[Function]}
       >
-        <div
-          className="c0"
-          onClick={[Function]}
-        >
-          I am a dropdown
-        </div>
-      </StyledComponent>
+        I am a dropdown
+      </div>
     </styled.div>
   </Dropdown>
 </ThemeProvider>

@@ -221,8 +221,7 @@ exports[`Select <Input /> it renders correctly 1`] = `
 }
 
 .c2:focus {
-  border-color: #DBDBDB;
-  outline: none;
+  border-color: #DBDBDB outline:none;
 }
 
 .c0 {
@@ -453,387 +452,41 @@ exports[`Select <Input /> it renders correctly 1`] = `
       isOpen={false}
       onClick={[MockFunction]}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bxivhb",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
-        isOpen={false}
+      <div
+        className="c0"
         onClick={[MockFunction]}
       >
-        <div
-          className="c0"
-          onClick={[MockFunction]}
+        <styled.input
+          isOpen={false}
+          placeholder="I am a placeholder"
+          readOnly={false}
         >
-          <styled.input
-            isOpen={false}
+          <input
+            className="c1"
             placeholder="I am a placeholder"
             readOnly={false}
+          />
+        </styled.input>
+        <styled.button
+          isOpen={false}
+        >
+          <button
+            className="c2"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-ifAKCX",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-ifAKCX",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              isOpen={false}
-              placeholder="I am a placeholder"
-              readOnly={false}
+            <Icon
+              name="caretDown"
             >
-              <input
-                className="c1"
-                placeholder="I am a placeholder"
-                readOnly={false}
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.button
-            isOpen={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-",
-                      [Function],
-                      "
-  }
-",
-                    ],
-                  },
-                  "displayName": "styled.button",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-htpNat",
-                  "target": "button",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              isOpen={false}
-            >
-              <button
-                className="c2"
+              <styled.i
+                className="icon-caretDown "
               >
-                <Icon
-                  name="caretDown"
-                >
-                  <styled.i
-                    className="icon-caretDown "
-                  >
-                    <StyledComponent
-                      className="icon-caretDown "
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
-                            "isStatic": false,
-                            "lastClassName": "c3",
-                            "rules": Array [
-                              "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                              [Function],
-                              ";
-  }
-
-  ",
-                              [Function],
-                              "
-
-  ",
-                              "
-    ",
-                              "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    ",
-                              "
-  ",
-                              ";
-",
-                            ],
-                          },
-                          "displayName": "styled.i",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
-                          "target": "i",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <i
-                        className="icon-caretDown  c3"
-                      />
-                    </StyledComponent>
-                  </styled.i>
-                </Icon>
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </div>
-      </StyledComponent>
+                <i
+                  className="c3 icon-caretDown "
+                />
+              </styled.i>
+            </Icon>
+          </button>
+        </styled.button>
+      </div>
     </styled.div>
   </Input>
 </ThemeProvider>

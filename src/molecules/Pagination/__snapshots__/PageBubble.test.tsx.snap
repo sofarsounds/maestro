@@ -189,54 +189,13 @@ exports[`Pagination <PageBubble /> renders correctly 1`] = `
       data-qaid="-page-2"
       onClick={[MockFunction]}
     >
-      <StyledComponent
-        as="button"
-        clickable={true}
+      <button
+        className="sc-AxjAm c0"
         data-qaid="-page-2"
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "Styled(styled.div)",
-            "foldedComponentIds": Array [
-              "sc-bdVaJa",
-            ],
-            "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <button
-          className="c0"
-          data-qaid="-page-2"
-          onClick={[MockFunction]}
-        >
-          2
-        </button>
-      </StyledComponent>
+        2
+      </button>
     </Styled(styled.div)>
   </PageBubble>
 </ThemeProvider>
@@ -426,50 +385,12 @@ exports[`Pagination <PageBubble /> renders correctly when active 1`] = `
     <Styled(styled.div)
       color="primary"
     >
-      <StyledComponent
+      <div
+        className="sc-AxjAm c0"
         color="primary"
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "Styled(styled.div)",
-            "foldedComponentIds": Array [
-              "sc-bdVaJa",
-            ],
-            "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
       >
-        <div
-          className="c0"
-          color="primary"
-        >
-          5
-        </div>
-      </StyledComponent>
+        5
+      </div>
     </Styled(styled.div)>
   </PageBubble>
 </ThemeProvider>

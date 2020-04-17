@@ -163,45 +163,12 @@ exports[`Select <Menu /> it renders correctly 1`] = `
     isSelect={false}
     width={200}
   >
-    <StyledComponent
-      depth={2}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "styled.ul",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "ul",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      isSelect={false}
+    <ul
+      className="c0"
       width={200}
     >
-      <ul
-        className="c0"
-        width={200}
-      >
-        I am a child component
-      </ul>
-    </StyledComponent>
+      I am a child component
+    </ul>
   </styled.ul>
 </ThemeProvider>
 `;

@@ -30,39 +30,6 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   user-select: none;
 }
 
-.c3 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #039842;
-  color: #FFFFFF;
-  font-weight: 600;
-  margin: 0 4px;
-}
-
 .c0 {
   width: 36px;
   height: 36px;
@@ -96,6 +63,39 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 
 .c0:hover {
   background-color: rgba(17,17,17,0.1);
+}
+
+.c3 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #039842;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin: 0 4px;
 }
 
 .c2 {
@@ -465,352 +465,32 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         data-qaid="-page-1"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c0"
           data-qaid="-page-1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-1"
-            onClick={[Function]}
-          >
-            1
-          </button>
-        </StyledComponent>
+          1
+        </button>
       </Styled(styled.div)>
     </PageBubble>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c1"
         >
-          <div
-            className="c1"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                          [Function],
-                          ";
-  }
-
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="icon-ellipsisHorizontal  c2"
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c2 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <Pages
@@ -833,54 +513,13 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           data-qaid="-page-5"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0"
             data-qaid="-page-5"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-5"
-              onClick={[Function]}
-            >
-              5
-            </button>
-          </StyledComponent>
+            5
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -893,50 +532,12 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         <Styled(styled.div)
           color="primary"
         >
-          <StyledComponent
+          <div
+            className="c3"
             color="primary"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
           >
-            <div
-              className="c3"
-              color="primary"
-            >
-              6
-            </div>
-          </StyledComponent>
+            6
+          </div>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -952,353 +553,33 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           data-qaid="-page-7"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0"
             data-qaid="-page-7"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-7"
-              onClick={[Function]}
-            >
-              7
-            </button>
-          </StyledComponent>
+            7
+          </button>
         </Styled(styled.div)>
       </PageBubble>
     </Pages>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c1"
         >
-          <div
-            className="c1"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                          [Function],
-                          ";
-  }
-
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="icon-ellipsisHorizontal  c2"
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c2 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <PageBubble
@@ -1313,54 +594,13 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         data-qaid="-page-15"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c0"
           data-qaid="-page-15"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-15"
-            onClick={[Function]}
-          >
-            15
-          </button>
-        </StyledComponent>
+          15
+        </button>
       </Styled(styled.div)>
     </PageBubble>
   </Compact>
@@ -1836,50 +1076,12 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         <Styled(styled.div)
           color="primary"
         >
-          <StyledComponent
+          <div
+            className="c0"
             color="primary"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
           >
-            <div
-              className="c0"
-              color="primary"
-            >
-              1
-            </div>
-          </StyledComponent>
+            1
+          </div>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -1895,54 +1097,13 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-2"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c1"
             data-qaid="-page-2"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-2"
-              onClick={[Function]}
-            >
-              2
-            </button>
-          </StyledComponent>
+            2
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -1958,54 +1119,13 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-3"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c1"
             data-qaid="-page-3"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-3"
-              onClick={[Function]}
-            >
-              3
-            </button>
-          </StyledComponent>
+            3
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -2021,54 +1141,13 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-4"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c1"
             data-qaid="-page-4"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-4"
-              onClick={[Function]}
-            >
-              4
-            </button>
-          </StyledComponent>
+            4
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -2084,353 +1163,33 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-5"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c1"
             data-qaid="-page-5"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-5"
-              onClick={[Function]}
-            >
-              5
-            </button>
-          </StyledComponent>
+            5
+          </button>
         </Styled(styled.div)>
       </PageBubble>
     </Pages>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c2",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c2"
         >
-          <div
-            className="c2"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                          [Function],
-                          ";
-  }
-
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="icon-ellipsisHorizontal  c3"
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c3 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <PageBubble
@@ -2445,54 +1204,13 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         data-qaid="-page-15"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c1"
           data-qaid="-page-15"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c1"
-            data-qaid="-page-15"
-            onClick={[Function]}
-          >
-            15
-          </button>
-        </StyledComponent>
+          15
+        </button>
       </Styled(styled.div)>
     </PageBubble>
   </Compact>
@@ -2529,39 +1247,6 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   user-select: none;
 }
 
-.c3 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #039842;
-  color: #FFFFFF;
-  font-weight: 600;
-  margin: 0 4px;
-}
-
 .c0 {
   width: 36px;
   height: 36px;
@@ -2595,6 +1280,39 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c0:hover {
   background-color: rgba(17,17,17,0.1);
+}
+
+.c3 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #039842;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin: 0 4px;
 }
 
 .c2 {
@@ -2964,352 +1682,32 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         data-qaid="-page-1"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c0"
           data-qaid="-page-1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c3",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-1"
-            onClick={[Function]}
-          >
-            1
-          </button>
-        </StyledComponent>
+          1
+        </button>
       </Styled(styled.div)>
     </PageBubble>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c1"
         >
-          <div
-            className="c1"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "
-  font-family: 'sofarsounds-icon-font' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  &:before {
-    color: ",
-                          [Function],
-                          ";
-  }
-
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="icon-ellipsisHorizontal  c2"
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c2 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <Pages
@@ -3332,54 +1730,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-11"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0"
             data-qaid="-page-11"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-11"
-              onClick={[Function]}
-            >
-              11
-            </button>
-          </StyledComponent>
+            11
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3395,54 +1752,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-12"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0"
             data-qaid="-page-12"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-12"
-              onClick={[Function]}
-            >
-              12
-            </button>
-          </StyledComponent>
+            12
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3458,54 +1774,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-13"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0"
             data-qaid="-page-13"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-13"
-              onClick={[Function]}
-            >
-              13
-            </button>
-          </StyledComponent>
+            13
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3521,54 +1796,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-14"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0"
             data-qaid="-page-14"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-14"
-              onClick={[Function]}
-            >
-              14
-            </button>
-          </StyledComponent>
+            14
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3581,50 +1815,12 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         <Styled(styled.div)
           color="primary"
         >
-          <StyledComponent
+          <div
+            className="c3"
             color="primary"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
           >
-            <div
-              className="c3"
-              color="primary"
-            >
-              15
-            </div>
-          </StyledComponent>
+            15
+          </div>
         </Styled(styled.div)>
       </PageBubble>
     </Pages>

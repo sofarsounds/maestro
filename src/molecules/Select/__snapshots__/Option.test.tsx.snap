@@ -171,43 +171,12 @@ exports[`Select <Menu /> it renders correctly 1`] = `
     <styled.li
       onClick={[Function]}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.li",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "li",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <li
+        className="c0"
         onClick={[Function]}
       >
-        <li
-          className="c0"
-          onClick={[Function]}
-        >
-          cardiff
-        </li>
-      </StyledComponent>
+        cardiff
+      </li>
     </styled.li>
   </Option>
 </ThemeProvider>

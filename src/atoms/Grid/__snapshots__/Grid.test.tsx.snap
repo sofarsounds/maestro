@@ -158,152 +158,31 @@ exports[`Grid renders a Grid with a custom column gap 1`] = `
   <styled.div
     colGap="1px"
   >
-    <StyledComponent
-      colGap="1px"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
-      >
-        <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            >
-              Col 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            >
-              Col 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            >
-              Col 3
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Col 1
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Col 2
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Col 3
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
 </ThemeProvider>
 `;
@@ -465,115 +344,24 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
   <styled.div
     gap="100px"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      gap="100px"
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
-      >
-        <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            >
-              Col 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            >
-              Col 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Col 1
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Col 2
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
 </ThemeProvider>
 `;
@@ -738,242 +526,55 @@ exports[`Grid renders a Grid with a custom row and column gap 1`] = `
     colGap="1px"
     rowGap="10px"
   >
-    <StyledComponent
-      colGap="1px"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      rowGap="10px"
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
+      <styled.div
+        xs={6}
       >
-        <styled.div
-          xs={6}
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={6}
-          >
-            <div
-              className="c1"
-            >
-              Row 3
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          xs={6}
+          Row 3
+        </div>
+      </styled.div>
+      <styled.div
+        xs={6}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={6}
-          >
-            <div
-              className="c1"
-            >
-              Row 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          xs={6}
+          Row 1
+        </div>
+      </styled.div>
+      <styled.div
+        xs={6}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={6}
-          >
-            <div
-              className="c1"
-            >
-              Row 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          xs={6}
+          Row 1
+        </div>
+      </styled.div>
+      <styled.div
+        xs={6}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={6}
-          >
-            <div
-              className="c1"
-            >
-              Row 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          xs={6}
+          Row 2
+        </div>
+      </styled.div>
+      <styled.div
+        xs={6}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={6}
-          >
-            <div
-              className="c1"
-            >
-              Row 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+          Row 2
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
 </ThemeProvider>
 `;
@@ -1136,161 +737,37 @@ exports[`Grid renders a Grid with a custom row gap 1`] = `
   <styled.div
     colGap="1px"
   >
-    <StyledComponent
-      colGap="1px"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
+      <styled.div
+        xs={12}
       >
-        <styled.div
-          xs={12}
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={12}
-          >
-            <div
-              className="c1"
-            >
-              Row 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          xs={12}
+          Row 1
+        </div>
+      </styled.div>
+      <styled.div
+        xs={12}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={12}
-          >
-            <div
-              className="c1"
-            >
-              Row 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          xs={12}
+          Row 2
+        </div>
+      </styled.div>
+      <styled.div
+        xs={12}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            xs={12}
-          >
-            <div
-              className="c1"
-            >
-              Row 3
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+          Row 3
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
 </ThemeProvider>
 `;
@@ -1468,132 +945,34 @@ exports[`Grid renders the Grid correctly 1`] = `
   }
 >
   <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
+      <styled.div
+        lg={4}
+        md={4}
+        sm={4}
+        xs={12}
       >
-        <styled.div
-          lg={4}
-          md={4}
-          sm={4}
-          xs={12}
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            lg={4}
-            md={4}
-            sm={4}
-            xs={12}
-          >
-            <div
-              className="c1"
-            >
-              Col 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          lg={4}
-          md={4}
-          sm={4}
-          xs={12}
+          Col 1
+        </div>
+      </styled.div>
+      <styled.div
+        lg={4}
+        md={4}
+        sm={4}
+        xs={12}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            lg={4}
-            md={4}
-            sm={4}
-            xs={12}
-          >
-            <div
-              className="c1"
-            >
-              Col 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+          Col 2
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
 </ThemeProvider>
 `;

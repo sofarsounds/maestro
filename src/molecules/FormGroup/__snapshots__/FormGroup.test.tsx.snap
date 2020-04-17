@@ -212,163 +212,38 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
     required={true}
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
-              "isStatic": true,
-              "lastClassName": "eCMmlJ",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
-        >
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-VigVT",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c0"
-              >
-                An error field
-                 
-                *
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
-            placeholder="Test Input"
+        <styled.span>
+          <span
+            className="c0"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={true}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.span
+            An error field
+             
+            *
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={true}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
+            placeholder="Test Input"
+          />
+        </styled.input>
+        <styled.span
+          color="#EF4423"
+        >
+          <span
+            className="c2"
             color="#EF4423"
           >
-            <StyledComponent
-              color="#EF4423"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c2"
-                color="#EF4423"
-              >
-                Something went wrong
-              </span>
-            </StyledComponent>
-          </styled.span>
-        </div>
-      </StyledComponent>
+            Something went wrong
+          </span>
+        </styled.span>
+      </div>
     </styled.div>
   </FormGroup>
 </ThemeProvider>
@@ -586,163 +461,38 @@ exports[`<FormGroup /> renders a error message 1`] = `
     required={true}
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
-              "isStatic": true,
-              "lastClassName": "eCMmlJ",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
-        >
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-VigVT",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c0"
-              >
-                An error field
-                 
-                *
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
-            placeholder="Test Input"
+        <styled.span>
+          <span
+            className="c0"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={true}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.span
+            An error field
+             
+            *
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={true}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
+            placeholder="Test Input"
+          />
+        </styled.input>
+        <styled.span
+          color="#EF4423"
+        >
+          <span
+            className="c2"
             color="#EF4423"
           >
-            <StyledComponent
-              color="#EF4423"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c2"
-                color="#EF4423"
-              >
-                Something went wrong
-              </span>
-            </StyledComponent>
-          </styled.span>
-        </div>
-      </StyledComponent>
+            Something went wrong
+          </span>
+        </styled.span>
+      </div>
     </styled.div>
   </FormGroup>
 </ThemeProvider>
@@ -939,118 +689,28 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
     required={true}
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
-              "isStatic": true,
-              "lastClassName": "eCMmlJ",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
-        >
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-VigVT",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c0"
-              >
-                A required field
-                 
-                *
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={false}
-            placeholder="Test Input"
+        <styled.span>
+          <span
+            className="c0"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={false}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-        </div>
-      </StyledComponent>
+            A required field
+             
+            *
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={false}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
+            placeholder="Test Input"
+          />
+        </styled.input>
+      </div>
     </styled.div>
   </FormGroup>
 </ThemeProvider>
@@ -1246,117 +906,27 @@ exports[`<FormGroup /> renders correctly 1`] = `
     label="A Label"
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-jTzLTM",
-              "isStatic": true,
-              "lastClassName": "eCMmlJ",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-jTzLTM",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
-        >
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-VigVT",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c0"
-              >
-                A Label
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={false}
-            placeholder="Test Input"
+        <styled.span>
+          <span
+            className="c0"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-fjdhpX",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-fjdhpX",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={false}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-        </div>
-      </StyledComponent>
+            A Label
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={false}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
+            placeholder="Test Input"
+          />
+        </styled.input>
+      </div>
     </styled.div>
   </FormGroup>
 </ThemeProvider>
