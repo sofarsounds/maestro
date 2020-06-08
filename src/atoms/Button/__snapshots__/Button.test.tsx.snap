@@ -39,7 +39,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -66,7 +66,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -91,7 +91,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -357,7 +357,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -384,7 +384,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -409,7 +409,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -685,7 +685,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -731,7 +731,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -762,7 +762,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -1025,7 +1025,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -1052,7 +1052,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -1314,7 +1314,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -1341,7 +1341,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -1615,7 +1615,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -1661,7 +1661,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: rgba(16,173,82,0.1);
 }
 
@@ -1687,7 +1687,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   color: #111111;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #DBDBDB;
 }
 
@@ -1944,7 +1944,7 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -2198,7 +2198,7 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -2462,7 +2462,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 
@@ -2737,7 +2737,7 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
   background-color: #006721;
 }
 
-.c0:focus {
+.c0:active {
   background-color: #039842;
 }
 

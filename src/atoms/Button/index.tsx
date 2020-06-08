@@ -85,7 +85,7 @@ export const PrimaryButton = styled(BaseButton)`
       background-color: ${theme.colors.green900};
     }
 
-    &:focus {
+    &:active {
       background-color: ${theme.colors.green700};
     }
 
@@ -149,7 +149,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
       }
     }
 
-    &:focus {
+    &:active {
       background-color: ${makeOpaque(theme.colors.green600, 0.1)};
     }
 
@@ -180,7 +180,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
           }
         }
 
-        &:focus {
+        &:active {
           background-color: ${theme.colors.macyGrey};
         }
       `}
@@ -205,7 +205,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
           }
         }
 
-        &:focus {
+        &:active {
           background-color: ${theme.colors.backToBlack};
         }
       `}
@@ -239,7 +239,7 @@ export const LinkButton = styled(OutlineButton)`
       }
     }
 
-    &:focus {
+    &:active {
       background-color: ${makeOpaque(theme.colors.green600, 0.1)};
     }
 
