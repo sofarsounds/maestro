@@ -70,7 +70,10 @@ const responsiveSize = (size) => {
 | 10     | `number`  | `[8, 8, 12]`                
 
 
+
 In fan-experience currently we use all different size spacers from size 2 to 20. A simpler, more constrained spacing interface could allow us to go back and make all of this fan-experience code more consistent and responsive. It would also be necessary to clean up instances where we're not currently using Spacer components but should be, since this will only have impact if we're using Spacers consistently across our frontends.
+
+
 
 
 ## Advantages
