@@ -40,10 +40,8 @@ Table below contains all types of props available in the Spacer component
 ## Spacer Helper
 
 
-```
+```js
 import { ResponsiveSpacer as Spacer } from '@sofarsounds/maestro';
-
-<ResponsiveSpacer size={6} /> // equivalent to <Spacer mb={[4, 4, 6]} mr={[4, 4, 6]} />
 
 const ResponsiveSpacer = ({ size }) => (
   <Spacer m={responsiveSize(size)} />
@@ -52,6 +50,10 @@ const ResponsiveSpacer = ({ size }) => (
 const responsiveSize = (size) => {
   // fetch responsive size from the scale
 }
+```
+
+```html
+<ResponsiveSpacer size={6} /> // equivalent to <Spacer mb={[4, 4, 6]} mr={[4, 4, 6]} />
 ```
 
 
