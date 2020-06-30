@@ -78,7 +78,7 @@ In fan-experience currently we use all different size spacers from size 2 to 20.
 It would also be necessary to clean up instances where we're not currently using Spacer components but should be, since this will only have impact if we're using Spacers consistently across our frontends. We'll also need to clean up our Typography components and any other elements that might define their own spacing. Generally it's better for the compositions at the page or organism level to define spacing between components, but whenever it's necessary for components to define spacing we should at least make sure it's responsive.
 
 
-## Helper Advantages
+## Helper Requirements
 
 **Backwards compatible** - all existing Spacers would continue to work and can be upgraded with minimal effort
 
