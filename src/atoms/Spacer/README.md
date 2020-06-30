@@ -69,5 +69,10 @@ const responsiveSize = (size) => {
 
 
 **Backwards compatible** - all existing Spacers would continue to work and can be upgraded with minimal effort
+
 **Responsive** - automatically works on different screen sizes without any developer input
+
+
+
+
 
