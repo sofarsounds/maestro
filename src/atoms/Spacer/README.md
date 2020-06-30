@@ -76,7 +76,7 @@ In fan-experience currently we use all different size spacers from size 2 to 20.
 
 
 
-## Advantages
+## Helper Advantages
 
 **Backwards compatible** - all existing Spacers would continue to work and can be upgraded with minimal effort
 
