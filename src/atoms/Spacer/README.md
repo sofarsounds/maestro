@@ -39,6 +39,7 @@ Table below contains all types of props available in the Spacer component
 
 ## Spacer Helper
 
+
 ```
 import { ResponsiveSpacer as Spacer } from '@sofarsounds/maestro';
 
@@ -54,6 +55,7 @@ const responsiveSize = (size) => {
 ```
 
 
+
 | Size   | Type      | Responsive Size         
 | :----- | :-----    | :-------------- 
 | 1      | `number`  | `[1, 1, 1]`                
@@ -66,6 +68,7 @@ const responsiveSize = (size) => {
 | 8      | `number`  | `[6, 6, 9]`                
 | 9      | `number`  | `[7, 7, 10]`                
 | 10     | `number`  | `[8, 8, 12]`                
+
 
 
 **Backwards compatible** - all existing Spacers would continue to work and can be upgraded with minimal effort
