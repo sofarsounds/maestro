@@ -43,17 +43,16 @@ Table below contains all types of props available in the Spacer component
 ```
 import { ResponsiveSpacer as Spacer } from '@sofarsounds/maestro';
 
-<ResponsiveSpacer size={6} /> // equivalent to <Spacer mb={[4, 4, 6]}
+<ResponsiveSpacer size={6} /> // equivalent to <Spacer mb={[4, 4, 6]} mr={[4, 4, 6]} />
 
 const ResponsiveSpacer = ({ size }) => (
-  <Spacer mb={responsiveSize(size)}
+  <Spacer m={responsiveSize(size)} />
 );
 
 const responsiveSize = (size) => {
   // fetch responsive size from the scale
 }
 ```
-
 
 
 | Size   | Type      | Responsive Size         
@@ -70,10 +69,11 @@ const responsiveSize = (size) => {
 | 10     | `number`  | `[8, 8, 12]`                
 
 
+In maestro our Typography components have responsiveness built in, but our normal usage of the Spacer component passes a `number` instead of a `number[]` as the margin prop which results in non-responsive spacing and inconsistencies between Typography size and spacing size (for example on small screens).
 
-In fan-experience currently we use all different size spacers from size 2 to 20. A simpler, more constrained spacing interface could allow us to go back and make all of this fan-experience code more consistent and responsive. It would also be necessary to clean up instances where we're not currently using Spacer components but should be, since this will only have impact if we're using Spacers consistently across our frontends.
+In fan-experience currently we use all different size spacers from size 2 to 20. A simpler, more constrainer scale might have some advantages for ease of development and communication between dev and design. 
 
-
+It would also be necessary to clean up instances where we're not currently using Spacer components but should be, since this will only have impact if we're using Spacers consistently across our frontends. We'll also need to clean up our Typography components and any other elements that might define their own spacing. Generally it's better for the compositions at the page or organism level to define spacing between components, but whenever it's necessary for components to define spacing we should at least make sure it's responsive.
 
 
 ## Helper Advantages
