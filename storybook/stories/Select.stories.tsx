@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 
 import { Icon, Select, SelectState, MenuItem } from '../../src';
 
-import { cities, multiDimensional, MultiDimensional } from '../helpers/cities';
+import { multiDimensional, MultiDimensional } from '../helpers/cities';
 import { Spacer, Boundary } from '../helpers/components';
 
 const defaultProps = {

@@ -24,10 +24,6 @@ const Boundary = styled(Bound)`
   margin-bottom: 25px;
 `;
 
-const Spacer = styled.div`
-  height: 25px;
-`;
-
 const headingTags = [H1, H2, H3, H4, H5, H6];
 const bodyTags = [Body, Body2];
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
 import { Spacer } from '../../src';
@@ -43,7 +42,7 @@ storiesOf('Spacer', module)
         The main ruler uses multiple of 4s from 0 up to 80 as displayed below.
       </p>
       <Ruler>
-        {Array.from({ length: 21 }, (e, i) => (
+        {Array.from({ length: 21 }, (_e, i) => (
           <LineContainer small={i % 2 === 1} mr={4}>
             <NumberDiv>{i * 4}</NumberDiv>
             <Line small={i % 2 === 1} />

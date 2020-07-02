@@ -9,8 +9,6 @@ export interface AnchorEl {
   top: number;
 }
 
-type Position = 'top' | 'bottom' | 'left' | 'right';
-
 export interface AnchorOrigin {
   vertical?: string;
   horizontal?: string;

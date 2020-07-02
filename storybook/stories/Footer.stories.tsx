@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
-import { BrowserRouter } from 'react-router-dom';
+import { withKnobs } from '@storybook/addon-knobs';
 
 import { Footer, Grid, Textfield } from '../../src';
 

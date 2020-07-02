@@ -21,9 +21,6 @@ export interface PopperProps {
   width?: string;
 }
 
-interface PopperReturnProps {
-  contactPoint: string;
-}
 interface Props extends PopperProps {
   anchorEl: any;
   children: any;

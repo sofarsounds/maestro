@@ -9,7 +9,6 @@ const Typography = styled.h1<any>`
 `;
 
 const generateTestCase = (
-  component: any,
   cssProperty: string,
   cssVariants: string[] | boolean[] | number[],
   propVariant: string
@@ -40,7 +39,6 @@ describe('Util: withTypography', () => {
 
   it('adds align properties to element', () => {
     generateTestCase(
-      Typography,
       'text-align',
       ['center', 'left', 'right', 'none'],
       'align'
@@ -55,12 +53,11 @@ describe('Util: withTypography', () => {
   });
 
   it('adds a line height property to element', () => {
-    generateTestCase(Typography, 'line-height', ['12', '24'], 'lineHeight');
+    generateTestCase('line-height', ['12', '24'], 'lineHeight');
   });
 
   it('adds font-weigh property to element', () => {
     generateTestCase(
-      Typography,
       'font-weight',
       ['lighter', 'regular', 'bold'],
       'fontWeight'

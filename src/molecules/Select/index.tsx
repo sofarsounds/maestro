@@ -77,6 +77,7 @@ const Select = <T extends {}>({
     searchable,
     filterBy,
     defaultOptions,
+    // @ts-ignore
     onChange
   });
 
