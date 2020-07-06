@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 
 import { Icon } from '../../src';
 import Registry from '../../src/atoms/Icon/registry';

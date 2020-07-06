@@ -1,11 +1,5 @@
-import React from 'react';
 import styled, { css } from '../../lib/styledComponents';
 import { Overline } from '../Typography';
-
-interface Props {
-  children: string | React.ReactNode;
-  'data-qaid'?: string;
-}
 
 export default styled(Overline)`
   ${({ theme }) => css`

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { theme } from '../../src';
 
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
 
 export const Row = styled.div`
   display: grid;

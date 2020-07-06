@@ -64,13 +64,14 @@ const theme: Theme = {
   media: Object.keys(breakPoints).reduce((acc, label: string) => {
     acc[label] = (...args: any) => css`
       @media (min-width: ${breakPoints[label]}px) {
+        // @ts-ignore
         ${css.call(undefined, ...args)};
       }
     `;
     return acc;
   }, {}),
 
-  ruler: Array.from({ length: 21 }, (e, i) => i * 4),
+  ruler: Array.from({ length: 21 }, (_e, i) => i * 4),
   zIndex: {
     navbar: 100
   },

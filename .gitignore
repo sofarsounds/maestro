@@ -10,3 +10,4 @@ storybook-static
 # Jetbrains IDEs
 .idea
 
+.npmrc

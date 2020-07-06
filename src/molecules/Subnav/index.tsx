@@ -70,6 +70,7 @@ const Link = styled(RouterLink)<LinkProps>`
   `}
 `;
 
+// @ts-ignore
 const Subnav: React.SFC<SubnavProps> & Composition = ({
   children,
   'data-qaid': qaId,
@@ -80,6 +81,7 @@ const Subnav: React.SFC<SubnavProps> & Composition = ({
   </Container>
 );
 
+// @ts-ignore
 Subnav.Link = Link;
 
 export default Subnav;
