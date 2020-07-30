@@ -159,6 +159,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -245,6 +249,18 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
 
 .c1.icon-search:before {
   content: '\\e830';
+}
+
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 <ThemeProvider
@@ -574,6 +590,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -660,6 +680,18 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                         "
@@ -861,6 +893,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -947,6 +983,18 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
 
 .c1.icon-search:before {
   content: '\\e830';
+}
+
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 <ThemeProvider
@@ -1280,6 +1328,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -1366,6 +1418,18 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                         "
@@ -1559,6 +1623,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -1645,6 +1713,18 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-search:before {
   content: '\\e830';
+}
+
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 <ThemeProvider
@@ -1974,6 +2054,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -2060,6 +2144,18 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                         "
@@ -2261,6 +2357,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -2347,6 +2447,18 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-search:before {
   content: '\\e830';
+}
+
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 <ThemeProvider
@@ -2680,6 +2792,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -2766,6 +2882,18 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                         "
