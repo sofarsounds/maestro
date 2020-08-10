@@ -33,6 +33,7 @@ enum Registry {
   calendar = 'e901',
   time = 'e929',
   timeHand = 'e928',
+  calendarAdd = 'e92d',
 
   // others
   byob = 'e900',
@@ -56,7 +57,10 @@ enum Registry {
   musicLove = 'e90a',
   plus = 'e924',
   padlock = 'e925',
-  search = 'e830'
+  search = 'e830',
+  music = 'e932',
+  mail = 'e931',
+  expandHorizontal = 'e92e'
 }
 
 export default Registry;

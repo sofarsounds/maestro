@@ -256,6 +256,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e928';
 }
 
+.c2.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c2.icon-byob:before {
   content: '\\e900';
 }
@@ -342,6 +346,18 @@ exports[`<Pagination /> renders correctly 1`] = `
 
 .c2.icon-search:before {
   content: '\\e830';
+}
+
+.c2.icon-music:before {
+  content: '\\e932';
+}
+
+.c2.icon-mail:before {
+  content: '\\e931';
+}
+
+.c2.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 .c0 {
@@ -720,6 +736,10 @@ exports[`<Pagination /> renders correctly 1`] = `
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -806,6 +826,18 @@ exports[`<Pagination /> renders correctly 1`] = `
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                                 "
@@ -1325,6 +1357,10 @@ exports[`<Pagination /> renders correctly 1`] = `
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -1411,6 +1447,18 @@ exports[`<Pagination /> renders correctly 1`] = `
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                                   "
@@ -1690,6 +1738,10 @@ exports[`<Pagination /> renders correctly 1`] = `
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -1776,6 +1828,18 @@ exports[`<Pagination /> renders correctly 1`] = `
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                                 "

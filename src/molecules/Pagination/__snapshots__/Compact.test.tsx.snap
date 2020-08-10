@@ -222,6 +222,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e928';
 }
 
+.c2.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c2.icon-byob:before {
   content: '\\e900';
 }
@@ -308,6 +312,18 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 
 .c2.icon-search:before {
   content: '\\e830';
+}
+
+.c2.icon-music:before {
+  content: '\\e932';
+}
+
+.c2.icon-mail:before {
+  content: '\\e931';
+}
+
+.c2.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 <ThemeProvider
@@ -688,6 +704,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -774,6 +794,18 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                           "
@@ -1162,6 +1194,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -1248,6 +1284,18 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                           "
@@ -1566,6 +1614,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e928';
 }
 
+.c3.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c3.icon-byob:before {
   content: '\\e900';
 }
@@ -1652,6 +1704,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c3.icon-search:before {
   content: '\\e830';
+}
+
+.c3.icon-music:before {
+  content: '\\e932';
+}
+
+.c3.icon-mail:before {
+  content: '\\e931';
+}
+
+.c3.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 <ThemeProvider
@@ -2285,6 +2349,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -2371,6 +2439,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                           "
@@ -2689,6 +2769,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e928';
 }
 
+.c2.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c2.icon-byob:before {
   content: '\\e900';
 }
@@ -2775,6 +2859,18 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c2.icon-search:before {
   content: '\\e830';
+}
+
+.c2.icon-music:before {
+  content: '\\e932';
+}
+
+.c2.icon-mail:before {
+  content: '\\e931';
+}
+
+.c2.icon-expandHorizontal:before {
+  content: '\\e92e';
 }
 
 <ThemeProvider
@@ -3155,6 +3251,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         content: '\\\\e928';
       }
     
+      &.icon-calendarAdd:before {
+        content: '\\\\e92d';
+      }
+    
       &.icon-byob:before {
         content: '\\\\e900';
       }
@@ -3241,6 +3341,18 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
     
       &.icon-search:before {
         content: '\\\\e830';
+      }
+    
+      &.icon-music:before {
+        content: '\\\\e932';
+      }
+    
+      &.icon-mail:before {
+        content: '\\\\e931';
+      }
+    
+      &.icon-expandHorizontal:before {
+        content: '\\\\e92e';
       }
     ",
                           "
