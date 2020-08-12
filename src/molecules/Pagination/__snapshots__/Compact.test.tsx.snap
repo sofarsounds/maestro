@@ -326,6 +326,38 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e92e';
 }
 
+.c2.icon-reset:before {
+  content: '\\e936';
+}
+
+.c2.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c2.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c2.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c2.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c2.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c2.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c2.icon-concertOutline:before {
+  content: '\\e937';
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -806,6 +838,38 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
     
       &.icon-expandHorizontal:before {
         content: '\\\\e92e';
+      }
+    
+      &.icon-reset:before {
+        content: '\\\\e936';
+      }
+    
+      &.icon-pencil:before {
+        content: '\\\\e934';
+      }
+    
+      &.icon-arrowUp:before {
+        content: '\\\\e933';
+      }
+    
+      &.icon-arrowLeft:before {
+        content: '\\\\e93b';
+      }
+    
+      &.icon-infoOutline:before {
+        content: '\\\\e93a';
+      }
+    
+      &.icon-feedbackOutline:before {
+        content: '\\\\e939';
+      }
+    
+      &.icon-mediaOutline:before {
+        content: '\\\\e938';
+      }
+    
+      &.icon-concertOutline:before {
+        content: '\\\\e937';
       }
     ",
                           "
@@ -1297,6 +1361,38 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
       &.icon-expandHorizontal:before {
         content: '\\\\e92e';
       }
+    
+      &.icon-reset:before {
+        content: '\\\\e936';
+      }
+    
+      &.icon-pencil:before {
+        content: '\\\\e934';
+      }
+    
+      &.icon-arrowUp:before {
+        content: '\\\\e933';
+      }
+    
+      &.icon-arrowLeft:before {
+        content: '\\\\e93b';
+      }
+    
+      &.icon-infoOutline:before {
+        content: '\\\\e93a';
+      }
+    
+      &.icon-feedbackOutline:before {
+        content: '\\\\e939';
+      }
+    
+      &.icon-mediaOutline:before {
+        content: '\\\\e938';
+      }
+    
+      &.icon-concertOutline:before {
+        content: '\\\\e937';
+      }
     ",
                           "
   ",
@@ -1716,6 +1812,38 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c3.icon-expandHorizontal:before {
   content: '\\e92e';
+}
+
+.c3.icon-reset:before {
+  content: '\\e936';
+}
+
+.c3.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c3.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c3.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c3.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c3.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c3.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c3.icon-concertOutline:before {
+  content: '\\e937';
 }
 
 <ThemeProvider
@@ -2452,6 +2580,38 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
       &.icon-expandHorizontal:before {
         content: '\\\\e92e';
       }
+    
+      &.icon-reset:before {
+        content: '\\\\e936';
+      }
+    
+      &.icon-pencil:before {
+        content: '\\\\e934';
+      }
+    
+      &.icon-arrowUp:before {
+        content: '\\\\e933';
+      }
+    
+      &.icon-arrowLeft:before {
+        content: '\\\\e93b';
+      }
+    
+      &.icon-infoOutline:before {
+        content: '\\\\e93a';
+      }
+    
+      &.icon-feedbackOutline:before {
+        content: '\\\\e939';
+      }
+    
+      &.icon-mediaOutline:before {
+        content: '\\\\e938';
+      }
+    
+      &.icon-concertOutline:before {
+        content: '\\\\e937';
+      }
     ",
                           "
   ",
@@ -2871,6 +3031,38 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c2.icon-expandHorizontal:before {
   content: '\\e92e';
+}
+
+.c2.icon-reset:before {
+  content: '\\e936';
+}
+
+.c2.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c2.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c2.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c2.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c2.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c2.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c2.icon-concertOutline:before {
+  content: '\\e937';
 }
 
 <ThemeProvider
@@ -3353,6 +3545,38 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
     
       &.icon-expandHorizontal:before {
         content: '\\\\e92e';
+      }
+    
+      &.icon-reset:before {
+        content: '\\\\e936';
+      }
+    
+      &.icon-pencil:before {
+        content: '\\\\e934';
+      }
+    
+      &.icon-arrowUp:before {
+        content: '\\\\e933';
+      }
+    
+      &.icon-arrowLeft:before {
+        content: '\\\\e93b';
+      }
+    
+      &.icon-infoOutline:before {
+        content: '\\\\e93a';
+      }
+    
+      &.icon-feedbackOutline:before {
+        content: '\\\\e939';
+      }
+    
+      &.icon-mediaOutline:before {
+        content: '\\\\e938';
+      }
+    
+      &.icon-concertOutline:before {
+        content: '\\\\e937';
       }
     ",
                           "

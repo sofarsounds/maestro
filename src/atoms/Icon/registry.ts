@@ -60,7 +60,15 @@ enum Registry {
   search = 'e830',
   music = 'e932',
   mail = 'e931',
-  expandHorizontal = 'e92e'
+  expandHorizontal = 'e92e',
+  reset = 'e936',
+  pencil = 'e934',
+  arrowUp = 'e933',
+  arrowLeft = 'e93b',
+  infoOutline = 'e93a',
+  feedbackOutline = 'e939',
+  mediaOutline = 'e938',
+  concertOutline = 'e937'
 }
 
 export default Registry;
