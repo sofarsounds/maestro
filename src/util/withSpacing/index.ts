@@ -1,6 +1,6 @@
 import { css } from '../../lib/styledComponents';
 
-import theme, { breakPoints } from '../../theme';
+import theme, { breakPoints, responsiveSizes } from '../../theme';
 
 export interface WithSpacingProps {
   // global margin & padding
@@ -16,6 +16,9 @@ export interface WithSpacingProps {
   pr?: number | number[];
   pb?: number | number[];
   pl?: number | number[];
+
+  // responsive
+  responsive?: boolean;
 }
 
 export const generateCssProperty = (prop: string, value: string): string => {
@@ -35,7 +38,12 @@ export const generateCssProperty = (prop: string, value: string): string => {
 };
 
 const breakPointKeys = Object.keys(breakPoints);
-export const generateSpace = (screenSize: string, prop: string, size: any) => {
+export const generateSpace = (
+  screenSize: string,
+  prop: string,
+  size: any,
+  responsive: boolean
+) => {
   if (Array.isArray(size)) {
     let styles: any = [];
     const sizeIndex = breakPointKeys.indexOf(screenSize);
@@ -44,6 +52,22 @@ export const generateSpace = (screenSize: string, prop: string, size: any) => {
       if (size[sizeIndex]) {
         styles.push(
           generateCssProperty(prop, `${theme.ruler[Number(size[sizeIndex])]}px`)
+        );
+      }
+    }
+
+    return styles;
+  } else if (responsive) {
+    let styles: any = [];
+    const sizeIndex = breakPointKeys.indexOf(screenSize);
+
+    if (sizeIndex > -1) {
+      if (responsiveSizes[size] && responsiveSizes[size][sizeIndex]) {
+        styles.push(
+          generateCssProperty(
+            prop,
+            `${theme.ruler[Number(responsiveSizes[size][sizeIndex])]}px`
+          )
         );
       }
     }
@@ -59,7 +83,7 @@ const loop = (screenSize: string, props: any) => {
 
   Object.keys(props).forEach((key: string) => {
     if (/^(m|p)(t|b|r|l)?$/.test(key)) {
-      s += generateSpace(screenSize, key, props[key]);
+      s += generateSpace(screenSize, key, props[key], props.responsive);
     }
   });
 

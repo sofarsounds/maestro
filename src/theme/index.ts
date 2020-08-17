@@ -11,6 +11,19 @@ export const breakPoints = {
   xl: 1200
 };
 
+export const responsiveSizes = [
+  [1, 1, 1, 1, 1],
+  [1, 2, 2, 2, 2],
+  [2, 2, 3, 3, 3],
+  [2, 3, 4, 4, 4],
+  [3, 4, 4, 5, 5],
+  [3, 4, 5, 6, 6],
+  [4, 5, 6, 7, 7],
+  [4, 6, 7, 8, 8],
+  [5, 7, 8, 9, 9],
+  [6, 8, 9, 10, 10]
+];
+
 const theme: Theme = {
   colors: {
     primary: '#039842',
