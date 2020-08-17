@@ -2,11 +2,19 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs } from '@storybook/addon-knobs';
+import { withDesign } from 'storybook-addon-designs';
 
 import { Radio } from '../../src';
 
 storiesOf('Radio Button', module)
   .addDecorator(withKnobs)
+  .addDecorator(withDesign)
+  .addParameters({
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=9%3A394',
+    },
+  })
   .add('Default', () => (
     <>
       <h1>Radio Button</h1>
