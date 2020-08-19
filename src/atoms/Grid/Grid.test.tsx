@@ -29,4 +29,28 @@ describe('Grid', () => {
 
     expect(grid).toMatchSnapshot();
   });
+
+  it('renders a grid with custom start points', () => {
+    const grid = mountWithTheme(
+      <Grid>
+        <Col
+          xs={6}
+          sm={6}
+          md={6}
+          lg={6}
+          xsStart={4}
+          mdStart={4}
+          smStart={4}
+          lgStart={4}
+        >
+          Col 1 / Row 1
+        </Col>
+        <Col xs={6} sm={6} md={6} lg={6}>
+          Col 1 / Row 2
+        </Col>
+      </Grid>
+    );
+
+    expect(grid).toMatchSnapshot();
+  });
 });
