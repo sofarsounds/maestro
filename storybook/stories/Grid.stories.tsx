@@ -66,6 +66,19 @@ storiesOf('Grid', module)
 
       <Space />
 
+      <h2>Customise Grid column layout</h2>
+      <Grid gap="5px">
+        <Col sm={6} smStart={4}>
+          <ColContent>Row 1 / Column 1</ColContent>
+        </Col>
+        <Col sm={6}>
+          <ColContent>Row 2 / Column 1</ColContent>
+        </Col>
+        <Col sm={6}>
+          <ColContent>Row 2 / Column 2</ColContent>
+        </Col>
+      </Grid>
+
       <h2>Row Span</h2>
       <Grid>
         <Col xs={12} sm={6} rowSpan={2}>
