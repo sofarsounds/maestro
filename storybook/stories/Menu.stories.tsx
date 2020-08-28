@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
-import { withDesign } from 'storybook-addon-designs';
 
 import { Menu, MenuHeader, MenuItem } from '../../src';
 import groupBy from '../../src/util/groupBy';
@@ -13,13 +12,6 @@ const groupedCities = groupBy(cities, c => c.substring(0, 1));
 
 storiesOf('Menu', module)
   .addDecorator(withKnobs)
-  .addDecorator(withDesign)
-  .addParameters({
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=12%3A0',
-    },
-  })
   .add('Playground', () => (
     <>
       <h1>Menu</h1>

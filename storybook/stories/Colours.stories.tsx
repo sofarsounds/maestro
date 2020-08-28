@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { withDesign } from 'storybook-addon-designs';
 
 import { theme } from '../../src';
 
@@ -42,15 +41,7 @@ const ColorPanel: React.SFC<any> = ({ colorName, hex }) => (
   </Panel>
 );
 
-storiesOf('Colors', module)
-  .addDecorator(withDesign)
-  .addParameters({
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=5%3A2',
-    },
-  })
-  .add(
+storiesOf('Colors', module).add(
   'Brand',
   () => (
     <>

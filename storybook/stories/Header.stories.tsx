@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withDesign } from 'storybook-addon-designs';
 
 import { BrowserRouter } from 'react-router-dom';
 import {
@@ -18,13 +17,6 @@ import { cities, MultiDimensional, multiDimensional } from '../helpers/cities';
 
 storiesOf('Header', module)
   .addDecorator(withKnobs)
-  .addDecorator(withDesign)
-  .addParameters({
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=13%3A389',
-    },
-  })
   .add('Default', () => (
     <BrowserRouter>
       <div>
