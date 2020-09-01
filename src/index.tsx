@@ -30,6 +30,7 @@ export {
   Spacer24,
   Spacer32,
   Spacer40,
+  Spacer48,
   Spacer56,
   Spacer64,
   Spacer72,

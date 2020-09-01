@@ -13,6 +13,7 @@ import {
   Spacer24,
   Spacer32,
   Spacer40,
+  Spacer48,
   Spacer56,
   Spacer64,
   Spacer72,
@@ -100,7 +101,7 @@ storiesOf('Spacer', module)
 
       <h1>Responsive Spacer Components</h1>
       <p>
-        For convenience, there are a number of named responsive Spacer components, which don't take any props. These are: <code>Spacer4</code>, <code>Spacer8</code>, <code>Spacer12</code>, <code>Spacer16</code>, <code>Spacer20</code>, <code>Spacer24</code>, <code>Spacer32</code>, <code>Spacer40</code>, <code>Spacer56</code>, <code>Spacer64</code>, <code>Spacer72</code>, <code>Spacer80</code>.  
+        For convenience, there are a number of named responsive Spacer components, which don't take any props. These are: <code>Spacer4</code>, <code>Spacer8</code>, <code>Spacer12</code>, <code>Spacer16</code>, <code>Spacer20</code>, <code>Spacer24</code>, <code>Spacer32</code>, <code>Spacer40</code>, <code>Spacer48</code>, <code>Spacer56</code>, <code>Spacer64</code>, <code>Spacer72</code>, <code>Spacer80</code>.  
       </p>
       <div style={{ background: '#ccc' }}>
         <div>
@@ -127,6 +128,9 @@ storiesOf('Spacer', module)
           </SpacerWrapper>
           <SpacerWrapper>
             <Spacer40 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer48 />
           </SpacerWrapper>
           <SpacerWrapper>
             <Spacer56 />
