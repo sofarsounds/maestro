@@ -81,33 +81,26 @@ storiesOf('Spacer', module)
       </p>
       <div style={{ background: '#ccc' }}>
         <div>
-          {Array(10).fill(0).map((_, i) => (
-            i > 0 && (
-              <Spacer
-                style={{
-                  display: 'block',
-                  border: '1px solid red',
-                  width: '0',
-                  height: '0',
-                  background: '#fff',
-                }}
-                p={i}
-                m={2}
-              >
-              </Spacer>
-            )
-          ))}
+          <Spacer
+            style={{
+              display: 'inline-block',
+              border: '1px solid red',
+              width: '150px',
+              background: '#fff'
+            }}
+            m={[2, 4, 6, 8]}
+            p={1}
+          >
+            Position Me
+          </Spacer>
         </div>
       </div>
 
       <Space />
 
-      <h1>Spacer Component (using different scale)</h1>
+      <h1>Responsive Spacer Components</h1>
       <p>
-        Spacer components takes "m" and "p" for "margin" and "padding".
-        <br />
-        You can then add t, r, l, b, x, y after m and p for top, right, left,
-        bottom, horizontal, vertical
+        For convenience, there are a number of named responsive Spacer components, which don't take any props. These are: <code>Spacer4</code>, <code>Spacer8</code>, <code>Spacer12</code>, <code>Spacer16</code>, <code>Spacer20</code>, <code>Spacer24</code>, <code>Spacer32</code>, <code>Spacer40</code>, <code>Spacer56</code>, <code>Spacer64</code>, <code>Spacer72</code>, <code>Spacer80</code>.  
       </p>
       <div style={{ background: '#ccc' }}>
         <div>
