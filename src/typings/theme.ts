@@ -58,7 +58,21 @@ export default interface Theme {
     green50: string;
 
     // additional
+    greenOnions: string;
+    greenGarden: string;
+    purpleHaze: string;
+    blueChristmas: string;
+    purplePills: string;
+    checkBerry: string;
+    blueMagic: string;
+    brownSugar: string;
+    pinkTriangle: string;
+    royalBlood: string;
     redRedWine: string;
+    peaches: string;
+    orangeCrush: string;
+    mellowYellow: string;
+    yellowSubmarine: string;
   };
 
   fonts: {
