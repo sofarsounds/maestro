@@ -67,6 +67,7 @@ storiesOf('Colors', module).add(
     <Row>
       {[
         'green900',
+        'green800',
         'green700',
         'green600',
         'green500',
