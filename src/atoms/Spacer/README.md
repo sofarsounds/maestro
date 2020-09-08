@@ -34,3 +34,25 @@ Table below contains all types of props available in the Spacer component
 | pr     | `number` `number[]` |                 | Add a padding right
 | pb     | `number` `number[]` |                 | Add a padding bottom
 | pl     | `number` `number[]` |                 | Add a padding left
+
+# Sized Responsive Spacers
+
+For convenience, we have also added a number of sized Spacer components which have responsiveness built-in: `Spacer4`, `Spacer8`, `Spacer12`, `Spacer16`, `Spacer20`, `Spacer24`, `Spacer32`, `Spacer40`, `Spacer48`, `Spacer56`, `Spacer64`, `Spacer72`, and `Spacer80`. These spacers and named after their size (in pixels) on XL (desktop) screens. 
+
+To add named `Spacer` wrappers into your project you'll first need to import the `Spacer` components that you want to add
+```js
+import { 
+  Spacer4, 
+  Spacer16, 
+  Spacer64 
+} from '@sofarsounds/maestro'
+```
+
+After adding the import, use the components in your project without any props or children 
+```html
+<Spacer4 /> // 4px on all screen sizes
+<Spacer16 /> // 8px on xs and sm, 12px on md devices, 16px on lg and xl devices
+<Spacer64 /> // 32px on xs and sm,  48px on md devices, 64px on lg and xl devices
+```
+
+Note: If you want to use a spacer with children, fall back to using the unsized `Spacer` component.
