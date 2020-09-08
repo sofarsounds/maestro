@@ -34,11 +34,11 @@ export const Spacer24: React.SFC = () => (
 );
 
 export const Spacer32: React.SFC = () => (
-  <Spacer mr={[6, 6, 7, 8, 8]} mb={[6, 6, 7, 8, 8]} />
+  <Spacer mr={[5, 5, 6, 8, 8]} mb={[5, 5, 6, 8, 8]} />
 );
 
 export const Spacer40: React.SFC = () => (
-  <Spacer mr={[5, 5, 6, 10, 10]} mb={[5, 5, 6, 10, 10]} />
+  <Spacer mr={[6, 6, 7, 10, 10]} mb={[6, 6, 7, 10, 10]} />
 );
 
 export const Spacer48: React.SFC = () => (
@@ -46,7 +46,7 @@ export const Spacer48: React.SFC = () => (
 );
 
 export const Spacer56: React.SFC = () => (
-  <Spacer mr={[6, 6, 10, 14, 14]} mb={[6, 6, 10, 14, 14]} />
+  <Spacer mr={[7, 7, 10, 14, 14]} mb={[7, 7, 10, 14, 14]} />
 );
 
 export const Spacer64: React.SFC = () => (
