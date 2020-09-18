@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
+import { withDesign } from 'storybook-addon-designs';
 
 import { Icon } from '../../src';
 import Registry from '../../src/atoms/Icon/registry';
@@ -21,7 +22,15 @@ const TR = styled.tr`
   }
 `;
 
-storiesOf('Iconography', module).add('All', () => (
+storiesOf('Iconography', module)
+  .addDecorator(withDesign)
+  .addParameters({
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=8%3A10',
+    },
+  })
+  .add('All', () => (
   <div>
     <h1>Icons</h1>
     <table style={{ borderCollapse: 'collapse' }}>
