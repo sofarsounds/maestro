@@ -20,7 +20,22 @@ export { default as Icon } from './atoms/Icon';
 export { default as Icons } from './atoms/Icon/registry';
 export { default as Textfield } from './atoms/Textfield';
 export { default as Textarea } from './atoms/Textarea';
-export { default as Spacer } from './atoms/Spacer';
+export {
+  default as Spacer,
+  Spacer4,
+  Spacer8,
+  Spacer12,
+  Spacer16,
+  Spacer20,
+  Spacer24,
+  Spacer32,
+  Spacer40,
+  Spacer48,
+  Spacer56,
+  Spacer64,
+  Spacer72,
+  Spacer80
+} from './atoms/Spacer';
 export { default as Spinner } from './atoms/Spinner';
 export { default as Radio } from './atoms/Radio';
 export { default as Checkbox } from './atoms/Checkbox';

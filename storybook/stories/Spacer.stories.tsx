@@ -4,7 +4,22 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withDesign } from 'storybook-addon-designs'
 import styled from 'styled-components';
 
-import { Spacer } from '../../src';
+import {
+  Spacer,
+  Spacer4,
+  Spacer8,
+  Spacer12,
+  Spacer16,
+  Spacer20,
+  Spacer24,
+  Spacer32,
+  Spacer40,
+  Spacer48,
+  Spacer56,
+  Spacer64,
+  Spacer72,
+  Spacer80,
+} from '../../src';
 
 const Space = styled.div`
   height: 25px;
@@ -14,6 +29,12 @@ const Ruler = styled.div`
   display: flex;
   align-items: flex-end;
   height: 100px;
+`;
+
+const SpacerWrapper = styled.div`
+  border: 1px solid red; 
+  width: fit-content; 
+  background: #fff;
 `;
 
 interface RulerProps {
@@ -81,6 +102,56 @@ storiesOf('Spacer', module)
           >
             Position Me
           </Spacer>
+        </div>
+      </div>
+
+      <Space />
+
+      <h1>Responsive Spacer Components</h1>
+      <p>
+        For convenience, there are a number of named responsive Spacer components, which don't take any props. These are: <code>Spacer4</code>, <code>Spacer8</code>, <code>Spacer12</code>, <code>Spacer16</code>, <code>Spacer20</code>, <code>Spacer24</code>, <code>Spacer32</code>, <code>Spacer40</code>, <code>Spacer48</code>, <code>Spacer56</code>, <code>Spacer64</code>, <code>Spacer72</code>, <code>Spacer80</code>.  
+      </p>
+      <div style={{ background: '#ccc' }}>
+        <div>
+          <SpacerWrapper>
+            <Spacer4 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer8 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer12 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer16 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer20 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer24 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer32 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer40 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer48 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer56 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer64 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer72 />
+          </SpacerWrapper>
+          <SpacerWrapper>
+            <Spacer80 />
+          </SpacerWrapper>
         </div>
       </div>
     </div>
