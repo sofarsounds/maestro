@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
+import { withDesign } from 'storybook-addon-designs'
 import styled from 'styled-components';
 
 import {
@@ -56,6 +57,13 @@ const Line = styled(Spacer)<RulerProps>`
 
 storiesOf('Spacer', module)
   .addDecorator(withKnobs)
+  .addDecorator(withDesign)
+  .addParameters({
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=438%3A2',
+    }
+  })
   .add('Default', () => (
     <div>
       <h1>Main Ruler</h1>
