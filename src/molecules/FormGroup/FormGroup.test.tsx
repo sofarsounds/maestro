@@ -66,10 +66,6 @@ describe('<FormGroup />', () => {
       'border-color',
       theme.colors.redRedWine
     );
-    expect(wrapper.find('span')).toHaveStyleRule(
-      'color',
-      theme.colors.redRedWine
-    );
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -30,7 +30,7 @@ exports[`<Badge /> Default Badge renders the badge correctly 1`] = `
   user-select: none;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -188,43 +188,13 @@ exports[`<Badge /> Default Badge renders the badge correctly 1`] = `
   }
 >
   <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
-      >
-        1
-      </div>
-    </StyledComponent>
+      1
+    </div>
   </styled.div>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
@@ -260,7 +230,7 @@ exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
   font-weight: 600;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -420,43 +390,12 @@ exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
   <styled.div
     color="primary"
   >
-    <StyledComponent
+    <div
+      className="c0"
       color="primary"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
     >
-      <div
-        className="c0"
-        color="primary"
-      >
-        1
-      </div>
-    </StyledComponent>
+      1
+    </div>
   </styled.div>
-</ThemeProvider>
+</Component>
 `;

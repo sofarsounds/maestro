@@ -6,7 +6,7 @@ export interface ImageProps {
 
 export default styled.div<ImageProps>`
   ${({ url, theme }) => css`
-    width: 100%
+    width: 100%;
     padding-top: 65%;
     position: relative;
     border-radius: ${theme.borderRadius.default};

@@ -69,7 +69,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -232,184 +232,56 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
     required={true}
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-VigVT",
-              "isStatic": false,
-              "lastClassName": "fIhGog",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-VigVT",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
+        <styled.span
+          color="#EF4423"
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             color="#EF4423"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              color="#EF4423"
-              data-qaid="undefined-label"
-              forwardedComponent={
+            An error field
+            <span
+              style={
                 Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                  "color": "#EF4423",
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                color="#EF4423"
-                data-qaid="undefined-label"
-              >
-                An error field
-                <span
-                  style={
-                    Object {
-                      "color": "#EF4423",
-                    }
-                  }
-                >
-                  *
-                </span>
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
+              *
+            </span>
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={true}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
             placeholder="Test Input"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-jTzLTM",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-jTzLTM",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={true}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.span
+          />
+        </styled.input>
+        <styled.span
+          color="#EF4423"
+          data-qaid="undefined-error"
+        >
+          <span
+            className="c2"
             color="#EF4423"
             data-qaid="undefined-error"
           >
-            <StyledComponent
-              color="#EF4423"
-              data-qaid="undefined-error"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gZMcBi",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gZMcBi",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c2"
-                color="#EF4423"
-                data-qaid="undefined-error"
-              >
-                Something went wrong
-              </span>
-            </StyledComponent>
-          </styled.span>
-        </div>
-      </StyledComponent>
+            Something went wrong
+          </span>
+        </styled.span>
+      </div>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders a error message 1`] = `
@@ -481,7 +353,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -644,184 +516,56 @@ exports[`<FormGroup /> renders a error message 1`] = `
     required={true}
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-VigVT",
-              "isStatic": false,
-              "lastClassName": "fIhGog",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-VigVT",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
+        <styled.span
+          color="#EF4423"
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             color="#EF4423"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              color="#EF4423"
-              data-qaid="undefined-label"
-              forwardedComponent={
+            An error field
+            <span
+              style={
                 Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                  "color": "#EF4423",
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                color="#EF4423"
-                data-qaid="undefined-label"
-              >
-                An error field
-                <span
-                  style={
-                    Object {
-                      "color": "#EF4423",
-                    }
-                  }
-                >
-                  *
-                </span>
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
+              *
+            </span>
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={true}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
             placeholder="Test Input"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-jTzLTM",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-jTzLTM",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={true}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-          <styled.span
+          />
+        </styled.input>
+        <styled.span
+          color="#EF4423"
+          data-qaid="undefined-error"
+        >
+          <span
+            className="c2"
             color="#EF4423"
             data-qaid="undefined-error"
           >
-            <StyledComponent
-              color="#EF4423"
-              data-qaid="undefined-error"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gZMcBi",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gZMcBi",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c2"
-                color="#EF4423"
-                data-qaid="undefined-error"
-              >
-                Something went wrong
-              </span>
-            </StyledComponent>
-          </styled.span>
-        </div>
-      </StyledComponent>
+            Something went wrong
+          </span>
+        </styled.span>
+      </div>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders a required indicator 1`] = `
@@ -868,7 +612,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1030,133 +774,42 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
     required={true}
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-VigVT",
-              "isStatic": false,
-              "lastClassName": "fIhGog",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-VigVT",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
+        <styled.span
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              data-qaid="undefined-label"
-              forwardedComponent={
+            A required field
+            <span
+              style={
                 Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                  "color": "#039842",
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                data-qaid="undefined-label"
-              >
-                A required field
-                <span
-                  style={
-                    Object {
-                      "color": "#039842",
-                    }
-                  }
-                >
-                  *
-                </span>
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={false}
+              *
+            </span>
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={false}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
             placeholder="Test Input"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-jTzLTM",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-jTzLTM",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={false}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-        </div>
-      </StyledComponent>
+          />
+        </styled.input>
+      </div>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders a with an Icon 1`] = `
@@ -1463,7 +1116,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e937';
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1626,427 +1279,53 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
     required={true}
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-VigVT",
-              "isStatic": false,
-              "lastClassName": "fIhGog",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-VigVT",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
+        <styled.span
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              data-qaid="undefined-label"
-              forwardedComponent={
+            A required field
+            <span
+              style={
                 Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+                  "color": "#039842",
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                data-qaid="undefined-label"
+              *
+            </span>
+             
+            <Icon
+              name="helpCircleOutline"
+            >
+              <styled.i
+                className="icon-helpCircleOutline "
               >
-                A required field
-                <span
-                  style={
-                    Object {
-                      "color": "#039842",
-                    }
-                  }
-                >
-                  *
-                </span>
-                 
-                <Icon
-                  name="helpCircleOutline"
-                >
-                  <styled.i
-                    className="icon-helpCircleOutline "
-                  >
-                    <StyledComponent
-                      className="icon-helpCircleOutline "
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-fjdhpX",
-                            "isStatic": false,
-                            "lastClassName": "c1",
-                            "rules": Array [
-                              "
-  ",
-                              [Function],
-                              "
-
-  ",
-                              "
-    ",
-                              "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-calendarAdd:before {
-        content: '\\\\e92d';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    
-      &.icon-music:before {
-        content: '\\\\e932';
-      }
-    
-      &.icon-mail:before {
-        content: '\\\\e931';
-      }
-    
-      &.icon-expandHorizontal:before {
-        content: '\\\\e92e';
-      }
-    
-      &.icon-reset:before {
-        content: '\\\\e936';
-      }
-    
-      &.icon-pencil:before {
-        content: '\\\\e934';
-      }
-    
-      &.icon-arrowUp:before {
-        content: '\\\\e933';
-      }
-    
-      &.icon-arrowLeft:before {
-        content: '\\\\e93b';
-      }
-    
-      &.icon-infoOutline:before {
-        content: '\\\\e93a';
-      }
-    
-      &.icon-feedbackOutline:before {
-        content: '\\\\e939';
-      }
-    
-      &.icon-mediaOutline:before {
-        content: '\\\\e938';
-      }
-    
-      &.icon-concertOutline:before {
-        content: '\\\\e937';
-      }
-    ",
-                              "
-  ",
-                              ";
-",
-                            ],
-                          },
-                          "displayName": "styled.i",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-fjdhpX",
-                          "target": "i",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <i
-                        className="c1 icon-helpCircleOutline "
-                      />
-                    </StyledComponent>
-                  </styled.i>
-                </Icon>
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={false}
+                <i
+                  className="c1 icon-helpCircleOutline "
+                />
+              </styled.i>
+            </Icon>
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={false}
+          placeholder="Test Input"
+        >
+          <input
+            className="c2"
             placeholder="Test Input"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-jTzLTM",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-jTzLTM",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={false}
-              placeholder="Test Input"
-            >
-              <input
-                className="c2"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-        </div>
-      </StyledComponent>
+          />
+        </styled.input>
+      </div>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders correctly 1`] = `
@@ -2093,7 +1372,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -2254,122 +1533,31 @@ exports[`<FormGroup /> renders correctly 1`] = `
     label="A Label"
   >
     <styled.div>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-VigVT",
-              "isStatic": false,
-              "lastClassName": "fIhGog",
-              "rules": Array [],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-VigVT",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className=""
       >
-        <div
-          className=""
+        <styled.span
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              data-qaid="undefined-label"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
-                    "isStatic": false,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      "
-
-  ",
-                      [Function],
-                      "
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c0"
-                data-qaid="undefined-label"
-              >
-                A Label
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={false}
+            A Label
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={false}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
             placeholder="Test Input"
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-jTzLTM",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "
-  ",
-                      [Function],
-                      ";
-",
-                    ],
-                  },
-                  "displayName": "styled.input",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-jTzLTM",
-                  "target": "input",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              hasError={false}
-              placeholder="Test Input"
-            >
-              <input
-                className="c1"
-                placeholder="Test Input"
-              />
-            </StyledComponent>
-          </styled.input>
-        </div>
-      </StyledComponent>
+          />
+        </styled.input>
+      </div>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;

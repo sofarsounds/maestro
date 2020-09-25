@@ -20,7 +20,7 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
   }
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -180,117 +180,26 @@ exports[`Grid renders a Grid with a custom gap 1`] = `
   <styled.div
     gap="100px"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      gap="100px"
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
-      >
-        <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            >
-              Col 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            >
-              Col 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Col 1
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Col 2
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Grid renders a grid with custom start points 1`] = `
@@ -361,7 +270,7 @@ exports[`Grid renders a grid with custom start points 1`] = `
   }
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -519,142 +428,40 @@ exports[`Grid renders a grid with custom start points 1`] = `
   }
 >
   <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
+      <styled.div
+        lg={6}
+        lgStart={4}
+        md={6}
+        mdStart={4}
+        sm={6}
+        smStart={4}
+        xs={6}
+        xsStart={4}
       >
-        <styled.div
-          lg={6}
-          lgStart={4}
-          md={6}
-          mdStart={4}
-          sm={6}
-          smStart={4}
-          xs={6}
-          xsStart={4}
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            lg={6}
-            lgStart={4}
-            md={6}
-            mdStart={4}
-            sm={6}
-            smStart={4}
-            xs={6}
-            xsStart={4}
-          >
-            <div
-              className="c1"
-            >
-              Col 1 / Row 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          lg={6}
-          md={6}
-          sm={6}
-          xs={6}
+          Col 1 / Row 1
+        </div>
+      </styled.div>
+      <styled.div
+        lg={6}
+        md={6}
+        sm={6}
+        xs={6}
+      >
+        <div
+          className="c2"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            lg={6}
-            md={6}
-            sm={6}
-            xs={6}
-          >
-            <div
-              className="c2"
-            >
-              Col 1 / Row 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+          Col 1 / Row 2
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Grid renders the Grid correctly 1`] = `
@@ -698,7 +505,7 @@ exports[`Grid renders the Grid correctly 1`] = `
   }
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -856,132 +663,34 @@ exports[`Grid renders the Grid correctly 1`] = `
   }
 >
   <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
+      <styled.div
+        lg={4}
+        md={4}
+        sm={4}
+        xs={12}
       >
-        <styled.div
-          lg={4}
-          md={4}
-          sm={4}
-          xs={12}
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            lg={4}
-            md={4}
-            sm={4}
-            xs={12}
-          >
-            <div
-              className="c1"
-            >
-              Col 1
-            </div>
-          </StyledComponent>
-        </styled.div>
-        <styled.div
-          lg={4}
-          md={4}
-          sm={4}
-          xs={12}
+          Col 1
+        </div>
+      </styled.div>
+      <styled.div
+        lg={4}
+        md={4}
+        sm={4}
+        xs={12}
+      >
+        <div
+          className="c1"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            lg={4}
-            md={4}
-            sm={4}
-            xs={12}
-          >
-            <div
-              className="c1"
-            >
-              Col 2
-            </div>
-          </StyledComponent>
-        </styled.div>
-      </div>
-    </StyledComponent>
+          Col 2
+        </div>
+      </styled.div>
+    </div>
   </styled.div>
-</ThemeProvider>
+</Component>
 `;

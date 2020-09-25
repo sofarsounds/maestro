@@ -5,17 +5,15 @@ import { Title, Footer } from './CardElements';
 
 describe('Card Elements', () => {
   describe('<CardTitle />', () => {
-    const wrapper = mountWithTheme(<Title>A title</Title>);
-
     it('has the correct style rules', () => {
+      const wrapper = mountWithTheme(<Title>A title</Title>);
       expect(wrapper).toHaveStyleRule('margin-bottom', '16px');
     });
   });
 
   describe('<CardFooter />', () => {
-    const wrapper = mountWithTheme(<Footer />);
-
     it('has the correct style rules', () => {
+      const wrapper = mountWithTheme(<Footer />);
       expect(wrapper).toHaveStyleRule('margin-top', '32px');
     });
   });
