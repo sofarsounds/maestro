@@ -5,9 +5,9 @@ import Subnav from './index';
 
 describe('<Subnav />', () => {
   describe('<Subnav/>', () => {
-    const setup = mountWithTheme(<Subnav>Links</Subnav>);
-
     it('has the correct style attributes', () => {
+      const setup = mountWithTheme(<Subnav>Links</Subnav>);
+
       expect(setup).toHaveStyleRule('overflow-x', 'auto');
       expect(setup).toHaveStyleRule('-ms-overflow-style', 'none');
       expect(setup).toHaveStyleRule('text-align', 'center');

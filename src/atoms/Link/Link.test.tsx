@@ -8,20 +8,24 @@ import theme from '../../theme';
 import { Link } from './index';
 
 describe('<Link />', () => {
-  const wrapper = mountWithTheme(
-    <MemoryRouter initialEntries={['/']}>
-      <Link to="/">Link</Link>
-    </MemoryRouter>
-  );
-
   it('has the correct style attributes', () => {
-    checkStyleRules(wrapper, {
-      color: theme.colors.primary,
-      'font-weight': 'bold'
-    });
+    const wrapper = mountWithTheme(
+      <MemoryRouter initialEntries={['/']}>
+        <Link to="/">Link</Link>
+      </MemoryRouter>
+    );
+
+    expect(wrapper).toHaveStyleRule('color', theme.colors.primary);
+    expect(wrapper).toHaveStyleRule('font-weight', 'bold');
   });
 
   it('has the correct style attributes on hover', () => {
+    const wrapper = mountWithTheme(
+      <MemoryRouter initialEntries={['/']}>
+        <Link to="/">Link</Link>
+      </MemoryRouter>
+    );
+
     checkStyleRules(
       wrapper,
       {

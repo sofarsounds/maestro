@@ -7,7 +7,7 @@ exports[`Navbar <Brand /> renders correctly 1`] = `
   margin-top: 4px;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -165,39 +165,9 @@ exports[`Navbar <Brand /> renders correctly 1`] = `
   }
 >
   <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  width: 75px;
-  margin-right: 20px;
-  margin-top: 4px;
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <div
-        className="c0"
-      />
-    </StyledComponent>
+    <div
+      className="c0"
+    />
   </styled.div>
-</ThemeProvider>
+</Component>
 `;
