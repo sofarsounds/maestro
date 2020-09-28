@@ -336,10 +336,6 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e934';
 }
 
-.c2.icon-trashCan:before {
-  content: '\\e93c';
-}
-
 .c2.icon-arrowUp:before {
   content: '\\e933';
 }

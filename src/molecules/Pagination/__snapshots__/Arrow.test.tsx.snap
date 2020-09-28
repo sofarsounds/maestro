@@ -271,10 +271,6 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e934';
 }
 
-.c1.icon-trashCan:before {
-  content: '\\e93c';
-}
-
 .c1.icon-arrowUp:before {
   content: '\\e933';
 }
@@ -769,10 +765,6 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e934';
 }
 
-.c1.icon-trashCan:before {
-  content: '\\e93c';
-}
-
 .c1.icon-arrowUp:before {
   content: '\\e933';
 }
@@ -1260,10 +1252,6 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-pencil:before {
   content: '\\e934';
-}
-
-.c1.icon-trashCan:before {
-  content: '\\e93c';
 }
 
 .c1.icon-arrowUp:before {
@@ -1758,10 +1746,6 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-pencil:before {
   content: '\\e934';
-}
-
-.c1.icon-trashCan:before {
-  content: '\\e93c';
 }
 
 .c1.icon-arrowUp:before {

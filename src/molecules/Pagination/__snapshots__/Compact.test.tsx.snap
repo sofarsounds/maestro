@@ -336,10 +336,6 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e934';
 }
 
-.c3.icon-trashCan:before {
-  content: '\\e93c';
-}
-
 .c3.icon-arrowUp:before {
   content: '\\e933';
 }
@@ -1014,10 +1010,6 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-pencil:before {
   content: '\\e934';
-}
-
-.c4.icon-trashCan:before {
-  content: '\\e93c';
 }
 
 .c4.icon-arrowUp:before {
@@ -1697,10 +1689,6 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-pencil:before {
   content: '\\e934';
-}
-
-.c3.icon-trashCan:before {
-  content: '\\e93c';
 }
 
 .c3.icon-arrowUp:before {
