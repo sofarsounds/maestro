@@ -1,13 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withDesign } from 'storybook-addon-designs';
 
 import { Logo } from '../../src';
 
 import { Boundary, Row, Inversion, Container } from '../helpers/components';
 
-storiesOf('Logo', module).add('Sofar Logos', () => (
+storiesOf('Logo', module)
+  .addDecorator(withDesign)
+  .addParameters({
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=3%3A2',
+    },
+  })
+  .add('Sofar Logos', () => (
   <div>
     <h1>Logos</h1>
     <Row>

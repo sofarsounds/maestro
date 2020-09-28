@@ -40,7 +40,7 @@ const largerImage = (size: string, images: ImagesObj) => {
   const sizeIndex = breakPointsKeys.findIndex((key: string) => size === key);
   const largerImageIndex = Array.from(
     Array(breakPointsKeys.length - sizeIndex - 1),
-    (x, i) => i + 1
+    (_x, i) => i + 1
   ).find(key => images[breakPointsKeys[sizeIndex + key]]);
 
   if (largerImageIndex) {

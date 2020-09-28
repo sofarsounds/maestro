@@ -9,6 +9,7 @@ import { Title, Preview, Footer } from './CardElements';
 interface CardProps {
   linkTo?: string;
   inverted?: boolean;
+  reverseRow?: boolean;
   children: any;
   'data-qaid'?: string;
   id?: string;
@@ -25,13 +26,19 @@ interface Composition {
 const Card: React.SFC<CardProps> & Composition = ({
   linkTo,
   inverted = false,
+  reverseRow = false,
   children,
   'data-qaid': qaId,
   id
 }) => {
   if (!linkTo) {
     return (
-      <Container id={id} inverted={inverted} data-qaid={qaId}>
+      <Container
+        id={id}
+        inverted={inverted}
+        data-qaid={qaId}
+        reverseRow={reverseRow}
+      >
         {children}
       </Container>
     );
@@ -39,7 +46,13 @@ const Card: React.SFC<CardProps> & Composition = ({
 
   return (
     <Link to={linkTo}>
-      <Container id={id} clickable inverted={inverted} data-qaid={qaId}>
+      <Container
+        id={id}
+        clickable
+        inverted={inverted}
+        data-qaid={qaId}
+        reverseRow={reverseRow}
+      >
         {children}
       </Container>
     </Link>

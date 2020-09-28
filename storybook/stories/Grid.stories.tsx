@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
 import { Grid, Col } from '../../src';
@@ -66,6 +65,19 @@ storiesOf('Grid', module)
       </Grid>
 
       <Space />
+
+      <h2>Customise Grid column layout</h2>
+      <Grid gap="5px">
+        <Col sm={6} smStart={4}>
+          <ColContent>Row 1 / Column 1</ColContent>
+        </Col>
+        <Col sm={6}>
+          <ColContent>Row 2 / Column 1</ColContent>
+        </Col>
+        <Col sm={6}>
+          <ColContent>Row 2 / Column 2</ColContent>
+        </Col>
+      </Grid>
 
       <h2>Row Span</h2>
       <Grid>

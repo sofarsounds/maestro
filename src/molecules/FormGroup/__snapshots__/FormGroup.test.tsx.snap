@@ -69,7 +69,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -82,7 +82,11 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -93,12 +97,22 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -241,17 +255,18 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
         }
         forwardedRef={null}
       >
-        <div
-          className=""
+        <styled.span
+          color="#EF4423"
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             color="#EF4423"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              color="#EF4423"
-              data-qaid="undefined-label"
-              forwardedComponent={
+            An error field
+            <span
+              style={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
@@ -281,29 +296,18 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
                   "withComponent": [Function],
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                color="#EF4423"
-                data-qaid="undefined-label"
-              >
-                An error field
-                <span
-                  style={
-                    Object {
-                      "color": "#EF4423",
-                    }
-                  }
-                >
-                  *
-                </span>
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
+              *
+            </span>
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={true}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
             placeholder="Test Input"
           >
             <StyledComponent
@@ -395,7 +399,7 @@ exports[`<FormGroup /> applies a hasError prop to the input 1`] = `
       </StyledComponent>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders a error message 1`] = `
@@ -467,7 +471,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -480,7 +484,11 @@ exports[`<FormGroup /> renders a error message 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -491,12 +499,22 @@ exports[`<FormGroup /> renders a error message 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -639,17 +657,18 @@ exports[`<FormGroup /> renders a error message 1`] = `
         }
         forwardedRef={null}
       >
-        <div
-          className=""
+        <styled.span
+          color="#EF4423"
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             color="#EF4423"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              color="#EF4423"
-              data-qaid="undefined-label"
-              forwardedComponent={
+            An error field
+            <span
+              style={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
@@ -679,29 +698,18 @@ exports[`<FormGroup /> renders a error message 1`] = `
                   "withComponent": [Function],
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                color="#EF4423"
-                data-qaid="undefined-label"
-              >
-                An error field
-                <span
-                  style={
-                    Object {
-                      "color": "#EF4423",
-                    }
-                  }
-                >
-                  *
-                </span>
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={true}
+              *
+            </span>
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={true}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
             placeholder="Test Input"
           >
             <StyledComponent
@@ -793,7 +801,7 @@ exports[`<FormGroup /> renders a error message 1`] = `
       </StyledComponent>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders a required indicator 1`] = `
@@ -840,7 +848,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -853,7 +861,11 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -864,12 +876,22 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1011,15 +1033,16 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
         }
         forwardedRef={null}
       >
-        <div
-          className=""
+        <styled.span
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              data-qaid="undefined-label"
-              forwardedComponent={
+            A required field
+            <span
+              style={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
@@ -1049,28 +1072,18 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
                   "withComponent": [Function],
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                data-qaid="undefined-label"
-              >
-                A required field
-                <span
-                  style={
-                    Object {
-                      "color": "#039842",
-                    }
-                  }
-                >
-                  *
-                </span>
-                 
-              </span>
-            </StyledComponent>
-          </styled.span>
-          <styled.input
-            hasError={false}
+              *
+            </span>
+             
+          </span>
+        </styled.span>
+        <styled.input
+          hasError={false}
+          placeholder="Test Input"
+        >
+          <input
+            className="c1"
             placeholder="Test Input"
           >
             <StyledComponent
@@ -1114,7 +1127,7 @@ exports[`<FormGroup /> renders a required indicator 1`] = `
       </StyledComponent>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders a with an Icon 1`] = `
@@ -1285,6 +1298,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -1373,7 +1390,55 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e830';
 }
 
-<ThemeProvider
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c1.icon-reset:before {
+  content: '\\e936';
+}
+
+.c1.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c1.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c1.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c1.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c1.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c1.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c1.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c1.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1386,7 +1451,11 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1397,12 +1466,22 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1545,15 +1624,16 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
         }
         forwardedRef={null}
       >
-        <div
-          className=""
+        <styled.span
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             data-qaid="undefined-label"
           >
-            <StyledComponent
-              data-qaid="undefined-label"
-              forwardedComponent={
+            A required field
+            <span
+              style={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
@@ -1583,11 +1663,15 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
                   "withComponent": [Function],
                 }
               }
-              forwardedRef={null}
             >
-              <span
-                className="c0"
-                data-qaid="undefined-label"
+              *
+            </span>
+             
+            <Icon
+              name="helpCircleOutline"
+            >
+              <styled.i
+                className="icon-helpCircleOutline "
               >
                 A required field
                 <span
@@ -1894,7 +1978,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
       </StyledComponent>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<FormGroup /> renders correctly 1`] = `
@@ -1941,7 +2025,7 @@ exports[`<FormGroup /> renders correctly 1`] = `
   border-color: #DBDBDB;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1954,7 +2038,11 @@ exports[`<FormGroup /> renders correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1965,12 +2053,22 @@ exports[`<FormGroup /> renders correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -2111,10 +2209,11 @@ exports[`<FormGroup /> renders correctly 1`] = `
         }
         forwardedRef={null}
       >
-        <div
-          className=""
+        <styled.span
+          data-qaid="undefined-label"
         >
-          <styled.span
+          <span
+            className="c0"
             data-qaid="undefined-label"
           >
             <StyledComponent
@@ -2205,5 +2304,5 @@ exports[`<FormGroup /> renders correctly 1`] = `
       </StyledComponent>
     </styled.div>
   </FormGroup>
-</ThemeProvider>
+</Component>
 `;

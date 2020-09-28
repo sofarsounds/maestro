@@ -35,70 +35,6 @@ exports[`<Pagination /> renders correctly 1`] = `
   background-color: rgba(17,17,17,0.1);
 }
 
-.c5 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c3 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  margin: 0 4px;
-}
-
-.c3:hover {
-  background-color: rgba(17,17,17,0.1);
-}
-
 .c4 {
   width: 36px;
   height: 36px;
@@ -129,6 +65,38 @@ exports[`<Pagination /> renders correctly 1`] = `
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
+}
+
+.c5 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3 {
   margin: 0 4px;
 }
 
@@ -256,6 +224,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e928';
 }
 
+.c2.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c2.icon-byob:before {
   content: '\\e900';
 }
@@ -344,6 +316,54 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e830';
 }
 
+.c2.icon-music:before {
+  content: '\\e932';
+}
+
+.c2.icon-mail:before {
+  content: '\\e931';
+}
+
+.c2.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c2.icon-reset:before {
+  content: '\\e936';
+}
+
+.c2.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c2.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c2.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c2.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c2.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c2.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c2.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c2.icon-concertOutline:before {
+  content: '\\e937';
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -351,7 +371,7 @@ exports[`<Pagination /> renders correctly 1`] = `
   display: flex;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -364,7 +384,11 @@ exports[`<Pagination /> renders correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -375,12 +399,22 @@ exports[`<Pagination /> renders correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -502,1313 +536,236 @@ exports[`<Pagination /> renders correctly 1`] = `
     <styled.div
       data-qaid=""
     >
-      <StyledComponent
+      <div
+        className="c0"
         data-qaid=""
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  display: flex;
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bxivhb",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
       >
-        <div
-          className="c0"
-          data-qaid=""
+        <Component
+          data-qaid="-prev"
+          disabled={false}
+          onClick={[Function]}
         >
-          <Component
+          <styled.div
+            as="button"
+            clickable={true}
             data-qaid="-prev"
             disabled={false}
             onClick={[Function]}
           >
-            <styled.div
-              as="button"
-              clickable={true}
+            <button
+              className="c1"
               data-qaid="-prev"
               disabled={false}
               onClick={[Function]}
             >
-              <StyledComponent
-                as="button"
-                clickable={true}
-                data-qaid="-prev"
-                disabled={false}
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  ",
-                        [Function],
-                        "
-",
-                      ],
-                    },
-                    "displayName": "styled.div",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "div",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                onClick={[Function]}
+              <Icon
+                name="chevronLeft"
               >
-                <button
-                  className="c1"
-                  data-qaid="-prev"
-                  disabled={false}
-                  onClick={[Function]}
+                <styled.i
+                  className="icon-chevronLeft "
                 >
-                  <Icon
-                    name="chevronLeft"
-                  >
-                    <styled.i
-                      className="icon-chevronLeft "
-                    >
-                      <StyledComponent
-                        className="icon-chevronLeft "
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-htpNat",
-                              "isStatic": false,
-                              "lastClassName": "c2",
-                              "rules": Array [
-                                "
-  ",
-                                [Function],
-                                "
-
-  ",
-                                "
-    ",
-                                "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                                "
-  ",
-                                ";
-",
-                              ],
-                            },
-                            "displayName": "styled.i",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-htpNat",
-                            "target": "i",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <i
-                          className="c2 icon-chevronLeft "
-                        />
-                      </StyledComponent>
-                    </styled.i>
-                  </Icon>
-                </button>
-              </StyledComponent>
-            </styled.div>
-          </Component>
-          <Compact
+                  <i
+                    className="c2 icon-chevronLeft "
+                  />
+                </styled.i>
+              </Icon>
+            </button>
+          </styled.div>
+        </Component>
+        <Compact
+          currentPage={3}
+          onClickPage={[Function]}
+          qaId=""
+          totalPages={10}
+        >
+          <Pages
             currentPage={3}
-            onClickPage={[Function]}
+            displayPages={5}
+            onClick={[Function]}
             qaId=""
-            totalPages={10}
           >
-            <Pages
-              currentPage={3}
-              displayPages={5}
-              onClick={[Function]}
-              qaId=""
-            >
-              <PageBubble
-                isActive={false}
-                key="1"
-                onClick={[Function]}
-                page={1}
-                qaId=""
-              >
-                <Styled(styled.div)
-                  as="button"
-                  clickable={true}
-                  data-qaid="-page-1"
-                  onClick={[Function]}
-                >
-                  <StyledComponent
-                    as="button"
-                    clickable={true}
-                    data-qaid="-page-1"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-bwzfXH",
-                          "isStatic": false,
-                          "lastClassName": "c3",
-                          "rules": Array [
-                            "
-  ",
-                            [Function],
-                            "
-",
-                            "
-  ",
-                            [Function],
-                            "
-",
-                          ],
-                        },
-                        "displayName": "Styled(styled.div)",
-                        "foldedComponentIds": Array [
-                          "sc-bdVaJa",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "sc-bwzfXH",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    onClick={[Function]}
-                  >
-                    <button
-                      className="c3"
-                      data-qaid="-page-1"
-                      onClick={[Function]}
-                    >
-                      1
-                    </button>
-                  </StyledComponent>
-                </Styled(styled.div)>
-              </PageBubble>
-              <PageBubble
-                isActive={false}
-                key="2"
-                onClick={[Function]}
-                page={2}
-                qaId=""
-              >
-                <Styled(styled.div)
-                  as="button"
-                  clickable={true}
-                  data-qaid="-page-2"
-                  onClick={[Function]}
-                >
-                  <StyledComponent
-                    as="button"
-                    clickable={true}
-                    data-qaid="-page-2"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-bwzfXH",
-                          "isStatic": false,
-                          "lastClassName": "c3",
-                          "rules": Array [
-                            "
-  ",
-                            [Function],
-                            "
-",
-                            "
-  ",
-                            [Function],
-                            "
-",
-                          ],
-                        },
-                        "displayName": "Styled(styled.div)",
-                        "foldedComponentIds": Array [
-                          "sc-bdVaJa",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "sc-bwzfXH",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    onClick={[Function]}
-                  >
-                    <button
-                      className="c3"
-                      data-qaid="-page-2"
-                      onClick={[Function]}
-                    >
-                      2
-                    </button>
-                  </StyledComponent>
-                </Styled(styled.div)>
-              </PageBubble>
-              <PageBubble
-                isActive={true}
-                key="3"
-                onClick={[Function]}
-                page={3}
-                qaId=""
-              >
-                <Styled(styled.div)
-                  color="primary"
-                >
-                  <StyledComponent
-                    color="primary"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-bwzfXH",
-                          "isStatic": false,
-                          "lastClassName": "c3",
-                          "rules": Array [
-                            "
-  ",
-                            [Function],
-                            "
-",
-                            "
-  ",
-                            [Function],
-                            "
-",
-                          ],
-                        },
-                        "displayName": "Styled(styled.div)",
-                        "foldedComponentIds": Array [
-                          "sc-bdVaJa",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "sc-bwzfXH",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className="c4"
-                      color="primary"
-                    >
-                      3
-                    </div>
-                  </StyledComponent>
-                </Styled(styled.div)>
-              </PageBubble>
-              <PageBubble
-                isActive={false}
-                key="4"
-                onClick={[Function]}
-                page={4}
-                qaId=""
-              >
-                <Styled(styled.div)
-                  as="button"
-                  clickable={true}
-                  data-qaid="-page-4"
-                  onClick={[Function]}
-                >
-                  <StyledComponent
-                    as="button"
-                    clickable={true}
-                    data-qaid="-page-4"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-bwzfXH",
-                          "isStatic": false,
-                          "lastClassName": "c3",
-                          "rules": Array [
-                            "
-  ",
-                            [Function],
-                            "
-",
-                            "
-  ",
-                            [Function],
-                            "
-",
-                          ],
-                        },
-                        "displayName": "Styled(styled.div)",
-                        "foldedComponentIds": Array [
-                          "sc-bdVaJa",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "sc-bwzfXH",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    onClick={[Function]}
-                  >
-                    <button
-                      className="c3"
-                      data-qaid="-page-4"
-                      onClick={[Function]}
-                    >
-                      4
-                    </button>
-                  </StyledComponent>
-                </Styled(styled.div)>
-              </PageBubble>
-              <PageBubble
-                isActive={false}
-                key="5"
-                onClick={[Function]}
-                page={5}
-                qaId=""
-              >
-                <Styled(styled.div)
-                  as="button"
-                  clickable={true}
-                  data-qaid="-page-5"
-                  onClick={[Function]}
-                >
-                  <StyledComponent
-                    as="button"
-                    clickable={true}
-                    data-qaid="-page-5"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-bwzfXH",
-                          "isStatic": false,
-                          "lastClassName": "c3",
-                          "rules": Array [
-                            "
-  ",
-                            [Function],
-                            "
-",
-                            "
-  ",
-                            [Function],
-                            "
-",
-                          ],
-                        },
-                        "displayName": "Styled(styled.div)",
-                        "foldedComponentIds": Array [
-                          "sc-bdVaJa",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "sc-bwzfXH",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    onClick={[Function]}
-                  >
-                    <button
-                      className="c3"
-                      data-qaid="-page-5"
-                      onClick={[Function]}
-                    >
-                      5
-                    </button>
-                  </StyledComponent>
-                </Styled(styled.div)>
-              </PageBubble>
-            </Pages>
-            <Ellipsis>
-              <styled.div>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-bdVaJa",
-                        "isStatic": false,
-                        "lastClassName": "c1",
-                        "rules": Array [
-                          "
-  ",
-                          [Function],
-                          "
-",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-bdVaJa",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <div
-                    className="c5"
-                  >
-                    <Icon
-                      name="ellipsisHorizontal"
-                    >
-                      <styled.i
-                        className="icon-ellipsisHorizontal "
-                      >
-                        <StyledComponent
-                          className="icon-ellipsisHorizontal "
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-htpNat",
-                                "isStatic": false,
-                                "lastClassName": "c2",
-                                "rules": Array [
-                                  "
-  ",
-                                  [Function],
-                                  "
-
-  ",
-                                  "
-    ",
-                                  "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                                  "
-  ",
-                                  ";
-",
-                                ],
-                              },
-                              "displayName": "styled.i",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-htpNat",
-                              "target": "i",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                        >
-                          <i
-                            className="c2 icon-ellipsisHorizontal "
-                          />
-                        </StyledComponent>
-                      </styled.i>
-                    </Icon>
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Ellipsis>
             <PageBubble
               isActive={false}
+              key="1"
               onClick={[Function]}
-              page={10}
+              page={1}
               qaId=""
             >
               <Styled(styled.div)
                 as="button"
                 clickable={true}
+                data-qaid="-page-1"
+                onClick={[Function]}
+              >
+                <button
+                  className="c1 c3"
+                  data-qaid="-page-1"
+                  onClick={[Function]}
+                >
+                  1
+                </button>
+              </Styled(styled.div)>
+            </PageBubble>
+            <PageBubble
+              isActive={false}
+              key="2"
+              onClick={[Function]}
+              page={2}
+              qaId=""
+            >
+              <Styled(styled.div)
+                as="button"
+                clickable={true}
+                data-qaid="-page-2"
+                onClick={[Function]}
+              >
+                <button
+                  className="c1 c3"
+                  data-qaid="-page-2"
+                  onClick={[Function]}
+                >
+                  2
+                </button>
+              </Styled(styled.div)>
+            </PageBubble>
+            <PageBubble
+              isActive={true}
+              key="3"
+              onClick={[Function]}
+              page={3}
+              qaId=""
+            >
+              <Styled(styled.div)
+                color="primary"
+              >
+                <div
+                  className="c4 c3"
+                  color="primary"
+                >
+                  3
+                </div>
+              </Styled(styled.div)>
+            </PageBubble>
+            <PageBubble
+              isActive={false}
+              key="4"
+              onClick={[Function]}
+              page={4}
+              qaId=""
+            >
+              <Styled(styled.div)
+                as="button"
+                clickable={true}
+                data-qaid="-page-4"
+                onClick={[Function]}
+              >
+                <button
+                  className="c1 c3"
+                  data-qaid="-page-4"
+                  onClick={[Function]}
+                >
+                  4
+                </button>
+              </Styled(styled.div)>
+            </PageBubble>
+            <PageBubble
+              isActive={false}
+              key="5"
+              onClick={[Function]}
+              page={5}
+              qaId=""
+            >
+              <Styled(styled.div)
+                as="button"
+                clickable={true}
+                data-qaid="-page-5"
+                onClick={[Function]}
+              >
+                <button
+                  className="c1 c3"
+                  data-qaid="-page-5"
+                  onClick={[Function]}
+                >
+                  5
+                </button>
+              </Styled(styled.div)>
+            </PageBubble>
+          </Pages>
+          <Ellipsis>
+            <styled.div>
+              <div
+                className="c5"
+              >
+                <Icon
+                  name="ellipsisHorizontal"
+                >
+                  <styled.i
+                    className="icon-ellipsisHorizontal "
+                  >
+                    <i
+                      className="c2 icon-ellipsisHorizontal "
+                    />
+                  </styled.i>
+                </Icon>
+              </div>
+            </styled.div>
+          </Ellipsis>
+          <PageBubble
+            isActive={false}
+            onClick={[Function]}
+            page={10}
+            qaId=""
+          >
+            <Styled(styled.div)
+              as="button"
+              clickable={true}
+              data-qaid="-page-10"
+              onClick={[Function]}
+            >
+              <button
+                className="c1 c3"
                 data-qaid="-page-10"
                 onClick={[Function]}
               >
-                <StyledComponent
-                  as="button"
-                  clickable={true}
-                  data-qaid="-page-10"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
-                        "isStatic": false,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          "
-  ",
-                          [Function],
-                          "
-",
-                          "
-  ",
-                          [Function],
-                          "
-",
-                        ],
-                      },
-                      "displayName": "Styled(styled.div)",
-                      "foldedComponentIds": Array [
-                        "sc-bdVaJa",
-                      ],
-                      "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  onClick={[Function]}
-                >
-                  <button
-                    className="c3"
-                    data-qaid="-page-10"
-                    onClick={[Function]}
-                  >
-                    10
-                  </button>
-                </StyledComponent>
-              </Styled(styled.div)>
-            </PageBubble>
-          </Compact>
-          <Component
+                10
+              </button>
+            </Styled(styled.div)>
+          </PageBubble>
+        </Compact>
+        <Component
+          data-qaid="-next"
+          disabled={false}
+          onClick={[Function]}
+        >
+          <styled.div
+            as="button"
+            clickable={true}
             data-qaid="-next"
             disabled={false}
             onClick={[Function]}
           >
-            <styled.div
-              as="button"
-              clickable={true}
+            <button
+              className="c1"
               data-qaid="-next"
               disabled={false}
               onClick={[Function]}
             >
-              <StyledComponent
-                as="button"
-                clickable={true}
-                data-qaid="-next"
-                disabled={false}
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  ",
-                        [Function],
-                        "
-",
-                      ],
-                    },
-                    "displayName": "styled.div",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "div",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                onClick={[Function]}
+              <Icon
+                name="chevronRight"
               >
-                <button
-                  className="c1"
-                  data-qaid="-next"
-                  disabled={false}
-                  onClick={[Function]}
+                <styled.i
+                  className="icon-chevronRight "
                 >
-                  <Icon
-                    name="chevronRight"
-                  >
-                    <styled.i
-                      className="icon-chevronRight "
-                    >
-                      <StyledComponent
-                        className="icon-chevronRight "
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-htpNat",
-                              "isStatic": false,
-                              "lastClassName": "c2",
-                              "rules": Array [
-                                "
-  ",
-                                [Function],
-                                "
-
-  ",
-                                "
-    ",
-                                "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                                "
-  ",
-                                ";
-",
-                              ],
-                            },
-                            "displayName": "styled.i",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-htpNat",
-                            "target": "i",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <i
-                          className="c2 icon-chevronRight "
-                        />
-                      </StyledComponent>
-                    </styled.i>
-                  </Icon>
-                </button>
-              </StyledComponent>
-            </styled.div>
-          </Component>
-        </div>
-      </StyledComponent>
+                  <i
+                    className="c2 icon-chevronRight "
+                  />
+                </styled.i>
+              </Icon>
+            </button>
+          </styled.div>
+        </Component>
+      </div>
     </styled.div>
   </Pagination>
-</ThemeProvider>
+</Component>
 `;

@@ -11,30 +11,53 @@ interface ColProps {
   md?: number;
   lg?: number;
   xl?: number;
+  xsStart?: number;
+  smStart?: number;
+  mdStart?: number;
+  lgStart?: number;
+  xlStart?: number;
   rowSpan?: number;
 }
 export const Col = styled.div<ColProps>`
-  ${({ theme, xs, sm, md, lg, xl, rowSpan }) => css`
+  ${({
+    theme,
+    xs,
+    sm,
+    md,
+    lg,
+    xl,
+    xsStart,
+    smStart,
+    mdStart,
+    lgStart,
+    xlStart,
+    rowSpan
+  }) => css`
     grid-column-end: span ${xs || 12};
+    grid-column-start: ${xsStart || 'auto'};
     grid-row: span ${rowSpan || 'auto'};
 
     ${sm &&
       theme.media.sm`
+      grid-column-start: ${smStart || 'auto'};
       grid-column-end: span ${sm};
     `}
 
     ${md &&
       theme.media.md`
+      grid-column-start: ${mdStart || 'auto'};
       grid-column-end: span ${md};
     `}
 
     ${lg &&
       theme.media.lg`
+      grid-column-start: ${lgStart || 'auto'};
       grid-column-end: span ${lg};
     `}
 
     ${xl &&
       theme.media.xl`
+      grid-column-start: ${xlStart || 'auto'};
       grid-column-end: span ${xl};
     `}
   `}

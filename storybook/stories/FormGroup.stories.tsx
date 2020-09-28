@@ -1,13 +1,19 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
-import { BrowserRouter } from 'react-router-dom';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { withDesign } from 'storybook-addon-designs';
 
 import { Textfield, FormGroup, Icon, Dropdown } from '../../src';
 
 storiesOf('Form Group', module)
   .addDecorator(withKnobs)
+  .addDecorator(withDesign)
+  .addParameters({
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=12%3A42',
+    },
+  })
   .add('Default', () => (
     <>
       <h1>FormGroup</h1>
@@ -28,7 +34,7 @@ storiesOf('Form Group', module)
         label="Helpful"
         required={boolean('Required', true)}
         renderIcon={() => (
-          <Dropdown renderLabel={isOpen => <Icon name="helpCircleOutline" />}>
+          <Dropdown renderLabel={() => <Icon name="helpCircleOutline" />}>
             <p>I am the helptext for this input field.</p>
           </Dropdown>
         )}

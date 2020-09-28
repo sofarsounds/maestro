@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withDesign } from 'storybook-addon-designs';
 
 import { theme } from '../../src';
 
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
 
 export const Row = styled.div`
   display: grid;
@@ -42,54 +42,73 @@ const ColorPanel: React.SFC<any> = ({ colorName, hex }) => (
   </Panel>
 );
 
-storiesOf('Colors', module).add(
+storiesOf('Colors', module)
+  .addDecorator(withDesign)
+  .addParameters({
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=5%3A2',
+    },
+  })
+  .add(
   'Brand',
-  () => (
-    <>
-      <h1>color Schema</h1>
+  () => <>
+    <h1>color Schema</h1>
 
-      <Row>
-        <ColorPanel colorName="Primary" hex={theme.colors.primary} />
-      </Row>
+    <Row>
+      <ColorPanel colorName="Primary" hex={theme.colors.primary} />
+    </Row>
 
-      <h2>Blacks & Greys</h2>
-      <Row>
-        {[
-          'backToBlack',
-          'blackBetty',
-          'paintItBlack',
-          'blueSmoke',
-          'macyGrey',
-          'silverSprings',
-          'whiteDenim'
-        ].map(k => (
-          <ColorPanel key={k} colorName={k} hex={theme.colors[k]} />
-        ))}
-      </Row>
+    <h2>Blacks & Greys</h2>
+    <Row>
+      {[
+        'backToBlack',
+        'blackBetty',
+        'paintItBlack',
+        'blueSmoke',
+        'macyGrey',
+        'silverSprings',
+        'whiteDenim'
+      ].map(k => <ColorPanel key={k} colorName={k} hex={theme.colors[k]} />)}
+    </Row>
 
-      <h2>Shades of Green</h2>
-      <Row>
-        {[
-          'green900',
-          'green700',
-          'green600',
-          'green500',
-          'green400',
-          'green300',
-          'green200',
-          'green100',
-          'green50'
-        ].map(k => (
-          <ColorPanel key={k} colorName={k} hex={theme.colors[k]} />
-        ))}
-      </Row>
+    <h2>Shades of Green</h2>
+    <Row>
+      {[
+        'green900',
+        'green800',
+        'green700',
+        'green600',
+        'green500',
+        'green400',
+        'green300',
+        'green200',
+        'green100',
+        'green50'
+      ].map(k => <ColorPanel key={k} colorName={k} hex={theme.colors[k]} />)}
+    </Row>
 
-      <h2>Misc colors</h2>
-      <Row>
-        <ColorPanel colorName="redRedWine" hex={theme.colors.redRedWine} />
-      </Row>
-    </>
-  ),
+    <h2>Misc colors</h2>
+     <Row>
+      {[
+        'greenOnions',
+        'greenGarden',
+        'purpleHaze',
+        'blueChristmas',
+        'purplePills',
+        'checkBerry',
+        'blueMagic',
+        'brownSugar',
+        'pinkTriangle',
+        'royalBlood',
+        'redRedWine',
+        'peaches',
+        'orangeCrush',
+        'mellowYellow',
+        'yellowSubmarine',
+      ].map(k => <ColorPanel key={k} colorName={k} hex={theme.colors[k]} />)}
+     </Row>
+  </>,
   {
     isToolshown: false
   }

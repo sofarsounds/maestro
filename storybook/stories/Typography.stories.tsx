@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, text } from '@storybook/addon-knobs';
+import { withDesign } from 'storybook-addon-designs';
 
 import {
   Title,
@@ -31,6 +32,13 @@ const anchorTags = [Anchor1, Anchor2];
 
 storiesOf('Typography', module)
   .addDecorator(withKnobs)
+  .addDecorator(withDesign)
+  .addParameters({
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/P31na2HYB09sF7v5B0nqkJ/Sofar-Design-System?node-id=6%3A2',
+    },
+  })
   .add('Title', () => (
     <>
       <h1>Titles</h1>

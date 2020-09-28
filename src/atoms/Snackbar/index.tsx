@@ -24,9 +24,6 @@ const SnackbarStyled = styled.div`
   `}
 `;
 
-interface IconProps {
-  onClick: () => void;
-}
 export const CancelButton = styled.button`
   cursor: pointer;
   border: none;

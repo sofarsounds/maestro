@@ -30,7 +30,7 @@ exports[`<Badge /> Default Badge renders the badge correctly 1`] = `
   user-select: none;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -43,7 +43,11 @@ exports[`<Badge /> Default Badge renders the badge correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -54,12 +58,22 @@ exports[`<Badge /> Default Badge renders the badge correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -174,43 +188,13 @@ exports[`<Badge /> Default Badge renders the badge correctly 1`] = `
   }
 >
   <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
-      >
-        1
-      </div>
-    </StyledComponent>
+      1
+    </div>
   </styled.div>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
@@ -246,7 +230,7 @@ exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
   font-weight: 600;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -259,7 +243,11 @@ exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -270,12 +258,22 @@ exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -392,43 +390,12 @@ exports[`<Badge /> Primary Badge renders the badge correctly 1`] = `
   <styled.div
     color="primary"
   >
-    <StyledComponent
+    <div
+      className="c0"
       color="primary"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
     >
-      <div
-        className="c0"
-        color="primary"
-      >
-        1
-      </div>
-    </StyledComponent>
+      1
+    </div>
   </styled.div>
-</ThemeProvider>
+</Component>
 `;

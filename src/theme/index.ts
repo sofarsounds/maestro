@@ -12,6 +12,10 @@ export const breakPoints = {
 };
 
 const theme: Theme = {
+  fonts: {
+    regular: 'Open Sans'
+  },
+
   colors: {
     primary: '#039842',
 
@@ -38,11 +42,21 @@ const theme: Theme = {
     green50: '#E6F7EA',
 
     // additional
-    redRedWine: '#EF4423'
-  },
-
-  fonts: {
-    regular: 'Open Sans'
+    greenOnions: '#8BC34B',
+    greenGarden: '#19BC9B',
+    blueChristmas: '#3498DB',
+    purpleHaze: '#3F51B5',
+    purplePills: '#9B59B6',
+    checkBerry: '#98035A',
+    blueMagic: '#34495E',
+    brownSugar: '#9B525F',
+    pinkTriangle: '#E91E63',
+    royalBlood: '#FF5000',
+    redRedWine: '#EF4423',
+    peaches: '#F99973',
+    orangeCrush: '#F39C12',
+    mellowYellow: '#F1C410',
+    yellowSubmarine: '#FFD426'
   },
   fontSizes: {
     base: '16px',
@@ -64,13 +78,14 @@ const theme: Theme = {
   media: Object.keys(breakPoints).reduce((acc, label: string) => {
     acc[label] = (...args: any) => css`
       @media (min-width: ${breakPoints[label]}px) {
+        // @ts-ignore
         ${css.call(undefined, ...args)};
       }
     `;
     return acc;
   }, {}),
 
-  ruler: Array.from({ length: 21 }, (e, i) => i * 4),
+  ruler: Array.from({ length: 21 }, (_e, i) => i * 4),
   zIndex: {
     navbar: 100
   },

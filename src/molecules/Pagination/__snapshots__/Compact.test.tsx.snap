@@ -1,7 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination <Compact /> it renders correctly when a middle page is active 1`] = `
-.c1 {
+.c0 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(17,17,17,0.1);
+}
+
+.c2 {
   width: 36px;
   height: 36px;
   margin: 0;
@@ -30,7 +64,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   user-select: none;
 }
 
-.c3 {
+.c4 {
   width: 36px;
   height: 36px;
   margin: 0;
@@ -60,45 +94,13 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
+}
+
+.c1 {
   margin: 0 4px;
 }
 
-.c0 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  margin: 0 4px;
-}
-
-.c0:hover {
-  background-color: rgba(17,17,17,0.1);
-}
-
-.c2 {
+.c3 {
   font-family: 'sofarsounds-icon-font' !important;
   speak: none;
   font-style: normal;
@@ -110,207 +112,259 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c2:before {
+.c3:before {
   color: #000000;
 }
 
-.c2.icon-facebook:before {
+.c3.icon-facebook:before {
   content: '\\e90d';
 }
 
-.c2.icon-instagram:before {
+.c3.icon-instagram:before {
   content: '\\e916';
 }
 
-.c2.icon-spotify:before {
+.c3.icon-spotify:before {
   content: '\\e926';
 }
 
-.c2.icon-twitter:before {
+.c3.icon-twitter:before {
   content: '\\e92f';
 }
 
-.c2.icon-youtube:before {
+.c3.icon-youtube:before {
   content: '\\e935';
 }
 
-.c2.icon-facebookOutline:before {
+.c3.icon-facebookOutline:before {
   content: '\\e90b';
 }
 
-.c2.icon-instagramOutline:before {
+.c3.icon-instagramOutline:before {
   content: '\\e911';
 }
 
-.c2.icon-spotifyOutline:before {
+.c3.icon-spotifyOutline:before {
   content: '\\e914';
 }
 
-.c2.icon-twitterOutline:before {
+.c3.icon-twitterOutline:before {
   content: '\\e91a';
 }
 
-.c2.icon-youtubeOutline:before {
+.c3.icon-youtubeOutline:before {
   content: '\\e91b';
 }
 
-.c2.icon-caretUp:before {
+.c3.icon-caretUp:before {
   content: '\\e921';
 }
 
-.c2.icon-caretDown:before {
+.c3.icon-caretDown:before {
   content: '\\e906';
 }
 
-.c2.icon-caretLeft:before {
+.c3.icon-caretLeft:before {
   content: '\\e922';
 }
 
-.c2.icon-caretRight:before {
+.c3.icon-caretRight:before {
   content: '\\e923';
 }
 
-.c2.icon-caretCircleDown:before {
+.c3.icon-caretCircleDown:before {
   content: '\\e908';
 }
 
-.c2.icon-chevronLeft:before {
+.c3.icon-chevronLeft:before {
   content: '\\e917';
 }
 
-.c2.icon-chevronRight:before {
+.c3.icon-chevronRight:before {
   content: '\\e92c';
 }
 
-.c2.icon-chevronUp:before {
+.c3.icon-chevronUp:before {
   content: '\\e92a';
 }
 
-.c2.icon-chevronDown:before {
+.c3.icon-chevronDown:before {
   content: '\\e920';
 }
 
-.c2.icon-moveVertical:before {
+.c3.icon-moveVertical:before {
   content: '\\e919';
 }
 
-.c2.icon-check:before {
+.c3.icon-check:before {
   content: '\\e927';
 }
 
-.c2.icon-checkCircle:before {
+.c3.icon-checkCircle:before {
   content: '\\e902';
 }
 
-.c2.icon-alertCircle:before {
+.c3.icon-alertCircle:before {
   content: '\\e907';
 }
 
-.c2.icon-alertTriangle:before {
+.c3.icon-alertTriangle:before {
   content: '\\e930';
 }
 
-.c2.icon-calendar:before {
+.c3.icon-calendar:before {
   content: '\\e901';
 }
 
-.c2.icon-time:before {
+.c3.icon-time:before {
   content: '\\e929';
 }
 
-.c2.icon-timeHand:before {
+.c3.icon-timeHand:before {
   content: '\\e928';
 }
 
-.c2.icon-byob:before {
+.c3.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
+.c3.icon-byob:before {
   content: '\\e900';
 }
 
-.c2.icon-close:before {
+.c3.icon-close:before {
   content: '\\e903';
 }
 
-.c2.icon-commercial:before {
+.c3.icon-commercial:before {
   content: '\\e904';
 }
 
-.c2.icon-disabled:before {
+.c3.icon-disabled:before {
   content: '\\e905';
 }
 
-.c2.icon-eye:before {
+.c3.icon-eye:before {
   content: '\\e909';
 }
 
-.c2.icon-video:before {
+.c3.icon-video:before {
   content: '\\e90e';
 }
 
-.c2.icon-happyMask:before {
+.c3.icon-happyMask:before {
   content: '\\e90f';
 }
 
-.c2.icon-helpCircleOutline:before {
+.c3.icon-helpCircleOutline:before {
   content: '\\e912';
 }
 
-.c2.icon-ellipsisHorizontal:before {
+.c3.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c2.icon-no:before {
+.c3.icon-no:before {
   content: '\\e91c';
 }
 
-.c2.icon-pet:before {
+.c3.icon-pet:before {
   content: '\\e91d';
 }
 
-.c2.icon-readGlasses:before {
+.c3.icon-readGlasses:before {
   content: '\\e91e';
 }
 
-.c2.icon-residential:before {
+.c3.icon-residential:before {
   content: '\\e91f';
 }
 
-.c2.icon-tree:before {
+.c3.icon-tree:before {
   content: '\\e92b';
 }
 
-.c2.icon-heartPulse:before {
+.c3.icon-heartPulse:before {
   content: '\\e90c';
 }
 
-.c2.icon-homeWorld:before {
+.c3.icon-homeWorld:before {
   content: '\\e910';
 }
 
-.c2.icon-travelWorld:before {
+.c3.icon-travelWorld:before {
   content: '\\e915';
 }
 
-.c2.icon-musicTicket:before {
+.c3.icon-musicTicket:before {
   content: '\\e913';
 }
 
-.c2.icon-musicLove:before {
+.c3.icon-musicLove:before {
   content: '\\e90a';
 }
 
-.c2.icon-plus:before {
+.c3.icon-plus:before {
   content: '\\e924';
 }
 
-.c2.icon-padlock:before {
+.c3.icon-padlock:before {
   content: '\\e925';
 }
 
-.c2.icon-search:before {
+.c3.icon-search:before {
   content: '\\e830';
 }
 
-<ThemeProvider
+.c3.icon-music:before {
+  content: '\\e932';
+}
+
+.c3.icon-mail:before {
+  content: '\\e931';
+}
+
+.c3.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c3.icon-reset:before {
+  content: '\\e936';
+}
+
+.c3.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c3.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c3.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c3.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c3.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c3.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c3.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c3.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -323,7 +377,11 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -334,12 +392,22 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -470,338 +538,32 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         data-qaid="-page-1"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c0 c1"
           data-qaid="-page-1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-1"
-            onClick={[Function]}
-          >
-            1
-          </button>
-        </StyledComponent>
+          1
+        </button>
       </Styled(styled.div)>
     </PageBubble>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c2"
         >
-          <div
-            className="c1"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="c2 icon-ellipsisHorizontal "
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c3 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <Pages
@@ -824,54 +586,13 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           data-qaid="-page-5"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0 c1"
             data-qaid="-page-5"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-5"
-              onClick={[Function]}
-            >
-              5
-            </button>
-          </StyledComponent>
+            5
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -884,50 +605,12 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         <Styled(styled.div)
           color="primary"
         >
-          <StyledComponent
+          <div
+            className="c4 c1"
             color="primary"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
           >
-            <div
-              className="c3"
-              color="primary"
-            >
-              6
-            </div>
-          </StyledComponent>
+            6
+          </div>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -943,339 +626,33 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
           data-qaid="-page-7"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0 c1"
             data-qaid="-page-7"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-7"
-              onClick={[Function]}
-            >
-              7
-            </button>
-          </StyledComponent>
+            7
+          </button>
         </Styled(styled.div)>
       </PageBubble>
     </Pages>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c2"
         >
-          <div
-            className="c1"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="c2 icon-ellipsisHorizontal "
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c3 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <PageBubble
@@ -1290,90 +667,20 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
         data-qaid="-page-15"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c0 c1"
           data-qaid="-page-15"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-15"
-            onClick={[Function]}
-          >
-            15
-          </button>
-        </StyledComponent>
+          15
+        </button>
       </Styled(styled.div)>
     </PageBubble>
   </Compact>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Pagination <Compact /> it renders correctly when the first page is active 1`] = `
-.c2 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .c0 {
   width: 36px;
   height: 36px;
@@ -1404,10 +711,9 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
-  margin: 0 4px;
 }
 
-.c1 {
+.c2 {
   width: 36px;
   height: 36px;
   margin: 0;
@@ -1435,14 +741,46 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  margin: 0 4px;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: rgba(17,17,17,0.1);
 }
 
 .c3 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1 {
+  margin: 0 4px;
+}
+
+.c4 {
   font-family: 'sofarsounds-icon-font' !important;
   speak: none;
   font-style: normal;
@@ -1454,207 +792,259 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c3:before {
+.c4:before {
   color: #000000;
 }
 
-.c3.icon-facebook:before {
+.c4.icon-facebook:before {
   content: '\\e90d';
 }
 
-.c3.icon-instagram:before {
+.c4.icon-instagram:before {
   content: '\\e916';
 }
 
-.c3.icon-spotify:before {
+.c4.icon-spotify:before {
   content: '\\e926';
 }
 
-.c3.icon-twitter:before {
+.c4.icon-twitter:before {
   content: '\\e92f';
 }
 
-.c3.icon-youtube:before {
+.c4.icon-youtube:before {
   content: '\\e935';
 }
 
-.c3.icon-facebookOutline:before {
+.c4.icon-facebookOutline:before {
   content: '\\e90b';
 }
 
-.c3.icon-instagramOutline:before {
+.c4.icon-instagramOutline:before {
   content: '\\e911';
 }
 
-.c3.icon-spotifyOutline:before {
+.c4.icon-spotifyOutline:before {
   content: '\\e914';
 }
 
-.c3.icon-twitterOutline:before {
+.c4.icon-twitterOutline:before {
   content: '\\e91a';
 }
 
-.c3.icon-youtubeOutline:before {
+.c4.icon-youtubeOutline:before {
   content: '\\e91b';
 }
 
-.c3.icon-caretUp:before {
+.c4.icon-caretUp:before {
   content: '\\e921';
 }
 
-.c3.icon-caretDown:before {
+.c4.icon-caretDown:before {
   content: '\\e906';
 }
 
-.c3.icon-caretLeft:before {
+.c4.icon-caretLeft:before {
   content: '\\e922';
 }
 
-.c3.icon-caretRight:before {
+.c4.icon-caretRight:before {
   content: '\\e923';
 }
 
-.c3.icon-caretCircleDown:before {
+.c4.icon-caretCircleDown:before {
   content: '\\e908';
 }
 
-.c3.icon-chevronLeft:before {
+.c4.icon-chevronLeft:before {
   content: '\\e917';
 }
 
-.c3.icon-chevronRight:before {
+.c4.icon-chevronRight:before {
   content: '\\e92c';
 }
 
-.c3.icon-chevronUp:before {
+.c4.icon-chevronUp:before {
   content: '\\e92a';
 }
 
-.c3.icon-chevronDown:before {
+.c4.icon-chevronDown:before {
   content: '\\e920';
 }
 
-.c3.icon-moveVertical:before {
+.c4.icon-moveVertical:before {
   content: '\\e919';
 }
 
-.c3.icon-check:before {
+.c4.icon-check:before {
   content: '\\e927';
 }
 
-.c3.icon-checkCircle:before {
+.c4.icon-checkCircle:before {
   content: '\\e902';
 }
 
-.c3.icon-alertCircle:before {
+.c4.icon-alertCircle:before {
   content: '\\e907';
 }
 
-.c3.icon-alertTriangle:before {
+.c4.icon-alertTriangle:before {
   content: '\\e930';
 }
 
-.c3.icon-calendar:before {
+.c4.icon-calendar:before {
   content: '\\e901';
 }
 
-.c3.icon-time:before {
+.c4.icon-time:before {
   content: '\\e929';
 }
 
-.c3.icon-timeHand:before {
+.c4.icon-timeHand:before {
   content: '\\e928';
 }
 
-.c3.icon-byob:before {
+.c4.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
+.c4.icon-byob:before {
   content: '\\e900';
 }
 
-.c3.icon-close:before {
+.c4.icon-close:before {
   content: '\\e903';
 }
 
-.c3.icon-commercial:before {
+.c4.icon-commercial:before {
   content: '\\e904';
 }
 
-.c3.icon-disabled:before {
+.c4.icon-disabled:before {
   content: '\\e905';
 }
 
-.c3.icon-eye:before {
+.c4.icon-eye:before {
   content: '\\e909';
 }
 
-.c3.icon-video:before {
+.c4.icon-video:before {
   content: '\\e90e';
 }
 
-.c3.icon-happyMask:before {
+.c4.icon-happyMask:before {
   content: '\\e90f';
 }
 
-.c3.icon-helpCircleOutline:before {
+.c4.icon-helpCircleOutline:before {
   content: '\\e912';
 }
 
-.c3.icon-ellipsisHorizontal:before {
+.c4.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c3.icon-no:before {
+.c4.icon-no:before {
   content: '\\e91c';
 }
 
-.c3.icon-pet:before {
+.c4.icon-pet:before {
   content: '\\e91d';
 }
 
-.c3.icon-readGlasses:before {
+.c4.icon-readGlasses:before {
   content: '\\e91e';
 }
 
-.c3.icon-residential:before {
+.c4.icon-residential:before {
   content: '\\e91f';
 }
 
-.c3.icon-tree:before {
+.c4.icon-tree:before {
   content: '\\e92b';
 }
 
-.c3.icon-heartPulse:before {
+.c4.icon-heartPulse:before {
   content: '\\e90c';
 }
 
-.c3.icon-homeWorld:before {
+.c4.icon-homeWorld:before {
   content: '\\e910';
 }
 
-.c3.icon-travelWorld:before {
+.c4.icon-travelWorld:before {
   content: '\\e915';
 }
 
-.c3.icon-musicTicket:before {
+.c4.icon-musicTicket:before {
   content: '\\e913';
 }
 
-.c3.icon-musicLove:before {
+.c4.icon-musicLove:before {
   content: '\\e90a';
 }
 
-.c3.icon-plus:before {
+.c4.icon-plus:before {
   content: '\\e924';
 }
 
-.c3.icon-padlock:before {
+.c4.icon-padlock:before {
   content: '\\e925';
 }
 
-.c3.icon-search:before {
+.c4.icon-search:before {
   content: '\\e830';
 }
 
-<ThemeProvider
+.c4.icon-music:before {
+  content: '\\e932';
+}
+
+.c4.icon-mail:before {
+  content: '\\e931';
+}
+
+.c4.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c4.icon-reset:before {
+  content: '\\e936';
+}
+
+.c4.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c4.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c4.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c4.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c4.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c4.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c4.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c4.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1667,7 +1057,11 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1678,12 +1072,22 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1818,50 +1222,12 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         <Styled(styled.div)
           color="primary"
         >
-          <StyledComponent
+          <div
+            className="c0 c1"
             color="primary"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
           >
-            <div
-              className="c0"
-              color="primary"
-            >
-              1
-            </div>
-          </StyledComponent>
+            1
+          </div>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -1877,54 +1243,13 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-2"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c2 c1"
             data-qaid="-page-2"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-2"
-              onClick={[Function]}
-            >
-              2
-            </button>
-          </StyledComponent>
+            2
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -1940,54 +1265,13 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-3"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c2 c1"
             data-qaid="-page-3"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-3"
-              onClick={[Function]}
-            >
-              3
-            </button>
-          </StyledComponent>
+            3
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -2003,54 +1287,13 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-4"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c2 c1"
             data-qaid="-page-4"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-4"
-              onClick={[Function]}
-            >
-              4
-            </button>
-          </StyledComponent>
+            4
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -2066,339 +1309,33 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
           data-qaid="-page-5"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c2 c1"
             data-qaid="-page-5"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c1"
-              data-qaid="-page-5"
-              onClick={[Function]}
-            >
-              5
-            </button>
-          </StyledComponent>
+            5
+          </button>
         </Styled(styled.div)>
       </PageBubble>
     </Pages>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c2",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c3"
         >
-          <div
-            className="c2"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          "
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="c3 icon-ellipsisHorizontal "
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c4 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <PageBubble
@@ -2413,62 +1350,55 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
         data-qaid="-page-15"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c2 c1"
           data-qaid="-page-15"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c1"
-            data-qaid="-page-15"
-            onClick={[Function]}
-          >
-            15
-          </button>
-        </StyledComponent>
+          15
+        </button>
       </Styled(styled.div)>
     </PageBubble>
   </Compact>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Pagination <Compact /> it renders correctly when the last page is active 1`] = `
-.c1 {
+.c0 {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border: none;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(17,17,17,0.1);
+}
+
+.c2 {
   width: 36px;
   height: 36px;
   margin: 0;
@@ -2497,7 +1427,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   user-select: none;
 }
 
-.c3 {
+.c4 {
   width: 36px;
   height: 36px;
   margin: 0;
@@ -2527,45 +1457,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   background-color: #039842;
   color: #FFFFFF;
   font-weight: 600;
+}
+
+.c1 {
   margin: 0 4px;
 }
 
-.c0 {
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  border: none;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  margin: 0 4px;
-}
-
-.c0:hover {
-  background-color: rgba(17,17,17,0.1);
-}
-
-.c2 {
+.c3 {
   font-family: 'sofarsounds-icon-font' !important;
   speak: none;
   font-style: normal;
@@ -2577,207 +1475,259 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c2:before {
+.c3:before {
   color: #000000;
 }
 
-.c2.icon-facebook:before {
+.c3.icon-facebook:before {
   content: '\\e90d';
 }
 
-.c2.icon-instagram:before {
+.c3.icon-instagram:before {
   content: '\\e916';
 }
 
-.c2.icon-spotify:before {
+.c3.icon-spotify:before {
   content: '\\e926';
 }
 
-.c2.icon-twitter:before {
+.c3.icon-twitter:before {
   content: '\\e92f';
 }
 
-.c2.icon-youtube:before {
+.c3.icon-youtube:before {
   content: '\\e935';
 }
 
-.c2.icon-facebookOutline:before {
+.c3.icon-facebookOutline:before {
   content: '\\e90b';
 }
 
-.c2.icon-instagramOutline:before {
+.c3.icon-instagramOutline:before {
   content: '\\e911';
 }
 
-.c2.icon-spotifyOutline:before {
+.c3.icon-spotifyOutline:before {
   content: '\\e914';
 }
 
-.c2.icon-twitterOutline:before {
+.c3.icon-twitterOutline:before {
   content: '\\e91a';
 }
 
-.c2.icon-youtubeOutline:before {
+.c3.icon-youtubeOutline:before {
   content: '\\e91b';
 }
 
-.c2.icon-caretUp:before {
+.c3.icon-caretUp:before {
   content: '\\e921';
 }
 
-.c2.icon-caretDown:before {
+.c3.icon-caretDown:before {
   content: '\\e906';
 }
 
-.c2.icon-caretLeft:before {
+.c3.icon-caretLeft:before {
   content: '\\e922';
 }
 
-.c2.icon-caretRight:before {
+.c3.icon-caretRight:before {
   content: '\\e923';
 }
 
-.c2.icon-caretCircleDown:before {
+.c3.icon-caretCircleDown:before {
   content: '\\e908';
 }
 
-.c2.icon-chevronLeft:before {
+.c3.icon-chevronLeft:before {
   content: '\\e917';
 }
 
-.c2.icon-chevronRight:before {
+.c3.icon-chevronRight:before {
   content: '\\e92c';
 }
 
-.c2.icon-chevronUp:before {
+.c3.icon-chevronUp:before {
   content: '\\e92a';
 }
 
-.c2.icon-chevronDown:before {
+.c3.icon-chevronDown:before {
   content: '\\e920';
 }
 
-.c2.icon-moveVertical:before {
+.c3.icon-moveVertical:before {
   content: '\\e919';
 }
 
-.c2.icon-check:before {
+.c3.icon-check:before {
   content: '\\e927';
 }
 
-.c2.icon-checkCircle:before {
+.c3.icon-checkCircle:before {
   content: '\\e902';
 }
 
-.c2.icon-alertCircle:before {
+.c3.icon-alertCircle:before {
   content: '\\e907';
 }
 
-.c2.icon-alertTriangle:before {
+.c3.icon-alertTriangle:before {
   content: '\\e930';
 }
 
-.c2.icon-calendar:before {
+.c3.icon-calendar:before {
   content: '\\e901';
 }
 
-.c2.icon-time:before {
+.c3.icon-time:before {
   content: '\\e929';
 }
 
-.c2.icon-timeHand:before {
+.c3.icon-timeHand:before {
   content: '\\e928';
 }
 
-.c2.icon-byob:before {
+.c3.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
+.c3.icon-byob:before {
   content: '\\e900';
 }
 
-.c2.icon-close:before {
+.c3.icon-close:before {
   content: '\\e903';
 }
 
-.c2.icon-commercial:before {
+.c3.icon-commercial:before {
   content: '\\e904';
 }
 
-.c2.icon-disabled:before {
+.c3.icon-disabled:before {
   content: '\\e905';
 }
 
-.c2.icon-eye:before {
+.c3.icon-eye:before {
   content: '\\e909';
 }
 
-.c2.icon-video:before {
+.c3.icon-video:before {
   content: '\\e90e';
 }
 
-.c2.icon-happyMask:before {
+.c3.icon-happyMask:before {
   content: '\\e90f';
 }
 
-.c2.icon-helpCircleOutline:before {
+.c3.icon-helpCircleOutline:before {
   content: '\\e912';
 }
 
-.c2.icon-ellipsisHorizontal:before {
+.c3.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c2.icon-no:before {
+.c3.icon-no:before {
   content: '\\e91c';
 }
 
-.c2.icon-pet:before {
+.c3.icon-pet:before {
   content: '\\e91d';
 }
 
-.c2.icon-readGlasses:before {
+.c3.icon-readGlasses:before {
   content: '\\e91e';
 }
 
-.c2.icon-residential:before {
+.c3.icon-residential:before {
   content: '\\e91f';
 }
 
-.c2.icon-tree:before {
+.c3.icon-tree:before {
   content: '\\e92b';
 }
 
-.c2.icon-heartPulse:before {
+.c3.icon-heartPulse:before {
   content: '\\e90c';
 }
 
-.c2.icon-homeWorld:before {
+.c3.icon-homeWorld:before {
   content: '\\e910';
 }
 
-.c2.icon-travelWorld:before {
+.c3.icon-travelWorld:before {
   content: '\\e915';
 }
 
-.c2.icon-musicTicket:before {
+.c3.icon-musicTicket:before {
   content: '\\e913';
 }
 
-.c2.icon-musicLove:before {
+.c3.icon-musicLove:before {
   content: '\\e90a';
 }
 
-.c2.icon-plus:before {
+.c3.icon-plus:before {
   content: '\\e924';
 }
 
-.c2.icon-padlock:before {
+.c3.icon-padlock:before {
   content: '\\e925';
 }
 
-.c2.icon-search:before {
+.c3.icon-search:before {
   content: '\\e830';
 }
 
-<ThemeProvider
+.c3.icon-music:before {
+  content: '\\e932';
+}
+
+.c3.icon-mail:before {
+  content: '\\e931';
+}
+
+.c3.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c3.icon-reset:before {
+  content: '\\e936';
+}
+
+.c3.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c3.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c3.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c3.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c3.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c3.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c3.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c3.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -2790,7 +1740,11 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -2801,12 +1755,22 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -2937,338 +1901,32 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         data-qaid="-page-1"
         onClick={[Function]}
       >
-        <StyledComponent
-          as="button"
-          clickable={true}
+        <button
+          className="c0 c1"
           data-qaid="-page-1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c3",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "Styled(styled.div)",
-              "foldedComponentIds": Array [
-                "sc-bdVaJa",
-              ],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
           onClick={[Function]}
         >
-          <button
-            className="c0"
-            data-qaid="-page-1"
-            onClick={[Function]}
-          >
-            1
-          </button>
-        </StyledComponent>
+          1
+        </button>
       </Styled(styled.div)>
     </PageBubble>
     <Ellipsis>
       <styled.div>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
-  ",
-                  [Function],
-                  "
-",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
+        <div
+          className="c2"
         >
-          <div
-            className="c1"
+          <Icon
+            name="ellipsisHorizontal"
           >
-            <Icon
-              name="ellipsisHorizontal"
+            <styled.i
+              className="icon-ellipsisHorizontal "
             >
-              <styled.i
-                className="icon-ellipsisHorizontal "
-              >
-                <StyledComponent
-                  className="icon-ellipsisHorizontal "
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "
-  ",
-                          [Function],
-                          "
-
-  ",
-                          "
-    ",
-                          "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                          "
-  ",
-                          ";
-",
-                        ],
-                      },
-                      "displayName": "styled.i",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <i
-                    className="c2 icon-ellipsisHorizontal "
-                  />
-                </StyledComponent>
-              </styled.i>
-            </Icon>
-          </div>
-        </StyledComponent>
+              <i
+                className="c3 icon-ellipsisHorizontal "
+              />
+            </styled.i>
+          </Icon>
+        </div>
       </styled.div>
     </Ellipsis>
     <Pages
@@ -3291,54 +1949,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-11"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0 c1"
             data-qaid="-page-11"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-11"
-              onClick={[Function]}
-            >
-              11
-            </button>
-          </StyledComponent>
+            11
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3354,54 +1971,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-12"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0 c1"
             data-qaid="-page-12"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-12"
-              onClick={[Function]}
-            >
-              12
-            </button>
-          </StyledComponent>
+            12
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3417,54 +1993,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-13"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0 c1"
             data-qaid="-page-13"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-13"
-              onClick={[Function]}
-            >
-              13
-            </button>
-          </StyledComponent>
+            13
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3480,54 +2015,13 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
           data-qaid="-page-14"
           onClick={[Function]}
         >
-          <StyledComponent
-            as="button"
-            clickable={true}
+          <button
+            className="c0 c1"
             data-qaid="-page-14"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
             onClick={[Function]}
           >
-            <button
-              className="c0"
-              data-qaid="-page-14"
-              onClick={[Function]}
-            >
-              14
-            </button>
-          </StyledComponent>
+            14
+          </button>
         </Styled(styled.div)>
       </PageBubble>
       <PageBubble
@@ -3540,53 +2034,15 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
         <Styled(styled.div)
           color="primary"
         >
-          <StyledComponent
+          <div
+            className="c4 c1"
             color="primary"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
-                  "isStatic": false,
-                  "lastClassName": "c3",
-                  "rules": Array [
-                    "
-  ",
-                    [Function],
-                    "
-",
-                    "
-  ",
-                    [Function],
-                    "
-",
-                  ],
-                },
-                "displayName": "Styled(styled.div)",
-                "foldedComponentIds": Array [
-                  "sc-bdVaJa",
-                ],
-                "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
           >
-            <div
-              className="c3"
-              color="primary"
-            >
-              15
-            </div>
-          </StyledComponent>
+            15
+          </div>
         </Styled(styled.div)>
       </PageBubble>
     </Pages>
   </Compact>
-</ThemeProvider>
+</Component>
 `;

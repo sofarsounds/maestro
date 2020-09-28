@@ -159,6 +159,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -247,7 +251,55 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e830';
 }
 
-<ThemeProvider
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c1.icon-reset:before {
+  content: '\\e936';
+}
+
+.c1.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c1.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c1.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c1.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c1.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c1.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c1.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c1.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -260,7 +312,11 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -271,12 +327,22 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -400,297 +466,27 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
       disabled={false}
       onClick={[MockFunction]}
     >
-      <StyledComponent
-        as="button"
-        clickable={true}
+      <button
+        className="c0"
         data-qaid=""
         disabled={false}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <button
-          className="c0"
-          data-qaid=""
-          disabled={false}
-          onClick={[MockFunction]}
+        <Icon
+          name="chevronLeft"
         >
-          <Icon
-            name="chevronLeft"
+          <styled.i
+            className="icon-chevronLeft "
           >
-            <styled.i
-              className="icon-chevronLeft "
-            >
-              <StyledComponent
-                className="icon-chevronLeft "
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  ",
-                        [Function],
-                        "
-
-  ",
-                        "
-    ",
-                        "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                        "
-  ",
-                        ";
-",
-                      ],
-                    },
-                    "displayName": "styled.i",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <i
-                  className="c1 icon-chevronLeft "
-                />
-              </StyledComponent>
-            </styled.i>
-          </Icon>
-        </button>
-      </StyledComponent>
+            <i
+              className="c1 icon-chevronLeft "
+            />
+          </styled.i>
+        </Icon>
+      </button>
     </styled.div>
   </Component>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
@@ -861,6 +657,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -949,7 +749,55 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e830';
 }
 
-<ThemeProvider
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c1.icon-reset:before {
+  content: '\\e936';
+}
+
+.c1.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c1.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c1.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c1.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c1.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c1.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c1.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c1.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -962,7 +810,11 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -973,12 +825,22 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1103,301 +965,30 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
       disabled={true}
       onClick={[MockFunction]}
     >
-      <StyledComponent
-        as="button"
-        clickable={true}
+      <button
+        className="c0"
         data-qaid=""
         disabled={true}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <button
-          className="c0"
-          data-qaid=""
-          disabled={true}
-          onClick={[MockFunction]}
+        <Icon
+          color="blueSmoke"
+          name="chevronLeft"
         >
-          <Icon
+          <styled.i
+            className="icon-chevronLeft "
             color="blueSmoke"
-            name="chevronLeft"
           >
-            <styled.i
-              className="icon-chevronLeft "
+            <i
+              className="c1 icon-chevronLeft "
               color="blueSmoke"
-            >
-              <StyledComponent
-                className="icon-chevronLeft "
-                color="blueSmoke"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  ",
-                        [Function],
-                        "
-
-  ",
-                        "
-    ",
-                        "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                        "
-  ",
-                        ";
-",
-                      ],
-                    },
-                    "displayName": "styled.i",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <i
-                  className="c1 icon-chevronLeft "
-                  color="blueSmoke"
-                />
-              </StyledComponent>
-            </styled.i>
-          </Icon>
-        </button>
-      </StyledComponent>
+            />
+          </styled.i>
+        </Icon>
+      </button>
     </styled.div>
   </Component>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
@@ -1559,6 +1150,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -1647,7 +1242,55 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
   content: '\\e830';
 }
 
-<ThemeProvider
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c1.icon-reset:before {
+  content: '\\e936';
+}
+
+.c1.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c1.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c1.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c1.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c1.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c1.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c1.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c1.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1660,7 +1303,11 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1671,12 +1318,22 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1800,297 +1457,27 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
       disabled={false}
       onClick={[MockFunction]}
     >
-      <StyledComponent
-        as="button"
-        clickable={true}
+      <button
+        className="c0"
         data-qaid=""
         disabled={false}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <button
-          className="c0"
-          data-qaid=""
-          disabled={false}
-          onClick={[MockFunction]}
+        <Icon
+          name="chevronRight"
         >
-          <Icon
-            name="chevronRight"
+          <styled.i
+            className="icon-chevronRight "
           >
-            <styled.i
-              className="icon-chevronRight "
-            >
-              <StyledComponent
-                className="icon-chevronRight "
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  ",
-                        [Function],
-                        "
-
-  ",
-                        "
-    ",
-                        "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                        "
-  ",
-                        ";
-",
-                      ],
-                    },
-                    "displayName": "styled.i",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <i
-                  className="c1 icon-chevronRight "
-                />
-              </StyledComponent>
-            </styled.i>
-          </Icon>
-        </button>
-      </StyledComponent>
+            <i
+              className="c1 icon-chevronRight "
+            />
+          </styled.i>
+        </Icon>
+      </button>
     </styled.div>
   </Component>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
@@ -2261,6 +1648,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
   content: '\\e928';
 }
 
+.c1.icon-calendarAdd:before {
+  content: '\\e92d';
+}
+
 .c1.icon-byob:before {
   content: '\\e900';
 }
@@ -2349,7 +1740,55 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
   content: '\\e830';
 }
 
-<ThemeProvider
+.c1.icon-music:before {
+  content: '\\e932';
+}
+
+.c1.icon-mail:before {
+  content: '\\e931';
+}
+
+.c1.icon-expandHorizontal:before {
+  content: '\\e92e';
+}
+
+.c1.icon-reset:before {
+  content: '\\e936';
+}
+
+.c1.icon-pencil:before {
+  content: '\\e934';
+}
+
+.c1.icon-trashCan:before {
+  content: '\\e93c';
+}
+
+.c1.icon-arrowUp:before {
+  content: '\\e933';
+}
+
+.c1.icon-arrowLeft:before {
+  content: '\\e93b';
+}
+
+.c1.icon-infoOutline:before {
+  content: '\\e93a';
+}
+
+.c1.icon-feedbackOutline:before {
+  content: '\\e939';
+}
+
+.c1.icon-mediaOutline:before {
+  content: '\\e938';
+}
+
+.c1.icon-concertOutline:before {
+  content: '\\e937';
+}
+
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -2362,7 +1801,11 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -2373,12 +1816,22 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -2503,299 +1956,28 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
       disabled={true}
       onClick={[MockFunction]}
     >
-      <StyledComponent
-        as="button"
-        clickable={true}
+      <button
+        className="c0"
         data-qaid=""
         disabled={true}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <button
-          className="c0"
-          data-qaid=""
-          disabled={true}
-          onClick={[MockFunction]}
+        <Icon
+          color="blueSmoke"
+          name="chevronRight"
         >
-          <Icon
+          <styled.i
+            className="icon-chevronRight "
             color="blueSmoke"
-            name="chevronRight"
           >
-            <styled.i
-              className="icon-chevronRight "
+            <i
+              className="c1 icon-chevronRight "
               color="blueSmoke"
-            >
-              <StyledComponent
-                className="icon-chevronRight "
-                color="blueSmoke"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  ",
-                        [Function],
-                        "
-
-  ",
-                        "
-    ",
-                        "
-      &.icon-facebook:before {
-        content: '\\\\e90d';
-      }
-    
-      &.icon-instagram:before {
-        content: '\\\\e916';
-      }
-    
-      &.icon-spotify:before {
-        content: '\\\\e926';
-      }
-    
-      &.icon-twitter:before {
-        content: '\\\\e92f';
-      }
-    
-      &.icon-youtube:before {
-        content: '\\\\e935';
-      }
-    
-      &.icon-facebookOutline:before {
-        content: '\\\\e90b';
-      }
-    
-      &.icon-instagramOutline:before {
-        content: '\\\\e911';
-      }
-    
-      &.icon-spotifyOutline:before {
-        content: '\\\\e914';
-      }
-    
-      &.icon-twitterOutline:before {
-        content: '\\\\e91a';
-      }
-    
-      &.icon-youtubeOutline:before {
-        content: '\\\\e91b';
-      }
-    
-      &.icon-caretUp:before {
-        content: '\\\\e921';
-      }
-    
-      &.icon-caretDown:before {
-        content: '\\\\e906';
-      }
-    
-      &.icon-caretLeft:before {
-        content: '\\\\e922';
-      }
-    
-      &.icon-caretRight:before {
-        content: '\\\\e923';
-      }
-    
-      &.icon-caretCircleDown:before {
-        content: '\\\\e908';
-      }
-    
-      &.icon-chevronLeft:before {
-        content: '\\\\e917';
-      }
-    
-      &.icon-chevronRight:before {
-        content: '\\\\e92c';
-      }
-    
-      &.icon-chevronUp:before {
-        content: '\\\\e92a';
-      }
-    
-      &.icon-chevronDown:before {
-        content: '\\\\e920';
-      }
-    
-      &.icon-moveVertical:before {
-        content: '\\\\e919';
-      }
-    
-      &.icon-check:before {
-        content: '\\\\e927';
-      }
-    
-      &.icon-checkCircle:before {
-        content: '\\\\e902';
-      }
-    
-      &.icon-alertCircle:before {
-        content: '\\\\e907';
-      }
-    
-      &.icon-alertTriangle:before {
-        content: '\\\\e930';
-      }
-    
-      &.icon-calendar:before {
-        content: '\\\\e901';
-      }
-    
-      &.icon-time:before {
-        content: '\\\\e929';
-      }
-    
-      &.icon-timeHand:before {
-        content: '\\\\e928';
-      }
-    
-      &.icon-byob:before {
-        content: '\\\\e900';
-      }
-    
-      &.icon-close:before {
-        content: '\\\\e903';
-      }
-    
-      &.icon-commercial:before {
-        content: '\\\\e904';
-      }
-    
-      &.icon-disabled:before {
-        content: '\\\\e905';
-      }
-    
-      &.icon-eye:before {
-        content: '\\\\e909';
-      }
-    
-      &.icon-video:before {
-        content: '\\\\e90e';
-      }
-    
-      &.icon-happyMask:before {
-        content: '\\\\e90f';
-      }
-    
-      &.icon-helpCircleOutline:before {
-        content: '\\\\e912';
-      }
-    
-      &.icon-ellipsisHorizontal:before {
-        content: '\\\\e918';
-      }
-    
-      &.icon-no:before {
-        content: '\\\\e91c';
-      }
-    
-      &.icon-pet:before {
-        content: '\\\\e91d';
-      }
-    
-      &.icon-readGlasses:before {
-        content: '\\\\e91e';
-      }
-    
-      &.icon-residential:before {
-        content: '\\\\e91f';
-      }
-    
-      &.icon-tree:before {
-        content: '\\\\e92b';
-      }
-    
-      &.icon-heartPulse:before {
-        content: '\\\\e90c';
-      }
-    
-      &.icon-homeWorld:before {
-        content: '\\\\e910';
-      }
-    
-      &.icon-travelWorld:before {
-        content: '\\\\e915';
-      }
-    
-      &.icon-musicTicket:before {
-        content: '\\\\e913';
-      }
-    
-      &.icon-musicLove:before {
-        content: '\\\\e90a';
-      }
-    
-      &.icon-plus:before {
-        content: '\\\\e924';
-      }
-    
-      &.icon-padlock:before {
-        content: '\\\\e925';
-      }
-    
-      &.icon-search:before {
-        content: '\\\\e830';
-      }
-    ",
-                        "
-  ",
-                        ";
-",
-                      ],
-                    },
-                    "displayName": "styled.i",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <i
-                  className="c1 icon-chevronRight "
-                  color="blueSmoke"
-                />
-              </StyledComponent>
-            </styled.i>
-          </Icon>
-        </button>
-      </StyledComponent>
+            />
+          </styled.i>
+        </Icon>
+      </button>
     </styled.div>
   </Component>
-</ThemeProvider>
+</Component>
 `;

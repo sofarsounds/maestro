@@ -1,19 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import {
-  withKnobs,
-  text,
-  number,
-  boolean,
-  select
-} from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 import {
   Icon,
   Dropdown,
   Menu,
   MenuItem,
-  Select,
   PrimaryButton
 } from '../../src';
 import cities from '../helpers/cities';
@@ -21,8 +13,6 @@ import cities from '../helpers/cities';
 const mockClick = () => {
   console.log('dog');
 };
-
-const positions = ['top', 'right', 'bottom', 'left'];
 
 storiesOf('Dropdown', module)
   .addDecorator(withKnobs)

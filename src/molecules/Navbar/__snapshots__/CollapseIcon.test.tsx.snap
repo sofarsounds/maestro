@@ -36,7 +36,7 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
   }
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -49,7 +49,11 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -60,12 +64,22 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -185,165 +199,24 @@ exports[`Navbar <CollapseIcon /> renders correctly in closed state 1`] = `
     <styled.div
       onClick={[MockFunction]}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  width: ",
-                "30",
-                "px;
-  height: ",
-                "30",
-                "px;
-  position: relative;
-  cursor: pointer;
-  box-sizing: content-box;
-
-  ",
-                [Function],
-                "
-
-  ",
-                ".c1",
-                ":nth-child(1) {
-    top: ",
-                "12",
-                "px;
-  }
-
-  ",
-                ".c1",
-                ":nth-child(2) {
-    top: ",
-                "17",
-                "px;
-  }
-
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="c0"
         onClick={[MockFunction]}
       >
-        <div
-          className="c0"
-          onClick={[MockFunction]}
-        >
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "c1",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 20px;
-  background: #fff;
-  border-radius: 1px;
-  transition: all ",
-                      "0.15s",
-                      " ",
-                      "cubic-bezier(.25, .73, .85, .56)",
-                      ";
-  opacity: 1;
-  left: 5px;
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "c1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c1 c2"
-              />
-            </StyledComponent>
-          </styled.span>
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "c1",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 20px;
-  background: #fff;
-  border-radius: 1px;
-  transition: all ",
-                      "0.15s",
-                      " ",
-                      "cubic-bezier(.25, .73, .85, .56)",
-                      ";
-  opacity: 1;
-  left: 5px;
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "c1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c1 c2"
-              />
-            </StyledComponent>
-          </styled.span>
-        </div>
-      </StyledComponent>
+        <styled.span>
+          <span
+            className="c1 c2"
+          />
+        </styled.span>
+        <styled.span>
+          <span
+            className="c1 c2"
+          />
+        </styled.span>
+      </div>
     </styled.div>
   </CollapsibleIcon>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
@@ -358,14 +231,6 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
   transition: all 0.15s cubic-bezier(.25,.73,.85,.56);
   opacity: 1;
   left: 5px;
-}
-
-.c3 .c1:nth-child(1) {
-  top: 12px;
-}
-
-.c3 .c1:nth-child(2) {
-  top: 17px;
 }
 
 .c0 {
@@ -389,8 +254,8 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-animation: hlISQX 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
-  animation: hlISQX 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
+  -webkit-animation: hfqXXB 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
+  animation: hfqXXB 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
 }
 
 .c0 .c1:nth-child(2) {
@@ -398,8 +263,8 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-animation: dKjVdb 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
-  animation: dKjVdb 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
+  -webkit-animation: fyuDSs 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
+  animation: fyuDSs 0.15s cubic-bezier(.25,.73,.85,.56) .25s 1 normal forwards;
 }
 
 @media (min-width:768px) {
@@ -408,7 +273,7 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
   }
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -421,7 +286,11 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -432,12 +301,22 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -559,165 +438,23 @@ exports[`Navbar <CollapseIcon /> renders correctly when in open state 1`] = `
       onClick={[MockFunction]}
       open={true}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
-              "isStatic": false,
-              "lastClassName": "c0",
-              "rules": Array [
-                "
-  width: ",
-                "30",
-                "px;
-  height: ",
-                "30",
-                "px;
-  position: relative;
-  cursor: pointer;
-  box-sizing: content-box;
-
-  ",
-                [Function],
-                "
-
-  ",
-                ".c1",
-                ":nth-child(1) {
-    top: ",
-                "12",
-                "px;
-  }
-
-  ",
-                ".c1",
-                ":nth-child(2) {
-    top: ",
-                "17",
-                "px;
-  }
-
-  ",
-                [Function],
-                "
-",
-              ],
-            },
-            "displayName": "styled.div",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="c0"
         onClick={[MockFunction]}
         open={true}
       >
-        <div
-          className="c0"
-          onClick={[MockFunction]}
-          open={true}
-        >
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "c1",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 20px;
-  background: #fff;
-  border-radius: 1px;
-  transition: all ",
-                      "0.15s",
-                      " ",
-                      "cubic-bezier(.25, .73, .85, .56)",
-                      ";
-  opacity: 1;
-  left: 5px;
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "c1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c1 c2"
-              />
-            </StyledComponent>
-          </styled.span>
-          <styled.span>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "c1",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 20px;
-  background: #fff;
-  border-radius: 1px;
-  transition: all ",
-                      "0.15s",
-                      " ",
-                      "cubic-bezier(.25, .73, .85, .56)",
-                      ";
-  opacity: 1;
-  left: 5px;
-",
-                    ],
-                  },
-                  "displayName": "styled.span",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "c1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c1 c2"
-              />
-            </StyledComponent>
-          </styled.span>
-        </div>
-      </StyledComponent>
+        <styled.span>
+          <span
+            className="c1 c2"
+          />
+        </styled.span>
+        <styled.span>
+          <span
+            className="c1 c2"
+          />
+        </styled.span>
+      </div>
     </styled.div>
   </CollapsibleIcon>
-</ThemeProvider>
+</Component>
 `;

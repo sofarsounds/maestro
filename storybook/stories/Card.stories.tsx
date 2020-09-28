@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { BrowserRouter } from 'react-router-dom';
 
 import { Card } from '../../src';
@@ -10,6 +9,7 @@ storiesOf('Card', module)
   .addDecorator(withKnobs)
   .add('With Image', () => {
     const inverted = boolean('Inverted', false);
+    const reverseRow = boolean('Reverse Row', false);
     return (
       <>
         <h1>Card w/ Image</h1>
@@ -21,7 +21,7 @@ storiesOf('Card', module)
               background: inverted ? '#000' : '#fff'
             }}
           >
-            <Card linkTo="https://www.google.com" inverted={inverted}>
+            <Card linkTo="https://www.google.com" inverted={inverted} reverseRow={reverseRow}>
               <Card.Image
                 url={text(
                   'Image URL',

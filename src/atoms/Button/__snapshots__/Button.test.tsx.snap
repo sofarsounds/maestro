@@ -16,14 +16,6 @@ exports[`Buttons Link Button renders correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
-  background: transparent;
-  color: #039842;
-  background: #FFFFFF;
-  border: none;
-  color: #039842;
 }
 
 .c0:disabled {
@@ -35,71 +27,88 @@ exports[`Buttons Link Button renders correctly 1`] = `
   margin-right: 8px;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-.c0 i:before {
+.c2 {
+  background: transparent;
   color: #039842;
 }
 
-.c0:hover {
+.c2 i:before {
+  color: #039842;
+}
+
+.c2:hover {
   border-color: #006721;
   color: #006721;
   background-color: transparent;
 }
 
-.c0:hover i:before {
+.c2:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c2:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c2:disabled {
   background-color: #FFFFFF;
   color: #949494;
 }
 
-.c0:disabled i:before {
+.c2:disabled i:before {
   color: #949494;
 }
 
-.c0 i:before {
+.c3 {
+  background: #FFFFFF;
+  border: none;
   color: #039842;
 }
 
-.c0:hover {
+.c3 i:before {
+  color: #039842;
+}
+
+.c3:hover {
   color: #006721;
 }
 
-.c0:hover i:before {
+.c3:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c3:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c3:disabled {
   background-color: #FFFFFF;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -112,7 +121,11 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -123,12 +136,22 @@ exports[`Buttons Link Button renders correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -250,72 +273,17 @@ exports[`Buttons Link Button renders correctly 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1 c2 c3"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "Styled(Styled(Styled(styled.button)))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-            "sc-htpNat",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(Styled(styled.button)))>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Link Button renders correctly in disabled state 1`] = `
@@ -334,14 +302,6 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
-  background: transparent;
-  color: #039842;
-  background: #FFFFFF;
-  border: none;
-  color: #039842;
 }
 
 .c0:disabled {
@@ -353,71 +313,88 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
   margin-right: 8px;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-.c0 i:before {
+.c2 {
+  background: transparent;
   color: #039842;
 }
 
-.c0:hover {
+.c2 i:before {
+  color: #039842;
+}
+
+.c2:hover {
   border-color: #006721;
   color: #006721;
   background-color: transparent;
 }
 
-.c0:hover i:before {
+.c2:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c2:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c2:disabled {
   background-color: #FFFFFF;
   color: #949494;
 }
 
-.c0:disabled i:before {
+.c2:disabled i:before {
   color: #949494;
 }
 
-.c0 i:before {
+.c3 {
+  background: #FFFFFF;
+  border: none;
   color: #039842;
 }
 
-.c0:hover {
+.c3 i:before {
+  color: #039842;
+}
+
+.c3:hover {
   color: #006721;
 }
 
-.c0:hover i:before {
+.c3:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c3:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c3:disabled {
   background-color: #FFFFFF;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -430,7 +407,11 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -441,12 +422,22 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -568,72 +559,17 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1 c2 c3"
       color="primary"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "Styled(Styled(Styled(styled.button)))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-            "sc-htpNat",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={true}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(Styled(styled.button)))>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Link Button renders correctly in loading state 1`] = `
@@ -654,18 +590,6 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   text-transform: uppercase;
   pointer-events: none;
   cursor: disabled;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
-  color: transparent !important;
-  background-color: #949494;
-  border-color: #949494;
-  position: relative;
-  background: transparent;
-  color: #039842;
-  background: #FFFFFF;
-  border: none;
-  color: #039842;
 }
 
 .c0:disabled {
@@ -681,26 +605,36 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   opacity: 0;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+  color: transparent !important;
+  background-color: #949494;
+  border-color: #949494;
+  position: relative;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-.c0:after {
-  -webkit-animation: iVXCSc 0.5s linear infinite;
-  animation: iVXCSc 0.5s linear infinite;
+.c1:after {
+  -webkit-animation: fvtopB 0.5s linear infinite;
+  animation: fvtopB 0.5s linear infinite;
   border: 0.1rem solid #FFFFFF;
   border-radius: 50%;
   border-right-color: transparent;
@@ -717,60 +651,71 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
   z-index: 1;
 }
 
-.c0 i:before {
+.c2 {
+  background: transparent;
   color: #039842;
 }
 
-.c0:hover {
+.c2 i:before {
+  color: #039842;
+}
+
+.c2:hover {
   border-color: #006721;
   color: #006721;
   background-color: transparent;
 }
 
-.c0:hover i:before {
+.c2:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c2:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c2:disabled {
   background-color: #FFFFFF;
   color: #949494;
 }
 
-.c0:disabled i:before {
+.c2:disabled i:before {
   color: #949494;
 }
 
-.c0:after {
+.c2:after {
   border-color: #949494;
   border-right-color: transparent;
   border-top-color: transparent;
 }
 
-.c0 i:before {
+.c3 {
+  background: #FFFFFF;
+  border: none;
   color: #039842;
 }
 
-.c0:hover {
+.c3 i:before {
+  color: #039842;
+}
+
+.c3:hover {
   color: #006721;
 }
 
-.c0:hover i:before {
+.c3:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c3:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c3:disabled {
   background-color: #FFFFFF;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -783,7 +728,11 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -794,12 +743,22 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -921,72 +880,17 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1 c2 c3"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "displayName": "Styled(Styled(Styled(styled.button)))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-            "sc-htpNat",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bxivhb",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={true}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={true}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(Styled(styled.button)))>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Outline Button renders correctly 1`] = `
@@ -1005,11 +909,6 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
-  background: transparent;
-  color: #039842;
 }
 
 .c0:disabled {
@@ -1021,51 +920,62 @@ exports[`Buttons Outline Button renders correctly 1`] = `
   margin-right: 8px;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-.c0 i:before {
+.c2 {
+  background: transparent;
   color: #039842;
 }
 
-.c0:hover {
+.c2 i:before {
+  color: #039842;
+}
+
+.c2:hover {
   border-color: #006721;
   color: #006721;
   background-color: transparent;
 }
 
-.c0:hover i:before {
+.c2:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c2:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c2:disabled {
   background-color: #FFFFFF;
   color: #949494;
 }
 
-.c0:disabled i:before {
+.c2:disabled i:before {
   color: #949494;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1078,7 +988,11 @@ exports[`Buttons Outline Button renders correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1089,12 +1003,22 @@ exports[`Buttons Outline Button renders correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1216,66 +1140,17 @@ exports[`Buttons Outline Button renders correctly 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1 c2"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(Styled(styled.button))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(styled.button))>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
@@ -1294,11 +1169,6 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
-  background: transparent;
-  color: #039842;
 }
 
 .c0:disabled {
@@ -1310,51 +1180,62 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
   margin-right: 8px;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-.c0 i:before {
+.c2 {
+  background: transparent;
   color: #039842;
 }
 
-.c0:hover {
+.c2 i:before {
+  color: #039842;
+}
+
+.c2:hover {
   border-color: #006721;
   color: #006721;
   background-color: transparent;
 }
 
-.c0:hover i:before {
+.c2:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c2:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c2:disabled {
   background-color: #FFFFFF;
   color: #949494;
 }
 
-.c0:disabled i:before {
+.c2:disabled i:before {
   color: #949494;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1367,7 +1248,11 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1378,12 +1263,22 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1505,66 +1400,17 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1 c2"
       color="primary"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(Styled(styled.button))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={true}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(styled.button))>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Outline Button renders correctly in loading state 1`] = `
@@ -1585,17 +1431,6 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   text-transform: uppercase;
   pointer-events: none;
   cursor: disabled;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
-  color: transparent !important;
-  background-color: #949494;
-  border-color: #949494;
-  position: relative;
-  background: transparent;
-  color: #039842;
-  border-color: #1E1E1E;
-  color: #111111;
 }
 
 .c0:disabled {
@@ -1611,26 +1446,36 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   opacity: 0;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+  color: transparent !important;
+  background-color: #949494;
+  border-color: #949494;
+  position: relative;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-.c0:after {
-  -webkit-animation: iVXCSc 0.5s linear infinite;
-  animation: iVXCSc 0.5s linear infinite;
+.c1:after {
+  -webkit-animation: fvtopB 0.5s linear infinite;
+  animation: fvtopB 0.5s linear infinite;
   border: 0.1rem solid #FFFFFF;
   border-radius: 50%;
   border-right-color: transparent;
@@ -1647,57 +1492,64 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
   z-index: 1;
 }
 
-.c0 i:before {
+.c2 {
+  background: transparent;
+  color: #039842;
+  border-color: #1E1E1E;
+  color: #111111;
+}
+
+.c2 i:before {
   color: #039842;
 }
 
-.c0:hover {
+.c2:hover {
   border-color: #006721;
   color: #006721;
   background-color: transparent;
 }
 
-.c0:hover i:before {
+.c2:hover i:before {
   color: #006721;
 }
 
-.c0:focus {
+.c2:focus {
   background-color: rgba(16,173,82,0.1);
 }
 
-.c0:disabled {
+.c2:disabled {
   background-color: #FFFFFF;
   color: #949494;
 }
 
-.c0:disabled i:before {
+.c2:disabled i:before {
   color: #949494;
 }
 
-.c0 i:before {
+.c2 i:before {
   color: #111111;
 }
 
-.c0:hover {
+.c2:hover {
   border-color: #111111;
   color: #111111;
 }
 
-.c0:hover i:before {
+.c2:hover i:before {
   color: #111111;
 }
 
-.c0:focus {
+.c2:focus {
   background-color: #DBDBDB;
 }
 
-.c0:after {
+.c2:after {
   border-color: #949494;
   border-right-color: transparent;
   border-top-color: transparent;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1710,7 +1562,11 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1721,12 +1577,22 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -1848,66 +1714,17 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1 c2"
       color="black"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(Styled(styled.button))",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-            "sc-bwzfXH",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-htpNat",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={true}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="black"
-        disabled={false}
-        loading={true}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(Styled(styled.button))>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Primary Button renders correctly 1`] = `
@@ -1926,9 +1743,6 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
 }
 
 .c0:disabled {
@@ -1940,24 +1754,30 @@ exports[`Buttons Primary Button renders correctly 1`] = `
   margin-right: 8px;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -1970,7 +1790,11 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -1981,12 +1805,22 @@ exports[`Buttons Primary Button renders correctly 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -2108,60 +1942,17 @@ exports[`Buttons Primary Button renders correctly 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
@@ -2180,9 +1971,6 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
 }
 
 .c0:disabled {
@@ -2194,24 +1982,30 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
   margin-right: 8px;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -2224,7 +2018,11 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -2235,12 +2033,22 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -2362,60 +2170,17 @@ exports[`Buttons Primary Button renders correctly in disabled state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1"
       color="primary"
       disabled={true}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={true}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Primary Button renders correctly in loading state 1`] = `
@@ -2436,13 +2201,6 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   text-transform: uppercase;
   pointer-events: none;
   cursor: disabled;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
-  color: transparent !important;
-  background-color: #949494;
-  border-color: #949494;
-  position: relative;
 }
 
 .c0:disabled {
@@ -2458,26 +2216,36 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   opacity: 0;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+  color: transparent !important;
+  background-color: #949494;
+  border-color: #949494;
+  position: relative;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-.c0:after {
-  -webkit-animation: iVXCSc 0.5s linear infinite;
-  animation: iVXCSc 0.5s linear infinite;
+.c1:after {
+  -webkit-animation: fvtopB 0.5s linear infinite;
+  animation: fvtopB 0.5s linear infinite;
   border: 0.1rem solid #FFFFFF;
   border-radius: 50%;
   border-right-color: transparent;
@@ -2494,7 +2262,7 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
   z-index: 1;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -2507,7 +2275,11 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -2518,12 +2290,22 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -2645,60 +2427,17 @@ exports[`Buttons Primary Button renders correctly in loading state 1`] = `
     onClick={[Function]}
     small={false}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={true}
       onClick={[Function]}
-      small={false}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={true}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
-</ThemeProvider>
+</Component>
 `;
 
 exports[`Buttons Primary Button renders correctly with a small prop value 1`] = `
@@ -2719,9 +2458,6 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
   text-transform: uppercase;
   height: 40px;
   padding: 0 15px;
-  background: #039842;
-  border: 1px solid #039842;
-  color: #FFFFFF;
 }
 
 .c0:disabled {
@@ -2733,24 +2469,30 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
   margin-right: 8px;
 }
 
-.c0:hover {
+.c1 {
+  background: #039842;
+  border: 1px solid #039842;
+  color: #FFFFFF;
+}
+
+.c1:hover {
   background-color: #006721;
 }
 
-.c0:focus {
+.c1:focus {
   background-color: #039842;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #949494;
   border-color: #949494;
 }
 
-.c0 i:before {
+.c1 i:before {
   color: #FFFFFF;
 }
 
-<ThemeProvider
+<Component
   theme={
     Object {
       "borderRadius": Object {
@@ -2763,7 +2505,11 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
         "backToBlack": "#111111",
         "black": "#000000",
         "blackBetty": "#1E1E1E",
+        "blueChristmas": "#3498DB",
+        "blueMagic": "#34495E",
         "blueSmoke": "#949494",
+        "brownSugar": "#9B525F",
+        "checkBerry": "#98035A",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
@@ -2774,12 +2520,22 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
         "green700": "#039842",
         "green800": "#008736",
         "green900": "#006721",
+        "greenGarden": "#19BC9B",
+        "greenOnions": "#8BC34B",
         "macyGrey": "#DBDBDB",
+        "mellowYellow": "#F1C410",
+        "orangeCrush": "#F39C12",
         "paintItBlack": "#333333",
+        "peaches": "#F99973",
+        "pinkTriangle": "#E91E63",
         "primary": "#039842",
+        "purpleHaze": "#3F51B5",
+        "purplePills": "#9B59B6",
         "redRedWine": "#EF4423",
+        "royalBlood": "#FF5000",
         "silverSprings": "#F5F5F5",
         "whiteDenim": "#FFFFFF",
+        "yellowSubmarine": "#FFD426",
       },
       "dimensions": Object {
         "button": Object {
@@ -2901,58 +2657,15 @@ exports[`Buttons Primary Button renders correctly with a small prop value 1`] = 
     onClick={[Function]}
     small={true}
   >
-    <StyledComponent
-      block={false}
+    <button
+      className="c0 c1"
       color="primary"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
-  ",
-              [Function],
-              "
-",
-              "
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(styled.button)",
-          "foldedComponentIds": Array [
-            "sc-bdVaJa",
-          ],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "button",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       loading={false}
       onClick={[Function]}
-      small={true}
     >
-      <button
-        className="c0"
-        color="primary"
-        disabled={false}
-        loading={false}
-        onClick={[Function]}
-      >
-        Button
-      </button>
-    </StyledComponent>
+      Button
+    </button>
   </Styled(styled.button)>
-</ThemeProvider>
+</Component>
 `;
