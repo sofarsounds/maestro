@@ -237,6 +237,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e934';
 }
 
+.c1.icon-trashCan:before {
+  content: '\\e93c';
+}
+
 .c1.icon-arrowUp:before {
   content: '\\e933';
 }

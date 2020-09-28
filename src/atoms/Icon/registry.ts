@@ -63,6 +63,7 @@ enum Registry {
   expandHorizontal = 'e92e',
   reset = 'e936',
   pencil = 'e934',
+  trashCan = 'e93c',
   arrowUp = 'e933',
   arrowLeft = 'e93b',
   infoOutline = 'e93a',
