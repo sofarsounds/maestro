@@ -95,10 +95,27 @@ export const Overline = styled.span<TypographyProps>`
   ${withTypography}
 `;
 
-export const Anchor = styled.span<TypographyProps>`
+export const Anchor1 = styled.span<TypographyProps>`
+  ${({ theme, spaceAfter }) => css`
+    font-size: ${theme.fontSizes.body1};
+    font-weight: 600;
+    color: ${theme.colors.primary};
+    margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
+    display: inline-block;
+  `};
+
+  ${withTypography}
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
+
+export const Anchor2 = styled.span<TypographyProps>`
   ${({ theme, spaceAfter }) => css`
     font-size: ${theme.fontSizes.body2};
-    font-weight: bold;
+    font-weight: 600;
     color: ${theme.colors.primary};
     margin-bottom: ${spaceAfter ? theme.ruler[spaceAfter] : 0}px;
     display: inline-block;
