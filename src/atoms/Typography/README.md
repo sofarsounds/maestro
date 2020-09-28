@@ -31,6 +31,8 @@ After adding the import you can use it simply like this
 | `H6`             | `h6`                 |
 | `Body`           | `p`                  |
 | `Body2`          | `p`                  |
+| `Anchor1`        | `span`               |
+| `Anchor2`        | `span`               |
 | `Overline`       | `span`               |
 | `Caption`        | `span`               |
 | `FormGroupLabel` | `span`               |

@@ -15,7 +15,8 @@ import {
   Body2,
   Overline,
   Caption,
-  Anchor,
+  Anchor1,
+  Anchor2,
   FormGroupLabel
 } from './index';
 
@@ -126,12 +127,20 @@ describe('Typography', () => {
     expect(wrapper).toHaveStyleRule('line-height', '1.6');
   });
 
-  it('renders an Anchor correctly', () => {
-    const wrapper = setup(Anchor);
+  it('renders an Anchor1 correctly', () => {
+    const wrapper = setup(Anchor1);
+
+    expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.body1);
+    expect(wrapper).toHaveStyleRule('color', theme.colors.primary);
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
+  });
+
+  it('renders an Anchor2 correctly', () => {
+    const wrapper = setup(Anchor2);
 
     expect(wrapper).toHaveStyleRule('font-size', theme.fontSizes.body2);
     expect(wrapper).toHaveStyleRule('color', theme.colors.primary);
-    expect(wrapper).toHaveStyleRule('font-weight', 'bold');
+    expect(wrapper).toHaveStyleRule('font-weight', '600');
   });
 
   it('renders a Caption correctly', () => {

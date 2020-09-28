@@ -14,7 +14,8 @@ import {
   Body,
   Body2,
   Overline,
-  Anchor,
+  Anchor1,
+  Anchor2,
   Caption
 } from '../../src';
 
@@ -24,12 +25,9 @@ const Boundary = styled(Bound)`
   margin-bottom: 25px;
 `;
 
-const Spacer = styled.div`
-  height: 25px;
-`;
-
 const headingTags = [H1, H2, H3, H4, H5, H6];
 const bodyTags = [Body, Body2];
+const anchorTags = [Anchor1, Anchor2];
 
 storiesOf('Typography', module)
   .addDecorator(withKnobs)
@@ -59,11 +57,13 @@ storiesOf('Typography', module)
           <T spaceAfter={number('SpaceAfter', 0)}>Body {key + 1}</T>
         </Boundary>
       ))}
+      {anchorTags.map((T: any, key: number) => (
+        <Boundary key={key}>
+          <T spaceAfter={number('SpaceAfter', 0)}>Anchor {key + 1}</T>
+        </Boundary>
+      ))}
       <Boundary>
         <Overline spaceAfter={number('SpaceAfter', 0)}>Overline Tag</Overline>
-      </Boundary>
-      <Boundary>
-        <Anchor spaceAfter={number('SpaceAfter', 0)}>Anchor Tag</Anchor>
       </Boundary>
       <Boundary>
         <Caption spaceAfter={number('SpaceAfter', 0)}>Caption Tag</Caption>
