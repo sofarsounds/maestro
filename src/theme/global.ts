@@ -40,6 +40,11 @@ export default createGlobalStyle`
       box-sizing: inherit;
     }
 
+    a {
+      font-weight: 600;
+      color: ${theme.colors.primary}
+    }
+
     a:link, a:visited {
       text-decoration: none;
     }
