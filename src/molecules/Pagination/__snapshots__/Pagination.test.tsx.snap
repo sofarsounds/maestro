@@ -117,87 +117,87 @@ exports[`<Pagination /> renders correctly 1`] = `
 }
 
 .c2.icon-facebook:before {
-  content: '\\e90d';
-}
-
-.c2.icon-instagram:before {
-  content: '\\e916';
-}
-
-.c2.icon-spotify:before {
-  content: '\\e926';
-}
-
-.c2.icon-twitter:before {
-  content: '\\e92f';
-}
-
-.c2.icon-youtube:before {
-  content: '\\e935';
-}
-
-.c2.icon-facebookOutline:before {
-  content: '\\e90b';
-}
-
-.c2.icon-instagramOutline:before {
-  content: '\\e911';
-}
-
-.c2.icon-spotifyOutline:before {
-  content: '\\e914';
-}
-
-.c2.icon-twitterOutline:before {
-  content: '\\e91a';
-}
-
-.c2.icon-youtubeOutline:before {
-  content: '\\e91b';
-}
-
-.c2.icon-caretUp:before {
-  content: '\\e921';
-}
-
-.c2.icon-caretDown:before {
-  content: '\\e906';
-}
-
-.c2.icon-caretLeft:before {
-  content: '\\e922';
-}
-
-.c2.icon-caretRight:before {
-  content: '\\e923';
-}
-
-.c2.icon-caretCircleDown:before {
-  content: '\\e908';
-}
-
-.c2.icon-chevronLeft:before {
-  content: '\\e917';
-}
-
-.c2.icon-chevronRight:before {
-  content: '\\e92c';
-}
-
-.c2.icon-chevronUp:before {
-  content: '\\e92a';
-}
-
-.c2.icon-chevronDown:before {
   content: '\\e920';
 }
 
-.c2.icon-moveVertical:before {
+.c2.icon-instagram:before {
+  content: '\\e929';
+}
+
+.c2.icon-spotify:before {
+  content: '\\e937';
+}
+
+.c2.icon-twitter:before {
+  content: '\\e93f';
+}
+
+.c2.icon-youtube:before {
+  content: '\\e944';
+}
+
+.c2.icon-facebookOutline:before {
+  content: '\\e91e';
+}
+
+.c2.icon-instagramOutline:before {
+  content: '\\e924';
+}
+
+.c2.icon-spotifyOutline:before {
+  content: '\\e927';
+}
+
+.c2.icon-twitterOutline:before {
+  content: '\\e92d';
+}
+
+.c2.icon-youtubeOutline:before {
+  content: '\\e92e';
+}
+
+.c2.icon-caretUp:before {
+  content: '\\e932';
+}
+
+.c2.icon-caretDown:before {
   content: '\\e919';
 }
 
+.c2.icon-caretLeft:before {
+  content: '\\e933';
+}
+
+.c2.icon-caretRight:before {
+  content: '\\e934';
+}
+
+.c2.icon-caretCircleDown:before {
+  content: '\\e91b';
+}
+
+.c2.icon-chevronLeft:before {
+  content: '\\e92a';
+}
+
+.c2.icon-chevronRight:before {
+  content: '\\e93c';
+}
+
+.c2.icon-chevronUp:before {
+  content: '\\e93b';
+}
+
+.c2.icon-chevronDown:before {
+  content: '\\e931';
+}
+
+.c2.icon-moveVertical:before {
+  content: '\\e92c';
+}
+
 .c2.icon-check:before {
-  content: '\\e927';
+  content: '\\e938';
 }
 
 .c2.icon-checkCircle:before {
@@ -205,111 +205,111 @@ exports[`<Pagination /> renders correctly 1`] = `
 }
 
 .c2.icon-alertCircle:before {
-  content: '\\e907';
+  content: '\\e91a';
 }
 
 .c2.icon-alertTriangle:before {
-  content: '\\e930';
-}
-
-.c2.icon-calendar:before {
   content: '\\e901';
 }
 
+.c2.icon-calendar:before {
+  content: '\\e917';
+}
+
 .c2.icon-time:before {
-  content: '\\e929';
+  content: '\\e93a';
 }
 
 .c2.icon-timeHand:before {
-  content: '\\e928';
+  content: '\\e939';
 }
 
 .c2.icon-calendarAdd:before {
-  content: '\\e92d';
+  content: '\\e93d';
 }
 
 .c2.icon-byob:before {
-  content: '\\e900';
+  content: '\\e908';
 }
 
 .c2.icon-close:before {
-  content: '\\e903';
-}
-
-.c2.icon-commercial:before {
-  content: '\\e904';
-}
-
-.c2.icon-disabled:before {
-  content: '\\e905';
-}
-
-.c2.icon-eye:before {
-  content: '\\e909';
-}
-
-.c2.icon-video:before {
-  content: '\\e90e';
-}
-
-.c2.icon-happyMask:before {
-  content: '\\e90f';
-}
-
-.c2.icon-helpCircleOutline:before {
-  content: '\\e912';
-}
-
-.c2.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c2.icon-no:before {
-  content: '\\e91c';
-}
-
-.c2.icon-pet:before {
-  content: '\\e91d';
-}
-
-.c2.icon-readGlasses:before {
-  content: '\\e91e';
-}
-
-.c2.icon-residential:before {
-  content: '\\e91f';
-}
-
-.c2.icon-tree:before {
-  content: '\\e92b';
-}
-
-.c2.icon-heartPulse:before {
-  content: '\\e90c';
-}
-
-.c2.icon-homeWorld:before {
-  content: '\\e910';
-}
-
-.c2.icon-travelWorld:before {
+.c2.icon-commercial:before {
   content: '\\e915';
 }
 
+.c2.icon-disabled:before {
+  content: '\\e910';
+}
+
+.c2.icon-eye:before {
+  content: '\\e91c';
+}
+
+.c2.icon-video:before {
+  content: '\\e921';
+}
+
+.c2.icon-happyMask:before {
+  content: '\\e922';
+}
+
+.c2.icon-helpCircleOutline:before {
+  content: '\\e925';
+}
+
+.c2.icon-ellipsisHorizontal:before {
+  content: '\\e92b';
+}
+
+.c2.icon-no:before {
+  content: '\\e92f';
+}
+
+.c2.icon-pet:before {
+  content: '\\e907';
+}
+
+.c2.icon-readGlasses:before {
+  content: '\\e930';
+}
+
+.c2.icon-residential:before {
+  content: '\\e916';
+}
+
+.c2.icon-tree:before {
+  content: '\\e906';
+}
+
+.c2.icon-heartPulse:before {
+  content: '\\e91f';
+}
+
+.c2.icon-homeWorld:before {
+  content: '\\e923';
+}
+
+.c2.icon-travelWorld:before {
+  content: '\\e928';
+}
+
 .c2.icon-musicTicket:before {
-  content: '\\e913';
+  content: '\\e926';
 }
 
 .c2.icon-musicLove:before {
-  content: '\\e90a';
+  content: '\\e91d';
 }
 
 .c2.icon-plus:before {
-  content: '\\e924';
+  content: '\\e935';
 }
 
 .c2.icon-padlock:before {
-  content: '\\e925';
+  content: '\\e936';
 }
 
 .c2.icon-search:before {
@@ -317,51 +317,95 @@ exports[`<Pagination /> renders correctly 1`] = `
 }
 
 .c2.icon-music:before {
-  content: '\\e932';
+  content: '\\e942';
 }
 
 .c2.icon-mail:before {
-  content: '\\e931';
+  content: '\\e941';
 }
 
 .c2.icon-expandHorizontal:before {
-  content: '\\e92e';
+  content: '\\e93e';
 }
 
 .c2.icon-reset:before {
-  content: '\\e936';
+  content: '\\e912';
 }
 
 .c2.icon-pencil:before {
-  content: '\\e934';
+  content: '\\e904';
 }
 
 .c2.icon-trashCan:before {
-  content: '\\e93c';
+  content: '\\e94a';
 }
 
 .c2.icon-arrowUp:before {
-  content: '\\e933';
+  content: '\\e913';
 }
 
 .c2.icon-arrowLeft:before {
-  content: '\\e93b';
+  content: '\\e949';
+}
+
+.c2.icon-info:before {
+  content: '\\e90d';
 }
 
 .c2.icon-infoOutline:before {
-  content: '\\e93a';
+  content: '\\e948';
+}
+
+.c2.icon-feedback:before {
+  content: '\\e905';
 }
 
 .c2.icon-feedbackOutline:before {
-  content: '\\e939';
+  content: '\\e947';
+}
+
+.c2.icon-media:before {
+  content: '\\e909';
 }
 
 .c2.icon-mediaOutline:before {
-  content: '\\e938';
+  content: '\\e946';
+}
+
+.c2.icon-concert:before {
+  content: '\\e90a';
 }
 
 .c2.icon-concertOutline:before {
-  content: '\\e937';
+  content: '\\e945';
+}
+
+.c2.icon-map:before {
+  content: '\\e914';
+}
+
+.c2.icon-photos:before {
+  content: '\\e911';
+}
+
+.c2.icon-artistParking:before {
+  content: '\\e90f';
+}
+
+.c2.icon-guestParking:before {
+  content: '\\e90e';
+}
+
+.c2.icon-eventSetUp:before {
+  content: '\\e90c';
+}
+
+.c2.icon-fanExperience:before {
+  content: '\\e90b';
+}
+
+.c2.icon-rock:before {
+  content: '\\e900';
 }
 
 .c0 {

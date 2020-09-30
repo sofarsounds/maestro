@@ -117,87 +117,87 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-facebook:before {
-  content: '\\e90d';
-}
-
-.c3.icon-instagram:before {
-  content: '\\e916';
-}
-
-.c3.icon-spotify:before {
-  content: '\\e926';
-}
-
-.c3.icon-twitter:before {
-  content: '\\e92f';
-}
-
-.c3.icon-youtube:before {
-  content: '\\e935';
-}
-
-.c3.icon-facebookOutline:before {
-  content: '\\e90b';
-}
-
-.c3.icon-instagramOutline:before {
-  content: '\\e911';
-}
-
-.c3.icon-spotifyOutline:before {
-  content: '\\e914';
-}
-
-.c3.icon-twitterOutline:before {
-  content: '\\e91a';
-}
-
-.c3.icon-youtubeOutline:before {
-  content: '\\e91b';
-}
-
-.c3.icon-caretUp:before {
-  content: '\\e921';
-}
-
-.c3.icon-caretDown:before {
-  content: '\\e906';
-}
-
-.c3.icon-caretLeft:before {
-  content: '\\e922';
-}
-
-.c3.icon-caretRight:before {
-  content: '\\e923';
-}
-
-.c3.icon-caretCircleDown:before {
-  content: '\\e908';
-}
-
-.c3.icon-chevronLeft:before {
-  content: '\\e917';
-}
-
-.c3.icon-chevronRight:before {
-  content: '\\e92c';
-}
-
-.c3.icon-chevronUp:before {
-  content: '\\e92a';
-}
-
-.c3.icon-chevronDown:before {
   content: '\\e920';
 }
 
-.c3.icon-moveVertical:before {
+.c3.icon-instagram:before {
+  content: '\\e929';
+}
+
+.c3.icon-spotify:before {
+  content: '\\e937';
+}
+
+.c3.icon-twitter:before {
+  content: '\\e93f';
+}
+
+.c3.icon-youtube:before {
+  content: '\\e944';
+}
+
+.c3.icon-facebookOutline:before {
+  content: '\\e91e';
+}
+
+.c3.icon-instagramOutline:before {
+  content: '\\e924';
+}
+
+.c3.icon-spotifyOutline:before {
+  content: '\\e927';
+}
+
+.c3.icon-twitterOutline:before {
+  content: '\\e92d';
+}
+
+.c3.icon-youtubeOutline:before {
+  content: '\\e92e';
+}
+
+.c3.icon-caretUp:before {
+  content: '\\e932';
+}
+
+.c3.icon-caretDown:before {
   content: '\\e919';
 }
 
+.c3.icon-caretLeft:before {
+  content: '\\e933';
+}
+
+.c3.icon-caretRight:before {
+  content: '\\e934';
+}
+
+.c3.icon-caretCircleDown:before {
+  content: '\\e91b';
+}
+
+.c3.icon-chevronLeft:before {
+  content: '\\e92a';
+}
+
+.c3.icon-chevronRight:before {
+  content: '\\e93c';
+}
+
+.c3.icon-chevronUp:before {
+  content: '\\e93b';
+}
+
+.c3.icon-chevronDown:before {
+  content: '\\e931';
+}
+
+.c3.icon-moveVertical:before {
+  content: '\\e92c';
+}
+
 .c3.icon-check:before {
-  content: '\\e927';
+  content: '\\e938';
 }
 
 .c3.icon-checkCircle:before {
@@ -205,111 +205,111 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-alertCircle:before {
-  content: '\\e907';
+  content: '\\e91a';
 }
 
 .c3.icon-alertTriangle:before {
-  content: '\\e930';
-}
-
-.c3.icon-calendar:before {
   content: '\\e901';
 }
 
+.c3.icon-calendar:before {
+  content: '\\e917';
+}
+
 .c3.icon-time:before {
-  content: '\\e929';
+  content: '\\e93a';
 }
 
 .c3.icon-timeHand:before {
-  content: '\\e928';
+  content: '\\e939';
 }
 
 .c3.icon-calendarAdd:before {
-  content: '\\e92d';
+  content: '\\e93d';
 }
 
 .c3.icon-byob:before {
-  content: '\\e900';
+  content: '\\e908';
 }
 
 .c3.icon-close:before {
-  content: '\\e903';
-}
-
-.c3.icon-commercial:before {
-  content: '\\e904';
-}
-
-.c3.icon-disabled:before {
-  content: '\\e905';
-}
-
-.c3.icon-eye:before {
-  content: '\\e909';
-}
-
-.c3.icon-video:before {
-  content: '\\e90e';
-}
-
-.c3.icon-happyMask:before {
-  content: '\\e90f';
-}
-
-.c3.icon-helpCircleOutline:before {
-  content: '\\e912';
-}
-
-.c3.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c3.icon-no:before {
-  content: '\\e91c';
-}
-
-.c3.icon-pet:before {
-  content: '\\e91d';
-}
-
-.c3.icon-readGlasses:before {
-  content: '\\e91e';
-}
-
-.c3.icon-residential:before {
-  content: '\\e91f';
-}
-
-.c3.icon-tree:before {
-  content: '\\e92b';
-}
-
-.c3.icon-heartPulse:before {
-  content: '\\e90c';
-}
-
-.c3.icon-homeWorld:before {
-  content: '\\e910';
-}
-
-.c3.icon-travelWorld:before {
+.c3.icon-commercial:before {
   content: '\\e915';
 }
 
+.c3.icon-disabled:before {
+  content: '\\e910';
+}
+
+.c3.icon-eye:before {
+  content: '\\e91c';
+}
+
+.c3.icon-video:before {
+  content: '\\e921';
+}
+
+.c3.icon-happyMask:before {
+  content: '\\e922';
+}
+
+.c3.icon-helpCircleOutline:before {
+  content: '\\e925';
+}
+
+.c3.icon-ellipsisHorizontal:before {
+  content: '\\e92b';
+}
+
+.c3.icon-no:before {
+  content: '\\e92f';
+}
+
+.c3.icon-pet:before {
+  content: '\\e907';
+}
+
+.c3.icon-readGlasses:before {
+  content: '\\e930';
+}
+
+.c3.icon-residential:before {
+  content: '\\e916';
+}
+
+.c3.icon-tree:before {
+  content: '\\e906';
+}
+
+.c3.icon-heartPulse:before {
+  content: '\\e91f';
+}
+
+.c3.icon-homeWorld:before {
+  content: '\\e923';
+}
+
+.c3.icon-travelWorld:before {
+  content: '\\e928';
+}
+
 .c3.icon-musicTicket:before {
-  content: '\\e913';
+  content: '\\e926';
 }
 
 .c3.icon-musicLove:before {
-  content: '\\e90a';
+  content: '\\e91d';
 }
 
 .c3.icon-plus:before {
-  content: '\\e924';
+  content: '\\e935';
 }
 
 .c3.icon-padlock:before {
-  content: '\\e925';
+  content: '\\e936';
 }
 
 .c3.icon-search:before {
@@ -317,51 +317,95 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-music:before {
-  content: '\\e932';
+  content: '\\e942';
 }
 
 .c3.icon-mail:before {
-  content: '\\e931';
+  content: '\\e941';
 }
 
 .c3.icon-expandHorizontal:before {
-  content: '\\e92e';
+  content: '\\e93e';
 }
 
 .c3.icon-reset:before {
-  content: '\\e936';
+  content: '\\e912';
 }
 
 .c3.icon-pencil:before {
-  content: '\\e934';
+  content: '\\e904';
 }
 
 .c3.icon-trashCan:before {
-  content: '\\e93c';
+  content: '\\e94a';
 }
 
 .c3.icon-arrowUp:before {
-  content: '\\e933';
+  content: '\\e913';
 }
 
 .c3.icon-arrowLeft:before {
-  content: '\\e93b';
+  content: '\\e949';
+}
+
+.c3.icon-info:before {
+  content: '\\e90d';
 }
 
 .c3.icon-infoOutline:before {
-  content: '\\e93a';
+  content: '\\e948';
+}
+
+.c3.icon-feedback:before {
+  content: '\\e905';
 }
 
 .c3.icon-feedbackOutline:before {
-  content: '\\e939';
+  content: '\\e947';
+}
+
+.c3.icon-media:before {
+  content: '\\e909';
 }
 
 .c3.icon-mediaOutline:before {
-  content: '\\e938';
+  content: '\\e946';
+}
+
+.c3.icon-concert:before {
+  content: '\\e90a';
 }
 
 .c3.icon-concertOutline:before {
-  content: '\\e937';
+  content: '\\e945';
+}
+
+.c3.icon-map:before {
+  content: '\\e914';
+}
+
+.c3.icon-photos:before {
+  content: '\\e911';
+}
+
+.c3.icon-artistParking:before {
+  content: '\\e90f';
+}
+
+.c3.icon-guestParking:before {
+  content: '\\e90e';
+}
+
+.c3.icon-eventSetUp:before {
+  content: '\\e90c';
+}
+
+.c3.icon-fanExperience:before {
+  content: '\\e90b';
+}
+
+.c3.icon-rock:before {
+  content: '\\e900';
 }
 
 <Component
@@ -797,87 +841,87 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-facebook:before {
-  content: '\\e90d';
-}
-
-.c4.icon-instagram:before {
-  content: '\\e916';
-}
-
-.c4.icon-spotify:before {
-  content: '\\e926';
-}
-
-.c4.icon-twitter:before {
-  content: '\\e92f';
-}
-
-.c4.icon-youtube:before {
-  content: '\\e935';
-}
-
-.c4.icon-facebookOutline:before {
-  content: '\\e90b';
-}
-
-.c4.icon-instagramOutline:before {
-  content: '\\e911';
-}
-
-.c4.icon-spotifyOutline:before {
-  content: '\\e914';
-}
-
-.c4.icon-twitterOutline:before {
-  content: '\\e91a';
-}
-
-.c4.icon-youtubeOutline:before {
-  content: '\\e91b';
-}
-
-.c4.icon-caretUp:before {
-  content: '\\e921';
-}
-
-.c4.icon-caretDown:before {
-  content: '\\e906';
-}
-
-.c4.icon-caretLeft:before {
-  content: '\\e922';
-}
-
-.c4.icon-caretRight:before {
-  content: '\\e923';
-}
-
-.c4.icon-caretCircleDown:before {
-  content: '\\e908';
-}
-
-.c4.icon-chevronLeft:before {
-  content: '\\e917';
-}
-
-.c4.icon-chevronRight:before {
-  content: '\\e92c';
-}
-
-.c4.icon-chevronUp:before {
-  content: '\\e92a';
-}
-
-.c4.icon-chevronDown:before {
   content: '\\e920';
 }
 
-.c4.icon-moveVertical:before {
+.c4.icon-instagram:before {
+  content: '\\e929';
+}
+
+.c4.icon-spotify:before {
+  content: '\\e937';
+}
+
+.c4.icon-twitter:before {
+  content: '\\e93f';
+}
+
+.c4.icon-youtube:before {
+  content: '\\e944';
+}
+
+.c4.icon-facebookOutline:before {
+  content: '\\e91e';
+}
+
+.c4.icon-instagramOutline:before {
+  content: '\\e924';
+}
+
+.c4.icon-spotifyOutline:before {
+  content: '\\e927';
+}
+
+.c4.icon-twitterOutline:before {
+  content: '\\e92d';
+}
+
+.c4.icon-youtubeOutline:before {
+  content: '\\e92e';
+}
+
+.c4.icon-caretUp:before {
+  content: '\\e932';
+}
+
+.c4.icon-caretDown:before {
   content: '\\e919';
 }
 
+.c4.icon-caretLeft:before {
+  content: '\\e933';
+}
+
+.c4.icon-caretRight:before {
+  content: '\\e934';
+}
+
+.c4.icon-caretCircleDown:before {
+  content: '\\e91b';
+}
+
+.c4.icon-chevronLeft:before {
+  content: '\\e92a';
+}
+
+.c4.icon-chevronRight:before {
+  content: '\\e93c';
+}
+
+.c4.icon-chevronUp:before {
+  content: '\\e93b';
+}
+
+.c4.icon-chevronDown:before {
+  content: '\\e931';
+}
+
+.c4.icon-moveVertical:before {
+  content: '\\e92c';
+}
+
 .c4.icon-check:before {
-  content: '\\e927';
+  content: '\\e938';
 }
 
 .c4.icon-checkCircle:before {
@@ -885,111 +929,111 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-alertCircle:before {
-  content: '\\e907';
+  content: '\\e91a';
 }
 
 .c4.icon-alertTriangle:before {
-  content: '\\e930';
-}
-
-.c4.icon-calendar:before {
   content: '\\e901';
 }
 
+.c4.icon-calendar:before {
+  content: '\\e917';
+}
+
 .c4.icon-time:before {
-  content: '\\e929';
+  content: '\\e93a';
 }
 
 .c4.icon-timeHand:before {
-  content: '\\e928';
+  content: '\\e939';
 }
 
 .c4.icon-calendarAdd:before {
-  content: '\\e92d';
+  content: '\\e93d';
 }
 
 .c4.icon-byob:before {
-  content: '\\e900';
+  content: '\\e908';
 }
 
 .c4.icon-close:before {
-  content: '\\e903';
-}
-
-.c4.icon-commercial:before {
-  content: '\\e904';
-}
-
-.c4.icon-disabled:before {
-  content: '\\e905';
-}
-
-.c4.icon-eye:before {
-  content: '\\e909';
-}
-
-.c4.icon-video:before {
-  content: '\\e90e';
-}
-
-.c4.icon-happyMask:before {
-  content: '\\e90f';
-}
-
-.c4.icon-helpCircleOutline:before {
-  content: '\\e912';
-}
-
-.c4.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c4.icon-no:before {
-  content: '\\e91c';
-}
-
-.c4.icon-pet:before {
-  content: '\\e91d';
-}
-
-.c4.icon-readGlasses:before {
-  content: '\\e91e';
-}
-
-.c4.icon-residential:before {
-  content: '\\e91f';
-}
-
-.c4.icon-tree:before {
-  content: '\\e92b';
-}
-
-.c4.icon-heartPulse:before {
-  content: '\\e90c';
-}
-
-.c4.icon-homeWorld:before {
-  content: '\\e910';
-}
-
-.c4.icon-travelWorld:before {
+.c4.icon-commercial:before {
   content: '\\e915';
 }
 
+.c4.icon-disabled:before {
+  content: '\\e910';
+}
+
+.c4.icon-eye:before {
+  content: '\\e91c';
+}
+
+.c4.icon-video:before {
+  content: '\\e921';
+}
+
+.c4.icon-happyMask:before {
+  content: '\\e922';
+}
+
+.c4.icon-helpCircleOutline:before {
+  content: '\\e925';
+}
+
+.c4.icon-ellipsisHorizontal:before {
+  content: '\\e92b';
+}
+
+.c4.icon-no:before {
+  content: '\\e92f';
+}
+
+.c4.icon-pet:before {
+  content: '\\e907';
+}
+
+.c4.icon-readGlasses:before {
+  content: '\\e930';
+}
+
+.c4.icon-residential:before {
+  content: '\\e916';
+}
+
+.c4.icon-tree:before {
+  content: '\\e906';
+}
+
+.c4.icon-heartPulse:before {
+  content: '\\e91f';
+}
+
+.c4.icon-homeWorld:before {
+  content: '\\e923';
+}
+
+.c4.icon-travelWorld:before {
+  content: '\\e928';
+}
+
 .c4.icon-musicTicket:before {
-  content: '\\e913';
+  content: '\\e926';
 }
 
 .c4.icon-musicLove:before {
-  content: '\\e90a';
+  content: '\\e91d';
 }
 
 .c4.icon-plus:before {
-  content: '\\e924';
+  content: '\\e935';
 }
 
 .c4.icon-padlock:before {
-  content: '\\e925';
+  content: '\\e936';
 }
 
 .c4.icon-search:before {
@@ -997,51 +1041,95 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-music:before {
-  content: '\\e932';
+  content: '\\e942';
 }
 
 .c4.icon-mail:before {
-  content: '\\e931';
+  content: '\\e941';
 }
 
 .c4.icon-expandHorizontal:before {
-  content: '\\e92e';
+  content: '\\e93e';
 }
 
 .c4.icon-reset:before {
-  content: '\\e936';
+  content: '\\e912';
 }
 
 .c4.icon-pencil:before {
-  content: '\\e934';
+  content: '\\e904';
 }
 
 .c4.icon-trashCan:before {
-  content: '\\e93c';
+  content: '\\e94a';
 }
 
 .c4.icon-arrowUp:before {
-  content: '\\e933';
+  content: '\\e913';
 }
 
 .c4.icon-arrowLeft:before {
-  content: '\\e93b';
+  content: '\\e949';
+}
+
+.c4.icon-info:before {
+  content: '\\e90d';
 }
 
 .c4.icon-infoOutline:before {
-  content: '\\e93a';
+  content: '\\e948';
+}
+
+.c4.icon-feedback:before {
+  content: '\\e905';
 }
 
 .c4.icon-feedbackOutline:before {
-  content: '\\e939';
+  content: '\\e947';
+}
+
+.c4.icon-media:before {
+  content: '\\e909';
 }
 
 .c4.icon-mediaOutline:before {
-  content: '\\e938';
+  content: '\\e946';
+}
+
+.c4.icon-concert:before {
+  content: '\\e90a';
 }
 
 .c4.icon-concertOutline:before {
-  content: '\\e937';
+  content: '\\e945';
+}
+
+.c4.icon-map:before {
+  content: '\\e914';
+}
+
+.c4.icon-photos:before {
+  content: '\\e911';
+}
+
+.c4.icon-artistParking:before {
+  content: '\\e90f';
+}
+
+.c4.icon-guestParking:before {
+  content: '\\e90e';
+}
+
+.c4.icon-eventSetUp:before {
+  content: '\\e90c';
+}
+
+.c4.icon-fanExperience:before {
+  content: '\\e90b';
+}
+
+.c4.icon-rock:before {
+  content: '\\e900';
 }
 
 <Component
@@ -1480,87 +1568,87 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-facebook:before {
-  content: '\\e90d';
-}
-
-.c3.icon-instagram:before {
-  content: '\\e916';
-}
-
-.c3.icon-spotify:before {
-  content: '\\e926';
-}
-
-.c3.icon-twitter:before {
-  content: '\\e92f';
-}
-
-.c3.icon-youtube:before {
-  content: '\\e935';
-}
-
-.c3.icon-facebookOutline:before {
-  content: '\\e90b';
-}
-
-.c3.icon-instagramOutline:before {
-  content: '\\e911';
-}
-
-.c3.icon-spotifyOutline:before {
-  content: '\\e914';
-}
-
-.c3.icon-twitterOutline:before {
-  content: '\\e91a';
-}
-
-.c3.icon-youtubeOutline:before {
-  content: '\\e91b';
-}
-
-.c3.icon-caretUp:before {
-  content: '\\e921';
-}
-
-.c3.icon-caretDown:before {
-  content: '\\e906';
-}
-
-.c3.icon-caretLeft:before {
-  content: '\\e922';
-}
-
-.c3.icon-caretRight:before {
-  content: '\\e923';
-}
-
-.c3.icon-caretCircleDown:before {
-  content: '\\e908';
-}
-
-.c3.icon-chevronLeft:before {
-  content: '\\e917';
-}
-
-.c3.icon-chevronRight:before {
-  content: '\\e92c';
-}
-
-.c3.icon-chevronUp:before {
-  content: '\\e92a';
-}
-
-.c3.icon-chevronDown:before {
   content: '\\e920';
 }
 
-.c3.icon-moveVertical:before {
+.c3.icon-instagram:before {
+  content: '\\e929';
+}
+
+.c3.icon-spotify:before {
+  content: '\\e937';
+}
+
+.c3.icon-twitter:before {
+  content: '\\e93f';
+}
+
+.c3.icon-youtube:before {
+  content: '\\e944';
+}
+
+.c3.icon-facebookOutline:before {
+  content: '\\e91e';
+}
+
+.c3.icon-instagramOutline:before {
+  content: '\\e924';
+}
+
+.c3.icon-spotifyOutline:before {
+  content: '\\e927';
+}
+
+.c3.icon-twitterOutline:before {
+  content: '\\e92d';
+}
+
+.c3.icon-youtubeOutline:before {
+  content: '\\e92e';
+}
+
+.c3.icon-caretUp:before {
+  content: '\\e932';
+}
+
+.c3.icon-caretDown:before {
   content: '\\e919';
 }
 
+.c3.icon-caretLeft:before {
+  content: '\\e933';
+}
+
+.c3.icon-caretRight:before {
+  content: '\\e934';
+}
+
+.c3.icon-caretCircleDown:before {
+  content: '\\e91b';
+}
+
+.c3.icon-chevronLeft:before {
+  content: '\\e92a';
+}
+
+.c3.icon-chevronRight:before {
+  content: '\\e93c';
+}
+
+.c3.icon-chevronUp:before {
+  content: '\\e93b';
+}
+
+.c3.icon-chevronDown:before {
+  content: '\\e931';
+}
+
+.c3.icon-moveVertical:before {
+  content: '\\e92c';
+}
+
 .c3.icon-check:before {
-  content: '\\e927';
+  content: '\\e938';
 }
 
 .c3.icon-checkCircle:before {
@@ -1568,111 +1656,111 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-alertCircle:before {
-  content: '\\e907';
+  content: '\\e91a';
 }
 
 .c3.icon-alertTriangle:before {
-  content: '\\e930';
-}
-
-.c3.icon-calendar:before {
   content: '\\e901';
 }
 
+.c3.icon-calendar:before {
+  content: '\\e917';
+}
+
 .c3.icon-time:before {
-  content: '\\e929';
+  content: '\\e93a';
 }
 
 .c3.icon-timeHand:before {
-  content: '\\e928';
+  content: '\\e939';
 }
 
 .c3.icon-calendarAdd:before {
-  content: '\\e92d';
+  content: '\\e93d';
 }
 
 .c3.icon-byob:before {
-  content: '\\e900';
+  content: '\\e908';
 }
 
 .c3.icon-close:before {
-  content: '\\e903';
-}
-
-.c3.icon-commercial:before {
-  content: '\\e904';
-}
-
-.c3.icon-disabled:before {
-  content: '\\e905';
-}
-
-.c3.icon-eye:before {
-  content: '\\e909';
-}
-
-.c3.icon-video:before {
-  content: '\\e90e';
-}
-
-.c3.icon-happyMask:before {
-  content: '\\e90f';
-}
-
-.c3.icon-helpCircleOutline:before {
-  content: '\\e912';
-}
-
-.c3.icon-ellipsisHorizontal:before {
   content: '\\e918';
 }
 
-.c3.icon-no:before {
-  content: '\\e91c';
-}
-
-.c3.icon-pet:before {
-  content: '\\e91d';
-}
-
-.c3.icon-readGlasses:before {
-  content: '\\e91e';
-}
-
-.c3.icon-residential:before {
-  content: '\\e91f';
-}
-
-.c3.icon-tree:before {
-  content: '\\e92b';
-}
-
-.c3.icon-heartPulse:before {
-  content: '\\e90c';
-}
-
-.c3.icon-homeWorld:before {
-  content: '\\e910';
-}
-
-.c3.icon-travelWorld:before {
+.c3.icon-commercial:before {
   content: '\\e915';
 }
 
+.c3.icon-disabled:before {
+  content: '\\e910';
+}
+
+.c3.icon-eye:before {
+  content: '\\e91c';
+}
+
+.c3.icon-video:before {
+  content: '\\e921';
+}
+
+.c3.icon-happyMask:before {
+  content: '\\e922';
+}
+
+.c3.icon-helpCircleOutline:before {
+  content: '\\e925';
+}
+
+.c3.icon-ellipsisHorizontal:before {
+  content: '\\e92b';
+}
+
+.c3.icon-no:before {
+  content: '\\e92f';
+}
+
+.c3.icon-pet:before {
+  content: '\\e907';
+}
+
+.c3.icon-readGlasses:before {
+  content: '\\e930';
+}
+
+.c3.icon-residential:before {
+  content: '\\e916';
+}
+
+.c3.icon-tree:before {
+  content: '\\e906';
+}
+
+.c3.icon-heartPulse:before {
+  content: '\\e91f';
+}
+
+.c3.icon-homeWorld:before {
+  content: '\\e923';
+}
+
+.c3.icon-travelWorld:before {
+  content: '\\e928';
+}
+
 .c3.icon-musicTicket:before {
-  content: '\\e913';
+  content: '\\e926';
 }
 
 .c3.icon-musicLove:before {
-  content: '\\e90a';
+  content: '\\e91d';
 }
 
 .c3.icon-plus:before {
-  content: '\\e924';
+  content: '\\e935';
 }
 
 .c3.icon-padlock:before {
-  content: '\\e925';
+  content: '\\e936';
 }
 
 .c3.icon-search:before {
@@ -1680,51 +1768,95 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-music:before {
-  content: '\\e932';
+  content: '\\e942';
 }
 
 .c3.icon-mail:before {
-  content: '\\e931';
+  content: '\\e941';
 }
 
 .c3.icon-expandHorizontal:before {
-  content: '\\e92e';
+  content: '\\e93e';
 }
 
 .c3.icon-reset:before {
-  content: '\\e936';
+  content: '\\e912';
 }
 
 .c3.icon-pencil:before {
-  content: '\\e934';
+  content: '\\e904';
 }
 
 .c3.icon-trashCan:before {
-  content: '\\e93c';
+  content: '\\e94a';
 }
 
 .c3.icon-arrowUp:before {
-  content: '\\e933';
+  content: '\\e913';
 }
 
 .c3.icon-arrowLeft:before {
-  content: '\\e93b';
+  content: '\\e949';
+}
+
+.c3.icon-info:before {
+  content: '\\e90d';
 }
 
 .c3.icon-infoOutline:before {
-  content: '\\e93a';
+  content: '\\e948';
+}
+
+.c3.icon-feedback:before {
+  content: '\\e905';
 }
 
 .c3.icon-feedbackOutline:before {
-  content: '\\e939';
+  content: '\\e947';
+}
+
+.c3.icon-media:before {
+  content: '\\e909';
 }
 
 .c3.icon-mediaOutline:before {
-  content: '\\e938';
+  content: '\\e946';
+}
+
+.c3.icon-concert:before {
+  content: '\\e90a';
 }
 
 .c3.icon-concertOutline:before {
-  content: '\\e937';
+  content: '\\e945';
+}
+
+.c3.icon-map:before {
+  content: '\\e914';
+}
+
+.c3.icon-photos:before {
+  content: '\\e911';
+}
+
+.c3.icon-artistParking:before {
+  content: '\\e90f';
+}
+
+.c3.icon-guestParking:before {
+  content: '\\e90e';
+}
+
+.c3.icon-eventSetUp:before {
+  content: '\\e90c';
+}
+
+.c3.icon-fanExperience:before {
+  content: '\\e90b';
+}
+
+.c3.icon-rock:before {
+  content: '\\e900';
 }
 
 <Component
