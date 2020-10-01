@@ -17,13 +17,14 @@ After adding the import you can use it simply like this
 
 Table below contains all types of props available in the Logo component  
 
-| Name          | Type          | Default         | Description                      |
-| :------------ | :-----        | :-------------- | :------------------------------- |
-| **children**  | `React.Node`  |                 | The content to display or hide
-| hide          | [Enum](#enum) |                 | Hide given content on *exact* screen size only
-| show          | [Enum](#enum) |                 | Show given content on *exact* screen size only
-| hideUp        | [Enum](#enum) |                 | Hide given content on given screen size and up
-| showUp        | [Enum](#enum) |                 | Show given content on given screen size and up
+| Name          | Type            | Default         | Description                      |
+| :------------ | :-----          | :-------------- | :------------------------------- |
+| **children**  | `React.Node`    |                 | The content to display or hide
+| showOnSizes   | [Enum[]](#enum) |                 | Show given content on an array of screen sizes
+| hide          | [Enum](#enum)   |                 | Hide given content on *exact* screen size only
+| show          | [Enum](#enum)   |                 | Show given content on *exact* screen size only
+| hideUp        | [Enum](#enum)   |                 | Hide given content on given screen size and up
+| showUp        | [Enum](#enum)   |                 | Show given content on given screen size and up
 
 ### Enum
 
