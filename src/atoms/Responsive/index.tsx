@@ -10,6 +10,8 @@ interface Props {
 
   hideUp?: string;
   showUp?: string;
+
+  showOnSizes?: string[];
 }
 
 const hasWindow = typeof window !== 'undefined';
@@ -68,8 +70,15 @@ export default class Responsive extends React.Component<Props, State> {
   };
 
   public render() {
-    const { hide, hideUp, show, showUp, children } = this.props;
+    const { hide, hideUp, show, showUp, showOnSizes, children } = this.props;
     const { windowSize } = this.state;
+
+    if (showOnSizes) {
+      const inAnyBoundary = showOnSizes
+        .map((size: string) => isInBoundary(size, windowSize, false))
+        .reduce((a, b) => a || b);
+      return !inAnyBoundary ? null : children;
+    }
 
     if (hide || hideUp) {
       const useHideProp = hide || hideUp;
