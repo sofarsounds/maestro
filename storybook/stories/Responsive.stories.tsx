@@ -78,5 +78,15 @@ storiesOf('Responsive', module).add('Basic', () => (
         </Responsive>
       </Example>
     ))}
+
+    <Spacer />
+
+    <h2>Show on array of exact screen sizes</h2>
+    <Example>
+      Only visible on [md, xl] devices:
+      <Responsive showOnSizes={["md", "xl"]}>
+        <Box>I am visible only on [md, xl] devices</Box>
+      </Responsive>
+    </Example>
   </div>
 ));
