@@ -24,6 +24,7 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   hasError?: boolean;
   invertColor?: boolean;
   renderLeftIcon?: React.ReactNode;
+  tabIndex?: string;
 
   // typeahead props
   searchable?: boolean;
