@@ -31,6 +31,7 @@ const SimpleOptions = <T extends {}>({
           data-qaid={`${qaId}-option`}
           tabIndex={key}
           onClick={onClick}
+          role="option"
         >
           {label}
         </MenuItem>

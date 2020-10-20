@@ -33,6 +33,7 @@ interface Props {
   state: SelectState;
   initialWidth?: string;
   'data-qaid'?: string;
+  'aria-haspopup'?: string;
 
   inputProps: {
     id?: string;
@@ -212,6 +213,7 @@ const Input: React.SFC<Props> = ({
       invertColor={invertColor}
       initialWidth={initialWidth}
       data-qaid={qaId}
+      aria-haspopup="listbox"
     >
       {renderLeftIcon && (
         <IconWrapper invertColor={invertColor} data-qaid={`${qaId}-left-icon`}>
