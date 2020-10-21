@@ -5,8 +5,10 @@ export interface UseModalProps {
   hide: () => void;
 }
 
-const useModal = (): [UseModalProps, () => void] => {
-  const [isShowing, setIsShowing] = useState(false);
+const useModal = (
+  initialToggleState?: boolean
+): [UseModalProps, () => void] => {
+  const [isShowing, setIsShowing] = useState(initialToggleState || false);
 
   function toggle() {
     setIsShowing(!isShowing);
