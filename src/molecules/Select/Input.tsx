@@ -38,7 +38,6 @@ interface Props {
     id?: string;
     placeholder?: string;
     readOnly?: boolean;
-
     name?: string;
     value?: string;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
