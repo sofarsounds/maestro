@@ -33,7 +33,6 @@ interface Props {
   state: SelectState;
   initialWidth?: string;
   'data-qaid'?: string;
-  tabIndex?: string;
 
   inputProps: {
     id?: string;
