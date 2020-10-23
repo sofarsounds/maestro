@@ -81,6 +81,10 @@ const Wrapper = styled.div<Wrapper>`
         &:hover {
           border-color: ${theme.colors.whiteDenim};
         }
+        &:focus {
+          border-color: ${theme.colors.silverSprings};
+          background: rgba(219, 219, 219, 0.1); //macyGrey at 10%
+        }
       `}
 
     ${initialWidth &&
@@ -200,6 +204,7 @@ const Input: React.SFC<Props> = ({
     <Wrapper
       id={inputProps.id}
       readOnly={inputProps.readOnly}
+      tabIndex={0}
       hasError={hasError}
       onClick={onToggle}
       isOpen={isOpen}
