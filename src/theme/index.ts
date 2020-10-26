@@ -24,6 +24,7 @@ const theme: Theme = {
     backToBlack: '#111111',
     blackBetty: '#1E1E1E',
     paintItBlack: '#333333',
+    darkSmoke: '#767676',
     blueSmoke: '#949494',
     macyGrey: '#DBDBDB',
     silverSprings: '#F5F5F5',
