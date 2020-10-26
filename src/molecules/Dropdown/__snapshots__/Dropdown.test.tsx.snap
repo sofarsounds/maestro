@@ -30,6 +30,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
         "blueSmoke": "#949494",
         "brownSugar": "#9B525F",
         "checkBerry": "#98035A",
+        "darkSmoke": "#767676",
         "green100": "#CFEACC",
         "green200": "#9DDCAC",
         "green300": "#72D08A",
