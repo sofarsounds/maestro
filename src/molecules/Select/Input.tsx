@@ -33,7 +33,6 @@ interface Props {
   state: SelectState;
   initialWidth?: string;
   'data-qaid'?: string;
-  'aria-haspopup'?: string;
 
   inputProps: {
     id?: string;

@@ -176,6 +176,8 @@ const Options = <T extends {}>({
             isOpen={isOpen}
             isFlipped={isFlipped}
             bordered
+            tabIndex={-1}
+            role="listbox"
             data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
           >
             {renderOptions()}
