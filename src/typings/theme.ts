@@ -15,6 +15,7 @@ export type Colors =
   | 'black'
   | 'blackBetty'
   | 'paintItBlack'
+  | 'darkSmoke'
   | 'blueSmoke'
   | 'macyGrey'
   | 'silverSprings'
@@ -40,6 +41,7 @@ export default interface Theme {
     backToBlack: string;
     blackBetty: string;
     paintItBlack: string;
+    darkSmoke: string;
     blueSmoke: string;
     macyGrey: string;
     silverSprings: string;

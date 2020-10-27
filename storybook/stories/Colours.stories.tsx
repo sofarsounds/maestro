@@ -65,6 +65,7 @@ storiesOf('Colors', module)
         'backToBlack',
         'blackBetty',
         'paintItBlack',
+        'darkSmoke',
         'blueSmoke',
         'macyGrey',
         'silverSprings',
