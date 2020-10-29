@@ -142,10 +142,10 @@ const Options = <T extends {}>({
     return null;
   };
 
-  const domThing = document.getElementById('selectOptions');
+  const selectOptions = document.getElementById('selectOptions');
   return (
-    domThing && (
-      <Portal dom={domThing}>
+    selectOptions && (
+      <Portal dom={selectOptions}>
         <Popper
           anchorEl={innerRef}
           reactToChange={options.length}
