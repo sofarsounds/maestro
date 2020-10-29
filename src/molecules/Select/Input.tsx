@@ -212,15 +212,16 @@ const Input: React.SFC<Props> = ({
       invertColor={invertColor}
       initialWidth={initialWidth}
       data-qaid={qaId}
-      aria-haspopup="listbox"
     >
       {renderLeftIcon && (
         <IconWrapper invertColor={invertColor} data-qaid={`${qaId}-left-icon`}>
           {renderLeftIcon}
         </IconWrapper>
       )}
-
       <StyledInput
+        // We need the selectable element to also be the trigger for the Portal - what's the best way to do this?
+        tabIndex={-1}
+        aria-haspopup="listbox"
         value={inputProps.value}
         readOnly={inputProps.readOnly}
         isOpen={isOpen}
@@ -271,6 +272,7 @@ const Input: React.SFC<Props> = ({
           name={isOpen ? 'caretUp' : 'caretDown'}
         />
       </ActionButton>
+      <div id="selectOptions" tabIndex={-1} role="listbox"></div>
     </Wrapper>
   );
 };

@@ -142,49 +142,50 @@ const Options = <T extends {}>({
     return null;
   };
 
+  const domThing = document.getElementById('selectOptions');
   return (
-    <Portal dom={document.body}>
-      <Popper
-        anchorEl={innerRef}
-        reactToChange={options.length}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left'
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left'
-        }}
-        offset={{
-          vertical: -2
-        }}
-        width="auto"
-        flip
-      >
-        {({
-          ref,
-          style,
-          isFlipped
-        }: {
-          ref: any;
-          style: any;
-          isFlipped: boolean;
-        }) => (
-          <AdvancedMenu
-            ref={ref}
-            style={style}
-            isOpen={isOpen}
-            isFlipped={isFlipped}
-            bordered
-            tabIndex={-1}
-            role="listbox"
-            data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
-          >
-            {renderOptions()}
-          </AdvancedMenu>
-        )}
-      </Popper>
-    </Portal>
+    domThing && (
+      <Portal dom={domThing}>
+        <Popper
+          anchorEl={innerRef}
+          reactToChange={options.length}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left'
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'left'
+          }}
+          offset={{
+            vertical: -2
+          }}
+          width="auto"
+          flip
+        >
+          {({
+            ref,
+            style,
+            isFlipped
+          }: {
+            ref: any;
+            style: any;
+            isFlipped: boolean;
+          }) => (
+            <AdvancedMenu
+              ref={ref}
+              style={style}
+              isOpen={isOpen}
+              isFlipped={isFlipped}
+              bordered
+              data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
+            >
+              {renderOptions()}
+            </AdvancedMenu>
+          )}
+        </Popper>
+      </Portal>
+    )
   );
 };
 
