@@ -384,6 +384,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e914';
 }
 
+.c2.icon-grid:before {
+  content: '\\e900';
+}
+
 .c2.icon-photos:before {
   content: '\\e911';
 }
