@@ -384,6 +384,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e914';
 }
 
+.c3.icon-grid:before {
+  content: '\\e93d';
+}
+
 .c3.icon-photos:before {
   content: '\\e911';
 }
@@ -1107,6 +1111,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-map:before {
   content: '\\e914';
+}
+
+.c4.icon-grid:before {
+  content: '\\e93d';
 }
 
 .c4.icon-photos:before {
@@ -1835,6 +1843,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-map:before {
   content: '\\e914';
+}
+
+.c3.icon-grid:before {
+  content: '\\e93d';
 }
 
 .c3.icon-photos:before {
