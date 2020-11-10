@@ -285,6 +285,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e914';
 }
 
+.c1.icon-grid:before {
+  content: '\\e93d';
+}
+
 .c1.icon-photos:before {
   content: '\\e911';
 }

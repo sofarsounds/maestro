@@ -319,6 +319,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e914';
 }
 
+.c1.icon-grid:before {
+  content: '\\e93d';
+}
+
 .c1.icon-photos:before {
   content: '\\e911';
 }
@@ -862,6 +866,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e914';
 }
 
+.c1.icon-grid:before {
+  content: '\\e93d';
+}
+
 .c1.icon-photos:before {
   content: '\\e911';
 }
@@ -1398,6 +1406,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-map:before {
   content: '\\e914';
+}
+
+.c1.icon-grid:before {
+  content: '\\e93d';
 }
 
 .c1.icon-photos:before {
@@ -1941,6 +1953,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-map:before {
   content: '\\e914';
+}
+
+.c1.icon-grid:before {
+  content: '\\e93d';
 }
 
 .c1.icon-photos:before {

@@ -75,6 +75,7 @@ enum Registry {
   concert = 'e90a',
   concertOutline = 'e945',
   map = 'e914',
+  grid = 'e93d',
   photos = 'e911',
   artistParking = 'e90f',
   guestParking = 'e90e',
