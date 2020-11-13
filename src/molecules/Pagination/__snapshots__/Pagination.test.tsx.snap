@@ -204,6 +204,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e902';
 }
 
+.c2.icon-checkSquare:before {
+  content: '\\e943';
+}
+
 .c2.icon-alertCircle:before {
   content: '\\e91a';
 }
@@ -338,6 +342,10 @@ exports[`<Pagination /> renders correctly 1`] = `
 
 .c2.icon-trashCan:before {
   content: '\\e94a';
+}
+
+.c2.icon-fileFolder:before {
+  content: '\\e940';
 }
 
 .c2.icon-arrowUp:before {

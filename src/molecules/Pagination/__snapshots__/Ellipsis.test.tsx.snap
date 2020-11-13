@@ -105,6 +105,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e902';
 }
 
+.c1.icon-checkSquare:before {
+  content: '\\e943';
+}
+
 .c1.icon-alertCircle:before {
   content: '\\e91a';
 }
@@ -239,6 +243,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
 
 .c1.icon-trashCan:before {
   content: '\\e94a';
+}
+
+.c1.icon-fileFolder:before {
+  content: '\\e940';
 }
 
 .c1.icon-arrowUp:before {
