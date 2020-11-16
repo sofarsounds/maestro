@@ -26,6 +26,7 @@ enum Registry {
   // status
   check = 'e938',
   checkCircle = 'e902',
+  checkSquare = 'e943',
   alertCircle = 'e91a',
   alertTriangle = 'e901',
 
@@ -64,6 +65,7 @@ enum Registry {
   reset = 'e912',
   pencil = 'e904',
   trashCan = 'e94a',
+  fileFolder = 'e940',
   arrowUp = 'e913',
   arrowLeft = 'e949',
   info = 'e90d',

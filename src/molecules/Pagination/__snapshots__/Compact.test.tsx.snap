@@ -204,6 +204,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e902';
 }
 
+.c3.icon-checkSquare:before {
+  content: '\\e943';
+}
+
 .c3.icon-alertCircle:before {
   content: '\\e91a';
 }
@@ -338,6 +342,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 
 .c3.icon-trashCan:before {
   content: '\\e94a';
+}
+
+.c3.icon-fileFolder:before {
+  content: '\\e940';
 }
 
 .c3.icon-arrowUp:before {
@@ -933,6 +941,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e902';
 }
 
+.c4.icon-checkSquare:before {
+  content: '\\e943';
+}
+
 .c4.icon-alertCircle:before {
   content: '\\e91a';
 }
@@ -1067,6 +1079,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-trashCan:before {
   content: '\\e94a';
+}
+
+.c4.icon-fileFolder:before {
+  content: '\\e940';
 }
 
 .c4.icon-arrowUp:before {
@@ -1665,6 +1681,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e902';
 }
 
+.c3.icon-checkSquare:before {
+  content: '\\e943';
+}
+
 .c3.icon-alertCircle:before {
   content: '\\e91a';
 }
@@ -1799,6 +1819,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-trashCan:before {
   content: '\\e94a';
+}
+
+.c3.icon-fileFolder:before {
+  content: '\\e940';
 }
 
 .c3.icon-arrowUp:before {
