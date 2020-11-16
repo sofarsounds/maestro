@@ -154,7 +154,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     }
 
     &:disabled {
-      background-color: ${theme.colors.backToBlack};
+      background-color: ${theme.colors.whiteDenim};
       color: ${theme.colors.blueSmoke};
 
       i:before {
@@ -208,6 +208,9 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
         &:focus {
           border-color: ${theme.colors.silverSprings};
           background: rgba(219, 219, 219, 0.1); //macyGrey at 10%
+        }
+        &:disabled {
+          background-color: ${theme.colors.backToBlack};
         }
       `}
 
