@@ -133,7 +133,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-youtube:before {
-  content: '\\e944';
+  content: '\\e945';
 }
 
 .c3.icon-facebookOutline:before {
@@ -205,7 +205,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-checkSquare:before {
-  content: '\\e943';
+  content: '\\e944';
 }
 
 .c3.icon-alertCircle:before {
@@ -321,11 +321,11 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-music:before {
-  content: '\\e942';
+  content: '\\e943';
 }
 
 .c3.icon-mail:before {
-  content: '\\e941';
+  content: '\\e942';
 }
 
 .c3.icon-expandHorizontal:before {
@@ -341,11 +341,11 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-trashCan:before {
-  content: '\\e94a';
+  content: '\\e958';
 }
 
 .c3.icon-fileFolder:before {
-  content: '\\e940';
+  content: '\\e941';
 }
 
 .c3.icon-arrowUp:before {
@@ -353,7 +353,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-arrowLeft:before {
-  content: '\\e949';
+  content: '\\e94a';
 }
 
 .c3.icon-info:before {
@@ -361,7 +361,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-infoOutline:before {
-  content: '\\e948';
+  content: '\\e949';
 }
 
 .c3.icon-feedback:before {
@@ -369,7 +369,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-feedbackOutline:before {
-  content: '\\e947';
+  content: '\\e948';
 }
 
 .c3.icon-media:before {
@@ -377,7 +377,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-mediaOutline:before {
-  content: '\\e946';
+  content: '\\e947';
 }
 
 .c3.icon-concert:before {
@@ -385,7 +385,7 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 }
 
 .c3.icon-concertOutline:before {
-  content: '\\e945';
+  content: '\\e946';
 }
 
 .c3.icon-map:before {
@@ -412,12 +412,84 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e90c';
 }
 
+.c3.icon-eventSetupOutline:before {
+  content: '\\e95b';
+}
+
 .c3.icon-fanExperience:before {
   content: '\\e90b';
 }
 
+.c3.icon-fanExperienceOutline:before {
+  content: '\\e95c';
+}
+
 .c3.icon-rock:before {
   content: '\\e900';
+}
+
+.c3.icon-noOutsideFood:before {
+  content: '\\e94b';
+}
+
+.c3.icon-smokingAllowed:before {
+  content: '\\e94c';
+}
+
+.c3.icon-cat:before {
+  content: '\\e94d';
+}
+
+.c3.icon-dog:before {
+  content: '\\e94f';
+}
+
+.c3.icon-cannabisFriendly:before {
+  content: '\\e950';
+}
+
+.c3.icon-foodForSale:before {
+  content: '\\e951';
+}
+
+.c3.icon-notAccessible:before {
+  content: '\\e952';
+}
+
+.c3.icon-noAlcohol:before {
+  content: '\\e953';
+}
+
+.c3.icon-noRedWine:before {
+  content: '\\e940';
+}
+
+.c3.icon-alcoholForSale:before {
+  content: '\\e94e';
+}
+
+.c3.icon-noSmoking:before {
+  content: '\\e959';
+}
+
+.c3.icon-noParking:before {
+  content: '\\e95a';
+}
+
+.c3.icon-covidProtocols:before {
+  content: '\\e954';
+}
+
+.c3.icon-overEighteen:before {
+  content: '\\e955';
+}
+
+.c3.icon-overTwentyone:before {
+  content: '\\e956';
+}
+
+.c3.icon-stairs:before {
+  content: '\\e957';
 }
 
 <Component
@@ -870,7 +942,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-youtube:before {
-  content: '\\e944';
+  content: '\\e945';
 }
 
 .c4.icon-facebookOutline:before {
@@ -942,7 +1014,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-checkSquare:before {
-  content: '\\e943';
+  content: '\\e944';
 }
 
 .c4.icon-alertCircle:before {
@@ -1058,11 +1130,11 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-music:before {
-  content: '\\e942';
+  content: '\\e943';
 }
 
 .c4.icon-mail:before {
-  content: '\\e941';
+  content: '\\e942';
 }
 
 .c4.icon-expandHorizontal:before {
@@ -1078,11 +1150,11 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-trashCan:before {
-  content: '\\e94a';
+  content: '\\e958';
 }
 
 .c4.icon-fileFolder:before {
-  content: '\\e940';
+  content: '\\e941';
 }
 
 .c4.icon-arrowUp:before {
@@ -1090,7 +1162,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-arrowLeft:before {
-  content: '\\e949';
+  content: '\\e94a';
 }
 
 .c4.icon-info:before {
@@ -1098,7 +1170,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-infoOutline:before {
-  content: '\\e948';
+  content: '\\e949';
 }
 
 .c4.icon-feedback:before {
@@ -1106,7 +1178,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-feedbackOutline:before {
-  content: '\\e947';
+  content: '\\e948';
 }
 
 .c4.icon-media:before {
@@ -1114,7 +1186,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-mediaOutline:before {
-  content: '\\e946';
+  content: '\\e947';
 }
 
 .c4.icon-concert:before {
@@ -1122,7 +1194,7 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 }
 
 .c4.icon-concertOutline:before {
-  content: '\\e945';
+  content: '\\e946';
 }
 
 .c4.icon-map:before {
@@ -1149,12 +1221,84 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e90c';
 }
 
+.c4.icon-eventSetupOutline:before {
+  content: '\\e95b';
+}
+
 .c4.icon-fanExperience:before {
   content: '\\e90b';
 }
 
+.c4.icon-fanExperienceOutline:before {
+  content: '\\e95c';
+}
+
 .c4.icon-rock:before {
   content: '\\e900';
+}
+
+.c4.icon-noOutsideFood:before {
+  content: '\\e94b';
+}
+
+.c4.icon-smokingAllowed:before {
+  content: '\\e94c';
+}
+
+.c4.icon-cat:before {
+  content: '\\e94d';
+}
+
+.c4.icon-dog:before {
+  content: '\\e94f';
+}
+
+.c4.icon-cannabisFriendly:before {
+  content: '\\e950';
+}
+
+.c4.icon-foodForSale:before {
+  content: '\\e951';
+}
+
+.c4.icon-notAccessible:before {
+  content: '\\e952';
+}
+
+.c4.icon-noAlcohol:before {
+  content: '\\e953';
+}
+
+.c4.icon-noRedWine:before {
+  content: '\\e940';
+}
+
+.c4.icon-alcoholForSale:before {
+  content: '\\e94e';
+}
+
+.c4.icon-noSmoking:before {
+  content: '\\e959';
+}
+
+.c4.icon-noParking:before {
+  content: '\\e95a';
+}
+
+.c4.icon-covidProtocols:before {
+  content: '\\e954';
+}
+
+.c4.icon-overEighteen:before {
+  content: '\\e955';
+}
+
+.c4.icon-overTwentyone:before {
+  content: '\\e956';
+}
+
+.c4.icon-stairs:before {
+  content: '\\e957';
 }
 
 <Component
@@ -1610,7 +1754,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-youtube:before {
-  content: '\\e944';
+  content: '\\e945';
 }
 
 .c3.icon-facebookOutline:before {
@@ -1682,7 +1826,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-checkSquare:before {
-  content: '\\e943';
+  content: '\\e944';
 }
 
 .c3.icon-alertCircle:before {
@@ -1798,11 +1942,11 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-music:before {
-  content: '\\e942';
+  content: '\\e943';
 }
 
 .c3.icon-mail:before {
-  content: '\\e941';
+  content: '\\e942';
 }
 
 .c3.icon-expandHorizontal:before {
@@ -1818,11 +1962,11 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-trashCan:before {
-  content: '\\e94a';
+  content: '\\e958';
 }
 
 .c3.icon-fileFolder:before {
-  content: '\\e940';
+  content: '\\e941';
 }
 
 .c3.icon-arrowUp:before {
@@ -1830,7 +1974,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-arrowLeft:before {
-  content: '\\e949';
+  content: '\\e94a';
 }
 
 .c3.icon-info:before {
@@ -1838,7 +1982,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-infoOutline:before {
-  content: '\\e948';
+  content: '\\e949';
 }
 
 .c3.icon-feedback:before {
@@ -1846,7 +1990,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-feedbackOutline:before {
-  content: '\\e947';
+  content: '\\e948';
 }
 
 .c3.icon-media:before {
@@ -1854,7 +1998,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-mediaOutline:before {
-  content: '\\e946';
+  content: '\\e947';
 }
 
 .c3.icon-concert:before {
@@ -1862,7 +2006,7 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 }
 
 .c3.icon-concertOutline:before {
-  content: '\\e945';
+  content: '\\e946';
 }
 
 .c3.icon-map:before {
@@ -1889,12 +2033,84 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e90c';
 }
 
+.c3.icon-eventSetupOutline:before {
+  content: '\\e95b';
+}
+
 .c3.icon-fanExperience:before {
   content: '\\e90b';
 }
 
+.c3.icon-fanExperienceOutline:before {
+  content: '\\e95c';
+}
+
 .c3.icon-rock:before {
   content: '\\e900';
+}
+
+.c3.icon-noOutsideFood:before {
+  content: '\\e94b';
+}
+
+.c3.icon-smokingAllowed:before {
+  content: '\\e94c';
+}
+
+.c3.icon-cat:before {
+  content: '\\e94d';
+}
+
+.c3.icon-dog:before {
+  content: '\\e94f';
+}
+
+.c3.icon-cannabisFriendly:before {
+  content: '\\e950';
+}
+
+.c3.icon-foodForSale:before {
+  content: '\\e951';
+}
+
+.c3.icon-notAccessible:before {
+  content: '\\e952';
+}
+
+.c3.icon-noAlcohol:before {
+  content: '\\e953';
+}
+
+.c3.icon-noRedWine:before {
+  content: '\\e940';
+}
+
+.c3.icon-alcoholForSale:before {
+  content: '\\e94e';
+}
+
+.c3.icon-noSmoking:before {
+  content: '\\e959';
+}
+
+.c3.icon-noParking:before {
+  content: '\\e95a';
+}
+
+.c3.icon-covidProtocols:before {
+  content: '\\e954';
+}
+
+.c3.icon-overEighteen:before {
+  content: '\\e955';
+}
+
+.c3.icon-overTwentyone:before {
+  content: '\\e956';
+}
+
+.c3.icon-stairs:before {
+  content: '\\e957';
 }
 
 <Component
