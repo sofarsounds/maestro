@@ -154,7 +154,7 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
     }
 
     &:disabled {
-      background-color: ${theme.colors.backToBlack};
+      background-color: ${theme.colors.whiteDenim};
       color: ${theme.colors.blueSmoke};
 
       i:before {
