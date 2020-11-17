@@ -209,6 +209,9 @@ export const OutlineButton = styled(PrimaryButton)<OutlineButtonProps>`
           border-color: ${theme.colors.silverSprings};
           background: rgba(219, 219, 219, 0.1); //macyGrey at 10%
         }
+        &:disabled {
+          background-color: ${theme.colors.backToBlack};
+        }
       `}
 
     ${loading &&

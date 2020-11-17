@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Inversion = styled(Container)`
-  background: #000;
+  background: #111;
 `;
 
 storiesOf('Button', module)
