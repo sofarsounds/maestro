@@ -892,7 +892,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-youtube:before {
-  content: '\\e944';
+  content: '\\e945';
 }
 
 .c1.icon-facebookOutline:before {
@@ -964,7 +964,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-checkSquare:before {
-  content: '\\e943';
+  content: '\\e944';
 }
 
 .c1.icon-alertCircle:before {
@@ -1080,11 +1080,11 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-music:before {
-  content: '\\e942';
+  content: '\\e943';
 }
 
 .c1.icon-mail:before {
-  content: '\\e941';
+  content: '\\e942';
 }
 
 .c1.icon-expandHorizontal:before {
@@ -1100,11 +1100,11 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-trashCan:before {
-  content: '\\e94a';
+  content: '\\e958';
 }
 
 .c1.icon-fileFolder:before {
-  content: '\\e940';
+  content: '\\e941';
 }
 
 .c1.icon-arrowUp:before {
@@ -1112,7 +1112,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-arrowLeft:before {
-  content: '\\e949';
+  content: '\\e94a';
 }
 
 .c1.icon-info:before {
@@ -1120,7 +1120,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-infoOutline:before {
-  content: '\\e948';
+  content: '\\e949';
 }
 
 .c1.icon-feedback:before {
@@ -1128,7 +1128,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-feedbackOutline:before {
-  content: '\\e947';
+  content: '\\e948';
 }
 
 .c1.icon-media:before {
@@ -1136,7 +1136,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-mediaOutline:before {
-  content: '\\e946';
+  content: '\\e947';
 }
 
 .c1.icon-concert:before {
@@ -1144,7 +1144,7 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 }
 
 .c1.icon-concertOutline:before {
-  content: '\\e945';
+  content: '\\e946';
 }
 
 .c1.icon-map:before {
@@ -1171,12 +1171,84 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e90c';
 }
 
+.c1.icon-eventSetupOutline:before {
+  content: '\\e95b';
+}
+
 .c1.icon-fanExperience:before {
   content: '\\e90b';
 }
 
+.c1.icon-fanExperienceOutline:before {
+  content: '\\e95c';
+}
+
 .c1.icon-rock:before {
   content: '\\e900';
+}
+
+.c1.icon-noOutsideFood:before {
+  content: '\\e94b';
+}
+
+.c1.icon-smokingAllowed:before {
+  content: '\\e94c';
+}
+
+.c1.icon-cat:before {
+  content: '\\e94d';
+}
+
+.c1.icon-dog:before {
+  content: '\\e94f';
+}
+
+.c1.icon-cannabisFriendly:before {
+  content: '\\e950';
+}
+
+.c1.icon-foodForSale:before {
+  content: '\\e951';
+}
+
+.c1.icon-notAccessible:before {
+  content: '\\e952';
+}
+
+.c1.icon-noAlcohol:before {
+  content: '\\e953';
+}
+
+.c1.icon-noRedWine:before {
+  content: '\\e940';
+}
+
+.c1.icon-alcoholForSale:before {
+  content: '\\e94e';
+}
+
+.c1.icon-noSmoking:before {
+  content: '\\e959';
+}
+
+.c1.icon-noParking:before {
+  content: '\\e95a';
+}
+
+.c1.icon-covidProtocols:before {
+  content: '\\e954';
+}
+
+.c1.icon-overEighteen:before {
+  content: '\\e955';
+}
+
+.c1.icon-overTwentyone:before {
+  content: '\\e956';
+}
+
+.c1.icon-stairs:before {
+  content: '\\e957';
 }
 
 <Component
