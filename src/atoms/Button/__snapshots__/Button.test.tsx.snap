@@ -74,7 +74,7 @@ exports[`Buttons Link Button renders correctly 1`] = `
 }
 
 .c2:disabled {
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #949494;
 }
 
@@ -361,7 +361,7 @@ exports[`Buttons Link Button renders correctly in disabled state 1`] = `
 }
 
 .c2:disabled {
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #949494;
 }
 
@@ -677,7 +677,7 @@ exports[`Buttons Link Button renders correctly in loading state 1`] = `
 }
 
 .c2:disabled {
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #949494;
 }
 
@@ -970,7 +970,7 @@ exports[`Buttons Outline Button renders correctly 1`] = `
 }
 
 .c2:disabled {
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #949494;
 }
 
@@ -1231,7 +1231,7 @@ exports[`Buttons Outline Button renders correctly in disabled state 1`] = `
 }
 
 .c2:disabled {
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #949494;
 }
 
@@ -1523,7 +1523,7 @@ exports[`Buttons Outline Button renders correctly in loading state 1`] = `
 }
 
 .c2:disabled {
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #949494;
 }
 
