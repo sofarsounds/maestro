@@ -19,6 +19,7 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   // input props
   placeholder: string;
   defaultValue?: T | null;
+  value?: T | null;
   id?: string;
   name?: string;
   hasError?: boolean;
@@ -50,6 +51,7 @@ const Select = <T extends {}>({
   getPopularOptionsTitle,
   placeholder,
   defaultValue,
+  value,
   id,
   name,
   hasError,
@@ -74,6 +76,7 @@ const Select = <T extends {}>({
     disableScrollWhenOpen,
     getOptionLabel,
     defaultValue,
+    value,
     searchable,
     filterBy,
     defaultOptions,

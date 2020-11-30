@@ -199,4 +199,14 @@ describe('<Select />', () => {
 
     expect(queryByTestId('select-input')).toHaveValue('Cardiff');
   });
+
+  it('sets the correct selected option when value is given', () => {
+    const mockClick = jest.fn();
+    const { queryByTestId } = setup({
+      onChange: mockClick,
+      value: cities[3]
+    });
+
+    expect(queryByTestId('select-input')).toHaveValue('New York');
+  });
 });

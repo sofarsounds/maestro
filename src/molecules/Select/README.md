@@ -40,6 +40,7 @@ Table below contains all types of props available in the Select component
 | **placeholder**        | `string`        |         | The placeholder/label to display before a value has been selected                                                     |
 | **getOptionLabel**     | `Function`      |         | Required to determine what to render as the label. Returns the current option object                                  |
 | defaultValue           | `Option / null` |         | If a default value has been set, pass in the reference matching object in.                                            |
+| value                  | `Option / null` |         | If a value has been set, pass in the reference matching object in.                                            |
 | state                  | [Enum](#enum)   | `ready` | The state of the select (ready, loading, or error)                                                                    |
 | searchable             | `Boolean`       |         | Whether the select is searchable                                                                                      |
 | filterBy               | `Function`      |         | A custom filter function that can be passed in                                                                        |
