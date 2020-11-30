@@ -42,6 +42,13 @@ const staticExamples = [
     }
   },
   {
+    title: 'With value',
+    props: {
+      ...defaultProps,
+      value: multiDimensional[11]
+    }
+  },
+  {
     title: 'With advanced getOptionLabel',
     props: {
       ...defaultProps,

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useDisableScroll, useOutsideClick, useKeyDown } from '../';
 
 interface Props<T> {
@@ -9,6 +9,7 @@ interface Props<T> {
   searchable: boolean;
   filterBy?: (option: T, query: string) => boolean;
   defaultOptions: T[];
+  value?: T | null;
 }
 
 interface ReturnProps<T> {
@@ -31,12 +32,19 @@ const useSelect = <T extends {}>({
   defaultOptions,
   searchable,
   filterBy,
+  value,
   onChange
 }: Props<T>): ReturnProps<T> => {
   const ref = useRef<HTMLInputElement>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selected, setSelected] = useState(defaultValue);
   const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    if (value) {
+      setSelected(value);
+    }
+  }, [value]);
 
   const toggleSelect = (toOpen: boolean) => {
     if (!toOpen && inputValue) {
