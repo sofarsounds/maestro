@@ -283,6 +283,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e941';
 }
 
+.c1.icon-download:before {
+  content: '\\e95d';
+}
+
 .c1.icon-arrowUp:before {
   content: '\\e913';
 }
@@ -910,6 +914,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e941';
 }
 
+.c1.icon-download:before {
+  content: '\\e95d';
+}
+
 .c1.icon-arrowUp:before {
   content: '\\e913';
 }
@@ -1530,6 +1538,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-fileFolder:before {
   content: '\\e941';
+}
+
+.c1.icon-download:before {
+  content: '\\e95d';
 }
 
 .c1.icon-arrowUp:before {
@@ -2157,6 +2169,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-fileFolder:before {
   content: '\\e941';
+}
+
+.c1.icon-download:before {
+  content: '\\e95d';
 }
 
 .c1.icon-arrowUp:before {

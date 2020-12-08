@@ -249,6 +249,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e941';
 }
 
+.c1.icon-download:before {
+  content: '\\e95d';
+}
+
 .c1.icon-arrowUp:before {
   content: '\\e913';
 }

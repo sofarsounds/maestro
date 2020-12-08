@@ -348,6 +348,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e941';
 }
 
+.c2.icon-download:before {
+  content: '\\e95d';
+}
+
 .c2.icon-arrowUp:before {
   content: '\\e913';
 }

@@ -348,6 +348,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e941';
 }
 
+.c3.icon-download:before {
+  content: '\\e95d';
+}
+
 .c3.icon-arrowUp:before {
   content: '\\e913';
 }
@@ -1155,6 +1159,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-fileFolder:before {
   content: '\\e941';
+}
+
+.c4.icon-download:before {
+  content: '\\e95d';
 }
 
 .c4.icon-arrowUp:before {
@@ -1967,6 +1975,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-fileFolder:before {
   content: '\\e941';
+}
+
+.c3.icon-download:before {
+  content: '\\e95d';
 }
 
 .c3.icon-arrowUp:before {
