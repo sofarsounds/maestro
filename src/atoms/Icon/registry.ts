@@ -66,6 +66,7 @@ enum Registry {
   pencil = 'e904',
   trashCan = 'e958',
   fileFolder = 'e941',
+  download = 'e95d',
   arrowUp = 'e913',
   arrowLeft = 'e94a',
   info = 'e90d',

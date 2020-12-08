@@ -1107,6 +1107,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e941';
 }
 
+.c1.icon-download:before {
+  content: '\\e95d';
+}
+
 .c1.icon-arrowUp:before {
   content: '\\e913';
 }
