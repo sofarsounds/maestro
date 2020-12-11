@@ -102,7 +102,8 @@ enum Registry {
   covidProtocols = 'e954',
   overEighteen = 'e955',
   overTwentyone = 'e956',
-  stairs = 'e957'
+  stairs = 'e957',
+  photoUpload = 'e95e'
 }
 
 export default Registry;
