@@ -496,6 +496,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e957';
 }
 
+.c3.icon-photoUpload:before {
+  content: '\\e95e';
+}
+
 <Component
   theme={
     Object {
@@ -1307,6 +1311,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-stairs:before {
   content: '\\e957';
+}
+
+.c4.icon-photoUpload:before {
+  content: '\\e95e';
 }
 
 <Component
@@ -2123,6 +2131,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-stairs:before {
   content: '\\e957';
+}
+
+.c3.icon-photoUpload:before {
+  content: '\\e95e';
 }
 
 <Component
