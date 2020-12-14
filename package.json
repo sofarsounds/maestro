@@ -1,6 +1,6 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "7.3.21",
+  "version": "7.3.22",
   "description": "The official sofar sounds react uikit library",
   "main": "dist/index.js",
   "scripts": {
