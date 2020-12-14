@@ -496,6 +496,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e957';
 }
 
+.c2.icon-photoUpload:before {
+  content: '\\e95e';
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;

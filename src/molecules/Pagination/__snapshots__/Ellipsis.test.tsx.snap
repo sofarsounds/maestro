@@ -397,6 +397,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e957';
 }
 
+.c1.icon-photoUpload:before {
+  content: '\\e95e';
+}
+
 .c0 {
   width: 36px;
   height: 36px;
