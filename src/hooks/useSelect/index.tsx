@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useDisableScroll, useOutsideClick, useKeyDown } from '../';
 
 interface Props<T> {
@@ -40,23 +40,11 @@ const useSelect = <T extends {}>({
   const [selected, setSelected] = useState(defaultValue);
   const [inputValue, setInputValue] = useState('');
 
-  const onOptionClick = useCallback(
-    (option: T | null) => {
-      setSelected(option);
-      setIsOpen(false);
-      setInputValue('');
-      onChange(option);
-    },
-    [onChange]
-  );
-
   useEffect(() => {
     if (value) {
       setSelected(value);
-    } else if (value === null) {
-      onOptionClick(null);
     }
-  }, [value, onOptionClick]);
+  }, [value]);
 
   const toggleSelect = (toOpen: boolean) => {
     if (!toOpen && inputValue) {
@@ -71,6 +59,13 @@ const useSelect = <T extends {}>({
   useOutsideClick(ref, () => toggleSelect(false));
 
   useKeyDown('Escape', () => toggleSelect(false));
+
+  const onOptionClick = (option: T | null) => {
+    setSelected(option);
+    setIsOpen(false);
+    setInputValue('');
+    onChange(option);
+  };
 
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
