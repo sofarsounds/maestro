@@ -53,7 +53,7 @@ const useSelect = <T extends {}>({
   useEffect(() => {
     if (value) {
       setSelected(value);
-    } else if (value === null) {
+    } else if (value === null && selected !== null) {
       onOptionClick(null);
     }
   }, [value, onOptionClick]);
