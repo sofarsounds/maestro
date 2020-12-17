@@ -173,9 +173,6 @@ storiesOf('Select', module)
         }
       }
     ];
-    console.log('examples, nullValue:');
-    console.log(typeaheadExamples);
-    console.log(nullValue);
 
     return (
       <div style={{ paddingBottom: '500px' }}>
