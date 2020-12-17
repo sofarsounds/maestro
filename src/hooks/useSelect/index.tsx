@@ -56,7 +56,7 @@ const useSelect = <T extends {}>({
     } else if (value === null && selected !== null) {
       onOptionClick(null);
     }
-  }, [value, onOptionClick]);
+  }, [value, onOptionClick, selected]);
 
   const toggleSelect = (toOpen: boolean) => {
     if (!toOpen && inputValue) {
