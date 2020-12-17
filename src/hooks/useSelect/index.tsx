@@ -56,7 +56,8 @@ const useSelect = <T extends {}>({
     } else if (value === null && selected !== null) {
       onOptionClick(null);
     }
-  }, [value, onOptionClick, selected]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [value]);
 
   const toggleSelect = (toOpen: boolean) => {
     if (!toOpen && inputValue) {
