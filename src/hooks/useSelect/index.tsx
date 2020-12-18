@@ -53,7 +53,7 @@ const useSelect = <T extends {}>({
   useEffect(() => {
     if (value) {
       setSelected(value);
-    } else if (selected) {
+    } else if (value === null && selected) {
       onOptionClick(null);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
