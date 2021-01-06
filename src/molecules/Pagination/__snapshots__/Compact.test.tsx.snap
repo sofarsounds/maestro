@@ -316,6 +316,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e936';
 }
 
+.c3.icon-padlockOutline:before {
+  content: '\\e95f';
+}
+
 .c3.icon-search:before {
   content: '\\e830';
 }
@@ -1131,6 +1135,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-padlock:before {
   content: '\\e936';
+}
+
+.c4.icon-padlockOutline:before {
+  content: '\\e95f';
 }
 
 .c4.icon-search:before {
@@ -1951,6 +1959,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-padlock:before {
   content: '\\e936';
+}
+
+.c3.icon-padlockOutline:before {
+  content: '\\e95f';
 }
 
 .c3.icon-search:before {

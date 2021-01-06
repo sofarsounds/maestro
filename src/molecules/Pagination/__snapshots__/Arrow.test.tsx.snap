@@ -251,6 +251,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e936';
 }
 
+.c1.icon-padlockOutline:before {
+  content: '\\e95f';
+}
+
 .c1.icon-search:before {
   content: '\\e830';
 }
@@ -886,6 +890,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e936';
 }
 
+.c1.icon-padlockOutline:before {
+  content: '\\e95f';
+}
+
 .c1.icon-search:before {
   content: '\\e830';
 }
@@ -1514,6 +1522,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-padlock:before {
   content: '\\e936';
+}
+
+.c1.icon-padlockOutline:before {
+  content: '\\e95f';
 }
 
 .c1.icon-search:before {
@@ -2149,6 +2161,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-padlock:before {
   content: '\\e936';
+}
+
+.c1.icon-padlockOutline:before {
+  content: '\\e95f';
 }
 
 .c1.icon-search:before {
