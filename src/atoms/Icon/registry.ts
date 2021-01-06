@@ -58,6 +58,7 @@ enum Registry {
   musicLove = 'e91d',
   plus = 'e935',
   padlock = 'e936',
+  padlockOutline = 'e95f',
   search = 'e830',
   music = 'e943',
   mail = 'e942',
