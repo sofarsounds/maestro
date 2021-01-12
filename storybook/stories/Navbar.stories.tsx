@@ -51,4 +51,28 @@ storiesOf('Navbar', module)
         />
       </>
     </BrowserRouter>
+  ))
+  .add('Green background', () => (
+    <BrowserRouter>
+      <>
+        <Navbar data-qaid="navbar" position="fixed" background="#039842">
+          <Navbar.ItemContainer>
+            <span style={{ color: '#fff' }}>LEFT</span>
+          </Navbar.ItemContainer>
+          <Navbar.ItemContainer align="right">
+            <Navbar.Item href="#">London</Navbar.Item>
+            <Navbar.Item href="#">Perform</Navbar.Item>
+            <Navbar.Item>Host</Navbar.Item>
+            <Navbar.Item>Your Events</Navbar.Item>
+            <Navbar.Item emphasize>Your Account</Navbar.Item>
+            <Navbar.Item>English</Navbar.Item>
+          </Navbar.ItemContainer>
+        </Navbar>
+        <HeroImage
+          height="600px"
+          imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+          title="This is a title"
+        />
+      </>
+    </BrowserRouter>
   ));
