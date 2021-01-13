@@ -101,7 +101,9 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
       'data-qaid': qaId,
       transparent,
       position,
-      background
+      background,
+      containerMaxWidth,
+      containerBreakpoint
     } = this.props;
 
     return (
@@ -111,7 +113,12 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
         transparent={transparent}
         background={background}
       >
-        <MainContainer alignItems="center" justifyContent="space-between">
+        <MainContainer
+          alignItems="center"
+          justifyContent="space-between"
+          containerMaxWidth={containerMaxWidth}
+          containerBreakpoint={containerBreakpoint}
+        >
           <a href={logoLinkTo || '/'}>
             <Brand>
               <Logo invert />

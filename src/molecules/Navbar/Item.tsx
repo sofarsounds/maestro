@@ -14,6 +14,11 @@ export default styled.a<Props>`
     width: 100%;
     text-decoration: none;
     white-space: nowrap;
+    text-align: center;
+
+    i::before {
+      color: ${theme.colors.whiteDenim};
+    }
 
     ${theme.media.md`
       width: auto;
