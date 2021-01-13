@@ -41,8 +41,17 @@ module.exports = {
         enforce: 'pre'
       },
       {
-        test: /\.(otf|eot|ttf|woff|woff2|gif|jpe?g|png|ico|svg).*$/,
+        test: /\.(otf|eot|ttf|woff|woff2|gif|jpe?g|png|ico).*$/,
         loader: 'url-loader'
+      },
+      {
+        test: /\.svg/,
+        use: {
+          loader: "svg-url-loader",
+          options: {
+            limit: 8192
+          },
+        },
       }
     ]
   },
