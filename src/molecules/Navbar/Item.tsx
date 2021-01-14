@@ -2,10 +2,11 @@ import styled, { css } from '../../lib/styledComponents';
 
 interface Props {
   emphasize?: boolean;
+  disabled?: boolean;
 }
 
 export default styled.a<Props>`
-  ${({ theme, emphasize }) => css`
+  ${({ theme, emphasize, disabled }) => css`
     color: ${theme.colors.whiteDenim};
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.1px;
@@ -32,6 +33,15 @@ export default styled.a<Props>`
         border-radius: ${theme.borderRadius.default};
         text-transform: uppercase;
         font-weight: bold;
+      `}
+
+    ${disabled &&
+      css`
+        cursor: default;
+        color: #006721;
+        i::before {
+          color: #006721;
+        }
       `}
   `}
 `;

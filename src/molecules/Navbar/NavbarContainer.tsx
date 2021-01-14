@@ -5,14 +5,14 @@ export type NavbarPositions = 'absolute' | 'fixed';
 interface NavbarContainerProps {
   position?: NavbarPositions;
   transparent?: boolean;
-  background?: string;
+  backgroundColor?: string;
 }
 
 export default styled.div<NavbarContainerProps>`
-  ${({ theme, position, transparent, background }) => css`
+  ${({ theme, position, transparent, backgroundColor }) => css`
     width: 100%;
     height: ${theme.dimensions.navbarHeight.xs};
-    background: ${background || '#000'};
+    background: ${backgroundColor || '#000'};
     color: ${theme.colors.whiteDenim};
     display: flex;
     align-items: center;

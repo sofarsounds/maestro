@@ -16,7 +16,7 @@ interface NavbarProps {
   position?: NavbarPositions;
   invert?: boolean;
   transparent?: boolean;
-  background?: string;
+  backgroundColor?: string;
   containerMaxWidth?: number;
   containerBreakpoint?: number;
   children: any;
@@ -101,7 +101,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
       'data-qaid': qaId,
       transparent,
       position,
-      background,
+      backgroundColor,
       containerMaxWidth,
       containerBreakpoint
     } = this.props;
@@ -111,7 +111,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
         position={position}
         data-qaid={qaId}
         transparent={transparent}
-        background={background}
+        backgroundColor={backgroundColor}
       >
         <MainContainer
           alignItems="center"

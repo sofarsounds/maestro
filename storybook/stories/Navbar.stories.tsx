@@ -55,7 +55,7 @@ storiesOf('Navbar', module)
   .add('Green background', () => (
     <BrowserRouter>
       <>
-        <Navbar data-qaid="navbar" position="fixed" background="#039842">
+        <Navbar data-qaid="navbar" position="fixed" backgroundColor="#039842">
           <Navbar.ItemContainer>
             <span style={{ color: '#fff' }}>LEFT</span>
           </Navbar.ItemContainer>
