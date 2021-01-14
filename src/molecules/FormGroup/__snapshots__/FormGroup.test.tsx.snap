@@ -1263,6 +1263,22 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e95e';
 }
 
+.c1.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c1.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c1.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c1.icon-party:before {
+  content: '\\e963';
+}
+
 <Component
   theme={
     Object {

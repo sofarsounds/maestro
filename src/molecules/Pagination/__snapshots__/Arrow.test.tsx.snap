@@ -439,6 +439,22 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e95e';
 }
 
+.c1.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c1.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c1.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c1.icon-party:before {
+  content: '\\e963';
+}
+
 <Component
   theme={
     Object {
@@ -1078,6 +1094,22 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e95e';
 }
 
+.c1.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c1.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c1.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c1.icon-party:before {
+  content: '\\e963';
+}
+
 <Component
   theme={
     Object {
@@ -1710,6 +1742,22 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-photoUpload:before {
   content: '\\e95e';
+}
+
+.c1.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c1.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c1.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c1.icon-party:before {
+  content: '\\e963';
 }
 
 <Component
@@ -2349,6 +2397,22 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-photoUpload:before {
   content: '\\e95e';
+}
+
+.c1.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c1.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c1.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c1.icon-party:before {
+  content: '\\e963';
 }
 
 <Component

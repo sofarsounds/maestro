@@ -504,6 +504,22 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e95e';
 }
 
+.c2.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c2.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c2.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c2.icon-party:before {
+  content: '\\e963';
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
