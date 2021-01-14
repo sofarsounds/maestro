@@ -1,4 +1,5 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
 
 import { breakPoints } from '../../theme';
 import Logo from '../../atoms/Logo';
@@ -15,6 +16,9 @@ interface NavbarProps {
   position?: NavbarPositions;
   invert?: boolean;
   transparent?: boolean;
+  backgroundColor?: string;
+  containerMaxWidth?: number;
+  containerBreakpoint?: number;
   children: any;
   logoLinkTo?: string;
   'data-qaid'?: string;
@@ -26,6 +30,19 @@ interface NavbarState {
 }
 
 const hasWindow = typeof window !== 'undefined';
+
+interface ContainerWidthProps {
+  containerMaxWidth?: number;
+  containerBreakpoint?: number;
+}
+
+const MainContainer = styled(Container)<ContainerWidthProps>`
+  ${props => css`
+    @media screen and (min-width: ${props.containerBreakpoint}px) {
+      max-width: ${props.containerMaxWidth}px;
+    }
+  `}
+`;
 
 class Navbar extends React.Component<NavbarProps, NavbarState> {
   public static ItemContainer: any;
@@ -83,7 +100,10 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
       children,
       'data-qaid': qaId,
       transparent,
-      position
+      position,
+      backgroundColor,
+      containerMaxWidth,
+      containerBreakpoint
     } = this.props;
 
     return (
@@ -91,8 +111,14 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
         position={position}
         data-qaid={qaId}
         transparent={transparent}
+        backgroundColor={backgroundColor}
       >
-        <Container alignItems="center" justifyContent="space-between">
+        <MainContainer
+          alignItems="center"
+          justifyContent="space-between"
+          containerMaxWidth={containerMaxWidth}
+          containerBreakpoint={containerBreakpoint}
+        >
           <a href={logoLinkTo || '/'}>
             <Brand>
               <Logo invert />
@@ -100,7 +126,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
           </a>
           <Hamburger onClick={this.onToggle} open={open} />
           <CollapsibleWrapper open={open}>{children}</CollapsibleWrapper>
-        </Container>
+        </MainContainer>
       </NavbarContainer>
     );
   }

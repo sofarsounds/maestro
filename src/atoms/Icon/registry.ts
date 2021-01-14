@@ -104,7 +104,11 @@ enum Registry {
   overEighteen = 'e955',
   overTwentyone = 'e956',
   stairs = 'e957',
-  photoUpload = 'e95e'
+  photoUpload = 'e95e',
+  pinLocation = 'e960',
+  multipleUsers = 'e961',
+  microphoneStage = 'e962',
+  party = 'e963'
 }
 
 export default Registry;
