@@ -504,6 +504,22 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e95e';
 }
 
+.c3.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c3.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c3.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c3.icon-party:before {
+  content: '\\e963';
+}
+
 <Component
   theme={
     Object {
@@ -1323,6 +1339,22 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-photoUpload:before {
   content: '\\e95e';
+}
+
+.c4.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c4.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c4.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c4.icon-party:before {
+  content: '\\e963';
 }
 
 <Component
@@ -2147,6 +2179,22 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-photoUpload:before {
   content: '\\e95e';
+}
+
+.c3.icon-pinLocation:before {
+  content: '\\e960';
+}
+
+.c3.icon-multipleUsers:before {
+  content: '\\e961';
+}
+
+.c3.icon-microphoneStage:before {
+  content: '\\e962';
+}
+
+.c3.icon-party:before {
+  content: '\\e963';
 }
 
 <Component
