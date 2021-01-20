@@ -455,6 +455,34 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e963';
 }
 
+.c1.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c1.icon-messages:before {
+  content: '\\e965';
+}
+
+.c1.icon-note:before {
+  content: '\\e966';
+}
+
+.c1.icon-theme:before {
+  content: '\\e967';
+}
+
+.c1.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c1.icon-display:before {
+  content: '\\e969';
+}
+
+.c1.icon-loading:before {
+  content: '\\e96a';
+}
+
 <Component
   theme={
     Object {
@@ -1110,6 +1138,34 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e963';
 }
 
+.c1.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c1.icon-messages:before {
+  content: '\\e965';
+}
+
+.c1.icon-note:before {
+  content: '\\e966';
+}
+
+.c1.icon-theme:before {
+  content: '\\e967';
+}
+
+.c1.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c1.icon-display:before {
+  content: '\\e969';
+}
+
+.c1.icon-loading:before {
+  content: '\\e96a';
+}
+
 <Component
   theme={
     Object {
@@ -1758,6 +1814,34 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-party:before {
   content: '\\e963';
+}
+
+.c1.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c1.icon-messages:before {
+  content: '\\e965';
+}
+
+.c1.icon-note:before {
+  content: '\\e966';
+}
+
+.c1.icon-theme:before {
+  content: '\\e967';
+}
+
+.c1.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c1.icon-display:before {
+  content: '\\e969';
+}
+
+.c1.icon-loading:before {
+  content: '\\e96a';
 }
 
 <Component
@@ -2413,6 +2497,34 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-party:before {
   content: '\\e963';
+}
+
+.c1.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c1.icon-messages:before {
+  content: '\\e965';
+}
+
+.c1.icon-note:before {
+  content: '\\e966';
+}
+
+.c1.icon-theme:before {
+  content: '\\e967';
+}
+
+.c1.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c1.icon-display:before {
+  content: '\\e969';
+}
+
+.c1.icon-loading:before {
+  content: '\\e96a';
 }
 
 <Component

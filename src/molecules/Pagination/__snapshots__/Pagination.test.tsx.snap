@@ -520,6 +520,34 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e963';
 }
 
+.c2.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c2.icon-messages:before {
+  content: '\\e965';
+}
+
+.c2.icon-note:before {
+  content: '\\e966';
+}
+
+.c2.icon-theme:before {
+  content: '\\e967';
+}
+
+.c2.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c2.icon-display:before {
+  content: '\\e969';
+}
+
+.c2.icon-loading:before {
+  content: '\\e96a';
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
