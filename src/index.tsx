@@ -50,6 +50,7 @@ export { default as Footer } from './molecules/Footer';
 export { default as Subnav } from './molecules/Subnav';
 export { default as Card } from './molecules/Card';
 export { default as Dropdown } from './molecules/Dropdown';
+export { default as IconLabel } from './molecules/IconLabel';
 export { Modal } from './molecules/Modal';
 
 export { default as useModal } from './hooks/useModal';

@@ -421,6 +421,34 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e963';
 }
 
+.c1.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c1.icon-messages:before {
+  content: '\\e965';
+}
+
+.c1.icon-note:before {
+  content: '\\e966';
+}
+
+.c1.icon-theme:before {
+  content: '\\e967';
+}
+
+.c1.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c1.icon-display:before {
+  content: '\\e969';
+}
+
+.c1.icon-loading:before {
+  content: '\\e96a';
+}
+
 .c0 {
   width: 36px;
   height: 36px;
