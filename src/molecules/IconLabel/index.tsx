@@ -21,6 +21,9 @@ const LabelWrapper = styled.div`
 const IconLabelText = styled.div<IconLabelTextProps>`
   ${({ theme, draft }) => css`
     padding: ${theme.ruler[2]}px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
     ${draft &&
       css`
         color: ${theme.colors.macyGrey};
