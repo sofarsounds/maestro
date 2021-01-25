@@ -47,10 +47,11 @@ const Dropdown: React.SFC<DropdownProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<any>();
+  const menuRef = useRef<any>();
 
   useDisableScroll(isOpen, disableScrollWhenOpen);
 
-  useOutsideClick(ref, () => {
+  useOutsideClick(menuRef, () => {
     setIsOpen(false);
   });
 
@@ -82,7 +83,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
             keepInViewPort={keepInViewPort}
           >
             {flyoutContainer ? (
-              <StyledMenu width={width} data-qaid={`${qaId}-flyout`}>
+              <StyledMenu width={width} ref={menuRef} data-qaid={`${qaId}-flyout`}>
                 {children}
               </StyledMenu>
             ) : (
