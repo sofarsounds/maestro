@@ -17,7 +17,7 @@ interface DropdownProps extends PopperProps {
   disableScrollWhenOpen?: boolean;
   'data-qaid'?: string;
   id?: string;
-  updatedIsOpen?: boolean;
+  controlledIsOpen?: boolean;
 }
 
 export const StyledMenu = styled(Menu)`
@@ -45,17 +45,17 @@ const Dropdown: React.SFC<DropdownProps> = ({
   size,
   'data-qaid': qaId,
   id,
-  updatedIsOpen
+  controlledIsOpen
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(controlledIsOpen || false);
   const menuRef = useRef<any>();
   const ref = useRef<any>();
 
   useEffect(() => {
-    if (updatedIsOpen === true || updatedIsOpen === false) {
-      setIsOpen(updatedIsOpen);
+    if (controlledIsOpen === true || controlledIsOpen === false) {
+      setIsOpen(controlledIsOpen);
     }
-  }, [updatedIsOpen]);
+  }, [controlledIsOpen]);
 
   useDisableScroll(isOpen, disableScrollWhenOpen);
 

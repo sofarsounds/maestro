@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 import {
@@ -79,10 +79,8 @@ storiesOf('Dropdown', module)
     </>
   ))
   .add('Controled set is open', () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const updateOpen = () => {
-      setIsOpen(!isOpen);
-    }
+    const controlledIsOpen = boolean('Controlled isOpen', false);
+    
     return (
       <>
         <h1>Controlled Is Open</h1>
@@ -90,13 +88,13 @@ storiesOf('Dropdown', module)
           flyoutContainer={false}
           offset={{ vertical: 50 }}
           renderLabel={() => (
-            <PrimaryButton onClick={updateOpen}>Dropdown</PrimaryButton>
+            <PrimaryButton>Dropdown</PrimaryButton>
           )}
-          updatedIsOpen={isOpen}
+          controlledIsOpen={controlledIsOpen}
         >
           <p style={{ width: '200px' }}>
-            I am the contents of a dropdown without a flyout container
-          </p>
+            I am the contents of a dropdown that is controlled
+           </p>
         </Dropdown>
       </>
     )
