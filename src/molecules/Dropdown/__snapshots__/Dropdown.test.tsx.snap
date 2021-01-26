@@ -176,6 +176,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
     </button>
   </OutsideDiv>
   <Dropdown
+    controlledIsOpen={false}
     flyoutContainer={true}
     label="I am a dropdown"
     offset={
