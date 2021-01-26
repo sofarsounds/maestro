@@ -171,14 +171,11 @@ exports[`<Dropdown /> renders correctly 1`] = `
   }
 >
   <OutsideDiv>
-    <button
-      className="OutsideDiv"
-    >
+    <button>
       bla
     </button>
   </OutsideDiv>
   <Dropdown
-    data-qaid="Dropdown"
     flyoutContainer={true}
     keepOpenOnClick={false}
     label="I am a dropdown"
@@ -189,12 +186,10 @@ exports[`<Dropdown /> renders correctly 1`] = `
     }
   >
     <styled.div
-      data-qaid="Dropdown"
       onClick={[Function]}
     >
       <div
         className="c0"
-        data-qaid="Dropdown"
         onClick={[Function]}
       >
         I am a dropdown
