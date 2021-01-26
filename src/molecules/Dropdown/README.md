@@ -34,6 +34,7 @@ After adding the import you can use the Dropdown simply like this
 | keepInViewPort        | `Boolean`     |                 | Always keep the dropdown flyout within the viewport
 | data-qaid             | `string`      |                 | Optional prop for testing purposes
 | id                    | `string`      |                 | Default HTML id prop to identify the element
+| controlledIsOpen      | `Boolean`     |                 | Option prop to control whether the dropdown is open or closed
 
 ### Enum
 
