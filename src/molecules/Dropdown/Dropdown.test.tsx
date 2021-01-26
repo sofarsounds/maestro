@@ -9,7 +9,7 @@ const OutsideDiv = () => <button>bla</button>;
 const setup = (
   flyoutContainer: boolean = true,
   offsetTop = 0,
-  controlledIsOpen: boolean = false
+  keepOpenOnClick = false
 ) =>
   mountWithTheme(
     <>
@@ -18,7 +18,7 @@ const setup = (
         flyoutContainer={flyoutContainer}
         label="I am a dropdown"
         offset={{ vertical: offsetTop }}
-        controlledIsOpen={controlledIsOpen}
+        keepOpenOnClick={keepOpenOnClick}
       >
         Dropdown Content
       </Dropdown>
@@ -68,8 +68,11 @@ describe('<Dropdown />', () => {
     expect(wrapper.find(StyledMenu)).toHaveLength(0);
   });
 
-  it('renders the dropdown based on controlledIsOpen', () => {
+  it('does not close on click of dropdown menu', () => {
     const wrapper = setup(true, 0, true);
+    wrapper.find(Trigger).simulate('click');
+    expect(wrapper.find(StyledMenu)).toHaveLength(1);
+    wrapper.find(StyledMenu).simulate('click');
     expect(wrapper.find(StyledMenu)).toHaveLength(1);
   });
 

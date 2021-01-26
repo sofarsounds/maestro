@@ -78,24 +78,23 @@ storiesOf('Dropdown', module)
       </Dropdown>
     </>
   ))
-  .add('Controled set is open', () => {
-    const controlledIsOpen = boolean('Controlled isOpen', false);
-    
+  .add('Do not close on click of dropdown', () => {
+    const keepOpenOnClick = boolean('keepOpenOnClick', true);
+
     return (
-      <>
-        <h1>Controlled Is Open</h1>
-        <Dropdown
-          flyoutContainer={false}
-          offset={{ vertical: 50 }}
-          renderLabel={() => (
-            <PrimaryButton>Dropdown</PrimaryButton>
-          )}
-          controlledIsOpen={controlledIsOpen}
-        >
-          <p style={{ width: '200px' }}>
-            I am the contents of a dropdown that is controlled
-           </p>
-        </Dropdown>
-      </>
-    )
-  });
+    <>
+      <h1>Do not close on click of dropdown</h1>
+      <Dropdown
+        flyoutContainer={false}
+        offset={{ vertical: 50 }}
+        renderLabel={isOpen => (
+          <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
+        )}
+        keepOpenOnClick={keepOpenOnClick}
+      >
+        <p style={{ width: '200px' }}>
+          I am the contents of a dropdown that stays open on click.
+        </p>
+      </Dropdown>
+    </>
+  )});

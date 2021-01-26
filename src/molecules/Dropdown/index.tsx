@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import styled, { css } from '../../lib/styledComponents';
 
 import Popper, { PopperProps } from '../../atoms/Popper';
@@ -17,7 +17,7 @@ interface DropdownProps extends PopperProps {
   disableScrollWhenOpen?: boolean;
   'data-qaid'?: string;
   id?: string;
-  controlledIsOpen?: boolean;
+  keepOpenOnClick?: boolean;
 }
 
 export const StyledMenu = styled(Menu)`
@@ -45,21 +45,22 @@ const Dropdown: React.SFC<DropdownProps> = ({
   size,
   'data-qaid': qaId,
   id,
-  controlledIsOpen
+  keepOpenOnClick = false
 }) => {
-  const [isOpen, setIsOpen] = useState(controlledIsOpen || false);
+  const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<any>();
   const ref = useRef<any>();
 
-  useEffect(() => {
-    if (controlledIsOpen === true || controlledIsOpen === false) {
-      setIsOpen(controlledIsOpen);
-    }
-  }, [controlledIsOpen]);
-
   useDisableScroll(isOpen, disableScrollWhenOpen);
 
-  useOutsideClick(menuRef, () => {
+  const getRef = (keepOpenOnClick: boolean) => {
+    if (keepOpenOnClick) {
+      return menuRef;
+    }
+    return ref;
+  };
+
+  useOutsideClick(getRef(keepOpenOnClick), () => {
     if (isOpen) {
       setIsOpen(false);
     }
