@@ -32,7 +32,8 @@ const IconLabelText = styled.div<IconLabelTextProps>`
 
 const ImageWrapper = styled.div`
   ${({ theme }) => css`
-    width: ${theme.ruler[8]}px;
+    width: inherit;
+    max-width: ${theme.ruler[8]}px;
     height: ${theme.ruler[8]}px;
     border-radius: ${theme.ruler[4]}px;
     overflow: hidden;
