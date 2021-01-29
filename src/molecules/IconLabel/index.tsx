@@ -9,7 +9,6 @@ const LabelWrapper = styled.div`
     cursor: pointer;
     background-color: ${theme.colors.whiteDenim};
     padding: ${theme.ruler[2]}px;
-    margin: ${theme.ruler[2]}px;
     height: ${theme.ruler[12]}px;
     border-radius: ${theme.ruler[6]}px;
     font-size: 14px;
