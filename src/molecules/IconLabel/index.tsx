@@ -9,7 +9,6 @@ const LabelWrapper = styled.div`
     cursor: pointer;
     background-color: ${theme.colors.whiteDenim};
     padding: ${theme.ruler[2]}px;
-    margin: ${theme.ruler[2]}px;
     height: ${theme.ruler[12]}px;
     border-radius: ${theme.ruler[6]}px;
     font-size: 14px;
@@ -33,7 +32,8 @@ const IconLabelText = styled.div<IconLabelTextProps>`
 
 const ImageWrapper = styled.div`
   ${({ theme }) => css`
-    width: ${theme.ruler[8]}px;
+    width: inherit;
+    max-width: ${theme.ruler[8]}px;
     height: ${theme.ruler[8]}px;
     border-radius: ${theme.ruler[4]}px;
     overflow: hidden;
