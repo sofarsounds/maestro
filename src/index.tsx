@@ -40,6 +40,7 @@ export { default as Spinner } from './atoms/Spinner';
 export { default as Radio } from './atoms/Radio';
 export { default as Checkbox } from './atoms/Checkbox';
 export { default as Responsive } from './atoms/Responsive';
+export { default as ProgressBar } from './atoms/ProgressBar';
 export { default as Pagination } from './molecules/Pagination';
 export { default as Select } from './molecules/Select';
 export * from './molecules/Select';

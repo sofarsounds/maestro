@@ -115,7 +115,10 @@ enum Registry {
   theme = 'e967',
   webpage = 'e968',
   display = 'e969',
-  loading = 'e96a'
+  loading = 'e96a',
+  cog = 'e96b',
+  locationUser = 'e96c',
+  wrench = 'e96d'
 }
 
 export default Registry;

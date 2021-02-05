@@ -548,6 +548,18 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e96a';
 }
 
+.c2.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c2.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c2.icon-wrench:before {
+  content: '\\e96d';
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
