@@ -548,6 +548,18 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e96a';
 }
 
+.c3.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c3.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c3.icon-wrench:before {
+  content: '\\e96d';
+}
+
 <Component
   theme={
     Object {
@@ -1411,6 +1423,18 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-loading:before {
   content: '\\e96a';
+}
+
+.c4.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c4.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c4.icon-wrench:before {
+  content: '\\e96d';
 }
 
 <Component
@@ -2279,6 +2303,18 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-loading:before {
   content: '\\e96a';
+}
+
+.c3.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c3.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c3.icon-wrench:before {
+  content: '\\e96d';
 }
 
 <Component

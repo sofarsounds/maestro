@@ -449,6 +449,18 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e96a';
 }
 
+.c1.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c1.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c1.icon-wrench:before {
+  content: '\\e96d';
+}
+
 .c0 {
   width: 36px;
   height: 36px;
