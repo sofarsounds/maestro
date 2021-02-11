@@ -1319,6 +1319,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e96d';
 }
 
+.c1.icon-notApplicable:before {
+  content: '\\e96e';
+}
+
 <Component
   theme={
     Object {

@@ -118,7 +118,8 @@ enum Registry {
   loading = 'e96a',
   cog = 'e96b',
   locationUser = 'e96c',
-  wrench = 'e96d'
+  wrench = 'e96d',
+  notApplicable = 'e96e'
 }
 
 export default Registry;
