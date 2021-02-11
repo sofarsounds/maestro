@@ -461,6 +461,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e96d';
 }
 
+.c1.icon-notApplicable:before {
+  content: '\\e96e';
+}
+
 .c0 {
   width: 36px;
   height: 36px;

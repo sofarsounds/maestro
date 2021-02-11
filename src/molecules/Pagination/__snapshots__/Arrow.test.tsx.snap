@@ -495,6 +495,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e96d';
 }
 
+.c1.icon-notApplicable:before {
+  content: '\\e96e';
+}
+
 <Component
   theme={
     Object {
@@ -1190,6 +1194,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e96d';
 }
 
+.c1.icon-notApplicable:before {
+  content: '\\e96e';
+}
+
 <Component
   theme={
     Object {
@@ -1878,6 +1886,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-wrench:before {
   content: '\\e96d';
+}
+
+.c1.icon-notApplicable:before {
+  content: '\\e96e';
 }
 
 <Component
@@ -2573,6 +2585,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-wrench:before {
   content: '\\e96d';
+}
+
+.c1.icon-notApplicable:before {
+  content: '\\e96e';
 }
 
 <Component
