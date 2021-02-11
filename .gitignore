@@ -13,4 +13,5 @@ storybook-static
 .npmrc
 
 .DS_Store
-src/assets/.DS_Store
+src/.DS_Store
+src/assets/fonts/.DS_Store
