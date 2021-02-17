@@ -1159,6 +1159,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e914';
 }
 
+.c1.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c1.icon-grid:before {
   content: '\\e903';
 }
@@ -1309,6 +1313,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 
 .c1.icon-cog:before {
   content: '\\e96b';
+}
+
+.c1.icon-cogOutline:before {
+  content: '\\e970';
 }
 
 .c1.icon-locationUser:before {

@@ -400,6 +400,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e914';
 }
 
+.c3.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c3.icon-grid:before {
   content: '\\e903';
 }
@@ -550,6 +554,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 
 .c3.icon-cog:before {
   content: '\\e96b';
+}
+
+.c3.icon-cogOutline:before {
+  content: '\\e970';
 }
 
 .c3.icon-locationUser:before {
@@ -1281,6 +1289,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e914';
 }
 
+.c4.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c4.icon-grid:before {
   content: '\\e903';
 }
@@ -1431,6 +1443,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-cog:before {
   content: '\\e96b';
+}
+
+.c4.icon-cogOutline:before {
+  content: '\\e970';
 }
 
 .c4.icon-locationUser:before {
@@ -2165,6 +2181,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e914';
 }
 
+.c3.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c3.icon-grid:before {
   content: '\\e903';
 }
@@ -2315,6 +2335,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-cog:before {
   content: '\\e96b';
+}
+
+.c3.icon-cogOutline:before {
+  content: '\\e970';
 }
 
 .c3.icon-locationUser:before {
