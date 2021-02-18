@@ -495,6 +495,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e970';
 }
 
+.c1.icon-constructionSign:before {
+  content: '\\e971';
+}
+
 .c1.icon-locationUser:before {
   content: '\\e96c';
 }
@@ -1202,6 +1206,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e970';
 }
 
+.c1.icon-constructionSign:before {
+  content: '\\e971';
+}
+
 .c1.icon-locationUser:before {
   content: '\\e96c';
 }
@@ -1902,6 +1910,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c1.icon-constructionSign:before {
+  content: '\\e971';
 }
 
 .c1.icon-locationUser:before {
@@ -2609,6 +2621,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c1.icon-constructionSign:before {
+  content: '\\e971';
 }
 
 .c1.icon-locationUser:before {

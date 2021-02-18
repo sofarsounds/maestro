@@ -461,6 +461,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e970';
 }
 
+.c1.icon-constructionSign:before {
+  content: '\\e971';
+}
+
 .c1.icon-locationUser:before {
   content: '\\e96c';
 }
