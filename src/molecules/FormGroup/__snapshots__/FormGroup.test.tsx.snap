@@ -1319,6 +1319,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e970';
 }
 
+.c1.icon-constructionSign:before {
+  content: '\\e971';
+}
+
 .c1.icon-locationUser:before {
   content: '\\e96c';
 }

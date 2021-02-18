@@ -560,6 +560,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e970';
 }
 
+.c3.icon-constructionSign:before {
+  content: '\\e971';
+}
+
 .c3.icon-locationUser:before {
   content: '\\e96c';
 }
@@ -1447,6 +1451,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c4.icon-constructionSign:before {
+  content: '\\e971';
 }
 
 .c4.icon-locationUser:before {
@@ -2339,6 +2347,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c3.icon-constructionSign:before {
+  content: '\\e971';
 }
 
 .c3.icon-locationUser:before {
