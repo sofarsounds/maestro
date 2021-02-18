@@ -30,7 +30,21 @@ export type Colors =
   | 'green200'
   | 'green100'
   | 'green50'
-  | 'redRedWine';
+  | 'redRedWine'
+  | 'greenOnions'
+  | 'greenGarden'
+  | 'blueChristmas'
+  | 'purpleHaze'
+  | 'purplePills'
+  | 'checkBerry'
+  | 'blueMagic'
+  | 'brownSugar'
+  | 'pinkTriangle'
+  | 'royalBlood'
+  | 'peaches'
+  | 'orangeCrush'
+  | 'mellowYellow'
+  | 'yellowSubmarine';
 
 export default interface Theme {
   colors: {

@@ -40,6 +40,7 @@ export { default as Spinner } from './atoms/Spinner';
 export { default as Radio } from './atoms/Radio';
 export { default as Checkbox } from './atoms/Checkbox';
 export { default as Responsive } from './atoms/Responsive';
+export { default as ProgressBar } from './atoms/ProgressBar';
 export { default as Pagination } from './molecules/Pagination';
 export { default as Select } from './molecules/Select';
 export * from './molecules/Select';
@@ -50,6 +51,7 @@ export { default as Footer } from './molecules/Footer';
 export { default as Subnav } from './molecules/Subnav';
 export { default as Card } from './molecules/Card';
 export { default as Dropdown } from './molecules/Dropdown';
+export { default as IconLabel } from './molecules/IconLabel';
 export { Modal } from './molecules/Modal';
 
 export { default as useModal } from './hooks/useModal';

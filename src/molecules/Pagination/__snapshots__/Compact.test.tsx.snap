@@ -400,6 +400,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e914';
 }
 
+.c3.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c3.icon-grid:before {
   content: '\\e903';
 }
@@ -518,6 +522,58 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 
 .c3.icon-party:before {
   content: '\\e963';
+}
+
+.c3.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c3.icon-messages:before {
+  content: '\\e965';
+}
+
+.c3.icon-note:before {
+  content: '\\e966';
+}
+
+.c3.icon-theme:before {
+  content: '\\e967';
+}
+
+.c3.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c3.icon-display:before {
+  content: '\\e969';
+}
+
+.c3.icon-loading:before {
+  content: '\\e96a';
+}
+
+.c3.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c3.icon-cogOutline:before {
+  content: '\\e970';
+}
+
+.c3.icon-constructionSign:before {
+  content: '\\e971';
+}
+
+.c3.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c3.icon-wrench:before {
+  content: '\\e96d';
+}
+
+.c3.icon-notApplicable:before {
+  content: '\\e96e';
 }
 
 <Component
@@ -1237,6 +1293,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e914';
 }
 
+.c4.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c4.icon-grid:before {
   content: '\\e903';
 }
@@ -1355,6 +1415,58 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-party:before {
   content: '\\e963';
+}
+
+.c4.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c4.icon-messages:before {
+  content: '\\e965';
+}
+
+.c4.icon-note:before {
+  content: '\\e966';
+}
+
+.c4.icon-theme:before {
+  content: '\\e967';
+}
+
+.c4.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c4.icon-display:before {
+  content: '\\e969';
+}
+
+.c4.icon-loading:before {
+  content: '\\e96a';
+}
+
+.c4.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c4.icon-cogOutline:before {
+  content: '\\e970';
+}
+
+.c4.icon-constructionSign:before {
+  content: '\\e971';
+}
+
+.c4.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c4.icon-wrench:before {
+  content: '\\e96d';
+}
+
+.c4.icon-notApplicable:before {
+  content: '\\e96e';
 }
 
 <Component
@@ -2077,6 +2189,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e914';
 }
 
+.c3.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c3.icon-grid:before {
   content: '\\e903';
 }
@@ -2195,6 +2311,58 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-party:before {
   content: '\\e963';
+}
+
+.c3.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c3.icon-messages:before {
+  content: '\\e965';
+}
+
+.c3.icon-note:before {
+  content: '\\e966';
+}
+
+.c3.icon-theme:before {
+  content: '\\e967';
+}
+
+.c3.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c3.icon-display:before {
+  content: '\\e969';
+}
+
+.c3.icon-loading:before {
+  content: '\\e96a';
+}
+
+.c3.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c3.icon-cogOutline:before {
+  content: '\\e970';
+}
+
+.c3.icon-constructionSign:before {
+  content: '\\e971';
+}
+
+.c3.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c3.icon-wrench:before {
+  content: '\\e96d';
+}
+
+.c3.icon-notApplicable:before {
+  content: '\\e96e';
 }
 
 <Component

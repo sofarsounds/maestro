@@ -79,6 +79,7 @@ enum Registry {
   concert = 'e90a',
   concertOutline = 'e946',
   map = 'e914',
+  mapOutline = 'e96f',
   grid = 'e903',
   photos = 'e911',
   artistParking = 'e90f',
@@ -108,7 +109,20 @@ enum Registry {
   pinLocation = 'e960',
   multipleUsers = 'e961',
   microphoneStage = 'e962',
-  party = 'e963'
+  party = 'e963',
+  filmed = 'e964',
+  messages = 'e965',
+  note = 'e966',
+  theme = 'e967',
+  webpage = 'e968',
+  display = 'e969',
+  loading = 'e96a',
+  cog = 'e96b',
+  cogOutline = 'e970',
+  constructionSign = 'e971',
+  locationUser = 'e96c',
+  wrench = 'e96d',
+  notApplicable = 'e96e'
 }
 
 export default Registry;

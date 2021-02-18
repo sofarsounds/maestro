@@ -301,6 +301,10 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
   content: '\\e914';
 }
 
+.c1.icon-mapOutline:before {
+  content: '\\e96f';
+}
+
 .c1.icon-grid:before {
   content: '\\e903';
 }
@@ -419,6 +423,58 @@ exports[`Pagination <Ellipsis /> renders correctly 1`] = `
 
 .c1.icon-party:before {
   content: '\\e963';
+}
+
+.c1.icon-filmed:before {
+  content: '\\e964';
+}
+
+.c1.icon-messages:before {
+  content: '\\e965';
+}
+
+.c1.icon-note:before {
+  content: '\\e966';
+}
+
+.c1.icon-theme:before {
+  content: '\\e967';
+}
+
+.c1.icon-webpage:before {
+  content: '\\e968';
+}
+
+.c1.icon-display:before {
+  content: '\\e969';
+}
+
+.c1.icon-loading:before {
+  content: '\\e96a';
+}
+
+.c1.icon-cog:before {
+  content: '\\e96b';
+}
+
+.c1.icon-cogOutline:before {
+  content: '\\e970';
+}
+
+.c1.icon-constructionSign:before {
+  content: '\\e971';
+}
+
+.c1.icon-locationUser:before {
+  content: '\\e96c';
+}
+
+.c1.icon-wrench:before {
+  content: '\\e96d';
+}
+
+.c1.icon-notApplicable:before {
+  content: '\\e96e';
 }
 
 .c0 {
