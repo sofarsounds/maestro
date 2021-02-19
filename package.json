@@ -1,6 +1,6 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "7.3.32",
+  "version": "7.3.33",
   "description": "The official sofar sounds react uikit library",
   "main": "dist/index.js",
   "scripts": {
@@ -73,6 +73,7 @@
     "react": "^16",
     "storybook-addon-designs": "^5.4.0",
     "styled-components": "^5.2.0",
+    "svg-url-loader": "^7.1.1",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.1",
     "url-loader": "^2.0.1",
