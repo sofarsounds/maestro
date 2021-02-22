@@ -17,6 +17,7 @@ interface DropdownProps extends PopperProps {
   disableScrollWhenOpen?: boolean;
   'data-qaid'?: string;
   id?: string;
+  keepOpenOnClick?: boolean;
 }
 
 export const StyledMenu = styled(Menu)`
@@ -43,15 +44,26 @@ const Dropdown: React.SFC<DropdownProps> = ({
   keepInViewPort,
   size,
   'data-qaid': qaId,
-  id
+  id,
+  keepOpenOnClick = false
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<any>();
   const ref = useRef<any>();
 
   useDisableScroll(isOpen, disableScrollWhenOpen);
 
-  useOutsideClick(ref, () => {
-    setIsOpen(false);
+  const getRef = (keepOpenOnClick: boolean) => {
+    if (keepOpenOnClick) {
+      return menuRef;
+    }
+    return ref;
+  };
+
+  useOutsideClick(getRef(keepOpenOnClick), () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
   });
 
   let width = '200px';
@@ -82,7 +94,11 @@ const Dropdown: React.SFC<DropdownProps> = ({
             keepInViewPort={keepInViewPort}
           >
             {flyoutContainer ? (
-              <StyledMenu width={width} data-qaid={`${qaId}-flyout`}>
+              <StyledMenu
+                width={width}
+                ref={menuRef}
+                data-qaid={`${qaId}-flyout`}
+              >
                 {children}
               </StyledMenu>
             ) : (

@@ -6,7 +6,11 @@ import Trigger from './DropdownTrigger';
 
 const OutsideDiv = () => <button>bla</button>;
 
-const setup = (flyoutContainer: boolean = true, offsetTop = 0) =>
+const setup = (
+  flyoutContainer: boolean = true,
+  offsetTop = 0,
+  keepOpenOnClick = false
+) =>
   mountWithTheme(
     <>
       <OutsideDiv />
@@ -14,6 +18,7 @@ const setup = (flyoutContainer: boolean = true, offsetTop = 0) =>
         flyoutContainer={flyoutContainer}
         label="I am a dropdown"
         offset={{ vertical: offsetTop }}
+        keepOpenOnClick={keepOpenOnClick}
       >
         Dropdown Content
       </Dropdown>
@@ -61,6 +66,14 @@ describe('<Dropdown />', () => {
     const wrapper = setup(false);
     wrapper.find(Trigger).simulate('click');
     expect(wrapper.find(StyledMenu)).toHaveLength(0);
+  });
+
+  it('does not close on click of dropdown menu', () => {
+    const wrapper = setup(true, 0, true);
+    wrapper.find(Trigger).simulate('click');
+    expect(wrapper.find(StyledMenu)).toHaveLength(1);
+    wrapper.find(StyledMenu).simulate('click');
+    expect(wrapper.find(StyledMenu)).toHaveLength(1);
   });
 
   it.todo('closes the flyout when clicked outside');

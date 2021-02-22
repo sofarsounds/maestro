@@ -77,4 +77,24 @@ storiesOf('Dropdown', module)
         </p>
       </Dropdown>
     </>
-  ));
+  ))
+  .add('Do not close on click of dropdown', () => {
+    const keepOpenOnClick = boolean('keepOpenOnClick', true);
+
+    return (
+    <>
+      <h1>Do not close on click of dropdown</h1>
+      <Dropdown
+        flyoutContainer={false}
+        offset={{ vertical: 50 }}
+        renderLabel={isOpen => (
+          <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
+        )}
+        keepOpenOnClick={keepOpenOnClick}
+      >
+        <p style={{ width: '200px' }}>
+          I am the contents of a dropdown that stays open on click.
+        </p>
+      </Dropdown>
+    </>
+  )});
