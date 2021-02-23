@@ -24,6 +24,7 @@ storiesOf('Dropdown', module)
         disableScrollWhenOpen={boolean('Disable Scroll', false)}
         keepInViewPort={boolean('Keep In ViewPort', false)}
         label="Click me to open the dropdown"
+        invertColor={boolean('Invert Color', false)}
       >
         <b>A Dropdown</b>
         <p>
@@ -51,6 +52,7 @@ storiesOf('Dropdown', module)
             />
           </>
         )}
+        invertColor={boolean('Invert Color', false)}
       >
         <Menu width={'200px'}>
           {cities.slice(0, 4).map((city, index) => (
@@ -71,6 +73,7 @@ storiesOf('Dropdown', module)
         renderLabel={isOpen => (
           <PrimaryButton>{isOpen ? 'Open' : 'Close'}</PrimaryButton>
         )}
+        invertColor={boolean('Invert Color', false)}
       >
         <p style={{ width: '200px' }}>
           I am the contents of a dropdown without a flyout container
