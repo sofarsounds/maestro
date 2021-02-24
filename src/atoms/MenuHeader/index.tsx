@@ -1,10 +1,10 @@
 import styled, { css } from '../../lib/styledComponents';
 import { Overline } from '../Typography';
 
-export default styled(Overline)`
-  ${({ theme }) => css`
+export default styled(Overline)<any>`
+  ${({ theme, invertColor }) => css`
     padding: ${theme.ruler[1]}px ${theme.ruler[4]}px;
-    background: ${theme.colors.whiteDenim};
+    background: ${invertColor ? 'transparent' : theme.colors.whiteDenim};
     position: sticky;
     display: block;
     top: 0;
