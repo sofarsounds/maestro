@@ -6,30 +6,41 @@ interface Props {
   active?: boolean;
   disabled?: boolean;
   onClick?: () => any;
+  invertColor?: boolean;
   'data-qaid'?: string;
 }
 
 export default styled.li<Props>`
-  ${({ theme, active, disabled }) => css`
+  ${({ theme, active, disabled, invertColor }) => css`
     margin-top: 0px;
     list-style: none;
     padding: ${theme.ruler[2]}px ${theme.ruler[4]}px;
     font-size: ${theme.fontSizes.body2};
     letter-spacing: 0.25px;
-    color: ${theme.colors.backToBlack};
     cursor: pointer;
 
+    color: ${invertColor ? theme.colors.whiteDenim : theme.colors.backToBlack};
+
     &:hover {
-      background-color: ${theme.colors.silverSprings};
+      background-color: ${invertColor
+        ? theme.colors.green400
+        : theme.colors.silverSprings};
+      color: ${invertColor ? theme.colors.backToBlack : 'inherit'};
     }
 
     &:focus {
-      background-color: ${theme.colors.silverSprings};
+      background-color: ${invertColor
+        ? theme.colors.green400
+        : theme.colors.silverSprings};
+      color: ${invertColor ? theme.colors.backToBlack : 'inherit'};
     }
 
     ${active &&
       css`
-        background-color: ${theme.colors.silverSprings};
+        background-color: ${invertColor
+          ? theme.colors.green400
+          : theme.colors.silverSprings};
+        color: ${invertColor ? theme.colors.backToBlack : 'inherit'};
       `}
 
     ${disabled &&

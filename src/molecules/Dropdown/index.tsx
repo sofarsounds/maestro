@@ -15,6 +15,7 @@ interface DropdownProps extends PopperProps {
   size?: 'small' | 'large';
   flyoutContainer?: boolean; // TODO rename to `hasFlyoutContainer` ?
   disableScrollWhenOpen?: boolean;
+  invertColor?: boolean;
   'data-qaid'?: string;
   id?: string;
 }
@@ -42,6 +43,7 @@ const Dropdown: React.SFC<DropdownProps> = ({
   offset,
   keepInViewPort,
   size,
+  invertColor,
   'data-qaid': qaId,
   id
 }) => {
@@ -82,7 +84,11 @@ const Dropdown: React.SFC<DropdownProps> = ({
             keepInViewPort={keepInViewPort}
           >
             {flyoutContainer ? (
-              <StyledMenu width={width} data-qaid={`${qaId}-flyout`}>
+              <StyledMenu
+                width={width}
+                data-qaid={`${qaId}-flyout`}
+                invertColor={invertColor}
+              >
                 {children}
               </StyledMenu>
             ) : (
