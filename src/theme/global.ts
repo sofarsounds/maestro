@@ -40,6 +40,10 @@ export default createGlobalStyle`
       box-sizing: inherit;
     }
 
+    a {
+      color: ${theme.colors.backToBlack};
+    }
+
     a:link, a:visited {
       text-decoration: none;
     }
