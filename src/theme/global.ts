@@ -22,11 +22,11 @@ export default createGlobalStyle`
     html,
     * {
       font-family: "${theme.fonts.regular}", sans-serif;
-      color: ${theme.colors.backToBlack};
     }
 
     body {
       font-size: ${theme.fontSizes.base};
+      color: ${theme.colors.backToBlack};
       margin: 0px;
     }
 

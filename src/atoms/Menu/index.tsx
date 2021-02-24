@@ -6,10 +6,11 @@ interface Props {
   width?: string;
   bordered?: boolean;
   depth?: any;
+  invertColor?: boolean;
 }
 
 const Menu = styled.ul<Props>`
-  ${({ depth = 3, theme, width, bordered }) => css`
+  ${({ depth = 3, theme, width, bordered, invertColor }) => css`
     ${withShadow({ depth })};
 
     margin: 0;
@@ -24,6 +25,13 @@ const Menu = styled.ul<Props>`
     ${bordered &&
       css`
         border: 1px solid ${theme.colors.macyGrey};
+      `}
+
+    ${invertColor &&
+      css`
+        border-top: 4px solid ${theme.colors.green400};
+        background-color: ${theme.colors.blackBetty};
+        color: ${theme.colors.whiteDenim};
       `}
   `};
 `;
