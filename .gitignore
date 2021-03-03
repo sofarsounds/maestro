@@ -11,3 +11,7 @@ storybook-static
 .idea
 
 .npmrc
+
+.DS_Store
+src/.DS_Store
+src/assets/fonts/.DS_Store

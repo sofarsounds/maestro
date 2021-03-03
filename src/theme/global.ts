@@ -22,11 +22,11 @@ export default createGlobalStyle`
     html,
     * {
       font-family: "${theme.fonts.regular}", sans-serif;
-      color: ${theme.colors.backToBlack};
     }
 
     body {
       font-size: ${theme.fontSizes.base};
+      color: ${theme.colors.backToBlack};
       margin: 0px;
     }
 
@@ -38,6 +38,10 @@ export default createGlobalStyle`
     ::after,
     ::before {
       box-sizing: inherit;
+    }
+
+    a {
+      color: ${theme.colors.backToBlack};
     }
 
     a:link, a:visited {
