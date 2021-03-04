@@ -75,4 +75,20 @@ storiesOf('Navbar', module)
         />
       </>
     </BrowserRouter>
+  ))
+  .add('with disabled Hamburger', () => (
+    <BrowserRouter>
+      <>
+        <Navbar data-qaid="navbar" position="fixed" disableHamburger={true}>
+           <div style={{ width: '100%', textAlign: 'right' }}>
+            A Link
+          </div>
+        </Navbar>
+        <HeroImage
+          height="600px"
+          imageURL="https://www.stratatiles.co.uk/wp-content/uploads/2015/04/102.jpg"
+          title="This is a title"
+        />
+      </>
+    </BrowserRouter>
   ));
