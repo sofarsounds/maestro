@@ -9,11 +9,12 @@ import Item from './Item';
 import Brand from './Brand';
 import Hamburger from './CollapseIcon';
 import CollapsibleWrapper from './Collapsible';
+import UncollapsibleWrapper from './Uncollapsible';
 
-const setup = () =>
+const setup = (disableHamburger?: boolean) =>
   mountWithTheme(
     <MemoryRouter initialEntries={['/']}>
-      <Navbar>
+      <Navbar disableHamburger={disableHamburger}>
         <ItemContainer>
           <Item>Left Item</Item>
         </ItemContainer>
@@ -101,6 +102,23 @@ describe('<Navbar />', () => {
         'display',
         'none'
       );
+    });
+
+    describe('with hamburger menu disabled', () => {
+      beforeEach(() => {
+        wrapper = setup(true);
+      });
+
+      it('does not render with an expand icon', () => {
+        expect(wrapper.find(Hamburger)).toHaveLength(0);
+      });
+
+      it('shows the collapsible wrapper when clicking the expand icon', () => {
+        expect(wrapper.find(UncollapsibleWrapper)).toHaveStyleRule(
+          'display',
+          'flex'
+        );
+      });
     });
   });
 });

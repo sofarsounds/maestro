@@ -7,6 +7,7 @@ import Container from '../../atoms/Container';
 
 import NavbarContainer, { NavbarPositions } from './NavbarContainer';
 import CollapsibleWrapper from './Collapsible';
+import UncollapsibleWrapper from './Uncollapsible';
 import Hamburger from './CollapseIcon';
 import Brand from './Brand';
 import ItemContainer from './ItemContainer';
@@ -22,6 +23,7 @@ interface NavbarProps {
   children: any;
   logoLinkTo?: string;
   'data-qaid'?: string;
+  disableHamburger?: boolean;
 }
 
 interface NavbarState {
@@ -103,7 +105,8 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
       position,
       backgroundColor,
       containerMaxWidth,
-      containerBreakpoint
+      containerBreakpoint,
+      disableHamburger
     } = this.props;
 
     return (
@@ -124,8 +127,16 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
               <Logo invert />
             </Brand>
           </a>
-          <Hamburger onClick={this.onToggle} open={open} />
-          <CollapsibleWrapper open={open}>{children}</CollapsibleWrapper>
+
+          {disableHamburger && (
+            <UncollapsibleWrapper>{children}</UncollapsibleWrapper>
+          )}
+          {!disableHamburger && (
+            <>
+              <Hamburger onClick={this.onToggle} open={open} />
+              <CollapsibleWrapper open={open}>{children}</CollapsibleWrapper>
+            </>
+          )}
         </MainContainer>
       </NavbarContainer>
     );
