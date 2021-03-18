@@ -7,7 +7,6 @@ import Container from '../../atoms/Container';
 const Main = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.colors.blackBetty};
-    background-image: url(${require('./world-map-1.png')});
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
