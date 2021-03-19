@@ -42,21 +42,6 @@ describe('<IconLabel />', () => {
     expect(queryByTestId('iconlabel-icon')).toHaveClass('icon-party');
   });
 
-  it('truncates long label text', () => {
-    const { queryByTestId } = setup({
-      labelText: 'Long Venue Text',
-      color: 'purplePills',
-      icon: 'party'
-    });
-    expect(queryByTestId('iconlabel-icon-wrapper')).toBeInTheDocument();
-    expect(queryByTestId('iconlabel-text')).toBeInTheDocument();
-    expect(queryByTestId('iconlabel-text')).toHaveTextContent('Long Venue...');
-    checkStyleRules(queryByTestId('iconlabel-icon-wrapper'), {
-      'background-color': theme.colors.whiteDenim
-    });
-    expect(queryByTestId('iconlabel-icon')).toHaveClass('icon-party');
-  });
-
   it('renders inverted icon-wrapper when invertIcon set to true', () => {
     const { queryByTestId } = setup({
       labelText: 'Venue Text',
