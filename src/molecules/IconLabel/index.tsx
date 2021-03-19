@@ -23,6 +23,7 @@ const IconLabelText = styled.div<IconLabelTextProps>`
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
     ${draft &&
       css`
         color: ${theme.colors.macyGrey};
@@ -45,6 +46,8 @@ const IconWrapper = styled.div<IconWrapperProps>`
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: ${theme.ruler[8]}px;
+    min-height: ${theme.ruler[8]}px;
     width: ${theme.ruler[8]}px;
     height: ${theme.ruler[8]}px;
     border-radius: ${theme.ruler[4]}px;
@@ -72,6 +75,8 @@ interface Props {
   draft?: boolean;
   color?: Colors;
   invertIcon?: boolean;
+  className?: string;
+  emptyIcon?: boolean;
 }
 
 interface IconWrapperProps {
@@ -83,8 +88,8 @@ interface IconLabelTextProps {
   draft: boolean;
 }
 
-const truncateText = (text: string, length: number) =>
-  text.length > length ? `${text.substring(0, length).trim()}...` : text;
+// const truncateText = (text: string, length: number) =>
+//   text.length > length ? `${text.substring(0, length).trim()}...` : text;
 
 const IconLabel: React.SFC<Props> = ({
   icon,
@@ -94,10 +99,17 @@ const IconLabel: React.SFC<Props> = ({
   labelText,
   onClick = () => {},
   draft = false,
-  invertIcon = false
+  invertIcon = false,
+  className = '',
+  emptyIcon = false
 }) => {
   return (
-    <LabelWrapper key={name} data-qaid="label" onClick={onClick}>
+    <LabelWrapper
+      key={name}
+      data-qaid="label"
+      onClick={onClick}
+      className={className}
+    >
       {draft && (
         <IconWrapper
           color={'macyGrey'}
@@ -128,6 +140,13 @@ const IconLabel: React.SFC<Props> = ({
           <Icon name={icon} size={iconSize} data-qaid="iconlabel-icon" />
         </IconWrapper>
       )}
+      {emptyIcon && (
+        <IconWrapper
+          color={color || 'macyGrey'}
+          inverted={invertIcon}
+          data-qaid="iconlabel-icon-wrapper"
+        />
+      )}
       {!icon && !imageUrl && !draft && !labelText && (
         <IconWrapper
           color="macyGrey"
@@ -138,7 +157,7 @@ const IconLabel: React.SFC<Props> = ({
         </IconWrapper>
       )}
       <IconLabelText draft={draft} data-qaid="iconlabel-text">
-        {labelText && truncateText(labelText, 11)}
+        {labelText}
       </IconLabelText>
     </LabelWrapper>
   );
