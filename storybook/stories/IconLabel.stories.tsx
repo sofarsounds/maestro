@@ -54,6 +54,22 @@ storiesOf('IconLabel', module)
           labelText="With empty icon"
         />
         <Spacer mt={2} />
+        <IconLabel
+          color="purplePills"
+          icon="party"
+          invertIcon
+          upperLabelText="AUDIO"
+          labelText="Adam West"
+        />
+        <Spacer mt={2} />
+        <IconLabel
+          color="purplePills"
+          icon="party"
+          invertIcon
+          upperLabelText="SPACE ENGINEER"
+          labelText="Neil A. Armstrong Jr."
+        />
+        <Spacer mt={2} />
         <StyledIconLabel
           color="purplePills"
           icon="party"

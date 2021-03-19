@@ -8,18 +8,19 @@ const LabelWrapper = styled.div`
   ${({ theme }) => css`
     cursor: pointer;
     background-color: ${theme.colors.whiteDenim};
-    padding: ${theme.ruler[2]}px;
+    padding: ${theme.ruler[1]}px ${theme.ruler[2]}px;
     height: ${theme.ruler[12]}px;
     border-radius: ${theme.ruler[6]}px;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
+    align-items: center;
     width: 160px;
   `}
 `;
 
 const IconLabelText = styled.div<IconLabelTextProps>`
   ${({ theme, draft }) => css`
-    padding: ${theme.ruler[2]}px;
+    padding: 0px ${theme.ruler[2]}px;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -29,6 +30,20 @@ const IconLabelText = styled.div<IconLabelTextProps>`
         color: ${theme.colors.macyGrey};
       `}
   `}
+`;
+
+const UpperText = styled(IconLabelText)`
+  font-size: 10px;
+  letter-spacing: 1.5px;
+`;
+
+const LabelsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  justify-content: center;
 `;
 
 const ImageWrapper = styled.div`
@@ -71,6 +86,7 @@ interface Props {
   iconSize?: string;
   imageUrl?: string;
   labelText?: string;
+  upperLabelText?: string;
   onClick?: any;
   draft?: boolean;
   color?: Colors;
@@ -88,15 +104,13 @@ interface IconLabelTextProps {
   draft: boolean;
 }
 
-// const truncateText = (text: string, length: number) =>
-//   text.length > length ? `${text.substring(0, length).trim()}...` : text;
-
 const IconLabel: React.SFC<Props> = ({
   icon,
   iconSize = '14px',
   color,
   imageUrl,
   labelText,
+  upperLabelText,
   onClick = () => {},
   draft = false,
   invertIcon = false,
@@ -156,9 +170,16 @@ const IconLabel: React.SFC<Props> = ({
           <Icon name={'plus'} size={iconSize} data-qaid="iconlabel-icon" />
         </IconWrapper>
       )}
-      <IconLabelText draft={draft} data-qaid="iconlabel-text">
-        {labelText}
-      </IconLabelText>
+      <LabelsWrapper>
+        {upperLabelText && (
+          <UpperText draft={draft} data-qaid="iconlabel-upper-label-text">
+            {upperLabelText}
+          </UpperText>
+        )}
+        <IconLabelText draft={draft} data-qaid="iconlabel-text">
+          {labelText}
+        </IconLabelText>
+      </LabelsWrapper>
     </LabelWrapper>
   );
 };
