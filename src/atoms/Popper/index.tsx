@@ -131,7 +131,7 @@ const Popper: React.SFC<Props> = ({
       style: {
         top: `${y}px`,
         left: `${x}px`,
-        zIndex: 500,
+        zIndex: 90,
         position: 'fixed',
         width: width === 'auto' ? anchorElWidth : width
       }
@@ -144,7 +144,7 @@ const Popper: React.SFC<Props> = ({
       style={{
         top: `${y}px`,
         left: `${x}px`,
-        zIndex: 500,
+        zIndex: 90,
         position: 'fixed',
         width: width === 'auto' ? anchorElWidth : width
       }}
