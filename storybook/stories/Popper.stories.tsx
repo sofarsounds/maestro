@@ -36,7 +36,7 @@ const Example = () => {
   const ref = React.useRef<any>();
 
   return (
-    <div style={{ height: '5000px' }}>
+    <div style={{ height: '5000px', width: '5000px' }}>
       <Anchor ref={ref} fixed={boolean('Fix Anchor', false)}>
         Anchor
       </Anchor>
