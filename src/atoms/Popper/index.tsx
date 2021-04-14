@@ -11,11 +11,16 @@ import {
   calculateContainerPosition
 } from './calculator';
 
+export interface KeepInViewPort {
+  vertical?: boolean;
+  horizontal?: boolean;
+}
+
 export interface PopperProps {
   anchorOrigin?: AnchorOrigin;
   transformOrigin?: TransformOrigin;
   offset?: Offset;
-  keepInViewPort?: boolean;
+  keepInViewPort?: KeepInViewPort;
   flip?: boolean;
   reactToChange?: number | boolean;
   width?: string;
@@ -44,7 +49,7 @@ const Popper: React.SFC<Props> = ({
   anchorOrigin = { vertical: 'bottom', horizontal: 'left' },
   transformOrigin = { vertical: 'top', horizontal: 'left' },
   offset,
-  keepInViewPort = false,
+  keepInViewPort = { vertical: false, horizontal: false },
   flip = false,
   children,
   reactToChange,

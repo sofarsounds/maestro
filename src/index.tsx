@@ -70,5 +70,3 @@ export {
   keyframes,
   ServerStyleSheet
 } from './lib/styledComponents';
-
-export { default as StreamlineIcon } from '@streamlinehq/streamline-wrapper-react';
