@@ -1335,6 +1335,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e96e';
 }
 
+.c1.icon-parkingRamp:before {
+  content: '\\e972';
+}
+
 <Component
   theme={
     Object {

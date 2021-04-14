@@ -122,7 +122,8 @@ enum Registry {
   constructionSign = 'e971',
   locationUser = 'e96c',
   wrench = 'e96d',
-  notApplicable = 'e96e'
+  notApplicable = 'e96e',
+  parkingRamp = 'e972'
 }
 
 export default Registry;
