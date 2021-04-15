@@ -150,7 +150,8 @@ export const calculateContainerPosition = (
    */
   if (
     keepInViewPort === true ||
-    (keepInViewPort as KeepInViewPort).horizontal
+    ((keepInViewPort as KeepInViewPort) !== undefined &&
+      (keepInViewPort as KeepInViewPort).horizontal)
   ) {
     if (popoverX < 0) {
       popoverX = 0;
@@ -161,7 +162,11 @@ export const calculateContainerPosition = (
     }
   }
 
-  if (keepInViewPort === true || (keepInViewPort as KeepInViewPort).vertical) {
+  if (
+    keepInViewPort === true ||
+    ((keepInViewPort as KeepInViewPort) !== undefined &&
+      (keepInViewPort as KeepInViewPort).vertical)
+  ) {
     if (popoverY < 0) {
       popoverY = 0;
     }
