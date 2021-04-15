@@ -576,6 +576,10 @@ exports[`<Pagination /> renders correctly 1`] = `
   content: '\\e96e';
 }
 
+.c2.icon-parkingRamp:before {
+  content: '\\e972';
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;

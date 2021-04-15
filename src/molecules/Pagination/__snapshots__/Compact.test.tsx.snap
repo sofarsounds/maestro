@@ -576,6 +576,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e96e';
 }
 
+.c3.icon-parkingRamp:before {
+  content: '\\e972';
+}
+
 <Component
   theme={
     Object {
@@ -1467,6 +1471,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-notApplicable:before {
   content: '\\e96e';
+}
+
+.c4.icon-parkingRamp:before {
+  content: '\\e972';
 }
 
 <Component
@@ -2363,6 +2371,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-notApplicable:before {
   content: '\\e96e';
+}
+
+.c3.icon-parkingRamp:before {
+  content: '\\e972';
 }
 
 <Component
