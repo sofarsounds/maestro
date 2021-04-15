@@ -16,7 +16,7 @@ export interface PopperProps {
   anchorOrigin?: AnchorOrigin;
   transformOrigin?: TransformOrigin;
   offset?: Offset;
-  keepInViewPort?: KeepInViewPort;
+  keepInViewPort?: KeepInViewPort | boolean;
   flip?: boolean;
   reactToChange?: number | boolean;
   width?: string;
@@ -45,7 +45,7 @@ const Popper: React.SFC<Props> = ({
   anchorOrigin = { vertical: 'bottom', horizontal: 'left' },
   transformOrigin = { vertical: 'top', horizontal: 'left' },
   offset,
-  keepInViewPort = { vertical: false, horizontal: false },
+  keepInViewPort = false,
   flip = false,
   children,
   reactToChange,

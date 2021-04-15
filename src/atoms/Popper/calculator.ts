@@ -48,7 +48,7 @@ export const calculateContainerPosition = (
   anchorOrigin: AnchorOrigin,
   transformOrigin: TransformOrigin,
   popoverEl: PopoverDomEl,
-  keepInViewPort?: KeepInViewPort,
+  keepInViewPort?: KeepInViewPort | boolean,
   flip?: boolean,
   offset?: Offset
 ) => {
@@ -148,7 +148,10 @@ export const calculateContainerPosition = (
   /**
    * Adjust coordinates if user wants to keep element in the viewport
    */
-  if (keepInViewPort && keepInViewPort.horizontal) {
+  if (
+    keepInViewPort === true ||
+    (keepInViewPort as KeepInViewPort).horizontal
+  ) {
     if (popoverX < 0) {
       popoverX = 0;
     }
@@ -158,7 +161,7 @@ export const calculateContainerPosition = (
     }
   }
 
-  if (keepInViewPort && keepInViewPort.vertical) {
+  if (keepInViewPort === true || (keepInViewPort as KeepInViewPort).vertical) {
     if (popoverY < 0) {
       popoverY = 0;
     }
