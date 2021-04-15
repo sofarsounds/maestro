@@ -104,7 +104,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'left' },
           { horizontal: 'right' },
           { width: 250, height: 100 },
-          { horizontal: true, vertical: true }
+          true
         );
 
         expect(pos).toHaveProperty('x', 0);
@@ -117,7 +117,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'right' },
           { horizontal: 'left' },
           { width: 250, height: 100 },
-          { horizontal: true, vertical: true }
+          true
         );
 
         expect(pos).toHaveProperty('x', 100);
@@ -130,7 +130,7 @@ describe('<StickyContainerV2 />', () => {
           { vertical: 'top', horizontal: 'left' },
           { vertical: 'bottom', horizontal: 'left' },
           { width: 250, height: 250 },
-          { horizontal: false, vertical: false },
+          false,
           true
         );
 
@@ -144,7 +144,7 @@ describe('<StickyContainerV2 />', () => {
           { vertical: 'bottom', horizontal: 'left' },
           { vertical: 'top', horizontal: 'left' },
           { width: 250, height: 100 },
-          { horizontal: false, vertical: false },
+          false,
           true
         );
 
@@ -158,7 +158,7 @@ describe('<StickyContainerV2 />', () => {
           { vertical: 'top', horizontal: 'left' },
           { vertical: 'top', horizontal: 'right' },
           { width: 250, height: 100 },
-          { horizontal: false, vertical: false },
+          false,
           true
         );
 
@@ -172,7 +172,7 @@ describe('<StickyContainerV2 />', () => {
           { vertical: 'top', horizontal: 'right' },
           { vertical: 'top', horizontal: 'left' },
           { width: 100, height: 100 },
-          { horizontal: false, vertical: false },
+          false,
           true
         );
 
@@ -188,7 +188,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'right' },
           { horizontal: 'left' },
           { width: 100, height: 100 },
-          { horizontal: false, vertical: false },
+          false,
           false,
           { vertical: 100 }
         );
@@ -203,7 +203,7 @@ describe('<StickyContainerV2 />', () => {
           { horizontal: 'right' },
           { horizontal: 'left' },
           { width: 100, height: 100 },
-          { horizontal: false, vertical: false },
+          false,
           false,
           { horizontal: 100 }
         );
