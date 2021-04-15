@@ -5,16 +5,12 @@ import { useScrollPosition, useWindowSize } from '../../hooks';
 import { getPosition } from '../../hooks/usePosition';
 import {
   AnchorOrigin,
+  KeepInViewPort,
   TransformOrigin,
   Offset,
   PopoverDomEl,
   calculateContainerPosition
 } from './calculator';
-
-export interface KeepInViewPort {
-  vertical?: boolean;
-  horizontal?: boolean;
-}
 
 export interface PopperProps {
   anchorOrigin?: AnchorOrigin;
