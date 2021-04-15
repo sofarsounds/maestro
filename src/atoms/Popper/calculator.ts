@@ -24,6 +24,11 @@ export interface Offset {
   horizontal?: number;
 }
 
+export interface KeepInViewPort {
+  vertical?: boolean;
+  horizontal?: boolean;
+}
+
 export interface PopoverDomEl {
   width: number;
   height: number;
@@ -43,7 +48,7 @@ export const calculateContainerPosition = (
   anchorOrigin: AnchorOrigin,
   transformOrigin: TransformOrigin,
   popoverEl: PopoverDomEl,
-  keepInViewPort?: boolean,
+  keepInViewPort?: KeepInViewPort | boolean,
   flip?: boolean,
   offset?: Offset
 ) => {
@@ -143,17 +148,27 @@ export const calculateContainerPosition = (
   /**
    * Adjust coordinates if user wants to keep element in the viewport
    */
-  if (keepInViewPort) {
+  if (
+    keepInViewPort === true ||
+    ((keepInViewPort as KeepInViewPort) !== undefined &&
+      (keepInViewPort as KeepInViewPort).horizontal)
+  ) {
     if (popoverX < 0) {
       popoverX = 0;
     }
 
-    if (popoverY < 0) {
-      popoverY = 0;
-    }
-
     if (popoverX + popoverEl.width > windowWidth) {
       popoverX = windowWidth - popoverEl.width;
+    }
+  }
+
+  if (
+    keepInViewPort === true ||
+    ((keepInViewPort as KeepInViewPort) !== undefined &&
+      (keepInViewPort as KeepInViewPort).vertical)
+  ) {
+    if (popoverY < 0) {
+      popoverY = 0;
     }
 
     if (popoverY + popoverEl.height > windowHeight) {

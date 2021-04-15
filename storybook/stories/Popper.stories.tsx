@@ -36,7 +36,7 @@ const Example = () => {
   const ref = React.useRef<any>();
 
   return (
-    <div style={{ height: '5000px' }}>
+    <div style={{ height: '5000px', width: '5000px' }}>
       <Anchor ref={ref} fixed={boolean('Fix Anchor', false)}>
         Anchor
       </Anchor>
@@ -70,7 +70,10 @@ const Example = () => {
           vertical: number('Vertical Offset', 0),
           horizontal: number('Horizontal Offset', 0)
         }}
-        keepInViewPort={boolean('Keep in viewport?', false)}
+        keepInViewPort={{
+          vertical: boolean('Keep in viewport? (Vertical)', false),
+          horizontal: boolean('Keep in viewport? (Horizontal)', false),
+        }}
         flip={boolean('Flip', false)}
       >
         {({ ref, style }: any) => (

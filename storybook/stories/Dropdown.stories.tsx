@@ -22,7 +22,10 @@ storiesOf('Dropdown', module)
 
       <Dropdown
         disableScrollWhenOpen={boolean('Disable Scroll', false)}
-        keepInViewPort={boolean('Keep In ViewPort', false)}
+        keepInViewPort={{
+          vertical: boolean('Keep In ViewPort (Vertical)', false),
+          horizontal: boolean('Keep In ViewPort (Horizontal)', false),
+        }}
         label="Click me to open the dropdown"
         invertColor={boolean('Invert Color', false)}
       >

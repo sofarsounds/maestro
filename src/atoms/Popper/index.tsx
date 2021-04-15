@@ -5,6 +5,7 @@ import { useScrollPosition, useWindowSize } from '../../hooks';
 import { getPosition } from '../../hooks/usePosition';
 import {
   AnchorOrigin,
+  KeepInViewPort,
   TransformOrigin,
   Offset,
   PopoverDomEl,
@@ -15,7 +16,7 @@ export interface PopperProps {
   anchorOrigin?: AnchorOrigin;
   transformOrigin?: TransformOrigin;
   offset?: Offset;
-  keepInViewPort?: boolean;
+  keepInViewPort?: KeepInViewPort | boolean;
   flip?: boolean;
   reactToChange?: number | boolean;
   width?: string;
@@ -126,7 +127,7 @@ const Popper: React.SFC<Props> = ({
       style: {
         top: `${y}px`,
         left: `${x}px`,
-        zIndex: 500,
+        zIndex: 90,
         position: 'fixed',
         width: width === 'auto' ? anchorElWidth : width
       }
@@ -139,7 +140,7 @@ const Popper: React.SFC<Props> = ({
       style={{
         top: `${y}px`,
         left: `${x}px`,
-        zIndex: 500,
+        zIndex: 90,
         position: 'fixed',
         width: width === 'auto' ? anchorElWidth : width
       }}

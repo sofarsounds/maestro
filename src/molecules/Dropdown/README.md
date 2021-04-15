@@ -22,18 +22,18 @@ After adding the import you can use the Dropdown simply like this
 
 ## Props
 
-| Name                  | Type          | Default         | Description                      |
-| :------------         | :-----        | :-------------- | :------------------------------- |
-| **children**          | `React.Node`  |                 | The content displayed in the dropdown
-| label                 | `string`      |                 | Label of the component
-| renderLabel           | `Function`    |                 | Optional prop to render a React component as Label
-| offsetTop             | `Number`      |                 | Moves the dropdown content down by given amount of pixels
-| size                  | [Enum](#enum) |                 | The size of the flyout component
-| flyoutContainer       | `Boolean`     |                 | Whether to display the default flyout container
-| disableScrollWhenOpen | `Boolean`     |                 | Disables body scroll when dropdown is open
-| keepInViewPort        | `Boolean`     |                 | Always keep the dropdown flyout within the viewport
-| data-qaid             | `string`      |                 | Optional prop for testing purposes
-| id                    | `string`      |                 | Default HTML id prop to identify the element
+| Name                  | Type                                              | Default         | Description                      |
+| :------------         | :-----                                            | :-------------- | :------------------------------- |
+| **children**          | `React.Node`                                      |                 | The content displayed in the dropdown
+| label                 | `string`                                          |                 | Label of the component
+| renderLabel           | `Function`                                        |                 | Optional prop to render a React component as Label
+| offsetTop             | `Number`                                          |                 | Moves the dropdown content down by given amount of pixels
+| size                  | [Enum](#enum)                                     |                 | The size of the flyout component
+| flyoutContainer       | `Boolean`                                         |                 | Whether to display the default flyout container
+| disableScrollWhenOpen | `Boolean`                                         |                 | Disables body scroll when dropdown is open
+| keepInViewPort        | `Boolean` | [KeepInViewPort](#keepInViewPort)     | false           | Always keep the dropdown flyout within the viewport
+| data-qaid             | `string`                                          |                 | Optional prop for testing purposes
+| id                    | `string`                                          |                 | Default HTML id prop to identify the element
 
 ### Enum
 

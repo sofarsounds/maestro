@@ -30,15 +30,15 @@ const ref = useRef<any>()
 ## Props
 Table below contains all types of props available in the Popper
 
-| Name            | Type                      | Default         | Description                      |
-| :------------   | :------------------------ | :-------------- | :------------------------------- |
-| **children**    | `React.Node`              |                 | The content to be rendered in the StickyContainer
-| **anchorEl**    | `Ref`                     |                 | The element this container will stick to
-| anchorOrigin    | [Origin](#origin)         |                 | Set the anchor origin position for the element
-| transformOrigin | [Origin](#origin)         |                 | Customise the transform origin for the sticky container
-| offset          | [Offset](#offset)         |                 | Set a vertical & horizontal offset
-| keepInViewPort  | `Boolean`                 |                 | Whether the StickyContainer should
-| flip            | `Boolean`                 |                 | flip placement when it starts to overlap. Will override the `keepInViewPort` behaviour
+| Name            | Type                                          | Default         | Description                      |
+| :------------   | :------------------------                     | :-------------- | :------------------------------- |
+| **children**    | `React.Node`                                  |                 | The content to be rendered in the StickyContainer
+| **anchorEl**    | `Ref`                                         |                 | The element this container will stick to
+| anchorOrigin    | [Origin](#origin)                             |                 | Set the anchor origin position for the element
+| transformOrigin | [Origin](#origin)                             |                 | Customise the transform origin for the sticky container
+| offset          | [Offset](#offset)                             |                 | Set a vertical & horizontal offset
+| keepInViewPort  | [KeepInViewPort](#keepInViewPort) | `Boolean` | false           | Whether the StickyContainer should
+| flip            | `Boolean`                                     |                 | flip placement when it starts to overlap. Will override the `keepInViewPort` behaviour
 
 ### Origin
 
@@ -53,3 +53,10 @@ Table below contains all types of props available in the Popper
 | :---       | :---   |
 | vertical   | Number |
 | horizontal | Number |
+
+### KeepInViewPort
+
+| origin     | Type    |
+| :---       | :---    |
+| vertical   | boolean |
+| horizontal | boolean |
