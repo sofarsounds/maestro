@@ -20,6 +20,7 @@ export interface PopperProps {
   flip?: boolean;
   reactToChange?: number | boolean;
   width?: string;
+  zIndex?: number;
 }
 
 interface Props extends PopperProps {
@@ -49,7 +50,8 @@ const Popper: React.SFC<Props> = ({
   flip = false,
   children,
   reactToChange,
-  width
+  width,
+  zIndex = 500
 }) => {
   const popoverRef = useRef<HTMLDivElement>();
   const [calculatedPosition, setCalculatedPosition] = useState<
@@ -127,9 +129,9 @@ const Popper: React.SFC<Props> = ({
       style: {
         top: `${y}px`,
         left: `${x}px`,
-        zIndex: 500,
         position: 'fixed',
-        width: width === 'auto' ? anchorElWidth : width
+        width: width === 'auto' ? anchorElWidth : width,
+        zIndex
       }
     });
   }
@@ -140,9 +142,9 @@ const Popper: React.SFC<Props> = ({
       style={{
         top: `${y}px`,
         left: `${x}px`,
-        zIndex: 500,
         position: 'fixed',
-        width: width === 'auto' ? anchorElWidth : width
+        width: width === 'auto' ? anchorElWidth : width,
+        zIndex
       }}
     >
       {typeof children === 'function' ? children({ isFlipped }) : children}
