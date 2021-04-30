@@ -4,17 +4,23 @@ import { Colors } from '../../typings/theme';
 
 interface Props {
   percentage?: number;
-  color?: Colors;
   width?: string;
+  color?: Colors;
+  unfilledColor?: Colors;
 }
 
-interface InnerProps {
+interface InnerBarProps {
   percentage?: number;
   color?: Colors;
 }
 
-const InnerBar = styled.div<InnerProps>`
-  ${({ percentage = 0, theme, color = 'blueSmoke' }) => css`
+interface ContainerProps {
+  width?: string;
+  color?: Colors;
+}
+
+const InnerBar = styled.div<InnerBarProps>`
+  ${({ theme, percentage = 0, color = 'blueSmoke' }) => css`
     background-color: ${theme.colors[color]};
     height: 100%;
     width: ${percentage}%;
@@ -22,9 +28,9 @@ const InnerBar = styled.div<InnerProps>`
   `};
 `;
 
-const Container = styled.div<{ width?: string }>`
-  ${({ theme, width = '120px' }) => css`
-    background-color: ${theme.colors.macyGrey};
+const Container = styled.div<ContainerProps>`
+  ${({ theme, width = '120px', color = 'macyGrey' }) => css`
+    background-color: ${theme.colors[color]};
     width: ${width};
     height: 16px;
     border-radius: 8px;
@@ -35,9 +41,9 @@ const Container = styled.div<{ width?: string }>`
 `;
 
 const ProgressBar = (props: Props) => {
-  const { percentage, width, color } = props;
+  const { percentage, width, color, unfilledColor } = props;
   return (
-    <Container width={width}>
+    <Container width={width} color={unfilledColor}>
       <InnerBar color={color} percentage={percentage} data-qaid="inner-bar" />
     </Container>
   );

@@ -26,7 +26,9 @@ const theme: Theme = {
     paintItBlack: '#333333',
     darkSmoke: '#767676',
     blueSmoke: '#949494',
+    lightBlueSmoke: '#94949499',
     macyGrey: '#DBDBDB',
+    darkGrey: '#535353',
     silverSprings: '#F5F5F5',
     whiteDenim: '#FFFFFF',
 

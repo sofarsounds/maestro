@@ -19,15 +19,15 @@ const LabelWrapper = styled.div`
 `;
 
 const IconLabelText = styled.div<IconLabelTextProps>`
-  ${({ theme, draft }) => css`
+  ${({ theme, labelTextColor }) => css`
     padding: 0px ${theme.ruler[2]}px;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    ${draft &&
+    ${labelTextColor &&
       css`
-        color: ${theme.colors.macyGrey};
+        color: ${theme.colors[labelTextColor]};
       `}
   `}
 `;
@@ -90,6 +90,7 @@ interface Props {
   onClick?: any;
   draft?: boolean;
   color?: Colors;
+  labelTextColor?: Colors;
   invertIcon?: boolean;
   className?: string;
   emptyIcon?: boolean;
@@ -101,13 +102,16 @@ interface IconWrapperProps {
 }
 
 interface IconLabelTextProps {
-  draft: boolean;
+  labelTextColor?: Colors;
 }
 
-const IconLabel: React.SFC<Props> = ({
+const draftColor = 'macyGrey';
+
+const IconLabel: React.FC<Props> = ({
   icon,
   iconSize = '14px',
   color,
+  labelTextColor,
   imageUrl,
   labelText,
   upperLabelText,
@@ -117,6 +121,16 @@ const IconLabel: React.SFC<Props> = ({
   className = '',
   emptyIcon = false
 }) => {
+  const getLabelTextColor = () => {
+    if (labelTextColor) {
+      return labelTextColor;
+    } else if (draft) {
+      return draftColor;
+    } else {
+      return undefined;
+    }
+  };
+
   return (
     <LabelWrapper
       key={name}
@@ -172,11 +186,17 @@ const IconLabel: React.SFC<Props> = ({
       )}
       <LabelsWrapper>
         {upperLabelText && (
-          <UpperText draft={draft} data-qaid="iconlabel-upper-label-text">
+          <UpperText
+            labelTextColor={getLabelTextColor()}
+            data-qaid="iconlabel-upper-label-text"
+          >
             {upperLabelText}
           </UpperText>
         )}
-        <IconLabelText draft={draft} data-qaid="iconlabel-text">
+        <IconLabelText
+          labelTextColor={getLabelTextColor()}
+          data-qaid="iconlabel-text"
+        >
           {labelText}
         </IconLabelText>
       </LabelsWrapper>
