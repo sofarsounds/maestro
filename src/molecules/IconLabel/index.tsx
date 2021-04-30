@@ -121,6 +121,16 @@ const IconLabel: React.FC<Props> = ({
   className = '',
   emptyIcon = false
 }) => {
+  const getLabelTextColor = () => {
+    if (labelTextColor) {
+      return labelTextColor;
+    } else if (draft) {
+      return draftColor;
+    } else {
+      return undefined;
+    }
+  };
+
   return (
     <LabelWrapper
       key={name}
@@ -177,18 +187,14 @@ const IconLabel: React.FC<Props> = ({
       <LabelsWrapper>
         {upperLabelText && (
           <UpperText
-            labelTextColor={
-              labelTextColor ? labelTextColor : draft ? draftColor : undefined
-            }
+            labelTextColor={getLabelTextColor()}
             data-qaid="iconlabel-upper-label-text"
           >
             {upperLabelText}
           </UpperText>
         )}
         <IconLabelText
-          labelTextColor={
-            labelTextColor ? labelTextColor : draft ? draftColor : undefined
-          }
+          labelTextColor={getLabelTextColor()}
           data-qaid="iconlabel-text"
         >
           {labelText}
