@@ -17,7 +17,9 @@ export type Colors =
   | 'paintItBlack'
   | 'darkSmoke'
   | 'blueSmoke'
+  | 'lightBlueSmoke'
   | 'macyGrey'
+  | 'darkGrey'
   | 'silverSprings'
   | 'whiteDenim'
   | 'green900'
@@ -57,7 +59,9 @@ export default interface Theme {
     paintItBlack: string;
     darkSmoke: string;
     blueSmoke: string;
+    lightBlueSmoke: string;
     macyGrey: string;
+    darkGrey: string;
     silverSprings: string;
     whiteDenim: string;
 
