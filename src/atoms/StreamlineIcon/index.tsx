@@ -1,3 +1,7 @@
+/**
+This file is copied from the now deprecated streamline-react-wrapper package.
+It should be removed once we have migrated to the new streamlinehq package.
+*/
 import React, { FunctionComponent } from 'react';
 
 import './StreamlineIcon.css';
