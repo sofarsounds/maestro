@@ -1,6 +1,6 @@
 {
   "name": "@sofarsounds/maestro",
-  "version": "7.4.12",
+  "version": "7.4.13",
   "description": "The official sofar sounds react uikit library",
   "main": "dist/index.js",
   "scripts": {
@@ -52,6 +52,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-react": "^6.24.1",
     "color": "^3.1.2",
+    "css-loader": "^5.2.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
