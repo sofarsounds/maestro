@@ -104,21 +104,23 @@ const Select = <T extends {}>({
         initialWidth={initialWidth}
         data-qaid={qaId}
       />
-
-      <Options
-        qaId={qaId}
-        innerRef={selectRef}
-        isOpen={isOpen}
-        options={options}
-        groupBy={groupBy}
-        onOptionClick={onOptionClick}
-        getOptionLabel={getOptionLabel}
-        renderOption={renderOption}
-        popularOptions={popularOptions}
-        getPopularOptionsTitle={getPopularOptionsTitle}
-        state={state}
-        userIsSearching={!!inputProps.value}
-      />
+      {isOpen && (
+        <Options
+          qaId={qaId}
+          innerRef={selectRef}
+          isOpen={isOpen}
+          options={options}
+          groupBy={groupBy}
+          onOptionClick={onOptionClick}
+          getOptionLabel={getOptionLabel}
+          renderOption={renderOption}
+          popularOptions={popularOptions}
+          getPopularOptionsTitle={getPopularOptionsTitle}
+          state={state}
+          userIsSearching={!!inputProps.value}
+          searchable={searchable}
+        />
+      )}
     </>
   );
 };
