@@ -4,4 +4,4 @@ set -e
 yarn build
 echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
 
-npm publish --access public
+npm publish --tag beta

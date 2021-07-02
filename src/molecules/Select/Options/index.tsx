@@ -9,7 +9,8 @@ import Portal from '../../../atoms/Portal';
 import { SelectState } from '../index';
 import SimpleOptions from './Simple';
 import GroupedOptions from './Grouped';
-
+import useDeviceDetector from '../../../hooks/useDeviceDetector';
+import { getPosition } from '../../../hooks/usePosition';
 export interface OptionsListProps<T> {
   getOptionLabel: (opt: T) => string;
   renderOption?: (option: T, props: any) => React.ReactNode;
@@ -24,6 +25,7 @@ interface Props<T> extends OptionsListProps<T> {
   isOpen: boolean;
   innerRef: React.RefObject<HTMLDivElement>;
   onOptionClick: (option: T) => void;
+  searchable: boolean;
   groupBy?: (option: T) => string;
   state?: SelectState;
 }
@@ -47,6 +49,11 @@ const AdvancedMenu = styled(Menu)<{ isOpen: boolean; isFlipped: boolean }>`
     `}
 `;
 
+const MobileContainer = styled.div`
+  position: absolute;
+  z-index: 100;
+`;
+
 const Options = <T extends {}>({
   innerRef,
   isOpen,
@@ -59,8 +66,11 @@ const Options = <T extends {}>({
   getPopularOptionsTitle,
   userIsSearching,
   state,
-  groupBy
+  groupBy,
+  searchable
 }: Props<T>) => {
+  const isMobile = useDeviceDetector() === 'mobile';
+
   if (!isOpen) {
     return null;
   }
@@ -141,6 +151,28 @@ const Options = <T extends {}>({
 
     return null;
   };
+
+  if (isMobile && searchable) {
+    const position = getPosition(innerRef.current);
+
+    return (
+      <MobileContainer
+        style={{
+          top: `${(innerRef as any).current.offsetTop + position.height}px`,
+          width: `${position.width}px`
+        }}
+      >
+        <AdvancedMenu
+          isOpen={isOpen}
+          isFlipped={false}
+          bordered
+          data-qaid={`${qaId}-${showPopularOptions ? 'popular' : 'menu'}`}
+        >
+          {renderOptions()}
+        </AdvancedMenu>
+      </MobileContainer>
+    );
+  }
 
   return (
     <Portal dom={document.body}>

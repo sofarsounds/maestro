@@ -47,4 +47,4 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - version-7.4.14-beta.0
