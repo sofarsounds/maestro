@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const StyledIconLabel = styled(IconLabel)`
-  width: 100%;
+  width: 200px;
 `;
 
 storiesOf('IconLabel', module)
@@ -74,8 +74,7 @@ storiesOf('IconLabel', module)
           color="purplePills"
           icon="party"
           invertIcon
-          labelText="This is an IconLabel component styled to have full width using styled components"
-        />
+          labelText="200px Set-width" />
       </Container>
     </>
   ));
