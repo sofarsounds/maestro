@@ -15,7 +15,7 @@ module.exports = {
   externals: [nodeExternals(), path.resolve(__dirname, 'src')],
   devtool: 'source-map',
   optimization: {
-    // minimize: false
+    minimize: true,
     minimizer: [new TerserPlugin()]
   },
   plugins: [
@@ -64,6 +64,12 @@ module.exports = {
         test: /\.css$/,
         use: [
           'css-loader'
+        ]
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [
+          'file-loader'
         ]
       }
     ]
