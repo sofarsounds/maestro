@@ -12,7 +12,7 @@ module.exports = {
     libraryTarget: 'commonjs',
     path: path.resolve(__dirname, 'dist')
   },
-  externals: [nodeExternals(), path.resolve(__dirname, 'src')],
+  externals: [nodeExternals(), path.resolve(__dirname, 'src'), path.resolve(__dirname, 'node_modules')],
   devtool: 'source-map',
   optimization: {
     minimize: true,

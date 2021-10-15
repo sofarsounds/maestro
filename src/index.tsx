@@ -62,11 +62,12 @@ export * from './lib';
 
 export { default as theme, breakPoints } from './theme';
 export { default as Theme } from './typings/theme';
-export { default as GlobalStyle } from './theme/global';
+//export { default as GlobalStyle } from './theme/global';
 export {
   ThemeProvider,
   default as styled,
   css,
+  createGlobalStyle,
   keyframes,
   ServerStyleSheet
 } from './lib/styledComponents';
