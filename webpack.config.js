@@ -12,7 +12,7 @@ module.exports = {
     libraryTarget: 'commonjs',
     path: path.resolve(__dirname, 'dist')
   },
-  externals: [nodeExternals(), path.resolve(__dirname, 'src'), path.resolve(__dirname, 'node_modules')],
+  externals: [nodeExternals(), path.resolve(__dirname, 'src')],
   devtool: 'source-map',
   optimization: {
     minimize: true,
@@ -64,12 +64,6 @@ module.exports = {
         test: /\.css$/,
         use: [
           'css-loader'
-        ]
-      },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        use: [
-          'file-loader'
         ]
       }
     ]
