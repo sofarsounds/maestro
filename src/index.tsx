@@ -66,7 +66,6 @@ export {
   ThemeProvider,
   default as styled,
   css,
-  createGlobalStyle,
   keyframes,
   ServerStyleSheet
 } from './lib/styledComponents';

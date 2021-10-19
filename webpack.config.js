@@ -15,7 +15,6 @@ module.exports = {
   externals: [nodeExternals(), path.resolve(__dirname, 'src')],
   devtool: 'source-map',
   optimization: {
-    minimize: true,
     minimizer: [new TerserPlugin()]
   },
   plugins: [
