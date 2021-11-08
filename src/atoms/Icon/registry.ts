@@ -119,6 +119,7 @@ enum Registry {
   loading = 'e96a',
   cog = 'e96b',
   cogOutline = 'e970',
+  cogQuestionMark = 'e973',
   constructionSign = 'e971',
   locationUser = 'e96c',
   wrench = 'e96d',
