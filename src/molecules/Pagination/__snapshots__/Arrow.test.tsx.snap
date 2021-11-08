@@ -163,6 +163,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
   content: '\\e939';
 }
 
+.c1.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c1.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -493,6 +497,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly 1`] = `
 
 .c1.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c1.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c1.icon-constructionSign:before {
@@ -880,6 +888,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
   content: '\\e939';
 }
 
+.c1.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c1.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -1210,6 +1222,10 @@ exports[`Pagination Arrow <ArrowLeft /> renders correctly when disabled 1`] = `
 
 .c1.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c1.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c1.icon-constructionSign:before {
@@ -1592,6 +1608,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
   content: '\\e939';
 }
 
+.c1.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c1.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -1922,6 +1942,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly 1`] = `
 
 .c1.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c1.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c1.icon-constructionSign:before {
@@ -2309,6 +2333,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
   content: '\\e939';
 }
 
+.c1.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c1.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -2639,6 +2667,10 @@ exports[`Pagination Arrow <ArrowRight /> renders correctly when disabled 1`] = `
 
 .c1.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c1.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c1.icon-constructionSign:before {

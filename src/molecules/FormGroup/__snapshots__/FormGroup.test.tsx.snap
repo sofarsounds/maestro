@@ -993,6 +993,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
   content: '\\e939';
 }
 
+.c1.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c1.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -1323,6 +1327,10 @@ exports[`<FormGroup /> renders a with an Icon 1`] = `
 
 .c1.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c1.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c1.icon-constructionSign:before {

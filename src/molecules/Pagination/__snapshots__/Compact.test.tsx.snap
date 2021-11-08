@@ -228,6 +228,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
   content: '\\e939';
 }
 
+.c3.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c3.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -558,6 +562,10 @@ exports[`Pagination <Compact /> it renders correctly when a middle page is activ
 
 .c3.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c3.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c3.icon-constructionSign:before {
@@ -1127,6 +1135,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
   content: '\\e939';
 }
 
+.c4.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c4.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -1457,6 +1469,10 @@ exports[`Pagination <Compact /> it renders correctly when the first page is acti
 
 .c4.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c4.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c4.icon-constructionSign:before {
@@ -2029,6 +2045,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
   content: '\\e939';
 }
 
+.c3.icon-timeClockCircle:before {
+  content: '\\e974';
+}
+
 .c3.icon-calendarAdd:before {
   content: '\\e93d';
 }
@@ -2359,6 +2379,10 @@ exports[`Pagination <Compact /> it renders correctly when the last page is activ
 
 .c3.icon-cogOutline:before {
   content: '\\e970';
+}
+
+.c3.icon-cogQuestionMark:before {
+  content: '\\e973';
 }
 
 .c3.icon-constructionSign:before {
