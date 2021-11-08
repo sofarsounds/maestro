@@ -34,6 +34,7 @@ enum Registry {
   calendar = 'e917',
   time = 'e93a',
   timeHand = 'e939',
+  timeClockCircle = 'e974',
   calendarAdd = 'e93d',
 
   // others
