@@ -27,21 +27,29 @@ const Slogan = styled.div`
 
 export interface LogoWithSloganProps {
   href?: any;
+  logoWidthPx?: string;
 }
 
-const LogoWithSlogan: React.SFC<LogoWithSloganProps> = ({ href }) => (
-  <Col xs={12} xl={5}>
-    <LogoSloganContainer>
-      {href ? (
-        <a href={href}>
-          <Logo width="133px" invert />
-        </a>
-      ) : (
-        <Logo width="133px" invert />
-      )}
-      <Slogan>Intimate gigs all around the world</Slogan>
-    </LogoSloganContainer>
-  </Col>
-);
+const LogoWithSlogan: React.FC<LogoWithSloganProps> = ({
+  href,
+  logoWidthPx
+}) => {
+  const logoWidth = logoWidthPx ? logoWidthPx : '104px';
+
+  return (
+    <Col xs={12} xl={5}>
+      <LogoSloganContainer>
+        {href ? (
+          <a href={href}>
+            <Logo width={logoWidth} invert />
+          </a>
+        ) : (
+          <Logo width={logoWidth} invert />
+        )}
+        <Slogan>Intimate gigs all around the world</Slogan>
+      </LogoSloganContainer>
+    </Col>
+  );
+};
 
 export default LogoWithSlogan;
