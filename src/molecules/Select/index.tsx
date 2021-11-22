@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useSelect } from '../../hooks';
+import { useSelect, ControlledInputStateValue } from '../../hooks';
 
 import Input from './Input';
 import Options, { OptionsListProps } from './Options';
@@ -25,6 +25,7 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   hasError?: boolean;
   invertColor?: boolean;
   renderLeftIcon?: React.ReactNode;
+  controlledInputStateValue?: ControlledInputStateValue;
 
   // typeahead props
   searchable?: boolean;
@@ -63,6 +64,7 @@ const Select = <T extends {}>({
   initialWidth,
   state = SelectState.ready,
   disableScrollWhenOpen = false,
+  controlledInputStateValue,
   'data-qaid': qaId
 }: SelectProps<T>) => {
   const {
@@ -81,7 +83,8 @@ const Select = <T extends {}>({
     filterBy,
     defaultOptions,
     // @ts-ignore
-    onChange
+    onChange,
+    controlledInputStateValue
   });
 
   return (

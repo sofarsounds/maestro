@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useDisableScroll, useOutsideClick, useKeyDown } from '../';
 
+export interface ControlledInputStateValue {
+  inputValue: string;
+  setInputValue: React.Dispatch<React.SetStateAction<string>>;
+}
+
 interface Props<T> {
   onChange: (option: T | null) => void;
   defaultValue?: T | null;
@@ -10,6 +15,7 @@ interface Props<T> {
   filterBy?: (option: T, query: string) => boolean;
   defaultOptions: T[];
   value?: T | null;
+  controlledInputStateValue?: ControlledInputStateValue;
 }
 
 interface ReturnProps<T> {
@@ -33,12 +39,20 @@ const useSelect = <T extends {}>({
   searchable,
   filterBy,
   value,
-  onChange
+  onChange,
+  controlledInputStateValue
 }: Props<T>): ReturnProps<T> => {
   const ref = useRef<HTMLInputElement>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selected, setSelected] = useState(defaultValue);
-  const [inputValue, setInputValue] = useState('');
+  const [uncontrolledInputValue, setUncontrolledInputValue] = useState('');
+
+  const inputValue = controlledInputStateValue
+    ? controlledInputStateValue.inputValue
+    : uncontrolledInputValue;
+  const setInputValue = controlledInputStateValue
+    ? controlledInputStateValue.setInputValue
+    : setUncontrolledInputValue;
 
   const onOptionClick = useCallback(
     (option: T | null) => {

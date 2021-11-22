@@ -5,5 +5,5 @@ export { default as usePosition } from './usePosition';
 export { default as useScrollPosition } from './useScrollPosition';
 export { default as useWindowSize } from './useWindowSize';
 export { default as usePrev } from './usePrev';
-export { default as useSelect } from './useSelect';
+export { default as useSelect, ControlledInputStateValue } from './useSelect';
 export { default as useDeviceDetector } from './useDeviceDetector';
