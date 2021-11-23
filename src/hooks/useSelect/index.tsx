@@ -1,11 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useDisableScroll, useOutsideClick, useKeyDown } from '../';
 
-export interface ControlledInputStateValue {
-  inputValue: string;
-  setInputValue: React.Dispatch<React.SetStateAction<string>>;
-}
-
 interface Props<T> {
   onChange: (option: T | null) => void;
   defaultValue?: T | null;
@@ -15,7 +10,8 @@ interface Props<T> {
   filterBy?: (option: T, query: string) => boolean;
   defaultOptions: T[];
   value?: T | null;
-  controlledInputStateValue?: ControlledInputStateValue;
+  controlledInputValue?: string;
+  setControlledInputValue?: React.Dispatch<React.SetStateAction<string>>;
 }
 
 interface ReturnProps<T> {
@@ -40,18 +36,19 @@ const useSelect = <T extends {}>({
   filterBy,
   value,
   onChange,
-  controlledInputStateValue
+  controlledInputValue,
+  setControlledInputValue
 }: Props<T>): ReturnProps<T> => {
   const ref = useRef<HTMLInputElement>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selected, setSelected] = useState(defaultValue);
   const [uncontrolledInputValue, setUncontrolledInputValue] = useState('');
 
-  const inputValue = controlledInputStateValue
-    ? controlledInputStateValue.inputValue
+  const inputValue = controlledInputValue
+    ? controlledInputValue
     : uncontrolledInputValue;
-  const setInputValue = controlledInputStateValue
-    ? controlledInputStateValue.setInputValue
+  const setInputValue = setControlledInputValue
+    ? setControlledInputValue
     : setUncontrolledInputValue;
 
   const onOptionClick = useCallback(
