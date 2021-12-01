@@ -10,6 +10,8 @@ interface Props<T> {
   filterBy?: (option: T, query: string) => boolean;
   defaultOptions: T[];
   value?: T | null;
+  controlledInputValue?: string;
+  setControlledInputValue?: React.Dispatch<React.SetStateAction<string>>;
 }
 
 interface ReturnProps<T> {
@@ -33,12 +35,21 @@ const useSelect = <T extends {}>({
   searchable,
   filterBy,
   value,
-  onChange
+  onChange,
+  controlledInputValue,
+  setControlledInputValue
 }: Props<T>): ReturnProps<T> => {
   const ref = useRef<HTMLInputElement>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selected, setSelected] = useState(defaultValue);
-  const [inputValue, setInputValue] = useState('');
+  const [uncontrolledInputValue, setUncontrolledInputValue] = useState('');
+
+  const inputValue = controlledInputValue
+    ? controlledInputValue
+    : uncontrolledInputValue;
+  const setInputValue = setControlledInputValue
+    ? setControlledInputValue
+    : setUncontrolledInputValue;
 
   const onOptionClick = useCallback(
     (option: T | null) => {

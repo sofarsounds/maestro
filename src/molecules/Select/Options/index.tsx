@@ -94,7 +94,7 @@ const Options = <T extends {}>({
         );
       }
       case SelectState.ready: {
-        if (options.length === 0) {
+        if (options.length === 0 && userIsSearching) {
           return (
             <MenuItem disabled data-qaid={`${qaId}-empty-msg`}>
               No options...

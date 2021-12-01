@@ -25,6 +25,8 @@ export interface SelectProps<T> extends OptionsListProps<T> {
   hasError?: boolean;
   invertColor?: boolean;
   renderLeftIcon?: React.ReactNode;
+  inputValue?: string;
+  setInputValue?: React.Dispatch<React.SetStateAction<string>>;
 
   // typeahead props
   searchable?: boolean;
@@ -63,6 +65,8 @@ const Select = <T extends {}>({
   initialWidth,
   state = SelectState.ready,
   disableScrollWhenOpen = false,
+  inputValue,
+  setInputValue,
   'data-qaid': qaId
 }: SelectProps<T>) => {
   const {
@@ -81,7 +85,9 @@ const Select = <T extends {}>({
     filterBy,
     defaultOptions,
     // @ts-ignore
-    onChange
+    onChange,
+    controlledInputValue: inputValue,
+    setControlledInputValue: setInputValue
   });
 
   return (

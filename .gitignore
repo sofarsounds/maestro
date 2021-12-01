@@ -10,6 +10,9 @@ storybook-static
 # Jetbrains IDEs
 .idea
 
+# VS Code IDE
+.vscode
+
 .npmrc
 
 .DS_Store
